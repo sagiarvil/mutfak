@@ -60,6 +60,7 @@ User-agent: cohere-ai
 Allow: /
 
 # Sitemaps & Feeds
+Sitemap: https://izmirmutfakbanyo.com.tr/sitemap.xml
 Sitemap: https://izmirmutfakbanyo.com.tr/sitemap-index.xml
 Sitemap: https://izmirmutfakbanyo.com.tr/sitemap-0.xml
 

@@ -236,12 +236,12 @@
       <!-- Ana Menü Çubuğu (Flex-nowrap, taşmayan, 1024px-1440px ve üstü tüm ekranlarda sıfır taşma) -->
       <div class="w-full max-w-7xl mx-auto px-3 sm:px-5 lg:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4">
         
-        <!-- Sol: Logo & Marka -->
-        <a href="/" class="flex items-center gap-2 sm:gap-2.5 shrink-0 group min-w-0">
-          <img src="/logo.png" alt="İzmir Mutfak Banyo Tadilat Logo" class="h-9 sm:h-10 w-auto object-contain transition group-hover:opacity-90 shrink-0" width="40" height="42" />
-          <div class="flex flex-col min-w-0">
-            <span class="font-extrabold tracking-widest text-stone-950 text-xs sm:text-sm uppercase leading-tight whitespace-nowrap" style="letter-spacing: 0.12em;">İZMİR MUTFAK &amp; BANYO</span>
-            <span class="text-[8.5px] sm:text-[9px] uppercase tracking-[0.16em] text-stone-500 font-semibold whitespace-nowrap">Özel İmalat &amp; Tadilat</span>
+        <!-- Sol: Logo & Marka (Headerı dolduran, dengeli ve mimari logo) -->
+        <a href="/" class="flex items-center gap-2.5 sm:gap-3.5 shrink-0 group min-w-0 py-0.5">
+          <img src="/logo.png" alt="İzmir Mutfak Banyo Tadilat Logo" class="h-11 sm:h-12 md:h-14 w-auto object-contain transition duration-200 group-hover:opacity-90 shrink-0" width="56" height="58" />
+          <div class="flex flex-col min-w-0 justify-center">
+            <span class="font-black tracking-wider text-stone-950 text-sm sm:text-base md:text-lg uppercase leading-none whitespace-nowrap" style="letter-spacing: 0.08em;">İZMİR MUTFAK &amp; BANYO</span>
+            <span class="text-[9.5px] sm:text-[10.5px] md:text-xs uppercase tracking-[0.22em] text-stone-500 font-bold whitespace-nowrap mt-1">Özel İmalat &amp; Tadilat</span>
           </div>
         </a>
 
@@ -347,20 +347,20 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 2. ÖNE ÇIKAN MODEL SPOTLİGHT (ELİA SERİSİ) -->
+    <!-- 2. ÖNE ÇIKAN MODEL SPOTLİGHT (AURA SERİSİ) -->
     <!-- ================================================================= -->
-    <section class="py-20 sm:py-28 bg-white border-b border-stone-100" id="elia-spotlight">
+    <section class="py-20 sm:py-28 bg-white border-b border-stone-100" id="aura-spotlight">
       <div class="max-w-7xl mx-auto px-4 sm:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <!-- Metin Alanı (Sol Kolon) -->
           <div class="lg:col-span-5 space-y-6">
             <span class="text-xs font-extrabold uppercase tracking-[0.25em] text-stone-400 block">ÖZEL KOLEKSİYON</span>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light text-stone-950 tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
-              ELIA &amp; VERA <br /><span class="font-normal italic">Mimari Çizgiler</span>
+              AURA &amp; LINEA <br /><span class="font-normal italic">Mimari Çizgiler</span>
             </h2>
             <div class="w-12 h-0.5 bg-stone-900"></div>
             <p class="text-sm sm:text-base text-stone-600 font-light leading-relaxed">
-              Elia, zamansız çizgileriyle modern yaşam alanlarını yeniden yorumluyor. Işıltılı caddelerin ritmini ve geometrik zarafeti mekanlara taşıyarak sanatsal lüksü rafine bir cazibeye dönüştürüyor. Gerçek alüminyum profiller, titanyum ve şampanya tonlarındaki gola kulpsuz detaylarla güçlendirilmiş İtalyan formu.
+              Aura, zamansız çizgileriyle modern yaşam alanlarını yeniden yorumluyor. Işıltılı caddelerin ritmini ve geometrik zarafeti mekanlara taşıyarak sanatsal lüksü rafine bir cazibeye dönüştürüyor. Gerçek alüminyum profiller, titanyum ve şampanya tonlarındaki gola kulpsuz detaylarla güçlendirilmiş İtalyan formu.
             </p>
             <div class="space-y-3 pt-2 text-xs font-semibold text-stone-700">
               <div class="flex items-center gap-3">
@@ -389,7 +389,7 @@
             <div class="relative overflow-hidden group">
               <img 
                 src="/media/cinematic/elia_spotlight.jpg" 
-                alt="Elia Modern Mutfak Modeli" 
+                alt="Aura Modern Mutfak Modeli" 
                 class="w-full h-[450px] sm:h-[550px] object-cover transition duration-700 group-hover:scale-105"
                 loading="lazy"
                 width="960"
@@ -397,7 +397,7 @@
               />
               <div class="absolute bottom-6 left-6 bg-white/95 backdrop-blur-md px-6 py-4 border border-stone-200/80 shadow-md">
                 <span class="text-[10px] uppercase tracking-widest text-stone-500 font-bold block">İzmir Özel İmalat</span>
-                <span class="text-sm font-bold text-stone-950">Elia İpek Mat Lake &amp; Ada Tasarımı</span>
+                <span class="text-sm font-bold text-stone-950">Aura İpek Mat Lake &amp; Ada Tasarımı</span>
               </div>
             </div>
           </div>
@@ -3346,7 +3346,7 @@
     const CABINET_THEMES = {
       kasmir:   { name: 'Lora Kaşmir & Meşe', upper: '#c28e5c', lower: '#d6ccc2', priceAdd: 0 },
       antrasit: { name: 'Mürdüm & İpek Antrasit', upper: '#6E3B62', lower: '#334155', priceAdd: 18000 },
-      adacayi:  { name: 'Elia Adaçayı Yeşili', upper: '#84a59d', lower: '#52796f', priceAdd: 24000 },
+      adacayi:  { name: 'Aura Adaçayı Yeşili', upper: '#84a59d', lower: '#52796f', priceAdd: 24000 },
       beyaz:    { name: 'Porselen Mat Lake', upper: '#f8fafc', lower: '#e2e8f0', priceAdd: 15000 }
     };
 
