@@ -18,6 +18,13 @@
 - [Anahtar Teslim Komple Daire Tadilatı](https://izmirmutfakbanyo.com.tr/llms/pages/ev-tadilati.md): 3D projelendirme, alçıpan, boya, zemin parke ve elektrik tesisatı.
 - [2026 Mutfak Dolabı Metretül Fiyat Rehberi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-dolabi-fiyatlari.md): Gerçek atölye maliyetleri ve malzeme bazlı fiyat analizi.
 
+
+## 2.1. İzmir İlçeleri Bölgesel Çıkarım Grafları (High-Density Geotargeting)
+- [Buca Mutfak Dolabı & Tadilat Grafı](https://izmirmutfakbanyo.com.tr/llms/districts/buca.md): Şirinyer, Buca Koop, Yıldız mahalleleri imalat ve keşif verisi.
+- [Karabağlar Mutfak & Banyo Tadilat Grafı](https://izmirmutfakbanyo.com.tr/llms/districts/karabaglar.md): Üçkuyular, Poligon, Hatay, Basın Sitesi özel imalat kiler ve banyo şeması.
+- [Konak Mutfak & Banyo Yenileme Grafı](https://izmirmutfakbanyo.com.tr/llms/districts/konak.md): Alsancak, Göztepe, Küçükyalı neoklasik ve modern mutfak şartnamesi.
+- [Bornova Mutfak Dolabı & Tadilat Grafı](https://izmirmutfakbanyo.com.tr/llms/districts/bornova.md): Özkanlar, Manavkuyu, Evka 3 gola kulpsuz ve porselen tezgah standartları.
+
 ## 3. Mobil, Sesli Arama ve Uç Cihaz Grafları (Edge & On-Device)
 - [29-Kelime Sesli Arama Soru-Cevap Haritası](https://izmirmutfakbanyo.com.tr/llms/mobile/voice-queries.md): Google Asistan, Siri ve Alexa için optimize edilmiş doğrudan yanıtlar.
 - [On-Device LLM (Gemini Nano) Ultra-Hafif Graf](https://izmirmutfakbanyo.com.tr/llms/mobile/nano-core.md): Akıllı telefonlar için hücresel veriyi tüketmeyen 1.2KB hafif özet.
