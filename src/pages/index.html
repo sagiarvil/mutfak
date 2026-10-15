@@ -553,19 +553,7 @@
               </div>
             </div>
 
-            <!-- İzmir İlçe / Yer Seçimi -->
-            <div class="space-y-2.5 border-t border-stone-100 pt-4">
-              <h4 class="text-xs font-extrabold uppercase text-stone-700 tracking-wider">Hizmet Bölgesi (İzmir)</h4>
-              <select id="galleryDistrictSelect" class="w-full text-xs border border-stone-200 rounded-xl px-3 py-2 bg-stone-50 font-medium focus:outline-none focus:border-[#2C5E4F]">
-                <option value="all">Tüm İzmir İlçeleri</option>
-                <option value="karsiyaka">Karşıyaka / Mavişehir / Bostanlı</option>
-                <option value="bornova">Bornova / Bayraklı</option>
-                <option value="konak">Konak / Alsancak / Göztepe</option>
-                <option value="urla">Urla / Çeşme / Alaçatı</option>
-                <option value="cigli">Çiğli / Menemen</option>
-                <option value="balcova">Balçova / Narlıdere / Güzelbahçe</option>
-              </select>
-            </div>
+
 
             <!-- Hızlı WhatsApp İletişim Kutusu -->
             <div class="p-4 rounded-2xl bg-[#E6F0EC] border border-[#2C5E4F]/20 text-xs space-y-2">
@@ -4829,8 +4817,7 @@
       const roomBtns = document.querySelectorAll('.room-tab-btn');
       const styleRadios = document.querySelectorAll('input[name="styleFilter"]');
       const matCheckboxes = document.querySelectorAll('.mat-filter');
-      const districtSelect = document.getElementById('galleryDistrictSelect');
-      const btnReset = document.getElementById('btnResetFilters');
+            const btnReset = document.getElementById('btnResetFilters');
       const cards = document.querySelectorAll('.gallery-card');
       const countEl = document.getElementById('galleryCount');
 
@@ -4848,7 +4835,7 @@
       function applyFilters() {
         const selectedStyle = document.querySelector('input[name="styleFilter"]:checked')?.value || 'all';
         const checkedMats = Array.from(matCheckboxes).filter(cb => cb.checked).map(cb => cb.value);
-        const selectedDistrict = districtSelect?.value || 'all';
+        const selectedDistrict = 'all';
 
         let visibleCount = 0;
 
@@ -4896,15 +4883,13 @@
       // Stil ve Malzeme Filtreleri:
       styleRadios.forEach(r => r.addEventListener('change', applyFilters));
       matCheckboxes.forEach(cb => cb.addEventListener('change', applyFilters));
-      districtSelect?.addEventListener('change', applyFilters);
-
+      
       // Sıfırla:
       btnReset?.addEventListener('click', () => {
         const allRadio = document.querySelector('input[name="styleFilter"][value="all"]');
         if (allRadio) allRadio.checked = true;
         matCheckboxes.forEach(cb => cb.checked = true);
-        if (districtSelect) districtSelect.value = 'all';
-        applyFilters();
+                applyFilters();
       });
 
       // Kart Tıklama & Modal Açma:
