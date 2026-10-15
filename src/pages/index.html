@@ -173,25 +173,28 @@
     <!-- STICKY PUBLIC WEBSITE NAVBAR (Homify-style rooms + magazine + saved ideabook) -->
     
     <!-- ================================================================= -->
-    <!-- LINEADECOR STYLE ELITE HEADER & NAVIGATION                        -->
+    <!-- ÖZEL İMALAT MİMARİ BAŞLIK VE MENÜ                        -->
     <!-- ================================================================= -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 transition-all duration-300" id="mainHeader">
-      <!-- Üst İnce Bilgi & Hızlı İletişim Şeridi -->
-      <div class="bg-stone-900 text-stone-300 text-[11px] font-medium py-1.5 px-4 sm:px-8">
+        <!-- ================================================================= -->
+    <!-- ÖZEL İMALAT MİMARİ BAŞLIK VE MENÜ (TEK SIRA, PREMİUM, KOPMASIZ)  -->
+    <!-- ================================================================= -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 transition-all duration-300 w-full" id="mainHeader">
+      <!-- Üst İnce Bilgi & İletişim Şeridi -->
+      <div class="bg-stone-900 text-stone-300 text-[11px] font-medium py-1.5 px-4 sm:px-8 border-b border-stone-800">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-3">
             <span class="flex items-center gap-1.5 text-stone-200">
               <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
               İzmir Mutfak &amp; Banyo Özel Mimari İmalat Atölyesi
             </span>
-            <span class="hidden md:inline text-stone-400">|</span>
-            <span class="hidden md:inline text-stone-300">Resmi Sözleşmeli • Mimari 3D Keşif • 10 Yıl Gövde Garantisi</span>
+            <span class="hidden md:inline text-stone-600">|</span>
+            <span class="hidden md:inline text-stone-400">Resmi Sözleşmeli • Mimari 3D Keşif • 10 Yıl Gövde Garantisi</span>
           </div>
           <div class="flex items-center gap-4">
             <a href="https://share.google/p94hYPiU7cDUM7Va1" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-1">
-              <span>📍</span> <span>Atölye &amp; Showroom Konumu</span>
+              <span>📍</span> <span>Showroom &amp; Atölye</span>
             </a>
-            <span class="text-stone-500">|</span>
+            <span class="text-stone-600">|</span>
             <a href="https://wa.me/905393333303" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline flex items-center gap-1">
               <span>💬</span> <span>0539 333 33 03</span>
             </a>
@@ -199,72 +202,76 @@
         </div>
       </div>
 
-      <!-- Ana Menü & Logo Alanı -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex items-center justify-between">
-        <!-- Logo -->
-        <a href="/" class="flex items-center gap-3 group">
-          <img src="/logo.png" alt="İzmir Mutfak Banyo Logo" class="h-10 sm:h-12 w-auto object-contain transition group-hover:opacity-90" width="48" height="50" />
+      <!-- Ana Menü Çubuğu (Kesinlikle Tek Sıra, Asla Kırılmaz) -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+        
+        <!-- Sol: Logo & Marka -->
+        <a href="/" class="flex items-center gap-2.5 sm:gap-3 shrink-0 group">
+          <img src="/logo.png" alt="İzmir Mutfak Logo" class="h-10 sm:h-11 w-auto object-contain transition group-hover:opacity-90" width="44" height="46" />
           <div class="flex flex-col">
-            <span class="font-extrabold tracking-widest text-stone-950 text-base sm:text-lg uppercase" style="letter-spacing: 0.18em;">İZMİR MUTFAK</span>
-            <span class="text-[9px] uppercase tracking-[0.25em] text-stone-500 font-semibold">Tasarım &amp; Özel İmalat</span>
+            <span class="font-extrabold tracking-widest text-stone-950 text-sm sm:text-base uppercase leading-tight whitespace-nowrap" style="letter-spacing: 0.16em;">İZMİR MUTFAK</span>
+            <span class="text-[9px] uppercase tracking-[0.22em] text-stone-500 font-semibold whitespace-nowrap">Tasarım &amp; İmalat</span>
           </div>
         </a>
 
-        <!-- Orta Menü Linkleri (Lineadecor Tarzı Saf Minimalizm) -->
-        <nav class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-stone-800">
-          <a href="#modeller" class="hover:text-stone-500 transition py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Mutfak Modelleri</a>
-          <a href="#stretcher-section" class="hover:text-stone-500 transition py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Koleksiyonlar</a>
-          <a href="#banyo-koleksiyonu" class="hover:text-stone-500 transition py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Banyo Tasarımı</a>
-          <a href="#malzeme-atolye" class="hover:text-stone-500 transition py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Malzeme &amp; Detaylar</a>
-          <a href="#mimari-surec" class="hover:text-stone-500 transition py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Nasıl Çalışıyoruz?</a>
-          <a href="#musteri-deneyimleri" class="hover:text-stone-500 transition py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Yorumlar</a>
+        <!-- Orta: Menü Linkleri (Tek Sıra, whitespace-nowrap) -->
+        <nav class="hidden xl:flex items-center gap-5 2xl:gap-7 text-[11px] 2xl:text-xs font-bold uppercase tracking-wider text-stone-800 whitespace-nowrap shrink-0">
+          <a href="#modeller" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Mutfak Modelleri</a>
+          <a href="#stretcher-section" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Koleksiyonlar</a>
+          <a href="#modeller" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Banyo Tasarımı</a>
+          <a href="#malzeme-atolye" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Malzeme &amp; Detaylar</a>
+          <a href="#projelendirme-basvuru" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Nasıl Çalışıyoruz?</a>
+          <a href="#musteri-deneyimleri" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Yorumlar</a>
         </nav>
 
-        <!-- Sağ Aksiyon Butonları -->
-        <div class="flex items-center gap-3">
-          <a href="#projelendirme-basvuru" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-none border border-stone-900 text-stone-900 text-xs font-bold uppercase tracking-widest hover:bg-stone-900 hover:text-white transition duration-300">
+        <!-- Sağ: Aksiyon Butonları (Tek Sıra, whitespace-nowrap) -->
+        <div class="flex items-center gap-2.5 sm:gap-3 shrink-0 whitespace-nowrap">
+          <a href="#projelendirme-basvuru" class="hidden sm:inline-flex items-center justify-center px-4 sm:px-5 py-2.5 rounded-none border border-stone-900 text-stone-900 text-[11px] font-bold uppercase tracking-wider hover:bg-stone-900 hover:text-white transition duration-300">
             Mutfağını Tasarla
           </a>
-          <a href="https://wa.me/905393333303?text=Merhaba,%20mutfağım%20için%20ücretsiz%203D%20keşif%20ve%20projelendirme%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 sm:px-5 py-2.5 rounded-none bg-stone-900 text-white text-xs font-bold uppercase tracking-widest hover:bg-stone-800 transition duration-300 shadow-sm">
+          <a href="https://wa.me/905393333303?text=Merhaba,%20mutfağım%20için%20ücretsiz%203D%20keşif%20ve%20projelendirme%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 sm:px-5 py-2.5 rounded-none bg-stone-900 text-white text-[11px] font-bold uppercase tracking-wider hover:bg-stone-800 transition duration-300 shadow-sm">
             Ücretsiz Keşif
           </a>
-          <!-- Mobil Menü Açma Butonu -->
-          <button type="button" id="btnToggleMobileMenu" class="lg:hidden p-2 text-stone-900 hover:bg-stone-100 transition" aria-label="Menü">
+          <!-- Mobil & Tablet Menü Açma Butonu -->
+          <button type="button" id="btnToggleMobileMenu" class="xl:hidden p-2 text-stone-900 hover:bg-stone-100 transition" aria-label="Menüyü Aç">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
         </div>
       </div>
 
-      <!-- Mobil Açılır Menü -->
-      <div id="mobileMenuDrawer" class="hidden lg:hidden bg-white border-b border-stone-200 px-6 py-6 space-y-4">
-        <nav class="flex flex-col space-y-3 text-xs font-bold uppercase tracking-widest text-stone-800">
-          <a href="#modeller" class="py-1 hover:text-stone-500">Mutfak Modelleri</a>
-          <a href="#stretcher-section" class="py-1 hover:text-stone-500">Koleksiyonlar (Modern / Country / Neoklasik)</a>
-          <a href="#banyo-koleksiyonu" class="py-1 hover:text-stone-500">Banyo Tasarımı</a>
-          <a href="#malzeme-atolye" class="py-1 hover:text-stone-500">Malzeme &amp; Donanım</a>
-          <a href="#mimari-surec" class="py-1 hover:text-stone-500">Nasıl Çalışıyoruz?</a>
-          <a href="#musteri-deneyimleri" class="py-1 hover:text-stone-500">Müşteri Yorumları (4.87/5.0)</a>
-          <a href="#projelendirme-basvuru" class="py-2 text-[#2C5E4F] font-black">Hemen Projelendirme Başvurusu Yap →</a>
+      <!-- Mobil / Tablet Açılır Menü -->
+      <div id="mobileMenuDrawer" class="hidden xl:hidden bg-white border-b border-stone-200 px-6 py-6 space-y-4 shadow-xl">
+        <nav class="flex flex-col space-y-3.5 text-xs font-bold uppercase tracking-wider text-stone-800">
+          <a href="#modeller" class="py-1 hover:text-stone-500 border-b border-stone-100">Mutfak Modelleri</a>
+          <a href="#stretcher-section" class="py-1 hover:text-stone-500 border-b border-stone-100">Koleksiyonlar (Modern / Klasik / Life)</a>
+          <a href="#modeller" class="py-1 hover:text-stone-500 border-b border-stone-100">Banyo Tasarımı</a>
+          <a href="#malzeme-atolye" class="py-1 hover:text-stone-500 border-b border-stone-100">Malzeme &amp; Detaylar</a>
+          <a href="#projelendirme-basvuru" class="py-1 hover:text-stone-500 border-b border-stone-100">Nasıl Çalışıyoruz?</a>
+          <a href="#musteri-deneyimleri" class="py-1 hover:text-stone-500 border-b border-stone-100">Yorumlar (4.87/5.0 Puan)</a>
+          <div class="pt-2 flex flex-col gap-2">
+            <a href="#projelendirme-basvuru" class="block text-center py-2.5 px-4 bg-stone-900 text-white text-xs font-bold uppercase tracking-wider">Mutfağını Tasarla</a>
+            <a href="https://wa.me/905393333303" target="_blank" class="block text-center py-2.5 px-4 bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider">💬 WhatsApp Keşif</a>
+          </div>
         </nav>
       </div>
     </header>
 
     <!-- ================================================================= -->
-    <!-- 1. HERO VIDEO & FULLWIDTH CINEMATIC BANNER (LINEADECOR SECTION 0) -->
+    <!-- 1. SİNEMATİK MİMARİ VİDEO VE VİTRİN ALANI -->
     <!-- ================================================================= -->
     <section class="relative w-full overflow-hidden bg-stone-950 text-white" style="min-height: 85vh;">
       <video
-        id="lineaHeroVideo"
+        id="heroBgVideo"
         autoplay
         muted
         loop
         playsinline
         webkit-playsinline
         preload="auto"
-        poster="https://static.lineadecor.com/public/uploads/photos/home_video_photo_1774871892.webp"
+        poster="/media/cinematic/home_video_photo.webp"
         class="absolute inset-0 w-full h-full object-cover opacity-60 transition-opacity duration-700"
       >
-        <source src="https://static.lineadecor.com/public/uploads/videos/home_video_1750227283.mp4" type="video/mp4" />
+        <source src="/media/cinematic/home_video.mp4" type="video/mp4" />
       </video>
       <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-stone-950/30"></div>
 
@@ -293,7 +300,7 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 2. ÖNE ÇIKAN MODEL SPOTLIGHT (LINEADECOR SECTION 1 - ELIA BENZERİ) -->
+    <!-- 2. ÖNE ÇIKAN MODEL SPOTLİGHT (ELİA SERİSİ) -->
     <!-- ================================================================= -->
     <section class="py-20 sm:py-28 bg-white border-b border-stone-100" id="elia-spotlight">
       <div class="max-w-7xl mx-auto px-4 sm:px-8">
@@ -334,7 +341,7 @@
           <div class="lg:col-span-7">
             <div class="relative overflow-hidden group">
               <img 
-                src="https://static.lineadecor.com/public/uploads/appointment_bg_1781159970.jpg" 
+                src="/media/cinematic/elia_spotlight.jpg" 
                 alt="Elia Modern Mutfak Modeli" 
                 class="w-full h-[450px] sm:h-[550px] object-cover transition duration-700 group-hover:scale-105"
                 loading="lazy"
@@ -352,7 +359,7 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 3. STRETCHER INTERACTIVE ACCORDION (LINEADECOR SECTION 3 BİREBİR) -->
+    <!-- 3. ETKİLEŞİMLİ GENİŞLEYEN KOLEKSİYON AKORDEONU -->
     <!-- ================================================================= -->
     <section class="py-20 sm:py-28 bg-[#141414] text-white overflow-hidden" id="stretcher-section">
       <div class="max-w-7xl mx-auto px-4 sm:px-8 mb-12 text-center space-y-4">
@@ -371,7 +378,7 @@
           
           <!-- Stretcher 1: Modern Mutfak -->
           <div class="stretcher-box relative overflow-hidden group cursor-pointer transition-all duration-500 h-full bg-stone-900 border border-stone-800" data-model="modern">
-            <div class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105" style="background-image: url('https://static.lineadecor.com/public/uploads/service-mb-11.webp');"></div>
+            <div class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105" style="background-image: url('/media/cinematic/modern_mutfak.webp');"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/30 to-transparent"></div>
             <div class="absolute bottom-8 left-8 right-8 space-y-2">
               <span class="text-[11px] font-bold uppercase tracking-widest text-stone-300">01 / KOLEKSİYON</span>
@@ -385,7 +392,7 @@
 
           <!-- Stretcher 2: Klasik & Country Mutfak -->
           <div class="stretcher-box relative overflow-hidden group cursor-pointer transition-all duration-500 h-full bg-stone-900 border border-stone-800" data-model="klasik">
-            <div class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105" style="background-image: url('https://static.lineadecor.com/public/uploads/service-mb-12.webp');"></div>
+            <div class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105" style="background-image: url('/media/cinematic/klasik_mutfak.webp');"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/30 to-transparent"></div>
             <div class="absolute bottom-8 left-8 right-8 space-y-2">
               <span class="text-[11px] font-bold uppercase tracking-widest text-stone-300">02 / KOLEKSİYON</span>
@@ -399,7 +406,7 @@
 
           <!-- Stretcher 3: Yaşam Alanları & Life -->
           <div class="stretcher-box relative overflow-hidden group cursor-pointer transition-all duration-500 h-full bg-stone-900 border border-stone-800" data-model="life">
-            <div class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105" style="background-image: url('https://static.lineadecor.com/public/uploads/service-mb-14.webp');"></div>
+            <div class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105" style="background-image: url('/media/cinematic/life_alanlar.webp');"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/30 to-transparent"></div>
             <div class="absolute bottom-8 left-8 right-8 space-y-2">
               <span class="text-[11px] font-bold uppercase tracking-widest text-stone-300">03 / KOLEKSİYON</span>
@@ -431,20 +438,20 @@
             </p>
           </div>
           <!-- Kategori Filtre Butonları -->
-          <div class="flex flex-wrap items-center gap-2" id="lineaFilterTabs">
-            <button type="button" data-filter="all" class="linea-filter-btn active px-4 py-2 border border-stone-900 bg-stone-900 text-white text-xs font-bold uppercase tracking-wider transition">Tümü</button>
-            <button type="button" data-filter="modern" class="linea-filter-btn px-4 py-2 border border-stone-300 bg-white text-stone-800 text-xs font-bold uppercase tracking-wider hover:border-stone-900 transition">Modern &amp; Gola</button>
-            <button type="button" data-filter="country" class="linea-filter-btn px-4 py-2 border border-stone-300 bg-white text-stone-800 text-xs font-bold uppercase tracking-wider hover:border-stone-900 transition">Country &amp; Çıtalı</button>
-            <button type="button" data-filter="ada" class="linea-filter-btn px-4 py-2 border border-stone-300 bg-white text-stone-800 text-xs font-bold uppercase tracking-wider hover:border-stone-900 transition">Ada Mutfaklar</button>
-            <button type="button" data-filter="banyo" class="linea-filter-btn px-4 py-2 border border-stone-300 bg-white text-stone-800 text-xs font-bold uppercase tracking-wider hover:border-stone-900 transition">Banyo Tasarımı</button>
+          <div class="flex flex-wrap items-center gap-2" id="modelFilterTabs">
+            <button type="button" data-filter="all" class="model-filter-btn active px-4 py-2 border border-stone-900 bg-stone-900 text-white text-xs font-bold uppercase tracking-wider transition">Tümü</button>
+            <button type="button" data-filter="modern" class="model-filter-btn px-4 py-2 border border-stone-300 bg-white text-stone-800 text-xs font-bold uppercase tracking-wider hover:border-stone-900 transition">Modern &amp; Gola</button>
+            <button type="button" data-filter="country" class="model-filter-btn px-4 py-2 border border-stone-300 bg-white text-stone-800 text-xs font-bold uppercase tracking-wider hover:border-stone-900 transition">Country &amp; Çıtalı</button>
+            <button type="button" data-filter="ada" class="model-filter-btn px-4 py-2 border border-stone-300 bg-white text-stone-800 text-xs font-bold uppercase tracking-wider hover:border-stone-900 transition">Ada Mutfaklar</button>
+            <button type="button" data-filter="banyo" class="model-filter-btn px-4 py-2 border border-stone-300 bg-white text-stone-800 text-xs font-bold uppercase tracking-wider hover:border-stone-900 transition">Banyo Tasarımı</button>
           </div>
         </div>
 
         <!-- 8 Elit Model Kartı Grid'i (Tıklanabilir, Fiyat & Malzeme Bilgisi Veren) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="lineaModelsGrid">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="modelPortfolioGrid">
           
           <!-- MODEL 1 -->
-          <div class="linea-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="modern ada" data-title="Mavişehir Akrilik Ada Mutfak" data-specs="1. Sınıf Çizilmez Akrilik • Çimstone Calacatta Kuvars • Blum Tandembox Ray" data-img="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80">
+          <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="modern ada" data-title="Mavişehir Akrilik Ada Mutfak" data-specs="1. Sınıf Çizilmez Akrilik • Çimstone Calacatta Kuvars • Blum Tandembox Ray" data-img="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80">
             <div class="h-64 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Mavişehir Akrilik Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
               <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Modern Ada</span>
@@ -460,7 +467,7 @@
           </div>
 
           <!-- MODEL 2 -->
-          <div class="linea-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="country" data-title="Urla Taş Ev Country Mutfak" data-specs="CNC Oymalı İpek Mat Lake • Masif Meşe Tezgâh • Porselen Çift Eviye" data-img="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80">
+          <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="country" data-title="Urla Taş Ev Country Mutfak" data-specs="CNC Oymalı İpek Mat Lake • Masif Meşe Tezgâh • Porselen Çift Eviye" data-img="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80">
             <div class="h-64 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" alt="Urla Taş Ev Country Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
               <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Country Lake</span>
@@ -476,7 +483,7 @@
           </div>
 
           <!-- MODEL 3 -->
-          <div class="linea-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="modern" data-title="Bornova Gola Kulpsuz Minimalist Mutfak" data-specs="Alüminyum Gola Profil • Laminam Porselen Tezgâh • Parmak İzi Bırakmaz Yüzey" data-img="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80">
+          <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="modern" data-title="Bornova Gola Kulpsuz Minimalist Mutfak" data-specs="Alüminyum Gola Profil • Laminam Porselen Tezgâh • Parmak İzi Bırakmaz Yüzey" data-img="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80">
             <div class="h-64 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80" alt="Bornova Gola Kulpsuz Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
               <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Gola Kulpsuz</span>
@@ -492,7 +499,7 @@
           </div>
 
           <!-- MODEL 4 -->
-          <div class="linea-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="country" data-title="Göztepe Neoklasik Çıtalı Mutfak" data-specs="Zarif İtalyan Çıta Profili • Mat Kaşmir Lake • Belenco Kuvars" data-img="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80">
+          <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="country" data-title="Göztepe Neoklasik Çıtalı Mutfak" data-specs="Zarif İtalyan Çıta Profili • Mat Kaşmir Lake • Belenco Kuvars" data-img="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80">
             <div class="h-64 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Göztepe Neoklasik Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
               <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Neoklasik</span>
@@ -508,7 +515,7 @@
           </div>
 
           <!-- MODEL 5 -->
-          <div class="linea-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="ada modern" data-title="Çeşme Villa Porselen Monoblok Mutfak" data-specs="12mm Laminam Porselen Tezgah • Doğal Meşe Kaplama • Gizli Kahve Köşesi" data-img="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=80">
+          <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="ada modern" data-title="Çeşme Villa Porselen Monoblok Mutfak" data-specs="12mm Laminam Porselen Tezgah • Doğal Meşe Kaplama • Gizli Kahve Köşesi" data-img="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=80">
             <div class="h-64 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=80" alt="Çeşme Villa Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
               <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Villa Koleksiyonu</span>
@@ -524,7 +531,7 @@
           </div>
 
           <!-- MODEL 6 -->
-          <div class="linea-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="modern" data-title="Alsancak Akıllı Fonksiyonel Şehir Mutfağı" data-specs="Ölü Alan Bırakmayan Köşe Kiler • İpek Mat Antrasit • LED Kanal Aydınlatma" data-img="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80">
+          <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="modern" data-title="Alsancak Akıllı Fonksiyonel Şehir Mutfağı" data-specs="Ölü Alan Bırakmayan Köşe Kiler • İpek Mat Antrasit • LED Kanal Aydınlatma" data-img="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80">
             <div class="h-64 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80" alt="Alsancak Akıllı Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
               <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Şehir Mutfağı</span>
@@ -540,7 +547,7 @@
           </div>
 
           <!-- MODEL 7 (BANYO) -->
-          <div class="linea-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="banyo" data-title="Bostanlı Modern Lüks Banyo &amp; Lake Dolap" data-specs="60x120 Rektifiyeli Granit Seramik • Geberit Gömme Rezervuar • LED Aynalı Lake Dolap" data-img="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80">
+          <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="banyo" data-title="Bostanlı Modern Lüks Banyo &amp; Lake Dolap" data-specs="60x120 Rektifiyeli Granit Seramik • Geberit Gömme Rezervuar • LED Aynalı Lake Dolap" data-img="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80">
             <div class="h-64 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80" alt="Bostanlı Modern Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
               <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Banyo Koleksiyonu</span>
@@ -556,7 +563,7 @@
           </div>
 
           <!-- MODEL 8 (BANYO) -->
-          <div class="linea-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="banyo" data-title="Karşıyaka Doğal Taş Ahşap Banyo Tasarımı" data-specs="Masif Teak Ahşap Tezgah • Çanak Lavabo • İtalyan Sifon Sistemi" data-img="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80">
+          <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl" data-category="banyo" data-title="Karşıyaka Doğal Taş Ahşap Banyo Tasarımı" data-specs="Masif Teak Ahşap Tezgah • Çanak Lavabo • İtalyan Sifon Sistemi" data-img="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80">
             <div class="h-64 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Karşıyaka Ahşap Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
               <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Doğal Doku</span>
@@ -576,7 +583,7 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 5. PROJELENDİRME BAŞVURUSU (LINEADECOR SECTION 4 BİREBİR)         -->
+    <!-- 5. MİMARİ PROJELENDİRME VE 3D KEŞİF BAŞVURUSU         -->
     <!-- ================================================================= -->
     <section class="py-20 sm:py-28 bg-white border-t border-stone-200" id="projelendirme-basvuru">
       <div class="max-w-7xl mx-auto px-4 sm:px-8">
@@ -593,7 +600,7 @@
               Mutfak projelendirme sürecimiz, başvuru formunun doldurulup gönderilmesiyle başlar. Kısa süre içinde mimari tasarım ekibimiz sizinle iletişime geçer. Yerinde ölçü, bütçelendirme, 3D çizim ve malzeme numunesi sunumu İzmir içi tamamen ücretsizdir.
             </p>
 
-            <form id="lineaProjectForm" class="space-y-4 pt-2">
+            <form id="customProjectForm" class="space-y-4 pt-2">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Adınız Soyadınız *</label>
@@ -638,11 +645,11 @@
             </form>
           </div>
 
-          <!-- Sağ Görsel (Lineadecor Section 4 Görseli) -->
+          <!-- Mimari Projelendirme Görseli -->
           <div class="lg:col-span-6">
             <div class="relative overflow-hidden group">
               <img 
-                src="https://static.lineadecor.com/public/uploads/newsletter_bg_1736944979.webp" 
+                src="/media/cinematic/projelendirme_bg.webp" 
                 alt="Mutfak Projelendirme Başvurusu" 
                 class="w-full h-[450px] sm:h-[550px] object-cover transition duration-700 group-hover:scale-105"
                 loading="lazy"
@@ -657,7 +664,7 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 6. MUTFAĞINI TASARLA VİTRİNİ (LINEADECOR SECTION 5 BİREBİR)        -->
+    <!-- 6. MUTFAĞINI TASARLA VİTRİN ALANI        -->
     <!-- ================================================================= -->
     <section class="py-20 sm:py-28 bg-[#F5F3EF]" id="mutfagini-tasarla">
       <div class="max-w-7xl mx-auto px-4 sm:px-8">
@@ -667,7 +674,7 @@
           <div class="lg:col-span-6 order-2 lg:order-1">
             <div class="relative overflow-hidden group">
               <img 
-                src="https://static.lineadecor.com/public/uploads/yeni_bg_1736944924.webp" 
+                src="/media/cinematic/tasarla_bg.webp" 
                 alt="Hayalinizdeki Mutfağı Tasarlayın" 
                 class="w-full h-[450px] sm:h-[520px] object-cover transition duration-700 group-hover:scale-105"
                 loading="lazy"
@@ -702,7 +709,7 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 7. AKSESUARLAR & AKILLI KİLER (LINEADECOR SECTION 7 BİREBİR)       -->
+    <!-- 7. AKSESUARLAR VE AKILLI İÇ MEKANİZMALAR       -->
     <!-- ================================================================= -->
     <section class="py-20 sm:py-28 bg-white" id="malzeme-atolye">
       <div class="max-w-7xl mx-auto px-4 sm:px-8">
@@ -736,11 +743,11 @@
             </div>
           </div>
 
-          <!-- Sağ Görsel (Lineadecor Section 7 Görseli) -->
+          <!-- Aksesuar ve Mekanizma Görseli -->
           <div class="lg:col-span-6">
             <div class="relative overflow-hidden group">
               <img 
-                src="https://static.lineadecor.com/public/uploads/yeni_bg3_1730973188.webp" 
+                src="/media/cinematic/aksesuar_bg.webp" 
                 alt="Aksesuarlar ve Mutfak Mekanizmaları" 
                 class="w-full h-[450px] sm:h-[550px] object-cover transition duration-700 group-hover:scale-105"
                 loading="lazy"
@@ -814,7 +821,7 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 9. LINEADECOR TARZI GÜÇLÜ SEO & KURUMSAL METİN BLOĞU              -->
+    <!-- 9. İZMİR MUTFAK KURUMSAL MİMARİ VE UZMANLIK METNİ              -->
     <!-- ================================================================= -->
     <section class="py-16 sm:py-20 bg-white border-t border-stone-200 text-stone-700 text-xs sm:text-sm leading-relaxed">
       <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
@@ -833,7 +840,7 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 10. LINEADECOR STYLE ELITE FOOTER                                 -->
+    <!-- 10. KURUMSAL VE YASAL ALT BİLGİ ALANI                                 -->
     <!-- ================================================================= -->
     <footer class="bg-stone-950 text-stone-400 text-xs py-16 px-4 sm:px-8 border-t border-stone-900" id="footer">
       <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-stone-800 pb-12 mb-10">
@@ -3508,7 +3515,7 @@
     });
 
 
-    // Lineadecor Klon Etkileşim Scriptleri (Mobil Menü, Kategori Filtreleme, Form & Stretcher)
+    // Mimari Koleksiyon ve Etkileşim Scriptleri (Mobil Menü, Kategori Filtreleme, Form & Stretcher)
     document.addEventListener('DOMContentLoaded', () => {
       // 1. Mobil Menü Aç/Kapa
       const btnToggleMobile = document.getElementById('btnToggleMobileMenu');
@@ -3518,8 +3525,8 @@
       });
 
       // 2. Modeller Kategori Filtresi
-      const filterBtns = document.querySelectorAll('.linea-filter-btn');
-      const modelCards = document.querySelectorAll('.linea-card');
+      const filterBtns = document.querySelectorAll('.model-filter-btn');
+      const modelCards = document.querySelectorAll('.model-portfolio-card');
 
       filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -3548,7 +3555,7 @@
       stretcherBoxes.forEach(box => {
         box.addEventListener('click', () => {
           const modelType = box.getAttribute('data-model');
-          const targetBtn = document.querySelector(`.linea-filter-btn[data-filter="${modelType}"]`);
+          const targetBtn = document.querySelector(`.model-filter-btn[data-filter="${modelType}"]`);
           if (targetBtn) targetBtn.click();
           document.getElementById('modeller')?.scrollIntoView({ behavior: 'smooth' });
         });
@@ -3565,7 +3572,7 @@
       });
 
       // 5. Projelendirme Formu Submit
-      const pForm = document.getElementById('lineaProjectForm');
+      const pForm = document.getElementById('customProjectForm');
       const pFeedback = document.getElementById('lpFeedback');
       pForm?.addEventListener('submit', (e) => {
         e.preventDefault();
