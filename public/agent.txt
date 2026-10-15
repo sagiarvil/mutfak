@@ -1,0 +1,8 @@
+# Agent Protocol Matrix — İzmir Mutfak & Banyo
+Agent-Card: https://izmirmutfakbanyo.com.tr/.well-known/agent.json
+MCP-Endpoint: https://izmirmutfakbanyo.com.tr/mcp
+LLMS-Txt: https://izmirmutfakbanyo.com.tr/llms.txt
+WebSub-Hub: https://pubsubhubbub.appspot.com/
+IndexNow: https://izmirmutfakbanyo.com.tr/9d980417475ac56c8ad72ef2c743e1e5.txt
+Primary-Contact: info@izmirmutfakbanyo.com.tr
+Phone: +905393333303

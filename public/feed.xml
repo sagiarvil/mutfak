@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>İzmir Mutfak &amp; Banyo — Özel İmalat &amp; Komple Tadilat</title>
+    <link>https://izmirmutfakbanyo.com.tr/</link>
+    <description>İzmir genelinde birinci sınıf özel imalat mutfak dolapları, lüks banyo yenileme ve anahtar teslim ev tadilatı.</description>
+    <language>tr-TR</language>
+    <lastBuildDate>Fri, 16 Oct 2026 00:10:00 +0300</lastBuildDate>
+    <atom:link href="https://izmirmutfakbanyo.com.tr/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026 Özel İmalat Mutfak Dolabı Koleksiyonu</title>
+      <link>https://izmirmutfakbanyo.com.tr/mutfak-dolabi/</link>
+      <guid>https://izmirmutfakbanyo.com.tr/mutfak-dolabi/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:10:00 +0300</pubDate>
+      <description>İpek mat lake, çizilmez akrilik ve doğal meşe kapaklarla hazırlanan yeni nesil mutfak dolapları.</description>
+    </item>
+    <item>
+      <title>Garantili Banyo Tadilatı ve Su İzolasyonu Rehberi</title>
+      <link>https://izmirmutfakbanyo.com.tr/banyo-tadilati/</link>
+      <guid>https://izmirmutfakbanyo.com.tr/banyo-tadilati/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:10:00 +0300</pubDate>
+      <description>Çift kat sürme izolasyon ve Geberit gömme rezervuarlarla anahtar teslim banyo yenileme.</description>
+    </item>
+    <item>
+      <title>Anahtar Teslim Komple Daire Yenileme Aşamaları</title>
+      <link>https://izmirmutfakbanyo.com.tr/ev-tadilati/</link>
+      <guid>https://izmirmutfakbanyo.com.tr/ev-tadilati/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:10:00 +0300</pubDate>
+      <description>Kırım, tesisat, elektrik, alçı boya ve zemin parke dahil 5 cerrahi adımda ev tadilatı.</description>
+    </item>
+  </channel>
+</rss>

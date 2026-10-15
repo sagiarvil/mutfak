@@ -1,5 +1,68 @@
+# =====================================================================
+# İZMİR MUTFAK BANYO — ROBOTS DISCOVERY MATRIX (MANDATE V9.1 ENTERPRISE)
+# =====================================================================
 User-agent: *
 Allow: /
+Disallow: /404.html
 Disallow: /404/
 
+# AI Search & RAG Crawlers
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms/
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms/
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /media/
+Allow: /favicon*
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemaps & Feeds
 Sitemap: https://izmirmutfakbanyo.com.tr/sitemap-index.xml
+Sitemap: https://izmirmutfakbanyo.com.tr/sitemap-0.xml
+
+# LLMS & Agents
+# LLMs-Txt: https://izmirmutfakbanyo.com.tr/llms.txt
+# Agent-Txt: https://izmirmutfakbanyo.com.tr/agent.txt

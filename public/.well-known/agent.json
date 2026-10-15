@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "AgentCard",
+  "name": "İzmir Mutfak & Banyo AI Agent",
+  "url": "https://izmirmutfakbanyo.com.tr",
+  "description": "İzmir özel mutfak, banyo ve ev tadilatı için 3D keşif, malzeme danışmanlığı ve maliyet hesaplama aracı.",
+  "capabilities": [
+    "kitchen_design_quote",
+    "bathroom_renovation_calc",
+    "free_discovery_appointment"
+  ],
+  "endpoints": {
+    "mcp": "https://izmirmutfakbanyo.com.tr/mcp",
+    "whatsapp": "https://wa.me/905393333303"
+  }
+}

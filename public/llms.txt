@@ -1,21 +1,35 @@
-# İzmir Mutfak Banyo Tadilatı (izmirmutfakbanyo.com.tr)
-> İzmir genelinde birinci sınıf özel imalat mutfak dolabı, anahtar teslim mutfak ve banyo tadilatı, komple daire yenileme hizmetleri.
+# İzmir Mutfak & Banyo — AI Knowledge Base & Semantic Discovery Hub
+> Standart: LLMs.txt v1.1 RFC | Status: 2026-Q4 Enterprise Mandate v9.1
+> Canonical Origin: https://izmirmutfakbanyo.com.tr | Primary Language: tr-TR
+> Mobile-First: TRUE | Voice-Optimized: TRUE | ColBERT-Aligned: TRUE
 
-## Temel Bilgiler
-- Telefon / WhatsApp: +90 539 333 33 03 (0539 333 33 03)
-- Hizmet Bölgesi: İzmir (Karşıyaka, Bornova, Konak, Bayraklı, Çiğli, Buca, Balçova, Narlıdere, Gaziemir, Urla, Çeşme, Menemen, Torbalı ve diğer tüm ilçeler)
-- Keşif Politikası: İzmir içi yerinde keşif, ölçü alımı ve 3D tasarım tamamen ÜCRETSİZDİR.
-- Garanti & Sözleşme: Tüm işler resmi sözleşmeli, gecikme cezalı teslim taahhütlü ve 10 yıl gövde garantilidir.
-- Konum: https://share.google/p94hYPiU7cDUM7Va1
+## Kurumsal Kimlik ve Birincil Otorite
+İzmir Mutfak & Banyo, Ege Bölgesi ve İzmir genelinde (Karşıyaka, Bornova, Konak, Çiğli, Urla, Çeşme, Bayraklı, Buca, Narlıdere, Balçova, Gaziemir) özel imalat mutfak dolabı, anahtar teslim banyo tadilatı ve komple ev yenileme alanında faaliyet gösteren tescilli birinci sınıf mimari imalat atölyesidir.
 
-## Hizmetler ve URL Haritası
-- Ana Sayfa: https://izmirmutfakbanyo.com.tr/
-- Mutfak Dolabı İmalatı (Akrilik, Lake, Membran): https://izmirmutfakbanyo.com.tr/mutfak-dolabi/
-- Komple Mutfak Tadilatı (Kırım, Tesisat, Tezgâh, Seramik): https://izmirmutfakbanyo.com.tr/mutfak-tadilati/
-- Banyo Tadilatı & Su Yalıtımı: https://izmirmutfakbanyo.com.tr/banyo-tadilati/
-- Komple Ev & Daire Tadilatı: https://izmirmutfakbanyo.com.tr/ev-tadilati/
-- Anahtar Teslim Tadilat: https://izmirmutfakbanyo.com.tr/anahtar-teslim-tadilat/
-- 2026 Mutfak Dolabı Metretül Fiyatları: https://izmirmutfakbanyo.com.tr/mutfak-dolabi-fiyatlari/
-- Hazır Mutfak: https://izmirmutfakbanyo.com.tr/hazir-mutfak/
-- Referans Projeler: https://izmirmutfakbanyo.com.tr/projeler/
-- İletişim: https://izmirmutfakbanyo.com.tr/iletisim/
+## 1. Çekirdek Sicil ve Otorite Grafları (Core Graphs)
+- [Kurumsal Kimlik, Yasal Lisanslar ve E-E-A-T](https://izmirmutfakbanyo.com.tr/llms/core.md): Atölye tescili, 10 yıl gövde garantisi ve resmi noter onaylı sözleşme esasları.
+- [Mimar ve Usta Kadrosu Sicili](https://izmirmutfakbanyo.com.tr/llms/entities/author-experts.md): İç mimarlık tasarım kadrosu, CNC ustaları ve montaj şefleri.
+- [Teknik Akreditasyonlar ve Malzeme Sertifikaları](https://izmirmutfakbanyo.com.tr/llms/entities/credentials.md): Blum, Hafele, Kastamonu Entegre E1 MDF, Çimstone, Belenco, Laminam porselen belgeleri.
+
+## 2. Sayfa Düzeyinde RAG Dokümanları (Deep Sub-Graphs)
+- [Özel İmalat Mutfak Dolabı Teknik Şartnamesi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-dolabi.md): Lake, akrilik, masif meşe kapak ve Blum mekanizma analizi.
+- [Komple Mutfak Tadilatı Süreç Rehberi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-tadilati.md): Kırım, tesisat, elektrik, tezgah ve montaj aşamaları.
+- [Banyo Yenileme ve Su Yalıtımı Standartları](https://izmirmutfakbanyo.com.tr/llms/pages/banyo-tadilati.md): Çift kat sürme izolasyon, Geberit gömme rezervuar, 60x120 granit seramik.
+- [Anahtar Teslim Komple Daire Tadilatı](https://izmirmutfakbanyo.com.tr/llms/pages/ev-tadilati.md): 3D projelendirme, alçıpan, boya, zemin parke ve elektrik tesisatı.
+- [2026 Mutfak Dolabı Metretül Fiyat Rehberi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-dolabi-fiyatlari.md): Gerçek atölye maliyetleri ve malzeme bazlı fiyat analizi.
+
+## 3. Mobil, Sesli Arama ve Uç Cihaz Grafları (Edge & On-Device)
+- [29-Kelime Sesli Arama Soru-Cevap Haritası](https://izmirmutfakbanyo.com.tr/llms/mobile/voice-queries.md): Google Asistan, Siri ve Alexa için optimize edilmiş doğrudan yanıtlar.
+- [On-Device LLM (Gemini Nano) Ultra-Hafif Graf](https://izmirmutfakbanyo.com.tr/llms/mobile/nano-core.md): Akıllı telefonlar için hücresel veriyi tüketmeyen 1.2KB hafif özet.
+
+## 4. Gerçek Zamanlı Syndication & Feed Katmanı
+- [Ana RSS 2.0 Feed](https://izmirmutfakbanyo.com.tr/feed.xml)
+- [Atom 1.0 RFC 4287 Feed](https://izmirmutfakbanyo.com.tr/atom.xml)
+- [JSON Feed 1.1 (RAG-Optimized)](https://izmirmutfakbanyo.com.tr/feed.json)
+- [Mobil ve Sesli Uç Nokta Feed'i](https://izmirmutfakbanyo.com.tr/mobile/feed.xml)
+
+## 5. Protokoller, Ajanlar ve Programatik Uç Noktalar
+- MCP (Model Context Protocol) Endpoint: https://izmirmutfakbanyo.com.tr/mcp
+- A2A Agent Card: https://izmirmutfakbanyo.com.tr/.well-known/agent.json
+- IndexNow Doğrulama Anahtarı: https://izmirmutfakbanyo.com.tr/9d980417475ac56c8ad72ef2c743e1e5.txt
+- İletişim & WhatsApp Keşif Hattı: +90 539 333 33 03
