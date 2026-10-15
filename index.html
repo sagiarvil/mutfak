@@ -153,7 +153,7 @@
 <body class="min-h-screen flex flex-col overflow-x-hidden">
 
   <!-- ===================================================================== -->
-  <!-- MODE 1: HOMIFY "ÖNCE & SONRA" + "ODALAR/MUTFAK" + NÖROPAZARLAMA VİTRİNİ -->
+  <!-- MODE 1: HOMIFY "ÖNCE & SONRA" + "ODALAR/MUTFAK" + MİMARİ VİTRİN -->
   <!-- ===================================================================== -->
   <div id="platformWebsiteView" class="flex-1 flex flex-col">
 
@@ -242,7 +242,7 @@
             <span>Malzeme Standartları &amp; Atölye</span> <span>→</span>
           </a>
           <a href="#mimari-surec" class="py-1.5 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
-            <span>Nasıl Çalışıyoruz? (5 Cerrahi Adım)</span> <span>→</span>
+            <span>Nasıl Çalışıyoruz? (5 Planlı Adım)</span> <span>→</span>
           </a>
           <a href="#musteri-deneyimleri" class="py-1.5 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
             <span>Müşteri Yorumları (4.87 / 5.0)</span> <span>★</span>
@@ -930,7 +930,7 @@
         <div class="max-w-3xl space-y-4">
           <span class="text-xs font-extrabold uppercase tracking-[0.25em] text-emerald-400 block">ŞEFFAF, GÜVENİLİR VE RESMİ SÖZLEŞMELİ</span>
           <h2 class="text-3xl sm:text-5xl font-light tracking-tight leading-tight" style="font-family: 'Playfair Display', Georgia, serif;">
-            Hayalinizdeki Mutfağa ve Banyoya <br /><span class="font-normal italic">5 Cerrahi Adımda Ulaşın</span>
+            Hayalinizdeki Mutfağa ve Banyoya <br /><span class="font-normal italic">5 Şeffaf Adımda Ulaşın</span>
           </h2>
           <div class="w-12 h-0.5 bg-emerald-500"></div>
           <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed">
@@ -1645,7 +1645,7 @@
                   <canvas id="agingComparisonChart"></canvas>
                 </div>
                 <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200/80 text-xs space-y-1">
-                  <div class="font-bold text-emerald-900">💡 Vade Uyumu Teşhisi (AI Önerisi)</div>
+                  <div class="font-bold text-emerald-900">Nakit Akışı &amp; Vade Uyumu Analizi</div>
                   <p class="text-[11px] text-emerald-800 leading-relaxed">
                     <strong>0-7 Gün</strong> ve <strong>8-15 Gün</strong> dilimlerinde müşteri hakediş girişleri borç çıkışlarını <strong>+108.150 ₺</strong> aşıyor. Sadece <strong>16 Ekim Yarın</strong> sabahı saat 11:00 çek takası için 75.000 ₺ provizyon kilitlemeniz yeterlidir.
                   </p>
@@ -2744,8 +2744,8 @@
         render: () => `<p class="text-xs text-slate-600">Ege Orman Ürünleri (31.500 ₺), Batı Boya & Alçı (38.000 ₺) ve İzElektrik Toptan (30.500 ₺) hesaplarında erken kapama ile %8 (8.000 ₺) nakit iskontosu fırsatı mevcuttur.</p>`
       },
       ai: {
-        badge: '9. ÇEK & KARAR DESTEK AI',
-        title: 'Yapay Zeka Finansal Karar Destek Önerileri',
+        badge: '9. FİNANSAL ANALİZ &amp; NAKİT AKIŞI',
+        title: 'Finansal Karar Destek &amp; Bütçe Planlaması',
         desc: 'İzmir Mutfak Banyo için 15 Ekim 2026 tarihli 3 somut optimizasyon tavsiyesi:',
         render: () => `
           <ul class="space-y-2.5 text-xs text-slate-700">
@@ -3060,7 +3060,7 @@
     });
 
     // =========================================================================
-    // PUBLIC WEBSITE INTERACTIVE MODULES (NEUROMARKETING, HOMIFY ROOMS, SLIDER, CONFIGURATOR, CALCULATOR)
+    // PUBLIC WEBSITE INTERACTIVE MODULES (HOMIFY ROOMS, SLIDER, CONFIGURATOR, CALCULATOR)
     // =========================================================================
     const webState = {
       space: 'ada',
@@ -3298,7 +3298,7 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
-      // Neuromarketing Live Theme Atmosphere Switcher
+      // Live Theme Palette Switcher
       document.querySelectorAll('.nm-theme-btn').forEach(btn => {
         btn.addEventListener('click', () => {
           const t = btn.getAttribute('data-nm-theme');
@@ -3307,17 +3307,17 @@
             document.documentElement.style.setProperty('--nm-bg-ivory', '#FDF9FC');
             document.documentElement.style.setProperty('--nm-cta-coral', '#9D2B6B');
             if (hero) hero.style.background = 'linear-gradient(135deg, #2D192B 0%, #582C52 55%, #2C4A3E 100%)';
-            showToast('Nöro-Mod: Asil Mürdüm & İpek Krem (Lüks ve Misafir Prestiji Algısı) aktif edildi.');
+            showToast('Renk Teması: Asil Mürdüm &amp; İpek Krem seçildi.');
           } else if (t === 'terracotta') {
             document.documentElement.style.setProperty('--nm-bg-ivory', '#FFF9F5');
             document.documentElement.style.setProperty('--nm-cta-coral', '#C85A32');
             if (hero) hero.style.background = 'linear-gradient(135deg, #3B2318 0%, #7C3A23 55%, #2C4A3E 100%)';
-            showToast('Nöro-Mod: Sıcak Mercan & Doğal Meşe (Samimi Aile Mutfağı Algısı) aktif edildi.');
+            showToast('Renk Teması: Sıcak Mercan &amp; Doğal Meşe seçildi.');
           } else {
             document.documentElement.style.setProperty('--nm-bg-ivory', '#FAF7F2');
             document.documentElement.style.setProperty('--nm-cta-coral', '#C85A32');
             if (hero) hero.style.background = 'linear-gradient(135deg, #1E352F 0%, #2C5E4F 52%, #3B2838 100%)';
-            showToast('Nöro-Mod: Ferah Adaçayı & Kaşmir (Huzur ve Hijyen Algısı) aktif edildi.');
+            showToast('Renk Teması: Ferah Adaçayı &amp; Kaşmir seçildi.');
           }
         });
       });
