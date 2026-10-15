@@ -1,0 +1,233 @@
+---
+import { siteConfig } from "../data/siteConfig";
+import { buildWhatsAppUrl, buildTelUrl } from "../utils/whatsapp";
+
+const currentPath = Astro.url.pathname;
+const isHome = currentPath === "/" || currentPath === "";
+---
+
+<header class="site-header">
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-info">
+        <span class="location-badge">📍 İzmir Geneli Ücretsiz Keşif</span>
+        <span class="divider">|</span>
+        <a href={siteConfig.googleMapsUrl} target="_blank" rel="noopener noreferrer" class="maps-link">
+          🗺️ Haritada Gör
+        </a>
+      </div>
+      <div class="top-contact">
+        <a href={buildTelUrl()} class="top-phone">
+          📞 <strong>{siteConfig.phoneFormatted}</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="Ana Menü">
+    <div class="container nav-inner">
+      <a href="/" class="brand" aria-label="İzmir Mutfak Banyo Ana Sayfa">
+        <span class="brand-icon">🏠</span>
+        <span class="brand-text">
+          <strong class="brand-title">İZMİR MUTFAK BANYO</strong>
+          <span class="brand-subtitle">Özel İmalat & Anahtar Teslim Tadilat</span>
+        </span>
+      </a>
+
+      <!-- Mobil Menü Butonu (CSS tabanlı toggle) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menüyü Aç / Kapat">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="/" class={isHome ? "active" : ""}>Ana Sayfa</a></li>
+        <li><a href="/mutfak-dolabi/" class={currentPath.includes("mutfak-dolabi") && !currentPath.includes("fiyatlari") ? "active" : ""}>Mutfak Dolabı</a></li>
+        <li><a href="/mutfak-tadilati/" class={currentPath.includes("mutfak-tadilati") ? "active" : ""}>Mutfak Tadilatı</a></li>
+        <li><a href="/banyo-tadilati/" class={currentPath.includes("banyo-tadilati") ? "active" : ""}>Banyo Tadilatı</a></li>
+        <li><a href="/ev-tadilati/" class={currentPath.includes("ev-tadilati") ? "active" : ""}>Ev Tadilatı</a></li>
+        <li><a href="/mutfak-dolabi-fiyatlari/" class={currentPath.includes("fiyatlari") ? "active" : ""}>Fiyat Rehberi</a></li>
+        <li><a href="/iletisim/" class={currentPath.includes("iletisim") ? "active" : ""}>İletişim</a></li>
+        <li class="nav-cta-item">
+          <a href={buildWhatsAppUrl({ customMessage: "Merhaba, ücretsiz keşif ve fiyat teklifi almak istiyorum." })} 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-nav-wa"
+             aria-label="WhatsApp İle Hızlı Fiyat Al">
+            💬 WhatsApp Teklif Al
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  }
+  .top-bar {
+    background: #0f172a;
+    color: #e2e8f0;
+    font-size: 0.8125rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .top-bar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-info {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  .divider {
+    opacity: 0.4;
+  }
+  .maps-link {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .maps-link:hover {
+    color: #ffffff;
+  }
+  .top-phone {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .top-phone:hover {
+    color: #ffffff;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .main-nav {
+    background: #ffffff;
+  }
+  .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.85rem 1rem;
+    position: relative;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: #0f172a;
+  }
+  .brand-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .brand-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #0f172a;
+  }
+  .brand-subtitle {
+    font-size: 0.72rem;
+    color: #64748b;
+    font-weight: 500;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-toggle-label {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  .hamburger-line {
+    width: 24px;
+    height: 3px;
+    background: #0f172a;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.25rem;
+    align-items: center;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #334155;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    padding: 0.25rem 0;
+  }
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #0284c7;
+    border-bottom: 2px solid #0284c7;
+  }
+  .btn-nav-wa {
+    background: #25d366 !important;
+    color: #ffffff !important;
+    padding: 0.55rem 1rem !important;
+    border-radius: 9999px !important;
+    font-size: 0.875rem !important;
+    font-weight: 700 !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    border-bottom: none !important;
+    transition: transform 0.2s ease, background 0.2s ease !important;
+  }
+  .btn-nav-wa:hover {
+    background: #1eb954 !important;
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: 992px) {
+    .nav-toggle-label {
+      display: flex;
+    }
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      flex-direction: column;
+      padding: 1.5rem;
+      gap: 1rem;
+      border-top: 1px solid #e2e8f0;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .nav-toggle:checked ~ .nav-links {
+      display: flex;
+    }
+    .top-info .divider,
+    .top-info .maps-link {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,198 @@
+---
+import { siteConfig } from "../data/siteConfig";
+import { buildWhatsAppUrl } from "../utils/whatsapp";
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  service?: string;
+}
+
+const {
+  title = "İzmir Geneli Ücretsiz Keşif ve Fiyat Teklifi Alın",
+  subtitle = "İlçenizi ve ihtiyacınızı seçin, 15 dakika içinde WhatsApp üzerinden detaylı maliyet ve projelendirme bilgisi iletelim.",
+  service = "Mutfak & Banyo Tadilatı"
+} = Astro.props;
+
+const defaultUrl = buildWhatsAppUrl({ service });
+---
+
+<section class="cta-banner">
+  <div class="cta-card">
+    <div class="cta-header">
+      <span class="cta-badge">⚡ Hızlı WhatsApp Dönüşü</span>
+      <h2 class="cta-title">{title}</h2>
+      <p class="cta-subtitle">{subtitle}</p>
+    </div>
+
+    <form class="cta-form" action="https://wa.me/905393333303" method="GET" target="_blank" rel="noopener noreferrer">
+      <input type="hidden" name="phone" value={siteConfig.phoneRaw} />
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="district-select">Hizmet Bölgeniz (İzmir):</label>
+          <select id="district-select" name="district" class="form-control">
+            <option value="İzmir Geneli">Tüm İzmir İlçeleri</option>
+            {siteConfig.districts.map(d => (
+              <option value={d}>{d}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="service-select">İlgilendiğiniz Hizmet:</label>
+          <select id="service-select" name="service" class="form-control">
+            <option value={service}>{service}</option>
+            <option value="Özel İmalat Mutfak Dolabı">Mutfak Dolabı İmalatı</option>
+            <option value="Komple Mutfak Tadilatı">Mutfak Tadilatı</option>
+            <option value="Banyo Yenileme & Seramik">Banyo Tadilatı</option>
+            <option value="Komple Daire Tadilatı">Komple Ev Tadilatı</option>
+            <option value="Hazır Mutfak">Hazır Mutfak</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="cta-action">
+        <a id="cta-wa-btn" href={defaultUrl} target="_blank" rel="noopener noreferrer" class="btn-wa-action">
+          💬 WhatsApp ile Keşif Talebi Gönder
+        </a>
+        <span class="cta-microcopy">🔒 Kişisel bilgileriniz gizli tutulur, anında mesajlaşma başlar.</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+  const districtSelect = document.getElementById('district-select') as HTMLSelectElement | null;
+  const serviceSelect = document.getElementById('service-select') as HTMLSelectElement | null;
+  const waBtn = document.getElementById('cta-wa-btn') as HTMLAnchorElement | null;
+
+  function updateWaLink() {
+    if (!waBtn) return;
+    const district = districtSelect ? districtSelect.value : 'İzmir';
+    const srv = serviceSelect ? serviceSelect.value : 'Mutfak Banyo Tadilatı';
+    const text = `Merhaba, ${district} bölgesinde ${srv} hizmetiniz için ücretsiz keşif ve fiyat teklifi almak istiyorum.`;
+    waBtn.href = `https://wa.me/905393333303?text=${encodeURIComponent(text)}`;
+  }
+
+  districtSelect?.addEventListener('change', updateWaLink);
+  serviceSelect?.addEventListener('change', updateWaLink);
+</script>
+
+<style>
+  .cta-banner {
+    margin: 3.5rem auto;
+    max-width: 960px;
+    padding: 0 1rem;
+  }
+  .cta-card {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    color: #ffffff;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  .cta-badge {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+  }
+  .cta-title {
+    font-size: 1.85rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+    color: #f8fafc;
+  }
+  .cta-subtitle {
+    font-size: 1rem;
+    color: #94a3b8;
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.75rem;
+    text-align: left;
+  }
+  .form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #cbd5e1;
+  }
+  .form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    background: #0b1120;
+    color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  .form-control:focus {
+    border-color: #38bdf8;
+  }
+  .cta-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .btn-wa-action {
+    background: #25d366;
+    color: #ffffff;
+    padding: 1rem 2.25rem;
+    border-radius: 9999px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    transition: all 0.2s ease;
+  }
+  .btn-wa-action:hover {
+    background: #1eb954;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+  }
+  .cta-microcopy {
+    font-size: 0.78rem;
+    color: #64748b;
+  }
+
+  @media (max-width: 700px) {
+    .cta-card {
+      padding: 1.75rem 1.25rem;
+    }
+    .cta-title {
+      font-size: 1.45rem;
+    }
+    .form-row {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .btn-wa-action {
+      width: 100%;
+      justify-content: center;
+      padding: 0.9rem 1.25rem;
+      font-size: 0.95rem;
+    }
+  }
+</style>

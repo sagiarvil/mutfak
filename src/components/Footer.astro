@@ -1,0 +1,203 @@
+---
+import { siteConfig } from "../data/siteConfig";
+import { buildWhatsAppUrl, buildTelUrl } from "../utils/whatsapp";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container footer-grid">
+      <!-- Kolon 1: Kurumsal & Marka -->
+      <div class="footer-col">
+        <h3 class="footer-heading brand-title">İzmir Mutfak & Banyo</h3>
+        <p class="footer-desc">
+          İzmir genelinde birinci sınıf malzeme, özel ölçü üretim ve anahtar teslim şantiye yönetimiyle evinizi dönüştürüyoruz. Sürpriz maliyetsiz, resmi sözleşmeli tadilat garantisi.
+        </p>
+        <div class="footer-contact">
+          <p>📞 <strong>Telefon:</strong> <a href={buildTelUrl()}>{siteConfig.phoneFormatted}</a></p>
+          <p>💬 <strong>WhatsApp:</strong> <a href={buildWhatsAppUrl()} target="_blank" rel="noopener noreferrer">{siteConfig.phoneFormatted}</a></p>
+          <p>📍 <strong>Hizmet Bölgesi:</strong> İzmir (Tüm İlçeler)</p>
+          <p>🗺️ <strong>Konum:</strong> <a href={siteConfig.googleMapsUrl} target="_blank" rel="noopener noreferrer">Google Haritalarda Aç</a></p>
+        </div>
+      </div>
+
+      <!-- Kolon 2: Hizmetlerimiz -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Hizmetlerimiz</h4>
+        <ul class="footer-links">
+          <li><a href="/mutfak-dolabi/">Mutfak Dolabı İmalatı</a></li>
+          <li><a href="/mutfak-tadilati/">Komple Mutfak Tadilatı</a></li>
+          <li><a href="/banyo-tadilati/">Banyo Yenileme & Seramik</a></li>
+          <li><a href="/ev-tadilati/">Komple Ev & Daire Tadilatı</a></li>
+          <li><a href="/anahtar-teslim-tadilat/">Anahtar Teslim Tadilat</a></li>
+          <li><a href="/hazir-mutfak/">Hazır Mutfak Modelleri</a></li>
+          <li><a href="/mutfak-dolabi-fiyatlari/">2026 Mutfak Dolabı Fiyatları</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolon 3: İzmir Hizmet Bölgeleri -->
+      <div class="footer-col">
+        <h4 class="footer-heading">İzmir Hizmet Noktaları</h4>
+        <p class="district-info">Aşağıdaki tüm ilçelerde ücretsiz keşif ve montaj hizmeti veriyoruz:</p>
+        <div class="district-tags">
+          {siteConfig.districts.map(d => (
+            <a href={buildWhatsAppUrl({ district: d, service: "Tadilat Keşfi" })} 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="district-pill"
+               title={`${d} Mutfak Banyo Tadilatı Keşif Talebi`}>
+              {d}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p class="copyright">
+        © {currentYear} {siteConfig.domain} — Tüm hakları saklıdır. İzmir Mutfak Banyo Tadilat & Özel İmalat.
+      </p>
+      <div class="legal-links">
+        <span>Sözleşmeli Garanti</span>
+        <span class="sep">•</span>
+        <span>Sabit Fiyat Taahhüdü</span>
+        <span class="sep">•</span>
+        <span>Ücretsiz Keşif</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: #0b1120;
+    color: #94a3b8;
+    font-size: 0.875rem;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .footer-top {
+    padding: 3.5rem 0 2.5rem;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.3fr;
+    gap: 2.5rem;
+  }
+  .footer-heading {
+    color: #f8fafc;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+  }
+  .brand-title {
+    color: #ffffff;
+    font-size: 1.35rem;
+    font-weight: 800;
+  }
+  .footer-desc {
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    color: #cbd5e1;
+  }
+  .footer-contact p {
+    margin: 0.4rem 0;
+    line-height: 1.5;
+  }
+  .footer-contact a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .footer-contact a:hover {
+    text-decoration: underline;
+  }
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-links li {
+    margin-bottom: 0.65rem;
+  }
+  .footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+  }
+  .footer-links a:hover {
+    color: #38bdf8;
+    transform: translateX(3px);
+  }
+  .district-info {
+    font-size: 0.8125rem;
+    margin-bottom: 0.85rem;
+    color: #cbd5e1;
+  }
+  .district-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .district-pill {
+    background: rgba(255, 255, 255, 0.06);
+    color: #e2e8f0;
+    padding: 0.3rem 0.65rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+  }
+  .district-pill:hover {
+    background: #0284c7;
+    color: #ffffff;
+    border-color: #0284c7;
+  }
+  .footer-bottom {
+    background: #060913;
+    padding: 1.25rem 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.8125rem;
+  }
+  .footer-bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .copyright {
+    margin: 0;
+    color: #64748b;
+  }
+  .legal-links {
+    color: #64748b;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .sep {
+    opacity: 0.4;
+  }
+
+  @media (max-width: 900px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .footer-bottom-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>

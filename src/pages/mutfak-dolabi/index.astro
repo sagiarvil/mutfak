@@ -1,0 +1,259 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import WhatsAppCTA from "../../components/WhatsAppCTA.astro";
+import { siteConfig } from "../../data/siteConfig";
+import { buildWhatsAppUrl, buildTelUrl } from "../../utils/whatsapp";
+
+const seo = {
+  title: "İzmir Mutfak Dolabı İmalatı | Özel Ölçü Akrilik & Lake",
+  description: "İzmir'de birinci sınıf MDF gövde, Hafele/Blum frenli aksam ve özel ölçü akrilik, lake, membran mutfak dolabı imalatı. 3D projelendirme ve garantili montaj.",
+  canonical: "https://izmirmutfakbanyo.com.tr/mutfak-dolabi/",
+  serviceName: "Mutfak Dolabı İmalatı",
+  breadcrumbs: [
+    { name: "Mutfak Dolabı", url: "/mutfak-dolabi/" }
+  ]
+};
+---
+
+<Layout seo={seo} activeService="Mutfak Dolabı">
+  <div class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="/">Ana Sayfa</a>
+        <span class="sep">/</span>
+        <span class="current">Mutfak Dolabı</span>
+      </nav>
+      <h1 class="page-title">İzmir Özel İmalat Mutfak Dolabı & Akrilik / Lake Modeller</h1>
+      <p class="page-lead">İzmir'de birinci sınıf MDF gövde, Hafele/Blum frenli aksam ve özel ölçü akrilik, lake, membran mutfak dolabı imalatı. 3D projelendirme ve garantili montaj.</p>
+      <div class="page-actions">
+        <a href={buildWhatsAppUrl({ service: "Mutfak Dolabı" })} target="_blank" rel="noopener noreferrer" class="btn-wa">
+          💬 WhatsApp ile Keşif İste
+        </a>
+        <a href={buildTelUrl()} class="btn-call">
+          📞 ${siteConfig.phoneFormatted}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section class="page-content-section">
+    <div class="container content-container">
+      <div class="main-article prose">
+        
+      <h2>İzmir'de Özel Ölçü Mutfak Dolabı İmalatı</h2>
+      <p>Mutfak, bir evin en çok kullanılan ve en yüksek ergonomi gerektiren yaşam alanıdır. Standart modüler dolaplar çoğu zaman kolon, kiriş ve tesisat boşluklarında ölü alanlar bırakır. Atölyemizde ürettiğimiz özel ölçü mutfak dolaplarıyla mutfağınızın her santimetresini değerlendiriyoruz.</p>
+      
+      <h3>Hangi Kapak Modellerini Üretiyoruz?</h3>
+      <ul>
+        <li><strong>Akrilik Mutfak Dolabı:</strong> Çizilmeye dirençli, yüksek parlaklıkta pürüzsüz yüzey, kolay temizlik ve modern estetik.</li>
+        <li><strong>Lake Mutfak Dolabı:</strong> CNC desenli veya düz yüzey, mat ya da parlak sınırsız renk seçeneği, sararmaz poliüretan boya kalitesi.</li>
+        <li><strong>Membran (Termofoil) Kapak:</strong> Zengin ahşap ve mat doku alternatifleri, uygun bütçe ve uzun ömürlü kullanım.</li>
+        <li><strong>Masif & Doğal Ahşap Kaplama:</strong> Country ve klasik tarz mutfaklar için zamansız şıklık ve doğal doku.</li>
+      </ul>
+
+      <h3>Kullandığımız Aksam ve Gövde Kalitesi</h3>
+      <p>Tüm gövdelerde neme ve buhara dayanıklı %100 birinci kalite MDF Lam kullanıyoruz. Asla suntalam gövde kullanmıyoruz. Çekmece raylarında ve menteşelerde ömür boyu garantili Blum veya Hafele frenli (yavaş kapanır) sistemler tercih ediyoruz.</p>
+    
+      </div>
+
+      <aside class="sidebar">
+        <div class="sidebar-box">
+          <h3>Hızlı Fiyat & Keşif</h3>
+          <p>İzmir içi adresinize gelerek ölçü alıyor ve 3D çizim hazırlıyoruz.</p>
+          <a href={buildWhatsAppUrl({ service: "Mutfak Dolabı" })} target="_blank" rel="noopener noreferrer" class="btn-sidebar-wa">
+            WhatsApp Keşif Hattı
+          </a>
+        </div>
+
+        <div class="sidebar-box">
+          <h3>Diğer Hizmetlerimiz</h3>
+          <ul class="sidebar-links">
+            <li><a href="/mutfak-dolabi/">Mutfak Dolabı</a></li>
+            <li><a href="/mutfak-tadilati/">Mutfak Tadilatı</a></li>
+            <li><a href="/banyo-tadilati/">Banyo Tadilatı</a></li>
+            <li><a href="/ev-tadilati/">Komple Ev Tadilatı</a></li>
+            <li><a href="/mutfak-dolabi-fiyatlari/">Fiyat Rehberi</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <WhatsAppCTA 
+    title="Mutfak Dolabı İçin Fiyat ve Keşif Talebi Oluşturun"
+    subtitle="İzmir'in tüm ilçelerine 1 iş günü içinde ücretsiz keşif randevusu veriyoruz."
+    service="Mutfak Dolabı"
+  />
+</Layout>
+
+<style>
+  .page-header {
+    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+    padding: 3.5rem 0 3rem;
+  }
+  .breadcrumb-nav {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .breadcrumb-nav a {
+    color: #38bdf8;
+    text-decoration: none;
+  }
+  .sep {
+    opacity: 0.5;
+  }
+  .current {
+    color: #e2e8f0;
+  }
+  .page-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  .page-lead {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    max-width: 800px;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+  }
+  .page-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .btn-wa {
+    background: #25d366;
+    color: #ffffff;
+    padding: 0.85rem 1.75rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+  }
+  .btn-call {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 0.85rem 1.75rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .page-content-section {
+    padding: 3.5rem 0;
+  }
+  .content-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+  .main-article {
+    line-height: 1.75;
+    color: #334155;
+    font-size: 1.05rem;
+  }
+  .main-article :global(h2) {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 2rem 0 1rem;
+  }
+  .main-article :global(h3) {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 1.5rem 0 0.75rem;
+  }
+  .main-article :global(p) {
+    margin-bottom: 1.25rem;
+  }
+  .main-article :global(ul), .main-article :global(ol) {
+    margin: 0 0 1.5rem 1.5rem;
+  }
+  .main-article :global(li) {
+    margin-bottom: 0.5rem;
+  }
+  .main-article :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+  }
+  .main-article :global(th), .main-article :global(td) {
+    border: 1px solid #cbd5e1;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  .main-article :global(th) {
+    background: #f1f5f9;
+    font-weight: 700;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .sidebar-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1.5rem;
+  }
+  .sidebar-box h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    color: #0f172a;
+  }
+  .sidebar-box p {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  .btn-sidebar-wa {
+    display: block;
+    background: #25d366;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar-links li {
+    margin-bottom: 0.5rem;
+  }
+  .sidebar-links a {
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  .sidebar-links a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 850px) {
+    .content-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .page-title {
+      font-size: 1.75rem;
+    }
+  }
+</style>

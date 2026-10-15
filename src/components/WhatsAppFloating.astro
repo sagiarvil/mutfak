@@ -1,0 +1,98 @@
+---
+import { siteConfig } from "../data/siteConfig";
+import { buildWhatsAppUrl, buildTelUrl } from "../utils/whatsapp";
+
+export interface Props {
+  service?: string;
+}
+
+const { service } = Astro.props;
+const waUrl = buildWhatsAppUrl({ 
+  service: service || "Mutfak & Banyo Tadilatı",
+  customMessage: "Merhaba, İzmir içi ücretsiz keşif ve fiyat teklifi almak istiyorum."
+});
+---
+
+<div class="floating-contact" aria-label="Hızlı İletişim">
+  <a href={buildTelUrl()} class="floating-btn btn-call" aria-label="Hemen Ara">
+    <span class="btn-icon">📞</span>
+    <span class="btn-label">Ara</span>
+  </a>
+
+  <a href={waUrl} target="_blank" rel="noopener noreferrer" class="floating-btn btn-wa" aria-label="WhatsApp İle Hızlı Fiyat Al">
+    <span class="btn-icon">💬</span>
+    <span class="btn-label">WhatsApp Keşif</span>
+    <span class="pulse-ring"></span>
+  </a>
+</div>
+
+<style>
+  .floating-contact {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+  }
+  .floating-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+  }
+  .floating-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+  .btn-wa {
+    background: #25d366;
+    color: #ffffff;
+  }
+  .btn-call {
+    background: #0284c7;
+    color: #ffffff;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+  }
+  .btn-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+  .pulse-ring {
+    position: absolute;
+    inset: -3px;
+    border-radius: 9999px;
+    border: 2px solid #25d366;
+    animation: wa-pulse 2s infinite ease-out;
+    pointer-events: none;
+  }
+  @keyframes wa-pulse {
+    0% { transform: scale(0.95); opacity: 1; }
+    100% { transform: scale(1.2); opacity: 0; }
+  }
+
+  @media (max-width: 640px) {
+    .floating-contact {
+      bottom: 16px;
+      right: 16px;
+      gap: 8px;
+    }
+    .floating-btn {
+      padding: 10px 14px;
+      font-size: 0.8125rem;
+    }
+    .btn-call {
+      display: none; /* Mobilde sadece büyük WhatsApp öne çıkar */
+    }
+  }
+</style>
