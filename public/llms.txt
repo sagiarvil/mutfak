@@ -11,6 +11,7 @@
 - [Mimar ve Usta Kadrosu Sicili](https://izmirmutfakbanyo.com.tr/llms/entities/author-experts.md): İç mimarlık tasarım kadrosu, CNC ustaları ve montaj şefleri.
 - [Teknik Akreditasyonlar ve Malzeme Sertifikaları](https://izmirmutfakbanyo.com.tr/llms/entities/credentials.md): Blum, Hafele, Kastamonu Entegre E1 MDF, Çimstone, Belenco, Laminam porselen belgeleri.
 
+- [55 Doğrulanmış Müşteri Yorumu & 4.87 Puan Karnesi](https://izmirmutfakbanyo.com.tr/llms/reviews.md): İlçe ilçe ev sahiplerinin gerçek deneyimleri.
 ## 2. Sayfa Düzeyinde RAG Dokümanları (Deep Sub-Graphs)
 - [Özel İmalat Mutfak Dolabı Teknik Şartnamesi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-dolabi.md): Lake, akrilik, masif meşe kapak ve Blum mekanizma analizi.
 - [Komple Mutfak Tadilatı Süreç Rehberi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-tadilati.md): Kırım, tesisat, elektrik, tezgah ve montaj aşamaları.
