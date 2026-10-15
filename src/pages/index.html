@@ -212,6 +212,17 @@
       </div>
     </nav>
 
+    <!-- MOBİL VE TABLET HIZLI GEZİNME ÇUBUĞU (TEK DOKUNUŞLA KAYDIRMA) -->
+    <div class="xl:hidden flex items-center gap-2 overflow-x-auto py-2.5 px-4 bg-[#FAF7F2] border-b border-stone-200/90 shadow-2xs text-xs font-bold text-stone-700">
+      <button type="button" data-scroll-to="sec-projects" class="site-scroll-btn whitespace-nowrap px-3 py-1.5 rounded-xl bg-white border border-stone-200 shadow-2xs hover:border-[#C85A32] transition">Referans Projeler</button>
+      <button type="button" data-scroll-to="sec-before-after" class="site-scroll-btn whitespace-nowrap px-3 py-1.5 rounded-xl bg-white border border-stone-200 shadow-2xs hover:border-[#C85A32] transition">Öncesi / Sonrası</button>
+      <button type="button" data-scroll-to="sec-configurator" class="site-scroll-btn whitespace-nowrap px-3 py-1.5 rounded-xl bg-white border border-stone-200 shadow-2xs hover:border-[#C85A32] transition">3D Tasarım</button>
+      <button type="button" data-scroll-to="sec-calculator" class="site-scroll-btn whitespace-nowrap px-3 py-1.5 rounded-xl bg-white border border-stone-200 shadow-2xs hover:border-[#C85A32] transition">Fiyat Hesaplama</button>
+      <button type="button" data-scroll-to="sec-ergonomics" class="site-scroll-btn whitespace-nowrap px-3 py-1.5 rounded-xl bg-white border border-stone-200 shadow-2xs hover:border-[#C85A32] transition">Akıllı Kiler</button>
+      <button type="button" data-scroll-to="sec-process" class="site-scroll-btn whitespace-nowrap px-3 py-1.5 rounded-xl bg-white border border-stone-200 shadow-2xs hover:border-[#C85A32] transition">Uygulama Süreci</button>
+      <button type="button" data-scroll-to="sec-appointment" class="site-scroll-btn whitespace-nowrap px-3.5 py-1.5 rounded-xl bg-[#25D366] text-white font-extrabold shadow-sm">Keşif İste</button>
+    </div>
+
     <!-- =================================================================== -->
     <!-- 1. İZMİR MUTFAK BANYO ANA TANITIM & ÖZEL İMALAT VİTRİNİ-->
     <!-- =================================================================== -->
@@ -3608,24 +3619,6 @@
           box.innerHTML = `<strong>Talebiniz Hazırlandı!</strong> WhatsApp üzerinden mimarımıza aktarılıyor. Açılan ekrandan mesajı gönderebilirsiniz.`;
         }
         return;
-
-        const name = (document.getElementById('leadName')?.value || '').trim() || 'Misafir Müşteri';
-        const phone = (document.getElementById('leadPhone')?.value || '').trim() || '0532 --- -- --';
-        const district = document.getElementById('leadDistrict')?.value || 'Karşıyaka';
-        const service = document.getElementById('leadService')?.value || 'Özel Tasarım Hazır Mutfak';
-        const notes = (document.getElementById('leadNotes')?.value || '').trim();
-
-        const box = document.getElementById('leadSuccessBox');
-        if (box) {
-          box.classList.remove('hidden');
-          box.innerHTML = `
-            <div class="font-extrabold text-emerald-900">🎉 Sayın ${name}, Ücretsiz 3D Tasarım &amp; Keşif Randevunuz Alındı! (Ref: #YM-202692)</div>
-            <p><strong>${district}</strong> bölgesindeki <strong>${service}</strong> talebiniz Kadın İç Mimar ekibimize ve <strong>Yönetici Finans Kokpiti CRM</strong> ekranına iletildi. 30 dakika içinde <strong>${phone}</strong> numaranızdan aranacaksınız.</p>
-            ${notes ? `<div class="text-xs text-emerald-800 font-semibold">Seçilen Detay: ${notes}</div>` : ''}
-          `;
-        }
-        document.getElementById('crmNewLeadBadge')?.classList.remove('hidden');
-        showToast(`${name} (${district}) keşif talebi CRM ve Finans Kokpitine kaydedildi!`);
       });
 
       // Initial render for website widgets
@@ -3635,5 +3628,18 @@
       renderIdeabookModal();
     });
   </script>
+
+  <!-- SABİT SAĞ ALT WHATSAPP & ARAMA BUTONU (HER SAYFADA ANINDA DÖNÜŞÜM) -->
+  <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3 pointer-events-auto">
+    <a href="tel:+905393333303" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 text-white font-bold text-xs shadow-xl hover:bg-slate-800 transition" aria-label="Hemen Telefonla Arayın">
+      <span>📞</span> <span>0539 333 33 03</span>
+    </a>
+    <a href="https://wa.me/905393333303?text=Merhaba,%20İzmir'de%20ücretsiz%20keşif%20ve%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="relative group inline-flex items-center gap-2.5 px-5 py-3.5 rounded-full bg-[#25D366] text-white font-extrabold text-sm sm:text-base shadow-2xl hover:bg-[#1eb954] hover:scale-105 transition-all" aria-label="WhatsApp İle Hızlı Fiyat Al">
+      <span class="text-xl">💬</span>
+      <span>WhatsApp Keşif Hattı</span>
+      <span class="absolute -inset-1 rounded-full border-2 border-[#25D366] animate-ping opacity-60 pointer-events-none"></span>
+    </a>
+  </div>
 </body>
+
 </html>
