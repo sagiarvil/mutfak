@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr" class="scroll-smooth">
+<html lang="tr" class="scroll-smooth overflow-x-hidden">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -178,23 +178,23 @@
         <!-- ================================================================= -->
     <!-- ÖZEL İMALAT MİMARİ BAŞLIK VE MENÜ (TEK SIRA, PREMİUM, KOPMASIZ)  -->
     <!-- ================================================================= -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 transition-all duration-300 w-full" id="mainHeader">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 transition-all duration-300 w-full overflow-hidden" id="mainHeader">
       <!-- Üst İnce Bilgi & İletişim Şeridi -->
-      <div class="bg-stone-900 text-stone-300 text-[11px] font-medium py-1.5 px-4 sm:px-8 border-b border-stone-800">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <span class="flex items-center gap-1.5 text-stone-200">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <div class="bg-stone-900 text-stone-300 text-[11px] font-medium py-1.5 px-3 sm:px-6 border-b border-stone-800">
+        <div class="w-full max-w-7xl mx-auto flex items-center justify-between gap-2">
+          <div class="flex items-center gap-2 sm:gap-3 truncate">
+            <span class="flex items-center gap-1.5 text-stone-200 whitespace-nowrap">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
               İzmir Mutfak, Banyo &amp; Komple Ev Tadilatı Atölyesi
             </span>
-            <span class="hidden md:inline text-stone-600">|</span>
-            <span class="hidden md:inline text-stone-400">Resmi Sözleşmeli • Mimari 3D Keşif • 10 Yıl Gövde Garantisi</span>
+            <span class="hidden lg:inline text-stone-600">|</span>
+            <span class="hidden lg:inline text-stone-400 truncate">Resmi Sözleşmeli • Mimari 3D Keşif • 10 Yıl Gövde Garantisi</span>
           </div>
-          <div class="flex items-center gap-4">
-            <a href="https://share.google/p94hYPiU7cDUM7Va1" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-1">
-              <span>📍</span> <span>Showroom &amp; Atölye</span>
+          <div class="flex items-center gap-3 shrink-0 text-xs">
+            <a href="https://share.google/p94hYPiU7cDUM7Va1" target="_blank" rel="noopener noreferrer" class="hover:text-white transition hidden sm:inline-flex items-center gap-1">
+              <span>📍</span> <span>Showroom</span>
             </a>
-            <span class="text-stone-600">|</span>
+            <span class="hidden sm:inline text-stone-600">|</span>
             <a href="https://wa.me/905393333303" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline flex items-center gap-1">
               <span>💬</span> <span>0539 333 33 03</span>
             </a>
@@ -202,55 +202,71 @@
         </div>
       </div>
 
-      <!-- Ana Menü Çubuğu (Kesinlikle Tek Sıra, Asla Kırılmaz) -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+      <!-- Ana Menü Çubuğu (Flex-nowrap, taşmayan, 1024px-1440px ve üstü tüm ekranlarda sıfır taşma) -->
+      <div class="w-full max-w-7xl mx-auto px-3 sm:px-5 lg:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4">
         
-        <!-- Sol: Logo & Marka (Mutfak, Banyo ve Tadilat) -->
-        <a href="/" class="flex items-center gap-2.5 sm:gap-3 shrink-0 group">
-          <img src="/logo.png" alt="İzmir Mutfak Banyo Tadilat Logo" class="h-10 sm:h-11 w-auto object-contain transition group-hover:opacity-90" width="44" height="46" />
-          <div class="flex flex-col">
-            <span class="font-extrabold tracking-widest text-stone-950 text-xs sm:text-sm lg:text-base uppercase leading-tight whitespace-nowrap" style="letter-spacing: 0.14em;">İZMİR MUTFAK &amp; BANYO</span>
-            <span class="text-[9px] uppercase tracking-[0.20em] text-stone-500 font-semibold whitespace-nowrap">Özel İmalat &amp; Komple Tadilat</span>
+        <!-- Sol: Logo & Marka -->
+        <a href="/" class="flex items-center gap-2 sm:gap-2.5 shrink-0 group min-w-0">
+          <img src="/logo.png" alt="İzmir Mutfak Banyo Tadilat Logo" class="h-9 sm:h-10 w-auto object-contain transition group-hover:opacity-90 shrink-0" width="40" height="42" />
+          <div class="flex flex-col min-w-0">
+            <span class="font-extrabold tracking-widest text-stone-950 text-xs sm:text-sm uppercase leading-tight whitespace-nowrap" style="letter-spacing: 0.12em;">İZMİR MUTFAK &amp; BANYO</span>
+            <span class="text-[8.5px] sm:text-[9px] uppercase tracking-[0.16em] text-stone-500 font-semibold whitespace-nowrap">Özel İmalat &amp; Tadilat</span>
           </div>
         </a>
 
-        <!-- Orta: Menü Linkleri (Tek Sıra, whitespace-nowrap) -->
-        <nav class="hidden xl:flex items-center gap-5 2xl:gap-7 text-[11px] 2xl:text-xs font-bold uppercase tracking-wider text-stone-800 whitespace-nowrap shrink-0">
-          <a href="#modeller" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Mutfak Modelleri</a>
-          <a href="#stretcher-section" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Koleksiyonlar</a>
-          <a href="#banyo-koleksiyonu" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Banyo Tasarımı</a>
-          <a href="#malzeme-atolye" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Malzeme &amp; Detaylar</a>
-          <a href="#mimari-surec" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Nasıl Çalışıyoruz?</a>
-          <a href="#musteri-deneyimleri" class="hover:text-stone-500 transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-stone-900 hover:after:w-full after:transition-all">Yorumlar</a>
+        <!-- Orta: Menü Linkleri (Sadece geniş masaüstü ekranlarda görünür, asla satır kırmaz) -->
+        <nav class="hidden 2xl:flex items-center gap-5 text-[11px] font-bold uppercase tracking-wider text-stone-800 whitespace-nowrap shrink-0">
+          <a href="#modeller" class="hover:text-stone-500 transition py-1">Mutfak Modelleri</a>
+          <a href="#stretcher-section" class="hover:text-stone-500 transition py-1">Koleksiyonlar</a>
+          <a href="#banyo-koleksiyonu" class="hover:text-stone-500 transition py-1">Banyo Tasarımı</a>
+          <a href="#malzeme-atolye" class="hover:text-stone-500 transition py-1">Malzeme &amp; Detaylar</a>
+          <a href="#mimari-surec" class="hover:text-stone-500 transition py-1">Nasıl Çalışıyoruz?</a>
+          <a href="#musteri-deneyimleri" class="hover:text-stone-500 transition py-1">Yorumlar</a>
         </nav>
 
-        <!-- Sağ: Aksiyon Butonları (Tek Sıra, whitespace-nowrap) -->
-        <div class="flex items-center gap-2.5 sm:gap-3 shrink-0 whitespace-nowrap">
-          <a href="#projelendirme-basvuru" class="hidden sm:inline-flex items-center justify-center px-4 sm:px-5 py-2.5 rounded-none border border-stone-900 text-stone-900 text-[11px] font-bold uppercase tracking-wider hover:bg-stone-900 hover:text-white transition duration-300">
+        <!-- Sağ: Aksiyon Butonları & Mobil Menü Tetikleyici -->
+        <div class="flex items-center gap-2 sm:gap-2.5 shrink-0 whitespace-nowrap">
+          <a href="#projelendirme-basvuru" class="hidden md:inline-flex items-center justify-center px-3 sm:px-4 py-2 border border-stone-900 text-stone-900 text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-900 hover:text-white transition duration-200 shrink-0">
             Mutfağını Tasarla
           </a>
-          <a href="https://wa.me/905393333303?text=Merhaba,%20mutfağım%20için%20ücretsiz%203D%20keşif%20ve%20projelendirme%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 sm:px-5 py-2.5 rounded-none bg-stone-900 text-white text-[11px] font-bold uppercase tracking-wider hover:bg-stone-800 transition duration-300 shadow-sm">
+          <a href="https://wa.me/905393333303?text=Merhaba,%20mutfak%20ve%20banyo%20için%20ücretsiz%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-3 sm:px-4 py-2 bg-stone-900 text-white text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-800 transition duration-200 shadow-sm shrink-0">
             Ücretsiz Keşif
           </a>
-          <!-- Mobil & Tablet Menü Açma Butonu -->
-          <button type="button" id="btnToggleMobileMenu" class="xl:hidden p-2 text-stone-900 hover:bg-stone-100 transition" aria-label="Menüyü Aç">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <!-- 2xl altındaki tüm ekranlarda açılır menü ikonu (tablet ve standart laptoplar dahil) -->
+          <button type="button" id="btnToggleMobileMenu" class="2xl:hidden p-1.5 sm:p-2 text-stone-900 hover:bg-stone-100 transition rounded shrink-0" aria-label="Menüyü Aç">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
         </div>
       </div>
 
-      <!-- Mobil / Tablet Açılır Menü -->
-      <div id="mobileMenuDrawer" class="hidden xl:hidden bg-white border-b border-stone-200 px-6 py-6 space-y-4 shadow-xl">
+      <!-- Açılır Çekmece Menü (Tüm Mobil, Tablet ve Orta Boy Laptoplar İçin) -->
+      <div id="mobileMenuDrawer" class="hidden 2xl:hidden bg-white border-b border-stone-200 px-6 py-6 space-y-4 shadow-2xl max-h-[85vh] overflow-y-auto">
         <nav class="flex flex-col space-y-3.5 text-xs font-bold uppercase tracking-wider text-stone-800">
-          <a href="#modeller" class="py-1 hover:text-stone-500 border-b border-stone-100">Mutfak Modelleri</a>
-          <a href="#stretcher-section" class="py-1 hover:text-stone-500 border-b border-stone-100">Koleksiyonlar (Modern / Klasik / Life)</a>
-          <a href="#banyo-koleksiyonu" class="py-1 hover:text-stone-500 border-b border-stone-100">Banyo Tasarımı</a>
-          <a href="#malzeme-atolye" class="py-1 hover:text-stone-500 border-b border-stone-100">Malzeme &amp; Detaylar</a>
-          <a href="#mimari-surec" class="py-1 hover:text-stone-500 border-b border-stone-100">Nasıl Çalışıyoruz?</a>
-          <a href="#musteri-deneyimleri" class="py-1 hover:text-stone-500 border-b border-stone-100">Yorumlar (4.87/5.0 Puan)</a>
-          <div class="pt-2 flex flex-col gap-2">
-            <a href="#projelendirme-basvuru" class="block text-center py-2.5 px-4 bg-stone-900 text-white text-xs font-bold uppercase tracking-wider">Mutfağını Tasarla</a>
-            <a href="https://wa.me/905393333303" target="_blank" class="block text-center py-2.5 px-4 bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider">💬 WhatsApp Keşif</a>
+          <a href="#modeller" class="py-1.5 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+            <span>Mutfak Modelleri</span> <span>→</span>
+          </a>
+          <a href="#stretcher-section" class="py-1.5 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+            <span>Koleksiyonlar (Modern / Klasik / Life)</span> <span>→</span>
+          </a>
+          <a href="#banyo-koleksiyonu" class="py-1.5 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+            <span>Banyo Tasarımı &amp; Tadilatı</span> <span>→</span>
+          </a>
+          <a href="#malzeme-atolye" class="py-1.5 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+            <span>Malzeme Standartları &amp; Atölye</span> <span>→</span>
+          </a>
+          <a href="#mimari-surec" class="py-1.5 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+            <span>Nasıl Çalışıyoruz? (5 Cerrahi Adım)</span> <span>→</span>
+          </a>
+          <a href="#musteri-deneyimleri" class="py-1.5 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+            <span>Müşteri Yorumları (4.87 / 5.0)</span> <span>★</span>
+          </a>
+          <div class="pt-3 flex flex-col gap-2.5">
+            <a href="#projelendirme-basvuru" class="block text-center py-3 px-4 bg-stone-900 text-white text-xs font-bold uppercase tracking-wider">
+              Mutfağını Tasarla &amp; Keşif İste
+            </a>
+            <a href="https://wa.me/905393333303" target="_blank" class="block text-center py-3 px-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider">
+              💬 WhatsApp: 0539 333 33 03
+            </a>
           </div>
         </nav>
       </div>
