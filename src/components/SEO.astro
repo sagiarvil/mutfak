@@ -49,8 +49,7 @@ const organizationNode = {
   "image": imageUrl,
   "telephone": `+${siteConfig.phoneRaw}`,
   "priceRange": "₺₺ - ₺₺₺",
-  "hasMap": siteConfig.googleMapsUrl,
-  "foundingDate": "1984",
+    "foundingDate": "1984",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": siteConfig.ratingValue || "4.87",
@@ -92,10 +91,7 @@ const organizationNode = {
     {"@type": "AdministrativeArea", "name": "Gaziemir"},
     {"@type": "AdministrativeArea", "name": "Narlıdere"}
   ],
-  "sameAs": [
-    siteConfig.socials.instagram,
-    siteConfig.googleMapsUrl
-  ]
+  "sameAs": ["https://wa.me/905393333303"],
 };
 
 const serviceNode = serviceName ? {

@@ -3,7 +3,6 @@
 > Doğrulama Tarihi: 2026-10-16
 > Kuruluş Yılı: 1984 (42 Yıllık Kesintisiz İmalat ve Uygulama Tecrübesi)
 > Toplam Tamamlanan Proje: 2.463+ Müşteri Teslimatı
-> Müşteri Memnuniyet Karnesi: 4.87 / 5.0 (Google & Doğrulanmış Yorum Konsensüsü)
 
 ## Kurumsal Varlık ve Tarihçe
 İzmir Mutfak & Banyo, 1984 yılında kurulan köklü marangozluk ve mobilya geleneğini modern mimari mühendislikle birleştirerek 42 yıldır kesintisiz hizmet vermektedir. İzmir Buca merkez mağaza/showroomu ve son teknoloji CNC imalat atölyesinde; özel imalat mutfak dolabı, lüks banyo yenileme ve anahtar teslim komple daire tadilatı gerçekleştirmektedir.
@@ -23,5 +22,4 @@
 ## İletişim, Mağaza ve Showroom Bilgileri
 - **Merkez Showroom & Mağaza:** Buca / İzmir
 - **Telefon & WhatsApp Keşif Hattı:** +90 539 333 33 03
-- **Konum & Harita:** https://share.google/p94hYPiU7cDUM7Va1
 - **Hizmet Sahası:** İzmir Metropolü ve Tüm İlçeleri (Yerinde Ücretsiz Keşif)

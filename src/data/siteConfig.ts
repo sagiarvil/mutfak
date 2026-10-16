@@ -21,8 +21,7 @@ export const siteConfig = {
   phoneRaw: "905393333303",
   phoneFormatted: "0539 333 33 03",
   whatsappUrl: "https://wa.me/905393333303",
-  googleMapsUrl: "https://share.google/p94hYPiU7cDUM7Va1",
-  address: {
+    address: {
     streetAddress: "Buca Showroom & İmalat Mağazası",
     addressLocality: "Buca, İzmir",
     addressRegion: "İzmir",
@@ -35,8 +34,7 @@ export const siteConfig = {
   },
   openingHours: "Mo-Sa 08:30-19:30",
   socials: {
-    instagram: "https://instagram.com/izmirmutfakbanyo",
-    facebook: "https://facebook.com/izmirmutfakbanyo"
+        facebook: "https://facebook.com/izmirmutfakbanyo"
   },
   districts: [
     "Karşıyaka", "Bornova", "Konak", "Bayraklı", "Çiğli",

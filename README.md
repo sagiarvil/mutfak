@@ -14,7 +14,6 @@
 - **Dönüşüm Odaklı İletişim:**
   - WhatsApp: `0539 333 33 03` (905393333303)
   - Dinamik ilçe ve hizmet filtreli tek tıkla mesajlaşma
-  - Google Haritalar entegrasyonu: `https://share.google/p94hYPiU7cDUM7Va1`
 
 ## 🚀 Komutlar
 ```bash
