@@ -93,6 +93,26 @@
         "source": "/mutfak-dolabi-fiyatlari",
         "destination": "/2026-mutfak-dolabi-fiyatlari/",
         "type": 301
+      },
+      {
+        "source": "/modern-mutfak",
+        "destination": "/modern-mutfak-modelleri/",
+        "type": 301
+      },
+      {
+        "source": "/klasik-mutfak",
+        "destination": "/klasik-country-mutfak-modelleri/",
+        "type": 301
+      },
+      {
+        "source": "/country-mutfak",
+        "destination": "/klasik-country-mutfak-modelleri/",
+        "type": 301
+      },
+      {
+        "source": "/yasam-alanlari",
+        "destination": "/yasam-alanlari-mutfak-modelleri/",
+        "type": 301
       }
     ]
   }

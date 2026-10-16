@@ -1,0 +1,398 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const seo = {
+  title: "İzmir Klasik & Country Mutfak Modelleri | Çıtalı Lake & Masif İmalat",
+  description: "İzmir'de el işçiliği CNC çıtalı lake ve country mutfak dolabı imalatı. Sararmayan 4 kat ipek mat lake, porselen ve pirinç kulplar, masif detaylar ve Buca atölyesinden ücretsiz 3D çizim.",
+  canonical: "https://izmirmutfakbanyo.com.tr/klasik-country-mutfak-modelleri/",
+  serviceName: "Klasik ve Country Mutfak Modelleri İmalatı",
+  breadcrumbs: [
+    { name: "Koleksiyonlar", url: "/#stretcher-section" },
+    { name: "Klasik & Country Mutfak Modelleri", url: "/klasik-country-mutfak-modelleri/" }
+  ],
+  faqList: [
+    {
+      question: "Lake country mutfak dolapları zamanla sararma yapar mı?",
+      answer: "Hayır. Atölyemizde kullanılan 4 kat poliüretan ve akrilik bazlı İtalyan lake boyalar UV filtreli fırın kurutmalıdır. Güneş ışığı ve yemek buharına karşı renk değişimi ve sararmaya karşı 10 yıl boya garantilidir."
+    },
+    {
+      question: "Country mutfaklarda çıta temizliği zor mudur?",
+      answer: "Kullandığımız CNC çıta profilleri toz tutmayan yumuşak eğimli (pahlı) açılarla frezelenir ve ipek mat pürüzsüz boyayla kaplanır. Nemli bir mikrofiber bezle saniyeler içinde kolayca silinir."
+    },
+    {
+      question: "Klasik mutfaklarda ahşap tezgah mı yoksa porselen mi tercih edilmeli?",
+      answer: "Doğal sıcaklık arayanlar için fırınlanmış masif meşe tezgahlar, yoğun su ve sıcak tencere teması olan evlerde ise klasik mermer dokulu Calacatta porselen veya kuvars tezgahlar tavsiye edilir."
+    },
+    {
+      question: "Klasik mutfak teslim süresi ne kadardır?",
+      answer: "Detaylı çıta işçiliği, astar ve katlar arası zımparalı fırın boya süreçleri sebebiyle klasik ve country mutfak imalat süremiz ortalama 20-25 iş günüdür."
+    }
+  ]
+};
+
+const models = [
+  {
+    id: "provenza-country",
+    title: "Provenza Country Beyaz",
+    badge: "Zamansız Klasik",
+    tag: "İpek Mat Lake & Masif Meşe",
+    price: "34.000 ₺ - 40.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Fransız Provence kır evlerinin dinginliğini İzmir'e taşıyan model. Kırık beyaz çıtalı lake kapaklar, doğal masif meşe ada tezgahı ve porselen seramik çift gözlü evye.",
+    features: ["45 Derece CNC Çıta Göbek", "Fırınlanmış Masif Meşe Ada", "Blum Frenli Gizli Raylar", "Porselen Esintili Antik Kulplar"]
+  },
+  {
+    id: "toscana-vintage",
+    title: "Toscana Adaçayı Yeşili",
+    badge: "2026 Trend Rengi",
+    tag: "Adaçayı Lake & Antik Pirinç",
+    price: "36.000 ₺ - 42.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Huzur veren pastel adaçayı yeşili lake gövde, eskitme antik sarı pirinç fincan kulplar ve çıtalı cam vitrin dolapları. Akdeniz mimarisine en çok yakışan sıcak atmosfer.",
+    features: ["İtalyan Fırınlı Mat Lake", "Kare Çıtalı Cam Vitrin Dolapları", "Belenco Damarlı Kuvars Tezgah", "Gizli Şişelik ve Baharatlık Ünitesi"]
+  },
+  {
+    id: "victoria-somine",
+    title: "Victoria Şömineli Davlumbaz",
+    badge: "Görkemli Tasarım",
+    tag: "Geniş Davlumbaz Tacı & Ada",
+    price: "39.000 ₺ - 48.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Ocak bölümünü şömine formunda çerçeveleyen gösterişli ahşap davlumbaz tacı, oyma yan kolonlar ve geniş tencereler için tasarlanmış derin country çekmeceler.",
+    features: ["Özel Oyma Davlumbaz Tacı", "Masif Sütun ve Taç Detayları", "Porselen Tekne Evye", "İçten Led Aydınlatmalı Vitrin"]
+  },
+  {
+    id: "riviera-navy",
+    title: "Riviera Midnight Blue",
+    badge: "Asil & Karakterli",
+    tag: "Gece Mavisi Lake & Altın Detay",
+    price: "35.000 ₺ - 42.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Cesur ve asil bir duruş: Derin lacivert ipek lake yüzeyler, fırçalanmış mat altın kulp detayları ve Calacatta altın damarlı parlak kuvars tezgah uyumu.",
+    features: ["Sararmayan UV Koruma Lake", "Fırçalanmış Mat Altın Donanım", "Calacatta Gold Kuvars Tezgah", "Blum Tandembox Çift Çeper Ray"]
+  },
+  {
+    id: "hampton-ceviz",
+    title: "Hampton Doğal Ahşap Çerçeve",
+    badge: "Doğal & Sıcak",
+    tag: "Doğal Ceviz & Taş Doku",
+    price: "37.000 ₺ - 45.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Doğal ceviz ağacı çıtalarla çerçevelenmiş kapaklar, taş dokulu ada panelleri ve organik zarafet. Hem şehir evleri hem de Urla / Çeşme taş evleri için ideal.",
+    features: ["Masif Ceviz Çerçeve Çıta", "Doğal Yağlı Koruma Cilası", "Kuvars Taş Görünümlü Tezgah", "Geniş Boy Kiler Dolabı"]
+  },
+  {
+    id: "cottage-krem",
+    title: "Cottage Warm Krem Lake",
+    badge: "Sıcak & Samimi",
+    tag: "Sıcak Krem & Dikey Ahşap Oluk",
+    price: "33.000 ₺ - 39.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Gözü yormayan sıcak vanilya-krem tonları, dikey fuga çıtaları ve geniş ada masası. Ailenin bir arada vakit geçirdiği en samimi mutfak konsepti.",
+    features: ["Dikey Fuga CNC Detayları", "Akrilik Çizilmez Krem Yüzey", "Ahşap Masif Açık Raflar", "Gömme Tabaklık ve Kadehlik"]
+  }
+];
+---
+
+<Layout seo={seo} activeService="Klasik & Country Mutfak Modelleri">
+  
+  <!-- HERO BÖLÜMÜ -->
+  <section class="relative bg-stone-950 text-white py-24 sm:py-32 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-35" style="background-image: url('/media/cinematic/klasik_mutfak.webp');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/75 to-stone-950/40"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
+        <span>/</span>
+        <span class="text-amber-300">Klasik &amp; Country Koleksiyonu</span>
+      </nav>
+
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-amber-950/90 border border-amber-400/40 text-amber-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
+        <span>02 / KOLEKSİYON</span>
+        <span>•</span>
+        <span>ZARİF ÇITA İŞÇİLİĞİ &amp; MASİF SICAKLIĞI</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
+        İzmir Klasik &amp; Country Mutfak: <br /><span class="font-normal italic text-amber-200">Zarif Çıta İşçiliği &amp; İpek Mat Lake Zarafeti</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
+        Modası asla geçmeyen zamansız bir estetik: Kusursuz 45 derece köşe birleşimli CNC çıtalar, asla sararmayan 4 kat ipek mat fırın boyası, antik pirinç ve porselen aksesuarlar. 1984'ten bu yana İzmir Buca atölyemizde ahşaba ruh katıyoruz.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 pt-3">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20klasik%20ve%20country%20mutfak%20modelleriniz%20hakkında%20bilgi%20ve%20ücretsiz%203D%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-amber-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-amber-400 transition shadow-xl inline-flex items-center gap-2">
+          <span>💬</span> <span>WhatsApp ile Country Mutfak Projesi Başlat</span>
+        </a>
+        <a href="#modeller" class="px-8 py-4 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          Modelleri İncele ↓
+        </a>
+      </div>
+
+      <!-- Rozetler -->
+      <div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-stone-800 text-xs text-stone-300">
+        <div>
+          <strong class="text-white block text-sm font-semibold">10 Yıl Boya Garantisi</strong>
+          <span class="text-stone-400 text-[11px]">Sararmayan UV filtreli İtalyan Lake</span>
+        </div>
+        <div>
+          <strong class="text-white block text-sm font-semibold">Usta Çıta İşçiliği</strong>
+          <span class="text-stone-400 text-[11px]">Milimetrik CNC freze ve el zımparası</span>
+        </div>
+        <div>
+          <strong class="text-white block text-sm font-semibold">Blum Frenli Donanım</strong>
+          <span class="text-stone-400 text-[11px]">Sessiz ve ömür boyu garantili raylar</span>
+        </div>
+        <div>
+          <strong class="text-white block text-sm font-semibold">Yerinde Lazer Keşif</strong>
+          <span class="text-stone-400 text-[11px]">Tüm İzmir'e ücretsiz iç mimar desteği</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEKNİK STANDARTLAR TABLOSU -->
+  <section class="bg-stone-100 border-b border-stone-200 py-12" id="teknik-standartlar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      <div class="border-l-4 border-amber-600 pl-4 space-y-1">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-800">COUNTRY &amp; KLASİK TEKNİK DETAYLAR</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-stone-900">Klasik &amp; Country Mutfak Malzeme ve Ustalık Standartları</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">Çıta &amp; Göbek Profili</strong>
+          <p class="text-stone-600 leading-relaxed">Özel açılı CNC freze makinelerinde açılan ve el zımparasıyla pürüzsüzleştirilen 45° çıtalar. Toz tutmayan, kolay silinebilir özel pah kırımları.</p>
+        </div>
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">4 Kat Fırın Lake Boya</strong>
+          <p class="text-stone-600 leading-relaxed">2 kat poliüretan astar + 2 kat sararmayan son kat ipek mat boya. Atölyemizdeki pozitif basınçlı tozsuz fırınlarda kurutulur.</p>
+        </div>
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">Aksesuar &amp; Kulp Seçenekleri</strong>
+          <p class="text-stone-600 leading-relaxed">Antik eskitme sarı pirinç fincan kulplar, porselen çiçek desenli düğmeler, camlı vitrin çıtaları ve gizlenebilir çekmece içi baharatlıklar.</p>
+        </div>
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">Taç, Baza ve Şömine Tasarımı</strong>
+          <p class="text-stone-600 leading-relaxed">Tavan birleşiminde oymalı ahşap taçlar, alt kısımda ayakları gizleyen country bazalar ve ocak üstü için görkemli şömine davlumbaz mimarisi.</p>
+        </div>
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">Gövde ve Neme Dayanım</strong>
+          <p class="text-stone-600 leading-relaxed">18 mm neme dayanıklı E1 MDF-Lam gövde, 1 mm kalınlığında darbelere dayanıklı ABS kenar bantları ile su sızıntılarına karşı tam koruma.</p>
+        </div>
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">Evye ve Batarya Uyumu</strong>
+          <p class="text-stone-600 leading-relaxed">Tezgah altı veya önü açık döküm porselen (apron sink) tekne evyeler ve döner borulu kuğu rustik bataryalar ile kusursuz uyum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELLER GALERİSİ -->
+  <section class="py-20 sm:py-28 bg-white" id="modeller">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-700 block">ZAMANSIZ VE SICAK YAŞAM ALANLARI</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light text-stone-950 tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+          Seçkin <span class="font-normal italic">Klasik &amp; Country Mutfak Koleksiyonumuz</span>
+        </h2>
+        <p class="text-sm sm:text-base text-stone-600 font-light leading-relaxed">
+          Ahşabın doğallığı, çıtaların zarafeti ve ipek mat boyanın dinginliği... Buca atölyemizde kişiye özel üretilen 6 imza modelimizi inceleyin.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {models.map((m) => (
+          <div class="bg-stone-50 border border-stone-200 overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300">
+            <div class="relative h-64 sm:h-72 overflow-hidden bg-stone-900">
+              <img 
+                src={m.img} 
+                alt={`${m.title} - İzmir Klasik ve Country Mutfak`} 
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-105" 
+                loading="lazy" 
+                decoding="async"
+                width="600"
+                height="400"
+              />
+              <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                <span class="px-2.5 py-1 bg-stone-950/85 text-amber-300 text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm">
+                  {m.badge}
+                </span>
+                <span class="px-2.5 py-0.5 bg-white/90 text-stone-900 text-[9.5px] font-bold uppercase tracking-wider">
+                  {m.tag}
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <h3 class="text-xl font-bold text-stone-900 group-hover:text-amber-800 transition">{m.title}</h3>
+                <p class="text-xs text-stone-600 font-light leading-relaxed line-clamp-3">{m.desc}</p>
+              </div>
+
+              <div class="space-y-2 pt-2 border-t border-stone-200">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-stone-400 block">Öne Çıkan Detaylar</span>
+                <ul class="space-y-1 text-xs text-stone-700">
+                  {m.features.map((f) => (
+                    <li class="flex items-center gap-1.5">
+                      <span class="text-amber-600 text-xs">✔</span>
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div class="pt-3 border-t border-stone-200 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-stone-400 block font-semibold">Yaklaşık Aralık</span>
+                  <span class="text-xs font-bold text-stone-900">{m.price}</span>
+                </div>
+                <a 
+                  href={`https://wa.me/905393333303?text=Merhaba,%20country%20mutfaklar%C4%B1n%C4%B1zdaki%20${encodeURIComponent(m.title)}%20modeli%20hakk%C4%B1nda%203D%20%C3%A7izim%20ve%20fiyat%20teklifi%20almak%20istiyorum.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="px-4 py-2 bg-stone-900 text-white text-[11px] font-bold uppercase tracking-wider hover:bg-amber-600 transition inline-flex items-center gap-1.5"
+                >
+                  <span>3D Tasarla</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- MİMARİ VE ATÖLYE HİSSİYATI -->
+  <section class="py-20 bg-stone-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-300 block">USTALIK VE DETAY</span>
+          <h2 class="text-3xl sm:text-4xl font-light text-white leading-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+            Klasik Mutfakta Detay, <br /><span class="font-normal italic text-amber-200">Ustanın Zımparaya Verdiği Emekte</span> Saklıdır
+          </h2>
+          <p class="text-sm text-stone-300 font-light leading-relaxed">
+            Klasik mutfak fabrikasyon bir hazır kutu mobilya değildir. Kapak göbeğindeki çıtanın milimetrik gönyesinden boyanın ipeksi dokunuşuna kadar her aşama tecrübe ister. 42 yıllık atölye birikimimizle, her projeyi bir sanat eseri titizliğiyle üretiyoruz.
+          </p>
+
+          <div class="space-y-3 pt-2 text-xs">
+            <div class="flex items-start gap-3 p-3 bg-stone-900/80 border border-stone-800">
+              <span class="text-amber-400 text-base">🪵</span>
+              <div>
+                <strong class="text-white block font-semibold">1. Adım: Birinci Sınıf Masif ve Ham MDF Seçimi</strong>
+                <span class="text-stone-400">Dönme, eğilme ve çatlama yapmayan fırınlanmış gövde ve çıta hammaddeleri.</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-stone-900/80 border border-stone-800">
+              <span class="text-amber-400 text-base">🎨</span>
+              <div>
+                <strong class="text-white block font-semibold">2. Adım: Fırınlı Lake Katmanları ve İpek Mat Son Dokunuş</strong>
+                <span class="text-stone-400">Tozsuz kabinlerde uygulanan astar ve zımparalama ile pürüzsüz dokunma hissi.</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-stone-900/80 border border-stone-800">
+              <span class="text-amber-400 text-base">✨</span>
+              <div>
+                <strong class="text-white block font-semibold">3. Adım: Yerinde Kusursuz Montaj ve Taç Birleşimleri</strong>
+                <span class="text-stone-400">Duvar ve tavan eğriliklerini yerinde sıfırlayan hassas montaj ustalığı.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <a href="https://wa.me/905393333303?text=Merhaba,%20klasik%20ve%20country%20mutfak%20için%20ücretsiz%20yerinde%20keşif%20ve%203D%20tasarım%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-amber-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-amber-400 transition shadow-xl inline-flex items-center gap-2">
+              <span>📍</span> <span>Ücretsiz Yerinde Keşif Randevusu Al</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="aspect-4/3 overflow-hidden border border-stone-800 shadow-2xl relative">
+            <img 
+              src="/media/cinematic/klasik_mutfak.webp" 
+              alt="İzmir Klasik Country Mutfak Atölye ve Çıta İşçiliği" 
+              class="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="600"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 p-4 bg-stone-900/90 backdrop-blur-md border border-stone-700/60">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-300 block">USTA NOTU</span>
+              <p class="text-xs text-stone-200 font-light mt-1">
+                "Country mutfak sadece yemek yapılan yer değil, sabah kahvesinin kokusuyla evin en sıcak hatıralarının biriktiği köşedir."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SSS -->
+  <section class="py-16 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8 space-y-8">
+      <div class="text-center space-y-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-800 block">AKLINIZA TAKILANLAR</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-stone-900">Klasik &amp; Country Mutfaklar Hakkında Merak Edilenler</h2>
+      </div>
+
+      <div class="space-y-4">
+        {seo.faqList.map((faq) => (
+          <div class="bg-white p-5 border border-stone-200 shadow-2xs space-y-2">
+            <h3 class="text-sm sm:text-base font-bold text-stone-900 flex items-center gap-2">
+              <span class="text-amber-700">Q:</span>
+              <span>{faq.question}</span>
+            </h3>
+            <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed pl-5">
+              {faq.answer}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- DİĞER KOLEKSİYONLARA GEÇİŞ -->
+  <section class="py-16 bg-stone-900 text-white border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-stone-400 block">DİĞER KOLEKSİYONLARIMIZ</span>
+          <h2 class="text-2xl sm:text-3xl font-light text-white" style="font-family: 'Playfair Display', Georgia, serif;">Farklı Stilleri Keşfedin</h2>
+        </div>
+        <a href="/#stretcher-section" class="text-xs font-bold uppercase tracking-wider text-amber-400 hover:underline flex items-center gap-1">
+          Tüm Koleksiyonlara Göz At →
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <a href="/modern-mutfak-modelleri/" class="group relative h-48 overflow-hidden border border-stone-800 block">
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-105" style="background-image: url('/media/cinematic/modern_mutfak.webp');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/60 to-transparent"></div>
+          <div class="absolute bottom-5 left-5 right-5 space-y-1">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-stone-300">01 / KOLEKSİYON</span>
+            <h3 class="text-xl font-bold text-white group-hover:text-emerald-300 transition">Modern Mutfak Modelleri →</h3>
+            <p class="text-xs text-stone-400 line-clamp-1">Kulpsuz gola profiller, monoblok yüzeyler ve yalın minimalizm.</p>
+          </div>
+        </a>
+
+        <a href="/yasam-alanlari-mutfak-modelleri/" class="group relative h-48 overflow-hidden border border-stone-800 block">
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-105" style="background-image: url('/media/cinematic/life_alanlar.webp');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/60 to-transparent"></div>
+          <div class="absolute bottom-5 left-5 right-5 space-y-1">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-stone-300">03 / KOLEKSİYON</span>
+            <h3 class="text-xl font-bold text-white group-hover:text-emerald-300 transition">Yaşam Alanları &amp; Açık Mutfak (Life) →</h3>
+            <p class="text-xs text-stone-400 line-clamp-1">Ada tipi oturma barları, entegre salon mobilyaları ve açık plan ferahlığı.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>

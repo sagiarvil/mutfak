@@ -1,0 +1,398 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const seo = {
+  title: "İzmir Yaşam Alanları & Açık Mutfak Modelleri | Ada Bar & Entegre Yaşam",
+  description: "İzmir'de salonla bütünleşik açık plan ada mutfak ve yaşam alanları mimarisi. Ada barlar, entegre TV ve kütüphane üniteleri, gizlenebilir cepli kapılar ve ücretsiz 3D sanal simülasyon.",
+  canonical: "https://izmirmutfakbanyo.com.tr/yasam-alanlari-mutfak-modelleri/",
+  serviceName: "Yaşam Alanları ve Açık Mutfak Modelleri",
+  breadcrumbs: [
+    { name: "Koleksiyonlar", url: "/#stretcher-section" },
+    { name: "Yaşam Alanları | Life", url: "/yasam-alanlari-mutfak-modelleri/" }
+  ],
+  faqList: [
+    {
+      question: "Açık plan mutfaklarda yemek kokusu salona yayılır mı?",
+      answer: "Doğru planlanmış bir açık mutfakta; 800-1000 m³/saat çekiş gücüne sahip sessiz fırçasız motorlu ada davlumbazları, aktif karbon plazma filtreler ve mimari hava akış yönlendirmesi sayesinde koku salona yayılmaz."
+    },
+    {
+      question: "Salon ile mutfak arasındaki duvarı kaldırmak güvenli midir?",
+      answer: "Kadrolu inşaat mühendisi ve mimarlarımız yerinde inceleme yaparak duvarın taşıyıcı (kolon/kiriş) olup olmadığını rölövede netleştirir. Taşıyıcı olmayan bölme duvarlar kontrollü olarak kırılır, gerekirse statik çelik lentoyla güçlendirilir."
+    },
+    {
+      question: "Mutfak adası aynı zamanda yemek masası olarak kullanılabilir mi?",
+      answer: "Kesinlikle. Ada üzerine tasarladığımız 30-40 cm genişliğindeki masif ahşap veya porselen oturma barları, 4-6 kişinin rahatça yemek yiyebileceği ve kahvaltı yapabileceği ergonomik bar sandalyeleriyle entegre edilir."
+    },
+    {
+      question: "Mutfak mobilyası ile salon mobilyalarının uyumu nasıl sağlanır?",
+      answer: "Aynı lake renk kodları, doğal meşe kaplamalar ve kuvars dokular kullanılarak mutfak dolaplarından salon TV ünitesine, konsola ve açık kitaplığa kesintisiz bir mimari geçiş tasarlanır."
+    }
+  ]
+};
+
+const models = [
+  {
+    id: "island-lounge-bar",
+    title: "Island Lounge & Oturma Barı",
+    badge: "En Popüler",
+    tag: "Geniş Ada Bar & Şarap Dolabı",
+    price: "36.000 ₺ - 44.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Yemek hazırlarken konuklarınızla sohbet edebileceğiniz 4 kişilik masif oturma barı, tezgah altı entegre şaraplık ve bardaklık ünitesiyle modern bir gastronomi sahnesi.",
+    features: ["Masif Meşe Konsol Bar Tablası", "Entegre LED Aydınlatmalı Şaraplık", "Blum Legrabox Kiler Çekmeceleri", "Gizli Priz ve Kablosuz Şarj Kulesi"]
+  },
+  {
+    id: "loft-open-space",
+    title: "Loft Open Space Salon Mutfak",
+    badge: "Modern Loft",
+    tag: "Metal Konstrüksiyon & Açık Ada",
+    price: "35.000 ₺ - 42.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Tavandan asılan antrasit metal raf sistemleri, açık plan salon geçişi ve monoblok ada tezgahı. İzmir'in modern penthouse ve loft daireleri için tasarlandı.",
+    features: ["Elektrostatik Tavan Asma Raf", "Çift Yönlü Kullanımlı Ada Dolapları", "Kuvars Şelale Kenar Dönüşü", "Dahili Bulaşık Makinesi Gizleme"]
+  },
+  {
+    id: "fusion-media-kitchen",
+    title: "Fusion Media & Kesintisiz Geçiş",
+    badge: "Bütünleşik Mimari",
+    tag: "TV Ünitesi & Kütüphane Entegre",
+    price: "38.000 ₺ - 46.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Mutfak boy dolaplarının salona doğru kesintisiz devam ederek TV ünitesi, akustik ahşap çıtalar ve açık kitaplığa dönüştüğü sıra dışı bir mimari deneyim.",
+    features: ["Kesintisiz Akustik Ahşap Paneller", "Salonla Uyumlu Entegre TV Modülü", "Gizli Bas-Aç Dolap Kapakları", "İçten Aydınlatmalı Kütüphane"]
+  },
+  {
+    id: "hideaway-pocket",
+    title: "Hideaway Pocket Kapaklı Yaşam",
+    badge: "Akıllı Çözüm",
+    tag: "Cepli Katlanır Kapaklar",
+    price: "42.000 ₺ - 52.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Mutfak kullanılmadığında veya misafir ağırlarken tek bir hamleyle kapakların yan ceplere kayarak tezgah ve evyeyi tamamen gizlediği minimalist mucize.",
+    features: ["Hawa / Blum Pocket Door Mekanizması", "Gövde İçine Gizlenen Kapak Sistemi", "Tezgah İçi Kahve Köşesi", "Sensörlü Otomatik İç Aydınlatma"]
+  },
+  {
+    id: "panorama-balcony",
+    title: "Panorama Teras & Bahçe Yaşam",
+    badge: "Ferah & Aydınlık",
+    tag: "Geniş Cam Cephe & Bahçe Çıkışı",
+    price: "34.000 ₺ - 41.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Geniş sürme camlarla balkona veya terasa açılan, doğal gün ışığını sonuna kadar içeri alan ve açık havayla evi bütünleştiren ferah yaşam konsepti.",
+    features: ["Neme ve Güneşe Ultra Dirençli Malzeme", "Açık Teras Servis Penceresi Uyumu", "Geniş Aile Ada Masası", "Lamine Porselen İnce Tezgah"]
+  },
+  {
+    id: "studio-smart",
+    title: "Studio Smart Kompakt Yaşam",
+    badge: "1+1 & Dubleks",
+    tag: "Çok Fonksiyonlu Katlanır Ada",
+    price: "31.000 ₺ - 37.000 ₺ / mtül",
+    img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1200&q=75&fm=webp",
+    desc: "Metrekaresi kıymetli daireler için katlanabilir ada masası, gizli kiler çekmeceleri ve her santimetrekaresi akıllıca değerlendirilmiş kompakt yaşam alanı.",
+    features: ["Açılır Kapanır Teleskopik Bar Masası", "Tavana Kadar Kesintisiz Depolama", "Entegre Mikrodalga ve Fırın Kulesi", "Köşe Dönen Çift Fasulye Sepet"]
+  }
+];
+---
+
+<Layout seo={seo} activeService="Yaşam Alanları | Life">
+  
+  <!-- HERO BÖLÜMÜ -->
+  <section class="relative bg-stone-950 text-white py-24 sm:py-32 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-35" style="background-image: url('/media/cinematic/life_alanlar.webp');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/75 to-stone-950/40"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
+        <span>/</span>
+        <span class="text-blue-400">Yaşam Alanları | Life</span>
+      </nav>
+
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-950/90 border border-blue-400/40 text-blue-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
+        <span>03 / KOLEKSİYON</span>
+        <span>•</span>
+        <span>AÇIK PLAN &amp; SALONLA BÜTÜNLEŞİK YAŞAM</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
+        İzmir Yaşam Alanları &amp; Açık Mutfak: <br /><span class="font-normal italic text-blue-300">Ada Barlar &amp; Bütünleşik Salon Mimarisi</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
+        Mutfak artık 4 duvar arasına hapsolmuş bir servis odası değil; ailenin buluştuğu, dostların ağırlandığı ve evin enerjisini belirleyen yaşam alanı. Ada tipi oturma barları, salon mobilyalarıyla entegre ahşap geçişler ve akıllı mekan kurgusuyla evinizi baştan yaratıyoruz.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 pt-3">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20açık%20plan%20mutfak%20ve%20yaşam%20alanı%20modelleriniz%20hakkında%20bilgi%20ve%20ücretsiz%203D%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-blue-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-blue-400 transition shadow-xl inline-flex items-center gap-2">
+          <span>💬</span> <span>WhatsApp ile Açık Mutfak Projesi Başlat</span>
+        </a>
+        <a href="#modeller" class="px-8 py-4 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          Modelleri İncele ↓
+        </a>
+      </div>
+
+      <!-- Rozetler -->
+      <div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-stone-800 text-xs text-stone-300">
+        <div>
+          <strong class="text-white block text-sm font-semibold">Duvar Kırım &amp; Mimari</strong>
+          <span class="text-stone-400 text-[11px]">Güvenli statik analiz ve kırım</span>
+        </div>
+        <div>
+          <strong class="text-white block text-sm font-semibold">Ada Bar Entegrasyonu</strong>
+          <span class="text-stone-400 text-[11px]">Yemek masası ve ada bir arada</span>
+        </div>
+        <div>
+          <strong class="text-white block text-sm font-semibold">Sıfır Koku &amp; Sessizlik</strong>
+          <span class="text-stone-400 text-[11px]">Yüksek debili plazma filtre ada emiş</span>
+        </div>
+        <div>
+          <strong class="text-white block text-sm font-semibold">Tüm İzmir'e Keşif</strong>
+          <span class="text-stone-400 text-[11px]">Buca mağazamızdan ücretsiz 3D</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEKNİK STANDARTLAR TABLOSU -->
+  <section class="bg-stone-100 border-b border-stone-200 py-12" id="teknik-standartlar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      <div class="border-l-4 border-blue-600 pl-4 space-y-1">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-800">AÇIK PLAN MİMARİ STANDARTLAR</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-stone-900">Açık Plan Mutfak &amp; Yaşam Alanı Mühendislik Kriterleri</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Statik Kırım &amp; Güçlendirme</strong>
+          <p class="text-stone-600 leading-relaxed">İç mimar ve mühendis eşliğinde kolon/kiriş röntgeni. Taşıyıcı olmayan duvarların güvenli yıkımı, moloz tahliyesi ve tavan alçıpan birleşimleri.</p>
+        </div>
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Hava Emiş ve Koku Bariyeri</strong>
+          <p class="text-stone-600 leading-relaxed">Ada üstü pişirme alanlarında minimum 850 m³/h emiş gücüne sahip sessiz fırçasız motorlar ve koku moleküllerini parçalayan aktif karbon filtreler.</p>
+        </div>
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Salon Zemin ve Akış Geçişi</strong>
+          <p class="text-stone-600 leading-relaxed">Mutfak seramiği ile salon parkesi arasında kot farkını sıfırlayan gizli pirinç/alüminyum L profiller veya kesintisiz 60x120 derzsiz porselen zemin.</p>
+        </div>
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Entegre TV ve Konsol Uyumu</strong>
+          <p class="text-stone-600 leading-relaxed">Mutfakta kullanılan kapak malzemesi (lake, meşe kaplama) ile salonun TV ünitesi, kütüphane ve yemek konsolunun birebir aynı dokuda üretimi.</p>
+        </div>
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Cepli (Pocket Door) Gizleme</strong>
+          <p class="text-stone-600 leading-relaxed">Gerektiğinde tezgahı, küçük ev aletlerini ve bulaşık alanını 2 saniyede salon görüntüsünden izole eden sessiz cepli sürme kapak sistemleri.</p>
+        </div>
+        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+          <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Elektrik &amp; Ada Su Tesisatı</strong>
+          <p class="text-stone-600 leading-relaxed">Zemin altından adaya taşınan temiz su, gider ve 380V indüksiyon kablolaması. Zemin izolasyonu garantili anahtar teslim uygulama.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELLER GALERİSİ -->
+  <section class="py-20 sm:py-28 bg-white" id="modeller">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-blue-700 block">MODERN YAŞAM KONSEPTLERİ</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light text-stone-950 tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+          Özgür ve Ferah <span class="font-normal italic">Yaşam Alanları Koleksiyonumuz</span>
+        </h2>
+        <p class="text-sm sm:text-base text-stone-600 font-light leading-relaxed">
+          Evinizin salonu ve mutfağını tek bir estetik harmoniye kavuşturan, misafirlerinizi keyifle ağırlayacağınız 6 yenilikçi açık plan model serimiz.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {models.map((m) => (
+          <div class="bg-stone-50 border border-stone-200 overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300">
+            <div class="relative h-64 sm:h-72 overflow-hidden bg-stone-900">
+              <img 
+                src={m.img} 
+                alt={`${m.title} - İzmir Açık Mutfak ve Ada Bar`} 
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-105" 
+                loading="lazy" 
+                decoding="async"
+                width="600"
+                height="400"
+              />
+              <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                <span class="px-2.5 py-1 bg-stone-950/85 text-blue-300 text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm">
+                  {m.badge}
+                </span>
+                <span class="px-2.5 py-0.5 bg-white/90 text-stone-900 text-[9.5px] font-bold uppercase tracking-wider">
+                  {m.tag}
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <h3 class="text-xl font-bold text-stone-900 group-hover:text-blue-800 transition">{m.title}</h3>
+                <p class="text-xs text-stone-600 font-light leading-relaxed line-clamp-3">{m.desc}</p>
+              </div>
+
+              <div class="space-y-2 pt-2 border-t border-stone-200">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-stone-400 block">Öne Çıkan Detaylar</span>
+                <ul class="space-y-1 text-xs text-stone-700">
+                  {m.features.map((f) => (
+                    <li class="flex items-center gap-1.5">
+                      <span class="text-blue-600 text-xs">✔</span>
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div class="pt-3 border-t border-stone-200 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-stone-400 block font-semibold">Yaklaşık Aralık</span>
+                  <span class="text-xs font-bold text-stone-900">{m.price}</span>
+                </div>
+                <a 
+                  href={`https://wa.me/905393333303?text=Merhaba,%20ya%C5%9Fam%20alanlar%C4%B1%20koleksiyonunuzdaki%20${encodeURIComponent(m.title)}%20modeli%20hakk%C4%B1nda%203D%20%C3%A7izim%20ve%20fiyat%20teklifi%20almak%20istiyorum.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="px-4 py-2 bg-stone-900 text-white text-[11px] font-bold uppercase tracking-wider hover:bg-blue-600 transition inline-flex items-center gap-1.5"
+                >
+                  <span>3D Tasarla</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- MİMARİ DENEYİM -->
+  <section class="py-20 bg-stone-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-blue-300 block">BÜTÜNLEŞİK MİMARLIK</span>
+          <h2 class="text-3xl sm:text-4xl font-light text-white leading-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+            Salona Açılan Mutfakta, <br /><span class="font-normal italic text-blue-200">Her Açı Bir Fotoğraf Karesi</span> Kadar Kusursuz Olmalı
+          </h2>
+          <p class="text-sm text-stone-300 font-light leading-relaxed">
+            Kapalı kapılar arkasında kalan mutfak hataları tolere edebilir; ancak salona açılan bir mutfakta en ufak uyumsuzluk tüm evin havasını bozar. Kadrolu iç mimarlarımız, oturma grubunuzun açısına göre ada yerleşimini hesaplar ve mutfağı salonun en şık mobilyası haline getirir.
+          </p>
+
+          <div class="space-y-3 pt-2 text-xs">
+            <div class="flex items-start gap-3 p-3 bg-stone-900/80 border border-stone-800">
+              <span class="text-blue-400 text-base">🔍</span>
+              <div>
+                <strong class="text-white block font-semibold">1. Adım: Mekan Sirkülasyonu ve Işık Akış Planı</strong>
+                <span class="text-stone-400">Yemek hazırlarken ailenizle göz teması kurabileceğiniz ergonomik açı yerleşimi.</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-stone-900/80 border border-stone-800">
+              <span class="text-blue-400 text-base">🛋️</span>
+              <div>
+                <strong class="text-white block font-semibold">2. Adım: Salon Mobilyalarıyla Birebir Renk &amp; Doku Eşleştirmesi</strong>
+                <span class="text-stone-400">Televizyon ünitesi, konsol ve mutfak dolaplarında ortak ahşap ve lake kartela seçimi.</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-stone-900/80 border border-stone-800">
+              <span class="text-blue-400 text-base">🏗️</span>
+              <div>
+                <strong class="text-white block font-semibold">3. Adım: Kırımdan Montaja Tek Muhatap Güvencesi</strong>
+                <span class="text-stone-400">Yıkım, moloz, alçı, elektrik, tesisat ve mobilya tek bir sözleşmeyle anahtar teslim.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <a href="https://wa.me/905393333303?text=Merhaba,%20açık%20plan%20yaşam%20alanı%20için%20ücretsiz%20yerinde%20keşif%20ve%203D%20tasarım%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-blue-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-blue-400 transition shadow-xl inline-flex items-center gap-2">
+              <span>📍</span> <span>Ücretsiz Yerinde Keşif Randevusu Al</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="aspect-4/3 overflow-hidden border border-stone-800 shadow-2xl relative">
+            <img 
+              src="/media/cinematic/life_alanlar.webp" 
+              alt="İzmir Açık Plan Mutfak Salon Bütünleşik Yaşam Alanı" 
+              class="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="600"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 p-4 bg-stone-900/90 backdrop-blur-md border border-stone-700/60">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-blue-300 block">İÇ MİMAR NOTU</span>
+              <p class="text-xs text-stone-200 font-light mt-1">
+                "Açık mutfak tasarlarken sadece yemek pişirme alanını değil; evin sohbet kültürünü, dost meclislerini ve çocukların ders çalışma anlarını tasarlarsınız."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SSS -->
+  <section class="py-16 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8 space-y-8">
+      <div class="text-center space-y-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-800 block">AKLINIZA TAKILANLAR</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-stone-900">Açık Plan Mutfak &amp; Yaşam Alanları SSS</h2>
+      </div>
+
+      <div class="space-y-4">
+        {seo.faqList.map((faq) => (
+          <div class="bg-white p-5 border border-stone-200 shadow-2xs space-y-2">
+            <h3 class="text-sm sm:text-base font-bold text-stone-900 flex items-center gap-2">
+              <span class="text-blue-700">Q:</span>
+              <span>{faq.question}</span>
+            </h3>
+            <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed pl-5">
+              {faq.answer}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- DİĞER KOLEKSİYONLARA GEÇİŞ -->
+  <section class="py-16 bg-stone-900 text-white border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-stone-400 block">DİĞER KOLEKSİYONLARIMIZ</span>
+          <h2 class="text-2xl sm:text-3xl font-light text-white" style="font-family: 'Playfair Display', Georgia, serif;">Farklı Stilleri Keşfedin</h2>
+        </div>
+        <a href="/#stretcher-section" class="text-xs font-bold uppercase tracking-wider text-blue-400 hover:underline flex items-center gap-1">
+          Tüm Koleksiyonlara Göz At →
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <a href="/modern-mutfak-modelleri/" class="group relative h-48 overflow-hidden border border-stone-800 block">
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-105" style="background-image: url('/media/cinematic/modern_mutfak.webp');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/60 to-transparent"></div>
+          <div class="absolute bottom-5 left-5 right-5 space-y-1">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-stone-300">01 / KOLEKSİYON</span>
+            <h3 class="text-xl font-bold text-white group-hover:text-emerald-300 transition">Modern Mutfak Modelleri →</h3>
+            <p class="text-xs text-stone-400 line-clamp-1">Kulpsuz gola profiller, monoblok yüzeyler ve yalın minimalizm.</p>
+          </div>
+        </a>
+
+        <a href="/klasik-country-mutfak-modelleri/" class="group relative h-48 overflow-hidden border border-stone-800 block">
+          <div class="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-105" style="background-image: url('/media/cinematic/klasik_mutfak.webp');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/60 to-transparent"></div>
+          <div class="absolute bottom-5 left-5 right-5 space-y-1">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-stone-300">02 / KOLEKSİYON</span>
+            <h3 class="text-xl font-bold text-white group-hover:text-amber-300 transition">Klasik &amp; Country Mutfak Modelleri →</h3>
+            <p class="text-xs text-stone-400 line-clamp-1">Zarif çıta işçiliği, ipek mat lake dokular ve masif ahşap sıcaklığı.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
