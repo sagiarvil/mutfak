@@ -91,7 +91,7 @@ export const siteConfig = {
       description: "Sürpriz maliyet olmadan, resmi sözleşmeli ve gecikme cezalı anahtar teslim konut ve villa tadilatı. İzmir'in tüm ilçelerine keşif hizmeti.",
       shortDesc: "Zamanında teslimat ve sabit fiyat garantili profesyonel anahtar teslim tadilat.",
       keywords: ["izmir anahtar teslim tadilat", "villa tadilatı izmir", "iç mimarlık izmir tadilat", "lüks ev tadilatı izmir"],
-      features: ["Resmi Sözleşme ve Noter Taahhüt İmkanı", "3D Render Onaylı İmalat", "Sabit Fiyat Garantisi (Ek Maliyet Yok)", "Gecikme Cezalı Teslimat"]
+      features: ["Resmi Sözleşme ve Noter Taahhüt İmkanı", "3D Render Onaylı İmalat", "Mimar Onaylı Sözleşme Garantisi (Ek Maliyet Yok)", "Gecikme Cezalı Teslimat"]
     },
     {
       id: "mutfak-dolabi-fiyatlari",

@@ -9,7 +9,7 @@ export interface Props {
 }
 
 const {
-  title = "İzmir Geneli Ücretsiz Keşif ve Fiyat Teklifi Alın",
+  title = "İzmir Geneli Ücretsiz Keşif ve Mimari 3D Keşif Alın",
   subtitle = "İlçenizi ve ihtiyacınızı seçin, 15 dakika içinde WhatsApp üzerinden detaylı maliyet ve projelendirme bilgisi iletelim.",
   service = "Mutfak & Banyo Tadilatı"
 } = Astro.props;
@@ -71,7 +71,7 @@ const defaultUrl = buildWhatsAppUrl({ service });
     if (!waBtn) return;
     const district = districtSelect ? districtSelect.value : 'İzmir';
     const srv = serviceSelect ? serviceSelect.value : 'Mutfak Banyo Tadilatı';
-    const text = `Merhaba, ${district} bölgesinde ${srv} hizmetiniz için ücretsiz keşif ve fiyat teklifi almak istiyorum.`;
+    const text = `Merhaba, ${district} bölgesinde ${srv} hizmetiniz için ücretsiz keşif ve ücretsiz 3D mimari keşif ve çizim randevusu almak istiyorum.`;
     waBtn.href = `https://wa.me/905393333303?text=${encodeURIComponent(text)}`;
   }
 

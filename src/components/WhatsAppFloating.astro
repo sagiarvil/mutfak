@@ -9,7 +9,7 @@ export interface Props {
 const { service } = Astro.props;
 const waUrl = buildWhatsAppUrl({ 
   service: service || "Mutfak & Banyo Tadilatı",
-  customMessage: "Merhaba, İzmir içi ücretsiz keşif ve fiyat teklifi almak istiyorum."
+  customMessage: "Merhaba, İzmir içi ücretsiz keşif ve ücretsiz 3D mimari keşif ve çizim randevusu almak istiyorum."
 });
 ---
 
@@ -19,7 +19,7 @@ const waUrl = buildWhatsAppUrl({
     <span class="btn-label">Ara</span>
   </a>
 
-  <a href={waUrl} target="_blank" rel="noopener noreferrer" class="floating-btn btn-wa" aria-label="WhatsApp İle Hızlı Fiyat Al">
+  <a href={waUrl} target="_blank" rel="noopener noreferrer" class="floating-btn btn-wa" aria-label="WhatsApp Mimari Keşif Hattı">
     <span class="btn-icon">💬</span>
     <span class="btn-label">WhatsApp Keşif</span>
     <span class="pulse-ring"></span>

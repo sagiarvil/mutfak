@@ -20,7 +20,7 @@ export function buildWhatsAppUrl(options?: {
   const district = options?.district ? `${options.district} bölgesinde` : "İzmir genelinde";
   const source = options?.source ? ` (${options.source} sayfasından)` : "";
 
-  const text = `Merhaba, ${district} ${service} hizmetiniz hakkında ücretsiz keşif ve fiyat teklifi almak istiyorum.${source}`;
+  const text = `Merhaba, ${district} ${service} hizmetiniz hakkında ücretsiz keşif ve ücretsiz 3D mimari keşif ve çizim randevusu almak istiyorum.${source}`;
 
   return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
 }
