@@ -48,6 +48,43 @@
           }
         ]
       }
+    ],
+    "redirects": [
+      {
+        "source": "/mutfak-dolabi",
+        "destination": "/izmir-mutfak-dolabi-imalati/",
+        "type": 301
+      },
+      {
+        "source": "/mutfak-tadilati",
+        "destination": "/izmir-komple-mutfak-tadilati/",
+        "type": 301
+      },
+      {
+        "source": "/banyo-tadilati",
+        "destination": "/izmir-banyo-yenileme-seramik/",
+        "type": 301
+      },
+      {
+        "source": "/ev-tadilati",
+        "destination": "/izmir-komple-daire-tadilati/",
+        "type": 301
+      },
+      {
+        "source": "/anahtar-teslim-tadilat",
+        "destination": "/izmir-anahtar-teslim-tadilat/",
+        "type": 301
+      },
+      {
+        "source": "/hazir-mutfak",
+        "destination": "/hazir-mutfak-modelleri-izmir/",
+        "type": 301
+      },
+      {
+        "source": "/mutfak-dolabi-fiyatlari",
+        "destination": "/2026-mutfak-dolabi-fiyatlari/",
+        "type": 301
+      }
     ]
   }
 }

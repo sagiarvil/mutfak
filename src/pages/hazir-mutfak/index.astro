@@ -1,137 +1,21 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import { siteConfig } from "../../data/siteConfig";
-
-const seo = {
-  title: "İzmir Hazır Mutfak Modelleri & Hızlı Montaj Çözümleri | 1984'ten Bugüne",
-  description: "Hızlı teslimat gerektiren daireler, yazlıklar ve kiralık konutlar için dayanıklı modüler hazır mutfak dolapları. Buca imalat atölyemizden İzmir geneline hızlı montaj.",
-  canonical: "https://izmirmutfakbanyo.com.tr/hazir-mutfak/",
-  serviceName: "Hazır Mutfak Çözümleri",
-  breadcrumbs: [
-    { name: "Hazır Mutfak", url: "/hazir-mutfak/" }
-  ],
-  faqList: [
-    {
-      question: "Hazır mutfak dolapları kaç günde monte edilir?",
-      answer: "Standart modüler ölçülerdeki hazır mutfak dolaplarımız stoktan hazırlanarak 3 ila 5 iş günü içerisinde adresinize ulaştırılır ve profesyonel ekibimizce 1 günde monte edilir."
-    },
-    {
-      question: "Hazır mutfakta tezgah dahil mi?",
-      answer: "İsteğinize bağlı olarak laminat tezgah, masif ahşap veya granit/çimstone tezgah seçenekleriyle paket halinde sunulmaktadır."
-    },
-    {
-      question: "Özel ölçülü mutfak ile hazır mutfak arasındaki fark nedir?",
-      answer: "Hazır mutfak standart ölçülerdeki (40, 60, 80 cm) modüllerden oluşur ve hızlı teslim edilir. Özel imalatta ise kadrolu mimarımız alanınızın her santimini sıfır boşlukla projelendirir."
-    }
-  ]
-};
+const targetUrl = "/hazir-mutfak-modelleri-izmir/";
 ---
-
-<Layout seo={seo} activeService="Hazır Mutfak">
-  
-  <!-- HERO BÖLÜMÜ -->
-  <section class="relative bg-stone-950 text-white py-20 sm:py-28 overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1800&q=80');"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/80 to-transparent"></div>
-    
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
-      <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
-        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
-        <span>/</span>
-        <span class="text-emerald-400">Hazır Mutfak</span>
-      </nav>
-
-      <span class="inline-block px-3.5 py-1.5 bg-emerald-950/80 border border-emerald-400/40 text-emerald-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
-        1984'TEN BUGÜNE 42 YILLIK TECRÜBE • HIZLI VE EKONOMİK KURULUM
-      </span>
-
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
-        İzmir Hazır Mutfak Modelleri, <br /><span class="font-normal italic">Modüler Estetik &amp; Hızlı Teslimat</span>
-      </h1>
-
-      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
-        Kiralık daireler, yazlıklar ve pratik dönüşüm arayan ev sahipleri için ekonomik, dayanıklı ve şık modüler mutfak çözümleri. Buca atölyemizden doğrudan üretim ve İzmir geneline hızlı montaj.
-      </p>
-
-      <div class="flex flex-wrap items-center gap-4 pt-2">
-        <a href="https://wa.me/905393333303?text=Merhaba,%20hazır%20mutfak%20modelleri%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg inline-flex items-center gap-2">
-          <span>💬</span> <span>WhatsApp ile Model &amp; Fiyat İste</span>
-        </a>
-        <a href="tel:05393333303" class="px-8 py-3.5 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
-          📞 0539 333 33 03
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4 SÜTUN GÜVEN ŞERİDİ -->
-  <section class="bg-[#121212] text-white border-b border-stone-800 py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="flex items-start gap-4">
-          <span class="text-3xl text-emerald-400 font-editorial shrink-0">1984</span>
-          <div class="space-y-1">
-            <h4 class="text-sm font-bold uppercase tracking-wider text-white">42 Yıllık Güven</h4>
-            <p class="text-xs text-stone-400 font-light leading-relaxed">Binlerce hazır mutfak modülü imalatı ve montaj tecrübesi.</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-3.5">
-          <span class="text-2xl text-emerald-400 shrink-0">⚡</span>
-          <div class="space-y-1">
-            <h4 class="text-sm font-bold uppercase tracking-wider text-white">3-5 Günde Teslimat</h4>
-            <p class="text-xs text-stone-400 font-light leading-relaxed">Hemen taşınması gereken konutlar için hızlı üretim ve kurulum.</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-3.5">
-          <span class="text-2xl text-emerald-400 shrink-0">🛠️</span>
-          <div class="space-y-1">
-            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Frenli Sağlam Mekanizma</h4>
-            <p class="text-xs text-stone-400 font-light leading-relaxed">Hazır mutfakta dahi 1. sınıf neme dayanıklı MDF ve frenli raylar.</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-3.5">
-          <span class="text-2xl text-emerald-400 shrink-0">📍</span>
-          <div class="space-y-1">
-            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Buca'dan 30 İlçeye</h4>
-            <p class="text-xs text-stone-400 font-light leading-relaxed">Atölyemizden doğrudan nakliye ve yerinde profesyonel montaj.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SSS BÖLÜMÜ -->
-  <section class="py-20 sm:py-24 bg-stone-50 border-b border-stone-200">
-    <div class="max-w-4xl mx-auto px-4 sm:px-8 space-y-8">
-      <div class="text-center space-y-2">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">MERAK EDİLENLER</span>
-        <h2 class="text-2xl sm:text-3xl font-light text-stone-950 font-editorial">Hazır Mutfak Hakkında Sorularınız</h2>
-      </div>
-
-      <div class="space-y-4">
-        {seo.faqList.map((faq) => (
-          <div class="bg-white border border-stone-200 p-6 space-y-2 shadow-2xs">
-            <h3 class="font-bold text-sm text-stone-900">{faq.question}</h3>
-            <p class="text-xs text-stone-600 font-light leading-relaxed">{faq.answer}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- ÇAĞRI BÖLÜMÜ -->
-  <section class="py-16 bg-stone-900 text-white text-center">
-    <div class="max-w-3xl mx-auto px-4 space-y-6">
-      <h2 class="text-2xl sm:text-3xl font-light font-editorial">Hızlı ve Ekonomik Çözüm İçin Bize Ulaşın</h2>
-      <p class="text-xs sm:text-sm text-stone-300 font-light">
-        Ölçülerinizi gönderin, mevcut hazır mutfak modüllerimizi ve fiyat avantajlarımızı dakikalar içinde öğrenin.
-      </p>
-      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
-        <a href="https://wa.me/905393333303?text=Merhaba,%20hazır%20mutfak%20modelleri%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg">
-          💬 WhatsApp ile İletişime Geçin (0539 333 33 03)
-        </a>
-      </div>
-    </div>
-  </section>
-
-</Layout>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <title>Yönlendiriliyor...</title>
+  <link rel="canonical" href="https://izmirmutfakbanyo.com.tr/hazir-mutfak-modelleri-izmir/" />
+  <meta http-equiv="refresh" content="0; url=/hazir-mutfak-modelleri-izmir/" />
+  <script is:inline>
+    window.location.href = "/hazir-mutfak-modelleri-izmir/";
+  </script>
+</head>
+<body class="bg-stone-950 text-white flex items-center justify-center min-h-screen font-sans">
+  <div class="text-center p-8 space-y-4">
+    <p class="text-sm text-stone-400">Sayfa yeni adresine yönlendiriliyor...</p>
+    <a href="/hazir-mutfak-modelleri-izmir/" class="text-emerald-400 underline text-xs font-bold">Buraya tıklayarak devam edin &rarr;</a>
+  </div>
+</body>
+</html>

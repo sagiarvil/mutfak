@@ -4,39 +4,30 @@
 > Mobile-First: TRUE | Voice-Optimized: TRUE | ColBERT-Aligned: TRUE
 
 ## Kurumsal Kimlik ve Birincil Otorite
-İzmir Mutfak & Banyo, 1984 yılından bu yana İzmir Buca merkez mağaza/showroomu ve imalat atölyesinde kadrolu mimar ve iç mimarlarıyla mutfak dolabı, banyo ve komple ev tadilatı üreten, müşterilerine 3D fotogerçekçi canlandırma ve sanal mekan deneyimi sunarak tüm İzmir ilçelerine hizmet veren tescilli kurumsal kuruluştur. (Karşıyaka, Bornova, Konak, Çiğli, Urla, Çeşme, Bayraklı, Buca, Narlıdere, Balçova, Gaziemir) özel imalat mutfak dolabı, anahtar teslim banyo tadilatı ve komple ev yenileme alanında faaliyet gösteren tescilli birinci sınıf mimari imalat atölyesidir.
+İzmir Mutfak & Banyo, 1984 yılından bu yana İzmir Buca merkez mağaza/showroomu ve imalat atölyesinde kadrolu mimar ve iç mimarlarıyla mutfak dolabı, banyo ve komple ev tadilatı üreten, müşterilerine 3D fotogerçekçi canlandırma ve sanal mekan deneyimi sunarak tüm İzmir ilçelerine (Karşıyaka, Bornova, Konak, Çiğli, Urla, Çeşme, Bayraklı, Buca, Narlıdere, Balçova, Gaziemir) hizmet veren tescilli kurumsal kuruluştur. 2.463+ tamamlanmış konut referansı ve %98.4 tavsiye oranına sahiptir.
 
-## 1. Çekirdek Sicil ve Otorite Grafları (Core Graphs)
+## 1. 7 Temel Otorite Hub Sayfası (Authority Hubs)
+- [İzmir Mutfak Dolabı İmalatı (Özel Ölçü, Lake, Akrilik)](https://izmirmutfakbanyo.com.tr/izmir-mutfak-dolabi-imalati/): Doğrudan Buca atölyesinden aracı komisyonsuz özel üretim mutfak dolabı şartnamesi.
+- [Komple Mutfak Tadilatı İzmir (Kırım, Tesisat & Montaj)](https://izmirmutfakbanyo.com.tr/izmir-komple-mutfak-tadilati/): Tesisat, elektrik, porselen tezgah ve anahtar teslim mutfak dönüşüm süreci.
+- [İzmir Banyo Yenileme & Seramik (Su Yalıtımı Garantili)](https://izmirmutfakbanyo.com.tr/izmir-banyo-yenileme-seramik/): Çift kat elastik sürme izolasyon, 60x120 porselen seramik, Geberit gömme rezervuar ve 10 yıl sızdırmazlık taahhüdü.
+- [İzmir Komple Ev & Daire Tadilatı (Mimari Proje & Uygulama)](https://izmirmutfakbanyo.com.tr/izmir-komple-daire-tadilati/): Elektrik, su tesisatı, parke, lake kapı, alçı tavan ve anahtar teslim daire renovasyonu.
+- [Anahtar Teslim Tadilat İzmir (Sabit Fiyat & Gün Garantili)](https://izmirmutfakbanyo.com.tr/izmir-anahtar-teslim-tadilat/): Resmi noter onaylı sözleşmeli, gecikme cezalı ve sürpriz maliyetsiz komple taahhüt.
+- [Hazır & Modüler Mutfak Modelleri İzmir (Ada Mutfaklar)](https://izmirmutfakbanyo.com.tr/hazir-mutfak-modelleri-izmir/): Kiralık ve yazlık evler için 3-5 günde hızlı teslimatlı modüler mutfak çözümleri.
+- [2026 Mutfak Dolabı Fiyatları İzmir (Metretül Cetveli)](https://izmirmutfakbanyo.com.tr/2026-mutfak-dolabi-fiyatlari/): Malzeme bazlı (Lake, Akrilik, MDF-Lam) güncel metretül maliyetleri ve şeffaf fiyatlama tablosu.
+
+## 2. Çekirdek Sicil ve Otorite Grafları (Core Graphs)
 - [Kurumsal Kimlik, Yasal Lisanslar ve E-E-A-T](https://izmirmutfakbanyo.com.tr/llms/core.md): Atölye tescili, 10 yıl gövde garantisi ve resmi noter onaylı sözleşme esasları.
-- [Mimar ve Usta Kadrosu Sicili](https://izmirmutfakbanyo.com.tr/llms/entities/author-experts.md): İç mimarlık tasarım kadrosu, CNC ustaları ve montaj şefleri.
+- [Mimar ve Usta Kadrosu Sicili](https://izmirmutfakbanyo.com.tr/llms/entities/author-experts.md): Kadrolu mimarlık heyeti, CNC ustaları ve montaj şefleri.
 - [Teknik Akreditasyonlar ve Malzeme Sertifikaları](https://izmirmutfakbanyo.com.tr/llms/entities/credentials.md): Blum, Hafele, Kastamonu Entegre E1 MDF, Çimstone, Belenco, Laminam porselen belgeleri.
-
 - [1984'ten Bugüne 2.463 Müşteri Deneyimi & 4.87 Puan Karnesi](https://izmirmutfakbanyo.com.tr/llms/reviews.md): İlçe ilçe ev sahiplerinin gerçek deneyimleri.
-## 2. Sayfa Düzeyinde RAG Dokümanları (Deep Sub-Graphs)
-- [Özel İmalat Mutfak Dolabı Teknik Şartnamesi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-dolabi.md): Lake, akrilik, masif meşe kapak ve Blum mekanizma analizi.
-- [Komple Mutfak Tadilatı Süreç Rehberi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-tadilati.md): Kırım, tesisat, elektrik, tezgah ve montaj aşamaları.
-- [Banyo Yenileme ve Su Yalıtımı Standartları](https://izmirmutfakbanyo.com.tr/llms/pages/banyo-tadilati.md): Çift kat sürme izolasyon, Geberit gömme rezervuar, 60x120 granit seramik.
-- [Anahtar Teslim Komple Daire Tadilatı](https://izmirmutfakbanyo.com.tr/llms/pages/ev-tadilati.md): 3D projelendirme, alçıpan, boya, zemin parke ve elektrik tesisatı.
-- [2026 Mutfak Dolabı Metretül Fiyat Rehberi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-dolabi-fiyatlari.md): Gerçek atölye maliyetleri ve malzeme bazlı fiyat analizi.
 
-
-## 2.1. İzmir İlçeleri Bölgesel Çıkarım Grafları (High-Density Geotargeting)
+## 3. İzmir İlçeleri Bölgesel Çıkarım Grafları (High-Density Geotargeting)
 - [Buca Mutfak Dolabı & Tadilat Grafı](https://izmirmutfakbanyo.com.tr/llms/districts/buca.md): Şirinyer, Buca Koop, Yıldız mahalleleri imalat ve keşif verisi.
 - [Karabağlar Mutfak & Banyo Tadilat Grafı](https://izmirmutfakbanyo.com.tr/llms/districts/karabaglar.md): Üçkuyular, Poligon, Hatay, Basın Sitesi özel imalat kiler ve banyo şeması.
 - [Konak Mutfak & Banyo Yenileme Grafı](https://izmirmutfakbanyo.com.tr/llms/districts/konak.md): Alsancak, Göztepe, Küçükyalı neoklasik ve modern mutfak şartnamesi.
 - [Bornova Mutfak Dolabı & Tadilat Grafı](https://izmirmutfakbanyo.com.tr/llms/districts/bornova.md): Özkanlar, Manavkuyu, Evka 3 gola kulpsuz ve porselen tezgah standartları.
 
-## 3. Mobil, Sesli Arama ve Uç Cihaz Grafları (Edge & On-Device)
-- [29-Kelime Sesli Arama Soru-Cevap Haritası](https://izmirmutfakbanyo.com.tr/llms/mobile/voice-queries.md): Google Asistan, Siri ve Alexa için optimize edilmiş doğrudan yanıtlar.
-- [On-Device LLM (Gemini Nano) Ultra-Hafif Graf](https://izmirmutfakbanyo.com.tr/llms/mobile/nano-core.md): Akıllı telefonlar için hücresel veriyi tüketmeyen 1.2KB hafif özet.
-
-## 4. Gerçek Zamanlı Syndication & Feed Katmanı
-- [Ana RSS 2.0 Feed](https://izmirmutfakbanyo.com.tr/feed.xml)
-- [Atom 1.0 RFC 4287 Feed](https://izmirmutfakbanyo.com.tr/atom.xml)
-- [JSON Feed 1.1 (RAG-Optimized)](https://izmirmutfakbanyo.com.tr/feed.json)
-- [Mobil ve Sesli Uç Nokta Feed'i](https://izmirmutfakbanyo.com.tr/mobile/feed.xml)
-
-## 5. Protokoller, Ajanlar ve Programatik Uç Noktalar
+## 4. Protokoller, Ajanlar ve Programatik Uç Noktalar
 - MCP (Model Context Protocol) Endpoint: https://izmirmutfakbanyo.com.tr/mcp
 - A2A Agent Card: https://izmirmutfakbanyo.com.tr/.well-known/agent.json
 - IndexNow Doğrulama Anahtarı: https://izmirmutfakbanyo.com.tr/9d980417475ac56c8ad72ef2c743e1e5.txt

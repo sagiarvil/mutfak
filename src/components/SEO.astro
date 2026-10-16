@@ -34,14 +34,15 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "");
 const canonicalUrl = canonical || `${siteUrl}${currentPath}/`;
 const imageUrl = image.startsWith("http") ? image : `${siteUrl}${image.startsWith("/") ? image : "/" + image}`;
 
-const fullTitle = title.includes(siteConfig.name) ? title : `${title} | ${siteConfig.name}`;
+const fullTitle = title.includes("|") ? title : `${title} | ${siteConfig.name}`;
 
-// Schema.org: Organization
-const organizationSchema = {
-  "@context": "https://schema.org",
+// -----------------------------------------------------------------------------
+// SCHEMA.ORG @graph MİMARİSİ (AEO, LLM Atıf & Google Rich Results)
+// -----------------------------------------------------------------------------
+const organizationNode = {
   "@type": "HomeAndConstructionBusiness",
   "@id": `${siteUrl}/#organization`,
-  "name": siteConfig.legalName,
+  "name": "İzmir Mutfak Banyo Tadilat & İmalat",
   "alternateName": siteConfig.name,
   "url": `${siteUrl}/`,
   "logo": `${siteUrl}/logo.png`,
@@ -60,16 +61,16 @@ const organizationSchema = {
   },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": siteConfig.address.streetAddress || "Buca Showroom & İmalat Mağazası",
-    "addressLocality": siteConfig.address.addressLocality,
-    "addressRegion": siteConfig.address.addressRegion,
-    "addressCountry": siteConfig.address.addressCountry,
-    "postalCode": siteConfig.address.postalCode
+    "streetAddress": "Buca Showroom & İmalat Mağazası",
+    "addressLocality": "İzmir",
+    "addressRegion": "TR-35",
+    "postalCode": "35000",
+    "addressCountry": "TR"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": siteConfig.geo.latitude,
-    "longitude": siteConfig.geo.longitude
+    "latitude": 38.4237,
+    "longitude": 27.1428
   },
   "openingHoursSpecification": [
     {
@@ -79,20 +80,42 @@ const organizationSchema = {
       "closes": "19:30"
     }
   ],
-  "areaServed": siteConfig.districts.map(d => ({
-    "@type": "AdministrativeArea",
-    "name": `${d}, İzmir`
-  })),
+  "areaServed": [
+    {"@type": "AdministrativeArea", "name": "Karşıyaka"},
+    {"@type": "AdministrativeArea", "name": "Bornova"},
+    {"@type": "AdministrativeArea", "name": "Urla"},
+    {"@type": "AdministrativeArea", "name": "Çeşme"},
+    {"@type": "AdministrativeArea", "name": "Güzelbahçe"},
+    {"@type": "AdministrativeArea", "name": "Konak"},
+    {"@type": "AdministrativeArea", "name": "Buca"},
+    {"@type": "AdministrativeArea", "name": "Çiğli"},
+    {"@type": "AdministrativeArea", "name": "Gaziemir"},
+    {"@type": "AdministrativeArea", "name": "Narlıdere"}
+  ],
   "sameAs": [
     siteConfig.socials.instagram,
     siteConfig.googleMapsUrl
   ]
 };
 
-// Schema.org: BreadcrumbList
-const breadcrumbSchema = breadcrumbs.length > 0 ? {
-  "@context": "https://schema.org",
+const serviceNode = serviceName ? {
+  "@type": "Service",
+  "@id": `${canonicalUrl}#service`,
+  "name": serviceName,
+  "provider": { "@id": `${siteUrl}/#organization` },
+  "serviceType": serviceName,
+  "areaServed": { "@id": `${siteUrl}/#organization` },
+  "description": description,
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "TRY",
+    "availability": "https://schema.org/InStock"
+  }
+} : null;
+
+const breadcrumbNode = breadcrumbs.length > 0 ? {
   "@type": "BreadcrumbList",
+  "@id": `${canonicalUrl}#breadcrumb`,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -109,31 +132,9 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
   ]
 } : null;
 
-// Schema.org: Service (varsa)
-const serviceSchema = serviceName ? {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": serviceName,
-  "name": title,
-  "description": description,
-  "provider": {
-    "@id": `${siteUrl}/#organization`
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "İzmir"
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "TRY",
-    "availability": "https://schema.org/InStock"
-  }
-} : null;
-
-// Schema.org: FAQPage (varsa)
-const faqSchema = faqList.length > 0 ? {
-  "@context": "https://schema.org",
+const faqNode = faqList.length > 0 ? {
   "@type": "FAQPage",
+  "@id": `${canonicalUrl}#faq`,
   "mainEntity": faqList.map(item => ({
     "@type": "Question",
     "name": item.question,
@@ -143,6 +144,16 @@ const faqSchema = faqList.length > 0 ? {
     }
   }))
 } : null;
+
+const schemaGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    organizationNode,
+    ...(serviceNode ? [serviceNode] : []),
+    ...(breadcrumbNode ? [breadcrumbNode] : []),
+    ...(faqNode ? [faqNode] : [])
+  ]
+};
 ---
 
 <!-- Temel Meta Etiketleri -->
@@ -197,8 +208,5 @@ const faqSchema = faqList.length > 0 ? {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<!-- Yapısal Veri (JSON-LD) -->
-<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
-{breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}
-{serviceSchema && <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />}
-{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+<!-- Yapılandırılmış Veri (@graph JSON-LD) -->
+<script type="application/ld+json" set:html={JSON.stringify(schemaGraph)} />
