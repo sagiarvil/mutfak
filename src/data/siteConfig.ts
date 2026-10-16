@@ -96,12 +96,12 @@ export const siteConfig = {
     {
       id: "mutfak-dolabi-fiyatlari",
       slug: "mutfak-dolabi-fiyatlari",
-      title: "2026 İzmir Mutfak Dolabı Metretül Fiyatları & Maliyet Hesaplama",
-      navTitle: "Fiyat Rehberi",
-      description: "2026 güncel İzmir mutfak dolabı metretül fiyatları, malzeme karşılaştırmaları (Akrilik, Membran, Lake, Masif) ve şeffaf tadilat maliyet tablosu.",
-      shortDesc: "Metretül bazında güncel fiyatlar ve şeffaf malzeme maliyeti karşılaştırması.",
+      title: "2026 İzmir Mutfak Dolabı Projelendirme & Mimari Danışmanlık",
+      navTitle: "Mimari Projelendirme",
+      description: "İzmir genelinde kadrolu iç mimarlarımızla yerinde ücretsiz lazer ölçü, 3D sanal mekan çizimi ve hayalinizdeki mutfağa özel şeffaf maliyet projelendirmesi.",
+      shortDesc: "Siz hayal edin biz ortaya çıkaralım: Mimarımızla 3D çizim ve özel proje teklifi.",
       keywords: ["izmir mutfak dolabı fiyatları", "mutfak dolabı metretül fiyatı 2026", "lake mutfak dolabı ne kadar", "mutfak tadilatı kaç para tutar"],
-      features: ["Şeffaf Metretül Fiyat Tablosu", "Akrilik vs Lake Maliyet Farkları", "İşçilik ve Tezgâh Dahil Hesaplama", "WhatsApp ile Anında Taslak Maliyet"]
+      features: ["Kadrolu İç Mimar ile 3D Çizim", "Ücretsiz Yerinde Lazer Ölçü", "Sözleşmeli Sabit Maliyet Taahhüdü", "WhatsApp ile Anında Mimari Görüşme"]
     }
   ]
 };
