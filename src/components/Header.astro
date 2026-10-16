@@ -1,16 +1,11 @@
 ---
 import { siteConfig } from "../data/siteConfig";
-import { buildWhatsAppUrl, buildTelUrl } from "../utils/whatsapp";
 
 const currentPath = Astro.url.pathname;
-const isHome = currentPath === "/" || currentPath === "";
 ---
 
-
-
-
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 transition-all duration-300 w-full overflow-hidden" id="mainHeader">
-  
+  <!-- Üst İnce Bilgi & İletişim Şeridi -->
   <div class="bg-stone-900 text-stone-300 text-[11px] font-medium py-1.5 px-3 sm:px-6 border-b border-stone-800">
     <div class="w-full max-w-7xl mx-auto flex items-center justify-between gap-2">
       <div class="flex items-center gap-2 sm:gap-3 truncate">
@@ -22,7 +17,9 @@ const isHome = currentPath === "/" || currentPath === "";
         <span class="hidden lg:inline text-stone-400 truncate">Kadrolu Mimar &amp; İç Mimar • 3D Sanal Mekan Deneyimi • Tüm İzmir'e Hizmet</span>
       </div>
       <div class="flex items-center gap-3 shrink-0 text-xs">
-        <a href="/iletisim/" class="hover:text-white transition hidden sm:inline-flex items-center gap-1"><span>📍</span> <span>Buca Showroom</span></a>
+        <a href="/iletisim/" class="hover:text-white transition hidden sm:inline-flex items-center gap-1">
+          <span>📍</span> <span>Showroom</span>
+        </a>
         <span class="hidden sm:inline text-stone-600">|</span>
         <a href="https://wa.me/905393333303" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline flex items-center gap-1">
           <span>💬</span> <span>0539 333 33 03</span>
@@ -31,10 +28,10 @@ const isHome = currentPath === "/" || currentPath === "";
     </div>
   </div>
 
-  
-  <div class="w-full max-w-7xl mx-auto px-3 sm:px-5 lg:px-6 py-2 sm:py-2.5 flex items-center justify-between gap-2 sm:gap-4">
+  <!-- Ana Menü Çubuğu: Logo + Butonlar + Sandviç Menü (Tam Ana Sayfa Birebir Görünümü) -->
+  <div class="w-full max-w-7xl mx-auto px-3 sm:px-5 lg:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4">
     
-    
+    <!-- Sol: Logo & Marka -->
     <a href="/" class="flex items-center gap-2.5 sm:gap-3.5 shrink-0 group min-w-0 py-0.5" aria-label="Ana Sayfaya Git">
       <img src="/logo.png" alt="İzmir Mutfak Banyo Tadilat Logo" class="h-11 sm:h-12 md:h-14 w-auto object-contain transition duration-200 group-hover:opacity-90 shrink-0" width="56" height="58" loading="eager" />
       <div class="flex flex-col min-w-0 justify-center">
@@ -43,71 +40,99 @@ const isHome = currentPath === "/" || currentPath === "";
       </div>
     </a>
 
-    
-    <nav class="hidden xl:flex items-center gap-3.5 2xl:gap-5 text-[11px] font-bold uppercase tracking-wider text-stone-800 whitespace-nowrap shrink-0" aria-label="Ana Navigasyon">
-      <a href="/" class={isHome ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Ana Sayfa</a>
-      <a href="/izmir-mutfak-dolabi-imalati/" class={currentPath.includes("mutfak-dolabi") && !currentPath.includes("fiyatlari") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Mutfak Dolabı</a>
-      <a href="/izmir-komple-mutfak-tadilati/" class={currentPath.includes("mutfak-tadilati") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Mutfak Tadilatı</a>
-      <a href="/izmir-banyo-yenileme-seramik/" class={currentPath.includes("banyo") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Banyo &amp; Seramik</a>
-      <a href="/izmir-komple-daire-tadilati/" class={currentPath.includes("daire-tadilati") || currentPath.includes("ev-tadilati") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Ev Tadilatı</a>
-      <a href="/izmir-anahtar-teslim-tadilat/" class={currentPath.includes("anahtar-teslim") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Anahtar Teslim</a>
-      <a href="/2026-mutfak-dolabi-fiyatlari/" class={currentPath.includes("fiyatlari") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>2026 Fiyatlar</a>
-      <a href="/iletisim/" class={currentPath.includes("iletisim") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>İletişim</a>
-    </nav>
-
-    
+    <!-- Sağ: Aksiyon Butonları & Sandviç Menü Butonu (Birebir Ana Sayfa Standardı) -->
     <div class="flex items-center gap-2 sm:gap-2.5 shrink-0 whitespace-nowrap">
-      <a href="https://wa.me/905393333303?text=Merhaba,%20mutfak%20ve%20banyo%20için%20ücretsiz%203D%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-3.5 sm:px-4 py-2 bg-stone-900 text-white text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-800 transition duration-200 shadow-sm shrink-0">
+      <a href="/#projelendirme-basvuru" class="inline-flex items-center justify-center px-3 sm:px-4 py-2 border border-stone-900 text-stone-900 text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-900 hover:text-white transition duration-200 shrink-0">
+        Mutfağını Tasarla
+      </a>
+      <a href="https://wa.me/905393333303?text=Merhaba,%20mutfak%20ve%20banyo%20için%20ücretsiz%203D%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-3 sm:px-4 py-2 bg-stone-900 text-white text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-800 transition duration-200 shadow-sm shrink-0">
         Ücretsiz Keşif
       </a>
-      
-      
-      <button type="button" id="btnToggleMobileMenu" class="xl:hidden p-1.5 sm:p-2 text-stone-900 hover:bg-stone-100 transition rounded shrink-0" aria-label="Menüyü Aç">
+      <!-- Sandviç Menü İkonu (Her ekranda görünür) -->
+      <button type="button" id="btnToggleMobileMenu" class="p-1.5 sm:p-2 text-stone-900 hover:bg-stone-100 transition rounded shrink-0 cursor-pointer" aria-label="Kategoriler ve Menüyü Aç">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
   </div>
 
-  
-  <div id="mobileMenuDrawer" class="hidden xl:hidden bg-white border-b border-stone-200 px-6 py-6 space-y-4 shadow-2xl max-h-[85vh] overflow-y-auto">
-    <nav class="flex flex-col space-y-3 text-xs font-bold uppercase tracking-wider text-stone-800">
-      <a href="/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
-        <span>Ana Sayfa</span> <span>→</span>
-      </a>
-      <a href="/izmir-mutfak-dolabi-imalati/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
-        <span>Özel Ölçü Mutfak Dolabı İmalatı</span> <span>→</span>
-      </a>
-      <a href="/izmir-komple-mutfak-tadilati/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
-        <span>Komple Mutfak Tadilatı</span> <span>→</span>
-      </a>
-      <a href="/izmir-banyo-yenileme-seramik/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
-        <span>Banyo Yenileme &amp; Seramik Döşeme</span> <span>→</span>
-      </a>
-      <a href="/izmir-komple-daire-tadilati/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
-        <span>Komple Ev &amp; Daire Tadilatı</span> <span>→</span>
-      </a>
-      <a href="/izmir-anahtar-teslim-tadilat/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
-        <span>Anahtar Teslim Sözleşmeli Tadilat</span> <span>→</span>
-      </a>
-      <a href="/hazir-mutfak-modelleri-izmir/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
-        <span>Hazır &amp; Modüler Mutfak Modelleri</span> <span>→</span>
-      </a>
-      <a href="/2026-mutfak-dolabi-fiyatlari/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
-        <span>2026 Mutfak Metretül Fiyat Rehberi</span> <span>→</span>
-      </a>
-      <a href="/iletisim/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
-        <span>Buca Showroom &amp; İletişim</span> <span>→</span>
-      </a>
-      <div class="pt-3 flex flex-col gap-2.5">
-        <a href="https://wa.me/905393333303" target="_blank" class="block text-center py-3 px-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider rounded-sm">
-          💬 WhatsApp: 0539 333 33 03
-        </a>
+  <!-- Sandviç Menü Çekmecesi (Tüm Ekranlar İçin Zengin Mimari Menü) -->
+  <div id="mobileMenuDrawer" class="hidden bg-white border-b border-stone-200 px-6 sm:px-8 py-6 space-y-6 shadow-2xl max-h-[85vh] overflow-y-auto">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Kolon 1: Hizmet Hubları -->
+      <div class="space-y-3">
+        <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-700 block">MİMARİ HİZMETLERİMİZ</span>
+        <nav class="flex flex-col space-y-2 text-xs font-bold uppercase tracking-wider text-stone-800">
+          <a href="/" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>Ana Sayfa</span> <span>→</span>
+          </a>
+          <a href="/izmir-mutfak-dolabi-imalati/" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>Özel Ölçü Mutfak Dolabı İmalatı</span> <span>→</span>
+          </a>
+          <a href="/izmir-komple-mutfak-tadilati/" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>Komple Mutfak Tadilatı</span> <span>→</span>
+          </a>
+          <a href="/izmir-banyo-yenileme-seramik/" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>Banyo Yenileme &amp; Seramik Döşeme</span> <span>→</span>
+          </a>
+          <a href="/izmir-komple-daire-tadilati/" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>Komple Ev &amp; Daire Tadilatı</span> <span>→</span>
+          </a>
+          <a href="/izmir-anahtar-teslim-tadilat/" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>Anahtar Teslim Sözleşmeli Tadilat</span> <span>→</span>
+          </a>
+          <a href="/hazir-mutfak-modelleri-izmir/" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>Hazır &amp; Modüler Mutfak Modelleri</span> <span>→</span>
+          </a>
+          <a href="/2026-mutfak-dolabi-fiyatlari/" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>2026 Mutfak Metretül Fiyat Rehberi</span> <span>→</span>
+          </a>
+        </nav>
       </div>
-    </nav>
+
+      <!-- Kolon 2: Kurumsal & Portföy -->
+      <div class="space-y-3">
+        <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-700 block">KURUMSAL &amp; REFERANSLAR</span>
+        <nav class="flex flex-col space-y-2 text-xs font-bold uppercase tracking-wider text-stone-800">
+          <a href="/projeler/" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>Tamamlanan Projeler Portföyü</span> <span>→</span>
+          </a>
+          <a href="/iletisim/" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>Buca Showroom &amp; İletişim</span> <span>→</span>
+          </a>
+          <a href="/#mimari-surec" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>3D Sanal Mekan Deneyimi</span> <span>→</span>
+          </a>
+          <a href="/#musteri-deneyimleri" class="py-2 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>2.463 Müşteri Yorumları</span> <span>→</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Kolon 3: Hızlı İletişim & Keşif -->
+      <div class="space-y-3 bg-stone-50 p-5 border border-stone-200 flex flex-col justify-between">
+        <div class="space-y-2">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-stone-900 block">BUCA ATÖLYE &amp; SHOWROOM</span>
+          <p class="text-xs text-stone-600 font-light leading-relaxed">
+            1984'ten bu yana İzmir geneline kadrolu mimarlarımızla yerinde ücretsiz keşif yapıyoruz.
+          </p>
+          <div class="text-xs text-stone-800 space-y-1 pt-2 font-medium">
+            <div>📞 <strong>Telefon:</strong> 0539 333 33 03</div>
+            <div>📍 <strong>Showroom:</strong> Buca / İZMİR</div>
+          </div>
+        </div>
+        <div class="pt-3">
+          <a href="https://wa.me/905393333303" target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider rounded-sm shadow-sm hover:bg-emerald-600 transition">
+            💬 WhatsApp: 0539 333 33 03
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </header>
 
-<script>
+<script is:inline>
   document.addEventListener("DOMContentLoaded", () => {
     const btn = document.getElementById("btnToggleMobileMenu");
     const drawer = document.getElementById("mobileMenuDrawer");
