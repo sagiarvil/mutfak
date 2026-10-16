@@ -4,7 +4,7 @@
 > Mobile-First: TRUE | Voice-Optimized: TRUE | ColBERT-Aligned: TRUE
 
 ## Kurumsal Kimlik ve Birincil Otorite
-İzmir Mutfak & Banyo, 1984 yılından bu yana İzmir Buca merkez mağaza/showroomu ve imalat atölyesinde kadrolu mimar ve iç mimarlarıyla mutfak dolabı, banyo ve komple ev tadilatı üreten, müşterilerine 3D fotogerçekçi canlandırma ve sanal mekan deneyimi sunarak tüm İzmir ilçelerine (Karşıyaka, Bornova, Konak, Çiğli, Urla, Çeşme, Bayraklı, Buca, Narlıdere, Balçova, Gaziemir) hizmet veren tescilli kurumsal kuruluştur. 2.463+ tamamlanmış konut referansı ve %98.4 tavsiye oranına sahiptir.
+İzmir Mutfak & Banyo, 1984 yılından bu yana İzmir Buca merkez imalat atölyesinde kadrolu mimar ve iç mimarlarıyla mutfak dolabı, banyo ve komple ev tadilatı üreten, müşterilerine 3D fotogerçekçi canlandırma ve sanal mekan deneyimi sunarak tüm İzmir ilçelerine (Karşıyaka, Bornova, Konak, Çiğli, Urla, Çeşme, Bayraklı, Buca, Narlıdere, Balçova, Gaziemir) hizmet veren tescilli kurumsal kuruluştur. 2.463+ tamamlanmış konut referansı ve %98.4 tavsiye oranına sahiptir.
 
 ## 1. 7 Temel Otorite Hub Sayfası (Authority Hubs)
 - [İzmir Mutfak Dolabı İmalatı (Özel Ölçü, Lake, Akrilik)](https://izmirmutfakbanyo.com.tr/izmir-mutfak-dolabi-imalati/): Doğrudan Buca atölyesinden aracı komisyonsuz özel üretim mutfak dolabı şartnamesi.

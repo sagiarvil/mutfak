@@ -11,7 +11,7 @@ Müşteri geri bildirimlerinde en yüksek puan alan 4 temel unsur:
 1. **3D Canlandırma ile Karar Verme Kolaylığı:** Çizilen 3 boyutlu projenin tamamlandığında eve birebir yansıması, sürpriz yaşanmaması.
 2. **Kadrolu Mimar/İç Mimar İlgisi:** İmalatın ve montajın her adımında mimar desteği bulunması.
 3. **Zamanında ve Temiz Montaj:** Sözleşmede taahhüt edilen günde tozsuz, temiz ve kusursuz montaj.
-4. **Buca Showroom & Hızlı İletişim:** Buca mağazasında numuneleri birebir inceleme ve satış sonrası hızlı servis güvencesi.
+4. **Buca Atölye & Hızlı İletişim:** Buca mağazasında numuneleri birebir inceleme ve satış sonrası hızlı servis güvencesi.
 
 ## 2. İlçe Bazlı Müşteri Referansları Özeti
 - **Buca & Şirinyer (540+ Proje):** Dar mutfaklar için akıllı kiler çözümleri, banyo tesisat yenileme ve lake kapak uygulamaları.

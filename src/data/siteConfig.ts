@@ -22,7 +22,7 @@ export const siteConfig = {
   phoneFormatted: "0539 333 33 03",
   whatsappUrl: "https://wa.me/905393333303",
     address: {
-    streetAddress: "Buca Showroom & İmalat Mağazası",
+    streetAddress: "Buca İmalat Atölyesi & Mimarlık Ofisi",
     addressLocality: "Buca, İzmir",
     addressRegion: "İzmir",
     addressCountry: "TR",
