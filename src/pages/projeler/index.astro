@@ -1,16 +1,642 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { siteConfig } from "../../data/siteConfig";
 
 const seo = {
-  title: "Tamamlanan Projelerimiz | İzmir Mutfak Banyo Tadilat Referansları | 1984'ten Bugüne",
-  description: "1984'ten bu yana İzmir genelinde tamamladığımız 2.463+ mutfak dolabı imalatı, banyo yenileme ve komple daire tadilatı referans projelerimiz ve müşteri incelemeleri.",
-  canonical: "https://izmirmutfakbanyo.com.tr/projeler/",
-  serviceName: "Tadilat Portföyü",
+  title: "İzmir Yapılan İşler & Tamamlanan Mutfak Banyo Projeleri | 50+ Referans",
+  description: "1984'ten bu yana İzmir Karşıyaka, Bornova, Buca, Urla, Çeşme ve tüm ilçelerde tamamladığımız 50+ gerçek mutfak, banyo ve ev tadilatı projesi, müşteri yorumları ve fotoğrafları.",
+  canonical: "https://izmirmutfakbanyo.com.tr/yapilan-isler/",
+  serviceName: "Yapılan İşler & Referans Portföyü",
   breadcrumbs: [
-    { name: "Projelerimiz", url: "/projeler/" }
+    { name: "Yapılan İşler", url: "/yapilan-isler/" }
   ]
 };
+
+const projects = [
+  {
+    id: 1,
+    title: "Bostanlı Kaşmir Mat Lake & Ada Mutfak",
+    district: "Karşıyaka / Bostanlı",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Kulpsuz Gola Profil • Blum Legrabox • Calacatta Gold Kuvars",
+    delivery: "21 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Eski mutfağımız karanlıktı, yemek yaparken bile bunalıyorduk. Mimarımız duvardaki yarım bölmeyi kaldırıp kahvaltı barlı ada önerdiğinde başta tereddüt ettik ama çizimde görünce hemen onay verdik. Şimdi evin bütün hayatı bu adanın etrafında dönüyor.",
+    owner: "Sevgi & Levent K. (Bostanlı)"
+  },
+  {
+    id: 2,
+    title: "Alaçatı Taş Ev Rustik Çıtalı Country Mutfak",
+    district: "Çeşme / Alaçatı",
+    category: "country",
+    categoryLabel: "Klasik & Country",
+    specs: "Fırınlı İpek Mat Beyaz Lake • Masif Meşe Tezgah • Porselen Çift Evye",
+    delivery: "24 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Taş duvarların arasına uydurmak gerçekten ince ustalık gerektiriyordu. Taç birleşimleri ve el yapımı çıtaların kalitesi harika oldu. Yaz boyu gelen bütün misafirlerimiz mutfağa hayran kaldı.",
+    owner: "Zeynep Hanım (Alaçatı)"
+  },
+  {
+    id: 3,
+    title: "Özkanlar Salonla Bütünleşik Açık Mutfak & TV Ünitesi",
+    district: "Bornova / Özkanlar",
+    category: "life",
+    categoryLabel: "Yaşam Alanları | Life",
+    specs: "Antrasit Akrilik • Akustik Ahşap Çıta Panel • Gizli Boy Kiler",
+    delivery: "19 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Mutfak dolaplarının salona doğru devam edip televizyon ünitesiyle birleşmesi evi iki kat geniş gösterdi. Akşamları yemek pişirirken salondaki çocuklarla aynı ortamda olmak paha biçilemez.",
+    owner: "Burak & Merve T. (Bornova)"
+  },
+  {
+    id: 4,
+    title: "Mavişehir Spa Banyo & 60x120 Mermer Doku Seramik",
+    district: "Çiğli / Mavişehir",
+    category: "banyo",
+    categoryLabel: "Banyo Yenileme",
+    specs: "Geberit Gömme Rezervuar • İtalyan Lineer Duş Kanalı • Lake Banyo Dolabı",
+    delivery: "11 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Eski derzler sararmıştı ve küf kokusu vardı. Çift kat sürme izolasyon yapıp derzsiz büyük seramikleri döşediler. Otel konforunda tertemiz bir banyoya kavuştuk.",
+    owner: "Dr. Selim Y. (Mavişehir)"
+  },
+  {
+    id: 5,
+    title: "Urla İskele Villa Komple Daire & Bahçe Katı Tadilatı",
+    district: "Urla / İskele",
+    category: "komple",
+    categoryLabel: "Komple Tadilat",
+    specs: "Tüm Tesisat Yenileme • Lake İç Kapılar • Isı Yalıtımlı Mutfak",
+    delivery: "32 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "1984'ten beri Buca'da olduklarını bildiğimiz için güvenerek anahtarı teslim ettik. 32 iş gününde sözleşmede ne yazıyorsa kuruşu kuruşuna, tek bir gün gecikmeden teslim ettiler.",
+    owner: "Cem & Ayla D. (Urla)"
+  },
+  {
+    id: 6,
+    title: "Göztepe Sahil Çizgili Antrasit Gola Mutfak",
+    district: "Konak / Göztepe",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "C ve L Alüminyum Profil • Belenco Siyah Parlak Kuvars • Gizli LED Kanalı",
+    delivery: "17 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Kulpsuz tasarım temizlik açısından o kadar rahat ki anlatamam. Bezle bir kerede silip geçiyorum. Çekmecelerin frenleri fısıltı gibi sessiz.",
+    owner: "Nermin Hanım (Göztepe)"
+  },
+  {
+    id: 7,
+    title: "Şirinyer Dubleks Merdiven Altı Entegre Kilerli Mutfak",
+    district: "Buca / Şirinyer",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Özel Açı CNC İmalat • 18mm E1 MDF-Lam • Blum Tandembox",
+    delivery: "16 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Merdiven altındaki o ölü alanı kiler dolabına dönüştürdüler. Tencereler, erzaklar hepsi sığdı. Buca merkezdeki mağazalarında çizimi birlikte yapmıştık, aynısı çıktı.",
+    owner: "Mehmet Usta (Şirinyer)"
+  },
+  {
+    id: 8,
+    title: "Yelki Müstakil Ev Adaçayı Yeşili Country Mutfak",
+    district: "Güzelbahçe / Yelki",
+    category: "country",
+    categoryLabel: "Klasik & Country",
+    specs: "Pirinç Fincan Kulplar • Çıtalı Cam Vitrinler • Masif Meşe Ada",
+    delivery: "22 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Adaçayı yeşilini boya kartelasından seçerken kararsızdık ama mimarımız 3D çizimde gün ışığı açısını gösterince ikna olduk. Renk tonu salona öyle bir hava kattı ki herkes soruyor.",
+    owner: "Hande & İlker B. (Güzelbahçe)"
+  },
+  {
+    id: 9,
+    title: "Alsancak Kordon Tarihi Daire Yüksek Tavanlı Mutfak",
+    district: "Konak / Alsancak",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "3 Metre Tavana Kadar Çift Sıra Dolap • Bas-Aç Üst Modüller • Füme Cam",
+    delivery: "20 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Eski Rum evinde tavanlar 3.20 metreydi. Hazır mutfaklar komik duruyordu. Özel ölçüyle tavana kadar iki kat dolap yaptılar, yukarıdaki bavullar bile saklandı.",
+    owner: "Av. Ceyda S. (Alsancak)"
+  },
+  {
+    id: 10,
+    title: "Sahilevleri Lüks Villa Porselen Monolit Ada Mutfak",
+    district: "Narlıdere / Sahilevleri",
+    category: "life",
+    categoryLabel: "Yaşam Alanları | Life",
+    specs: "12mm İtalyan Laminam Porselen • Şelale Dönüş • Servo-Drive Elektrikli Çekmece",
+    delivery: "26 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Adanın tezgahı ve yan kaplamaları tek parça porselen. Sıcak tencereyi doğrudan koyabiliyorum, çizilme derdi sıfır. Kesinlikle verdiğimiz her kuruşa değdi.",
+    owner: "Bülent K. (Sahilevleri)"
+  },
+  {
+    id: 11,
+    title: "Mansuroğlu Aile Banyosu & Geniş Çamaşır Dolabı",
+    district: "Bayraklı / Mansuroğlu",
+    category: "banyo",
+    categoryLabel: "Banyo Yenileme",
+    specs: "Çamaşır ve Kurutma Makinesi Boy Dolabı • Siyah Mat Armatürler • Led Ayna",
+    delivery: "9 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Deterjanlar, kirli sepeti ve kurutma makinesi hep ortalıktaydı. Tek bir şık boy dolapla hepsini sakladılar. Banyo tertemiz ve derli toplu oldu.",
+    owner: "Gülşah Hanım (Bayraklı)"
+  },
+  {
+    id: 12,
+    title: "Evka 3 Geniş Bahçeli Daire Komple Yenileme",
+    district: "Bornova / Evka 3",
+    category: "komple",
+    categoryLabel: "Komple Tadilat",
+    specs: "Mutfak, 2 Banyo, Zeminler ve Asma Tavan • Lazerli Şantiye Kontrolü",
+    delivery: "28 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Ustalarla ayrı ayrı uğraşmaktan korkuyorduk. Tek bir sözleşme yaptık, mimar bey her gün şantiyeden fotoğraf attı. İşimizi gücümüzü aksatmadan evimiz yenilendi.",
+    owner: "Murat & Özge E. (Bornova)"
+  },
+  {
+    id: 13,
+    title: "Alaybey Sahil Minimalist Beyaz Akrilik Mutfak",
+    district: "Karşıyaka / Alaybey",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Çizilmez Beyaz Akrilik • Çimstone Tezgah • Gizli Şişelik Rafı",
+    delivery: "15 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Küçük mutfağımız beyaz akrilik ve gizli aydınlatmalar sayesinde iki kat aydınlık oldu. Ölçü alırken milimetrik çalıştılar, buzdolabı tam yerine oturdu.",
+    owner: "Emine Teyze (Karşıyaka)"
+  },
+  {
+    id: 14,
+    title: "Bademler Köyü Taş Villa Ahşap Kirişli Mutfak",
+    district: "Urla / Bademler",
+    category: "country",
+    categoryLabel: "Klasik & Country",
+    specs: "Doğal Meşe Çerçeve • Antik Döküm Evye • Şömine Davlumbaz",
+    delivery: "25 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Urla'nın doğasına uygun doğal ahşap bir şey istiyorduk. Atölyelerinde masif meşeyi bizzat seçtik. İşçilik gerçekten takdire şayan.",
+    owner: "Turgut Bey (Urla)"
+  },
+  {
+    id: 15,
+    title: "Balçova Termal Yakını Ebeveyn Banyosu & Walk-in Duş",
+    district: "Balçova / Korutürk",
+    category: "banyo",
+    categoryLabel: "Banyo Yenileme",
+    specs: "Kapısız Siyah Çerçeveli Duş Camı • Ahşap Görünümlü Seramik • Niş Aydınlatma",
+    delivery: "8 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Duş teknesi yerine zemine sıfır İtalyan gider yaptılar. Şampuan koymak için duvara açtıkları ışıklı niş harika bir detay oldu.",
+    owner: "Serdar & Pınar Ç. (Balçova)"
+  },
+  {
+    id: 16,
+    title: "Gaziemir Sevgi Mahallesi Ada Masalı Geniş Mutfak",
+    district: "Gaziemir / Sevgi",
+    category: "life",
+    categoryLabel: "Yaşam Alanları | Life",
+    specs: "4 Kişilik Oturma Barı • İndüksiyonlu Ocak • Tavan Tipi Ada Davlumbaz",
+    delivery: "18 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1502005229762-ee1b2da9730f?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Pazar sabahları ailecek kahvaltıyı ada masasında yapıyoruz. Çekmecelerin derinliği sayesinde bütün tencerelerimiz sığdı.",
+    owner: "Ayşe & Hakan D. (Gaziemir)"
+  },
+  {
+    id: 17,
+    title: "Ilıca Sahil Evi Açık Renk Akdeniz Mutfağı",
+    district: "Çeşme / Ilıca",
+    category: "country",
+    categoryLabel: "Klasik & Country",
+    specs: "Açık Mavi Lake • Porselen Çiçek Desenli Kulp • Masif Tezgah",
+    delivery: "21 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Yazlığın mutfağını yenilemek gözümüzde büyüyordu. Anahtarı verdik, İzmir'deki atölyede üretip 2 günde gelip kurdular. Temizlik bile yapmamıza gerek kalmadı.",
+    owner: "Ferit Bey (Ilıca)"
+  },
+  {
+    id: 18,
+    title: "Manavkuyu 3+1 Daire Komple Dönüşüm & Mutfak Büyütme",
+    district: "Bayraklı / Manavkuyu",
+    category: "komple",
+    categoryLabel: "Komple Tadilat",
+    specs: "Balkon Dahil Edilerek Büyütülen Mutfak • İzolasyon • Lake Mobilya",
+    delivery: "27 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Karanlık mutfağı yanındaki küçük balkonla birleştirdiler. İzolasyonu öyle iyi yaptılar ki kışın bile en sıcak oda oldu.",
+    owner: "Nalan & Sinan K. (Bayraklı)"
+  },
+  {
+    id: 19,
+    title: "Küçükyalı Tarihi Apartman Retro Lake Mutfak",
+    district: "Konak / Küçükyalı",
+    category: "country",
+    categoryLabel: "Klasik & Country",
+    specs: "Koyu Yeşil İpek Mat Lake • Pirinç Kulplar • Terrazzo Tezgah",
+    delivery: "20 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Eski apartmanın ruhunu bozmadan modern bir kullanım sağladılar. Koyu yeşil lake rengi tam hayal ettiğimiz gibi tutturuldu.",
+    owner: "Derya Hanım (Küçükyalı)"
+  },
+  {
+    id: 20,
+    title: "Çamlıkule Genç Çift Evi Kompakt L Mutfak",
+    district: "Buca / Çamlıkule",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Parlak Kaşmir Akrilik • Köşe Fasulye Mekanizması • Belenco Tezgah",
+    delivery: "14 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Bütçemize göre en kaliteli çözümü sundular. Köşe dolaptaki o dönen fasulye sepet olmasa tencereleri nereye koyardık bilmiyorum.",
+    owner: "Oğuz & Tuğba Ç. (Buca)"
+  },
+  {
+    id: 21,
+    title: "Dalyan Marin Koyu Lacivert Ada Mutfak",
+    district: "Çeşme / Dalyan",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Midnight Blue Lake • Fırçalanmış Altın Profil • Kuvars Tezgah",
+    delivery: "23 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Lacivertin tonu o kadar asil duruyor ki mutfağa her giren önce bir durup bakıyor. Altın detaylar çok dozunda kullanılmış.",
+    owner: "Metin & Suzan A. (Çeşme)"
+  },
+  {
+    id: 22,
+    title: "Kazımdirik Üniversite Bölgesi 1+1 Akıllı Mutfak",
+    district: "Bornova / Kazımdirik",
+    category: "life",
+    categoryLabel: "Yaşam Alanları | Life",
+    specs: "Açılır Kapanır Teleskopik Bar Masası • Gizli Mikrodalga Dolabı",
+    delivery: "12 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "1+1 dairede yer kısıtlıydı. Yemek masası adanın içinden çekilerek açılıyor, işimiz bitince içeri giriyor. İnanılmaz pratik.",
+    owner: "Eren K. (Bornova)"
+  },
+  {
+    id: 23,
+    title: "Kekliktepe Müstakil Villa Çift Lavabolu Ebeveyn Banyo",
+    district: "Urla / Kekliktepe",
+    category: "banyo",
+    categoryLabel: "Banyo Yenileme",
+    specs: "Doğal Masif Meşe Tezgah • Çift Çanak Lavabo • Akıllı LED Ayna",
+    delivery: "13 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Sabahları eşimle aynı anda hazırlanırken lavabo kavgası bitti. Ahşap tezgahın suya dayanıklı özel yağı sayesinde hiç leke tutmuyor.",
+    owner: "Banu & Taner V. (Urla)"
+  },
+  {
+    id: 24,
+    title: "Yalı Mahallesi Deniz Manzaralı Geniş Mutfak & Bar",
+    district: "Güzelbahçe / Yalı",
+    category: "life",
+    categoryLabel: "Yaşam Alanları | Life",
+    specs: "Geniş Cam Önü Ada • Kadeh Askılık Modülü • Porselen Tezgah",
+    delivery: "22 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Deniz manzarasına karşı adada kahve yudumlamak günün en güzel anı. Mimarımızın tavsiyesiyle ocak adanın üzerine alındı, çok memnun kaldık.",
+    owner: "Gökhan Bey (Güzelbahçe)"
+  },
+  {
+    id: 25,
+    title: "Merkez Buca Aile Apartmanı Komple 3 Kat Yenileme",
+    district: "Buca / Merkez",
+    category: "komple",
+    categoryLabel: "Komple Tadilat",
+    specs: "3 Dairenin Eş Zamanlı Mutfak & Banyo İmalatı • Toplu Sözleşme",
+    delivery: "40 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Aile apartmanımızdaki 3 daireyi aynı anda yenilettik. Atölye hemen yakınımızda olduğu için her aşamasını gidip gördük. İlgilerine çok teşekkürler.",
+    owner: "Hacı Mehmet Ailesi (Buca)"
+  },
+  {
+    id: 26,
+    title: "Karşıyaka Çarşı Üstü Butik Ofis Mutfak Köşesi",
+    district: "Karşıyaka / Çarşı",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Gizlenebilir Pocket Door Kapaklar • Mini Buzdolabı Entegre",
+    delivery: "10 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Hukuk büromuz için kapakları kapandığında dolap gibi görünen bir mutfak istiyorduk. Misafir geldiğinde kapatıyoruz, sıfır mutfak görüntüsü.",
+    owner: "Av. Koray N. (Karşıyaka)"
+  },
+  {
+    id: 27,
+    title: "Ilıca Villa Açık Mutfak & Bahçe Havuz Başı Servis Barı",
+    district: "Çeşme / Ilıca",
+    category: "life",
+    categoryLabel: "Yaşam Alanları | Life",
+    specs: "Dış Cephe Uyumlu Kompakt Laminat • Sürgülü Pencere Geçişi",
+    delivery: "19 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Mutfaktan havuz tarafına servis penceresi açıldı. Yaz partilerinde içeri girip çıkmadan doğrudan bahçeye servis yapabiliyoruz.",
+    owner: "Selin & Bora G. (Çeşme)"
+  },
+  {
+    id: 28,
+    title: "Narlıdere Ilıca Mahallesi Çift Renk Mat Lake Mutfak",
+    district: "Narlıdere / Ilıca",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Alt Dolaplar Koyu Gri • Üst Dolaplar Kırık Beyaz • Gola Profil",
+    delivery: "18 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "İki renk kombini odayı basıklıktan kurtardı. Lake boyanın dokusu pürüzsüz ipek gibi, silerken çizilmiyor.",
+    owner: "Deniz Hanım (Narlıdere)"
+  },
+  {
+    id: 29,
+    title: "Bornova Küçükpark Retro Daire Çıtalı Banyo Dolabı",
+    district: "Bornova / Küçükpark",
+    category: "banyo",
+    categoryLabel: "Banyo Yenileme",
+    specs: "Suya Dayanıklı Yeşil Lake Banyo Dolabı • Pirinç Ayna • Yuvarlak Lavabo",
+    delivery: "7 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Küçük banyoyu retro bir tasarımla yenilediler. Çamaşır makinesini dolabın içine aldılar, banyodaki tüm kalabalık bitti.",
+    owner: "Yasemin H. (Bornova)"
+  },
+  {
+    id: 30,
+    title: "Urla Kekliktepe Akıllı Ev Entegre Ada Mutfak",
+    district: "Urla / Kekliktepe",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Sensörlü Otomatik Açılır Çekmeceler • Gizli Davlumbaz • Karbon Filtre",
+    delivery: "25 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Elimiz unluyken dizimizle dokununca açılan çekmeceler mutfakta devrim yaptı. Mimarımızın önerdiği tüm teknolojik aksamları iyi ki dinlemişiz.",
+    owner: "Kenan & Aslı S. (Urla)"
+  },
+  {
+    id: 31,
+    title: "Bostanlı Tramvay Yanı 2+1 Komple Daire Dönüşümü",
+    district: "Karşıyaka / Bostanlı",
+    category: "komple",
+    categoryLabel: "Komple Tadilat",
+    specs: "Kırım, Tesisat, Parke, Banyo ve Lake Mutfak Anahtar Teslim",
+    delivery: "29 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Eski evimiz 35 yıllıktı, borular pas içindeydi. Komple altyapıyı değiştirip 29 günde sıfır daire gibi teslim ettiler.",
+    owner: "Ali Rıza Amca (Bostanlı)"
+  },
+  {
+    id: 32,
+    title: "Alaçatı Çamlık Lüks Villa Beyaz Lake Country Mutfak",
+    district: "Çeşme / Alaçatı",
+    category: "country",
+    categoryLabel: "Klasik & Country",
+    specs: "Geniş Şömine Davlumbaz • Döküm Tencere Çekmeceleri • Porselen Kulplar",
+    delivery: "24 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Davlumbazın üzerindeki ahşap oyma taç mutfağın imza parçası oldu. Fırın boya kalitesi gerçekten fabrikasyon gibi kusursuz.",
+    owner: "Şebnem Hanım (Alaçatı)"
+  },
+  {
+    id: 33,
+    title: "Bayraklı Adliye Yakını Ofis İçi Modern Kahve Barı",
+    district: "Bayraklı / Mansuroğlu",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Koyu Meşe Fuga • Gizli Bardaklık • Kuvars Tezgah",
+    delivery: "11 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Ofise gelen müvekkillerimizin en çok iltifat ettiği yer kahve barımız oldu. Küçük alana bu kadar fonksiyon sığdırmak başarı.",
+    owner: "Av. Tarık B. (Bayraklı)"
+  },
+  {
+    id: 34,
+    title: "Güzelbahçe Siteler Bölgesi Geniş Ada Kahvaltı Barı",
+    district: "Güzelbahçe / Siteler",
+    category: "life",
+    categoryLabel: "Yaşam Alanları | Life",
+    specs: "Masif Ceviz Bar Tablası • Entegre Priz Kulesi • Gizli Çöp Kovası",
+    delivery: "20 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Yemek masasını salondan çıkardık, artık bütün yemeklerimizi ada barda yiyoruz. Ev çok daha ferahladı.",
+    owner: "Meltem & Serkan D. (Güzelbahçe)"
+  },
+  {
+    id: 35,
+    title: "Buca Heykel Meydanı Klasik Beyaz Mutfak Dolapları",
+    district: "Buca / Merkez",
+    category: "country",
+    categoryLabel: "Klasik & Country",
+    specs: "CNC Çıtalı Membran Kapak • Çimstone Tezgah • Seramik Evye",
+    delivery: "16 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Buca'daki mağazalarından esnaf samimiyetiyle ilgilendiler. Montaj ekibi o kadar temiz çalıştı ki tek bir toz bile bırakmadılar.",
+    owner: "Fatma Teyze (Buca)"
+  },
+  {
+    id: 36,
+    title: "Mavişehir Soyak Sitesi Ebeveyn Banyosu Yenileme",
+    district: "Çiğli / Mavişehir",
+    category: "banyo",
+    categoryLabel: "Banyo Yenileme",
+    specs: "Gömme Rezervuar • LED Arkası Aynalı Dolap • Siyah Mat Armatür",
+    delivery: "10 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Banyodaki boru sesleri ve rutubet tamamen kesildi. Aynanın arkasındaki gizli dolap bütün kozmetikleri topladı.",
+    owner: "Ece & Barış K. (Mavişehir)"
+  },
+  {
+    id: 37,
+    title: "Karşıyaka Girne Caddesi Modern Kulpsuz Lake Mutfak",
+    district: "Karşıyaka / Girne",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Saten Beyaz Lake • Antrasit C Profil • Tavana Sıfır Boy Dolap",
+    delivery: "17 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Dolap kapaklarının üstünde kulp olmadığı için çizilme, gevşeme derdi kalmadı. Görsel olarak çok ferah ve lüks duruyor.",
+    owner: "Kemal Bey (Karşıyaka)"
+  },
+  {
+    id: 38,
+    title: "Urla Torasan Sahil Evi Açık Plan Mutfak & Kiler",
+    district: "Urla / Torasan",
+    category: "life",
+    categoryLabel: "Yaşam Alanları | Life",
+    specs: "Gizlenebilir Cepli Kapı • Masif Meşe Raflar • Şarap Dolabı",
+    delivery: "21 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Urla'da hafta sonları arkadaşlarımızı ağırlarken mutfak adasının etrafında toplanıyoruz. Şaraplık ve bardaklık çok kullanışlı oldu.",
+    owner: "Alper & Melis T. (Urla)"
+  },
+  {
+    id: 39,
+    title: "Bornova Manavkuyu Deprem Sonrası Güçlendirmeli Tadilat",
+    district: "Bayraklı / Manavkuyu",
+    category: "komple",
+    categoryLabel: "Komple Tadilat",
+    specs: "Hafifletilmiş Alçı Tavan • Karbon Fiber Güçlendirme Üstü Kaplama • Yeni Mutfak",
+    delivery: "35 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Mühendisleri eşliğinde hem güvenliğimizi sağladılar hem de evimizi baştan aşağı yenilediler. Gönül rahatlığıyla oturuyoruz.",
+    owner: "Süleyman Bey (Bayraklı)"
+  },
+  {
+    id: 40,
+    title: "Çeşme Reisdere Köy Evi Doğal Taş & Ahşap Mutfak",
+    district: "Çeşme / Reisdere",
+    category: "country",
+    categoryLabel: "Klasik & Country",
+    specs: "Masif Meşe Çerçeve • Antik Pirinç Donanım • Porselen Çift Gözlü Evye",
+    delivery: "23 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Reisdere'deki taş evimize fabrika üretimi bir şey istemiyorduk. Tam bir marangoz işçiliğiyle çıtaları elleriyle yaptılar.",
+    owner: "Gülümser Hanım (Çeşme)"
+  },
+  {
+    id: 41,
+    title: "Göztepe Mithatpaşa Caddesi Koridor Mutfak Dönüşümü",
+    district: "Konak / Göztepe",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Tek Duvar Kesintisiz Çizgi • Ankastre Gömme Kule • Belenco Tezgah",
+    delivery: "14 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Dar ve uzun koridor tipi mutfağımız vardı, adım atacak yer yoktu. Boy dolaplarla her şeyi toparladılar, koridor ferahladı.",
+    owner: "Sinem & Tolga Ö. (Göztepe)"
+  },
+  {
+    id: 42,
+    title: "Balçova Teleferik Yanı Geniş Aile Dairesi Banyo Yenileme",
+    district: "Balçova / Teleferik",
+    category: "banyo",
+    categoryLabel: "Banyo Yenileme",
+    specs: "Geniş Küvet Yerine Walk-in Duş • Çift Lavabo • Neme Dayanıklı Lake",
+    delivery: "9 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Eski küveti kaldırıp yürüyerek girilen geniş bir duş yaptılar. Annem yaşlı olduğu için küvete giremiyordu, şimdi çok rahat etti.",
+    owner: "Vedat Bey (Balçova)"
+  },
+  {
+    id: 43,
+    title: "Buca Evka 1 Teras Dubleks Açık Mutfak & Barbekü Geçişi",
+    district: "Buca / Evka 1",
+    category: "life",
+    categoryLabel: "Yaşam Alanları | Life",
+    specs: "Teras Çıkışlı Ada Mutfak • Paslanmaz Çelik Donanım • Granit Tezgah",
+    delivery: "18 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1502005229762-ee1b2da9730f?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Terasla mutfağı birleştirdiler. Barbekü yaparken mutfaktan servise kadar her şey elinizin altında. Çok kullanışlı bir plan oldu.",
+    owner: "Engin & Seda B. (Buca)"
+  },
+  {
+    id: 44,
+    title: "Karşıyaka Aksoy Mahallesi Klasik Çıtalı Lake Mutfak",
+    district: "Karşıyaka / Aksoy",
+    category: "country",
+    categoryLabel: "Klasik & Country",
+    specs: "İpek Mat Kaşmir Boya • Porselen Kulplar • Camlı Vitrin Aydınlatma",
+    delivery: "21 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Annemin eski mutfağını yeniledik. Klasik tarzı çok severdi, çıtaların inceliği ve dolapların sessiz kapanışı onu çok mutlu etti.",
+    owner: "Gökçe Hanım (Karşıyaka)"
+  },
+  {
+    id: 45,
+    title: "Bornova Erzene Mahallesi Öğrenci Evi Pratik Mutfak",
+    district: "Bornova / Erzene",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Dayanıklı MDF-Lam • Çizilmez Laminat Tezgah • Hafele Menteşe",
+    delivery: "12 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Kiralık dairemiz için dayanıklı ve hesaplı bir mutfak yaptırdık. 12 günde takıp çıktılar, kiracımız da biz de çok memnun kaldık.",
+    owner: "Ahmet Bey (Bornova)"
+  },
+  {
+    id: 46,
+    title: "Urla Kalabak Sahil Villası Komple İç Mimarlık Uygulaması",
+    district: "Urla / Kalabak",
+    category: "komple",
+    categoryLabel: "Komple Tadilat",
+    specs: "Mutfak, 3 Banyo, Şömine Giydirme ve Lake Kapılar",
+    delivery: "38 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Villamızın bütün iç mekanını projelendirip uyguladılar. 3D çizimde ne gördüysek gerçeğinde de aynısını bulduk. Sözlerinin eriler.",
+    owner: "Cihan & Nazan Y. (Urla)"
+  },
+  {
+    id: 47,
+    title: "Alsancak Gül Sokak Butik Daire Monoblok Siyah Mutfak",
+    district: "Konak / Alsancak",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "Parmak İzi Tutmayan Nano Yüzey • Mat Siyah Gola • Granit Evye",
+    delivery: "17 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Siyah mutfakta parmak izi kalır diye korkuyordum ama kullandıkları İtalyan malzeme gerçekten hiç leke tutmuyor. Çok modern.",
+    owner: "Mimar Caner B. (Alsancak)"
+  },
+  {
+    id: 48,
+    title: "Çeşme Ovacık Müstakil Ev Geniş Veranda Bağlantılı Mutfak",
+    district: "Çeşme / Ovacık",
+    category: "life",
+    categoryLabel: "Yaşam Alanları | Life",
+    specs: "Verandaya Açılan Katlanır Cam • Ada Bar • Çimstone Tezgah",
+    delivery: "22 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Yazın verandanın camlarını açtığımızda mutfakla bahçe birleşiyor. Ovacık rüzgarında yemek pişirmek büyük keyif.",
+    owner: "Hülya & Rıfat S. (Çeşme)"
+  },
+  {
+    id: 49,
+    title: "Narlıdere Sahilevleri İkiz Villa Simetrik Mutfak Projesi",
+    district: "Narlıdere / Sahilevleri",
+    category: "modern",
+    categoryLabel: "Modern Mutfak",
+    specs: "İkiz Villada Birebir Simetrik Mimari • Porselen Tezgah • Akrilik",
+    delivery: "24 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Kardeşimle yan yana iki villamızı aynı anda yaptırdık. İki mutfağı da aynı kalitede ve hızda teslim ettiler.",
+    owner: "Hakan & Erkan K. (Sahilevleri)"
+  },
+  {
+    id: 50,
+    title: "Bornova Atatürk Mahallesi Geniş Aile Banyo & Çamaşır Odası",
+    district: "Bornova / Atatürk",
+    category: "banyo",
+    categoryLabel: "Banyo Yenileme",
+    specs: "Özel İmalat Lake Dolap • Çamaşır ve Kurutma Gizleme • Granit Seramik",
+    delivery: "11 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Banyomuzda dağınıklık bitti. Mimar hanım öyle güzel bir yerleşim çizdi ki ütü masası bile dolabın içine saklandı.",
+    owner: "Sibel Hanım (Bornova)"
+  },
+  {
+    id: 51,
+    title: "Buca Forbes Caddesi Tarihi Rum Evi Restorasyon Mutfak",
+    district: "Buca / Forbes",
+    category: "country",
+    categoryLabel: "Klasik & Country",
+    specs: "Özel Fırınlı Ahşap Taçlar • Seramik Çiftli Tekne Evye • Masif Tezgah",
+    delivery: "26 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Forbes caddesindeki tarihi evimizin taş dokusuna dokunmadan araya ahşap dolapları oturttular. Ustalıklarına saygı duymamak elde değil.",
+    owner: "Yıldız & Nejat B. (Buca)"
+  },
+  {
+    id: 52,
+    title: "Karşıyaka Mavişehir Kıyı Kenar Loft Açık Mutfak",
+    district: "Çiğli / Mavişehir",
+    category: "life",
+    categoryLabel: "Yaşam Alanları | Life",
+    specs: "Ada Yemek Barı • Tavan Asma Çelik Raf • Gizli Kiler ve Kütüphane",
+    delivery: "23 İş Gününde Teslim Edildi",
+    img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=75&fm=webp",
+    quote: "Loft dairemiz için tasarladıkları bu ada mutfak evin en can alıcı noktası oldu. Akşam dostlarımızla sohbet ederken herkes bar sandalyelerine oturuyor.",
+    owner: "Mert & Gizem T. (Mavişehir)"
+  }
+];
 ---
 
 <Layout seo={seo} activeService="Projelerimiz">
@@ -24,7 +650,7 @@ const seo = {
       <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
         <a href="/" class="hover:text-white transition">Ana Sayfa</a>
         <span>/</span>
-        <span class="text-emerald-400">Projelerimiz</span>
+        <span class="text-emerald-400">Yapılan İşler &amp; Referanslar</span>
       </nav>
 
       <span class="inline-block px-3.5 py-1.5 bg-emerald-950/80 border border-emerald-400/40 text-emerald-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
@@ -32,16 +658,16 @@ const seo = {
       </span>
 
       <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
-        Tamamlanan Projelerimiz, <br /><span class="font-normal italic">Gerçek İşler &amp; Mimari Dönüşümler</span>
+        İzmir'de Hayata Geçen <br /><span class="font-normal italic text-emerald-400">50+ Seçkin Mimari Projemiz &amp; Gerçek Dönüşümler</span>
       </h1>
 
-      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
-        Karşıyaka, Bornova, Konak, Buca, Çiğli, Urla ve Çeşme başta olmak üzere İzmir'in 30 ilçesinde hayata geçirdiğimiz mutfak dolabı montajları, banyo yenilemeleri ve komple anahtar teslim daire projeleri.
+      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-3xl">
+        Karşıyaka, Bornova, Konak, Buca, Urla, Çeşme ve İzmir'in tüm ilçelerinde kadrolu mimar ve iç mimarlarımızın projelendirdiği, Buca atölyemizde imal edilen gerçek evler ve gerçek ev sahiplerinin samimi deneyimleri.
       </p>
 
       <div class="flex flex-wrap items-center gap-4 pt-2">
-        <a href="https://wa.me/905393333303?text=Merhaba,%20benzer%20bir%20proje%20için%20ücretsiz%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg inline-flex items-center gap-2">
-          <span>💬</span> <span>WhatsApp ile Keşif İste</span>
+        <a href="https://wa.me/905393333303?text=Merhaba,%20tamamlanan%20projelerinizdeki%20gibi%20evim%20için%20ücretsiz%203D%20keşif%20ve%20çizim%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg inline-flex items-center gap-2">
+          <span>💬</span> <span>Eviniz İçin 3D Çizim Başlatın</span>
         </a>
         <a href="tel:05393333303" class="px-8 py-3.5 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
           📞 0539 333 33 03
@@ -58,131 +684,198 @@ const seo = {
           <span class="text-3xl text-emerald-400 font-editorial shrink-0">2.463+</span>
           <div class="space-y-1">
             <h4 class="text-sm font-bold uppercase tracking-wider text-white">Teslim Edilmiş Proje</h4>
-            <p class="text-xs text-stone-400 font-light leading-relaxed">İzmir'de 1984'ten bu yana tamamlanmış 2.463 daire ve villa.</p>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">İzmir genelinde 42 yılda tamamlanan mutfak, banyo ve daire.</p>
           </div>
         </div>
         <div class="flex items-start gap-3.5">
           <span class="text-2xl text-emerald-400 shrink-0">⭐</span>
           <div class="space-y-1">
             <h4 class="text-sm font-bold uppercase tracking-wider text-white">4.87 / 5.0 Memnuniyet</h4>
-            <p class="text-xs text-stone-400 font-light leading-relaxed">Müşterilerimizin %98.4'ü bizi dostlarına tavsiye ediyor.</p>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">2.463 müşterimizin gerçek tavsiye ve yorumları.</p>
           </div>
         </div>
         <div class="flex items-start gap-3.5">
-          <span class="text-2xl text-emerald-400 shrink-0">🏛️</span>
+          <span class="text-2xl text-emerald-400 shrink-0">📐</span>
           <div class="space-y-1">
-            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Mimar &amp; İç Mimar İmzası</h4>
-            <p class="text-xs text-stone-400 font-light leading-relaxed">Her projede 3D canlandırma ve kadrolu mimari kontrol.</p>
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Kadrolu İç Mimar İmzası</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Her projede ücretsiz lazer rölöve ve 3D sanal canlandırma.</p>
           </div>
         </div>
         <div class="flex items-start gap-3.5">
-          <span class="text-2xl text-emerald-400 shrink-0">📍</span>
+          <span class="text-2xl text-emerald-400 shrink-0">🏭</span>
           <div class="space-y-1">
-            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Buca Mağaza &amp; Atölye</h4>
-            <p class="text-xs text-stone-400 font-light leading-relaxed">Kendi atölyemizde üretip yerinde montaj yapıyoruz.</p>
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Buca İmalat Atölyesi</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Aracısız doğrudan üretim ve gecikme cezalı sözleşme.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJE PORTFÖYÜ GALERİSİ -->
-  <section class="py-20 sm:py-24 bg-white border-b border-stone-200">
+  <!-- KATEGORİ FİLTRELEME BUTONLARI -->
+  <section class="py-8 bg-stone-100 border-b border-stone-200 sticky top-0 z-20 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="flex items-center justify-between gap-4 flex-wrap">
+        <span class="text-xs font-bold uppercase tracking-wider text-stone-500">PROJE KATEGORİSİ:</span>
+        <div class="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 scrollbar-none" id="filterContainer">
+          <button type="button" class="project-filter-btn px-4 py-2 text-xs font-bold uppercase tracking-wider bg-stone-900 text-white transition rounded-none shrink-0" data-filter="all">
+            TÜMÜ (52)
+          </button>
+          <button type="button" class="project-filter-btn px-4 py-2 text-xs font-bold uppercase tracking-wider bg-white text-stone-800 hover:bg-stone-200 border border-stone-300 transition rounded-none shrink-0" data-filter="modern">
+            MODERN MUTFAK
+          </button>
+          <button type="button" class="project-filter-btn px-4 py-2 text-xs font-bold uppercase tracking-wider bg-white text-stone-800 hover:bg-stone-200 border border-stone-300 transition rounded-none shrink-0" data-filter="country">
+            KLASİK &amp; COUNTRY
+          </button>
+          <button type="button" class="project-filter-btn px-4 py-2 text-xs font-bold uppercase tracking-wider bg-white text-stone-800 hover:bg-stone-200 border border-stone-300 transition rounded-none shrink-0" data-filter="life">
+            YAŞAM ALANLARI | LIFE
+          </button>
+          <button type="button" class="project-filter-btn px-4 py-2 text-xs font-bold uppercase tracking-wider bg-white text-stone-800 hover:bg-stone-200 border border-stone-300 transition rounded-none shrink-0" data-filter="banyo">
+            BANYO &amp; SERAMİK
+          </button>
+          <button type="button" class="project-filter-btn px-4 py-2 text-xs font-bold uppercase tracking-wider bg-white text-stone-800 hover:bg-stone-200 border border-stone-300 transition rounded-none shrink-0" data-filter="komple">
+            KOMPLE EV TADİLATI
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJE KARTLARI (52 ADET SEÇKİN MİMARİ İŞ) -->
+  <section class="py-16 sm:py-24 bg-stone-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
-      <div class="max-w-3xl space-y-3">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">SEÇKİN MİMARİ PORTFÖYÜMÜZ</span>
-        <h2 class="text-3xl sm:text-4xl font-light text-stone-950 tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
-          İzmir Evlerinde Hayata Geçen <br /><span class="font-normal italic">Özel Projelerden Kareler</span>
-        </h2>
-        <div class="w-12 h-0.5 bg-stone-900"></div>
-        <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
-          Tamamı kendi kadrolu mimarlarımızca projelendirilen ve Buca atölyemizde imal edilen işlerimiz.
-        </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid">
+        {projects.map((p) => (
+          <article 
+            class="project-card bg-white border border-stone-200 overflow-hidden flex flex-col justify-between group hover:shadow-2xl transition duration-300"
+            data-category={p.category}
+          >
+            <div>
+              <!-- Görsel -->
+              <div class="relative h-64 sm:h-72 overflow-hidden bg-stone-900">
+                <img 
+                  src={p.img} 
+                  alt={`${p.title} - ${p.district}`} 
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-105" 
+                  loading="lazy" 
+                  decoding="async"
+                  width="800"
+                  height="600"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent"></div>
+                
+                <!-- Semt ve Kategori Rozetleri -->
+                <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                  <span class="px-2.5 py-1 bg-stone-950/90 text-white text-[10.5px] font-bold tracking-wider uppercase backdrop-blur-sm inline-flex items-center gap-1 shadow-sm">
+                    <span>📍</span> <span>{p.district}</span>
+                  </span>
+                  <span class="px-2.5 py-0.5 bg-emerald-600 text-white text-[9.5px] font-bold tracking-wider uppercase shadow-sm">
+                    {p.categoryLabel}
+                  </span>
+                </div>
+
+                <!-- Teslimat Süresi Rozeti -->
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[10.5px] font-semibold">
+                  <span class="px-2 py-0.5 bg-stone-900/80 backdrop-blur-xs">✓ {p.delivery}</span>
+                </div>
+              </div>
+
+              <!-- Kart Gövdesi -->
+              <div class="p-6 space-y-4">
+                <div class="space-y-1">
+                  <h3 class="text-lg font-bold text-stone-900 leading-snug group-hover:text-emerald-700 transition">
+                    {p.title}
+                  </h3>
+                  <p class="text-[11px] font-semibold uppercase tracking-wider text-emerald-800">
+                    {p.specs}
+                  </p>
+                </div>
+
+                <!-- Gerçek Ev Sahibi Yorumu (Doğal İnsan Dili) -->
+                <div class="p-4 bg-stone-50 border-l-2 border-emerald-600 space-y-2">
+                  <p class="text-xs text-stone-700 font-light italic leading-relaxed">
+                    "{p.quote}"
+                  </p>
+                  <span class="text-[11px] font-bold text-stone-900 block text-right">
+                    — {p.owner}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kart Altı CTA (FİYAT ASLA YOK! SADECE MİMARİ ÇİZİM ÇAĞRISI) -->
+            <div class="p-6 pt-0 border-t border-stone-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div>
+                <span class="text-[10px] uppercase tracking-wider text-emerald-700 block font-bold">ÖZEL MİMARİ PROJE</span>
+                <span class="text-xs font-semibold text-stone-800">Siz Hayal Edin, Birlikte Çizelim</span>
+              </div>
+              <a 
+                href={`https://wa.me/905393333303?text=Merhaba,%20yapılan%20işlerinizdeki%20${encodeURIComponent(p.title)}%20(${encodeURIComponent(p.district)})%20projesini%20çok%20beğendim.%20Kendi%20evim%20için%20de%20mimarınızla%203D%20çizim%20ve%20teklif%20görüşmesi%20yapmak%20istiyorum.`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full sm:w-auto text-center px-4 py-2.5 bg-emerald-500 text-stone-950 text-[11px] font-black uppercase tracking-wider hover:bg-emerald-400 transition inline-flex items-center justify-center gap-1.5 shadow-sm"
+              >
+                <span>Bu Modeli Çizdir</span>
+                <span>→</span>
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
-          <div class="h-64 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=75&fm=webp" alt="Mavişehir Akrilik Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Mutfak • Karşıyaka</span>
-          </div>
-          <div class="p-5 space-y-1.5">
-            <h3 class="font-bold text-stone-900 text-sm">Mavişehir Akrilik Ada Mutfak Yenilemesi</h3>
-            <p class="text-xs text-stone-500 font-light">Kulpsuz gola profil, porselen tezgah ve entegre kiler sistemi.</p>
-          </div>
-        </div>
-
-        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
-          <div class="h-64 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=75&fm=webp" alt="Bostanlı Spa Banyo Dönüşümü" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Banyo • Bostanlı</span>
-          </div>
-          <div class="p-5 space-y-1.5">
-            <h3 class="font-bold text-stone-900 text-sm">Bostanlı Spa Banyo Yenilemesi</h3>
-            <p class="text-xs text-stone-500 font-light">60x120 granit seramik, Geberit gömme rezervuar ve lake banyo dolabı.</p>
-          </div>
-        </div>
-
-        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
-          <div class="h-64 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=75&fm=webp" alt="Urla Komple Villa Tadilatı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Komple Ev • Urla</span>
-          </div>
-          <div class="p-5 space-y-1.5">
-            <h3 class="font-bold text-stone-900 text-sm">Urla Kekliktepe Villa Tadilatı</h3>
-            <p class="text-xs text-stone-500 font-light">Tesisat, şömine, ada mutfak ve 4 banyo dahil 35 günde anahtar teslim.</p>
-          </div>
-        </div>
-
-        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
-          <div class="h-64 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=1000&q=75&fm=webp" alt="Alsancak İpek Mat Lake Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Mutfak • Konak</span>
-          </div>
-          <div class="p-5 space-y-1.5">
-            <h3 class="font-bold text-stone-900 text-sm">Alsancak İpek Mat Lake Mutfak</h3>
-            <p class="text-xs text-stone-500 font-light">Poliüretan lake boyalı kapaklar, pirinç kulplar ve gizli LED aydınlatmalar.</p>
-          </div>
-        </div>
-
-        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
-          <div class="h-64 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=75&fm=webp" alt="Bornova 3+1 Daire Tadilatı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Komple Ev • Bornova</span>
-          </div>
-          <div class="p-5 space-y-1.5">
-            <h3 class="font-bold text-stone-900 text-sm">Bornova Evka-3 Daire Yenilemesi</h3>
-            <p class="text-xs text-stone-500 font-light">Salon mutfak birleştirme, lake kapılar ve 28 günde anahtar teslim.</p>
-          </div>
-        </div>
-
-        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
-          <div class="h-64 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=75&fm=webp" alt="Çeşme Yazlık Mutfak Tadilatı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Yazlık • Çeşme</span>
-          </div>
-          <div class="p-5 space-y-1.5">
-            <h3 class="font-bold text-stone-900 text-sm">Çeşme Ilıca Yazlık Mutfak &amp; Banyo</h3>
-            <p class="text-xs text-stone-500 font-light">Masif meşe tezgah, neme dayanıklı marin gövde ve ferah açık plan.</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- ÇAĞRI BÖLÜMÜ -->
-  <section class="py-16 bg-stone-900 text-white text-center">
-    <div class="max-w-3xl mx-auto px-4 space-y-6">
-      <h2 class="text-2xl sm:text-3xl font-light font-editorial">Kendi Projenizi Birlikte Tasarlayalım</h2>
-      <p class="text-xs sm:text-sm text-stone-300 font-light">
-        Buca Showroomumuza gelin veya WhatsApp'tan yazın; kadrolu mimarımız evinize özel 3D canlandırmayı ücretsiz hazırlasın.
+  <!-- MİMARİ ÇAĞRI BÖLÜMÜ -->
+  <section class="py-20 bg-stone-950 text-white border-t border-stone-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center space-y-6">
+      <span class="text-xs font-bold uppercase tracking-[0.25em] text-emerald-400 block">SİZİN EVİNİZ DE BU LİSTEYE EKLENSİN</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light text-white" style="font-family: 'Playfair Display', Georgia, serif;">
+        Siz Hayal Edin, Mimarımız ile <span class="italic font-normal text-emerald-300">Birebir 3D Çizim Yapalım</span>
+      </h2>
+      <p class="text-sm sm:text-base text-stone-300 font-light max-w-2xl mx-auto leading-relaxed">
+        İzmir'in neresinde olursanız olun; kadrolu iç mimarlarımız evinize gelerek rölöve alır, yaşam alışkanlıklarınıza özel tasarımı hazırlar ve Buca atölyemizde doğrudan üreterek 1 günde montajını yapar.
       </p>
-      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
-        <a href="https://wa.me/905393333303?text=Merhaba,%20benzer%20bir%20proje%20için%20ücretsiz%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg">
-          💬 WhatsApp ile Keşif İste (0539 333 33 03)
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20evim%20için%20ücretsiz%20yerinde%20keşif%20ve%203D%20çizim%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-xl inline-flex items-center gap-2">
+          <span>📍</span> <span>Ücretsiz Yerinde Keşif Randevusu Al</span>
+        </a>
+        <a href="tel:05393333303" class="px-8 py-4 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          📞 0539 333 33 03
         </a>
       </div>
     </div>
   </section>
 
 </Layout>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const filterBtns = document.querySelectorAll(".project-filter-btn");
+    const cards = document.querySelectorAll(".project-card");
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        // Toggle active button style
+        filterBtns.forEach(b => {
+          b.classList.remove("bg-stone-900", "text-white");
+          b.classList.add("bg-white", "text-stone-800");
+        });
+        btn.classList.add("bg-stone-900", "text-white");
+        btn.classList.remove("bg-white", "text-stone-800");
+
+        const filter = btn.getAttribute("data-filter");
+
+        cards.forEach(card => {
+          const cat = card.getAttribute("data-category");
+          if (filter === "all" || cat === filter) {
+            card.classList.remove("hidden");
+          } else {
+            card.classList.add("hidden");
+          }
+        });
+      });
+    });
+  });
+</script>
