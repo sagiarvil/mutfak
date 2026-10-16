@@ -1,0 +1,606 @@
+# İzmir Mutfak & Banyo — Kapsamlı AI Bilgi Tabanı & Tam Referans Envanteri (LLMs-Full RFC v1.1)
+> Standart: Full Knowledge RFC v1.1 | Status: Enterprise 100/100
+> Canonical: https://izmirmutfakbanyo.com.tr | Dil: tr-TR
+> Güncelleme: 2026-10-16 | Kuruluş: 1984 (Buca / İzmir)
+
+## Kurumsal Profil ve Yetkinlikler
+- **Firma Unvanı:** İzmir Mutfak & Banyo Özel İmalat ve Mimarlık Hizmetleri
+- **Kuruluş:** 1984 (42 Yıllık Kesintisiz İmalat)
+- **Merkez Atölye:** Buca / İZMİR
+- **Hizmet Kapsamı:** Tüm İzmir İlçeleri (Karşıyaka, Bornova, Konak, Çiğli, Urla, Çeşme, Bayraklı, Buca, Narlıdere, Balçova, Gaziemir, Güzelbahçe, Seferihisar, Menemen, Torbalı, Aliağa, Foça, Menderes, Kemalpaşa)
+- **Çalışma Modeli:** Yerinde Ücretsiz Lazerli Rölöve & 3D Fotogerçekçi Sanal Mekan Çizimi, Sözleşmeli Teslimat, Gecikme Cezası Garantisi, 10 Yıl Gövde Garantisi, Fiyat Belirtmeksizin Tamamen Kişiye Özel Mimari Projelendirme.
+- **İletişim & WhatsApp Keşif Hattı:** 0539 333 33 03
+
+## Hizmet Alanları ve Teknik Özellikler
+1. **Özel Ölçü Mutfak Dolabı İmalatı:**
+   - Gövde: 18mm E1 standardı nem ve suya dayanıklı MDF-Lam (Asla suntalam kullanılmaz).
+   - Kapak Çeşitleri: Fırınlı ipek mat lake, 1.2mm ultra parlak çizilmez akrilik, doğal masif meşe kaplama, country çıtalı lake.
+   - Mekanizmalar: Blum Legrabox / Tandembox frenli raylar, Blum Aventos kalkar kapak amortisörleri, Hafele kiler sepetleri.
+   - Tezgah Entegrasyonu: Çimstone, Belenco, Calacatta kuvars ve porselen tezgah uygulamaları.
+
+2. **Lüks Banyo Yenileme & Seramik Döşeme:**
+   - Su İzolasyonu: Weber / Kalekim çift kat fileli elastik sürme izolasyon ve köşe pah bantları (72 saat su sızdırmazlık testi zorunluluğu).
+   - Tesisat & Gömme Rezervuar: Geberit / Vitra sessiz borulu gömme rezervuarlar, İtalyan paslanmaz lineer duş kanalları.
+   - Mobilya & Cam: Suya dayanıklı marin lake banyo dolapları, 8mm temperli füme/şeffaf walk-in duşakabinler.
+
+3. **Komple Ev & Daire Tadilatı:**
+   - 5 Aşamalı Mimari Süreç: Rölöve & 3D Çizim -> Kırım & Moloz Atımı -> Elektrik/Su/Doğalgaz Tesisatı Sıfırlama -> Alçı, Boya & Parke Uygulaması -> Özel İmalat Mobilya & Mutfak/Banyo Montajı.
+   - Şantiye Denetimi: Kadrolu iç mimar eşliğinde her aşamada lazerli terazi kontrolü.
+
+## 72 Tamamlanmış Gerçek Referans Proje Envanteri
+
+### Proje #1: Bostanlı Kaşmir Mat Lake & Ada Mutfak
+- **Bölge:** Karşıyaka / Bostanlı
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Kulpsuz Gola Profil • Blum Legrabox • Calacatta Gold Kuvars
+- **Teslimat:** 21 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-01.webp
+- **Müşteri Geri Bildirimi:** "Eski mutfağımız karanlıktı, yemek yaparken bile bunalıyorduk. Mimarımız duvardaki yarım bölmeyi kaldırıp kahvaltı barlı ada önerdiğinde başta tereddüt ettik ama çizimde görünce hemen onay verdik. Şimdi evin bütün hayatı bu adanın etrafında dönüyor." — Sevgi & Levent K. (Bostanlı)
+
+### Proje #2: Alaçatı Taş Ev Rustik Çıtalı Country Mutfak
+- **Bölge:** Çeşme / Alaçatı
+- **Kategori:** Klasik & Country
+- **Teknik Özellikler:** Fırınlı İpek Mat Beyaz Lake • Masif Meşe Tezgah • Porselen Çift Evye
+- **Teslimat:** 24 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-02.webp
+- **Müşteri Geri Bildirimi:** "Taş duvarların arasına uydurmak gerçekten ince ustalık gerektiriyordu. Taç birleşimleri ve el yapımı çıtaların kalitesi harika oldu. Yaz boyu gelen bütün misafirlerimiz mutfağa hayran kaldı." — Zeynep Hanım (Alaçatı)
+
+### Proje #3: Özkanlar Salonla Bütünleşik Açık Mutfak & TV Ünitesi
+- **Bölge:** Bornova / Özkanlar
+- **Kategori:** Yaşam Alanları | Life
+- **Teknik Özellikler:** Antrasit Akrilik • Akustik Ahşap Çıta Panel • Gizli Boy Kiler
+- **Teslimat:** 19 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-03.webp
+- **Müşteri Geri Bildirimi:** "Mutfak dolaplarının salona doğru devam edip televizyon ünitesiyle birleşmesi evi iki kat geniş gösterdi. Akşamları yemek pişirirken salondaki çocuklarla aynı ortamda olmak paha biçilemez." — Burak & Merve T. (Bornova)
+
+### Proje #4: Mavişehir Spa Banyo & 60x120 Mermer Doku Seramik
+- **Bölge:** Çiğli / Mavişehir
+- **Kategori:** Banyo Yenileme
+- **Teknik Özellikler:** Geberit Gömme Rezervuar • İtalyan Lineer Duş Kanalı • Lake Banyo Dolabı
+- **Teslimat:** 11 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-01.webp
+- **Müşteri Geri Bildirimi:** "Eski derzler sararmıştı ve küf kokusu vardı. Çift kat sürme izolasyon yapıp derzsiz büyük seramikleri döşediler. Otel konforunda tertemiz bir banyoya kavuştuk." — Dr. Selim Y. (Mavişehir)
+
+### Proje #5: Urla İskele Villa Komple Daire & Bahçe Katı Tadilatı
+- **Bölge:** Urla / İskele
+- **Kategori:** Komple Tadilat
+- **Teknik Özellikler:** Tüm Tesisat Yenileme • Lake İç Kapılar • Isı Yalıtımlı Mutfak
+- **Teslimat:** 32 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-01.webp
+- **Müşteri Geri Bildirimi:** "1984" — Cem & Ayla D. (Urla)
+
+### Proje #6: Göztepe Sahil Çizgili Antrasit Gola Mutfak
+- **Bölge:** Konak / Göztepe
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** C ve L Alüminyum Profil • Belenco Siyah Parlak Kuvars • Gizli LED Kanalı
+- **Teslimat:** 17 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-04.webp
+- **Müşteri Geri Bildirimi:** "Kulpsuz tasarım temizlik açısından o kadar rahat ki anlatamam. Bezle bir kerede silip geçiyorum. Çekmecelerin frenleri fısıltı gibi sessiz." — Nermin Hanım (Göztepe)
+
+### Proje #7: Şirinyer Dubleks Merdiven Altı Entegre Kilerli Mutfak
+- **Bölge:** Buca / Şirinyer
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Özel Açı CNC İmalat • 18mm E1 MDF-Lam • Blum Tandembox
+- **Teslimat:** 16 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-05.webp
+- **Müşteri Geri Bildirimi:** "Merdiven altındaki o ölü alanı kiler dolabına dönüştürdüler. Tencereler, erzaklar hepsi sığdı. Buca merkezdeki mağazalarında çizimi birlikte yapmıştık, aynısı çıktı." — Mehmet Usta (Şirinyer)
+
+### Proje #8: Yelki Müstakil Ev Adaçayı Yeşili Country Mutfak
+- **Bölge:** Güzelbahçe / Yelki
+- **Kategori:** Klasik & Country
+- **Teknik Özellikler:** Pirinç Fincan Kulplar • Çıtalı Cam Vitrinler • Masif Meşe Ada
+- **Teslimat:** 22 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-06.webp
+- **Müşteri Geri Bildirimi:** "Adaçayı yeşilini boya kartelasından seçerken kararsızdık ama mimarımız 3D çizimde gün ışığı açısını gösterince ikna olduk. Renk tonu salona öyle bir hava kattı ki herkes soruyor." — Hande & İlker B. (Güzelbahçe)
+
+### Proje #9: Alsancak Kordon Tarihi Daire Yüksek Tavanlı Mutfak
+- **Bölge:** Konak / Alsancak
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** 3 Metre Tavana Kadar Çift Sıra Dolap • Bas-Aç Üst Modüller • Füme Cam
+- **Teslimat:** 20 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-07.webp
+- **Müşteri Geri Bildirimi:** "Eski Rum evinde tavanlar 3.20 metreydi. Hazır mutfaklar komik duruyordu. Özel ölçüyle tavana kadar iki kat dolap yaptılar, yukarıdaki bavullar bile saklandı." — Av. Ceyda S. (Alsancak)
+
+### Proje #10: Sahilevleri Lüks Villa Porselen Monolit Ada Mutfak
+- **Bölge:** Narlıdere / Sahilevleri
+- **Kategori:** Yaşam Alanları | Life
+- **Teknik Özellikler:** 12mm İtalyan Laminam Porselen • Şelale Dönüş • Servo-Drive Elektrikli Çekmece
+- **Teslimat:** 26 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-08.webp
+- **Müşteri Geri Bildirimi:** "Adanın tezgahı ve yan kaplamaları tek parça porselen. Sıcak tencereyi doğrudan koyabiliyorum, çizilme derdi sıfır. Kesinlikle verdiğimiz her kuruşa değdi." — Bülent K. (Sahilevleri)
+
+### Proje #11: Mansuroğlu Aile Banyosu & Geniş Çamaşır Dolabı
+- **Bölge:** Bayraklı / Mansuroğlu
+- **Kategori:** Banyo Yenileme
+- **Teknik Özellikler:** Çamaşır ve Kurutma Makinesi Boy Dolabı • Siyah Mat Armatürler • Led Ayna
+- **Teslimat:** 9 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-02.webp
+- **Müşteri Geri Bildirimi:** "Deterjanlar, kirli sepeti ve kurutma makinesi hep ortalıktaydı. Tek bir şık boy dolapla hepsini sakladılar. Banyo tertemiz ve derli toplu oldu." — Gülşah Hanım (Bayraklı)
+
+### Proje #12: Evka 3 Geniş Bahçeli Daire Komple Yenileme
+- **Bölge:** Bornova / Evka 3
+- **Kategori:** Komple Tadilat
+- **Teknik Özellikler:** Mutfak, 2 Banyo, Zeminler ve Asma Tavan • Lazerli Şantiye Kontrolü
+- **Teslimat:** 28 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-02.webp
+- **Müşteri Geri Bildirimi:** "Ustalarla ayrı ayrı uğraşmaktan korkuyorduk. Tek bir sözleşme yaptık, mimar bey her gün şantiyeden fotoğraf attı. İşimizi gücümüzü aksatmadan evimiz yenilendi." — Murat & Özge E. (Bornova)
+
+### Proje #13: Alaybey Sahil Minimalist Beyaz Akrilik Mutfak
+- **Bölge:** Karşıyaka / Alaybey
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Çizilmez Beyaz Akrilik • Çimstone Tezgah • Gizli Şişelik Rafı
+- **Teslimat:** 15 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-09.webp
+- **Müşteri Geri Bildirimi:** "Küçük mutfağımız beyaz akrilik ve gizli aydınlatmalar sayesinde iki kat aydınlık oldu. Ölçü alırken milimetrik çalıştılar, buzdolabı tam yerine oturdu." — Emine Teyze (Karşıyaka)
+
+### Proje #14: Bademler Köyü Taş Villa Ahşap Kirişli Mutfak
+- **Bölge:** Urla / Bademler
+- **Kategori:** Klasik & Country
+- **Teknik Özellikler:** Doğal Meşe Çerçeve • Antik Döküm Evye • Şömine Davlumbaz
+- **Teslimat:** 25 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-10.webp
+- **Müşteri Geri Bildirimi:** "Urla" — Turgut Bey (Urla)
+
+### Proje #15: Balçova Termal Yakını Ebeveyn Banyosu & Walk-in Duş
+- **Bölge:** Balçova / Korutürk
+- **Kategori:** Banyo Yenileme
+- **Teknik Özellikler:** Kapısız Siyah Çerçeveli Duş Camı • Ahşap Görünümlü Seramik • Niş Aydınlatma
+- **Teslimat:** 8 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-03.webp
+- **Müşteri Geri Bildirimi:** "Duş teknesi yerine zemine sıfır İtalyan gider yaptılar. Şampuan koymak için duvara açtıkları ışıklı niş harika bir detay oldu." — Serdar & Pınar Ç. (Balçova)
+
+### Proje #16: Gaziemir Sevgi Mahallesi Ada Masalı Geniş Mutfak
+- **Bölge:** Gaziemir / Sevgi
+- **Kategori:** Yaşam Alanları | Life
+- **Teknik Özellikler:** 4 Kişilik Oturma Barı • İndüksiyonlu Ocak • Tavan Tipi Ada Davlumbaz
+- **Teslimat:** 18 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-11.webp
+- **Müşteri Geri Bildirimi:** "Pazar sabahları ailecek kahvaltıyı ada masasında yapıyoruz. Çekmecelerin derinliği sayesinde bütün tencerelerimiz sığdı." — Ayşe & Hakan D. (Gaziemir)
+
+### Proje #17: Ilıca Sahil Evi Açık Renk Akdeniz Mutfağı
+- **Bölge:** Çeşme / Ilıca
+- **Kategori:** Klasik & Country
+- **Teknik Özellikler:** Açık Mavi Lake • Porselen Çiçek Desenli Kulp • Masif Tezgah
+- **Teslimat:** 21 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-12.webp
+- **Müşteri Geri Bildirimi:** "Yazlığın mutfağını yenilemek gözümüzde büyüyordu. Anahtarı verdik, İzmir" — Ferit Bey (Ilıca)
+
+### Proje #18: Manavkuyu 3+1 Daire Komple Dönüşüm & Mutfak Büyütme
+- **Bölge:** Bayraklı / Manavkuyu
+- **Kategori:** Komple Tadilat
+- **Teknik Özellikler:** Balkon Dahil Edilerek Büyütülen Mutfak • İzolasyon • Lake Mobilya
+- **Teslimat:** 27 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-03.webp
+- **Müşteri Geri Bildirimi:** "Karanlık mutfağı yanındaki küçük balkonla birleştirdiler. İzolasyonu öyle iyi yaptılar ki kışın bile en sıcak oda oldu." — Nalan & Sinan K. (Bayraklı)
+
+### Proje #19: Küçükyalı Tarihi Apartman Retro Lake Mutfak
+- **Bölge:** Konak / Küçükyalı
+- **Kategori:** Klasik & Country
+- **Teknik Özellikler:** Koyu Yeşil İpek Mat Lake • Pirinç Kulplar • Terrazzo Tezgah
+- **Teslimat:** 20 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-13.webp
+- **Müşteri Geri Bildirimi:** "Eski apartmanın ruhunu bozmadan modern bir kullanım sağladılar. Koyu yeşil lake rengi tam hayal ettiğimiz gibi tutturuldu." — Derya Hanım (Küçükyalı)
+
+### Proje #20: Çamlıkule Genç Çift Evi Kompakt L Mutfak
+- **Bölge:** Buca / Çamlıkule
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Parlak Kaşmir Akrilik • Köşe Fasulye Mekanizması • Belenco Tezgah
+- **Teslimat:** 14 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-14.webp
+- **Müşteri Geri Bildirimi:** "Bütçemize göre en kaliteli çözümü sundular. Köşe dolaptaki o dönen fasulye sepet olmasa tencereleri nereye koyardık bilmiyorum." — Oğuz & Tuğba Ç. (Buca)
+
+### Proje #21: Dalyan Marin Koyu Lacivert Ada Mutfak
+- **Bölge:** Çeşme / Dalyan
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Midnight Blue Lake • Fırçalanmış Altın Profil • Kuvars Tezgah
+- **Teslimat:** 23 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-15.webp
+- **Müşteri Geri Bildirimi:** "Lacivertin tonu o kadar asil duruyor ki mutfağa her giren önce bir durup bakıyor. Altın detaylar çok dozunda kullanılmış." — Metin & Suzan A. (Çeşme)
+
+### Proje #22: Kazımdirik Üniversite Bölgesi 1+1 Akıllı Mutfak
+- **Bölge:** Bornova / Kazımdirik
+- **Kategori:** Yaşam Alanları | Life
+- **Teknik Özellikler:** Açılır Kapanır Teleskopik Bar Masası • Gizli Mikrodalga Dolabı
+- **Teslimat:** 12 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-16.webp
+- **Müşteri Geri Bildirimi:** "1+1 dairede yer kısıtlıydı. Yemek masası adanın içinden çekilerek açılıyor, işimiz bitince içeri giriyor. İnanılmaz pratik." — Eren K. (Bornova)
+
+### Proje #23: Kekliktepe Müstakil Villa Çift Lavabolu Ebeveyn Banyo
+- **Bölge:** Urla / Kekliktepe
+- **Kategori:** Banyo Yenileme
+- **Teknik Özellikler:** Doğal Masif Meşe Tezgah • Çift Çanak Lavabo • Akıllı LED Ayna
+- **Teslimat:** 13 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-04.webp
+- **Müşteri Geri Bildirimi:** "Sabahları eşimle aynı anda hazırlanırken lavabo kavgası bitti. Ahşap tezgahın suya dayanıklı özel yağı sayesinde hiç leke tutmuyor." — Banu & Taner V. (Urla)
+
+### Proje #24: Yalı Mahallesi Deniz Manzaralı Geniş Mutfak & Bar
+- **Bölge:** Güzelbahçe / Yalı
+- **Kategori:** Yaşam Alanları | Life
+- **Teknik Özellikler:** Geniş Cam Önü Ada • Kadeh Askılık Modülü • Porselen Tezgah
+- **Teslimat:** 22 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-17.webp
+- **Müşteri Geri Bildirimi:** "Deniz manzarasına karşı adada kahve yudumlamak günün en güzel anı. Mimarımızın tavsiyesiyle ocak adanın üzerine alındı, çok memnun kaldık." — Gökhan Bey (Güzelbahçe)
+
+### Proje #25: Merkez Buca Aile Apartmanı Komple 3 Kat Yenileme
+- **Bölge:** Buca / Merkez
+- **Kategori:** Komple Tadilat
+- **Teknik Özellikler:** 3 Dairenin Eş Zamanlı Mutfak & Banyo İmalatı • Toplu Sözleşme
+- **Teslimat:** 40 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-04.webp
+- **Müşteri Geri Bildirimi:** "Aile apartmanımızdaki 3 daireyi aynı anda yenilettik. Atölye hemen yakınımızda olduğu için her aşamasını gidip gördük. İlgilerine çok teşekkürler." — Hacı Mehmet Ailesi (Buca)
+
+### Proje #26: Karşıyaka Çarşı Üstü Butik Ofis Mutfak Köşesi
+- **Bölge:** Karşıyaka / Çarşı
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Gizlenebilir Pocket Door Kapaklar • Mini Buzdolabı Entegre
+- **Teslimat:** 10 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-18.webp
+- **Müşteri Geri Bildirimi:** "Hukuk büromuz için kapakları kapandığında dolap gibi görünen bir mutfak istiyorduk. Misafir geldiğinde kapatıyoruz, sıfır mutfak görüntüsü." — Av. Koray N. (Karşıyaka)
+
+### Proje #27: Ilıca Villa Açık Mutfak & Bahçe Havuz Başı Servis Barı
+- **Bölge:** Çeşme / Ilıca
+- **Kategori:** Yaşam Alanları | Life
+- **Teknik Özellikler:** Dış Cephe Uyumlu Kompakt Laminat • Sürgülü Pencere Geçişi
+- **Teslimat:** 19 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-19.webp
+- **Müşteri Geri Bildirimi:** "Mutfaktan havuz tarafına servis penceresi açıldı. Yaz partilerinde içeri girip çıkmadan doğrudan bahçeye servis yapabiliyoruz." — Selin & Bora G. (Çeşme)
+
+### Proje #28: Narlıdere Ilıca Mahallesi Çift Renk Mat Lake Mutfak
+- **Bölge:** Narlıdere / Ilıca
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Alt Dolaplar Koyu Gri • Üst Dolaplar Kırık Beyaz • Gola Profil
+- **Teslimat:** 18 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-20.webp
+- **Müşteri Geri Bildirimi:** "İki renk kombini odayı basıklıktan kurtardı. Lake boyanın dokusu pürüzsüz ipek gibi, silerken çizilmiyor." — Deniz Hanım (Narlıdere)
+
+### Proje #29: Bornova Küçükpark Retro Daire Çıtalı Banyo Dolabı
+- **Bölge:** Bornova / Küçükpark
+- **Kategori:** Banyo Yenileme
+- **Teknik Özellikler:** Suya Dayanıklı Yeşil Lake Banyo Dolabı • Pirinç Ayna • Yuvarlak Lavabo
+- **Teslimat:** 7 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-05.webp
+- **Müşteri Geri Bildirimi:** "Küçük banyoyu retro bir tasarımla yenilediler. Çamaşır makinesini dolabın içine aldılar, banyodaki tüm kalabalık bitti." — Yasemin H. (Bornova)
+
+### Proje #30: Urla Kekliktepe Akıllı Ev Entegre Ada Mutfak
+- **Bölge:** Urla / Kekliktepe
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Sensörlü Otomatik Açılır Çekmeceler • Gizli Davlumbaz • Karbon Filtre
+- **Teslimat:** 25 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-21.webp
+- **Müşteri Geri Bildirimi:** "Elimiz unluyken dizimizle dokununca açılan çekmeceler mutfakta devrim yaptı. Mimarımızın önerdiği tüm teknolojik aksamları iyi ki dinlemişiz." — Kenan & Aslı S. (Urla)
+
+### Proje #31: Bostanlı Tramvay Yanı 2+1 Komple Daire Dönüşümü
+- **Bölge:** Karşıyaka / Bostanlı
+- **Kategori:** Komple Tadilat
+- **Teknik Özellikler:** Kırım, Tesisat, Parke, Banyo ve Lake Mutfak Anahtar Teslim
+- **Teslimat:** 29 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-05.webp
+- **Müşteri Geri Bildirimi:** "Eski evimiz 35 yıllıktı, borular pas içindeydi. Komple altyapıyı değiştirip 29 günde sıfır daire gibi teslim ettiler." — Ali Rıza Amca (Bostanlı)
+
+### Proje #32: Alaçatı Çamlık Lüks Villa Beyaz Lake Country Mutfak
+- **Bölge:** Çeşme / Alaçatı
+- **Kategori:** Klasik & Country
+- **Teknik Özellikler:** Geniş Şömine Davlumbaz • Döküm Tencere Çekmeceleri • Porselen Kulplar
+- **Teslimat:** 24 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-22.webp
+- **Müşteri Geri Bildirimi:** "Davlumbazın üzerindeki ahşap oyma taç mutfağın imza parçası oldu. Fırın boya kalitesi gerçekten fabrikasyon gibi kusursuz." — Şebnem Hanım (Alaçatı)
+
+### Proje #33: Bayraklı Adliye Yakını Ofis İçi Modern Kahve Barı
+- **Bölge:** Bayraklı / Mansuroğlu
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Koyu Meşe Fuga • Gizli Bardaklık • Kuvars Tezgah
+- **Teslimat:** 11 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-23.webp
+- **Müşteri Geri Bildirimi:** "Ofise gelen müvekkillerimizin en çok iltifat ettiği yer kahve barımız oldu. Küçük alana bu kadar fonksiyon sığdırmak başarı." — Av. Tarık B. (Bayraklı)
+
+### Proje #34: Güzelbahçe Siteler Bölgesi Geniş Ada Kahvaltı Barı
+- **Bölge:** Güzelbahçe / Siteler
+- **Kategori:** Yaşam Alanları | Life
+- **Teknik Özellikler:** Masif Ceviz Bar Tablası • Entegre Priz Kulesi • Gizli Çöp Kovası
+- **Teslimat:** 20 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-24.webp
+- **Müşteri Geri Bildirimi:** "Yemek masasını salondan çıkardık, artık bütün yemeklerimizi ada barda yiyoruz. Ev çok daha ferahladı." — Meltem & Serkan D. (Güzelbahçe)
+
+### Proje #35: Buca Heykel Meydanı Klasik Beyaz Mutfak Dolapları
+- **Bölge:** Buca / Merkez
+- **Kategori:** Klasik & Country
+- **Teknik Özellikler:** CNC Çıtalı Membran Kapak • Çimstone Tezgah • Seramik Evye
+- **Teslimat:** 16 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-25.webp
+- **Müşteri Geri Bildirimi:** "Buca" — Fatma Teyze (Buca)
+
+### Proje #36: Mavişehir Soyak Sitesi Ebeveyn Banyosu Yenileme
+- **Bölge:** Çiğli / Mavişehir
+- **Kategori:** Banyo Yenileme
+- **Teknik Özellikler:** Gömme Rezervuar • LED Arkası Aynalı Dolap • Siyah Mat Armatür
+- **Teslimat:** 10 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-06.webp
+- **Müşteri Geri Bildirimi:** "Banyodaki boru sesleri ve rutubet tamamen kesildi. Aynanın arkasındaki gizli dolap bütün kozmetikleri topladı." — Ece & Barış K. (Mavişehir)
+
+### Proje #37: Karşıyaka Girne Caddesi Modern Kulpsuz Lake Mutfak
+- **Bölge:** Karşıyaka / Girne
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Saten Beyaz Lake • Antrasit C Profil • Tavana Sıfır Boy Dolap
+- **Teslimat:** 17 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-26.webp
+- **Müşteri Geri Bildirimi:** "Dolap kapaklarının üstünde kulp olmadığı için çizilme, gevşeme derdi kalmadı. Görsel olarak çok ferah ve lüks duruyor." — Kemal Bey (Karşıyaka)
+
+### Proje #38: Urla Torasan Sahil Evi Açık Plan Mutfak & Kiler
+- **Bölge:** Urla / Torasan
+- **Kategori:** Yaşam Alanları | Life
+- **Teknik Özellikler:** Gizlenebilir Cepli Kapı • Masif Meşe Raflar • Şarap Dolabı
+- **Teslimat:** 21 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-27.webp
+- **Müşteri Geri Bildirimi:** "Urla" — Alper & Melis T. (Urla)
+
+### Proje #39: Bornova Manavkuyu Deprem Sonrası Güçlendirmeli Tadilat
+- **Bölge:** Bayraklı / Manavkuyu
+- **Kategori:** Komple Tadilat
+- **Teknik Özellikler:** Hafifletilmiş Alçı Tavan • Karbon Fiber Güçlendirme Üstü Kaplama • Yeni Mutfak
+- **Teslimat:** 35 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-06.webp
+- **Müşteri Geri Bildirimi:** "Mühendisleri eşliğinde hem güvenliğimizi sağladılar hem de evimizi baştan aşağı yenilediler. Gönül rahatlığıyla oturuyoruz." — Süleyman Bey (Bayraklı)
+
+### Proje #40: Çeşme Reisdere Köy Evi Doğal Taş & Ahşap Mutfak
+- **Bölge:** Çeşme / Reisdere
+- **Kategori:** Klasik & Country
+- **Teknik Özellikler:** Masif Meşe Çerçeve • Antik Pirinç Donanım • Porselen Çift Gözlü Evye
+- **Teslimat:** 23 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-28.webp
+- **Müşteri Geri Bildirimi:** "Reisdere" — Gülümser Hanım (Çeşme)
+
+### Proje #41: Göztepe Mithatpaşa Caddesi Koridor Mutfak Dönüşümü
+- **Bölge:** Konak / Göztepe
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Tek Duvar Kesintisiz Çizgi • Ankastre Gömme Kule • Belenco Tezgah
+- **Teslimat:** 14 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-29.webp
+- **Müşteri Geri Bildirimi:** "Dar ve uzun koridor tipi mutfağımız vardı, adım atacak yer yoktu. Boy dolaplarla her şeyi toparladılar, koridor ferahladı." — Sinem & Tolga Ö. (Göztepe)
+
+### Proje #42: Balçova Teleferik Yanı Geniş Aile Dairesi Banyo Yenileme
+- **Bölge:** Balçova / Teleferik
+- **Kategori:** Banyo Yenileme
+- **Teknik Özellikler:** Geniş Küvet Yerine Walk-in Duş • Çift Lavabo • Neme Dayanıklı Lake
+- **Teslimat:** 9 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-07.webp
+- **Müşteri Geri Bildirimi:** "Eski küveti kaldırıp yürüyerek girilen geniş bir duş yaptılar. Annem yaşlı olduğu için küvete giremiyordu, şimdi çok rahat etti." — Vedat Bey (Balçova)
+
+### Proje #43: Buca Evka 1 Teras Dubleks Açık Mutfak & Barbekü Geçişi
+- **Bölge:** Buca / Evka 1
+- **Kategori:** Yaşam Alanları | Life
+- **Teknik Özellikler:** Teras Çıkışlı Ada Mutfak • Paslanmaz Çelik Donanım • Granit Tezgah
+- **Teslimat:** 18 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-30.webp
+- **Müşteri Geri Bildirimi:** "Terasla mutfağı birleştirdiler. Barbekü yaparken mutfaktan servise kadar her şey elinizin altında. Çok kullanışlı bir plan oldu." — Engin & Seda B. (Buca)
+
+### Proje #44: Karşıyaka Aksoy Mahallesi Klasik Çıtalı Lake Mutfak
+- **Bölge:** Karşıyaka / Aksoy
+- **Kategori:** Klasik & Country
+- **Teknik Özellikler:** İpek Mat Kaşmir Boya • Porselen Kulplar • Camlı Vitrin Aydınlatma
+- **Teslimat:** 21 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-31.webp
+- **Müşteri Geri Bildirimi:** "Annemin eski mutfağını yeniledik. Klasik tarzı çok severdi, çıtaların inceliği ve dolapların sessiz kapanışı onu çok mutlu etti." — Gökçe Hanım (Karşıyaka)
+
+### Proje #45: Bornova Erzene Mahallesi Öğrenci Evi Pratik Mutfak
+- **Bölge:** Bornova / Erzene
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Dayanıklı MDF-Lam • Çizilmez Laminat Tezgah • Hafele Menteşe
+- **Teslimat:** 12 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-32.webp
+- **Müşteri Geri Bildirimi:** "Kiralık dairemiz için dayanıklı ve hesaplı bir mutfak yaptırdık. 12 günde takıp çıktılar, kiracımız da biz de çok memnun kaldık." — Ahmet Bey (Bornova)
+
+### Proje #46: Urla Kalabak Sahil Villası Komple İç Mimarlık Uygulaması
+- **Bölge:** Urla / Kalabak
+- **Kategori:** Komple Tadilat
+- **Teknik Özellikler:** Mutfak, 3 Banyo, Şömine Giydirme ve Lake Kapılar
+- **Teslimat:** 38 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-07.webp
+- **Müşteri Geri Bildirimi:** "Villamızın bütün iç mekanını projelendirip uyguladılar. 3D çizimde ne gördüysek gerçeğinde de aynısını bulduk. Sözlerinin eriler." — Cihan & Nazan Y. (Urla)
+
+### Proje #47: Alsancak Gül Sokak Butik Daire Monoblok Siyah Mutfak
+- **Bölge:** Konak / Alsancak
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** Parmak İzi Tutmayan Nano Yüzey • Mat Siyah Gola • Granit Evye
+- **Teslimat:** 17 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-33.webp
+- **Müşteri Geri Bildirimi:** "Siyah mutfakta parmak izi kalır diye korkuyordum ama kullandıkları İtalyan malzeme gerçekten hiç leke tutmuyor. Çok modern." — Mimar Caner B. (Alsancak)
+
+### Proje #48: Çeşme Ovacık Müstakil Ev Geniş Veranda Bağlantılı Mutfak
+- **Bölge:** Çeşme / Ovacık
+- **Kategori:** Yaşam Alanları | Life
+- **Teknik Özellikler:** Verandaya Açılan Katlanır Cam • Ada Bar • Çimstone Tezgah
+- **Teslimat:** 22 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-34.webp
+- **Müşteri Geri Bildirimi:** "Yazın verandanın camlarını açtığımızda mutfakla bahçe birleşiyor. Ovacık rüzgarında yemek pişirmek büyük keyif." — Hülya & Rıfat S. (Çeşme)
+
+### Proje #49: Narlıdere Sahilevleri İkiz Villa Simetrik Mutfak Projesi
+- **Bölge:** Narlıdere / Sahilevleri
+- **Kategori:** Modern Mutfak
+- **Teknik Özellikler:** İkiz Villada Birebir Simetrik Mimari • Porselen Tezgah • Akrilik
+- **Teslimat:** 24 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-35.webp
+- **Müşteri Geri Bildirimi:** "Kardeşimle yan yana iki villamızı aynı anda yaptırdık. İki mutfağı da aynı kalitede ve hızda teslim ettiler." — Hakan & Erkan K. (Sahilevleri)
+
+### Proje #50: Bornova Atatürk Mahallesi Geniş Aile Banyo & Çamaşır Odası
+- **Bölge:** Bornova / Atatürk
+- **Kategori:** Banyo Yenileme
+- **Teknik Özellikler:** Özel İmalat Lake Dolap • Çamaşır ve Kurutma Gizleme • Granit Seramik
+- **Teslimat:** 11 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-08.webp
+- **Müşteri Geri Bildirimi:** "Banyomuzda dağınıklık bitti. Mimar hanım öyle güzel bir yerleşim çizdi ki ütü masası bile dolabın içine saklandı." — Sibel Hanım (Bornova)
+
+### Proje #51: Buca Forbes Caddesi Tarihi Rum Evi Restorasyon Mutfak
+- **Bölge:** Buca / Forbes
+- **Kategori:** Klasik & Country
+- **Teknik Özellikler:** Özel Fırınlı Ahşap Taçlar • Seramik Çiftli Tekne Evye • Masif Tezgah
+- **Teslimat:** 26 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-36.webp
+- **Müşteri Geri Bildirimi:** "Forbes caddesindeki tarihi evimizin taş dokusuna dokunmadan araya ahşap dolapları oturttular. Ustalıklarına saygı duymamak elde değil." — Yıldız & Nejat B. (Buca)
+
+### Proje #52: Karşıyaka Mavişehir Kıyı Kenar Loft Açık Mutfak
+- **Bölge:** Çiğli / Mavişehir
+- **Kategori:** Yaşam Alanları | Life
+- **Teknik Özellikler:** Ada Yemek Barı • Tavan Asma Çelik Raf • Gizli Kiler ve Kütüphane
+- **Teslimat:** 23 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/proje-37.webp
+- **Müşteri Geri Bildirimi:** "Loft dairemiz için tasarladıkları bu ada mutfak evin en can alıcı noktası oldu. Akşam dostlarımızla sohbet ederken herkes bar sandalyelerine oturuyor." — Mert & Gizem T. (Mavişehir)
+
+### Proje #53: Bostanlı Hilton Tasarım Masif Meşe Banyo Yenileme
+- **Bölge:** Karşıyaka / Bostanlı
+- **Kategori:** Banyo & Seramik
+- **Teknik Özellikler:** Masif Meşe Çanak Tezgah • Çift Kat Elastik İzolasyon • Siyah Mat Armatür
+- **Teslimat:** 10 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-09.webp
+- **Müşteri Geri Bildirimi:** "Banyomuzda eski küvet alanı çok dardı. Mimarımız küveti söküp boydan boya cam hemzemin duş alanı tasarladı. Masif meşe dolapla birlikte banyo ferah bir spa alanına dönüştü." — Aylin & Cem S. (Bostanlı)
+
+### Proje #54: Alsancak Tarihi Apartman Mermer Doku Banyo Dönüşümü
+- **Bölge:** Konak / Alsancak
+- **Kategori:** Banyo & Seramik
+- **Teknik Özellikler:** 60x120 Calacatta Porselen Seramik • Geberit Rezervuar • Gizli LED Niş
+- **Teslimat:** 12 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-10.webp
+- **Müşteri Geri Bildirimi:** "1970 yapımı eski dairemizin su tesisatları sürekli sızdırıyordu. Komple tesisatı yenileyip büyük ebat porselen seramik döşediler. Şampuan nişindeki gizli led ışıklar banyoya ayrı bir hava kattı." — Prof. Dr. Haldun B. (Alsancak)
+
+### Proje #55: Urla Kekliktepe Villa Ebeveyn Banyosu & Çift Lavabo
+- **Bölge:** Urla / Kekliktepe
+- **Kategori:** Banyo & Seramik
+- **Teknik Özellikler:** Çift Hazneli Akrilik Lavabo • Mat Grafit Banyo Dolabı • Termostatik Duş
+- **Teslimat:** 14 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-11.webp
+- **Müşteri Geri Bildirimi:** "Sabahları eşimle aynı anda hazırlanırken lavabo kuyruğu oluyordu. Çift lavabolu geniş ayna dolap ünitesi tam ihtiyacımız olan çözümdü. İşçilik ve dolap kapaklarının kalitesi kusursuz." — Ceyda & Onur T. (Urla)
+
+### Proje #56: Mavişehir Yalı Dairesi Minimalist Füme Cam Duş & Banyo
+- **Bölge:** Çiğli / Mavişehir
+- **Kategori:** Banyo & Seramik
+- **Teknik Özellikler:** Füme Cam Walk-in Duşakabin • Linear Sifon Kanalı • Neme Dayanıklı Lake
+- **Teslimat:** 9 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-12.webp
+- **Müşteri Geri Bildirimi:** "Banyoda kapı eşiği olmadan düz ayak duşa girmek büyük konfor. Su sızdırmazlık testini bizzat yanımızda yaptılar. Boya ve dolap detayları son derece özenliydi." — Murat K. (Mavişehir)
+
+### Proje #57: Çeşme Ilıca Yazlık Bağımsız Küvet & Doğal Taş Zemin
+- **Bölge:** Çeşme / Ilıca
+- **Kategori:** Banyo & Seramik
+- **Teknik Özellikler:** Monoblok Akrilik Küvet • Yerden Bağımsız Batarya • Traverten Seramik
+- **Teslimat:** 15 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-13.webp
+- **Müşteri Geri Bildirimi:** "Yazlığımızın banyosunu yenilerken hem şık hem de deniz dönüşü rahat kullanılacak bir düzen istedik. Mimarımızın önerdiği bağımsız küvet ve traverten zemin tam bir Akdeniz havası verdi." — Banu & Kerem E. (Çeşme)
+
+### Proje #58: Bornova Evka 3 Akıllı Depolamalı Kompakt Banyo
+- **Bölge:** Bornova / Evka 3
+- **Kategori:** Banyo & Seramik
+- **Teknik Özellikler:** Çamaşır Makinesi Gizleme Dolabı • Kirli Sepetli Boy Dolap • LED Ayna
+- **Teslimat:** 11 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-14.webp
+- **Müşteri Geri Bildirimi:** "Çamaşır makinesi ve deterjanların açıkta görünmesi dağınıklık yaratıyordu. Özel imalat boy dolabı içine çamaşır ve kurutma makinesini entegre ettiler. Banyo derli toplu oldu." — Selin & Emre G. (Bornova)
+
+### Proje #59: Narlıdere Sahilevleri Taş Doku Duvar & Seramik Banyo
+- **Bölge:** Narlıdere / Sahilevleri
+- **Kategori:** Banyo & Seramik
+- **Teknik Özellikler:** Antislip Kaymaz Zemin Seramiği • Ahşap Görünümlü Seramik Kaplama • Hansgrohe
+- **Teslimat:** 13 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-15.webp
+- **Müşteri Geri Bildirimi:** "Büyüklerimiz için kaydırmaz zemin ve tutunma barlı güvenli bir banyo planladık. Estetikten ödün vermeden hem güvenli hem de çok şık bir banyo teslim ettiler." — İlker V. (Narlıdere)
+
+### Proje #60: Göztepe Sahil Akrilik Çift Aynalı Ebeveyn Banyosu
+- **Bölge:** Konak / Göztepe
+- **Kategori:** Banyo & Seramik
+- **Teknik Özellikler:** Sensörlü Buğu Önleyici LED Ayna • Porselen Tezgah • Vitra V-Care Klozet
+- **Teslimat:** 10 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-16.webp
+- **Müşteri Geri Bildirimi:** "Aynadaki buğu önleyici rezistans sistemi sabahları duştan sonra inanılmaz rahatlık sağlıyor. Porselen tezgah leke tutmuyor, temizliği çok kolay." — Gamze & Tolga D. (Göztepe)
+
+### Proje #61: Güzelbahçe Doğa Manzaralı Geniş Camlı Banyo Yenileme
+- **Bölge:** Güzelbahçe / Yelki
+- **Kategori:** Banyo & Seramik
+- **Teknik Özellikler:** Cam Panel Bölme • Suya Dayanıklı Kompakt Laminat Dolap • Gizli Gider
+- **Teslimat:** 12 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-17.webp
+- **Müşteri Geri Bildirimi:** "Bahçe manzarasına bakan banyomuzu gün ışığını maksimum alacak şekilde kurguladılar. Kompakt laminat dolaplar buhara ve suya karşı gerçekten çok dayanıklı." — Funda N. (Güzelbahçe)
+
+### Proje #62: Karşıyaka Alaybey Neoklasik Çıtalı Banyo Dolabı
+- **Bölge:** Karşıyaka / Alaybey
+- **Kategori:** Banyo & Seramik
+- **Teknik Özellikler:** İpek Mat Adaçayı Yeşili Banyo Dolabı • Antik Bronz Armatür • Mermer Evye
+- **Teslimat:** 11 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/banyo-18.webp
+- **Müşteri Geri Bildirimi:** "Klasik tarz evimize uygun adaçayı yeşili lake dolap yaptırdık. Bronz bataryalarla uyumu harika oldu. Zamanında ve söz verdikleri günde montajı bitirdiler." — Neşe & Kemal R. (Alaybey)
+
+### Proje #63: Alsancak Kordon Boyu 3+1 Daire Komple Anahtar Teslim Tadilat
+- **Bölge:** Konak / Alsancak
+- **Kategori:** Komple Ev Tadilatı
+- **Teknik Özellikler:** Açık Mutfak Salon Birleşimi • Elektrik & Su Tesisatı Sıfırlama • Lamine Parke
+- **Teslimat:** 38 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-08.webp
+- **Müşteri Geri Bildirimi:** "40 yıllık daireyi kaba inşaata kadar soyup baştan aşağı yeniden inşa ettiler. Mutfakla salon arasındaki duvar kalkınca ev ferahladı. Tek bir kuruş sürpriz maliyet çıkarmadan teslim ettiler." — Av. Mehmet & Ece B. (Alsancak)
+
+### Proje #64: Karşıyaka Aksoy Yalı Dairesi Panoramik Salon & Mutfak Dönüşümü
+- **Bölge:** Karşıyaka / Aksoy
+- **Kategori:** Komple Ev Tadilatı
+- **Teknik Özellikler:** Ses & Isı İzolasyonu • Özel İmalat Kapı & Süpürgelik • Akıllı Aydınlatma
+- **Teslimat:** 42 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-09.webp
+- **Müşteri Geri Bildirimi:** "Eski binada denizden gelen rutubet ve ses sorunu vardı. İzolasyon katmanları kusursuz yapıldı. İç kapılar ve mutfak dolapları aynı lake tonunda üretildi, bütünlük mükemmel." — Serdar & Pınar K. (Karşıyaka)
+
+### Proje #65: Urla İskele Taş Ev Aslına Uygun Restorasyon & Modern İmalat
+- **Bölge:** Urla / İskele
+- **Kategori:** Komple Ev Tadilatı
+- **Teknik Özellikler:** Doğal Taş Duvar Derz Yenileme • Masif Ahşap Tavan Kirişleri • Ada Mutfak
+- **Teslimat:** 45 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-10.webp
+- **Müşteri Geri Bildirimi:** "Tarihi taş evi restore ederken modern konforu yakalamak istiyorduk. Taş duvarları bozmadan gizli tesisat çektiler, tavan kirişlerini korudular. Mimarımız her detayla bizzat ilgilendi." — Metin & Arzu Ç. (Urla)
+
+### Proje #66: Çeşme Dalyan Müstakil Villa Komple Bahçe & İç Mekan Yenileme
+- **Bölge:** Çeşme / Dalyan
+- **Kategori:** Komple Ev Tadilatı
+- **Teknik Özellikler:** Veranda Açık Mutfak • Zemin Seramikleri • 3 Banyo Sıfırlama
+- **Teslimat:** 35 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-11.webp
+- **Müşteri Geri Bildirimi:** "Yaza yetiştirmek için çok sıkı bir takvimimiz vardı. 35 iş gününde 3 banyo, mutfak ve salon zeminlerini eksiksiz teslim ettiler. Sezon başında anahtarımızı teslim aldık." — Dr. Cüneyt & Seda Y. (Çeşme)
+
+### Proje #67: Mavişehir Loft Daire Yüksek Tavan Asma Kat & Salon Yenileme
+- **Bölge:** Çiğli / Mavişehir
+- **Kategori:** Komple Ev Tadilatı
+- **Teknik Özellikler:** Endüstriyel Çelik & Ahşap Merdiven • Akustik Duvar Panelleri • Gola Mutfak
+- **Teslimat:** 34 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-12.webp
+- **Müşteri Geri Bildirimi:** "6 metre tavan yüksekliğine sahip loft dairemizde yankı problemi vardı. Akustik ahşap paneller ve entegre kütüphaneli merdiven tasarımı hem akustiği çözdü hem de harika bir görüntü sağladı." — Barış & Gizem M. (Mavişehir)
+
+### Proje #68: Bornova Küçükpark Dubleks Çatı Katı Daire Komple Yenileme
+- **Bölge:** Bornova / Küçükpark
+- **Kategori:** Komple Ev Tadilatı
+- **Teknik Özellikler:** Çatı İzolasyonu • Teras Sürgülü Cam Sistemleri • Özel Ölçü Giysi Odası
+- **Teslimat:** 30 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-13.webp
+- **Müşteri Geri Bildirimi:** "Çatı katı yazın sıcaktan durulmuyordu. Taşyünü ve nefes alan membranla tavan izolasyonunu sıfırdan yaptılar. Teras mutfağı ve giysi odası dolapları tam istediğimiz gibi oldu." — Hüseyin & Nazan A. (Bornova)
+
+### Proje #69: Narlıdere Çamtepe Orman Manzaralı Villa İç Mimari Dönüşüm
+- **Bölge:** Narlıdere / Çamtepe
+- **Kategori:** Komple Ev Tadilatı
+- **Teknik Özellikler:** Yerden Isıtma Tesisatı • Büyük Ebat Porselen Zemin • Masif Kapılar
+- **Teslimat:** 40 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-14.webp
+- **Müşteri Geri Bildirimi:** "Eski petekli sistemi söküp yerden ısıtma kurdular, üzerine porselen seramik uygulandı. Kış boyu homojen ve çok ekonomik ısındık. İşçilik kalitesi birinci sınıf." — Kenan & Berna L. (Narlıdere)
+
+### Proje #70: Bostanlı Cemal Gürsel Caddesi 4+1 Daire Anahtar Teslim
+- **Bölge:** Karşıyaka / Bostanlı
+- **Kategori:** Komple Ev Tadilatı
+- **Teknik Özellikler:** Bebek Odası Mobilyası • Geniş Mutfak Adası • 2 Banyo Komple Seramik
+- **Teslimat:** 36 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-15.webp
+- **Müşteri Geri Bildirimi:** "Doğum öncesi evi yenilememiz gerekiyordu ve toz-gürültü istemiyorduk. Komşuları hiç rahatsız etmeden, tertemiz çalıştılar ve söz verilen günden 3 gün önce teslim ettiler." — Umut & Derya P. (Bostanlı)
+
+### Proje #71: Bayraklı Manavkuyu Geniş Aile Dairesi Modern Salon & Mutfak
+- **Bölge:** Bayraklı / Manavkuyu
+- **Kategori:** Komple Ev Tadilatı
+- **Teknik Özellikler:** Laminat Parke • Koridor Boy Aynalı Portmanto • Lake İç Kapılar
+- **Teslimat:** 28 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-16.webp
+- **Müşteri Geri Bildirimi:** "Geniş ailemiz için depolama alanı yetmiyordu. Koridordaki ölü alanları gizli çamaşır ve ayakkabı dolabına çevirdiler. Mimarımızın pratik fikirleri hayatımızı kolaylaştırdı." — Sabriye & Ahmet T. (Bayraklı)
+
+### Proje #72: Foça Eski Foça Taş Konak Komple İç & Dış Mimari Tadilat
+- **Bölge:** Foça / Eski Foça
+- **Kategori:** Komple Ev Tadilatı
+- **Teknik Özellikler:** Masif Ahşap Panjurlar • Rustik Banyo & Mutfak • Bahçe Avlu Zemin Taşı
+- **Teslimat:** 44 İş Gününde Teslim Edildi
+- **Görsel:** https://izmirmutfakbanyo.com.tr/media/projeler/tadilat-17.webp
+- **Müşteri Geri Bildirimi:** "Eski Foça" — Taner & Leyla O. (Foça)

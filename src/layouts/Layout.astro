@@ -42,6 +42,16 @@ const { seo, activeService } = Astro.props;
 
     
     <SEO {...seo} />
+  
+    <!-- RSS & Atom Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="İzmir Mutfak &amp; Banyo RSS Beslemesi" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="İzmir Mutfak &amp; Banyo RSS XML" href="/rss.xml" />
+
+    <!-- AI & LLM Discovery (RFC Standards) -->
+    <link rel="help" type="text/markdown" href="/llms.txt" title="LLMs Context" />
+    <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full AI Knowledge Base" />
+    <link rel="service-doc" type="application/json" href="/.well-known/agent-card.json" title="Autonomous Agent Protocol" />
+
   </head>
   <body class="min-h-screen flex flex-col font-sans bg-white text-stone-900 overflow-x-hidden antialiased">
     <Header />

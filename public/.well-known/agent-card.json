@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "İzmir Mutfak & Banyo AI Agent Interface",
+  "version": "1.0.0",
+  "description": "Autonomous Agent Protocol (AAO-Pro) Card for Izmir Kitchen, Bathroom and Interior Renovation services.",
+  "provider": {
+    "name": "İzmir Mutfak & Banyo",
+    "url": "https://izmirmutfakbanyo.com.tr",
+    "contact": "https://wa.me/905393333303",
+    "telephone": "+905393333303",
+    "foundingYear": 1984,
+    "location": {
+      "city": "İzmir",
+      "district": "Buca",
+      "country": "TR"
+    }
+  },
+  "capabilities": {
+    "customFurnitureDesign": true,
+    "kitchenCabinetManufacturing": true,
+    "bathroomRenovation": true,
+    "fullHomeRemodeling": true,
+    "free3DRenderingDiscovery": true
+  },
+  "endpoints": {
+    "llms": "https://izmirmutfakbanyo.com.tr/llms.txt",
+    "llmsFull": "https://izmirmutfakbanyo.com.tr/llms-full.txt",
+    "feed": "https://izmirmutfakbanyo.com.tr/feed.xml",
+    "rss": "https://izmirmutfakbanyo.com.tr/rss.xml",
+    "sitemap": "https://izmirmutfakbanyo.com.tr/sitemap-index.xml",
+    "imageSitemap": "https://izmirmutfakbanyo.com.tr/image-sitemap.xml"
+  },
+  "serviceDistricts": [
+    "Karşıyaka",
+    "Bornova",
+    "Buca",
+    "Konak",
+    "Urla",
+    "Çeşme",
+    "Çiğli",
+    "Bayraklı",
+    "Narlıdere",
+    "Balçova",
+    "Gaziemir",
+    "Güzelbahçe",
+    "Seferihisar",
+    "Menemen",
+    "Torbalı",
+    "Aliağa",
+    "Foça"
+  ]
+}

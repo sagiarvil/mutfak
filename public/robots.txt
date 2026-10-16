@@ -58,12 +58,15 @@ Allow: /
 
 User-agent: cohere-ai
 Allow: /
-
-# Sitemaps & Feeds
+# Sitemaps & Image Feeds
 Sitemap: https://izmirmutfakbanyo.com.tr/sitemap.xml
 Sitemap: https://izmirmutfakbanyo.com.tr/sitemap-index.xml
 Sitemap: https://izmirmutfakbanyo.com.tr/sitemap-0.xml
+Sitemap: https://izmirmutfakbanyo.com.tr/image-sitemap.xml
 
-# LLMS & Agents
+# LLMS & Agents (RFC Discovery)
 # LLMs-Txt: https://izmirmutfakbanyo.com.tr/llms.txt
-# Agent-Txt: https://izmirmutfakbanyo.com.tr/agent.txt
+# LLMs-Full: https://izmirmutfakbanyo.com.tr/llms-full.txt
+# Agent-Card: https://izmirmutfakbanyo.com.tr/.well-known/agent-card.json
+# RSS-Feed: https://izmirmutfakbanyo.com.tr/feed.xml
+# RSS-Xml: https://izmirmutfakbanyo.com.tr/rss.xml
