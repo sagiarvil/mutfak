@@ -89,18 +89,18 @@ export const siteConfig = {
       title: "İzmir Anahtar Teslim Tadilat & İç Mimari Uygulama",
       navTitle: "Anahtar Teslim",
       description: "Sürpriz maliyet olmadan, resmi sözleşmeli ve gecikme cezalı anahtar teslim konut ve villa tadilatı. İzmir'in tüm ilçelerine keşif hizmeti.",
-      shortDesc: "Zamanında teslimat ve sabit fiyat garantili profesyonel anahtar teslim tadilat.",
+      shortDesc: "Zamanında teslimat ve net bütçe taahhüdü garantili profesyonel anahtar teslim tadilat.",
       keywords: ["izmir anahtar teslim tadilat", "villa tadilatı izmir", "iç mimarlık izmir tadilat", "lüks ev tadilatı izmir"],
       features: ["Resmi Sözleşme ve Noter Taahhüt İmkanı", "3D Render Onaylı İmalat", "Mimar Onaylı Sözleşme Garantisi (Ek Maliyet Yok)", "Gecikme Cezalı Teslimat"]
     },
     {
-      id: "mutfak-dolabi-fiyatlari",
-      slug: "mutfak-dolabi-fiyatlari",
+      id: "mutfak-dolabi-mimari çizimlari",
+      slug: "mutfak-dolabi-mimari çizimlari",
       title: "2026 İzmir Mutfak Dolabı Projelendirme & Mimari Danışmanlık",
       navTitle: "Mimari Projelendirme",
       description: "İzmir genelinde kadrolu iç mimarlarımızla yerinde ücretsiz lazer ölçü, 3D sanal mekan çizimi ve hayalinizdeki mutfağa özel şeffaf maliyet projelendirmesi.",
       shortDesc: "Siz hayal edin biz ortaya çıkaralım: Mimarımızla 3D çizim ve özel proje teklifi.",
-      keywords: ["izmir mutfak dolabı fiyatları", "mutfak dolabı metretül fiyatı 2026", "lake mutfak dolabı ne kadar", "mutfak tadilatı kaç para tutar"],
+      keywords: ["izmir mutfak dolabı modelleri ve mimari tasarımları", "mutfak dolabı metretül tasarımı 2026", "lake mutfak dolabı ne kadar", "mutfak tadilatı kaç para tutar"],
       features: ["Kadrolu İç Mimar ile 3D Çizim", "Ücretsiz Yerinde Lazer Ölçü", "Sözleşmeli Sabit Maliyet Taahhüdü", "WhatsApp ile Anında Mimari Görüşme"]
     }
   ]

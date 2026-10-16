@@ -1,8 +1,5 @@
 ---
 import { siteConfig } from "../data/siteConfig";
-
-const currentPath = Astro.url.pathname;
-const isHome = currentPath === "/";
 ---
 
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 transition-all duration-300 w-full overflow-hidden" id="mainHeader">
@@ -15,7 +12,7 @@ const isHome = currentPath === "/";
           İzmir Buca İmalat Atölyesi • 1984'ten Bugüne 42 Yıllık Güven
         </span>
         <span class="hidden lg:inline text-stone-600">|</span>
-        <span class="hidden lg:inline text-stone-400 truncate">Kadrolu Mimar &amp; İç Mimar • 3D Sanal Mekan Deneyimi • Tüm İzmir'e Hizmet</span>
+        <span class="hidden lg:inline text-stone-400 truncate">Siz Hayal Edin, Mimarımız Çizsin, Biz Hayata Geçirelim</span>
       </div>
       <div class="flex items-center gap-3 shrink-0 text-xs">
         <a href="https://wa.me/905393333303" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline flex items-center gap-1">
@@ -25,7 +22,7 @@ const isHome = currentPath === "/";
     </div>
   </div>
 
-  <!-- Ana Menü Çubuğu (Zengin Masaüstü Navigasyonu + Aksiyon Butonları + Sandviç Menü) -->
+  <!-- Ana Menü Çubuğu (Logo + Butonlar + Sandviç Menü) -->
   <div class="w-full max-w-7xl mx-auto px-3 sm:px-5 lg:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4">
     
     <!-- Sol: Logo & Marka -->
@@ -37,32 +34,18 @@ const isHome = currentPath === "/";
       </div>
     </a>
 
-    <!-- Orta: Zengin Detaylı Masaüstü Menüsü -->
-    <nav class="hidden xl:flex items-center gap-3 2xl:gap-4 text-[11px] font-bold uppercase tracking-wider text-stone-800 whitespace-nowrap shrink-0" aria-label="Ana Navigasyon">
-      <a href="/" class={isHome ? "py-1 text-emerald-800 font-black border-b-2 border-emerald-700" : "py-1 hover:text-emerald-700 transition"}>Ana Sayfa</a>
-      <a href="/modern-mutfak-modelleri/" class={currentPath.includes("modern-mutfak") ? "py-1 text-emerald-800 font-black border-b-2 border-emerald-700" : "py-1 hover:text-emerald-700 transition"}>Modern Mutfak</a>
-      <a href="/klasik-country-mutfak-modelleri/" class={currentPath.includes("klasik-country") ? "py-1 text-emerald-800 font-black border-b-2 border-emerald-700" : "py-1 hover:text-emerald-700 transition"}>Klasik &amp; Country</a>
-      <a href="/yasam-alanlari-mutfak-modelleri/" class={currentPath.includes("yasam-alanlari") ? "py-1 text-emerald-800 font-black border-b-2 border-emerald-700" : "py-1 hover:text-emerald-700 transition"}>Yaşam Alanları &amp; Ada</a>
-      <a href="/izmir-banyo-yenileme-seramik/" class={currentPath.includes("banyo") ? "py-1 text-emerald-800 font-black border-b-2 border-emerald-700" : "py-1 hover:text-emerald-700 transition"}>Banyo &amp; Seramik</a>
-      <a href="/izmir-anahtar-teslim-tadilat/" class={currentPath.includes("anahtar-teslim") ? "py-1 text-emerald-800 font-black border-b-2 border-emerald-700" : "py-1 hover:text-emerald-700 transition"}>Anahtar Teslim</a>
-      <a href="/yapilan-isler/" class="py-1 px-2.5 bg-emerald-50 text-emerald-900 border border-emerald-300 font-black hover:bg-emerald-100 transition rounded-xs flex items-center gap-1 shadow-2xs">
-        <span>🏆 Yapılan İşler</span>
-      </a>
-      <a href="/iletisim/" class={currentPath.includes("iletisim") ? "py-1 text-emerald-800 font-black border-b-2 border-emerald-700" : "py-1 hover:text-emerald-700 transition"}>İletişim</a>
-    </nav>
-
-    <!-- Sağ: Aksiyon Butonları & Detaylı Sandviç Menü Tetikleyicisi -->
-    <div class="flex items-center gap-2 sm:gap-2.5 shrink-0 whitespace-nowrap">
-      <a href="/#projelendirme-basvuru" class="inline-flex items-center justify-center px-3 sm:px-4 py-2 border border-stone-900 text-stone-900 text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-900 hover:text-white transition duration-200 shrink-0">
+    <!-- Sağ: Aksiyon Butonları & Sandviç Menü Butonu (Tekil Standart) -->
+    <div class="flex items-center gap-2 sm:gap-3 shrink-0 whitespace-nowrap">
+      <a href="/#projelendirme-basvuru" class="inline-flex items-center justify-center px-3.5 sm:px-4 py-2 border border-stone-900 text-stone-900 text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-900 hover:text-white transition duration-200 shrink-0">
         Mutfağını Tasarla
       </a>
-      <a href="https://wa.me/905393333303?text=Merhaba,%20mimarınız%20ile%20ücretsiz%203D%20çizim%20ve%20keşif%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-3 sm:px-4 py-2 bg-stone-900 text-white text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-800 transition duration-200 shadow-sm shrink-0">
+      <a href="https://wa.me/905393333303?text=Merhaba,%20mimarınız%20ile%20ücretsiz%203D%20çizim%20ve%20keşif%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-3.5 sm:px-4 py-2 bg-stone-900 text-white text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-800 transition duration-200 shadow-sm shrink-0">
         Ücretsiz Keşif
       </a>
       <!-- Sandviç Menü İkonu -->
-      <button type="button" id="btnToggleMobileMenu" class="p-1.5 sm:p-2 text-stone-900 hover:bg-stone-100 transition rounded shrink-0 cursor-pointer flex items-center gap-1.5" aria-label="Tüm Kategoriler ve Menü">
+      <button type="button" id="btnToggleMobileMenu" class="p-2 sm:p-2.5 text-stone-900 hover:bg-stone-100 transition rounded shrink-0 cursor-pointer flex items-center gap-2 border border-stone-200" aria-label="Tüm Menüyü ve Kategorileri Aç">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        <span class="hidden md:inline text-[10px] font-bold uppercase tracking-widest text-stone-700">MENÜ</span>
+        <span class="hidden sm:inline text-xs font-bold uppercase tracking-widest text-stone-800">MENÜ</span>
       </button>
     </div>
   </div>
@@ -96,8 +79,8 @@ const isHome = currentPath === "/";
           <a href="/hazir-mutfak-modelleri-izmir/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
             <span>Hazır &amp; Modüler Mutfak Çözümleri</span> <span>→</span>
           </a>
-          <a href="/2026-mutfak-dolabi-fiyatlari/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
-            <span>2026 Mutfak Mimari Tasarım Rehberi</span> <span>→</span>
+          <a href="/2026-mutfak-dolabi-mimari çizimlari/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
+            <span>2026 Mimari Projelendirme Rehberi</span> <span>→</span>
           </a>
         </nav>
       </div>
@@ -135,16 +118,16 @@ const isHome = currentPath === "/";
         <div class="space-y-2">
           <span class="text-[10px] font-bold uppercase tracking-widest text-stone-900 block">BUCA İMALAT ATÖLYESİ</span>
           <p class="text-xs text-stone-600 font-light leading-relaxed">
-            1984'ten bu yana İzmir geneline kadrolu mimarlarımızla yerinde ücretsiz keşif yapıyor; siz hayal edin, biz ortaya çıkaralım mottosuyla çalışıyoruz.
+            1984'ten bu yana İzmir geneline kadrolu mimarlarımızla yerinde ücretsiz keşif yapıyor; siz hayal edin, mimarımız ile çizim yapalım, biz ortaya çıkaralım mottosuyla çalışıyoruz.
           </p>
           <div class="text-xs text-stone-800 space-y-1 pt-2 font-medium">
             <div>📞 <strong>Telefon:</strong> 0539 333 33 03</div>
             <div>📍 <strong>Atölye:</strong> Buca / İZMİR</div>
-            <div>📐 <strong>Hizmet:</strong> Ücretsiz Yerinde Rölöve &amp; 3D Çizim</div>
+            <div>📐 <strong>Hizmet:</strong> Ücretsiz Yerinde Rölöve &amp; 3D Mimari Çizim</div>
           </div>
         </div>
         <div class="pt-3">
-          <a href="https://wa.me/905393333303?text=Merhaba,%20mimarınız%20ile%203D%20çizim%20ve%20ücretsiz%20keşif%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider rounded-sm shadow-sm hover:bg-emerald-600 transition">
+          <a href="https://wa.me/905393333303?text=Merhaba,%20siz%20hayal%20edin%20biz%20ortaya%20çıkaralım%20anlayışınızla%20mimarınızla%203D%20çizim%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider rounded-sm shadow-sm hover:bg-emerald-600 transition">
             💬 WhatsApp: 0539 333 33 03
           </a>
         </div>
