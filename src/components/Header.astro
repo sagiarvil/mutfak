@@ -6,248 +6,108 @@ const currentPath = Astro.url.pathname;
 const isHome = currentPath === "/" || currentPath === "";
 ---
 
-<header class="site-header">
-  <div class="top-bar">
-    <div class="container top-bar-inner">
-      <div class="top-info">
-        <span class="location-badge">📍 İzmir Geneli Ücretsiz Keşif</span>
-        <span class="divider">|</span>
-        <a href={siteConfig.googleMapsUrl} target="_blank" rel="noopener noreferrer" class="maps-link">
-          🗺️ Haritada Gör
-        </a>
+<!-- ================================================================= -->
+<!-- ÖZEL İMALAT MİMARİ BAŞLIK VE MENÜ (TEK SIRA, PREMİUM, KOPMASIZ)  -->
+<!-- ================================================================= -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 transition-all duration-300 w-full overflow-hidden" id="mainHeader">
+  <!-- Üst İnce Bilgi & İletişim Şeridi -->
+  <div class="bg-stone-900 text-stone-300 text-[11px] font-medium py-1.5 px-3 sm:px-6 border-b border-stone-800">
+    <div class="w-full max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-2 sm:gap-3 truncate">
+        <span class="flex items-center gap-1.5 text-stone-200 whitespace-nowrap">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+          İzmir Buca Showroom &amp; İmalat Atölyesi • 1984'ten Bugüne 42 Yıllık Güven
+        </span>
+        <span class="hidden lg:inline text-stone-600">|</span>
+        <span class="hidden lg:inline text-stone-400 truncate">Kadrolu Mimar &amp; İç Mimar • 3D Sanal Mekan Deneyimi • Tüm İzmir'e Hizmet</span>
       </div>
-      <div class="top-contact">
-        <a href={buildTelUrl()} class="top-phone">
-          📞 <strong>{siteConfig.phoneFormatted}</strong>
+      <div class="flex items-center gap-3 shrink-0 text-xs">
+        <a href={siteConfig.googleMapsUrl} target="_blank" rel="noopener noreferrer" class="hover:text-white transition hidden sm:inline-flex items-center gap-1">
+          <span>📍</span> <span>Buca Showroom</span>
+        </a>
+        <span class="hidden sm:inline text-stone-600">|</span>
+        <a href="https://wa.me/905393333303" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline flex items-center gap-1">
+          <span>💬</span> <span>0539 333 33 03</span>
         </a>
       </div>
     </div>
   </div>
 
-  <nav class="main-nav" aria-label="Ana Menü">
-    <div class="container nav-inner">
-      <a href="/" class="brand" aria-label="İzmir Mutfak Banyo Ana Sayfa">
-        <img 
-          src="/logo.png" 
-          alt="İzmir Mutfak Banyo Tadilatı Logo" 
-          width="48" 
-          height="50" 
-          class="brand-logo"
-          loading="eager"
-          decoding="async"
-        />
-        <span class="brand-text">
-          <strong class="brand-title">İZMİR MUTFAK BANYO</strong>
-          <span class="brand-subtitle">Özel İmalat & Anahtar Teslim Tadilat</span>
-        </span>
+  <!-- Ana Menü Çubuğu (Flex-nowrap, taşmayan, tek sıra mimari menü) -->
+  <div class="w-full max-w-7xl mx-auto px-3 sm:px-5 lg:px-6 py-2 sm:py-2.5 flex items-center justify-between gap-2 sm:gap-4">
+    
+    <!-- Sol: Logo & Marka (Headerı dolduran, dengeli ve mimari logo) -->
+    <a href="/" class="flex items-center gap-2.5 sm:gap-3.5 shrink-0 group min-w-0 py-0.5" aria-label="Ana Sayfaya Git">
+      <img src="/logo.png" alt="İzmir Mutfak Banyo Tadilat Logo" class="h-11 sm:h-12 md:h-14 w-auto object-contain transition duration-200 group-hover:opacity-90 shrink-0" width="56" height="58" loading="eager" />
+      <div class="flex flex-col min-w-0 justify-center">
+        <span class="font-black tracking-wider text-stone-950 text-sm sm:text-base md:text-lg uppercase leading-none whitespace-nowrap" style="letter-spacing: 0.08em;">İZMİR MUTFAK &amp; BANYO</span>
+        <span class="text-[9.5px] sm:text-[10.5px] md:text-xs uppercase tracking-[0.22em] text-stone-500 font-bold whitespace-nowrap mt-1">Özel İmalat &amp; Tadilat</span>
+      </div>
+    </a>
+
+    <!-- Orta: Menü Linkleri (Kesinlikle tek sıra, kelimeler bölünmez) -->
+    <nav class="hidden xl:flex items-center gap-4 2xl:gap-6 text-[11.5px] font-bold uppercase tracking-wider text-stone-800 whitespace-nowrap shrink-0" aria-label="Ana Navigasyon">
+      <a href="/" class={isHome ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Ana Sayfa</a>
+      <a href="/mutfak-dolabi/" class={currentPath.includes("mutfak-dolabi") && !currentPath.includes("fiyatlari") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Mutfak Modelleri</a>
+      <a href="/mutfak-tadilati/" class={currentPath.includes("mutfak-tadilati") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Mutfak Tadilatı</a>
+      <a href="/banyo-tadilati/" class={currentPath.includes("banyo-tadilati") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Banyo Tadilatı</a>
+      <a href="/ev-tadilati/" class={currentPath.includes("ev-tadilati") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Ev Tadilatı</a>
+      <a href="/mutfak-dolabi-fiyatlari/" class={currentPath.includes("fiyatlari") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>Fiyat Rehberi</a>
+      <a href="/iletisim/" class={currentPath.includes("iletisim") ? "py-1 text-stone-950 font-black border-b-2 border-stone-950 whitespace-nowrap" : "py-1 hover:text-stone-500 transition whitespace-nowrap"}>İletişim</a>
+    </nav>
+
+    <!-- Sağ: Aksiyon Butonları & Mobil Menü Tetikleyici -->
+    <div class="flex items-center gap-2 sm:gap-2.5 shrink-0 whitespace-nowrap">
+      <a href="https://wa.me/905393333303?text=Merhaba,%20mutfak%20ve%20banyo%20için%20ücretsiz%203D%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-3.5 sm:px-4 py-2 bg-stone-900 text-white text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-800 transition duration-200 shadow-sm shrink-0">
+        Ücretsiz Keşif
       </a>
-
-      <!-- Mobil Menü Butonu (CSS tabanlı toggle) -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
-      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menüyü Aç / Kapat">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </label>
-
-      <ul class="nav-links">
-        <li><a href="/" class={isHome ? "active" : ""}>Ana Sayfa</a></li>
-        <li><a href="/mutfak-dolabi/" class={currentPath.includes("mutfak-dolabi") && !currentPath.includes("fiyatlari") ? "active" : ""}>Mutfak Dolabı</a></li>
-        <li><a href="/mutfak-tadilati/" class={currentPath.includes("mutfak-tadilati") ? "active" : ""}>Mutfak Tadilatı</a></li>
-        <li><a href="/banyo-tadilati/" class={currentPath.includes("banyo-tadilati") ? "active" : ""}>Banyo Tadilatı</a></li>
-        <li><a href="/ev-tadilati/" class={currentPath.includes("ev-tadilati") ? "active" : ""}>Ev Tadilatı</a></li>
-        <li><a href="/mutfak-dolabi-fiyatlari/" class={currentPath.includes("fiyatlari") ? "active" : ""}>Fiyat Rehberi</a></li>
-        <li><a href="/iletisim/" class={currentPath.includes("iletisim") ? "active" : ""}>İletişim</a></li>
-        <li class="nav-cta-item">
-          <a href={buildWhatsAppUrl({ customMessage: "Merhaba, ücretsiz keşif ve fiyat teklifi almak istiyorum." })} 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="btn-nav-wa"
-             aria-label="WhatsApp İle Hızlı Fiyat Al">
-            💬 WhatsApp Teklif Al
-          </a>
-        </li>
-      </ul>
+      
+      <!-- xl altındaki ekranlarda açılır menü ikonu -->
+      <button type="button" id="btnToggleMobileMenu" class="xl:hidden p-1.5 sm:p-2 text-stone-900 hover:bg-stone-100 transition rounded shrink-0" aria-label="Menüyü Aç">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-  </nav>
+  </div>
+
+  <!-- Açılır Çekmece Menü (Mobil & Tablet İçin) -->
+  <div id="mobileMenuDrawer" class="hidden xl:hidden bg-white border-b border-stone-200 px-6 py-6 space-y-4 shadow-2xl max-h-[85vh] overflow-y-auto">
+    <nav class="flex flex-col space-y-3 text-xs font-bold uppercase tracking-wider text-stone-800">
+      <a href="/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+        <span>Ana Sayfa</span> <span>→</span>
+      </a>
+      <a href="/mutfak-dolabi/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+        <span>Mutfak Modelleri &amp; Dolap İmalatı</span> <span>→</span>
+      </a>
+      <a href="/mutfak-tadilati/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+        <span>Komple Mutfak Tadilatı</span> <span>→</span>
+      </a>
+      <a href="/banyo-tadilati/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+        <span>Banyo Yenileme &amp; Su Yalıtımı</span> <span>→</span>
+      </a>
+      <a href="/ev-tadilati/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+        <span>Komple Ev &amp; Daire Tadilatı</span> <span>→</span>
+      </a>
+      <a href="/mutfak-dolabi-fiyatlari/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+        <span>2026 Mutfak Metretül Fiyat Rehberi</span> <span>→</span>
+      </a>
+      <a href="/iletisim/" class="py-2 hover:text-stone-500 border-b border-stone-100 flex items-center justify-between">
+        <span>Buca Showroom &amp; İletişim</span> <span>→</span>
+      </a>
+      <div class="pt-3 flex flex-col gap-2.5">
+        <a href="https://wa.me/905393333303" target="_blank" class="block text-center py-3 px-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider rounded-sm">
+          💬 WhatsApp: 0539 333 33 03
+        </a>
+      </div>
+    </nav>
+  </div>
 </header>
 
-<style>
-  .site-header {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-  }
-  .top-bar {
-    background: #0f172a;
-    color: #e2e8f0;
-    font-size: 0.8125rem;
-    padding: 0.35rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-  .top-bar-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .top-info {
-    display: flex;
-    gap: 0.75rem;
-    align-items: center;
-  }
-  .divider {
-    opacity: 0.4;
-  }
-  .maps-link {
-    color: #94a3b8;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  .maps-link:hover {
-    color: #ffffff;
-  }
-  .top-phone {
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .top-phone:hover {
-    color: #ffffff;
-  }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  .main-nav {
-    background: #ffffff;
-  }
-  .nav-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.65rem 1rem;
-    position: relative;
-  }
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 0.85rem;
-    text-decoration: none;
-    color: #0f172a;
-  }
-  .brand-logo {
-    width: 48px;
-    height: 50px;
-    aspect-ratio: 224 / 233;
-    object-fit: contain;
-    border-radius: 8px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    padding: 2px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    flex-shrink: 0;
-  }
-  .brand-text {
-    display: flex;
-    flex-direction: column;
-  }
-  .brand-title {
-    font-size: 1.15rem;
-    font-weight: 900;
-    letter-spacing: -0.02em;
-    color: #0f172a;
-    line-height: 1.2;
-  }
-  .brand-subtitle {
-    font-size: 0.72rem;
-    color: #64748b;
-    font-weight: 600;
-  }
-  .nav-toggle {
-    display: none;
-  }
-  .nav-toggle-label {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    padding: 0.5rem;
-  }
-  .hamburger-line {
-    width: 24px;
-    height: 3px;
-    background: #0f172a;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-  }
-  .nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 1.25rem;
-    align-items: center;
-  }
-  .nav-links a {
-    text-decoration: none;
-    color: #334155;
-    font-size: 0.9375rem;
-    font-weight: 600;
-    transition: color 0.2s ease;
-    padding: 0.25rem 0;
-  }
-  .nav-links a:hover,
-  .nav-links a.active {
-    color: #0284c7;
-    border-bottom: 2px solid #0284c7;
-  }
-  .btn-nav-wa {
-    background: #25d366 !important;
-    color: #ffffff !important;
-    padding: 0.55rem 1rem !important;
-    border-radius: 9999px !important;
-    font-size: 0.875rem !important;
-    font-weight: 700 !important;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    border-bottom: none !important;
-    transition: transform 0.2s ease, background 0.2s ease !important;
-  }
-  .btn-nav-wa:hover {
-    background: #1eb954 !important;
-    transform: translateY(-1px);
-  }
-
-  @media (max-width: 992px) {
-    .nav-toggle-label {
-      display: flex;
-    }
-    .nav-links {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: #ffffff;
-      flex-direction: column;
-      padding: 1.5rem;
-      gap: 1rem;
-      border-top: 1px solid #e2e8f0;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    .nav-toggle:checked ~ .nav-links {
-      display: flex;
-    }
-    .top-info .divider,
-    .top-info .maps-link {
-      display: none;
-    }
-    .brand-title {
-      font-size: 1.05rem;
-    }
-  }
-</style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("btnToggleMobileMenu");
+    const drawer = document.getElementById("mobileMenuDrawer");
+    btn?.addEventListener("click", () => {
+      drawer?.classList.toggle("hidden");
+    });
+  });
+</script>

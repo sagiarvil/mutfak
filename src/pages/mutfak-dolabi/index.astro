@@ -1,259 +1,166 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import WhatsAppCTA from "../../components/WhatsAppCTA.astro";
 import { siteConfig } from "../../data/siteConfig";
-import { buildWhatsAppUrl, buildTelUrl } from "../../utils/whatsapp";
 
 const seo = {
-  title: "İzmir Mutfak Dolabı İmalatı | Özel Ölçü Akrilik & Lake",
-  description: "İzmir'de birinci sınıf MDF gövde, Hafele/Blum frenli aksam ve özel ölçü akrilik, lake, membran mutfak dolabı imalatı. 3D projelendirme ve garantili montaj.",
+  title: "İzmir Özel İmalat Mutfak Dolabı | 1984'ten Bugüne 42 Yıllık Ustalık",
+  description: "İzmir özel ölçü mutfak dolabı imalatı. %100 MDF-Lam gövde, Blum frenli raylar, çift kat lake, akrilik ve masif meşe kapaklar. Kadrolu mimarımızla 3D sanal canlandırma ve Buca showroom güvencesi.",
   canonical: "https://izmirmutfakbanyo.com.tr/mutfak-dolabi/",
   serviceName: "Mutfak Dolabı İmalatı",
   breadcrumbs: [
     { name: "Mutfak Dolabı", url: "/mutfak-dolabi/" }
+  ],
+  faqList: [
+    {
+      question: "Mutfak dolabı gövdelerinde hangi malzemeyi kullanıyorsunuz?",
+      answer: "Tüm dolap gövdelerimizde %100 18mm E1 normunda Kastamonu Entegre veya Starwood yüksek yoğunluklu neme dayanıklı MDF-Lam kullanılır. Kesinlikle suntalam karkas kullanılmaz."
+    },
+    {
+      question: "Hangi kapak türü daha dayanıklıdır: Lake mi, Akrilik mi?",
+      answer: "Akrilik kapaklar çizilmeye ve darbelere karşı ekstra dirençlidir; modern ve parlak yüzey arayanlar için idealdir. Lake kapaklar ise istenen her renkte çift kat boyanabilir, kenar bantsız monoblok yapıdadır ve çizilse dahi yeniden boyanabilir."
+    },
+    {
+      question: "Mutfak dolabı siparişinde süreç nasıl işler?",
+      answer: "Mimarımız adresinize gelerek lazerle ölçü alır, 3D fotogerçekçi modelleme ile Buca showroomumuzda numuneleri gösterir. Onayınızın ardından resmi sözleşmeyle üretime başlanır ve 15-20 iş gününde teslim edilir."
+    }
   ]
 };
 ---
 
 <Layout seo={seo} activeService="Mutfak Dolabı">
-  <div class="page-header">
-    <div class="container">
-      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <a href="/">Ana Sayfa</a>
-        <span class="sep">/</span>
-        <span class="current">Mutfak Dolabı</span>
-      </nav>
-      <h1 class="page-title">İzmir Özel İmalat Mutfak Dolabı & Akrilik / Lake Modeller</h1>
-      <p class="page-lead">İzmir'de birinci sınıf MDF gövde, Hafele/Blum frenli aksam ve özel ölçü akrilik, lake, membran mutfak dolabı imalatı. 3D projelendirme ve garantili montaj.</p>
-      <div class="page-actions">
-        <a href={buildWhatsAppUrl({ service: "Mutfak Dolabı" })} target="_blank" rel="noopener noreferrer" class="btn-wa">
-          💬 WhatsApp ile Keşif İste
-        </a>
-        <a href={buildTelUrl()} class="btn-call">
-          📞 ${siteConfig.phoneFormatted}
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <section class="page-content-section">
-    <div class="container content-container">
-      <div class="main-article prose">
-        
-      <h2>İzmir'de Özel Ölçü Mutfak Dolabı İmalatı</h2>
-      <p>Mutfak, bir evin en çok kullanılan ve en yüksek ergonomi gerektiren yaşam alanıdır. Standart modüler dolaplar çoğu zaman kolon, kiriş ve tesisat boşluklarında ölü alanlar bırakır. Atölyemizde ürettiğimiz özel ölçü mutfak dolaplarıyla mutfağınızın her santimetresini değerlendiriyoruz.</p>
-      
-      <h3>Hangi Kapak Modellerini Üretiyoruz?</h3>
-      <ul>
-        <li><strong>Akrilik Mutfak Dolabı:</strong> Çizilmeye dirençli, yüksek parlaklıkta pürüzsüz yüzey, kolay temizlik ve modern estetik.</li>
-        <li><strong>Lake Mutfak Dolabı:</strong> CNC desenli veya düz yüzey, mat ya da parlak sınırsız renk seçeneği, sararmaz poliüretan boya kalitesi.</li>
-        <li><strong>Membran (Termofoil) Kapak:</strong> Zengin ahşap ve mat doku alternatifleri, uygun bütçe ve uzun ömürlü kullanım.</li>
-        <li><strong>Masif & Doğal Ahşap Kaplama:</strong> Country ve klasik tarz mutfaklar için zamansız şıklık ve doğal doku.</li>
-      </ul>
-
-      <h3>Kullandığımız Aksam ve Gövde Kalitesi</h3>
-      <p>Tüm gövdelerde neme ve buhara dayanıklı %100 birinci kalite MDF Lam kullanıyoruz. Asla suntalam gövde kullanmıyoruz. Çekmece raylarında ve menteşelerde ömür boyu garantili Blum veya Hafele frenli (yavaş kapanır) sistemler tercih ediyoruz.</p>
+  
+  <!-- HERO BÖLÜMÜ -->
+  <section class="relative bg-stone-950 text-white py-20 sm:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1800&q=80');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/80 to-transparent"></div>
     
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
+        <span>/</span>
+        <span class="text-emerald-400">Mutfak Dolabı İmalatı</span>
+      </nav>
+
+      <span class="inline-block px-3.5 py-1.5 bg-emerald-950/80 border border-emerald-400/40 text-emerald-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
+        1984'TEN BUGÜNE 42 YILLIK TECRÜBE • KENDİ CNC ATÖLYEMİZ
+      </span>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
+        İzmir Özel İmalat Mutfak Dolabı, <br /><span class="font-normal italic">Lake, Akrilik &amp; Masif Koleksiyonu</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
+        Ölçüye özel milimetrik üretim, sıfır suntalam güvencesi. Kadrolu iç mimarlarımızla 3D fotogerçekçi canlandırma ve sanal mekan deneyimi sunarak hayalinizdeki dolapları kendi atölyemizde üretiyor, 10 yıl mekanizma garantisiyle teslim ediyoruz.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20özel%20imalat%20mutfak%20dolabı%20için%20ücretsiz%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg inline-flex items-center gap-2">
+          <span>💬</span> <span>WhatsApp ile Dolap Keşfi İste</span>
+        </a>
+        <a href="tel:05393333303" class="px-8 py-3.5 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          📞 0539 333 33 03
+        </a>
       </div>
-
-      <aside class="sidebar">
-        <div class="sidebar-box">
-          <h3>Hızlı Fiyat & Keşif</h3>
-          <p>İzmir içi adresinize gelerek ölçü alıyor ve 3D çizim hazırlıyoruz.</p>
-          <a href={buildWhatsAppUrl({ service: "Mutfak Dolabı" })} target="_blank" rel="noopener noreferrer" class="btn-sidebar-wa">
-            WhatsApp Keşif Hattı
-          </a>
-        </div>
-
-        <div class="sidebar-box">
-          <h3>Diğer Hizmetlerimiz</h3>
-          <ul class="sidebar-links">
-            <li><a href="/mutfak-dolabi/">Mutfak Dolabı</a></li>
-            <li><a href="/mutfak-tadilati/">Mutfak Tadilatı</a></li>
-            <li><a href="/banyo-tadilati/">Banyo Tadilatı</a></li>
-            <li><a href="/ev-tadilati/">Komple Ev Tadilatı</a></li>
-            <li><a href="/mutfak-dolabi-fiyatlari/">Fiyat Rehberi</a></li>
-          </ul>
-        </div>
-      </aside>
     </div>
   </section>
 
-  <WhatsAppCTA 
-    title="Mutfak Dolabı İçin Fiyat ve Keşif Talebi Oluşturun"
-    subtitle="İzmir'in tüm ilçelerine 1 iş günü içinde ücretsiz keşif randevusu veriyoruz."
-    service="Mutfak Dolabı"
-  />
+  <!-- 4 SÜTUN GÜVEN ŞERİDİ -->
+  <section class="bg-[#121212] text-white border-b border-stone-800 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-start gap-4">
+          <span class="text-3xl text-emerald-400 font-editorial shrink-0">1984</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">42 Yıllık Marangozluk</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Aracısız, doğrudan kendi Buca CNC atölyemizde üretim güvencesi.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">🛡️</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">%100 MDF-Lam Gövde</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Asla suntalam kullanılmaz; neme dayanıklı E1 normunda gövde.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">⚙️</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Blum &amp; Hafele Donanım</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">200.000 açma garantili frenli menteşeler ve 65 kg raylar.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">✨</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">3D Sanal Deneyim</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Üretime girmeden önce fotogerçekçi modelle renkleri yaşayın.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GERÇEK MODEL GALERİSİ -->
+  <section class="py-20 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">ÖZEL İMALAT MODEL KOLEKSİYONU</span>
+        <h2 class="text-3xl sm:text-4xl font-light text-stone-950 tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+          Kendi Atölyemizde İmal Ettiğimiz <br /><span class="font-normal italic">Özel Mutfak Dolapları</span>
+        </h2>
+        <div class="w-12 h-0.5 bg-stone-900"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=80" alt="Lake Mutfak Dolabı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">İpek Mat Lake</span>
+          </div>
+          <div class="p-5 space-y-1">
+            <h3 class="font-bold text-stone-900 text-sm">İpek Mat Lake Ada Mutfak</h3>
+            <p class="text-xs text-stone-500 font-light">Poliüretan çift kat boya, sararmaz yüzey ve entegre gola kulp sistemi.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1000&q=80" alt="Akrilik Mutfak Dolabı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Çizilmez Akrilik</span>
+          </div>
+          <div class="p-5 space-y-1">
+            <h3 class="font-bold text-stone-900 text-sm">Çizilmez Parlak Akrilik Dolap</h3>
+            <p class="text-xs text-stone-500 font-light">Yüksek parlaklık, ultra kolay temizlik ve modern minimalist çizgiler.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?auto=format&fit=crop&w=1000&q=80" alt="Masif Meşe Country Mutfak Dolabı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Masif Meşe &amp; Çıtalı</span>
+          </div>
+          <div class="p-5 space-y-1">
+            <h3 class="font-bold text-stone-900 text-sm">Doğal Meşe Country Dolap</h3>
+            <p class="text-xs text-stone-500 font-light">Özel CNC çıta motifleri, pirinç kulp ve ahşabın sıcak dokusu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÇAĞRI BÖLÜMÜ -->
+  <section class="py-16 bg-stone-900 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4 space-y-6">
+      <h2 class="text-2xl sm:text-3xl font-light font-editorial">Özel Ölçü Mutfak Dolabınız İçin Fiyat Alın</h2>
+      <p class="text-xs sm:text-sm text-stone-300 font-light">
+        Buca Showroomumuza gelin veya WhatsApp'tan yazın; kadrolu mimarımız evinize gelerek ücretsiz 3D ölçü alsın.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20özel%20imalat%20mutfak%20dolabı%20için%20ücretsiz%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg">
+          💬 WhatsApp ile Keşif İste (0539 333 33 03)
+        </a>
+      </div>
+    </div>
+  </section>
+
 </Layout>
-
-<style>
-  .page-header {
-    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
-    color: #ffffff;
-    padding: 3.5rem 0 3rem;
-  }
-  .breadcrumb-nav {
-    font-size: 0.85rem;
-    color: #94a3b8;
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  .breadcrumb-nav a {
-    color: #38bdf8;
-    text-decoration: none;
-  }
-  .sep {
-    opacity: 0.5;
-  }
-  .current {
-    color: #e2e8f0;
-  }
-  .page-title {
-    font-size: 2.25rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: #ffffff;
-  }
-  .page-lead {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    max-width: 800px;
-    line-height: 1.6;
-    margin-bottom: 1.75rem;
-  }
-  .page-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .btn-wa {
-    background: #25d366;
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
-  }
-  .btn-call {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .page-content-section {
-    padding: 3.5rem 0;
-  }
-  .content-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-  }
-  .main-article {
-    line-height: 1.75;
-    color: #334155;
-    font-size: 1.05rem;
-  }
-  .main-article :global(h2) {
-    font-size: 1.65rem;
-    font-weight: 800;
-    color: #0f172a;
-    margin: 2rem 0 1rem;
-  }
-  .main-article :global(h3) {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin: 1.5rem 0 0.75rem;
-  }
-  .main-article :global(p) {
-    margin-bottom: 1.25rem;
-  }
-  .main-article :global(ul), .main-article :global(ol) {
-    margin: 0 0 1.5rem 1.5rem;
-  }
-  .main-article :global(li) {
-    margin-bottom: 0.5rem;
-  }
-  .main-article :global(table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-    font-size: 0.95rem;
-  }
-  .main-article :global(th), .main-article :global(td) {
-    border: 1px solid #cbd5e1;
-    padding: 0.75rem 1rem;
-    text-align: left;
-  }
-  .main-article :global(th) {
-    background: #f1f5f9;
-    font-weight: 700;
-  }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .sidebar-box {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    padding: 1.5rem;
-  }
-  .sidebar-box h3 {
-    font-size: 1.15rem;
-    font-weight: 800;
-    margin-bottom: 0.75rem;
-    color: #0f172a;
-  }
-  .sidebar-box p {
-    font-size: 0.9rem;
-    color: #64748b;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-  .btn-sidebar-wa {
-    display: block;
-    background: #25d366;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.75rem;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .sidebar-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .sidebar-links li {
-    margin-bottom: 0.5rem;
-  }
-  .sidebar-links a {
-    color: #0284c7;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-  }
-  .sidebar-links a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 850px) {
-    .content-container {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    .page-title {
-      font-size: 1.75rem;
-    }
-  }
-</style>

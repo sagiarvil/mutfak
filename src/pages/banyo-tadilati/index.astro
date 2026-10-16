@@ -1,257 +1,201 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import WhatsAppCTA from "../../components/WhatsAppCTA.astro";
 import { siteConfig } from "../../data/siteConfig";
 import { buildWhatsAppUrl, buildTelUrl } from "../../utils/whatsapp";
 
 const seo = {
-  title: "İzmir Banyo Tadilatı & Yenileme | Su Yalıtımı Garantili",
-  description: "Su yalıtımı garantili banyo tadilatı. Gömme rezervuar, İtalyan duş kanalı, 60x120 granit seramik, banyo dolabı ve temperli cam duşakabin çözümleri.",
+  title: "İzmir Banyo Tadilatı & Yenileme | Su Yalıtımı Garantili | 1984'ten Bugüne",
+  description: "İzmir garantili banyo tadilatı ve yenileme. Kadrolu mimar ve iç mimarlarımızla 3D sanal canlandırma, çift kat elastik su yalıtımı, Geberit gömme rezervuar, 60x120 granit seramik ve özel imalat banyo dolabı. 1984'ten gelen güvence.",
   canonical: "https://izmirmutfakbanyo.com.tr/banyo-tadilati/",
   serviceName: "Banyo Tadilatı",
   breadcrumbs: [
     { name: "Banyo Tadilatı", url: "/banyo-tadilati/" }
+  ],
+  faqList: [
+    {
+      question: "İzmir'de banyo tadilatı kaç günde tamamlanır?",
+      answer: "Komple banyo tadilatı; kırım, moloz atımı, su tesisatı yenileme, çift kat sürme su izolasyonu, 60x120 seramik döşeme, asma klozet ve dolap montajı dahil 7 ila 10 iş günü içerisinde anahtar teslim edilir."
+    },
+    {
+      question: "Alt kata su sızma riski için nasıl bir garanti veriyorsunuz?",
+      answer: "Tüm banyo projelerimizde köşe pah bantları ve çift kat çimento esaslı elastik sürme izolasyon uygulanır. Su sızdırmazlık testi yapıldıktan sonra seramik döşenir. 10 yıl resmi su sızdırmazlık garantisi verilir."
+    },
+    {
+      question: "Banyom küçük, depolama alanını nasıl artırabiliriz?",
+      answer: "Kadrolu iç mimarlarımız küçük banyolar için çamaşır makinesi gizleme kabinleri, gömme aynalı dolaplar ve niş raflarla ölü alanları %100 değerlendiren 3D çizimler hazırlar."
+    }
   ]
 };
 ---
 
 <Layout seo={seo} activeService="Banyo Tadilatı">
-  <div class="page-header">
-    <div class="container">
-      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <a href="/">Ana Sayfa</a>
-        <span class="sep">/</span>
-        <span class="current">Banyo Tadilatı</span>
-      </nav>
-      <h1 class="page-title">İzmir Banyo Tadilatı, Duşakabin & Modern Seramik Uygulama</h1>
-      <p class="page-lead">Su yalıtımı garantili banyo tadilatı. Gömme rezervuar, İtalyan duş kanalı, 60x120 granit seramik, banyo dolabı ve temperli cam duşakabin çözümleri.</p>
-      <div class="page-actions">
-        <a href={buildWhatsAppUrl({ service: "Banyo Tadilatı" })} target="_blank" rel="noopener noreferrer" class="btn-wa">
-          💬 WhatsApp ile Keşif İste
-        </a>
-        <a href={buildTelUrl()} class="btn-call">
-          📞 ${siteConfig.phoneFormatted}
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <section class="page-content-section">
-    <div class="container content-container">
-      <div class="main-article prose">
-        
-      <h2>Su Sızıntılarına Son Veren Garantili Banyo Tadilatı</h2>
-      <p>Banyo tadilatında en kritik aşama su yalıtımıdır. Alt kata su sızdırma kabusunu tamamen ortadan kaldırmak için çift kat çimento esaslı sürme izolasyon ve file takviyeli pah bantları kullanıyoruz.</p>
-
-      <h3>Banyo Tadilatında Neler Yapıyoruz?</h3>
-      <ul>
-        <li><strong>Gömme Rezervuar Montajı:</strong> Geberit veya VitrA sessiz dolum mekanizmalı gömme rezervuar ve asma klozet montajı.</li>
-        <li><strong>İtalyan Duş Kanalı:</strong> Küvetsiz, modern ve hemzemin duş alanları için paslanmaz çelik süzgeç ve koku önleyicili gider sistemleri.</li>
-        <li><strong>60x120 Büyük Ebat Seramik:</strong> Minimum derz aralığı ve lazerli tesviye klipsleriyle pürüzsüz duvar ve zemin kaplama.</li>
-        <li><strong>Özel İmalat Banyo Dolabı:</strong> Neme dayanıklı lake veya akrilik lavabo altı ve boy dolabı çözümleri.</li>
-        <li><strong>Temperli Cam Duşakabin:</strong> 6mm / 8mm rodajlı emniyet camı ve kararmaz siyah/krom alüminyum profiller.</li>
-      </ul>
+  
+  <!-- 1. HERO BÖLÜMÜ -->
+  <section class="relative bg-stone-950 text-white py-20 sm:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1800&q=80');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/80 to-transparent"></div>
     
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
+        <span>/</span>
+        <span class="text-emerald-400">Banyo Tadilatı</span>
+      </nav>
+
+      <span class="inline-block px-3.5 py-1.5 bg-emerald-950/80 border border-emerald-400/40 text-emerald-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
+        1984'TEN BUGÜNE 42 YILLIK TECRÜBE • 2.463+ TESLİM EDİLMİŞ PROJE
+      </span>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
+        İzmir Banyo Tadilatı, <br /><span class="font-normal italic">Su Yalıtımı Garantili Spa Dönüşümü</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
+        1984'ten bu yana İzmir Buca merkez mağazamız ve atölyemizde kadrolu iç mimarlarımızla banyoları baştan aşağı yeniliyoruz. Çift kat elastik sürme izolasyon, Geberit gömme rezervuar, 60x120 porselen seramik ve neme dayanıklı özel imalat lake banyo dolaplarıyla sürprizsiz, resmi sözleşmeli hizmet veriyoruz.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20banyo%20tadilatı%20için%20ücretsiz%203D%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg inline-flex items-center gap-2">
+          <span>💬</span> <span>WhatsApp ile Banyo Keşfi İste</span>
+        </a>
+        <a href="tel:05393333303" class="px-8 py-3.5 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          📞 0539 333 33 03
+        </a>
       </div>
-
-      <aside class="sidebar">
-        <div class="sidebar-box">
-          <h3>Hızlı Fiyat & Keşif</h3>
-          <p>İzmir içi adresinize gelerek ölçü alıyor ve 3D çizim hazırlıyoruz.</p>
-          <a href={buildWhatsAppUrl({ service: "Banyo Tadilatı" })} target="_blank" rel="noopener noreferrer" class="btn-sidebar-wa">
-            WhatsApp Keşif Hattı
-          </a>
-        </div>
-
-        <div class="sidebar-box">
-          <h3>Diğer Hizmetlerimiz</h3>
-          <ul class="sidebar-links">
-            <li><a href="/mutfak-dolabi/">Mutfak Dolabı</a></li>
-            <li><a href="/mutfak-tadilati/">Mutfak Tadilatı</a></li>
-            <li><a href="/banyo-tadilati/">Banyo Tadilatı</a></li>
-            <li><a href="/ev-tadilati/">Komple Ev Tadilatı</a></li>
-            <li><a href="/mutfak-dolabi-fiyatlari/">Fiyat Rehberi</a></li>
-          </ul>
-        </div>
-      </aside>
     </div>
   </section>
 
-  <WhatsAppCTA 
-    title="Banyo Tadilatı İçin Fiyat ve Keşif Talebi Oluşturun"
-    subtitle="İzmir'in tüm ilçelerine 1 iş günü içinde ücretsiz keşif randevusu veriyoruz."
-    service="Banyo Tadilatı"
-  />
+  <!-- 2. GÜVEN ŞERİDİ -->
+  <section class="bg-[#121212] text-white border-b border-stone-800 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-start gap-4">
+          <span class="text-3xl text-emerald-400 font-editorial shrink-0">1984</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">42 Yıllık Güvence</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">2.463+ teslim edilmiş banyo ve ev tadilatı tecrübesi.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">🛡️</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">10 Yıl Su İzolasyon Garantisi</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Çift kat elastik sürme izolasyonla alt kata su sızdırma derdine kesin son.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">✨</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">3D Sanal Banyo Tasarımı</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Mimarınızla seramikleri ve dolapları sanal ortamda görüp karar verin.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">📍</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Buca Mağaza &amp; Tüm İzmir</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Buca showroomumuzdan Karşıyaka, Bornova, Konak ve tüm ilçelere keşif.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. GERÇEK UYGULAMA FOTOĞRAFLARI GALERİSİ -->
+  <section class="py-20 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">GERÇEK BANYO UYGULAMA GALERİSİ</span>
+        <h2 class="text-3xl sm:text-4xl font-light text-stone-950 tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+          İzmir Dairelerinde Teslim Ettiğimiz <br /><span class="font-normal italic">Lüks Banyo Dönüşümleri</span>
+        </h2>
+        <div class="w-12 h-0.5 bg-stone-900"></div>
+        <p class="text-xs sm:text-sm text-stone-600 font-light">Özel imalat suya dayanıklı yeşil MDF dolaplar, İtalyan süzgeçler ve 60x120 granit seramik uygulamalarımız.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80" alt="Bostanlı Modern Lake Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Modern Banyo</span>
+          </div>
+          <div class="p-5 space-y-1">
+            <h3 class="font-bold text-stone-900 text-sm">Bostanlı Modern Lake Banyo &amp; Duşakabin</h3>
+            <p class="text-xs text-stone-500 font-light">Suya dayanıklı yeşil MDF gövde, çift kat lake boya, 60x120 granit ve siyah profil duşakabin.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1000&q=80" alt="Karşıyaka Masif Spa Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Masif &amp; Spa</span>
+          </div>
+          <div class="p-5 space-y-1">
+            <h3 class="font-bold text-stone-900 text-sm">Karşıyaka Masif Ahşap Tezgahlı Spa Banyo</h3>
+            <p class="text-xs text-stone-500 font-light">Su itici marin vernikli masif meşe tezgah, çanak lavabo ve gömme termostatik batarya.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1000&q=80" alt="Mavişehir Akıllı LED Aynalı Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Akıllı LED Ayna</span>
+          </div>
+          <div class="p-5 space-y-1">
+            <h3 class="font-bold text-stone-900 text-sm">Mavişehir Dokunmatik LED Aynalı Banyo</h3>
+            <p class="text-xs text-stone-500 font-light">Buğu önleyicili gizli LED ayna, boy kiler çamaşır makinesi dolabı ve asma klozet.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1000&q=80" alt="Bornova Su İzolasyonlu Granit Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Granit &amp; İzolasyon</span>
+          </div>
+          <div class="p-5 space-y-1">
+            <h3 class="font-bold text-stone-900 text-sm">Bornova Su İzolasyonlu Granit Banyo</h3>
+            <p class="text-xs text-stone-500 font-light">Çift kat sürme elastik su yalıtımı, köşe pah bantları ve paslanmaz lineer süzgeç.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1000&q=80" alt="Konak Küçük Banyo Akıllı Depolama" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Kompakt Çözüm</span>
+          </div>
+          <div class="p-5 space-y-1">
+            <h3 class="font-bold text-stone-900 text-sm">Konak Küçük Banyo Akıllı Depolama</h3>
+            <p class="text-xs text-stone-500 font-light">Ölü alanları değerlendiren gömme aynalı dolap ve deterjan çekmeceleri.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=1000&q=80" alt="Çeşme Çift Lavabolu Ebeveyn Banyosu" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Çift Çanak Lavabo</span>
+          </div>
+          <div class="p-5 space-y-1">
+            <h3 class="font-bold text-stone-900 text-sm">Çeşme Çift Lavabolu Ebeveyn Banyosu</h3>
+            <p class="text-xs text-stone-500 font-light">Geniş lake Hilton dolap, çift çanak seramik eviye ve gömme batarya sistemi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ÇAĞRI BÖLÜMÜ -->
+  <section class="py-16 bg-stone-900 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4 space-y-6">
+      <h2 class="text-2xl sm:text-3xl font-light font-editorial">Banyonuzu Yenilemek İçin Hemen Keşif İsteyin</h2>
+      <p class="text-xs sm:text-sm text-stone-300 font-light">
+        Buca Showroomumuza gelin veya WhatsApp'tan yazın; kadrolu mimarımız evinize gelerek su yalıtımı ve 3D çizim analizini ücretsiz hazırlasın.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20banyo%20tadilatı%20için%20ücretsiz%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg">
+          💬 WhatsApp ile Keşif İste (0539 333 33 03)
+        </a>
+      </div>
+    </div>
+  </section>
+
 </Layout>
-
-<style>
-  .page-header {
-    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
-    color: #ffffff;
-    padding: 3.5rem 0 3rem;
-  }
-  .breadcrumb-nav {
-    font-size: 0.85rem;
-    color: #94a3b8;
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  .breadcrumb-nav a {
-    color: #38bdf8;
-    text-decoration: none;
-  }
-  .sep {
-    opacity: 0.5;
-  }
-  .current {
-    color: #e2e8f0;
-  }
-  .page-title {
-    font-size: 2.25rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: #ffffff;
-  }
-  .page-lead {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    max-width: 800px;
-    line-height: 1.6;
-    margin-bottom: 1.75rem;
-  }
-  .page-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .btn-wa {
-    background: #25d366;
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
-  }
-  .btn-call {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .page-content-section {
-    padding: 3.5rem 0;
-  }
-  .content-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-  }
-  .main-article {
-    line-height: 1.75;
-    color: #334155;
-    font-size: 1.05rem;
-  }
-  .main-article :global(h2) {
-    font-size: 1.65rem;
-    font-weight: 800;
-    color: #0f172a;
-    margin: 2rem 0 1rem;
-  }
-  .main-article :global(h3) {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin: 1.5rem 0 0.75rem;
-  }
-  .main-article :global(p) {
-    margin-bottom: 1.25rem;
-  }
-  .main-article :global(ul), .main-article :global(ol) {
-    margin: 0 0 1.5rem 1.5rem;
-  }
-  .main-article :global(li) {
-    margin-bottom: 0.5rem;
-  }
-  .main-article :global(table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-    font-size: 0.95rem;
-  }
-  .main-article :global(th), .main-article :global(td) {
-    border: 1px solid #cbd5e1;
-    padding: 0.75rem 1rem;
-    text-align: left;
-  }
-  .main-article :global(th) {
-    background: #f1f5f9;
-    font-weight: 700;
-  }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .sidebar-box {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    padding: 1.5rem;
-  }
-  .sidebar-box h3 {
-    font-size: 1.15rem;
-    font-weight: 800;
-    margin-bottom: 0.75rem;
-    color: #0f172a;
-  }
-  .sidebar-box p {
-    font-size: 0.9rem;
-    color: #64748b;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-  .btn-sidebar-wa {
-    display: block;
-    background: #25d366;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.75rem;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .sidebar-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .sidebar-links li {
-    margin-bottom: 0.5rem;
-  }
-  .sidebar-links a {
-    color: #0284c7;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-  }
-  .sidebar-links a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 850px) {
-    .content-container {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    .page-title {
-      font-size: 1.75rem;
-    }
-  }
-</style>

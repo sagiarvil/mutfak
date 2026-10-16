@@ -5,239 +5,131 @@ import { buildWhatsAppUrl, buildTelUrl } from "../utils/whatsapp";
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="site-footer">
-  <div class="footer-top">
-    <div class="container footer-grid">
-      <!-- Kolon 1: Kurumsal & Marka -->
-      <div class="footer-col">
-        <div class="footer-brand-wrap">
-          <img 
-            src="/logo.png" 
-            alt="İzmir Mutfak Banyo Tadilatı Logo" 
-            width="52" 
-            height="54" 
-            class="footer-logo"
-            loading="lazy"
-            decoding="async"
-          />
+<!-- ===================================================================== -->
+<!-- BÖLÜM XII: KURUMSAL EKOSİSTEM OTORİTE AĞI (FOOTER ÜSTÜ)                 -->
+<!-- ===================================================================== -->
+<section class="bg-[#111111] text-stone-400 py-10 border-t border-stone-800 text-xs">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-stone-800/80 pb-6">
+      <div class="space-y-1">
+        <span class="text-[10px] uppercase font-bold tracking-[0.25em] text-emerald-400 block">KURUMSAL ŞEFFAFLIK &amp; DOĞRULAMA</span>
+        <h4 class="text-base font-bold text-white">İzmir Mutfak &amp; Banyo Dijital Ekosistem Varlıkları</h4>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-semibold text-stone-300">
+        <span>📍 Buca Showroom &amp; Atölye</span>
+        <span>•</span>
+        <span>📐 Mimar &amp; İç Mimar Heyeti</span>
+        <span>•</span>
+        <span>🏛️ 1984'ten Bugüne 42 Yıl</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3.5 text-[11.5px]">
+      <a href="https://izmirmutfakbanyo.com.tr/sitemap.xml" target="_blank" class="p-2.5 bg-stone-900/60 border border-stone-800 hover:border-emerald-500/60 transition flex items-center justify-between group">
+        <span class="group-hover:text-white">XML Site Haritası</span>
+        <span class="text-stone-600 group-hover:text-emerald-400">↗</span>
+      </a>
+      <a href="https://izmirmutfakbanyo.com.tr/robots.txt" target="_blank" class="p-2.5 bg-stone-900/60 border border-stone-800 hover:border-emerald-500/60 transition flex items-center justify-between group">
+        <span class="group-hover:text-white">Robots.txt Protokolü</span>
+        <span class="text-stone-600 group-hover:text-emerald-400">↗</span>
+      </a>
+      <a href="https://izmirmutfakbanyo.com.tr/llms.txt" target="_blank" class="p-2.5 bg-stone-900/60 border border-stone-800 hover:border-emerald-500/60 transition flex items-center justify-between group">
+        <span class="group-hover:text-white">LLMs.txt Bilgi Grafı</span>
+        <span class="text-stone-600 group-hover:text-emerald-400">↗</span>
+      </a>
+      <a href="https://izmirmutfakbanyo.com.tr/feed.xml" target="_blank" class="p-2.5 bg-stone-900/60 border border-stone-800 hover:border-emerald-500/60 transition flex items-center justify-between group">
+        <span class="group-hover:text-white">RSS 2.0 Haber Kaynağı</span>
+        <span class="text-stone-600 group-hover:text-emerald-400">↗</span>
+      </a>
+      <a href="https://share.google/p94hYPiU7cDUM7Va1" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-stone-900/60 border border-stone-800 hover:border-emerald-500/60 transition flex items-center justify-between group">
+        <span class="group-hover:text-white">Google Haritalar Konumu</span>
+        <span class="text-stone-600 group-hover:text-emerald-400">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================== -->
+<!-- PREMİUM ANA FOOTER (1984'TEN BUGÜNE 42 YIL • BUCA MERKEZ SHOWROOM)   -->
+<!-- ===================================================================== -->
+<footer class="bg-stone-950 text-stone-400 border-t border-stone-800 py-16 text-xs">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+    
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-stone-800 pb-12">
+      
+      <!-- Kolon 1: Marka & 1984 Mirası -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <img src="/logo.png" alt="İzmir Mutfak Banyo Logo" class="h-10 w-auto object-contain bg-white p-1 rounded-sm" width="40" height="42" loading="lazy" />
           <div>
-            <h3 class="footer-heading brand-title">İzmir Mutfak & Banyo</h3>
-            <span class="footer-sub">Özel İmalat & Tadilat</span>
+            <span class="text-sm font-black tracking-widest text-white uppercase block leading-none">İZMİR MUTFAK &amp; BANYO</span>
+            <span class="text-[9px] uppercase tracking-[0.2em] text-emerald-400 font-bold block mt-1">Özel İmalat &amp; Tadilat Atölyesi</span>
           </div>
         </div>
-        <p class="footer-desc">
-          İzmir genelinde birinci sınıf malzeme, özel ölçü üretim ve anahtar teslim şantiye yönetimiyle evinizi dönüştürüyoruz. Sürpriz maliyetsiz, resmi sözleşmeli tadilat garantisi.
+        <p class="text-stone-400 font-light leading-relaxed text-[11.5px]">
+          1984 yılından bu yana İzmir Buca mağazamız ve imalat atölyemizde kadrolu mimar ve iç mimarlarımızla mutfak, banyo ve anahtar teslim ev tadilatı üretiyoruz. 2.463'ten fazla teslim edilmiş proje ve resmi sözleşmeli teslimat güvencesi.
         </p>
-        <div class="footer-contact">
-          <p>📞 <strong>Telefon:</strong> <a href={buildTelUrl()}>{siteConfig.phoneFormatted}</a></p>
-          <p>💬 <strong>WhatsApp:</strong> <a href={buildWhatsAppUrl()} target="_blank" rel="noopener noreferrer">{siteConfig.phoneFormatted}</a></p>
-          <p>📍 <strong>Hizmet Bölgesi:</strong> İzmir (Tüm İlçeler)</p>
-          <p>🗺️ <strong>Konum:</strong> <a href={siteConfig.googleMapsUrl} target="_blank" rel="noopener noreferrer">Google Haritalarda Aç</a></p>
+        <div class="text-[11px] text-stone-300 font-semibold space-y-1">
+          <div>📍 <strong>Merkez Showroom:</strong> Buca / İzmir</div>
+          <div>📞 <strong>Doğrudan Hat:</strong> <a href="tel:05393333303" class="hover:text-white transition">0539 333 33 03</a></div>
+          <div>💬 <strong>WhatsApp Keşif:</strong> <a href="https://wa.me/905393333303" target="_blank" class="text-emerald-400 hover:underline">0539 333 33 03</a></div>
         </div>
       </div>
 
-      <!-- Kolon 2: Hizmetlerimiz -->
-      <div class="footer-col">
-        <h4 class="footer-heading">Hizmetlerimiz</h4>
-        <ul class="footer-links">
-          <li><a href="/mutfak-dolabi/">Mutfak Dolabı İmalatı</a></li>
-          <li><a href="/mutfak-tadilati/">Komple Mutfak Tadilatı</a></li>
-          <li><a href="/banyo-tadilati/">Banyo Yenileme & Seramik</a></li>
-          <li><a href="/ev-tadilati/">Komple Ev & Daire Tadilatı</a></li>
-          <li><a href="/anahtar-teslim-tadilat/">Anahtar Teslim Tadilat</a></li>
-          <li><a href="/hazir-mutfak/">Hazır Mutfak Modelleri</a></li>
-          <li><a href="/mutfak-dolabi-fiyatlari/">2026 Mutfak Dolabı Fiyatları</a></li>
+      <!-- Kolon 2: Mimari Hizmetlerimiz -->
+      <div class="space-y-3">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-white">Mimari Hizmetler</h4>
+        <ul class="space-y-2 text-[11.5px]">
+          <li><a href="/mutfak-dolabi/" class="hover:text-white transition">Özel İmalat Mutfak Dolabı</a></li>
+          <li><a href="/mutfak-tadilati/" class="hover:text-white transition">Komple Mutfak Tadilatı</a></li>
+          <li><a href="/banyo-tadilati/" class="hover:text-white transition">Banyo Yenileme &amp; Su İzolasyonu</a></li>
+          <li><a href="/ev-tadilati/" class="hover:text-white transition">Komple Ev &amp; Daire Tadilatı</a></li>
+          <li><a href="/anahtar-teslim-tadilat/" class="hover:text-white transition">Anahtar Teslim Tadilat &amp; Mimarlık</a></li>
+          <li><a href="/mutfak-dolabi-fiyatlari/" class="hover:text-white transition">2026 Mutfak Metretül Fiyatları</a></li>
         </ul>
       </div>
 
-      <!-- Kolon 3: İzmir Hizmet Bölgeleri -->
-      <div class="footer-col">
-        <h4 class="footer-heading">İzmir Hizmet Noktaları</h4>
-        <p class="district-info">Aşağıdaki tüm ilçelerde ücretsiz keşif ve montaj hizmeti veriyoruz:</p>
-        <div class="district-tags">
+      <!-- Kolon 3: Kalite & Garanti Esasları -->
+      <div class="space-y-3">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-white">Kalite ve Taahhüt</h4>
+        <ul class="space-y-2 text-[11.5px] text-stone-400">
+          <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> <span>%100 MDF-Lam Gövde (Sıfır Suntalam)</span></li>
+          <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> <span>Blum &amp; Hafele Frenli Donanım Sistemleri</span></li>
+          <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> <span>Laminam, Çimstone &amp; Belenco Tezgahlar</span></li>
+          <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> <span>Resmi Sözleşmeli ve Sabit Fiyat Garantisi</span></li>
+          <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> <span>10 Yıl Gövde ve Mekanizma Güvencesi</span></li>
+          <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> <span>3D Fotogerçekçi Sanal Mekan Deneyimi</span></li>
+        </ul>
+      </div>
+
+      <!-- Kolon 4: İzmir Hizmet Sahası -->
+      <div class="space-y-3">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-white">İzmir Hizmet Ağımız</h4>
+        <p class="text-[11px] text-stone-400">Buca showroomumuzdan İzmir geneline yerinde ücretsiz keşif:</p>
+        <div class="flex flex-wrap gap-1.5 pt-1">
           {siteConfig.districts.map(d => (
-            <a href={buildWhatsAppUrl({ district: d, service: "Tadilat Keşfi" })} 
+            <a href={buildWhatsAppUrl({ district: d, service: "Keşif" })} 
                target="_blank" 
                rel="noopener noreferrer" 
-               class="district-pill"
-               title={`${d} Mutfak Banyo Tadilatı Keşif Talebi`}>
+               class="px-2 py-1 bg-stone-900 border border-stone-800 text-[10px] text-stone-300 hover:border-emerald-500/50 hover:text-white transition">
               {d}
             </a>
           ))}
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="footer-bottom">
-    <div class="container footer-bottom-inner">
-      <p class="copyright">
-        © {currentYear} {siteConfig.domain} — Tüm hakları saklıdır. İzmir Mutfak Banyo Tadilat & Özel İmalat.
-      </p>
-      <div class="legal-links">
-        <span>Sözleşmeli Garanti</span>
-        <span class="sep">•</span>
-        <span>Sabit Fiyat Taahhüdü</span>
-        <span class="sep">•</span>
-        <span>Ücretsiz Keşif</span>
+    </div>
+
+    <!-- Alt Telif & Yasal Bilgi -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+      <p>© {currentYear} İzmir Mutfak &amp; Banyo — 1984'ten Bugüne 42 Yıllık Güven. Tüm Hakları Saklıdır.</p>
+      <div class="flex items-center gap-4 text-stone-400">
+        <span>Resmi Sözleşmeli Teslimat</span>
+        <span>•</span>
+        <span>Ücretsiz 3D Mimari Keşif</span>
+        <span>•</span>
+        <span>10 Yıl Garanti</span>
       </div>
     </div>
+
   </div>
 </footer>
-
-<style>
-  .site-footer {
-    background: #0b1120;
-    color: #94a3b8;
-    font-size: 0.875rem;
-    margin-top: 4rem;
-    border-top: 1px solid rgba(255,255,255,0.08);
-  }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  .footer-top {
-    padding: 3.5rem 0 2.5rem;
-  }
-  .footer-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr 1.3fr;
-    gap: 2.5rem;
-  }
-  .footer-brand-wrap {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 1.25rem;
-  }
-  .footer-logo {
-    width: 52px;
-    height: 54px;
-    aspect-ratio: 224 / 233;
-    object-fit: contain;
-    background: #ffffff;
-    padding: 4px;
-    border-radius: 10px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
-    border: 1px solid rgba(255,255,255,0.15);
-    flex-shrink: 0;
-  }
-  .footer-sub {
-    font-size: 0.75rem;
-    color: #38bdf8;
-    font-weight: 600;
-    display: block;
-    letter-spacing: 0.02em;
-  }
-  .footer-heading {
-    color: #f8fafc;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 1.2rem;
-  }
-  .brand-title {
-    color: #ffffff;
-    font-size: 1.25rem;
-    font-weight: 800;
-    margin-bottom: 0.15rem;
-  }
-  .footer-desc {
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
-    color: #cbd5e1;
-  }
-  .footer-contact p {
-    margin: 0.4rem 0;
-    line-height: 1.5;
-  }
-  .footer-contact a {
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .footer-contact a:hover {
-    text-decoration: underline;
-  }
-  .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .footer-links li {
-    margin-bottom: 0.65rem;
-  }
-  .footer-links a {
-    color: #cbd5e1;
-    text-decoration: none;
-    transition: color 0.2s ease, transform 0.2s ease;
-    display: inline-block;
-  }
-  .footer-links a:hover {
-    color: #38bdf8;
-    transform: translateX(3px);
-  }
-  .district-info {
-    font-size: 0.8125rem;
-    margin-bottom: 0.85rem;
-    color: #cbd5e1;
-  }
-  .district-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-  }
-  .district-pill {
-    background: rgba(255, 255, 255, 0.06);
-    color: #e2e8f0;
-    padding: 0.3rem 0.65rem;
-    border-radius: 6px;
-    font-size: 0.78rem;
-    text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.2s ease;
-  }
-  .district-pill:hover {
-    background: #0284c7;
-    color: #ffffff;
-    border-color: #0284c7;
-  }
-  .footer-bottom {
-    background: #060913;
-    padding: 1.25rem 0;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    font-size: 0.8125rem;
-  }
-  .footer-bottom-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .copyright {
-    margin: 0;
-    color: #64748b;
-  }
-  .legal-links {
-    color: #64748b;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  .sep {
-    opacity: 0.4;
-  }
-
-  @media (max-width: 900px) {
-    .footer-grid {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    .footer-bottom-inner {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
-</style>

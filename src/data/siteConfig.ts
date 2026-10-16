@@ -12,6 +12,10 @@ export interface ServiceItem {
 export const siteConfig = {
   name: "İzmir Mutfak Banyo Tadilatı",
   legalName: "İzmir Mutfak Banyo & Anahtar Teslim Ev Tadilatı",
+  foundingYear: 1984,
+  experienceYears: 42,
+  customerCount: "2.463+",
+  ratingValue: "4.87",
   domain: "izmirmutfakbanyo.com.tr",
   siteUrl: "https://izmirmutfakbanyo.com.tr",
   phoneRaw: "905393333303",
@@ -19,7 +23,8 @@ export const siteConfig = {
   whatsappUrl: "https://wa.me/905393333303",
   googleMapsUrl: "https://share.google/p94hYPiU7cDUM7Va1",
   address: {
-    addressLocality: "İzmir",
+    streetAddress: "Buca Showroom & İmalat Mağazası",
+    addressLocality: "Buca, İzmir",
     addressRegion: "İzmir",
     addressCountry: "TR",
     postalCode: "35000"

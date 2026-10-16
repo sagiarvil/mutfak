@@ -1,258 +1,408 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import WhatsAppCTA from "../../components/WhatsAppCTA.astro";
 import { siteConfig } from "../../data/siteConfig";
 import { buildWhatsAppUrl, buildTelUrl } from "../../utils/whatsapp";
 
 const seo = {
-  title: "İzmir Mutfak Tadilatı & Yenileme | Anahtar Teslim",
-  description: "Eski mutfağınızı kırım, tesisat, elektrik, seramik, tezgah ve dolap montajıyla A'dan Z'ye yeniliyoruz. Sözleşmeli ve gününde teslim mutfak tadilatı.",
+  title: "İzmir Mutfak Tadilatı & Yenileme | 1984'ten Bugüne 42 Yıllık Güven",
+  description: "İzmir komple mutfak tadilatı. Kadrolu mimar ve iç mimarlarımızla 3D sanal mekan deneyimi, kırım, tesisat, elektrik, porselen tezgah ve özel imalat lake dolaplar. Resmi sözleşmeli sabit fiyat garantisi.",
   canonical: "https://izmirmutfakbanyo.com.tr/mutfak-tadilati/",
   serviceName: "Mutfak Tadilatı",
   breadcrumbs: [
     { name: "Mutfak Tadilatı", url: "/mutfak-tadilati/" }
+  ],
+  faqList: [
+    {
+      question: "İzmir'de komple mutfak tadilatı kaç gün sürer?",
+      answer: "Komple mutfak tadilatı; kırım, moloz atımı, su/elektrik tesisat yenileme, seramik kaplama, özel imalat dolap ve tezgah montajı dahil olmak üzere ortalama 12 ila 16 iş günü içerisinde tamamlanarak teslim edilir."
+    },
+    {
+      question: "Tadilat öncesinde mutfağımı 3D olarak görebilir miyim?",
+      answer: "Evet. Bünyemizdeki kadrolu mimar ve iç mimarlarımız, evinizin lazerli rölövesini alarak fotogerçekçi 3D canlandırma ve sanal mekan deneyimi sunar. Üretime başlamadan önce tüm renkleri, dolap yerleşimini ve ışık açılarını görerek en doğru kararı sıfır riskle verirsiniz."
+    },
+    {
+      question: "Fiyat tadilat sürecinde artar mı, sabit fiyat garantisi var mı?",
+      answer: "Kesinlikle artmaz. 1984 yılından gelen kurumsal disiplinimizle kullanılacak tüm malzemeler, markalar ve toplam bütçe resmi sözleşmeyle sabitlenir; süreç boyunca tek kuruş sürpriz maliyet çıkarılmaz."
+    },
+    {
+      question: "Buca dışındaki ilçelere de mutfak tadilatı hizmeti veriyor musunuz?",
+      answer: "Evet. Buca merkez showroom ve imalat atölyemizden Karabağlar, Konak, Bornova, Karşıyaka, Bayraklı, Çiğli, Urla, Çeşme ve İzmir'in tüm 30 ilçesine yerinde ücretsiz mimari keşif ve anahtar teslim uygulama hizmeti sağlıyoruz."
+    }
   ]
 };
 ---
 
 <Layout seo={seo} activeService="Mutfak Tadilatı">
-  <div class="page-header">
-    <div class="container">
-      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <a href="/">Ana Sayfa</a>
-        <span class="sep">/</span>
-        <span class="current">Mutfak Tadilatı</span>
-      </nav>
-      <h1 class="page-title">İzmir Komple Mutfak Tadilatı & Yenileme Hizmeti</h1>
-      <p class="page-lead">Eski mutfağınızı kırım, tesisat, elektrik, seramik, tezgah ve dolap montajıyla A'dan Z'ye yeniliyoruz. Sözleşmeli ve gününde teslim mutfak tadilatı.</p>
-      <div class="page-actions">
-        <a href={buildWhatsAppUrl({ service: "Mutfak Tadilatı" })} target="_blank" rel="noopener noreferrer" class="btn-wa">
-          💬 WhatsApp ile Keşif İste
-        </a>
-        <a href={buildTelUrl()} class="btn-call">
-          📞 ${siteConfig.phoneFormatted}
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <section class="page-content-section">
-    <div class="container content-container">
-      <div class="main-article prose">
-        
-      <h2>Eski Mutfağınızı Sıfırdan Yeniliyoruz</h2>
-      <p>Yalnızca dolap değiştirmek yetmez; eski su tesisatları, yetersiz prizler ve modası geçmiş zemin seramikleri yeni dolaplarınızın ömrünü kısaltır. İzmir komple mutfak tadilatı paketimizle kırımdan son temizliğe kadar tüm aşamaları tek elden yönetiyoruz.</p>
-
-      <h3>Mutfak Tadilatı Sürecimiz Nasıl İlerler?</h3>
-      <ol>
-        <li><strong>Ücretsiz Keşif ve Ölçü:</strong> İzmir'in tüm ilçelerinde adresinize gelerek mevcut alanı inceliyor ve beklentilerinizi dinliyoruz.</li>
-        <li><strong>3D Projelendirme:</strong> Yeni dolap yerleşimi, tezgâh alanı ve aydınlatma planını 3 boyutlu olarak onayınıza sunuyoruz.</li>
-        <li><strong>Kırım ve Moloz Atımı:</strong> Eski dolap, tezgâh ve seramikler toz izolasyonu yapılarak sökülür ve molozlar belediye döküm sahasına taşınır.</li>
-        <li><strong>Altyapı Yenileme:</strong> PPRC su boruları, pis su giderleri ve ankastre cihazlar için linye elektrik hatları sıfırdan çekilir.</li>
-        <li><strong>Zemin & Duvar Seramiği:</strong> 60x120 granit seramik veya tezgâh arası mozaik uygulaması yapılır.</li>
-        <li><strong>Dolap & Tezgâh Montajı:</strong> İmalatı tamamlanan dolaplar ve Çimstone/Belenco/Porselen tezgâh montajı yapılarak teslim edilir.</li>
-      </ol>
+  
+  <!-- ===================================================================== -->
+  <!-- 1. HERO BÖLÜMÜ (MİMARİ KOLEKSİYON & PREMİUM ATMOSFER)                 -->
+  <!-- ===================================================================== -->
+  <section class="relative bg-stone-950 text-white py-20 sm:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1800&q=80');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/80 to-transparent"></div>
     
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
+        <span>/</span>
+        <span class="text-emerald-400">Mutfak Tadilatı</span>
+      </nav>
+
+      <span class="inline-block px-3.5 py-1.5 bg-emerald-950/80 border border-emerald-400/40 text-emerald-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
+        1984'TEN BUGÜNE 42 YILLIK TECRÜBE • 2.463+ TESLİM EDİLMİŞ PROJE
+      </span>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
+        İzmir Komple Mutfak Tadilatı, <br /><span class="font-normal italic">Mimari Tasarım &amp; Kusursuz İmalat</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
+        1984'ten bu yana İzmir Buca mağazamız ve kendi imalat atölyemizde kadrolu mimar ve iç mimarlarımızla mutfakları A'dan Z'ye yeniliyoruz. Evinize özel 3D fotogerçekçi canlandırma ve sanal mekan deneyimi ile üretime girmeden önce en doğru kararı vermenizi sağlıyor, resmi sözleşmeli sabit fiyat garantisiyle teslim ediyoruz.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20mutfak%20tadilatı%20için%20ücretsiz%203D%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg inline-flex items-center gap-2">
+          <span>💬</span> <span>WhatsApp ile 3D Keşif İste</span>
+        </a>
+        <a href="tel:05393333303" class="px-8 py-3.5 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          📞 0539 333 33 03
+        </a>
       </div>
-
-      <aside class="sidebar">
-        <div class="sidebar-box">
-          <h3>Hızlı Fiyat & Keşif</h3>
-          <p>İzmir içi adresinize gelerek ölçü alıyor ve 3D çizim hazırlıyoruz.</p>
-          <a href={buildWhatsAppUrl({ service: "Mutfak Tadilatı" })} target="_blank" rel="noopener noreferrer" class="btn-sidebar-wa">
-            WhatsApp Keşif Hattı
-          </a>
-        </div>
-
-        <div class="sidebar-box">
-          <h3>Diğer Hizmetlerimiz</h3>
-          <ul class="sidebar-links">
-            <li><a href="/mutfak-dolabi/">Mutfak Dolabı</a></li>
-            <li><a href="/mutfak-tadilati/">Mutfak Tadilatı</a></li>
-            <li><a href="/banyo-tadilati/">Banyo Tadilatı</a></li>
-            <li><a href="/ev-tadilati/">Komple Ev Tadilatı</a></li>
-            <li><a href="/mutfak-dolabi-fiyatlari/">Fiyat Rehberi</a></li>
-          </ul>
-        </div>
-      </aside>
     </div>
   </section>
 
-  <WhatsAppCTA 
-    title="Mutfak Tadilatı İçin Fiyat ve Keşif Talebi Oluşturun"
-    subtitle="İzmir'in tüm ilçelerine 1 iş günü içinde ücretsiz keşif randevusu veriyoruz."
-    service="Mutfak Tadilatı"
-  />
+  <!-- ===================================================================== -->
+  <!-- 2. KURUMSAL GÜVEN VE DEĞER ÖNERİSİ ŞERİDİ (4 SÜTUN)                  -->
+  <!-- ===================================================================== -->
+  <section class="bg-[#121212] text-white border-b border-stone-800 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-start gap-4">
+          <span class="text-3xl text-emerald-400 font-editorial shrink-0">1984</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">42 Yıllık Ustalık</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">2.463'ten fazla teslim edilmiş mutfak projesi ve resmi sözleşmeli güvence.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">📐</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Mimar &amp; İç Mimar Kadrosu</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Taşeronsuz, doğrudan kadrolu iç mimarlarımızla milimetrik rölöve ve ergonomik plan.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">✨</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">3D Sanal Mekan Deneyimi</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Üretime girmeden önce fotogerçekçi simülasyonla mutfağınızı yaşayın, sıfır riskle karar verin.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">📍</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Buca Mağaza &amp; Tüm İzmir</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Buca Showroomumuzdan Karabağlar, Konak, Bornova ve 30 ilçeye yerinde ücretsiz keşif.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 3. GERÇEK İMALAT VE UYGULAMA FOTOĞRAFLARI GALERİSİ                   -->
+  <!-- ===================================================================== -->
+  <section class="py-20 sm:py-24 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">GERÇEK İMALAT VE UYGULAMA GALERİSİ</span>
+        <h2 class="text-3xl sm:text-4xl font-light text-stone-950 tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+          İzmir Evlerinde Teslim Ettiğimiz <br /><span class="font-normal italic">Özel Mutfak Dönüşümleri</span>
+        </h2>
+        <div class="w-12 h-0.5 bg-stone-900"></div>
+        <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
+          Kendi atölyemizde ürettiğimiz lake, akrilik ve masif mutfakların kırım, tesisat, tezgah ve dolap montaj aşamalarından gerçek fotoğraflar.
+        </p>
+      </div>
+
+      <!-- 6 Yüksek Kaliteli Mimari Fotoğraf Izgarası -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Foto 1 -->
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=80" alt="Mavişehir Akrilik Ada Mutfak Tadilatı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Ada Mutfak &amp; Akrilik</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Mavişehir Komple Ada Mutfak Yenileme</h3>
+            <p class="text-xs text-stone-500 font-light">1. sınıf çizilmez akrilik kapak, Çimstone tezgah ve Blum elektrikli çekmece mekanizmaları.</p>
+          </div>
+        </div>
+
+        <!-- Foto 2 -->
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1000&q=80" alt="Bornova Gola Kulpsuz Minimalist Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Gola Kulpsuz Lake</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Bornova Minimalist Gola Mutfak Tadilatı</h3>
+            <p class="text-xs text-stone-500 font-light">Gizli alüminyum profil gola kulp, süpermat antrasit yüzey ve monoblok porselen tezgah.</p>
+          </div>
+        </div>
+
+        <!-- Foto 3 -->
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?auto=format&fit=crop&w=1000&q=80" alt="Urla Masif Meşe Country Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Country &amp; Masif Meşe</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Urla Taş Ev Masif Ahşap Mutfak Dönüşümü</h3>
+            <p class="text-xs text-stone-500 font-light">Doğal fırınlanmış meşe ada tezgahı, antik pirinç kulplar ve seramik çiftlik evyesi montajı.</p>
+          </div>
+        </div>
+
+        <!-- Foto 4 -->
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Bostanlı Füme Cam Aydınlatmalı Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Cam Vitrin &amp; LED</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Bostanlı Vitrinli LED Aydınlatmalı Mutfak</h3>
+            <p class="text-xs text-stone-500 font-light">Alüminyum antrasit çerçeveli füme cam kapaklar, entegre sıcak LED aydınlatma ve kuvars tezgah.</p>
+          </div>
+        </div>
+
+        <!-- Foto 5 -->
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80" alt="Alsancak Akıllı Depolama Şehir Mutfağı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Akıllı Kiler &amp; Depolama</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Alsancak Fonksiyonel Şehir Mutfağı</h3>
+            <p class="text-xs text-stone-500 font-light">Fasulye köşe sepeti mekanizması, asansörlü üst dolap ve gizli kiler çözümü.</p>
+          </div>
+        </div>
+
+        <!-- Foto 6 -->
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1556909172-8c07e4499172?auto=format&fit=crop&w=1000&q=80" alt="Bayraklı Loft Ada Mutfak Tadilatı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Endüstriyel Loft Ada</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Bayraklı Antrasit Loft Ada Mutfak</h3>
+            <p class="text-xs text-stone-500 font-light">Mat antrasit metal görünümlü kapaklar, paslanmaz çelik eviye ve ada çevresi bar oturumu.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 4. 3D SANAL MEKAN DENEYİMİ (MÜŞTERİ KARAR KOLAYLIĞI VURGUSU)         -->
+  <!-- ===================================================================== -->
+  <section class="py-20 bg-[#FAF9F6] border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">SIFIR RİSKLİ MİMARİ KARAR</span>
+          <h2 class="text-3xl sm:text-4xl font-light text-stone-950 tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+            Kararsızlığa Son Veren <br /><span class="font-normal italic">3D Fotogerçekçi Sanal Mekan Deneyimi</span>
+          </h2>
+          <div class="w-12 h-0.5 bg-stone-900"></div>
+          <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
+            Mutfak tadilatında en çok yaşanan korku; "Acaba bittiğinde nasıl duracak, renkler birbirine uyacak mı?" endişesidir. Bünyemizdeki kadrolu mimar ve iç mimarlarımızla bu riski sıfıra indiriyoruz.
+          </p>
+          <div class="space-y-3 text-xs font-semibold text-stone-800">
+            <div class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>Lazerle alınan milimetrik ölçü üzerinden evinizin 3D ikizi modellenir.</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>Lake, akrilik, tezgah ve aydınlatma renkleri birebir ışık simülasyonuyla denenir.</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>Buca mağazamızda numuneleri elinize alarak sanal çizimle eşleştirip güvenle karar verirsiniz.</span>
+            </div>
+          </div>
+          <div class="pt-2">
+            <a href="https://wa.me/905393333303?text=Merhaba,%20mutfağım%20için%203D%20canlandırma%20ve%20keşif%20randevusu%20almak%20istiyorum." target="_blank" class="px-8 py-3.5 bg-stone-900 text-white text-xs font-bold uppercase tracking-widest hover:bg-stone-800 transition shadow-sm inline-flex items-center gap-2">
+              <span>Mutfağını Sanal Ortamda Tasarla</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="relative overflow-hidden border border-stone-200 shadow-xl bg-white">
+            <img src="/media/cinematic/elia_spotlight.jpg" alt="3D Mimari Mutfak Modellemesi" class="w-full h-[400px] sm:h-[450px] object-cover" loading="lazy" />
+            <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-5 border border-stone-200">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-700 block">Buca Showroom &amp; Tasarım Ofisi</span>
+              <span class="text-sm font-bold text-stone-950 block">İç Mimarlarımızla Birebir Sanal Canlandırma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5. 5 ADIMDA MUTFAK TADİLATI SÜRECİ                                   -->
+  <!-- ===================================================================== -->
+  <section class="py-20 bg-[#161616] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-xs font-extrabold uppercase tracking-[0.25em] text-emerald-400 block">1984'TEN GELEN ŞEFFAF SÜREÇ</span>
+        <h2 class="text-3xl sm:text-4xl font-light text-white tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+          Kırımdan Teslimata <span class="font-normal italic">5 Planlı Aşama</span>
+        </h2>
+        <div class="w-12 h-0.5 bg-emerald-500"></div>
+        <p class="text-xs sm:text-sm text-stone-400 font-light leading-relaxed">
+          Sürpriz maliyetler, uzayan teslimat tarihleri ve kalitesiz malzeme riskini tamamen ortadan kaldırıyoruz.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div class="bg-stone-900 border border-stone-800 p-6 space-y-3 hover:border-emerald-500/50 transition">
+          <span class="text-3xl font-black text-stone-700">01</span>
+          <h3 class="text-sm font-bold text-white">Lazerli Keşif &amp; Rölöve</h3>
+          <p class="text-xs text-stone-400 font-light leading-relaxed">Mimarımız evinize gelir. Lazer metreyle milimetrik ölçü alır, mekan ergonomisini inceler.</p>
+          <div class="text-[11px] text-emerald-400 font-semibold pt-1">● Ücretsiz Keşif</div>
+        </div>
+
+        <div class="bg-stone-900 border border-stone-800 p-6 space-y-3 hover:border-emerald-500/50 transition">
+          <span class="text-3xl font-black text-stone-700">02</span>
+          <h3 class="text-sm font-bold text-white">3D Canlandırma &amp; Seçim</h3>
+          <p class="text-xs text-stone-400 font-light leading-relaxed">Evinizin 3D modeli üzerinde renkleri, tezgahı ve kulpları deneyip sıfır riskle karar verirsiniz.</p>
+          <div class="text-[11px] text-emerald-400 font-semibold pt-1">● Karar Kolaylığı</div>
+        </div>
+
+        <div class="bg-stone-900 border border-stone-800 p-6 space-y-3 hover:border-emerald-500/50 transition">
+          <span class="text-3xl font-black text-stone-700">03</span>
+          <h3 class="text-sm font-bold text-white">Resmi Sözleşme &amp; Fiyat</h3>
+          <p class="text-xs text-stone-400 font-light leading-relaxed">Tüm marka detayları, teslim tarihi ve bütçe resmi sözleşmeye yazılır. Ekstra ücret çıkmaz.</p>
+          <div class="text-[11px] text-emerald-400 font-semibold pt-1">● Sabit Bütçe</div>
+        </div>
+
+        <div class="bg-stone-900 border border-stone-800 p-6 space-y-3 hover:border-emerald-500/50 transition">
+          <span class="text-3xl font-black text-stone-700">04</span>
+          <h3 class="text-sm font-bold text-white">Atölye İmalatı &amp; Tesisat</h3>
+          <p class="text-xs text-stone-400 font-light leading-relaxed">Kendi CNC atölyemizde dolaplar üretilirken, evinizde kırım, su ve elektrik altyapısı yenilenir.</p>
+          <div class="text-[11px] text-emerald-400 font-semibold pt-1">● Kendi Fabrikamız</div>
+        </div>
+
+        <div class="bg-stone-900 border border-stone-800 p-6 space-y-3 hover:border-emerald-500/50 transition">
+          <span class="text-3xl font-black text-stone-700">05</span>
+          <h3 class="text-sm font-bold text-white">Temiz Montaj &amp; Teslim</h3>
+          <p class="text-xs text-stone-400 font-light leading-relaxed">Usta heyetimiz tozsuz montajı tamamlar, tezgahı bağlar ve mekanınızı 10 yıl garantiyle teslim eder.</p>
+          <div class="text-[11px] text-emerald-400 font-semibold pt-1">● 10 Yıl Garanti</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6. MALZEME & TEKNİK STANDARTLAR TABLOSU                              -->
+  <!-- ===================================================================== -->
+  <section class="py-20 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-10">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">MALZEME KALİTESİ</span>
+        <h2 class="text-3xl sm:text-4xl font-light text-stone-950 tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+          Kullandığımız Malzeme Standartları
+        </h2>
+        <div class="w-12 h-0.5 bg-stone-900"></div>
+        <p class="text-xs sm:text-sm text-stone-600 font-light">Tüm projelerimizde yalnızca sertifikalı, neme dayanıklı ve uzun ömürlü malzemeler kullanılır.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse border border-stone-200 text-xs">
+          <thead>
+            <tr class="bg-stone-900 text-white">
+              <th class="p-3.5 font-bold uppercase">Bileşen</th>
+              <th class="p-3.5 font-bold uppercase">Standart Kalitemiz</th>
+              <th class="p-3.5 font-bold uppercase">Piyasadaki Ucuz Alternatif</th>
+              <th class="p-3.5 font-bold uppercase">Farkımız</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-stone-200 text-stone-700">
+            <tr class="hover:bg-stone-50">
+              <td class="p-3.5 font-bold text-stone-900">Dolap Gövdesi</td>
+              <td class="p-3.5 font-semibold text-emerald-700">%100 18mm E1 MDF-Lam</td>
+              <td class="p-3.5 text-stone-400">Suntalam karkas</td>
+              <td class="p-3.5">Suya ve neme 5 kat daha dayanıklı, koku ve şişme yapmaz.</td>
+            </tr>
+            <tr class="hover:bg-stone-50">
+              <td class="p-3.5 font-bold text-stone-900">Kapak Seçenekleri</td>
+              <td class="p-3.5 font-semibold text-emerald-700">Çift Kat Lake / Çizilmez Akrilik / Meşe</td>
+              <td class="p-3.5 text-stone-400">İnce PVC membran</td>
+              <td class="p-3.5">Kenar bandından atmaz, sararma yapmaz, ipeksi dokunuş.</td>
+            </tr>
+            <tr class="hover:bg-stone-50">
+              <td class="p-3.5 font-bold text-stone-900">Menteşe &amp; Raylar</td>
+              <td class="p-3.5 font-semibold text-emerald-700">Blum / Hafele Frenli Sistemler</td>
+              <td class="p-3.5 text-stone-400">Uzakdoğu sac raylar</td>
+              <td class="p-3.5">200.000 açma garantili, 65 kg taşıma kapasiteli, sessiz kapanış.</td>
+            </tr>
+            <tr class="hover:bg-stone-50">
+              <td class="p-3.5 font-bold text-stone-900">Tezgah</td>
+              <td class="p-3.5 font-semibold text-emerald-700">Laminam Porselen / Çimstone / Belenco</td>
+              <td class="p-3.5 text-stone-400">Laminat pres tezgah</td>
+              <td class="p-3.5">Çizilmez, leke tutmaz, sıcak tencere koyulduğunda yanmaz.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 7. SSS BÖLÜMÜ                                                        -->
+  <!-- ===================================================================== -->
+  <section class="py-20 bg-stone-50 border-b border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8 space-y-8">
+      <div class="text-center space-y-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700">MERAK EDİLENLER</span>
+        <h2 class="text-3xl font-light text-stone-950 font-editorial">Mutfak Tadilatı Sıkça Sorulan Sorular</h2>
+      </div>
+
+      <div class="space-y-4">
+        {seo.faqList?.map(faq => (
+          <div class="p-6 bg-white border border-stone-200 space-y-2">
+            <h3 class="text-sm font-bold text-stone-900">{faq.question}</h3>
+            <p class="text-xs text-stone-600 font-light leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 8. DOĞRUDAN İLETİŞİM & KEŞİF ÇAĞRISI                                 -->
+  <!-- ===================================================================== -->
+  <section class="py-16 bg-stone-900 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4 space-y-6">
+      <h2 class="text-2xl sm:text-3xl font-light font-editorial">Mutfağınızı Yenilemek İçin İlk Adımı Atın</h2>
+      <p class="text-xs sm:text-sm text-stone-300 font-light">
+        Buca Showroomumuza gelin veya WhatsApp'tan bize yazın; kadrolu mimarımız evinize gelerek ücretsiz 3D ölçü alsın.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20mutfak%20tadilatı%20için%20ücretsiz%203D%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg">
+          💬 WhatsApp ile Keşif İste (0539 333 33 03)
+        </a>
+        <a href={siteConfig.googleMapsUrl} target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-transparent border border-white text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          📍 Buca Showroom Konumu
+        </a>
+      </div>
+    </div>
+  </section>
+
 </Layout>
-
-<style>
-  .page-header {
-    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
-    color: #ffffff;
-    padding: 3.5rem 0 3rem;
-  }
-  .breadcrumb-nav {
-    font-size: 0.85rem;
-    color: #94a3b8;
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  .breadcrumb-nav a {
-    color: #38bdf8;
-    text-decoration: none;
-  }
-  .sep {
-    opacity: 0.5;
-  }
-  .current {
-    color: #e2e8f0;
-  }
-  .page-title {
-    font-size: 2.25rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: #ffffff;
-  }
-  .page-lead {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    max-width: 800px;
-    line-height: 1.6;
-    margin-bottom: 1.75rem;
-  }
-  .page-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .btn-wa {
-    background: #25d366;
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
-  }
-  .btn-call {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .page-content-section {
-    padding: 3.5rem 0;
-  }
-  .content-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-  }
-  .main-article {
-    line-height: 1.75;
-    color: #334155;
-    font-size: 1.05rem;
-  }
-  .main-article :global(h2) {
-    font-size: 1.65rem;
-    font-weight: 800;
-    color: #0f172a;
-    margin: 2rem 0 1rem;
-  }
-  .main-article :global(h3) {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin: 1.5rem 0 0.75rem;
-  }
-  .main-article :global(p) {
-    margin-bottom: 1.25rem;
-  }
-  .main-article :global(ul), .main-article :global(ol) {
-    margin: 0 0 1.5rem 1.5rem;
-  }
-  .main-article :global(li) {
-    margin-bottom: 0.5rem;
-  }
-  .main-article :global(table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-    font-size: 0.95rem;
-  }
-  .main-article :global(th), .main-article :global(td) {
-    border: 1px solid #cbd5e1;
-    padding: 0.75rem 1rem;
-    text-align: left;
-  }
-  .main-article :global(th) {
-    background: #f1f5f9;
-    font-weight: 700;
-  }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .sidebar-box {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    padding: 1.5rem;
-  }
-  .sidebar-box h3 {
-    font-size: 1.15rem;
-    font-weight: 800;
-    margin-bottom: 0.75rem;
-    color: #0f172a;
-  }
-  .sidebar-box p {
-    font-size: 0.9rem;
-    color: #64748b;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-  .btn-sidebar-wa {
-    display: block;
-    background: #25d366;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.75rem;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .sidebar-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .sidebar-links li {
-    margin-bottom: 0.5rem;
-  }
-  .sidebar-links a {
-    color: #0284c7;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-  }
-  .sidebar-links a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 850px) {
-    .content-container {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    .page-title {
-      font-size: 1.75rem;
-    }
-  }
-</style>

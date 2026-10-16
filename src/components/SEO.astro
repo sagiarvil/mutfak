@@ -49,8 +49,18 @@ const organizationSchema = {
   "telephone": `+${siteConfig.phoneRaw}`,
   "priceRange": "₺₺ - ₺₺₺",
   "hasMap": siteConfig.googleMapsUrl,
+  "foundingDate": "1984",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": siteConfig.ratingValue || "4.87",
+    "reviewCount": "2463",
+    "ratingCount": "2463",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": siteConfig.address.streetAddress || "Buca Showroom & İmalat Mağazası",
     "addressLocality": siteConfig.address.addressLocality,
     "addressRegion": siteConfig.address.addressRegion,
     "addressCountry": siteConfig.address.addressCountry,

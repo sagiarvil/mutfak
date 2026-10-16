@@ -1,12 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import WhatsAppCTA from "../../components/WhatsAppCTA.astro";
 import { siteConfig } from "../../data/siteConfig";
-import { buildWhatsAppUrl, buildTelUrl } from "../../utils/whatsapp";
 
 const seo = {
-  title: "İletişim & Ücretsiz Keşif Talebi | İzmir Mutfak Banyo",
-  description: "İzmir mutfak dolabı ve tadilat işleriniz için hemen arayın veya WhatsApp'tan mesaj atın. Telefon: 0539 333 33 03. Google Haritalar konumu ve iletişim bilgileri.",
+  title: "İletişim & Ücretsiz Keşif Randevusu | İzmir Mutfak Banyo | 1984'ten Bugüne",
+  description: "İzmir mutfak dolabı ve komple ev tadilatı keşif randevusu için bize ulaşın. Buca Showroom & İmalat Mağazası, telefon: 0539 333 33 03. Tüm İzmir ilçelerine ücretsiz mimari keşif.",
   canonical: "https://izmirmutfakbanyo.com.tr/iletisim/",
   serviceName: "Keşif ve İletişim",
   breadcrumbs: [
@@ -16,241 +14,136 @@ const seo = {
 ---
 
 <Layout seo={seo} activeService="İletişim">
-  <div class="page-header">
-    <div class="container">
-      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <a href="/">Ana Sayfa</a>
-        <span class="sep">/</span>
-        <span class="current">İletişim</span>
-      </nav>
-      <h1 class="page-title">İletişim & Ücretsiz Keşif Randevusu</h1>
-      <p class="page-lead">İzmir mutfak dolabı ve tadilat işleriniz için hemen arayın veya WhatsApp'tan mesaj atın. Telefon: 0539 333 33 03. Google Haritalar konumu ve iletişim bilgileri.</p>
-      <div class="page-actions">
-        <a href={buildWhatsAppUrl({ service: "İletişim" })} target="_blank" rel="noopener noreferrer" class="btn-wa">
-          💬 WhatsApp ile Keşif İste
-        </a>
-        <a href={buildTelUrl()} class="btn-call">
-          📞 ${siteConfig.phoneFormatted}
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <section class="page-content-section">
-    <div class="container content-container">
-      <div class="main-article prose">
-        
-      <h2>Bizimle İletişime Geçin</h2>
-      <p>Tadilat projeniz hakkında aklınıza takılan her soruyu yanıtlamaktan mutluluk duyarız. Mimarımız ve ustamızla doğrudan görüşmek için aşağıdaki kanalları kullanabilirsiniz.</p>
-      
-      <div class="contact-info-box">
-        <p>📞 <strong>Telefon:</strong> <a href="tel:+905393333303">0539 333 33 03</a></p>
-        <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/905393333303" target="_blank">0539 333 33 03</a></p>
-        <p>📍 <strong>Hizmet Alanı:</strong> Tüm İzmir İlçeleri (Karşıyaka, Bornova, Çiğli, Konak, Urla, Çeşme vb.)</p>
-        <p>🗺️ <strong>Google Harita:</strong> <a href="https://share.google/p94hYPiU7cDUM7Va1" target="_blank">Haritada Yol Tarifi Al</a></p>
-        <p>⏰ <strong>Çalışma Saatleri:</strong> Pazartesi - Cumartesi: 08:30 - 19:30</p>
-      </div>
+  
+  <!-- HERO BÖLÜMÜ -->
+  <section class="relative bg-stone-950 text-white py-20 sm:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1800&q=80');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/80 to-transparent"></div>
     
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
+        <span>/</span>
+        <span class="text-emerald-400">İletişim</span>
+      </nav>
+
+      <span class="inline-block px-3.5 py-1.5 bg-emerald-950/80 border border-emerald-400/40 text-emerald-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
+        1984'TEN BUGÜNE 42 YILLIK TECRÜBE • BUCA MERKEZ SHOWROOM
+      </span>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
+        İletişim &amp; Ücretsiz Keşif Randevusu, <br /><span class="font-normal italic">Mimarımızla Doğrudan Görüşün</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
+        Tadilat projeniz hakkında danışmak, malzeme numunelerini yerinde incelemek ve eviniz için 3D sanal canlandırma simülasyonu talep etmek için Buca showroomumuza bekliyoruz veya doğrudan arayabilirsiniz.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20ücretsiz%20keşif%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg inline-flex items-center gap-2">
+          <span>💬</span> <span>WhatsApp ile Keşif İste</span>
+        </a>
+        <a href="tel:05393333303" class="px-8 py-3.5 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          📞 0539 333 33 03
+        </a>
       </div>
-
-      <aside class="sidebar">
-        <div class="sidebar-box">
-          <h3>Hızlı Fiyat & Keşif</h3>
-          <p>İzmir içi adresinize gelerek ölçü alıyor ve 3D çizim hazırlıyoruz.</p>
-          <a href={buildWhatsAppUrl({ service: "İletişim" })} target="_blank" rel="noopener noreferrer" class="btn-sidebar-wa">
-            WhatsApp Keşif Hattı
-          </a>
-        </div>
-
-        <div class="sidebar-box">
-          <h3>Diğer Hizmetlerimiz</h3>
-          <ul class="sidebar-links">
-            <li><a href="/mutfak-dolabi/">Mutfak Dolabı</a></li>
-            <li><a href="/mutfak-tadilati/">Mutfak Tadilatı</a></li>
-            <li><a href="/banyo-tadilati/">Banyo Tadilatı</a></li>
-            <li><a href="/ev-tadilati/">Komple Ev Tadilatı</a></li>
-            <li><a href="/mutfak-dolabi-fiyatlari/">Fiyat Rehberi</a></li>
-          </ul>
-        </div>
-      </aside>
     </div>
   </section>
 
-  <WhatsAppCTA 
-    title="İletişim İçin Fiyat ve Keşif Talebi Oluşturun"
-    subtitle="İzmir'in tüm ilçelerine 1 iş günü içinde ücretsiz keşif randevusu veriyoruz."
-    service="İletişim"
-  />
+  <!-- İLETİŞİM VE ADRES BİLGİLERİ -->
+  <section class="py-20 sm:py-24 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        
+        <!-- Sol: İletişim Detayları -->
+        <div class="space-y-8">
+          <div class="space-y-3">
+            <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">DOĞRUDAN ULAŞIM</span>
+            <h2 class="text-3xl font-light text-stone-950 tracking-tight font-editorial">Buca Mağazamız &amp; Keşif Hattı</h2>
+            <div class="w-12 h-0.5 bg-stone-900"></div>
+            <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
+              İzmir Buca merkez mağaza ve showroomumuzda malzeme kartelalarını, gövde kesitlerini ve Blum aksamları canlı inceleyebilirsiniz.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-5 bg-stone-50 border border-stone-200">
+              <span class="text-2xl text-emerald-600">📞</span>
+              <div>
+                <h3 class="font-bold text-stone-900 text-xs uppercase tracking-wider">Telefon Hattı</h3>
+                <p class="text-sm font-semibold text-stone-800"><a href="tel:05393333303" class="hover:text-emerald-700">0539 333 33 03</a></p>
+                <p class="text-xs text-stone-500 font-light">Pazartesi - Cumartesi: 08:30 - 19:30</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-5 bg-stone-50 border border-stone-200">
+              <span class="text-2xl text-emerald-600">💬</span>
+              <div>
+                <h3 class="font-bold text-stone-900 text-xs uppercase tracking-wider">WhatsApp Mimari Destek</h3>
+                <p class="text-sm font-semibold text-stone-800"><a href="https://wa.me/905393333303" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-700">0539 333 33 03</a></p>
+                <p class="text-xs text-stone-500 font-light">Fotoğraf veya rölöve göndererek anlık ön fiyat teklifi alabilirsiniz.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-5 bg-stone-50 border border-stone-200">
+              <span class="text-2xl text-emerald-600">📍</span>
+              <div>
+                <h3 class="font-bold text-stone-900 text-xs uppercase tracking-wider">Showroom &amp; İmalat Atölyesi</h3>
+                <p class="text-sm font-semibold text-stone-800">Buca Showroom &amp; İmalat Mağazası, Buca / İZMİR</p>
+                <p class="text-xs text-stone-500 font-light">Hizmet Alanı: Tüm 30 İzmir İlçesi (Konak, Karşıyaka, Bornova, Urla, Çeşme vb.)</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-5 bg-stone-50 border border-stone-200">
+              <span class="text-2xl text-emerald-600">🗺️</span>
+              <div>
+                <h3 class="font-bold text-stone-900 text-xs uppercase tracking-wider">Google Haritalar</h3>
+                <p class="text-xs text-stone-600 font-light">Konumumuza tek tıkla yol tarifi alabilirsiniz.</p>
+                <a href="https://share.google/p94hYPiU7cDUM7Va1" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-emerald-700 underline mt-1 inline-block">
+                  Google Haritada Aç &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sağ: Hızlı Keşif Formu / İletişim Kutusu -->
+        <div class="bg-stone-900 text-white p-8 sm:p-10 space-y-6 flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block">HIZLI KEŞİF TALEBİ</span>
+            <h3 class="text-2xl font-light font-editorial">Mimarımız Adresinize Gelsin</h3>
+            <p class="text-xs text-stone-300 font-light leading-relaxed">
+              WhatsApp üzerinden adres ve oda fotoğraflarınızı ilettiğinizde, kadrolu mimarımız aynı gün içerisinde randevunuzu planlar ve evinize gelerek rölöve alır.
+            </p>
+            <div class="space-y-3 pt-4 border-t border-stone-800 text-xs text-stone-300">
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Ücretsiz lazerli milimetrik rölöve</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Fotogerçekçi 3D sanal canlandırma simülasyonu</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Kalem kalem malzeme şartnameli sabit fiyat teklifi</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>1984'ten gelen resmi sözleşme güvencesi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6">
+            <a href="https://wa.me/905393333303?text=Merhaba,%20ücretsiz%20keşif%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="w-full py-4 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg text-center block">
+              💬 WhatsApp ile Hemen Keşif İste
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 </Layout>
-
-<style>
-  .page-header {
-    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
-    color: #ffffff;
-    padding: 3.5rem 0 3rem;
-  }
-  .breadcrumb-nav {
-    font-size: 0.85rem;
-    color: #94a3b8;
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  .breadcrumb-nav a {
-    color: #38bdf8;
-    text-decoration: none;
-  }
-  .sep {
-    opacity: 0.5;
-  }
-  .current {
-    color: #e2e8f0;
-  }
-  .page-title {
-    font-size: 2.25rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: #ffffff;
-  }
-  .page-lead {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    max-width: 800px;
-    line-height: 1.6;
-    margin-bottom: 1.75rem;
-  }
-  .page-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .btn-wa {
-    background: #25d366;
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
-  }
-  .btn-call {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .page-content-section {
-    padding: 3.5rem 0;
-  }
-  .content-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-  }
-  .main-article {
-    line-height: 1.75;
-    color: #334155;
-    font-size: 1.05rem;
-  }
-  .main-article :global(h2) {
-    font-size: 1.65rem;
-    font-weight: 800;
-    color: #0f172a;
-    margin: 2rem 0 1rem;
-  }
-  .main-article :global(h3) {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin: 1.5rem 0 0.75rem;
-  }
-  .main-article :global(p) {
-    margin-bottom: 1.25rem;
-  }
-  .main-article :global(ul), .main-article :global(ol) {
-    margin: 0 0 1.5rem 1.5rem;
-  }
-  .main-article :global(li) {
-    margin-bottom: 0.5rem;
-  }
-  .main-article :global(table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-    font-size: 0.95rem;
-  }
-  .main-article :global(th), .main-article :global(td) {
-    border: 1px solid #cbd5e1;
-    padding: 0.75rem 1rem;
-    text-align: left;
-  }
-  .main-article :global(th) {
-    background: #f1f5f9;
-    font-weight: 700;
-  }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .sidebar-box {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    padding: 1.5rem;
-  }
-  .sidebar-box h3 {
-    font-size: 1.15rem;
-    font-weight: 800;
-    margin-bottom: 0.75rem;
-    color: #0f172a;
-  }
-  .sidebar-box p {
-    font-size: 0.9rem;
-    color: #64748b;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-  .btn-sidebar-wa {
-    display: block;
-    background: #25d366;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.75rem;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .sidebar-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .sidebar-links li {
-    margin-bottom: 0.5rem;
-  }
-  .sidebar-links a {
-    color: #0284c7;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-  }
-  .sidebar-links a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 850px) {
-    .content-container {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    .page-title {
-      font-size: 1.75rem;
-    }
-  }
-</style>

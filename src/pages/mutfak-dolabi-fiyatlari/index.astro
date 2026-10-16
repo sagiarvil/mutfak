@@ -1,287 +1,211 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import WhatsAppCTA from "../../components/WhatsAppCTA.astro";
 import { siteConfig } from "../../data/siteConfig";
-import { buildWhatsAppUrl, buildTelUrl } from "../../utils/whatsapp";
 
 const seo = {
-  title: "2026 İzmir Mutfak Dolabı Metretül Fiyatları & Maliyet Tablosu",
-  description: "2026 güncel İzmir mutfak dolabı metretül fiyatları, malzeme karşılaştırmaları (Akrilik, Membran, Lake, Masif) ve şeffaf tadilat maliyet tablosu.",
+  title: "2026 İzmir Mutfak Dolabı Fiyatları & Metretül Maliyet Tablosu | 1984'ten Bugüne",
+  description: "2026 güncel İzmir mutfak dolabı metretül fiyatları, malzeme karşılaştırmaları (MDF-Lam, Akrilik, Membran, Lake, Masif) ve Buca imalat atölyemizden şeffaf maliyet rehberi.",
   canonical: "https://izmirmutfakbanyo.com.tr/mutfak-dolabi-fiyatlari/",
   serviceName: "Mutfak Dolabı Fiyat Rehberi",
   breadcrumbs: [
     { name: "Fiyat Rehberi", url: "/mutfak-dolabi-fiyatlari/" }
+  ],
+  faqList: [
+    {
+      question: "Mutfak dolabı fiyatı nasıl hesaplanır?",
+      answer: "Mutfak dolabı imalatı alt ve üst dolapların toplam uzunluğu üzerinden 'Metretül' (mtül) hesabı ile fiyatlandırılır. Seçilen kapak türü (Akrilik, Lake, MDF-Lam), gövde malzemesi, menteşe/ray mekanizmaları (Blum/Hafele) ve tezgah cinsi maliyeti belirler."
+    },
+    {
+      question: "Aracı komisyonu olmadan doğrudan imalattan mı alıyorum?",
+      answer: "Evet. İzmir Buca'daki kendi imalat atölyemizde ürettiğimiz için aracı komisyonu ödemezsiniz. 1984 yılından gelen tecrübemizle en kaliteli malzemeleri en şeffaf fabrika fiyatlarıyla sunuyoruz."
+    },
+    {
+      question: "Fiyat teklifi alırken 3D çizim için ücret ödüyor muyum?",
+      answer: "Hayır. Kadrolu mimar ve iç mimarlarımızın evinize gelerek rölöve alması ve fotogerçekçi 3D sanal canlandırma hazırlaması tamamen ücretsizdir."
+    }
   ]
 };
 ---
 
 <Layout seo={seo} activeService="Fiyat Rehberi">
-  <div class="page-header">
-    <div class="container">
-      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <a href="/">Ana Sayfa</a>
-        <span class="sep">/</span>
-        <span class="current">Fiyat Rehberi</span>
-      </nav>
-      <h1 class="page-title">2026 İzmir Mutfak Dolabı Fiyatları & Metretül Maliyet Hesaplama</h1>
-      <p class="page-lead">2026 güncel İzmir mutfak dolabı metretül fiyatları, malzeme karşılaştırmaları (Akrilik, Membran, Lake, Masif) ve şeffaf tadilat maliyet tablosu.</p>
-      <div class="page-actions">
-        <a href={buildWhatsAppUrl({ service: "Fiyat Rehberi" })} target="_blank" rel="noopener noreferrer" class="btn-wa">
-          💬 WhatsApp ile Keşif İste
-        </a>
-        <a href={buildTelUrl()} class="btn-call">
-          📞 ${siteConfig.phoneFormatted}
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <section class="page-content-section">
-    <div class="container content-container">
-      <div class="main-article prose">
-        
-      <h2>Mutfak Dolabı Fiyatları Nasıl Hesaplanır?</h2>
-      <p>Mutfak dolabı fiyatlandırması genellikle alt ve üst dolabın toplam uzunluğu üzerinden 'Metretül' (mtül) hesabı ile yapılır. Fiyatı etkileyen ana faktörler kapak malzemesi, mekanizma markası (Blum/Hafele) ve tezgâh seçimidir.</p>
-      
-      <h3>2026 Ortalama Metretül Fiyat Aralıkları (İzmir)</h3>
-      <table class="pricing-table">
-        <thead>
-          <tr>
-            <th>Kapak Türü</th>
-            <th>Gövde Özelliği</th>
-            <th>Aksam Kalitesi</th>
-            <th>Maliyet Skalası</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>MDF Lam Standart</strong></td>
-            <td>1. Sınıf Beyaz MDF</td>
-            <td>Standart Frenli</td>
-            <td>Ekonomik Bütçe</td>
-          </tr>
-          <tr>
-            <td><strong>Akrilik Parlak / Mat</strong></td>
-            <td>%100 Neme Dayanıklı MDF</td>
-            <td>Blum / Hafele Frenli</td>
-            <td>Orta - Üst Segment</td>
-          </tr>
-          <tr>
-            <td><strong>Membran (Vakumlu)</strong></td>
-            <td>CNC İşlemeli MDF</td>
-            <td>Frenli Ray/Menteşe</td>
-            <td>Dengeli Fiyat/Performans</td>
-          </tr>
-          <tr>
-            <td><strong>İpek Mat Lake Boya</strong></td>
-            <td>Poliüretan Çift Kat Boya</td>
-            <td>Blum Tandembox / Aventos</td>
-            <td>Premium Kalite</td>
-          </tr>
-        </tbody>
-      </table>
-      <p><em>* Kesin fiyat teklifi mutfağınızın ölçüsü, köşe mekanizmaları, kiler sistemleri ve tezgâh seçimine göre yerinde ücretsiz keşif sonrası netleşir.</em></p>
+  
+  <!-- HERO BÖLÜMÜ -->
+  <section class="relative bg-stone-950 text-white py-20 sm:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1800&q=80');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/80 to-transparent"></div>
     
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
+        <span>/</span>
+        <span class="text-emerald-400">Fiyat Rehberi</span>
+      </nav>
+
+      <span class="inline-block px-3.5 py-1.5 bg-emerald-950/80 border border-emerald-400/40 text-emerald-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
+        1984'TEN BUGÜNE 42 YILLIK TECRÜBE • ATÖLYEDEN ŞEFFAF FİYATLAR
+      </span>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
+        2026 İzmir Mutfak Dolabı Fiyatları, <br /><span class="font-normal italic">Metretül Maliyetleri &amp; Malzeme Tablosu</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
+        Ekonomik kaliteli MDF-Lam'dan ultra lüks lake ve masif modellere kadar her bütçeye uygun şeffaf üretim. İzmir Buca imalat atölyemizden aracısız, kadrolu mimarımızın hazırladığı ücretsiz 3D sanal simülasyon güvencesiyle.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20mutfak%20dolabı%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg inline-flex items-center gap-2">
+          <span>💬</span> <span>WhatsApp ile Fiyat Teklifi Al</span>
+        </a>
+        <a href="tel:05393333303" class="px-8 py-3.5 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          📞 0539 333 33 03
+        </a>
       </div>
-
-      <aside class="sidebar">
-        <div class="sidebar-box">
-          <h3>Hızlı Fiyat & Keşif</h3>
-          <p>İzmir içi adresinize gelerek ölçü alıyor ve 3D çizim hazırlıyoruz.</p>
-          <a href={buildWhatsAppUrl({ service: "Fiyat Rehberi" })} target="_blank" rel="noopener noreferrer" class="btn-sidebar-wa">
-            WhatsApp Keşif Hattı
-          </a>
-        </div>
-
-        <div class="sidebar-box">
-          <h3>Diğer Hizmetlerimiz</h3>
-          <ul class="sidebar-links">
-            <li><a href="/mutfak-dolabi/">Mutfak Dolabı</a></li>
-            <li><a href="/mutfak-tadilati/">Mutfak Tadilatı</a></li>
-            <li><a href="/banyo-tadilati/">Banyo Tadilatı</a></li>
-            <li><a href="/ev-tadilati/">Komple Ev Tadilatı</a></li>
-            <li><a href="/mutfak-dolabi-fiyatlari/">Fiyat Rehberi</a></li>
-          </ul>
-        </div>
-      </aside>
     </div>
   </section>
 
-  <WhatsAppCTA 
-    title="Fiyat Rehberi İçin Fiyat ve Keşif Talebi Oluşturun"
-    subtitle="İzmir'in tüm ilçelerine 1 iş günü içinde ücretsiz keşif randevusu veriyoruz."
-    service="Fiyat Rehberi"
-  />
+  <!-- 4 SÜTUN GÜVEN ŞERİDİ -->
+  <section class="bg-[#121212] text-white border-b border-stone-800 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-start gap-4">
+          <span class="text-3xl text-emerald-400 font-editorial shrink-0">1984</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Doğrudan İmalat</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Aracı komisyonu yok, Buca atölyemizden doğrudan fabrika maliyeti.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">📐</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Ücretsiz 3D Çizim</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">İç mimarlarımız evinize özel çizimi hazırlar, bütçeyi netleştirir.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">🔒</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Sabit Fiyat Taahhüdü</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Sözleşmede belirlenen tutar değişmez, tek kuruş sürpriz çıkmaz.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">📍</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Tüm İzmir'e Keşif</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Buca merkezli olarak 30 ilçenin tamamına ücretsiz yerinde ölçü.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KARŞILAŞTIRMALI MALZEME VE MALİYET TABLOSU -->
+  <section class="py-20 sm:py-24 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">ŞEFFAF MALİYET SKALASI</span>
+        <h2 class="text-3xl sm:text-4xl font-light text-stone-950 tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+          Kapak Malzemelerine Göre <br /><span class="font-normal italic">Özellik &amp; Kalite Tablosu</span>
+        </h2>
+        <div class="w-12 h-0.5 bg-stone-900"></div>
+        <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
+          Her kesimden bütçeye uygun seçenekler. İster ekonomik ve sağlam bir kiracı mutfağı, ister ömürlük lüks lake ada mutfak.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs border border-stone-200 divide-y divide-stone-200">
+          <thead class="bg-stone-900 text-white uppercase tracking-wider text-[11px]">
+            <tr>
+              <th class="p-4">Kapak Türü</th>
+              <th class="p-4">Gövde Malzemesi</th>
+              <th class="p-4">Aksam &amp; Mekanizma</th>
+              <th class="p-4">Dayanıklılık &amp; Bakım</th>
+              <th class="p-4">Maliyet Skalası</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-stone-100 bg-white text-stone-700">
+            <tr class="hover:bg-stone-50 transition">
+              <td class="p-4 font-bold text-stone-900">MDF-Lam Standart</td>
+              <td class="p-4">1. Sınıf Beyaz MDF</td>
+              <td class="p-4">Samet Frenli Menteşe / Ray</td>
+              <td class="p-4">Kolay temizlenir, bütçe dostu</td>
+              <td class="p-4"><span class="px-2.5 py-1 bg-stone-100 font-semibold text-stone-800">Ekonomik Kalite</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50 transition">
+              <td class="p-4 font-bold text-stone-900">High-Gloss Parlak</td>
+              <td class="p-4">Neme Dayanıklı MDF</td>
+              <td class="p-4">Frenli Tandem Ray</td>
+              <td class="p-4">Işıltılı, modern, kolay silinir</td>
+              <td class="p-4"><span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 font-semibold">Fiyat / Performans</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50 transition">
+              <td class="p-4 font-bold text-stone-900">Akrilik (Ultra Çizilmez)</td>
+              <td class="p-4">%100 Suya Dayanıklı Gövde</td>
+              <td class="p-4">Blum / Hafele Frenli</td>
+              <td class="p-4">Yüksek parlaklık, sararmaz</td>
+              <td class="p-4"><span class="px-2.5 py-1 bg-blue-50 text-blue-800 font-semibold">Orta - Üst Segment</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50 transition">
+              <td class="p-4 font-bold text-stone-900">Membran (Country CNC)</td>
+              <td class="p-4">18mm Çift Yüz MDF</td>
+              <td class="p-4">Blum Tandembox Çekmece</td>
+              <td class="p-4">Country desenli, dikişsiz kaplama</td>
+              <td class="p-4"><span class="px-2.5 py-1 bg-amber-50 text-amber-800 font-semibold">Özel Tasarım</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50 transition">
+              <td class="p-4 font-bold text-stone-900">İpek Mat Lake Boya</td>
+              <td class="p-4">Poliüretan Çift Kat Astar/Boya</td>
+              <td class="p-4">Blum Aventos Kalkar Kapak</td>
+              <td class="p-4">Ömürlük, çizilirse tamir edilebilir</td>
+              <td class="p-4"><span class="px-2.5 py-1 bg-purple-50 text-purple-800 font-semibold">Lüks &amp; Premium</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50 transition">
+              <td class="p-4 font-bold text-stone-900">Doğal Ahşap Meşe Kaplama</td>
+              <td class="p-4">Masif Meşe &amp; Huş Marin Gövde</td>
+              <td class="p-4">Blum Legrabox Mekanizmalar</td>
+              <td class="p-4">Doğal damarlı, zamansız estetik</td>
+              <td class="p-4"><span class="px-2.5 py-1 bg-rose-50 text-rose-800 font-semibold">Ultra Lüks Mimari</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SSS BÖLÜMÜ -->
+  <section class="py-20 sm:py-24 bg-stone-50 border-b border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8 space-y-8">
+      <div class="text-center space-y-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">MERAK EDİLENLER</span>
+        <h2 class="text-2xl sm:text-3xl font-light text-stone-950 font-editorial">Fiyatlandırma Hakkında Sorularınız</h2>
+      </div>
+
+      <div class="space-y-4">
+        {seo.faqList.map((faq) => (
+          <div class="bg-white border border-stone-200 p-6 space-y-2 shadow-2xs">
+            <h3 class="font-bold text-sm text-stone-900">{faq.question}</h3>
+            <p class="text-xs text-stone-600 font-light leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ÇAĞRI BÖLÜMÜ -->
+  <section class="py-16 bg-stone-900 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4 space-y-6">
+      <h2 class="text-2xl sm:text-3xl font-light font-editorial">Evinizin Ölçülerine Göre Net Fiyat Teklifi Alın</h2>
+      <p class="text-xs sm:text-sm text-stone-300 font-light">
+        Ölçülerinizi WhatsApp'tan gönderin veya ücretsiz mimari keşif isteyin; 3D çizim ve kalem kalem dökümlü net maliyet teklifinizi hazırlayalım.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20mutfak%20dolabı%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg">
+          💬 WhatsApp ile Fiyat Al (0539 333 33 03)
+        </a>
+      </div>
+    </div>
+  </section>
+
 </Layout>
-
-<style>
-  .page-header {
-    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
-    color: #ffffff;
-    padding: 3.5rem 0 3rem;
-  }
-  .breadcrumb-nav {
-    font-size: 0.85rem;
-    color: #94a3b8;
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  .breadcrumb-nav a {
-    color: #38bdf8;
-    text-decoration: none;
-  }
-  .sep {
-    opacity: 0.5;
-  }
-  .current {
-    color: #e2e8f0;
-  }
-  .page-title {
-    font-size: 2.25rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: #ffffff;
-  }
-  .page-lead {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    max-width: 800px;
-    line-height: 1.6;
-    margin-bottom: 1.75rem;
-  }
-  .page-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .btn-wa {
-    background: #25d366;
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
-  }
-  .btn-call {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .page-content-section {
-    padding: 3.5rem 0;
-  }
-  .content-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-  }
-  .main-article {
-    line-height: 1.75;
-    color: #334155;
-    font-size: 1.05rem;
-  }
-  .main-article :global(h2) {
-    font-size: 1.65rem;
-    font-weight: 800;
-    color: #0f172a;
-    margin: 2rem 0 1rem;
-  }
-  .main-article :global(h3) {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin: 1.5rem 0 0.75rem;
-  }
-  .main-article :global(p) {
-    margin-bottom: 1.25rem;
-  }
-  .main-article :global(ul), .main-article :global(ol) {
-    margin: 0 0 1.5rem 1.5rem;
-  }
-  .main-article :global(li) {
-    margin-bottom: 0.5rem;
-  }
-  .main-article :global(table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-    font-size: 0.95rem;
-  }
-  .main-article :global(th), .main-article :global(td) {
-    border: 1px solid #cbd5e1;
-    padding: 0.75rem 1rem;
-    text-align: left;
-  }
-  .main-article :global(th) {
-    background: #f1f5f9;
-    font-weight: 700;
-  }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .sidebar-box {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    padding: 1.5rem;
-  }
-  .sidebar-box h3 {
-    font-size: 1.15rem;
-    font-weight: 800;
-    margin-bottom: 0.75rem;
-    color: #0f172a;
-  }
-  .sidebar-box p {
-    font-size: 0.9rem;
-    color: #64748b;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-  .btn-sidebar-wa {
-    display: block;
-    background: #25d366;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.75rem;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .sidebar-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .sidebar-links li {
-    margin-bottom: 0.5rem;
-  }
-  .sidebar-links a {
-    color: #0284c7;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-  }
-  .sidebar-links a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 850px) {
-    .content-container {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    .page-title {
-      font-size: 1.75rem;
-    }
-  }
-</style>

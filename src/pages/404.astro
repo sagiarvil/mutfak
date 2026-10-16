@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { siteConfig } from "../data/siteConfig";
-import { buildWhatsAppUrl } from "../utils/whatsapp";
 
 const seo = {
   title: "Sayfa Bulunamadı (404) | İzmir Mutfak Banyo",
@@ -11,66 +10,21 @@ const seo = {
 ---
 
 <Layout seo={seo}>
-  <section class="not-found">
-    <div class="container text-center">
-      <span class="code">404</span>
-      <h1 class="title">Sayfa Bulunamadı</h1>
-      <p class="desc">
-        Aradığınız sayfa silinmiş veya adresi değişmiş olabilir. Aşağıdaki bağlantılardan hizmetlerimize ulaşabilir veya doğrudan WhatsApp'tan bize yazabilirsiniz.
+  <section class="py-28 sm:py-36 bg-stone-950 text-white text-center">
+    <div class="max-w-2xl mx-auto px-4 space-y-6">
+      <span class="text-7xl sm:text-8xl font-black text-stone-800 block">404</span>
+      <h1 class="text-2xl sm:text-3xl font-light font-editorial">Aradığınız Sayfa Bulunamadı</h1>
+      <p class="text-xs sm:text-sm text-stone-400 font-light leading-relaxed">
+        Ulaşmak istediğiniz sayfa adresi değişmiş veya taşınmış olabilir. 1984'ten gelen güvencemizle mutfak, banyo ve ev tadilatı hizmetlerimizi incelemek için ana sayfaya dönebilirsiniz.
       </p>
-      <div class="actions">
-        <a href="/" class="btn-home">← Ana Sayfaya Dön</a>
-        <a href={buildWhatsAppUrl()} target="_blank" rel="noopener noreferrer" class="btn-wa">💬 WhatsApp İle Ulaşın</a>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+        <a href="/" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg">
+          ← Ana Sayfaya Dön
+        </a>
+        <a href="https://wa.me/905393333303" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-transparent border border-stone-600 text-stone-300 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          💬 WhatsApp Danışma
+        </a>
       </div>
     </div>
   </section>
 </Layout>
-
-<style>
-  .not-found {
-    padding: 6rem 1rem;
-    text-align: center;
-  }
-  .code {
-    font-size: 5rem;
-    font-weight: 900;
-    color: #cbd5e1;
-    line-height: 1;
-    display: block;
-    margin-bottom: 1rem;
-  }
-  .title {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #0f172a;
-    margin-bottom: 1rem;
-  }
-  .desc {
-    max-width: 500px;
-    margin: 0 auto 2rem;
-    color: #64748b;
-    font-size: 1.05rem;
-  }
-  .actions {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .btn-home {
-    background: #0f172a;
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .btn-wa {
-    background: #25d366;
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-</style>

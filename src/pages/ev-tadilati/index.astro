@@ -1,255 +1,113 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import WhatsAppCTA from "../../components/WhatsAppCTA.astro";
 import { siteConfig } from "../../data/siteConfig";
-import { buildWhatsAppUrl, buildTelUrl } from "../../utils/whatsapp";
 
 const seo = {
-  title: "İzmir Komple Ev Tadilatı & Daire Yenileme | Anahtar Teslim",
-  description: "Mutfak, banyo, zemin parke, alçı boya, asma tavan ve iç kapılar dahil komple daire yenileme. Tek muhatap, şantiye takibi ve sabit bütçe garantisi.",
+  title: "İzmir Komple Ev Tadilatı & Daire Yenileme | 1984'ten Bugüne",
+  description: "İzmir komple ev tadilatı. Mutfak, banyo, elektrik, su tesisatı, zemin parke, alçı tavan ve boya. Kadrolu mimarımızla 3D sanal canlandırma ve resmi sözleşmeli sabit fiyat garantisi.",
   canonical: "https://izmirmutfakbanyo.com.tr/ev-tadilati/",
   serviceName: "Komple Ev Tadilatı",
   breadcrumbs: [
-    { name: "Komple Ev Tadilatı", url: "/ev-tadilati/" }
+    { name: "Ev Tadilatı", url: "/ev-tadilati/" }
+  ],
+  faqList: [
+    {
+      question: "İzmir'de 3+1 daire komple tadilatı kaç günde biter?",
+      answer: "Komple daire tadilatı (kırım, tesisat, elektrik, mutfak, banyo, seramik, parke ve boya) ortalama 25 ila 35 iş günü içerisinde anahtar teslim tamamlanır."
+    },
+    {
+      question: "Tadilat süresince şantiyeyi nasıl takip edebilirim?",
+      answer: "Projenin başında kadrolu mimarımız atanır. Günlük fotoğraflı ve videolu şantiye ilerleme raporu WhatsApp üzerinden iletilir."
+    }
   ]
 };
 ---
 
 <Layout seo={seo} activeService="Komple Ev Tadilatı">
-  <div class="page-header">
-    <div class="container">
-      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <a href="/">Ana Sayfa</a>
-        <span class="sep">/</span>
-        <span class="current">Komple Ev Tadilatı</span>
-      </nav>
-      <h1 class="page-title">İzmir Komple Ev Tadilatı & Daire Yenileme Hizmetleri</h1>
-      <p class="page-lead">Mutfak, banyo, zemin parke, alçı boya, asma tavan ve iç kapılar dahil komple daire yenileme. Tek muhatap, şantiye takibi ve sabit bütçe garantisi.</p>
-      <div class="page-actions">
-        <a href={buildWhatsAppUrl({ service: "Komple Ev Tadilatı" })} target="_blank" rel="noopener noreferrer" class="btn-wa">
-          💬 WhatsApp ile Keşif İste
-        </a>
-        <a href={buildTelUrl()} class="btn-call">
-          📞 ${siteConfig.phoneFormatted}
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <section class="page-content-section">
-    <div class="container content-container">
-      <div class="main-article prose">
-        
-      <h2>Tüm Dairenizi Tek Elden, Mimari Disiplinle Yenileyin</h2>
-      <p>Usta aramakla, farklı ekipleri koordine etmekle ve geciken teslimatlarla uğraşmayın. İzmir komple ev tadilatı kapsamında tüm kırım, elektrik, sıhhi tesisat, seramik, alçıpan, boya, laminat parke ve kapı işlerini tek sözleşmeyle üstleniyoruz.</p>
-
-      <h3>Neden Tek Muhatap Tercih Etmelisiniz?</h3>
-      <ul>
-        <li><strong>Zaman Tasarrufu:</strong> Ekipler birbiri ardına beklemeden, belirlenen iş takvimine göre kesintisiz çalışır.</li>
-        <li><strong>Maliyet Kontrolü:</strong> İşin başında netleşen keşif özeti sayesinde süreç içinde sürpriz ek masraflarla karşılaşmazsınız.</li>
-        <li><strong>Tekil Sorumluluk:</strong> Olası bir sorunda "usta suçluydu / boyacı bozdu" bahanesi olmadan tüm işin garantisi firmamıza aittir.</li>
-      </ul>
+  
+  <section class="relative bg-stone-950 text-white py-20 sm:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/80 to-transparent"></div>
     
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
+        <span>/</span>
+        <span class="text-emerald-400">Komple Ev Tadilatı</span>
+      </nav>
+
+      <span class="inline-block px-3.5 py-1.5 bg-emerald-950/80 border border-emerald-400/40 text-emerald-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
+        1984'TEN BUGÜNE 42 YILLIK TECRÜBE • 2.463+ TESLİM EDİLMİŞ PROJE
+      </span>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
+        İzmir Komple Ev Tadilatı, <br /><span class="font-normal italic">Mimari Projelendirme &amp; Anahtar Teslim</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
+        Mutfak, banyo, elektrik, su tesisatı, parke, lake kapı ve asma tavan işlerini tek elden yönetiyoruz. Kadrolu mimar ve iç mimarlarımızla 3D sanal mekan simülasyonu sunuyor, resmi sözleşmeli sabit fiyat garantisiyle teslim ediyoruz.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20komple%20ev%20tadilatı%20için%20ücretsiz%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg inline-flex items-center gap-2">
+          <span>💬</span> <span>WhatsApp ile Keşif İste</span>
+        </a>
+        <a href="tel:05393333303" class="px-8 py-3.5 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          📞 0539 333 33 03
+        </a>
       </div>
-
-      <aside class="sidebar">
-        <div class="sidebar-box">
-          <h3>Hızlı Fiyat & Keşif</h3>
-          <p>İzmir içi adresinize gelerek ölçü alıyor ve 3D çizim hazırlıyoruz.</p>
-          <a href={buildWhatsAppUrl({ service: "Komple Ev Tadilatı" })} target="_blank" rel="noopener noreferrer" class="btn-sidebar-wa">
-            WhatsApp Keşif Hattı
-          </a>
-        </div>
-
-        <div class="sidebar-box">
-          <h3>Diğer Hizmetlerimiz</h3>
-          <ul class="sidebar-links">
-            <li><a href="/mutfak-dolabi/">Mutfak Dolabı</a></li>
-            <li><a href="/mutfak-tadilati/">Mutfak Tadilatı</a></li>
-            <li><a href="/banyo-tadilati/">Banyo Tadilatı</a></li>
-            <li><a href="/ev-tadilati/">Komple Ev Tadilatı</a></li>
-            <li><a href="/mutfak-dolabi-fiyatlari/">Fiyat Rehberi</a></li>
-          </ul>
-        </div>
-      </aside>
     </div>
   </section>
 
-  <WhatsAppCTA 
-    title="Komple Ev Tadilatı İçin Fiyat ve Keşif Talebi Oluşturun"
-    subtitle="İzmir'in tüm ilçelerine 1 iş günü içinde ücretsiz keşif randevusu veriyoruz."
-    service="Komple Ev Tadilatı"
-  />
+  <!-- 4 SÜTUN GÜVEN ŞERİDİ -->
+  <section class="bg-[#121212] text-white border-b border-stone-800 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-start gap-4">
+          <span class="text-3xl text-emerald-400 font-editorial shrink-0">1984</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">42 Yıllık Güven</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">2.463+ tamamlanmış daire ve villa tadilatı referansı.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">🏛️</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Tek Muhatap, Sıfır Stres</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Tüm ustaları, şantiyeyi ve teslimatı mimarımız koordine eder.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">✨</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">3D Sanal Canlandırma</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Tüm odaları 3 boyutlu modelleyerek sürprizleri sıfırlıyoruz.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">📍</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Buca Mağaza &amp; Tüm İzmir</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Buca showroomumuzdan İzmir geneline yerinde ücretsiz keşif.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÇAĞRI BÖLÜMÜ -->
+  <section class="py-16 bg-stone-900 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4 space-y-6">
+      <h2 class="text-2xl sm:text-3xl font-light font-editorial">Evinizi Yenilemek İçin Ücretsiz Keşif Randevusu Alın</h2>
+      <p class="text-xs sm:text-sm text-stone-300 font-light">
+        Buca Showroomumuza gelin veya WhatsApp'tan yazın; kadrolu mimarımız evinize gelerek rölöve ve 3D çizim analizini hazırlasın.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20komple%20ev%20tadilatı%20için%20ücretsiz%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg">
+          💬 WhatsApp ile Keşif İste (0539 333 33 03)
+        </a>
+      </div>
+    </div>
+  </section>
+
 </Layout>
-
-<style>
-  .page-header {
-    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
-    color: #ffffff;
-    padding: 3.5rem 0 3rem;
-  }
-  .breadcrumb-nav {
-    font-size: 0.85rem;
-    color: #94a3b8;
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  .breadcrumb-nav a {
-    color: #38bdf8;
-    text-decoration: none;
-  }
-  .sep {
-    opacity: 0.5;
-  }
-  .current {
-    color: #e2e8f0;
-  }
-  .page-title {
-    font-size: 2.25rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: #ffffff;
-  }
-  .page-lead {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    max-width: 800px;
-    line-height: 1.6;
-    margin-bottom: 1.75rem;
-  }
-  .page-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .btn-wa {
-    background: #25d366;
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
-  }
-  .btn-call {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .page-content-section {
-    padding: 3.5rem 0;
-  }
-  .content-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-  }
-  .main-article {
-    line-height: 1.75;
-    color: #334155;
-    font-size: 1.05rem;
-  }
-  .main-article :global(h2) {
-    font-size: 1.65rem;
-    font-weight: 800;
-    color: #0f172a;
-    margin: 2rem 0 1rem;
-  }
-  .main-article :global(h3) {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin: 1.5rem 0 0.75rem;
-  }
-  .main-article :global(p) {
-    margin-bottom: 1.25rem;
-  }
-  .main-article :global(ul), .main-article :global(ol) {
-    margin: 0 0 1.5rem 1.5rem;
-  }
-  .main-article :global(li) {
-    margin-bottom: 0.5rem;
-  }
-  .main-article :global(table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-    font-size: 0.95rem;
-  }
-  .main-article :global(th), .main-article :global(td) {
-    border: 1px solid #cbd5e1;
-    padding: 0.75rem 1rem;
-    text-align: left;
-  }
-  .main-article :global(th) {
-    background: #f1f5f9;
-    font-weight: 700;
-  }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .sidebar-box {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    padding: 1.5rem;
-  }
-  .sidebar-box h3 {
-    font-size: 1.15rem;
-    font-weight: 800;
-    margin-bottom: 0.75rem;
-    color: #0f172a;
-  }
-  .sidebar-box p {
-    font-size: 0.9rem;
-    color: #64748b;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-  .btn-sidebar-wa {
-    display: block;
-    background: #25d366;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.75rem;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .sidebar-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .sidebar-links li {
-    margin-bottom: 0.5rem;
-  }
-  .sidebar-links a {
-    color: #0284c7;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-  }
-  .sidebar-links a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 850px) {
-    .content-container {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    .page-title {
-      font-size: 1.75rem;
-    }
-  }
-</style>

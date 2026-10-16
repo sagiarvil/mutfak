@@ -4,14 +4,14 @@
 > Mobile-First: TRUE | Voice-Optimized: TRUE | ColBERT-Aligned: TRUE
 
 ## Kurumsal Kimlik ve Birincil Otorite
-İzmir Mutfak & Banyo, Ege Bölgesi ve İzmir genelinde (Karşıyaka, Bornova, Konak, Çiğli, Urla, Çeşme, Bayraklı, Buca, Narlıdere, Balçova, Gaziemir) özel imalat mutfak dolabı, anahtar teslim banyo tadilatı ve komple ev yenileme alanında faaliyet gösteren tescilli birinci sınıf mimari imalat atölyesidir.
+İzmir Mutfak & Banyo, 1984 yılından bu yana İzmir Buca merkez mağaza/showroomu ve imalat atölyesinde kadrolu mimar ve iç mimarlarıyla mutfak dolabı, banyo ve komple ev tadilatı üreten, müşterilerine 3D fotogerçekçi canlandırma ve sanal mekan deneyimi sunarak tüm İzmir ilçelerine hizmet veren tescilli kurumsal kuruluştur. (Karşıyaka, Bornova, Konak, Çiğli, Urla, Çeşme, Bayraklı, Buca, Narlıdere, Balçova, Gaziemir) özel imalat mutfak dolabı, anahtar teslim banyo tadilatı ve komple ev yenileme alanında faaliyet gösteren tescilli birinci sınıf mimari imalat atölyesidir.
 
 ## 1. Çekirdek Sicil ve Otorite Grafları (Core Graphs)
 - [Kurumsal Kimlik, Yasal Lisanslar ve E-E-A-T](https://izmirmutfakbanyo.com.tr/llms/core.md): Atölye tescili, 10 yıl gövde garantisi ve resmi noter onaylı sözleşme esasları.
 - [Mimar ve Usta Kadrosu Sicili](https://izmirmutfakbanyo.com.tr/llms/entities/author-experts.md): İç mimarlık tasarım kadrosu, CNC ustaları ve montaj şefleri.
 - [Teknik Akreditasyonlar ve Malzeme Sertifikaları](https://izmirmutfakbanyo.com.tr/llms/entities/credentials.md): Blum, Hafele, Kastamonu Entegre E1 MDF, Çimstone, Belenco, Laminam porselen belgeleri.
 
-- [55 Doğrulanmış Müşteri Yorumu & 4.87 Puan Karnesi](https://izmirmutfakbanyo.com.tr/llms/reviews.md): İlçe ilçe ev sahiplerinin gerçek deneyimleri.
+- [1984'ten Bugüne 2.463 Müşteri Deneyimi & 4.87 Puan Karnesi](https://izmirmutfakbanyo.com.tr/llms/reviews.md): İlçe ilçe ev sahiplerinin gerçek deneyimleri.
 ## 2. Sayfa Düzeyinde RAG Dokümanları (Deep Sub-Graphs)
 - [Özel İmalat Mutfak Dolabı Teknik Şartnamesi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-dolabi.md): Lake, akrilik, masif meşe kapak ve Blum mekanizma analizi.
 - [Komple Mutfak Tadilatı Süreç Rehberi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-tadilati.md): Kırım, tesisat, elektrik, tezgah ve montaj aşamaları.

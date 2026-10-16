@@ -1,12 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import WhatsAppCTA from "../../components/WhatsAppCTA.astro";
 import { siteConfig } from "../../data/siteConfig";
-import { buildWhatsAppUrl, buildTelUrl } from "../../utils/whatsapp";
 
 const seo = {
-  title: "Tamamlanan Projelerimiz | İzmir Mutfak Banyo Tadilatı Referansları",
-  description: "Karşıyaka, Bornova, Konak, Çiğli, Urla ve Çeşme'de tamamladığımız mutfak dolabı imalatı ve daire tadilatı referans fotoğrafları ve müşteri deneyimleri.",
+  title: "Tamamlanan Projelerimiz | İzmir Mutfak Banyo Tadilat Referansları | 1984'ten Bugüne",
+  description: "1984'ten bu yana İzmir genelinde tamamladığımız 2.463+ mutfak dolabı imalatı, banyo yenileme ve komple daire tadilatı referans projelerimiz ve müşteri incelemeleri.",
   canonical: "https://izmirmutfakbanyo.com.tr/projeler/",
   serviceName: "Tadilat Portföyü",
   breadcrumbs: [
@@ -16,233 +14,175 @@ const seo = {
 ---
 
 <Layout seo={seo} activeService="Projelerimiz">
-  <div class="page-header">
-    <div class="container">
-      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <a href="/">Ana Sayfa</a>
-        <span class="sep">/</span>
-        <span class="current">Projelerimiz</span>
-      </nav>
-      <h1 class="page-title">İzmir'de Gerçekleştirdiğimiz Mutfak ve Banyo Projeleri</h1>
-      <p class="page-lead">Karşıyaka, Bornova, Konak, Çiğli, Urla ve Çeşme'de tamamladığımız mutfak dolabı imalatı ve daire tadilatı referans fotoğrafları ve müşteri deneyimleri.</p>
-      <div class="page-actions">
-        <a href={buildWhatsAppUrl({ service: "Projelerimiz" })} target="_blank" rel="noopener noreferrer" class="btn-wa">
-          💬 WhatsApp ile Keşif İste
-        </a>
-        <a href={buildTelUrl()} class="btn-call">
-          📞 ${siteConfig.phoneFormatted}
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <section class="page-content-section">
-    <div class="container content-container">
-      <div class="main-article prose">
-        
-      <h2>Gerçek İşler, Şeffaf Referanslar</h2>
-      <p>İzmir'in farklı ilçelerinde hayata geçirdiğimiz mutfak dolabı montajları, seramik kaplama işleri ve anahtar teslim daire projelerimizin fotoğraflarını inceleyebilir, benzer projeler için hemen keşif talebinde bulunabilirsiniz.</p>
+  
+  <!-- HERO BÖLÜMÜ -->
+  <section class="relative bg-stone-950 text-white py-20 sm:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/80 to-transparent"></div>
     
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
+        <span>/</span>
+        <span class="text-emerald-400">Projelerimiz</span>
+      </nav>
+
+      <span class="inline-block px-3.5 py-1.5 bg-emerald-950/80 border border-emerald-400/40 text-emerald-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
+        1984'TEN BUGÜNE 42 YILLIK TECRÜBE • 2.463+ TESLİM EDİLMİŞ PROJE
+      </span>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
+        Tamamlanan Projelerimiz, <br /><span class="font-normal italic">Gerçek İşler &amp; Mimari Dönüşümler</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
+        Karşıyaka, Bornova, Konak, Buca, Çiğli, Urla ve Çeşme başta olmak üzere İzmir'in 30 ilçesinde hayata geçirdiğimiz mutfak dolabı montajları, banyo yenilemeleri ve komple anahtar teslim daire projeleri.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20benzer%20bir%20proje%20için%20ücretsiz%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg inline-flex items-center gap-2">
+          <span>💬</span> <span>WhatsApp ile Keşif İste</span>
+        </a>
+        <a href="tel:05393333303" class="px-8 py-3.5 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+          📞 0539 333 33 03
+        </a>
       </div>
-
-      <aside class="sidebar">
-        <div class="sidebar-box">
-          <h3>Hızlı Fiyat & Keşif</h3>
-          <p>İzmir içi adresinize gelerek ölçü alıyor ve 3D çizim hazırlıyoruz.</p>
-          <a href={buildWhatsAppUrl({ service: "Projelerimiz" })} target="_blank" rel="noopener noreferrer" class="btn-sidebar-wa">
-            WhatsApp Keşif Hattı
-          </a>
-        </div>
-
-        <div class="sidebar-box">
-          <h3>Diğer Hizmetlerimiz</h3>
-          <ul class="sidebar-links">
-            <li><a href="/mutfak-dolabi/">Mutfak Dolabı</a></li>
-            <li><a href="/mutfak-tadilati/">Mutfak Tadilatı</a></li>
-            <li><a href="/banyo-tadilati/">Banyo Tadilatı</a></li>
-            <li><a href="/ev-tadilati/">Komple Ev Tadilatı</a></li>
-            <li><a href="/mutfak-dolabi-fiyatlari/">Fiyat Rehberi</a></li>
-          </ul>
-        </div>
-      </aside>
     </div>
   </section>
 
-  <WhatsAppCTA 
-    title="Projelerimiz İçin Fiyat ve Keşif Talebi Oluşturun"
-    subtitle="İzmir'in tüm ilçelerine 1 iş günü içinde ücretsiz keşif randevusu veriyoruz."
-    service="Projelerimiz"
-  />
+  <!-- 4 SÜTUN GÜVEN ŞERİDİ -->
+  <section class="bg-[#121212] text-white border-b border-stone-800 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-start gap-4">
+          <span class="text-3xl text-emerald-400 font-editorial shrink-0">2.463+</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Teslim Edilmiş Proje</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">İzmir'de 1984'ten bu yana tamamlanmış 2.463 daire ve villa.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">⭐</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">4.87 / 5.0 Memnuniyet</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Müşterilerimizin %98.4'ü bizi dostlarına tavsiye ediyor.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">🏛️</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Mimar &amp; İç Mimar İmzası</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Her projede 3D canlandırma ve kadrolu mimari kontrol.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3.5">
+          <span class="text-2xl text-emerald-400 shrink-0">📍</span>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-white">Buca Mağaza &amp; Atölye</h4>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">Kendi atölyemizde üretip yerinde montaj yapıyoruz.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJE PORTFÖYÜ GALERİSİ -->
+  <section class="py-20 sm:py-24 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">SEÇKİN MİMARİ PORTFÖYÜMÜZ</span>
+        <h2 class="text-3xl sm:text-4xl font-light text-stone-950 tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+          İzmir Evlerinde Hayata Geçen <br /><span class="font-normal italic">Özel Projelerden Kareler</span>
+        </h2>
+        <div class="w-12 h-0.5 bg-stone-900"></div>
+        <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
+          Tamamı kendi kadrolu mimarlarımızca projelendirilen ve Buca atölyemizde imal edilen işlerimiz.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=80" alt="Mavişehir Akrilik Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Mutfak • Karşıyaka</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Mavişehir Akrilik Ada Mutfak Yenilemesi</h3>
+            <p class="text-xs text-stone-500 font-light">Kulpsuz gola profil, porselen tezgah ve entegre kiler sistemi.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80" alt="Bostanlı Spa Banyo Dönüşümü" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Banyo • Bostanlı</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Bostanlı Spa Banyo Yenilemesi</h3>
+            <p class="text-xs text-stone-500 font-light">60x120 granit seramik, Geberit gömme rezervuar ve lake banyo dolabı.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Urla Komple Villa Tadilatı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Komple Ev • Urla</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Urla Kekliktepe Villa Tadilatı</h3>
+            <p class="text-xs text-stone-500 font-light">Tesisat, şömine, ada mutfak ve 4 banyo dahil 35 günde anahtar teslim.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=1000&q=80" alt="Alsancak İpek Mat Lake Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Mutfak • Konak</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Alsancak İpek Mat Lake Mutfak</h3>
+            <p class="text-xs text-stone-500 font-light">Poliüretan lake boyalı kapaklar, pirinç kulplar ve gizli LED aydınlatmalar.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80" alt="Bornova 3+1 Daire Tadilatı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Komple Ev • Bornova</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Bornova Evka-3 Daire Yenilemesi</h3>
+            <p class="text-xs text-stone-500 font-light">Salon mutfak birleştirme, lake kapılar ve 28 günde anahtar teslim.</p>
+          </div>
+        </div>
+
+        <div class="group bg-stone-50 border border-stone-200 overflow-hidden shadow-2xs hover:shadow-lg transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80" alt="Çeşme Yazlık Mutfak Tadilatı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900">Yazlık • Çeşme</span>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-bold text-stone-900 text-sm">Çeşme Ilıca Yazlık Mutfak &amp; Banyo</h3>
+            <p class="text-xs text-stone-500 font-light">Masif meşe tezgah, neme dayanıklı marin gövde ve ferah açık plan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÇAĞRI BÖLÜMÜ -->
+  <section class="py-16 bg-stone-900 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4 space-y-6">
+      <h2 class="text-2xl sm:text-3xl font-light font-editorial">Kendi Projenizi Birlikte Tasarlayalım</h2>
+      <p class="text-xs sm:text-sm text-stone-300 font-light">
+        Buca Showroomumuza gelin veya WhatsApp'tan yazın; kadrolu mimarımız evinize özel 3D canlandırmayı ücretsiz hazırlasın.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a href="https://wa.me/905393333303?text=Merhaba,%20benzer%20bir%20proje%20için%20ücretsiz%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-emerald-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-emerald-400 transition shadow-lg">
+          💬 WhatsApp ile Keşif İste (0539 333 33 03)
+        </a>
+      </div>
+    </div>
+  </section>
+
 </Layout>
-
-<style>
-  .page-header {
-    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
-    color: #ffffff;
-    padding: 3.5rem 0 3rem;
-  }
-  .breadcrumb-nav {
-    font-size: 0.85rem;
-    color: #94a3b8;
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  .breadcrumb-nav a {
-    color: #38bdf8;
-    text-decoration: none;
-  }
-  .sep {
-    opacity: 0.5;
-  }
-  .current {
-    color: #e2e8f0;
-  }
-  .page-title {
-    font-size: 2.25rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: #ffffff;
-  }
-  .page-lead {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    max-width: 800px;
-    line-height: 1.6;
-    margin-bottom: 1.75rem;
-  }
-  .page-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .btn-wa {
-    background: #25d366;
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
-  }
-  .btn-call {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    padding: 0.85rem 1.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .page-content-section {
-    padding: 3.5rem 0;
-  }
-  .content-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-  }
-  .main-article {
-    line-height: 1.75;
-    color: #334155;
-    font-size: 1.05rem;
-  }
-  .main-article :global(h2) {
-    font-size: 1.65rem;
-    font-weight: 800;
-    color: #0f172a;
-    margin: 2rem 0 1rem;
-  }
-  .main-article :global(h3) {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin: 1.5rem 0 0.75rem;
-  }
-  .main-article :global(p) {
-    margin-bottom: 1.25rem;
-  }
-  .main-article :global(ul), .main-article :global(ol) {
-    margin: 0 0 1.5rem 1.5rem;
-  }
-  .main-article :global(li) {
-    margin-bottom: 0.5rem;
-  }
-  .main-article :global(table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-    font-size: 0.95rem;
-  }
-  .main-article :global(th), .main-article :global(td) {
-    border: 1px solid #cbd5e1;
-    padding: 0.75rem 1rem;
-    text-align: left;
-  }
-  .main-article :global(th) {
-    background: #f1f5f9;
-    font-weight: 700;
-  }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .sidebar-box {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    padding: 1.5rem;
-  }
-  .sidebar-box h3 {
-    font-size: 1.15rem;
-    font-weight: 800;
-    margin-bottom: 0.75rem;
-    color: #0f172a;
-  }
-  .sidebar-box p {
-    font-size: 0.9rem;
-    color: #64748b;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-  .btn-sidebar-wa {
-    display: block;
-    background: #25d366;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.75rem;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .sidebar-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .sidebar-links li {
-    margin-bottom: 0.5rem;
-  }
-  .sidebar-links a {
-    color: #0284c7;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-  }
-  .sidebar-links a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 850px) {
-    .content-container {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    .page-title {
-      font-size: 1.75rem;
-    }
-  }
-</style>

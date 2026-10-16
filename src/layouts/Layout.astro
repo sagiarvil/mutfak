@@ -13,13 +13,35 @@ const { seo, activeService } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth overflow-x-hidden">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, minimum-scale=1, maximum-scale=5" />
+    
+    <!-- Google Fonts & Tailwind CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+              editorial: ['Playfair Display', 'Georgia', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- SEO Meta & Schema.org -->
     <SEO {...seo} />
   </head>
-  <body>
+  <body class="min-h-screen flex flex-col font-sans bg-white text-stone-900 overflow-x-hidden antialiased">
     <Header />
-    <main id="main-content">
+    <main id="main-content" class="flex-1 w-full">
       <slot />
     </main>
     <Footer />
@@ -28,63 +50,18 @@ const { seo, activeService } = Astro.props;
 </html>
 
 <style is:global>
-  /* Modern CSS Reset & Core Web Vitals Optimizasyon */
+  /* Global Modern CSS & Zero Layout Drift */
   *, *::before, *::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
   }
 
-  html {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    color: #1e293b;
-    background-color: #ffffff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    scroll-behavior: smooth;
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.6;
-  }
-
-  main {
-    flex: 1;
-  }
-
-  img, picture, svg, video {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
-  input, button, textarea, select {
-    font: inherit;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-    line-height: 1.25;
-    color: #0f172a;
-  }
-
-  a {
-    color: inherit;
-  }
-
-  /* Erişilebilirlik :focus-visible */
   :focus-visible {
-    outline: 2px solid #0284c7;
+    outline: 2px solid #10b981;
     outline-offset: 2px;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
   }
 </style>
