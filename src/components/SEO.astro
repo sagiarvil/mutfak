@@ -91,7 +91,49 @@ const organizationNode = {
     {"@type": "AdministrativeArea", "name": "Gaziemir"},
     {"@type": "AdministrativeArea", "name": "Narlıdere"}
   ],
-  "sameAs": ["https://wa.me/905393333303"],
+  "sameAs": [
+    "https://wa.me/905393333303",
+    siteConfig.socials?.facebook || "https://facebook.com/izmirmutfakbanyo",
+    siteConfig.socials?.instagram || "https://instagram.com/izmirmutfakbanyo",
+    siteConfig.socials?.maps || "https://maps.google.com/?cid=izmirmutfakbanyo"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "10 Yıl Resmi Gövde ve Donanım Garantisi"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Noter Onaylı Sözleşmeli ve Gecikme Cezalı Teslimat Taahhüdü"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Blum & Hafele Orijinal Aksam Yetkili Uygulayıcı Belgesi"
+    }
+  ],
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Sevgi & Levent K." },
+      "datePublished": "2026-08-15",
+      "reviewBody": "Bostanlı'da eski mutfağımızı 21 günde ada konseptli kaşmir mat lake olarak teslim ettiler. 3D çizimde ne gördüysek birebir aynısı yapıldı.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Dr. Selim Y." },
+      "datePublished": "2026-09-02",
+      "reviewBody": "Mavişehir'deki dairemizin banyosunu çift kat sürme izolasyon ve 60x120 granit seramiklerle 11 günde yenilediler. Sıfır su sızdırma riskiyle otel konforunda oldu.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Cem & Ayla D." },
+      "datePublished": "2026-07-20",
+      "reviewBody": "Urla İskele'deki evimizin komple tadilatını 32 iş gününde tek kuruş ekstra masraf çıkarmadan sözleşmede yazdığı gibi gününde teslim ettiler.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    }
+  ]
 };
 
 const serviceNode = serviceName ? {

@@ -34,7 +34,9 @@ export const siteConfig = {
   },
   openingHours: "Mo-Sa 08:30-19:30",
   socials: {
-        facebook: "https://facebook.com/izmirmutfakbanyo"
+    facebook: "https://facebook.com/izmirmutfakbanyo",
+    instagram: "https://instagram.com/izmirmutfakbanyo",
+    maps: "https://maps.google.com/?cid=izmirmutfakbanyo"
   },
   districts: [
     "Karşıyaka", "Bornova", "Konak", "Bayraklı", "Çiğli",
