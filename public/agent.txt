@@ -1,8 +1,8 @@
 # Agent Protocol Matrix — Cem Yeşilay Mimarlık
-Agent-Card: https://cemyesilay.com.tr/.well-known/agent.json
-MCP-Endpoint: https://cemyesilay.com.tr/mcp
-LLMS-Txt: https://cemyesilay.com.tr/llms.txt
+Agent-Card: https://yesilaymutfak.com/.well-known/agent.json
+MCP-Endpoint: https://yesilaymutfak.com/mcp
+LLMS-Txt: https://yesilaymutfak.com/llms.txt
 WebSub-Hub: https://pubsubhubbub.appspot.com/
-IndexNow: https://cemyesilay.com.tr/9d980417475ac56c8ad72ef2c743e1e5.txt
-Primary-Contact: info@cemyesilay.com.tr
+IndexNow: https://yesilaymutfak.com/9d980417475ac56c8ad72ef2c743e1e5.txt
+Primary-Contact: info@yesilaymutfak.com
 Phone: +905353748329

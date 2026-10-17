@@ -59,14 +59,14 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 # Sitemaps & Image Feeds
-Sitemap: https://cemyesilay.com.tr/sitemap.xml
-Sitemap: https://cemyesilay.com.tr/sitemap-index.xml
-Sitemap: https://cemyesilay.com.tr/sitemap-0.xml
-Sitemap: https://cemyesilay.com.tr/image-sitemap.xml
+Sitemap: https://yesilaymutfak.com/sitemap.xml
+Sitemap: https://yesilaymutfak.com/sitemap-index.xml
+Sitemap: https://yesilaymutfak.com/sitemap-0.xml
+Sitemap: https://yesilaymutfak.com/image-sitemap.xml
 
 # LLMS & Agents (RFC Discovery)
-# LLMs-Txt: https://cemyesilay.com.tr/llms.txt
-# LLMs-Full: https://cemyesilay.com.tr/llms-full.txt
-# Agent-Card: https://cemyesilay.com.tr/.well-known/agent-card.json
-# RSS-Feed: https://cemyesilay.com.tr/feed.xml
-# RSS-Xml: https://cemyesilay.com.tr/rss.xml
+# LLMs-Txt: https://yesilaymutfak.com/llms.txt
+# LLMs-Full: https://yesilaymutfak.com/llms-full.txt
+# Agent-Card: https://yesilaymutfak.com/.well-known/agent-card.json
+# RSS-Feed: https://yesilaymutfak.com/feed.xml
+# RSS-Xml: https://yesilaymutfak.com/rss.xml

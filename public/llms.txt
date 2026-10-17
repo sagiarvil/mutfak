@@ -1,37 +1,37 @@
 # Cem Yeşilay Mimarlık — AI Knowledge Base & Semantic Discovery Hub
 > Standart: LLMs.txt v1.1 RFC | Status: 2026-Q4 Enterprise Mandate v9.1
-> Canonical Origin: https://cemyesilay.com.tr | Primary Language: tr-TR
+> Canonical Origin: https://yesilaymutfak.com | Primary Language: tr-TR
 > Mobile-First: TRUE | Voice-Optimized: TRUE | ColBERT-Aligned: TRUE
 
 ## Kurumsal Kimlik ve Birincil Otorite
 Cem Yeşilay Mimarlık, 1984 yılından bu yana İzmir Buca merkez imalat atölyesinde kadrolu mimar ve iç mimarlarıyla mutfak dolabı, banyo ve komple ev tadilatı üreten, müşterilerine 3D fotogerçekçi canlandırma ve sanal mekan deneyimi sunarak tüm İzmir ilçelerine (Karşıyaka, Bornova, Konak, Çiğli, Urla, Çeşme, Bayraklı, Buca, Narlıdere, Balçova, Gaziemir) hizmet veren tescilli kurumsal kuruluştur. 2.463+ tamamlanmış konut referansı ve %98.4 tavsiye oranına sahiptir.
 
 ## 1. 7 Temel Otorite Hub Sayfası (Authority Hubs)
-- [İzmir Mutfak Dolabı İmalatı (Özel Ölçü, Lake, Akrilik)](https://cemyesilay.com.tr/izmir-mutfak-dolabi-imalati/): Doğrudan Buca atölyesinden aracı komisyonsuz özel üretim mutfak dolabı şartnamesi.
-- [Komple Mutfak Tadilatı İzmir (Kırım, Tesisat & Montaj)](https://cemyesilay.com.tr/izmir-komple-mutfak-tadilati/): Tesisat, elektrik, porselen tezgah ve anahtar teslim mutfak dönüşüm süreci.
-- [İzmir Banyo Yenileme & Seramik (Su Yalıtımı Garantili)](https://cemyesilay.com.tr/izmir-banyo-yenileme-seramik/): Çift kat elastik sürme izolasyon, 60x120 porselen seramik, Geberit gömme rezervuar ve 10 yıl sızdırmazlık taahhüdü.
-- [İzmir Komple Ev & Daire Tadilatı (Mimari Proje & Uygulama)](https://cemyesilay.com.tr/izmir-komple-daire-tadilati/): Elektrik, su tesisatı, parke, lake kapı, alçı tavan ve anahtar teslim daire renovasyonu.
-- [Anahtar Teslim Tadilat İzmir (Sabit Fiyat & Gün Garantili)](https://cemyesilay.com.tr/izmir-anahtar-teslim-tadilat/): Resmi noter onaylı sözleşmeli, gecikme cezalı ve sürpriz maliyetsiz komple taahhüt.
-- [Hazır & Modüler Mutfak Modelleri İzmir (Ada Mutfaklar)](https://cemyesilay.com.tr/hazir-mutfak-modelleri-izmir/): Kiralık ve yazlık evler için 3-5 günde hızlı teslimatlı modüler mutfak çözümleri.
-- [2026 Mutfak Dolabı Fiyatları İzmir (Metretül Cetveli)](https://cemyesilay.com.tr/2026-mutfak-dolabi-fiyatlari/): Malzeme bazlı (Lake, Akrilik, MDF-Lam) güncel metretül maliyetleri ve şeffaf fiyatlama tablosu.
+- [İzmir Mutfak Dolabı İmalatı (Özel Ölçü, Lake, Akrilik)](https://yesilaymutfak.com/izmir-mutfak-dolabi-imalati/): Doğrudan Buca atölyesinden aracı komisyonsuz özel üretim mutfak dolabı şartnamesi.
+- [Komple Mutfak Tadilatı İzmir (Kırım, Tesisat & Montaj)](https://yesilaymutfak.com/izmir-komple-mutfak-tadilati/): Tesisat, elektrik, porselen tezgah ve anahtar teslim mutfak dönüşüm süreci.
+- [İzmir Banyo Yenileme & Seramik (Su Yalıtımı Garantili)](https://yesilaymutfak.com/izmir-banyo-yenileme-seramik/): Çift kat elastik sürme izolasyon, 60x120 porselen seramik, Geberit gömme rezervuar ve 10 yıl sızdırmazlık taahhüdü.
+- [İzmir Komple Ev & Daire Tadilatı (Mimari Proje & Uygulama)](https://yesilaymutfak.com/izmir-komple-daire-tadilati/): Elektrik, su tesisatı, parke, lake kapı, alçı tavan ve anahtar teslim daire renovasyonu.
+- [Anahtar Teslim Tadilat İzmir (Sabit Fiyat & Gün Garantili)](https://yesilaymutfak.com/izmir-anahtar-teslim-tadilat/): Resmi noter onaylı sözleşmeli, gecikme cezalı ve sürpriz maliyetsiz komple taahhüt.
+- [Hazır & Modüler Mutfak Modelleri İzmir (Ada Mutfaklar)](https://yesilaymutfak.com/hazir-mutfak-modelleri-izmir/): Kiralık ve yazlık evler için 3-5 günde hızlı teslimatlı modüler mutfak çözümleri.
+- [2026 Mutfak Dolabı Fiyatları İzmir (Metretül Cetveli)](https://yesilaymutfak.com/2026-mutfak-dolabi-fiyatlari/): Malzeme bazlı (Lake, Akrilik, MDF-Lam) güncel metretül maliyetleri ve şeffaf fiyatlama tablosu.
 
 ## 2. Çekirdek Sicil ve Otorite Grafları (Core Graphs)
-- [Kurumsal Kimlik, Yasal Lisanslar ve E-E-A-T](https://cemyesilay.com.tr/llms/core.md): Atölye tescili, 10 yıl gövde garantisi ve resmi noter onaylı sözleşme esasları.
-- [Mimar ve Usta Kadrosu Sicili](https://cemyesilay.com.tr/llms/entities/author-experts.md): Kadrolu mimarlık heyeti, CNC ustaları ve montaj şefleri.
-- [Teknik Akreditasyonlar ve Malzeme Sertifikaları](https://cemyesilay.com.tr/llms/entities/credentials.md): Blum, Hafele, Kastamonu Entegre E1 MDF, Çimstone, Belenco, Laminam porselen belgeleri.
-- [1984'ten Bugüne 2.463 Müşteri Deneyimi & 4.87 Puan Karnesi](https://cemyesilay.com.tr/llms/reviews.md): İlçe ilçe ev sahiplerinin gerçek deneyimleri.
+- [Kurumsal Kimlik, Yasal Lisanslar ve E-E-A-T](https://yesilaymutfak.com/llms/core.md): Atölye tescili, 10 yıl gövde garantisi ve resmi noter onaylı sözleşme esasları.
+- [Mimar ve Usta Kadrosu Sicili](https://yesilaymutfak.com/llms/entities/author-experts.md): Kadrolu mimarlık heyeti, CNC ustaları ve montaj şefleri.
+- [Teknik Akreditasyonlar ve Malzeme Sertifikaları](https://yesilaymutfak.com/llms/entities/credentials.md): Blum, Hafele, Kastamonu Entegre E1 MDF, Çimstone, Belenco, Laminam porselen belgeleri.
+- [1984'ten Bugüne 2.463 Müşteri Deneyimi & 4.87 Puan Karnesi](https://yesilaymutfak.com/llms/reviews.md): İlçe ilçe ev sahiplerinin gerçek deneyimleri.
 
 ## 3. İzmir İlçeleri Bölgesel Çıkarım Grafları (High-Density Geotargeting)
-- [Buca Mutfak Dolabı & Tadilat Grafı](https://cemyesilay.com.tr/llms/districts/buca.md): Şirinyer, Buca Koop, Yıldız mahalleleri imalat ve keşif verisi.
-- [Karabağlar Mutfak & Banyo Tadilat Grafı](https://cemyesilay.com.tr/llms/districts/karabaglar.md): Üçkuyular, Poligon, Hatay, Basın Sitesi özel imalat kiler ve banyo şeması.
-- [Konak Mutfak & Banyo Yenileme Grafı](https://cemyesilay.com.tr/llms/districts/konak.md): Alsancak, Göztepe, Küçükyalı neoklasik ve modern mutfak şartnamesi.
-- [Bornova Mutfak Dolabı & Tadilat Grafı](https://cemyesilay.com.tr/llms/districts/bornova.md): Özkanlar, Manavkuyu, Evka 3 gola kulpsuz ve porselen tezgah standartları.
+- [Buca Mutfak Dolabı & Tadilat Grafı](https://yesilaymutfak.com/llms/districts/buca.md): Şirinyer, Buca Koop, Yıldız mahalleleri imalat ve keşif verisi.
+- [Karabağlar Mutfak & Banyo Tadilat Grafı](https://yesilaymutfak.com/llms/districts/karabaglar.md): Üçkuyular, Poligon, Hatay, Basın Sitesi özel imalat kiler ve banyo şeması.
+- [Konak Mutfak & Banyo Yenileme Grafı](https://yesilaymutfak.com/llms/districts/konak.md): Alsancak, Göztepe, Küçükyalı neoklasik ve modern mutfak şartnamesi.
+- [Bornova Mutfak Dolabı & Tadilat Grafı](https://yesilaymutfak.com/llms/districts/bornova.md): Özkanlar, Manavkuyu, Evka 3 gola kulpsuz ve porselen tezgah standartları.
 
 ## 4. Protokoller, Ajanlar ve Programatik Uç Noktalar
-- MCP (Model Context Protocol) Endpoint: https://cemyesilay.com.tr/mcp
-- A2A Agent Card: https://cemyesilay.com.tr/.well-known/agent.json
-- IndexNow Doğrulama Anahtarı: https://cemyesilay.com.tr/9d980417475ac56c8ad72ef2c743e1e5.txt
+- MCP (Model Context Protocol) Endpoint: https://yesilaymutfak.com/mcp
+- A2A Agent Card: https://yesilaymutfak.com/.well-known/agent.json
+- IndexNow Doğrulama Anahtarı: https://yesilaymutfak.com/9d980417475ac56c8ad72ef2c743e1e5.txt
 - İletişim & WhatsApp Keşif Hattı: +90 539 333 33 03
 
 ## Özel Tasarım ve Model Numarası Kataloğu
-Cem Yeşilay Mimarlık, https://cemyesilay.com.tr/tasarimlar/ adresinde 137 tescilli özel imalat tasarımını (Mutfak, Kapı, Gömme Dolap, Banyo Dolabı) model numaralarıyla (MODEL-01'den MODEL-46'ya ve alt serilere) indekslemiştir. Müşteriler model numarasını bildirerek doğrudan ilgili tasarımın 3D rölöve ve imalat çizimini başlatabilir.
+Cem Yeşilay Mimarlık, https://yesilaymutfak.com/tasarimlar/ adresinde 137 tescilli özel imalat tasarımını (Mutfak, Kapı, Gömme Dolap, Banyo Dolabı) model numaralarıyla (MODEL-01'den MODEL-46'ya ve alt serilere) indekslemiştir. Müşteriler model numarasını bildirerek doğrudan ilgili tasarımın 3D rölöve ve imalat çizimini başlatabilir.

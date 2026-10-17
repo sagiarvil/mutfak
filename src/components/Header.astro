@@ -4,139 +4,98 @@ import { siteConfig } from "../data/siteConfig";
 
 <header class="sticky top-0 z-50 bg-[#FAF9F6]/95 backdrop-blur-md border-b border-[#E5DFD5] transition-all duration-300 w-full" id="mainHeader">
   
-  <!-- Üst Prestij Bilgi Şeridi (Tek Satır, Kırılmasız) -->
+  <!-- Üst İnce Prestij Şeridi (Tek Satır, Taşmasız) -->
   <div class="bg-[#1A1918] text-[#D8D2C7] text-[11px] font-medium py-1.5 px-4 sm:px-8 border-b border-[#2A2724] overflow-hidden">
-    <div class="w-full max-w-7xl mx-auto flex items-center justify-between gap-4 text-nowrap">
-      <div class="flex items-center gap-3 truncate">
-        <span class="inline-flex items-center gap-2 text-white font-semibold text-[10.5px]">
-          <span class="w-1.5 h-1.5 rounded-full bg-[#8C693E] shrink-0"></span>
+    <div class="w-full max-w-7xl mx-auto flex items-center justify-between gap-3 text-nowrap">
+      <div class="flex items-center gap-2 truncate">
+        <span class="inline-flex items-center gap-1.5 text-white font-semibold text-[10.5px]">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse shrink-0"></span>
           CEM YEŞİLAY LUXURY
         </span>
-        <span class="hidden sm:inline text-[#6E675F]">|</span>
+        <span class="hidden sm:inline text-[#6E675F]">•</span>
         <span class="hidden sm:inline text-[#D8D2C7] text-[10.5px] truncate">
           Adatepe, Özbekistan Cd. no:10/f • Buca / İzmir
         </span>
       </div>
       <div class="flex items-center gap-4 shrink-0 text-xs">
-        <a href="https://www.instagram.com/cemyesilay.luxury" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-1.5 text-[#D8D2C7] hover:text-white transition">
-          <span class="text-[11px] text-[#8C693E]">Instagram:</span> <span class="font-semibold text-white">@cemyesilay.luxury</span>
+        <a href="https://www.instagram.com/cemyesilay.luxury" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1 text-[#D8D2C7] hover:text-white transition">
+          <span class="text-[#8C693E]">Instagram:</span> <span class="font-semibold text-white">@cemyesilay.luxury</span>
         </a>
-        <a href="tel:05353748329" class="text-white hover:text-[#8C693E] font-bold transition flex items-center gap-1.5">
-          <span class="text-[#8C693E]">İletişim:</span> <span class="tracking-wide">0535 374 83 29</span>
+        <a href="tel:05353748329" class="text-white hover:text-[#10B981] font-bold transition flex items-center gap-1">
+          <span class="text-[#8C693E]">Hemen Ara:</span> <span class="tracking-wide">0535 374 83 29</span>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- Ana Menü Çubuğu (Taşmasız, Tek Satır Mimarisi) -->
-  <div class="w-full max-w-7xl mx-auto px-4 sm:px-8 py-2.5 flex items-center justify-between gap-4">
+  <!-- Ana Header Çubuğu (Yalnızca Logo + Arama + WhatsApp + Sandviç Menü) -->
+  <div class="w-full max-w-7xl mx-auto px-4 sm:px-8 py-2.5 flex items-center justify-between gap-3">
     
-    <!-- Sol: Orijinal Şeffaf Logo & Marka -->
+    <!-- Sol: Şeffaf Orijinal Logo ve Marka İsmi -->
     <a href="/" class="flex items-center gap-3 shrink-0 group py-0.5 text-nowrap" aria-label="Cem Yeşilay Luxury Mimarlık">
       <img 
         src="/logo.png" 
         alt="Cem Yeşilay Luxury Logo" 
-        class="h-12 sm:h-13 w-auto object-contain transition duration-300 group-hover:scale-105 shrink-0" 
-        width="54" 
-        height="54" 
+        class="h-11 sm:h-12 w-auto object-contain transition duration-300 group-hover:scale-105 shrink-0" 
+        width="48" 
+        height="48" 
         loading="eager" 
       />
       <div class="flex flex-col justify-center">
-        <span class="font-serif tracking-[0.16em] text-[#1A1918] text-base sm:text-lg font-bold uppercase leading-none group-hover:text-[#1B382F] transition duration-300">
+        <span class="font-serif tracking-[0.14em] text-[#1A1918] text-base sm:text-lg font-bold uppercase leading-none group-hover:text-[#1B382F] transition duration-300">
           CEM YEŞİLAY
         </span>
-        <span class="text-[8.5px] sm:text-[9px] uppercase tracking-[0.3em] text-[#8C693E] font-bold whitespace-nowrap mt-1">
-          LUXURY ARCHITECTURE & ATELIER
+        <span class="text-[8.5px] sm:text-[9px] uppercase tracking-[0.25em] text-[#8C693E] font-bold whitespace-nowrap mt-1">
+          LUXURY ATELIER
         </span>
       </div>
     </a>
 
-    <!-- Orta: Masaüstü Doğrudan Menü -->
-    <nav class="hidden xl:flex items-center gap-7 text-[12px] font-semibold uppercase tracking-[0.14em] text-[#282421] text-nowrap">
-      
-      <!-- Tasarım Koleksiyonu Dropdown -->
-      <div class="relative group py-1">
-        <a href="/tasarimlar/" class="inline-flex items-center gap-1.5 text-[#1A1918] hover:text-[#1B382F] transition">
-          <span>Koleksiyon</span>
-          <span class="px-2 py-0.5 bg-[#1B382F] text-white text-[9.5px] font-bold rounded-xs">137 Model</span>
-          <svg class="w-3 h-3 text-[#6E675F] group-hover:text-[#1B382F] transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </a>
-
-        <div class="absolute top-full left-0 mt-2 w-72 bg-white border border-[#E5DFD5] shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 rounded-xs">
-          <div class="p-2 space-y-1 text-xs">
-            <a href="/tasarimlar/" class="block px-3 py-2.5 font-bold text-[#1B382F] bg-[#F4F1EA] rounded-xs">
-              Tüm Tasarım Arşivi (137 Model)
-            </a>
-            <a href="/tasarimlar/?kategori=mutfak" class="block px-3 py-2 text-[#282421] hover:text-[#1B382F] hover:bg-[#F4F1EA] transition rounded-xs">
-              Mutfak Tasarımları (40 Model)
-            </a>
-            <a href="/tasarimlar/?kategori=kapilar" class="block px-3 py-2 text-[#282421] hover:text-[#1B382F] hover:bg-[#F4F1EA] transition rounded-xs">
-              Masif & Lake Kapılar (39 Model)
-            </a>
-            <a href="/tasarimlar/?kategori=gomme-dolap" class="block px-3 py-2 text-[#282421] hover:text-[#1B382F] hover:bg-[#F4F1EA] transition rounded-xs">
-              Giyinme Odası & Dolap (33 Model)
-            </a>
-            <a href="/tasarimlar/?kategori=banyo" class="block px-3 py-2 text-[#282421] hover:text-[#1B382F] hover:bg-[#F4F1EA] transition rounded-xs">
-              Lüks Banyo Mobilyaları (25 Model)
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <a href="/izmir-mutfak-dolabi-imalati/" class="hover:text-[#1B382F] transition py-1">Mutfak Dolabı</a>
-      <a href="/izmir-komple-mutfak-tadilati/" class="hover:text-[#1B382F] transition py-1">Mutfak Renovasyonu</a>
-      <a href="/izmir-banyo-yenileme-seramik/" class="hover:text-[#1B382F] transition py-1">Lüks Banyo</a>
-      <a href="/izmir-anahtar-teslim-tadilat/" class="hover:text-[#1B382F] transition py-1">Anahtar Teslim</a>
-      <a href="/iletisim/" class="hover:text-[#1B382F] transition py-1">İletişim & Atölye</a>
-    </nav>
-
-    <!-- Sağ: Arama Butonu + Hızlı Keşif + Sandviç Menü -->
+    <!-- Sağ: Arama Butonu + WhatsApp + YENİ NESİL SANDVİÇ MENÜ (Başlıklar Sandviç İçinde) -->
     <div class="flex items-center gap-2.5 shrink-0 text-nowrap">
       
-      <!-- Premium Arama Butonu -->
+      <!-- Hızlı Model Arama Butonu -->
       <a 
         href="/tasarimlar/"
-        class="inline-flex items-center gap-2 px-3 py-2 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-xs text-[#282421] transition shadow-2xs group text-xs font-medium cursor-pointer"
-        title="Modeller Arasında Ara"
+        class="inline-flex items-center gap-2 px-3 py-2 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-full text-[#1D1D1F] transition shadow-2xs group text-xs font-semibold cursor-pointer"
+        title="137 Tasarım Modeli Arasında Ara"
       >
-        <svg class="w-3.5 h-3.5 text-[#8C693E] group-hover:text-[#1B382F] transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-3.5 h-3.5 text-[#1B382F] group-hover:scale-110 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
         </svg>
-        <span class="hidden md:inline text-[11px] uppercase tracking-wider text-[#6E675F]">Model Ara</span>
+        <span class="hidden sm:inline text-[11px] tracking-tight">Model Ara</span>
       </a>
 
-      <!-- WhatsApp / Keşif Butonu (Lüks Forest Green) -->
+      <!-- WhatsApp Keşif Butonu -->
       <a 
         href="https://wa.me/905353748329" 
         target="_blank" 
         rel="noopener noreferrer" 
-        class="hidden sm:inline-flex items-center justify-center px-4 py-2 bg-[#1B382F] hover:bg-[#142922] text-white text-xs font-bold uppercase tracking-wider rounded-xs shadow-xs transition duration-200"
+        class="hidden sm:inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-[#1B382F] hover:bg-[#142922] text-white text-xs font-semibold tracking-tight rounded-full shadow-xs transition duration-200"
       >
-        3D Keşif Al
+        <span>3D Keşif Al</span>
       </a>
 
-      <!-- Yeni Nesil Minimalist Sandviç Menü Butonu -->
+      <!-- YENİ NESİL TAM SANDVİÇ MENÜ BUTONU (Tüm Platformlarda Aktif) -->
       <button 
         type="button" 
         id="btnOpenNav" 
-        class="inline-flex items-center gap-2 px-3 py-2 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-xs text-[#1A1918] transition cursor-pointer shadow-2xs group"
+        class="inline-flex items-center gap-2 px-3.5 py-2 bg-[#1A1918] hover:bg-[#1B382F] text-white rounded-full transition cursor-pointer shadow-xs group"
         aria-label="Menüyü Aç"
       >
         <span class="flex flex-col gap-1 w-4">
-          <span class="w-full h-0.5 bg-[#1A1918] rounded-full transition group-hover:bg-[#1B382F]"></span>
+          <span class="w-full h-0.5 bg-white rounded-full transition group-hover:bg-[#10B981]"></span>
           <span class="w-full h-0.5 bg-[#8C693E] rounded-full transition"></span>
-          <span class="w-full h-0.5 bg-[#1A1918] rounded-full transition group-hover:bg-[#1B382F]"></span>
+          <span class="w-full h-0.5 bg-white rounded-full transition group-hover:bg-[#10B981]"></span>
         </span>
-        <span class="text-xs font-bold uppercase tracking-wider text-[#1A1918]">MENÜ</span>
+        <span class="text-[11.5px] font-bold uppercase tracking-wider text-white">MENÜ</span>
       </button>
 
     </div>
   </div>
 
   <!-- YENİ NESİL SLIDE-OVER SANDVİÇ MENÜ ÇEKMECESİ -->
-  <div id="navDrawerOverlay" class="fixed inset-0 bg-black/40 backdrop-blur-xs z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  <div id="navDrawerOverlay" class="fixed inset-0 bg-black/50 backdrop-blur-xs z-50 hidden opacity-0 transition-opacity duration-300"></div>
 
   <div id="navDrawer" class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-[#FAF9F6] z-50 shadow-2xl border-l border-[#E5DFD5] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between overflow-y-auto">
     
@@ -149,73 +108,76 @@ import { siteConfig } from "../data/siteConfig";
           <span class="text-[9px] uppercase tracking-widest text-[#8C693E] font-semibold block mt-1">LUXURY ATELIER</span>
         </div>
       </div>
-      <button type="button" id="btnCloseNav" class="w-9 h-9 rounded-xs bg-[#FAF9F6] hover:bg-[#F4F1EA] border border-[#E5DFD5] flex items-center justify-center text-[#1A1918] text-base font-bold transition cursor-pointer" aria-label="Menüyü Kapat">
+      <button type="button" id="btnCloseNav" class="w-9 h-9 rounded-full bg-[#FAF9F6] hover:bg-[#F4F1EA] border border-[#E5DFD5] flex items-center justify-center text-[#1A1918] text-base font-bold transition cursor-pointer" aria-label="Menüyü Kapat">
         ✕
       </button>
     </div>
 
-    <!-- Çekmece Menü İçeriği -->
+    <!-- Çekmece Menü İçeriği (Tüm Başlıklar Burada Düzenli) -->
     <div class="p-6 space-y-6 flex-1">
       
-      <!-- Hızlı Model Arama Kutusu -->
+      <!-- Hızlı Model Arama -->
       <form action="/tasarimlar/" method="get" class="relative">
         <input 
           type="text" 
           name="q" 
-          placeholder="Model no veya anahtar kelime ara..." 
-          class="w-full py-2.5 pl-3.5 pr-10 text-xs bg-white border border-[#E5DFD5] rounded-xs text-[#1A1918] placeholder-[#9E968D] focus:outline-none focus:border-[#1B382F]" 
+          placeholder="Model veya kelime ara..." 
+          class="w-full py-2.5 pl-4 pr-10 text-xs bg-white border border-[#E5DFD5] rounded-full text-[#1A1918] placeholder-[#86868B] focus:outline-none focus:border-[#1B382F]" 
         />
-        <button type="submit" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[#8C693E] hover:text-[#1B382F]">
+        <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#1B382F]">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
         </button>
       </form>
 
-      <!-- Tasarım Modelleri Seçkisi -->
-      <div class="p-5 bg-white border border-[#E5DFD5] rounded-xs space-y-3 shadow-2xs">
+      <!-- 137 Model Koleksiyonu Kartı -->
+      <div class="p-5 bg-white border border-[#E5DFD5] rounded-xl space-y-3 shadow-2xs">
         <div class="flex items-center justify-between">
           <span class="text-xs font-bold uppercase tracking-widest text-[#1B382F]">ÖZEL TASARIM ARŞİVİ</span>
-          <span class="px-2 py-0.5 bg-[#1B382F] text-white text-[10px] font-bold rounded-xs">137 Model</span>
+          <span class="px-2 py-0.5 bg-[#10B981] text-white text-[10px] font-bold rounded-full">137 Model</span>
         </div>
-        <p class="text-[11.5px] text-[#6E675F] font-light">
-          Adatepe atölyemizde bizzat ürettiğimiz tescilli modelleri inceleyin.
+        <p class="text-[12px] text-[#6E675F] font-light">
+          Adatepe atölyemizde kişiye özel rölöveyle ürettiğimiz mimari koleksiyon.
         </p>
         <div class="grid grid-cols-2 gap-2 text-xs font-semibold">
-          <a href="/tasarimlar/?kategori=mutfak" class="p-2.5 bg-[#FAF9F6] hover:bg-[#F4F1EA] text-[#1A1918] rounded-xs border border-[#E5DFD5] transition">
+          <a href="/tasarimlar/?kategori=mutfak" class="p-2.5 bg-[#FAF9F6] hover:bg-[#F4F1EA] text-[#1A1918] rounded-lg border border-[#E5DFD5] transition">
             Mutfak (40 Model) →
           </a>
-          <a href="/tasarimlar/?kategori=banyo" class="p-2.5 bg-[#FAF9F6] hover:bg-[#F4F1EA] text-[#1A1918] rounded-xs border border-[#E5DFD5] transition">
+          <a href="/tasarimlar/?kategori=banyo" class="p-2.5 bg-[#FAF9F6] hover:bg-[#F4F1EA] text-[#1A1918] rounded-lg border border-[#E5DFD5] transition">
             Banyo (25 Model) →
           </a>
-          <a href="/tasarimlar/?kategori=kapilar" class="p-2.5 bg-[#FAF9F6] hover:bg-[#F4F1EA] text-[#1A1918] rounded-xs border border-[#E5DFD5] transition">
+          <a href="/tasarimlar/?kategori=kapilar" class="p-2.5 bg-[#FAF9F6] hover:bg-[#F4F1EA] text-[#1A1918] rounded-lg border border-[#E5DFD5] transition">
             Kapılar (39 Model) →
           </a>
-          <a href="/tasarimlar/?kategori=gomme-dolap" class="p-2.5 bg-[#FAF9F6] hover:bg-[#F4F1EA] text-[#1A1918] rounded-xs border border-[#E5DFD5] transition">
+          <a href="/tasarimlar/?kategori=gomme-dolap" class="p-2.5 bg-[#FAF9F6] hover:bg-[#F4F1EA] text-[#1A1918] rounded-lg border border-[#E5DFD5] transition">
             Giyinme (33 Model) →
           </a>
         </div>
-        <a href="/tasarimlar/" class="block text-center py-2.5 bg-[#1B382F] text-white text-xs font-bold uppercase tracking-wider rounded-xs hover:bg-[#142922] transition">
+        <a href="/tasarimlar/" class="block text-center py-2.5 bg-[#1B382F] hover:bg-[#142922] text-white text-xs font-bold uppercase tracking-wider rounded-lg transition">
           Tüm Koleksiyonu Görüntüle (137)
         </a>
       </div>
 
       <!-- Mimari Servisler -->
-      <nav class="space-y-1.5 text-xs font-semibold uppercase tracking-wider text-[#282421]">
-        <a href="/izmir-mutfak-dolabi-imalati/" class="p-3 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-xs flex items-center justify-between transition">
-          <span>Özel Mutfak Dolabı İmalatı</span> <span class="text-[#8C693E]">→</span>
-        </a>
-        <a href="/izmir-komple-mutfak-tadilati/" class="p-3 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-xs flex items-center justify-between transition">
-          <span>Komple Mutfak Renovasyonu</span> <span class="text-[#8C693E]">→</span>
-        </a>
-        <a href="/izmir-banyo-yenileme-seramik/" class="p-3 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-xs flex items-center justify-between transition">
-          <span>Lüks Banyo & Seramik İmalatı</span> <span class="text-[#8C693E]">→</span>
-        </a>
-        <a href="/izmir-anahtar-teslim-tadilat/" class="p-3 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-xs flex items-center justify-between transition">
-          <span>Anahtar Teslim Taahhüt</span> <span class="text-[#8C693E]">→</span>
-        </a>
-        <a href="/iletisim/" class="p-3 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-xs flex items-center justify-between transition">
-          <span>İletişim & Atölye Ziyareti</span> <span class="text-[#8C693E]">→</span>
-        </a>
-      </nav>
+      <div class="space-y-2">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-[#8C693E] px-1 block">MİMARİ HİZMETLERİMİZ</span>
+        <nav class="space-y-1.5 text-xs font-semibold text-[#1D1D1F]">
+          <a href="/izmir-mutfak-dolabi-imalati/" class="p-3 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-lg flex items-center justify-between transition">
+            <span>Özel Ölçü Mutfak Dolabı</span> <span class="text-[#8C693E]">→</span>
+          </a>
+          <a href="/izmir-komple-mutfak-tadilati/" class="p-3 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-lg flex items-center justify-between transition">
+            <span>Komple Mutfak Renovasyonu</span> <span class="text-[#8C693E]">→</span>
+          </a>
+          <a href="/izmir-banyo-yenileme-seramik/" class="p-3 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-lg flex items-center justify-between transition">
+            <span>Lüks Banyo & Seramik İmalatı</span> <span class="text-[#8C693E]">→</span>
+          </a>
+          <a href="/izmir-anahtar-teslim-tadilat/" class="p-3 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-lg flex items-center justify-between transition">
+            <span>Anahtar Teslim Taahhüt</span> <span class="text-[#8C693E]">→</span>
+          </a>
+          <a href="/iletisim/" class="p-3 bg-white hover:bg-[#F4F1EA] border border-[#E5DFD5] rounded-lg flex items-center justify-between transition">
+            <span>İletişim & Atölye Ziyareti</span> <span class="text-[#8C693E]">→</span>
+          </a>
+        </nav>
+      </div>
 
     </div>
 
@@ -226,7 +188,7 @@ import { siteConfig } from "../data/siteConfig";
         <div>📞 <strong>Telefon:</strong> 0535 374 83 29</div>
         <div>📷 <strong>Instagram:</strong> <a href="https://www.instagram.com/cemyesilay.luxury" target="_blank" class="text-[#1B382F] font-bold underline">@cemyesilay.luxury</a></div>
       </div>
-      <a href="https://wa.me/905353748329" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 px-4 bg-[#1B382F] hover:bg-[#142922] text-white text-xs font-bold uppercase tracking-widest rounded-xs shadow-xs transition">
+      <a href="https://wa.me/905353748329" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 px-4 bg-[#1B382F] hover:bg-[#142922] text-white text-xs font-bold uppercase tracking-widest rounded-full shadow-xs transition">
         WhatsApp ile Keşif Randevusu Al
       </a>
     </div>
