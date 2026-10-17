@@ -12,7 +12,7 @@ import { siteConfig } from "../data/siteConfig";
           İzmir Buca İmalat Atölyesi • 42 Yıllık Ustalık
         </span>
         <span class="hidden lg:inline text-stone-600">|</span>
-        <span class="hidden lg:inline text-stone-400 truncate">137+ Tescilli Özel Tasarım &bull; Ücretsiz 3D Mimari Çizim</span>
+        <span class="hidden lg:inline text-stone-400 truncate">137+ Tescilli Tasarım Modeli &bull; Ücretsiz 3D Mimari Çizim</span>
       </div>
       <div class="flex items-center gap-3 shrink-0 text-xs">
         <a href="https://wa.me/905393333303" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline flex items-center gap-1">
@@ -34,47 +34,43 @@ import { siteConfig } from "../data/siteConfig";
       </div>
     </a>
 
-    <!-- Orta: Masaüstü Kolay Erişim Menüsü (Müşterinin Anlayacağı Basit İsimler) -->
+    <!-- Orta: Masaüstü Doğrudan Menü -->
     <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-xs font-bold uppercase tracking-wider text-stone-800">
       <a href="/" class="hover:text-emerald-700 transition py-1">
         Ana Sayfa
       </a>
 
-      <!-- TASARIMLAR & KATEGORİLER (Açılır Dropdown ile Kolay Erişim) -->
+      <!-- TASARIMLAR & YAPILAN İŞLER (137 MODEL) -->
       <div class="relative group py-1">
         <a href="/tasarimlar/" class="inline-flex items-center gap-1.5 text-stone-950 font-black hover:text-[#E8B017] transition border-b-2 border-[#E8B017] pb-0.5">
-          <span>Tasarımlar</span>
-          <span class="px-1.5 py-0.2 bg-[#F9C349] text-stone-950 text-[10px] font-black rounded-xs">137</span>
+          <span>Tasarımlar &amp; Yapılan İşler</span>
+          <span class="px-1.5 py-0.2 bg-[#F9C349] text-stone-950 text-[10px] font-black rounded-xs">137 Model</span>
           <svg class="w-3.5 h-3.5 text-stone-500 group-hover:text-stone-900 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </a>
 
         <!-- Açılır Kategori Menüsü -->
-        <div class="absolute top-full left-0 mt-2 w-64 bg-white border border-stone-200 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+        <div class="absolute top-full left-0 mt-2 w-72 bg-white border border-stone-200 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
           <div class="p-2 space-y-1">
             <a href="/tasarimlar/" class="block px-3 py-2 text-xs font-bold text-stone-900 hover:bg-[#F8F7F3] rounded-xs border-b border-stone-100">
-              Tüm Tasarımlar (137 Model)
+              ✨ Tüm Tasarımlar &amp; Yapılan İşler (137 Model)
             </a>
             <a href="/tasarimlar/?kategori=mutfak" class="block px-3 py-2 text-xs font-medium text-stone-700 hover:bg-[#F8F7F3] hover:text-stone-950 rounded-xs">
-              Mutfak Tasarımları (40 Model)
+              🍳 Mutfak Tasarımları (40 Model)
             </a>
             <a href="/tasarimlar/?kategori=kapilar" class="block px-3 py-2 text-xs font-medium text-stone-700 hover:bg-[#F8F7F3] hover:text-stone-950 rounded-xs">
-              Kapılar (39 Model)
+              🚪 Kapılar (39 Model)
             </a>
             <a href="/tasarimlar/?kategori=gomme-dolap" class="block px-3 py-2 text-xs font-medium text-stone-700 hover:bg-[#F8F7F3] hover:text-stone-950 rounded-xs">
-              Gömme Dolap (33 Model)
+              👔 Gömme Dolap (33 Model)
             </a>
             <a href="/tasarimlar/?kategori=banyo" class="block px-3 py-2 text-xs font-medium text-stone-700 hover:bg-[#F8F7F3] hover:text-stone-950 rounded-xs">
-              Banyo Dolapları (25 Model)
+              🚿 Banyo Dolapları (25 Model)
             </a>
           </div>
         </div>
       </div>
-
-      <a href="/yapilan-isler/" class="hover:text-emerald-700 transition py-1">
-        Yapılan İşler
-      </a>
 
       <a href="/izmir-mutfak-dolabi-imalati/" class="hover:text-emerald-700 transition py-1">
         Hizmetlerimiz
@@ -85,9 +81,8 @@ import { siteConfig } from "../data/siteConfig";
       </a>
     </nav>
 
-    <!-- Sağ: Aksiyon Butonları & Mobil Sandviç Butonu -->
+    <!-- Sağ: Aksiyon Butonları & Mobil Buton -->
     <div class="flex items-center gap-2 sm:gap-3 shrink-0 whitespace-nowrap">
-      <!-- Mobilde ve Masaüstünde Doğrudan Tasarımlar Butonu -->
       <a href="/tasarimlar/" class="inline-flex lg:hidden items-center justify-center px-2.5 py-1.5 bg-[#F9C349] text-stone-950 text-[11px] font-black uppercase tracking-wider rounded-xs shadow-xs">
         Tasarımlar (137)
       </a>
@@ -108,27 +103,27 @@ import { siteConfig } from "../data/siteConfig";
   <div id="mobileMenuDrawer" class="hidden bg-white border-b border-stone-200 px-6 sm:px-8 py-6 space-y-6 shadow-2xl max-h-[85vh] overflow-y-auto">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       
-      <!-- Kolon 1: TASARIMLAR & KATEGORİLER (EN BAŞTA, EN KOLAY ERİŞİM) -->
+      <!-- Kolon 1: TASARIMLAR & YAPILAN İŞLER (137 MODEL KATALOĞU) -->
       <div class="space-y-3 bg-[#F8F7F3] p-4 border border-stone-200">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-black uppercase tracking-widest text-[#1E1810] block">TASARIMLAR (137 MODEL)</span>
-          <span class="px-2 py-0.5 bg-[#F9C349] text-stone-950 text-[10px] font-black rounded-xs">Katalog</span>
+          <span class="text-xs font-black uppercase tracking-widest text-[#1E1810] block">TASARIMLAR &amp; YAPILAN İŞLER</span>
+          <span class="px-2 py-0.5 bg-[#F9C349] text-stone-950 text-[10px] font-black rounded-xs">137 Model</span>
         </div>
         <nav class="flex flex-col space-y-1 text-xs font-bold text-stone-800">
-          <a href="/tasarimlar/" class="py-2 px-3 bg-white hover:bg-stone-100 border border-stone-200 flex items-center justify-between font-black text-stone-950">
-            <span>✨ Tüm Tasarımlar &amp; Yapılan İşler</span> <span>137 →</span>
+          <a href="/tasarimlar/" class="py-2.5 px-3 bg-white hover:bg-stone-100 border border-stone-200 flex items-center justify-between font-black text-stone-950">
+            <span>✨ Tüm Tasarımlar &amp; Yapılan İşler</span> <span>137 Model →</span>
           </a>
           <a href="/tasarimlar/?kategori=mutfak" class="py-2 px-3 hover:bg-white flex items-center justify-between text-stone-700">
-            <span>🍳 Mutfak Tasarımları</span> <span>40 →</span>
+            <span>🍳 Mutfak Tasarımları</span> <span>40 Model →</span>
           </a>
           <a href="/tasarimlar/?kategori=kapilar" class="py-2 px-3 hover:bg-white flex items-center justify-between text-stone-700">
-            <span>🚪 Kapılar</span> <span>39 →</span>
+            <span>🚪 Kapılar</span> <span>39 Model →</span>
           </a>
           <a href="/tasarimlar/?kategori=gomme-dolap" class="py-2 px-3 hover:bg-white flex items-center justify-between text-stone-700">
-            <span>👔 Gömme Dolap</span> <span>33 →</span>
+            <span>👔 Gömme Dolap</span> <span>33 Model →</span>
           </a>
           <a href="/tasarimlar/?kategori=banyo" class="py-2 px-3 hover:bg-white flex items-center justify-between text-stone-700">
-            <span>🚿 Banyo Dolapları</span> <span>25 →</span>
+            <span>🚿 Banyo Dolapları</span> <span>25 Model →</span>
           </a>
         </nav>
       </div>
@@ -152,9 +147,6 @@ import { siteConfig } from "../data/siteConfig";
           <a href="/izmir-komple-daire-tadilati/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
             <span>Komple Daire Tadilatı</span> <span>→</span>
           </a>
-          <a href="/yapilan-isler/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
-            <span>Uygulanan Projeler</span> <span>→</span>
-          </a>
           <a href="/iletisim/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
             <span>İletişim &amp; Adres</span> <span>→</span>
           </a>
@@ -166,7 +158,7 @@ import { siteConfig } from "../data/siteConfig";
         <div class="space-y-2">
           <span class="text-[10px] font-bold uppercase tracking-widest text-stone-900 block">BUCA İMALAT ATÖLYESİ</span>
           <p class="text-xs text-stone-600 font-light leading-relaxed">
-            1984 yılından bu yana İzmir genelinde yerinde ücretsiz rölöve keşfi ve 3D mimari çizim projelendirmesi sunuyoruz.
+            1984 yılından bu yana İzmir genelinde yerinde ücretsiz rölöve keşfi ve 137 tescilli modelimizle 3D mimari çizim sunuyoruz.
           </p>
           <div class="text-xs text-stone-800 space-y-1 pt-2 font-medium">
             <div>📞 <strong>Telefon:</strong> 0539 333 33 03</div>
@@ -175,7 +167,7 @@ import { siteConfig } from "../data/siteConfig";
           </div>
         </div>
         <div class="pt-3">
-          <a href="https://wa.me/905393333303?text=Merhaba,%20tasarımlarınızı%20inceledim.%20Mimarınızla%203D%20çizim%20ve%20keşif%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider rounded-sm shadow-sm hover:bg-emerald-600 transition">
+          <a href="https://wa.me/905393333303?text=Merhaba,%20137%20tasarımınızı%20inceledim.%20Mimarınızla%203D%20çizim%20ve%20keşif%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider rounded-sm shadow-sm hover:bg-emerald-600 transition">
             💬 WhatsApp: 0539 333 33 03
           </a>
         </div>

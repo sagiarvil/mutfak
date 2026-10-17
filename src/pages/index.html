@@ -255,17 +255,17 @@
         <!-- ================================================================= -->
     <!-- ÖZEL İMALAT MİMARİ BAŞLIK VE MENÜ (TEK SIRA, PREMİUM, KOPMASIZ)  -->
     <!-- ================================================================= -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 transition-all duration-300 w-full overflow-hidden" id="mainHeader">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 transition-all duration-300 w-full" id="mainHeader">
   <!-- Üst İnce Bilgi & İletişim Şeridi -->
   <div class="bg-stone-900 text-stone-300 text-[11px] font-medium py-1.5 px-3 sm:px-6 border-b border-stone-800">
     <div class="w-full max-w-7xl mx-auto flex items-center justify-between gap-2">
       <div class="flex items-center gap-2 sm:gap-3 truncate">
         <span class="flex items-center gap-1.5 text-stone-200 whitespace-nowrap">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
-          İzmir Buca İmalat Atölyesi • 1984'ten Bugüne 42 Yıllık Güven
+          İzmir Buca İmalat Atölyesi • 42 Yıllık Ustalık
         </span>
         <span class="hidden lg:inline text-stone-600">|</span>
-        <span class="hidden lg:inline text-stone-400 truncate">Siz Hayal Edin, Mimarımız Çizsin, Biz Hayata Geçirelim</span>
+        <span class="hidden lg:inline text-stone-400 truncate">137+ Tescilli Tasarım Modeli &bull; Ücretsiz 3D Mimari Çizim</span>
       </div>
       <div class="flex items-center gap-3 shrink-0 text-xs">
         <a href="https://wa.me/905393333303" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline flex items-center gap-1">
@@ -275,112 +275,152 @@
     </div>
   </div>
 
-  <!-- Ana Menü Çubuğu (Logo + Butonlar + Sandviç Menü) -->
-  <div class="w-full max-w-7xl mx-auto px-3 sm:px-5 lg:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4">
+  <!-- Ana Menü Çubuğu -->
+  <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
     
     <!-- Sol: Logo & Marka -->
-    <a href="/" class="flex items-center gap-2.5 sm:gap-3.5 shrink-0 group min-w-0 py-0.5" aria-label="Ana Sayfaya Git">
-      <img src="/logo.png" alt="İzmir Mutfak Banyo Tadilat Logo" class="h-11 sm:h-12 md:h-14 w-auto object-contain transition duration-200 group-hover:opacity-90 shrink-0" width="56" height="58" loading="eager" />
-      <div class="flex flex-col min-w-0 justify-center">
+    <a href="/" class="flex items-center gap-3 shrink-0 group py-0.5" aria-label="Ana Sayfaya Git">
+      <img src="/logo.png" alt="İzmir Mutfak Banyo Tadilat Logo" class="h-11 sm:h-12 md:h-13 w-auto object-contain transition duration-200 group-hover:opacity-90 shrink-0" width="56" height="58" loading="eager" />
+      <div class="flex flex-col justify-center">
         <span class="font-black tracking-wider text-stone-950 text-sm sm:text-base md:text-lg uppercase leading-none whitespace-nowrap" style="letter-spacing: 0.08em;">İZMİR MUTFAK &amp; BANYO</span>
-        <span class="text-[9.5px] sm:text-[10.5px] md:text-xs uppercase tracking-[0.22em] text-stone-500 font-bold whitespace-nowrap mt-1">Özel İmalat &amp; Mimari Tasarım</span>
+        <span class="text-[9.5px] sm:text-[10px] uppercase tracking-[0.22em] text-stone-500 font-bold whitespace-nowrap mt-1">Özel İmalat &amp; Mimari Tasarım</span>
       </div>
     </a>
 
-    <!-- Sağ: Aksiyon Butonları & Sandviç Menü Butonu (Tekil Standart) -->
-    <div class="flex items-center gap-2 sm:gap-3 shrink-0 whitespace-nowrap">
-      <a href="/#projelendirme-basvuru" class="inline-flex items-center justify-center px-3.5 sm:px-4 py-2 border border-stone-900 text-stone-900 text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-900 hover:text-white transition duration-200 shrink-0">
-        Mutfağını Tasarla
+    <!-- Orta: Masaüstü Doğrudan Menü -->
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-xs font-bold uppercase tracking-wider text-stone-800">
+      <a href="/" class="hover:text-emerald-700 transition py-1">
+        Ana Sayfa
       </a>
-      <a href="https://wa.me/905393333303?text=Merhaba,%20mimarınız%20ile%20ücretsiz%203D%20çizim%20ve%20keşif%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-3.5 sm:px-4 py-2 bg-stone-900 text-white text-[10.5px] sm:text-xs font-bold uppercase tracking-wider hover:bg-stone-800 transition duration-200 shadow-sm shrink-0">
+
+      <!-- TASARIMLAR & YAPILAN İŞLER (137 MODEL) -->
+      <div class="relative group py-1">
+        <a href="/tasarimlar/" class="inline-flex items-center gap-1.5 text-stone-950 font-black hover:text-[#E8B017] transition border-b-2 border-[#E8B017] pb-0.5">
+          <span>Tasarımlar &amp; Yapılan İşler</span>
+          <span class="px-1.5 py-0.2 bg-[#F9C349] text-stone-950 text-[10px] font-black rounded-xs">137 Model</span>
+          <svg class="w-3.5 h-3.5 text-stone-500 group-hover:text-stone-900 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </a>
+
+        <!-- Açılır Kategori Menüsü -->
+        <div class="absolute top-full left-0 mt-2 w-72 bg-white border border-stone-200 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <div class="p-2 space-y-1">
+            <a href="/tasarimlar/" class="block px-3 py-2 text-xs font-bold text-stone-900 hover:bg-[#F8F7F3] rounded-xs border-b border-stone-100">
+              ✨ Tüm Tasarımlar &amp; Yapılan İşler (137 Model)
+            </a>
+            <a href="/tasarimlar/?kategori=mutfak" class="block px-3 py-2 text-xs font-medium text-stone-700 hover:bg-[#F8F7F3] hover:text-stone-950 rounded-xs">
+              🍳 Mutfak Tasarımları (40 Model)
+            </a>
+            <a href="/tasarimlar/?kategori=kapilar" class="block px-3 py-2 text-xs font-medium text-stone-700 hover:bg-[#F8F7F3] hover:text-stone-950 rounded-xs">
+              🚪 Kapılar (39 Model)
+            </a>
+            <a href="/tasarimlar/?kategori=gomme-dolap" class="block px-3 py-2 text-xs font-medium text-stone-700 hover:bg-[#F8F7F3] hover:text-stone-950 rounded-xs">
+              👔 Gömme Dolap (33 Model)
+            </a>
+            <a href="/tasarimlar/?kategori=banyo" class="block px-3 py-2 text-xs font-medium text-stone-700 hover:bg-[#F8F7F3] hover:text-stone-950 rounded-xs">
+              🚿 Banyo Dolapları (25 Model)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="/izmir-mutfak-dolabi-imalati/" class="hover:text-emerald-700 transition py-1">
+        Hizmetlerimiz
+      </a>
+
+      <a href="/iletisim/" class="hover:text-emerald-700 transition py-1">
+        İletişim &amp; Keşif
+      </a>
+    </nav>
+
+    <!-- Sağ: Aksiyon Butonları & Mobil Buton -->
+    <div class="flex items-center gap-2 sm:gap-3 shrink-0 whitespace-nowrap">
+      <a href="/tasarimlar/" class="inline-flex lg:hidden items-center justify-center px-2.5 py-1.5 bg-[#F9C349] text-stone-950 text-[11px] font-black uppercase tracking-wider rounded-xs shadow-xs">
+        Tasarımlar (137)
+      </a>
+
+      <a href="https://wa.me/905393333303?text=Merhaba,%20mimarınız%20ile%20ücretsiz%203D%20çizim%20ve%20keşif%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center px-4 py-2 bg-stone-900 text-white text-xs font-bold uppercase tracking-wider hover:bg-stone-800 transition duration-200 shadow-sm shrink-0">
         Ücretsiz Keşif
       </a>
-      <!-- Sandviç Menü İkonu -->
-      <button type="button" id="btnToggleMobileMenu" class="p-2 sm:p-2.5 text-stone-900 hover:bg-stone-100 transition rounded shrink-0 cursor-pointer flex items-center gap-2 border border-stone-200" aria-label="Tüm Menüyü ve Kategorileri Aç">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        <span class="hidden sm:inline text-xs font-bold uppercase tracking-widest text-stone-800">MENÜ</span>
+
+      <!-- Sandviç Menü Butonu -->
+      <button type="button" id="btnToggleMobileMenu" class="p-2 sm:p-2.5 text-stone-900 hover:bg-stone-100 transition rounded shrink-0 cursor-pointer flex items-center gap-1.5 border border-stone-200" aria-label="Menüyü Aç">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <span class="text-xs font-bold uppercase tracking-wider text-stone-800">MENÜ</span>
       </button>
     </div>
   </div>
 
-  <!-- Detaylı Mimari Mega Çekmece Menüsü -->
+  <!-- Açılır Mega / Mobil Menü Çekmecesi -->
   <div id="mobileMenuDrawer" class="hidden bg-white border-b border-stone-200 px-6 sm:px-8 py-6 space-y-6 shadow-2xl max-h-[85vh] overflow-y-auto">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       
-      <!-- Kolon 1: Mimari Hizmetlerimiz -->
+      <!-- Kolon 1: TASARIMLAR & YAPILAN İŞLER (137 MODEL KATALOĞU) -->
+      <div class="space-y-3 bg-[#F8F7F3] p-4 border border-stone-200">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-black uppercase tracking-widest text-[#1E1810] block">TASARIMLAR &amp; YAPILAN İŞLER</span>
+          <span class="px-2 py-0.5 bg-[#F9C349] text-stone-950 text-[10px] font-black rounded-xs">137 Model</span>
+        </div>
+        <nav class="flex flex-col space-y-1 text-xs font-bold text-stone-800">
+          <a href="/tasarimlar/" class="py-2.5 px-3 bg-white hover:bg-stone-100 border border-stone-200 flex items-center justify-between font-black text-stone-950">
+            <span>✨ Tüm Tasarımlar &amp; Yapılan İşler</span> <span>137 Model →</span>
+          </a>
+          <a href="/tasarimlar/?kategori=mutfak" class="py-2 px-3 hover:bg-white flex items-center justify-between text-stone-700">
+            <span>🍳 Mutfak Tasarımları</span> <span>40 Model →</span>
+          </a>
+          <a href="/tasarimlar/?kategori=kapilar" class="py-2 px-3 hover:bg-white flex items-center justify-between text-stone-700">
+            <span>🚪 Kapılar</span> <span>39 Model →</span>
+          </a>
+          <a href="/tasarimlar/?kategori=gomme-dolap" class="py-2 px-3 hover:bg-white flex items-center justify-between text-stone-700">
+            <span>👔 Gömme Dolap</span> <span>33 Model →</span>
+          </a>
+          <a href="/tasarimlar/?kategori=banyo" class="py-2 px-3 hover:bg-white flex items-center justify-between text-stone-700">
+            <span>🚿 Banyo Dolapları</span> <span>25 Model →</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Kolon 2: HİZMETLERİMİZ -->
       <div class="space-y-3">
-        <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-700 block">MİMARİ HİZMETLERİMİZ</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-700 block">HİZMETLERİMİZ</span>
         <nav class="flex flex-col space-y-2 text-xs font-bold uppercase tracking-wider text-stone-800">
           <a href="/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
             <span>Ana Sayfa</span> <span>→</span>
           </a>
           <a href="/izmir-mutfak-dolabi-imalati/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
-            <span>Özel Ölçü Mutfak Dolabı İmalatı</span> <span>→</span>
+            <span>Mutfak Dolabı İmalatı</span> <span>→</span>
           </a>
           <a href="/izmir-komple-mutfak-tadilati/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
             <span>Komple Mutfak Tadilatı</span> <span>→</span>
           </a>
           <a href="/izmir-banyo-yenileme-seramik/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
-            <span>Banyo Yenileme &amp; Seramik Döşeme</span> <span>→</span>
+            <span>Banyo Yenileme &amp; Seramik</span> <span>→</span>
           </a>
           <a href="/izmir-komple-daire-tadilati/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
-            <span>Komple Ev &amp; Daire Tadilatı</span> <span>→</span>
-          </a>
-          <a href="/izmir-anahtar-teslim-tadilat/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
-            <span>Anahtar Teslim Sözleşmeli Tadilat</span> <span>→</span>
-          </a>
-          <a href="/hazir-mutfak-modelleri-izmir/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
-            <span>Hazır &amp; Modüler Mutfak Çözümleri</span> <span>→</span>
-          </a>
-          <a href="/2026-mutfak-dolabi-fiyatlari/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
-            <span>2026 Mimari Projelendirme Rehberi</span> <span>→</span>
-          </a>
-        </nav>
-      </div>
-
-      <!-- Kolon 2: Özel Tasarım Koleksiyonları & Yapılan İşler -->
-      <div class="space-y-3">
-        <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-700 block">ÖZEL TASARIM KOLEKSİYONLARI</span>
-        <nav class="flex flex-col space-y-1.5 text-xs font-bold uppercase tracking-wider text-stone-800">
-          <a href="/yapilan-isler/" class="py-2 text-emerald-950 bg-emerald-50 px-2.5 rounded-xs hover:bg-emerald-100 border border-emerald-200 flex items-center justify-between font-black">
-            <span>🏆 Yapılan İşler (72 Referans Proje)</span> <span>→</span>
-          </a>
-          <a href="/modern-mutfak-modelleri/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between text-emerald-800">
-            <span>01. Modern Mutfak Modelleri</span> <span>→</span>
-          </a>
-          <a href="/klasik-country-mutfak-modelleri/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between text-amber-800">
-            <span>02. Klasik &amp; Country Mutfaklar</span> <span>→</span>
-          </a>
-          <a href="/yasam-alanlari-mutfak-modelleri/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between text-blue-800">
-            <span>03. Yaşam Alanları &amp; Ada Mutfak</span> <span>→</span>
-          </a>
-          <a href="/#mimari-surec" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
-            <span>3D Sanal Mekan Deneyimi</span> <span>→</span>
-          </a>
-          <a href="/#musteri-deneyimleri" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
-            <span>2.463 Müşteri Yorumları</span> <span>★</span>
+            <span>Komple Daire Tadilatı</span> <span>→</span>
           </a>
           <a href="/iletisim/" class="py-1.5 hover:text-emerald-700 border-b border-stone-100 flex items-center justify-between">
-            <span>Buca İletişim &amp; Ücretsiz Keşif</span> <span>→</span>
+            <span>İletişim &amp; Adres</span> <span>→</span>
           </a>
         </nav>
       </div>
 
-      <!-- Kolon 3: Buca İmalat Atölyesi & Mimarlık Masası -->
+      <!-- Kolon 3: BUCA İMALAT ATÖLYESİ & WHATSAPP -->
       <div class="space-y-3 bg-stone-50 p-5 border border-stone-200 flex flex-col justify-between">
         <div class="space-y-2">
           <span class="text-[10px] font-bold uppercase tracking-widest text-stone-900 block">BUCA İMALAT ATÖLYESİ</span>
           <p class="text-xs text-stone-600 font-light leading-relaxed">
-            1984'ten bu yana İzmir geneline kadrolu mimarlarımızla yerinde ücretsiz keşif yapıyor; siz hayal edin, mimarımız ile çizim yapalım, biz ortaya çıkaralım mottosuyla çalışıyoruz.
+            1984 yılından bu yana İzmir genelinde yerinde ücretsiz rölöve keşfi ve 137 tescilli modelimizle 3D mimari çizim sunuyoruz.
           </p>
           <div class="text-xs text-stone-800 space-y-1 pt-2 font-medium">
             <div>📞 <strong>Telefon:</strong> 0539 333 33 03</div>
             <div>📍 <strong>Atölye:</strong> Buca / İZMİR</div>
-            <div>📐 <strong>Hizmet:</strong> Ücretsiz Yerinde Rölöve &amp; 3D Mimari Çizim</div>
+            <div>📐 <strong>Hizmet:</strong> Ücretsiz 3D Çizim ve Keşif</div>
           </div>
         </div>
         <div class="pt-3">
-          <a href="https://wa.me/905393333303?text=Merhaba,%20siz%20hayal%20edin%20biz%20ortaya%20çıkaralım%20anlayışınızla%20mimarınızla%203D%20çizim%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider rounded-sm shadow-sm hover:bg-emerald-600 transition">
+          <a href="https://wa.me/905393333303?text=Merhaba,%20137%20tasarımınızı%20inceledim.%20Mimarınızla%203D%20çizim%20ve%20keşif%20randevusu%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider rounded-sm shadow-sm hover:bg-emerald-600 transition">
             💬 WhatsApp: 0539 333 33 03
           </a>
         </div>
@@ -389,6 +429,26 @@
     </div>
   </div>
 </header>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("btnToggleMobileMenu");
+    const drawer = document.getElementById("mobileMenuDrawer");
+    btn?.addEventListener("click", () => {
+      drawer?.classList.toggle("hidden");
+    });
+  });
+</script>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("btnToggleMobileMenu");
+    const drawer = document.getElementById("mobileMenuDrawer");
+    btn?.addEventListener("click", () => {
+      drawer?.classList.toggle("hidden");
+    });
+  });
+</script>
 
     <!-- ================================================================= -->
     <!-- 1. SİNEMATİK MİMARİ VİDEO VE VİTRİN ALANI -->
