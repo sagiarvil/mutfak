@@ -61,7 +61,7 @@ const schemaImageGallery = {
   <!-- Google & LLM Botları İçin Zengin Yapısal Veri (UI Tasarımını Etkilemez) -->
   <script type="application/ld+json" is:inline set:html={JSON.stringify(schemaImageGallery)} />
 
-  <!-- Sayfa Üst Başlığı (Tunç Mutfak Standartı - Sade, Lüks, Sıcak Kırık Beyaz) -->
+  <!-- Sayfa Üst Başlığı (Cem Yeşilay Standartı - Sade, Lüks, Sıcak Kırık Beyaz) -->
   <section class="bg-[#F8F7F3] border-b border-stone-200/80 pt-32 pb-10 px-4 sm:px-6 lg:px-8">
     <div class="max-w-6xl mx-auto text-center space-y-3">
       <h1 class="text-3xl sm:text-5xl font-serif font-bold text-[#1E1810] tracking-tight">
@@ -73,7 +73,7 @@ const schemaImageGallery = {
 
       <!-- Model Numarası & Arama Çubuğu (Genişletilmiş Ticari Arama) -->
       <div class="pt-2 max-w-md mx-auto">
-        <div class="relative flex items-center bg-white border border-stone-300 shadow-xs focus-within:border-[#F9C349] transition">
+        <div class="relative flex items-center bg-white border border-stone-300 shadow-xs focus-within:border-[#B87353] transition">
           <div class="pl-3.5 text-stone-400">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -98,13 +98,13 @@ const schemaImageGallery = {
     </div>
   </section>
 
-  <!-- Kategori Filtreleri (Tunç Mutfak Birebir Filtre Dizilimi) -->
+  <!-- Kategori Filtreleri (Cem Yeşilay Birebir Filtre Dizilimi) -->
   <section class="bg-white border-b border-stone-200 sticky top-16 z-30 shadow-xs">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
       <div class="flex items-center justify-center gap-1 sm:gap-4 flex-wrap text-xs sm:text-sm font-medium">
         <button 
           type="button" 
-          class="filter-btn px-3 py-1.5 transition border-b-2 border-[#F9C349] text-[#1E1810] font-bold" 
+          class="filter-btn px-3 py-1.5 transition border-b-2 border-[#B87353] text-[#1E1810] font-bold" 
           data-filter="all"
         >
           Tümü ({totalCount})
@@ -141,7 +141,7 @@ const schemaImageGallery = {
     </div>
   </section>
 
-  <!-- Tunç Mutfak Birebir KARE KUTULAR Portfolyo Galerisi (1:1 Aspect Ratio & 15px Boşluk) -->
+  <!-- Cem Yeşilay Birebir KARE KUTULAR Portfolyo Galerisi (1:1 Aspect Ratio & 15px Boşluk) -->
   <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-[70vh]">
     <div id="modelsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[15px]">
       {tasarimlar.map((item, idx) => (
@@ -203,12 +203,12 @@ const schemaImageGallery = {
 
           <!-- Sol Üst Köşe Model No Rozeti (Kullanıcı Her Zaman Görsün) -->
           <div class="absolute top-3 left-3 z-10 pointer-events-none">
-            <span class="px-2 py-1 bg-stone-950/85 text-[#F9C349] font-mono text-xs font-bold tracking-wider uppercase border border-[#F9C349]/40 backdrop-blur-xs">
+            <span class="px-2 py-1 bg-stone-950/85 text-[#B87353] font-mono text-xs font-bold tracking-wider uppercase border border-[#B87353]/40 backdrop-blur-xs">
               {item.modelNo}
             </span>
           </div>
 
-          <!-- Tunç Mutfak Birebir Fly Overlay (Hover Durumunda Açılan Amber Katman) -->
+          <!-- Cem Yeşilay Birebir Fly Overlay (Hover Durumunda Açılan Amber Katman) -->
           <figcaption class="absolute inset-0 bg-[#E8B017]/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6 text-stone-950 z-20 pointer-events-none">
             <span class="text-xs font-semibold tracking-widest uppercase text-stone-800 mb-1">
               {item.category}
@@ -244,7 +244,7 @@ const schemaImageGallery = {
     </div>
   </section>
 
-  <!-- Tunç Mutfak Birebir Lightbox Modalı (Tıklanan Modeli Açar) -->
+  <!-- Cem Yeşilay Birebir Lightbox Modalı (Tıklanan Modeli Açar) -->
   <div 
     id="lightboxModal" 
     class="fixed inset-0 z-50 bg-stone-950/90 backdrop-blur-sm hidden items-center justify-center p-4 transition-all duration-300"
@@ -256,7 +256,7 @@ const schemaImageGallery = {
       <!-- Modal Üst Başlık -->
       <div class="p-3.5 bg-stone-900 text-white flex items-center justify-between">
         <div>
-          <span id="modalCategory" class="text-[11px] font-semibold text-[#F9C349] uppercase tracking-wider block"></span>
+          <span id="modalCategory" class="text-[11px] font-semibold text-[#B87353] uppercase tracking-wider block"></span>
           <h3 id="modalTitle" class="text-base sm:text-lg font-serif font-bold text-white"></h3>
         </div>
         <button 
@@ -391,7 +391,7 @@ const schemaImageGallery = {
       if (currentFilter !== "all") {
         filterBtns.forEach(b => {
           if (b.getAttribute("data-filter") === currentFilter) {
-            b.className = "filter-btn px-3 py-1.5 transition border-b-2 border-[#F9C349] text-[#1E1810] font-bold";
+            b.className = "filter-btn px-3 py-1.5 transition border-b-2 border-[#B87353] text-[#1E1810] font-bold";
           } else {
             b.className = "filter-btn px-3 py-1.5 transition border-b-2 border-transparent text-stone-500 hover:text-[#1E1810]";
           }
@@ -465,7 +465,7 @@ const schemaImageGallery = {
         currentFilter = "all";
         filterBtns.forEach(btn => {
           if (btn.getAttribute("data-filter") === "all") {
-            btn.className = "filter-btn px-3 py-1.5 transition border-b-2 border-[#F9C349] text-[#1E1810] font-bold";
+            btn.className = "filter-btn px-3 py-1.5 transition border-b-2 border-[#B87353] text-[#1E1810] font-bold";
           } else {
             btn.className = "filter-btn px-3 py-1.5 transition border-b-2 border-transparent text-stone-500 hover:text-[#1E1810]";
           }
@@ -479,7 +479,7 @@ const schemaImageGallery = {
           filterBtns.forEach(b => {
             b.className = "filter-btn px-3 py-1.5 transition border-b-2 border-transparent text-stone-500 hover:text-[#1E1810]";
           });
-          btn.className = "filter-btn px-3 py-1.5 transition border-b-2 border-[#F9C349] text-[#1E1810] font-bold";
+          btn.className = "filter-btn px-3 py-1.5 transition border-b-2 border-[#B87353] text-[#1E1810] font-bold";
           currentFilter = btn.getAttribute("data-filter");
           filterCards();
         });
