@@ -238,6 +238,12 @@
       font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       -webkit-font-smoothing: antialiased;
     }
+  
+    /* Görsel ve Kart Performans Optimizasyonu (Sayfa Yüklenme Hızı & Core Web Vitals) */
+    .gallery-item, .model-card, article[data-category], .space-y-16 > div {
+      content-visibility: auto;
+      contain-intrinsic-size: 380px;
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col overflow-x-hidden">
@@ -633,7 +639,7 @@
           <!-- Bornova Minimalist Gola Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="modern" data-title="Bornova Minimalist Gola Mutfak" data-specs="Gizli Profil Gola • Parmak İzi Bırakmaz • Blum Tip-On" data-img="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Bornova Minimalist Gola Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Bornova Minimalist Gola Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Gola Kulpsuz</span>
             </div>
             <div class="p-5 space-y-2">
@@ -648,7 +654,7 @@
           <!-- Alsancak Fonksiyonel Şehir Mutfağı -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="modern" data-title="Alsancak Fonksiyonel Şehir Mutfağı" data-specs="Fasulye Köşe Ünitesi • Asansörlü Raf • Belenco Kuvars" data-img="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Alsancak Fonksiyonel Şehir Mutfağı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Alsancak Fonksiyonel Şehir Mutfağı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Akıllı Depolama</span>
             </div>
             <div class="p-5 space-y-2">
@@ -663,7 +669,7 @@
           <!-- Bostanlı Vitrinli LED Aydınlatmalı Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="modern" data-title="Bostanlı Vitrinli LED Aydınlatmalı Mutfak" data-specs="Füme Cam Kapaklar • Entegre Sıcak LED • Çimstone Tezgah" data-img="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Bostanlı Vitrinli LED Aydınlatmalı Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Bostanlı Vitrinli LED Aydınlatmalı Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Füme Cam & Alüminyum</span>
             </div>
             <div class="p-5 space-y-2">
@@ -678,7 +684,7 @@
           <!-- Konak İpek Mat Kaşmir Özel Lake Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="modern" data-title="Konak İpek Mat Kaşmir Özel Lake Mutfak" data-specs="Kaşmir İpek Mat Lake • Şampanya Profil • Hafele Kiler" data-img="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Konak İpek Mat Kaşmir Özel Lake Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Konak İpek Mat Kaşmir Özel Lake Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">İpek Mat Lake</span>
             </div>
             <div class="p-5 space-y-2">
@@ -693,7 +699,7 @@
           <!-- Mavişehir Akrilik Ada Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="modern ada" data-title="Mavişehir Akrilik Ada Mutfak" data-specs="Çizilmez Akrilik • Çimstone Calacatta Kuvars • Blum Tandembox" data-img="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Mavişehir Akrilik Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Mavişehir Akrilik Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Modern Ada</span>
             </div>
             <div class="p-5 space-y-2">
@@ -708,7 +714,7 @@
           <!-- Çeşme Villa Porselen Monoblok Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="modern ada" data-title="Çeşme Villa Porselen Monoblok Mutfak" data-specs="12mm Laminam Porselen Ada • Entegre Eviye • Masif Meşe Bar" data-img="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Çeşme Villa Porselen Monoblok Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Çeşme Villa Porselen Monoblok Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Lüks Ada</span>
             </div>
             <div class="p-5 space-y-2">
@@ -723,7 +729,7 @@
           <!-- Karşıyaka Açık Mutfak & Yemek Adası -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="modern ada" data-title="Karşıyaka Açık Mutfak & Yemek Adası" data-specs="Açık Plan Yemek Adası • Şaraplık Modülü • Porselen Geçiş" data-img="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Karşıyaka Açık Mutfak & Yemek Adası" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Karşıyaka Açık Mutfak & Yemek Adası" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Açık Plan Ada</span>
             </div>
             <div class="p-5 space-y-2">
@@ -738,7 +744,7 @@
           <!-- Bayraklı Antrasit Loft Ada Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="modern ada" data-title="Bayraklı Antrasit Loft Ada Mutfak" data-specs="Mat Antrasit Lake • Çelik Ankastre Modülü • Geniş Hazırlık Adası" data-img="https://images.unsplash.com/photo-1556909172-8c07e4499172?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1556909172-8c07e4499172?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Bayraklı Antrasit Loft Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1556909172-8c07e4499172?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Bayraklı Antrasit Loft Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Endüstriyel Loft</span>
             </div>
             <div class="p-5 space-y-2">
@@ -753,7 +759,7 @@
           <!-- Urla Taş Ev Masif Ahşap Ada Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="country ada" data-title="Urla Taş Ev Masif Ahşap Ada Mutfak" data-specs="Fırınlanmış Doğal Meşe Ada • Taş Evye • Antik Pirinç Kulp" data-img="https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Urla Taş Ev Masif Ahşap Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Urla Taş Ev Masif Ahşap Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Taş Ev & Ada</span>
             </div>
             <div class="p-5 space-y-2">
@@ -768,7 +774,7 @@
           <!-- Alaçatı Geniş Çiftlik Masası & Ada Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="country ada" data-title="Alaçatı Geniş Çiftlik Masası & Ada Mutfak" data-specs="Masif Teak Ada • Seramik Çiftlik Evyesi • Açık Tabaklık" data-img="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Alaçatı Geniş Çiftlik Masası & Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Alaçatı Geniş Çiftlik Masası & Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Çiftlik & Ada</span>
             </div>
             <div class="p-5 space-y-2">
@@ -783,7 +789,7 @@
           <!-- Güzelbahçe Ham Meşe & Lake Ada Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="country ada" data-title="Güzelbahçe Ham Meşe & Lake Ada Mutfak" data-specs="Adaçayı Yeşili Çıtalı Lake • Doğal Meşe Ada Tezgahı • Blum Ray" data-img="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Güzelbahçe Ham Meşe & Lake Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Güzelbahçe Ham Meşe & Lake Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Çıtalı & Ada</span>
             </div>
             <div class="p-5 space-y-2">
@@ -798,7 +804,7 @@
           <!-- Seferihisar Zeytinlik Evi Rustik Ada Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="country ada" data-title="Seferihisar Zeytinlik Evi Rustik Ada Mutfak" data-specs="Doğal Traverten Tezgah • Masif Ahşap Gövde • Rustik Ada Modülü" data-img="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Seferihisar Zeytinlik Evi Rustik Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Seferihisar Zeytinlik Evi Rustik Ada Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Ege Rustik Ada</span>
             </div>
             <div class="p-5 space-y-2">
@@ -813,7 +819,7 @@
           <!-- Göztepe Beyaz Neoklasik Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="country" data-title="Göztepe Beyaz Neoklasik Mutfak" data-specs="İpek Mat Lake Çıtalı • Porselen Kulp • Taç & Işık Bandı" data-img="https://images.unsplash.com/photo-1502005229762-ee1b2da9730f?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1502005229762-ee1b2da9730f?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Göztepe Beyaz Neoklasik Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1502005229762-ee1b2da9730f?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Göztepe Beyaz Neoklasik Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Neoklasik Çıtalı</span>
             </div>
             <div class="p-5 space-y-2">
@@ -828,7 +834,7 @@
           <!-- Foça Retro Ege Country Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="country" data-title="Foça Retro Ege Country Mutfak" data-specs="Açık Mavi Lake • Masif Ceviz Tezgah • Antik Pirinç Detay" data-img="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Foça Retro Ege Country Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Foça Retro Ege Country Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Retro Ege</span>
             </div>
             <div class="p-5 space-y-2">
@@ -843,7 +849,7 @@
           <!-- Narlıdere Fransız Tarzı Lake Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="country" data-title="Narlıdere Fransız Tarzı Lake Mutfak" data-specs="İnce Çıtalı Beyaz Lake • Cam Bölmeli Vitrin • Seramik Kulp" data-img="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Narlıdere Fransız Tarzı Lake Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Narlıdere Fransız Tarzı Lake Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Fransız Country</span>
             </div>
             <div class="p-5 space-y-2">
@@ -858,7 +864,7 @@
           <!-- Karşıyaka Zamansız Klasik Ahşap Mutfak -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="country" data-title="Karşıyaka Zamansız Klasik Ahşap Mutfak" data-specs="Doğal Meşe Kaplama • Özel Çıtalı Profil • Çimstone Tezgah" data-img="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Karşıyaka Zamansız Klasik Ahşap Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Karşıyaka Zamansız Klasik Ahşap Mutfak" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Zamansız Klasik</span>
             </div>
             <div class="p-5 space-y-2">
@@ -873,7 +879,7 @@
           <!-- Bostanlı Modern Lake Banyo & Duşakabin -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="banyo" data-title="Bostanlı Modern Lake Banyo & Duşakabin" data-specs="Yeşil Suya Dayanıklı MDF • 60x120 Granit Seramik • Siyah Profil" data-img="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Bostanlı Modern Lake Banyo & Duşakabin" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Bostanlı Modern Lake Banyo & Duşakabin" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Modern Banyo</span>
             </div>
             <div class="p-5 space-y-2">
@@ -888,7 +894,7 @@
           <!-- Karşıyaka Masif Ahşap Tezgahlı Spa Banyo -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="banyo" data-title="Karşıyaka Masif Ahşap Tezgahlı Spa Banyo" data-specs="Marin Vernikli Masif Meşe • Çanak Lavabo • Gömme Termostatik Batarya" data-img="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Karşıyaka Masif Ahşap Tezgahlı Spa Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Karşıyaka Masif Ahşap Tezgahlı Spa Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Spa & Masif</span>
             </div>
             <div class="p-5 space-y-2">
@@ -903,7 +909,7 @@
           <!-- Mavişehir Dokunmatik LED Aynalı Banyo -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="banyo" data-title="Mavişehir Dokunmatik LED Aynalı Banyo" data-specs="Buğu Önleyici LED Ayna • Gizli Çamaşır Kabini • Asma Klozet" data-img="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Mavişehir Dokunmatik LED Aynalı Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Mavişehir Dokunmatik LED Aynalı Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Akıllı LED Ayna</span>
             </div>
             <div class="p-5 space-y-2">
@@ -918,7 +924,7 @@
           <!-- Bornova Su İzolasyonlu Granit Banyo -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="banyo" data-title="Bornova Su İzolasyonlu Granit Banyo" data-specs="Çift Kat Elastik İzolasyon • Porselen Seramik • Lineer Süzgeç" data-img="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Bornova Su İzolasyonlu Granit Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Bornova Su İzolasyonlu Granit Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Granit & İzolasyon</span>
             </div>
             <div class="p-5 space-y-2">
@@ -933,7 +939,7 @@
           <!-- Konak Küçük Banyo Akıllı Depolama Dolabı -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="banyo" data-title="Konak Küçük Banyo Akıllı Depolama Dolabı" data-specs="Gömme Aynalı Dolap • Deterjan Çekmecesi • Köşe Duşakabin" data-img="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Konak Küçük Banyo Akıllı Depolama Dolabı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Konak Küçük Banyo Akıllı Depolama Dolabı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Kompakt Çözüm</span>
             </div>
             <div class="p-5 space-y-2">
@@ -948,7 +954,7 @@
           <!-- Çeşme Çift Lavabolu Ebeveyn Banyosu -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="banyo" data-title="Çeşme Çift Lavabolu Ebeveyn Banyosu" data-specs="Çift Çanak Lavabo • Geniş Hilton Dolap • Gömme Ankastre Batarya" data-img="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Çeşme Çift Lavabolu Ebeveyn Banyosu" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Çeşme Çift Lavabolu Ebeveyn Banyosu" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Çift Lavabo</span>
             </div>
             <div class="p-5 space-y-2">
@@ -963,7 +969,7 @@
           <!-- Narlıdere Mermer Desenli Hilton Banyo -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="banyo" data-title="Narlıdere Mermer Desenli Hilton Banyo" data-specs="Calacatta Porselen Tezgah • Altın Renk Armatür • Gizli LED Niş Raf" data-img="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Narlıdere Mermer Desenli Hilton Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Narlıdere Mermer Desenli Hilton Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Lüks Porselen</span>
             </div>
             <div class="p-5 space-y-2">
@@ -978,7 +984,7 @@
           <!-- Urla Doğal Taş & Ahşap Rustik Banyo -->
           <div class="model-portfolio-card group bg-white border border-stone-200/90 overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="banyo" data-title="Urla Doğal Taş & Ahşap Rustik Banyo" data-specs="Doğal Taş Kaplama • Tik Ağacı Tezgah • Yağmur Duş Başlığı" data-img="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=75&fm=webp">
             <div class="h-60 overflow-hidden relative bg-stone-100">
-              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Urla Doğal Taş & Ahşap Rustik Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Urla Doğal Taş & Ahşap Rustik Banyo" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-stone-900 shadow-2xs">Ege Rustik Banyo</span>
             </div>
             <div class="p-5 space-y-2">
@@ -1018,7 +1024,7 @@
           <!-- Banyo Kartı 1 -->
           <div class="bg-stone-900/90 border border-stone-800 overflow-hidden group transition duration-300 hover:border-stone-600">
             <div class="h-64 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Modern Lake Banyo Dolabı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Modern Lake Banyo Dolabı" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-4 left-4 px-3 py-1 bg-black/80 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-emerald-300">Özel Lake İmalat</span>
             </div>
             <div class="p-6 space-y-3">
@@ -1036,7 +1042,7 @@
           <!-- Banyo Kartı 2 -->
           <div class="bg-stone-900/90 border border-stone-800 overflow-hidden group transition duration-300 hover:border-stone-600">
             <div class="h-64 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Hemzemin Duş ve Su İzolasyonu" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Hemzemin Duş ve Su İzolasyonu" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-4 left-4 px-3 py-1 bg-black/80 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-emerald-300">Resmi Sözleşmeli</span>
             </div>
             <div class="p-6 space-y-3">
@@ -1054,7 +1060,7 @@
           <!-- Banyo Kartı 3 -->
           <div class="bg-stone-900/90 border border-stone-800 overflow-hidden group transition duration-300 hover:border-stone-600">
             <div class="h-64 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Banyo Seramik ve Vitrifiye" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75&fm=webp" alt="Banyo Seramik ve Vitrifiye" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
               <span class="absolute top-4 left-4 px-3 py-1 bg-black/80 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-emerald-300">Vitrifiye &amp; Armatür</span>
             </div>
             <div class="p-6 space-y-3">
@@ -1321,7 +1327,7 @@
           </div>
           <div class="lg:col-span-6">
             <div class="relative overflow-hidden group">
-              <img src="/media/cinematic/aksesuar_bg.webp" alt="Atölye ve Aksesuar İşçiliği" class="w-full h-80 object-cover transition duration-700 group-hover:scale-105" loading="lazy" / decoding="async">
+              <img src="/media/cinematic/aksesuar_bg.webp" alt="Atölye ve Aksesuar İşçiliği" class="w-full h-80 object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low">
             </div>
           </div>
         </div>
