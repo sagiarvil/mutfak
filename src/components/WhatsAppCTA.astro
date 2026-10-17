@@ -25,7 +25,7 @@ const defaultUrl = buildWhatsAppUrl({ service });
       <p class="cta-subtitle">{subtitle}</p>
     </div>
 
-    <form class="cta-form" action="https://wa.me/905393333303" method="GET" target="_blank" rel="noopener noreferrer">
+    <form class="cta-form" action="https://wa.me/905353748329" method="GET" target="_blank" rel="noopener noreferrer">
       <input type="hidden" name="phone" value={siteConfig.phoneRaw} />
       
       <div class="form-row">
@@ -72,7 +72,7 @@ const defaultUrl = buildWhatsAppUrl({ service });
     const district = districtSelect ? districtSelect.value : 'İzmir';
     const srv = serviceSelect ? serviceSelect.value : 'Mutfak Banyo Tadilatı';
     const text = `Merhaba, ${district} bölgesinde ${srv} hizmetiniz için ücretsiz keşif ve ücretsiz 3D mimari keşif ve çizim randevusu almak istiyorum.`;
-    waBtn.href = `https://wa.me/905393333303?text=${encodeURIComponent(text)}`;
+    waBtn.href = `https://wa.me/905353748329?text=${encodeURIComponent(text)}`;
   }
 
   districtSelect?.addEventListener('change', updateWaLink);
