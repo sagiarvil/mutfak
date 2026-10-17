@@ -3,10 +3,10 @@ import Layout from "../../layouts/Layout.astro";
 import tasarimlar from "../../data/tasarimlarData.json";
 
 const seo = {
-  title: "Tasarımlar & Yapılan İşler | 137+ Özel Tasarım Model Kataloğu | İzmir Mutfak",
-  description: "İzmir Mutfak & Banyo özel imalat atölyemizde üretilen 137+ mutfak tasarımı, banyo dolabı, kapı ve gömme dolap modeli. Model numaranızla anında bulun, 3D mimari keşif isteyin.",
+  title: "Tasarımlar & Yapılan İşler | Özel İmalat Model Kataloğu | İzmir Mutfak",
+  description: "İzmir Mutfak & Banyo atölyemizde üretilen 137 tescilli mutfak, kapı, banyo ve gömme dolap tasarımı. Model numarasıyla arayın, mimarımızla 3D projelendirin.",
   canonical: "https://izmirmutfakbanyo.com.tr/tasarimlar/",
-  serviceName: "Tasarımlar ve Yapılan İşler Model Kataloğu",
+  serviceName: "Tasarımlar ve Yapılan İşler",
   breadcrumbs: [
     { name: "Ana Sayfa", url: "/" },
     { name: "Tasarımlar & Yapılan İşler", url: "/tasarimlar/" }
@@ -21,25 +21,25 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
 ---
 
 <Layout seo={seo}>
-  <!-- Üst Başlık & Hero Banner -->
-  <section class="relative bg-stone-950 text-white pt-32 pb-16 px-4 sm:px-6 lg:px-8 border-b border-stone-800">
-    <div class="max-w-7xl mx-auto text-center space-y-4">
-      <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold tracking-widest uppercase rounded-full">
-        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-        <span>Özel İmalat Koleksiyonu &bull; 137 Model</span>
-      </div>
-      <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white max-w-4xl mx-auto leading-tight">
+  <!-- Sayfa Üst Bölümü (Tunç Mutfak Minimalist Mimari Başlık & Zemin) -->
+  <section class="bg-[#F8F7F3] border-b border-stone-200/80 pt-32 pb-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto text-center space-y-4">
+      <p class="text-xs font-bold tracking-[0.2em] text-[#E8B017] uppercase">
+        Tescilli Portfolyo &bull; 137 Model
+      </p>
+      <h1 class="text-3xl sm:text-5xl font-serif font-bold text-[#1E1810] tracking-tight">
         Tasarımlar &amp; Yapılan İşler
       </h1>
-      <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed">
-        Buca imalat atölyemizde ustalıkla üretilen tescilli mutfak, kapı, banyo ve gömme dolap modellerimiz. 
-        Model numarasını arayarak dilediğiniz tasarımı anında inceleyebilir, mimarımızla 3D projelendirebilirsiniz.
+      <div class="w-16 h-0.5 bg-[#E8B017] mx-auto my-3"></div>
+      <p class="text-sm sm:text-base text-stone-600 max-w-2xl mx-auto font-normal leading-relaxed">
+        İzmir Buca imalat atölyemizde ustalıkla üretilen mutfak, kapı, banyo ve gömme dolap modellerimiz. 
+        Model numarasını arayarak dilediğiniz tasarımı anında inceleyebilir, rölöve ve 3D mimari projelendirme talep edebilirsiniz.
       </p>
 
-      <!-- Canlı Model Arama ve Filtre Kontrol Çubuğu -->
-      <div class="pt-6 max-w-3xl mx-auto">
-        <div class="relative flex items-center shadow-2xl">
-          <div class="absolute left-4 text-stone-400 pointer-events-none">
+      <!-- Minimalist Model No Arama Çubuğu (Orantılı ve Merkezlenmiş) -->
+      <div class="pt-4 max-w-xl mx-auto">
+        <div class="relative flex items-center bg-white border border-stone-300 shadow-sm focus-within:border-[#E8B017] focus-within:ring-1 focus-within:ring-[#E8B017] transition">
+          <div class="pl-4 text-stone-400">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
@@ -47,169 +47,245 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
           <input 
             type="text" 
             id="searchInput" 
-            placeholder="Model No ile hızlı ara (Örn: Model 46, Model 10, Mutfak, Banyo...)" 
-            class="w-full pl-12 pr-28 py-4 bg-stone-900/90 border-2 border-stone-700 rounded-sm text-white placeholder-stone-400 text-sm sm:text-base font-medium focus:outline-hidden focus:border-emerald-500 transition duration-200"
+            placeholder="Model No ile ara (Örn: Model 46, Model 12, Kapı...)" 
+            class="w-full py-3.5 px-3 bg-transparent text-stone-900 placeholder-stone-400 text-sm font-medium focus:outline-none"
             autocomplete="off"
           />
           <button 
             type="button" 
             id="clearSearch" 
-            class="hidden absolute right-3 px-3 py-1.5 bg-stone-800 text-stone-300 text-xs font-bold rounded-xs hover:bg-stone-700 transition"
+            class="hidden pr-4 text-stone-400 hover:text-stone-700 text-xs font-bold tracking-wide uppercase transition"
           >
             Temizle
           </button>
         </div>
-        <p class="text-[11px] text-stone-400 mt-2 text-left sm:text-center">
-          &bull; Müşteri temsilcimize doğrudan model numarasını (Örn: <strong>MODEL-46</strong>) belirterek rölöve ve 3D çizim başlatabilirsiniz.
+        <p class="text-[11px] text-stone-500 mt-2 text-center">
+          &bull; Model numarasını doğrudan mimarımıza ileterek aynı tasarımı evinize özel ölçülendirebilirsiniz.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Kategori Filtre Butonları & Canlı Sayaç -->
-  <section class="bg-stone-100 border-b border-stone-200 sticky top-16 z-30 shadow-xs backdrop-blur-md bg-stone-100/95">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-      <div class="flex items-center justify-between gap-4 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
-        
-        <div class="flex items-center gap-2 text-xs font-bold whitespace-nowrap">
-          <button type="button" class="filter-btn px-4 py-2 bg-stone-900 text-white rounded-xs transition shadow-xs" data-filter="all">
-            Tümü ({totalCount})
-          </button>
-          <button type="button" class="filter-btn px-4 py-2 bg-white text-stone-700 border border-stone-200 hover:bg-stone-50 rounded-xs transition" data-filter="mutfak-tasarimlari">
-            Mutfak ({kitchenCount})
-          </button>
-          <button type="button" class="filter-btn px-4 py-2 bg-white text-stone-700 border border-stone-200 hover:bg-stone-50 rounded-xs transition" data-filter="kapilar">
-            Kapılar ({doorCount})
-          </button>
-          <button type="button" class="filter-btn px-4 py-2 bg-white text-stone-700 border border-stone-200 hover:bg-stone-50 rounded-xs transition" data-filter="gomme-dolap">
-            Gömme Dolap ({wardrobeCount})
-          </button>
-          <button type="button" class="filter-btn px-4 py-2 bg-white text-stone-700 border border-stone-200 hover:bg-stone-50 rounded-xs transition" data-filter="banyo-dolaplari">
-            Banyo Dolapları ({bathCount})
-          </button>
-        </div>
-
-        <div class="hidden md:flex items-center text-xs text-stone-500 font-semibold whitespace-nowrap">
-          Gösterilen: <span id="visibleCount" class="text-emerald-700 font-black ml-1 mr-1">{totalCount}</span> Model
-        </div>
-
+  <!-- Kategori Filtre Butonları (Tunç Mutfak Visual Portfolio Filtre Düzeni) -->
+  <section class="bg-white border-b border-stone-200 sticky top-16 z-30 shadow-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div class="flex items-center justify-center gap-2 sm:gap-6 flex-wrap text-sm">
+        <button 
+          type="button" 
+          class="filter-btn px-4 py-1.5 text-xs sm:text-sm font-medium uppercase tracking-wider transition border-b-2 border-[#E8B017] text-[#1E1810] font-bold" 
+          data-filter="all"
+        >
+          Tümü ({totalCount})
+        </button>
+        <button 
+          type="button" 
+          class="filter-btn px-4 py-1.5 text-xs sm:text-sm font-medium uppercase tracking-wider transition border-b-2 border-transparent text-stone-500 hover:text-[#1E1810]" 
+          data-filter="mutfak-tasarimlari"
+        >
+          Mutfak Tasarımları ({kitchenCount})
+        </button>
+        <button 
+          type="button" 
+          class="filter-btn px-4 py-1.5 text-xs sm:text-sm font-medium uppercase tracking-wider transition border-b-2 border-transparent text-stone-500 hover:text-[#1E1810]" 
+          data-filter="kapilar"
+        >
+          Kapılar ({doorCount})
+        </button>
+        <button 
+          type="button" 
+          class="filter-btn px-4 py-1.5 text-xs sm:text-sm font-medium uppercase tracking-wider transition border-b-2 border-transparent text-stone-500 hover:text-[#1E1810]" 
+          data-filter="gomme-dolap"
+        >
+          Gömme Dolap ({wardrobeCount})
+        </button>
+        <button 
+          type="button" 
+          class="filter-btn px-4 py-1.5 text-xs sm:text-sm font-medium uppercase tracking-wider transition border-b-2 border-transparent text-stone-500 hover:text-[#1E1810]" 
+          data-filter="banyo-dolaplari"
+        >
+          Banyo Dolapları ({bathCount})
+        </button>
       </div>
     </div>
   </section>
 
-  <!-- Model Izgarası (Masonry & Grid Mimarisi) -->
-  <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-[60vh]">
-    <div id="modelsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  <!-- Portfolyo Izgarası (Tunç Mutfak Birebir 3 Kolonlu Simetrik Galeri) -->
+  <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-[70vh]">
+    <div id="modelsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
       {tasarimlar.map((item) => (
         <article 
-          class="model-card group bg-white border border-stone-200 rounded-sm overflow-hidden flex flex-col justify-between hover:shadow-xl hover:border-emerald-500/50 transition duration-300"
+          class="model-card group relative bg-white border border-stone-200/90 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer"
           data-category={item.categorySlug}
           data-model={item.modelNo.toLowerCase()}
           data-title={item.title.toLowerCase()}
+          data-category-name={item.category}
+          data-img={item.img}
+          data-model-id={item.modelNo}
+          data-title-raw={item.title}
         >
-          <!-- Görsel Alanı (Lazy, WebP & En-Boy Korumalı) -->
-          <div>
-            <div class="relative aspect-4/3 bg-stone-100 overflow-hidden">
-              <img 
-                src={item.img} 
-                alt={`${item.title} - ${item.modelNo}`} 
-                loading="lazy" 
-                decoding="async"
-                width="800"
-                height="600"
-                class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition"></div>
-              
-              <!-- Model No Rozeti (Kalıcı & Net Okunabilir) -->
-              <div class="absolute top-3 left-3 flex flex-col gap-1">
-                <span class="px-2.5 py-1 bg-stone-950/90 text-emerald-400 text-xs font-black tracking-widest uppercase rounded-xs border border-emerald-500/40 shadow-sm backdrop-blur-xs">
-                  {item.modelNo}
-                </span>
-                <span class="px-2 py-0.5 bg-stone-900/80 text-white text-[10px] font-bold uppercase rounded-xs tracking-wider">
-                  {item.category}
-                </span>
-              </div>
+          <!-- Görsel Taşıyıcı: Sabit 4:3 Aspect Ratio ile Kusursuz Simetri -->
+          <div class="relative aspect-4/3 w-full bg-stone-100 overflow-hidden">
+            <img 
+              src={item.img} 
+              alt={`${item.title} - ${item.category} - ${item.modelNo}`} 
+              loading="lazy" 
+              decoding="async"
+              width="800"
+              height="600"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-108"
+            />
+
+            <!-- Sol Üst Köşe Model No Rozeti (Kullanıcı Her An Görsün) -->
+            <div class="absolute top-3 left-3 z-10">
+              <span class="px-2.5 py-1 bg-stone-950/85 text-[#F9C349] text-xs font-mono font-bold tracking-wider uppercase border border-[#F9C349]/40 backdrop-blur-xs shadow-xs">
+                {item.modelNo}
+              </span>
             </div>
 
-            <!-- Kart İçeriği -->
-            <div class="p-4 space-y-2">
-              <h2 class="text-sm font-bold text-stone-900 leading-snug group-hover:text-emerald-700 transition">
+            <!-- Tunç Mutfak Visual Portfolio Hover Overlay (Amber / Altın Sarısı) -->
+            <div class="absolute inset-0 bg-[#E8B017]/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6 text-stone-950 z-20 pointer-events-none">
+              <span class="text-xs font-semibold tracking-widest uppercase text-stone-900 mb-1">
+                {item.category}
+              </span>
+              <h2 class="text-2xl font-serif font-bold text-stone-950 leading-tight">
                 {item.title}
               </h2>
-              <p class="text-[11px] text-stone-500 font-medium">
-                {item.specs}
-              </p>
+              <div class="mt-4 inline-flex items-center gap-1.5 px-4 py-2 bg-stone-950 text-white text-xs font-bold uppercase tracking-wider shadow-md">
+                <span>İncele &amp; 3D Çizdir</span>
+                <span>&rarr;</span>
+              </div>
             </div>
           </div>
 
-          <!-- Alt Buton & WhatsApp Bağlantısı (FİYAT ASLA YOK! SADECE MİMARİ İMALAT) -->
-          <div class="p-4 pt-0 border-t border-stone-100 mt-2 flex items-center justify-between gap-2">
-            <span class="text-[10px] uppercase font-extrabold text-stone-400 tracking-wider">
-              Özel Ölçü
+          <!-- Kart Alt Bilgi Şeridi: Dengeli, Simetrik, Minimalist (Tunç Mutfak Standartı) -->
+          <div class="p-4 bg-white flex items-center justify-between border-t border-stone-100">
+            <div>
+              <h3 class="text-base font-serif font-bold text-[#1E1810] group-hover:text-[#E8B017] transition">
+                {item.title}
+              </h3>
+              <p class="text-xs text-stone-500 font-medium tracking-wide">
+                {item.category}
+              </p>
+            </div>
+            <span class="text-xs font-bold font-mono text-stone-400 group-hover:text-stone-800 transition">
+              {item.modelNo}
             </span>
-            <a 
-              href={`https://wa.me/905393333303?text=Merhaba,%20tasarımlar%20sayfanızdaki%20${encodeURIComponent(item.modelNo)}%20(${encodeURIComponent(item.title)})%20modelini%20beğendim.%20Kendi%20evim%20için%20özel%20ölçü%20ve%203D%20çizim%20hakkında%20bilgi%20almak%20istiyorum.`}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase rounded-xs transition shadow-xs"
-              aria-label={`${item.modelNo} Hakkında Bilgi Al`}
-            >
-              <span>Bu Modeli Çizdir</span>
-              <span>&rarr;</span>
-            </a>
           </div>
         </article>
       ))}
     </div>
 
-    <!-- Arama Sonucu Bulunamadı Uyarısı -->
-    <div id="noResults" class="hidden text-center py-20 space-y-4">
-      <div class="w-16 h-16 bg-stone-100 text-stone-400 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">
-        ?
+    <!-- Sonuç Bulunamadı Bildirimi -->
+    <div id="noResults" class="hidden text-center py-24 space-y-4">
+      <div class="w-16 h-16 bg-stone-100 text-stone-400 rounded-full flex items-center justify-center mx-auto text-2xl font-serif">
+        &empty;
       </div>
-      <h3 class="text-lg font-bold text-stone-800">Aradığınız Model Numarası Bulunamadı</h3>
+      <h3 class="text-xl font-serif font-bold text-[#1E1810]">Model Bulunamadı</h3>
       <p class="text-sm text-stone-500 max-w-md mx-auto">
-        Girdiğiniz kriterlere uygun tasarım bulunamadı. Lütfen model numarasını kontrol edin veya filtreleri temizleyin.
+        Aradığınız model numarasıyla eşleşen tasarım bulunamadı. Lütfen numarayı kontrol edin veya filtreleri temizleyin.
       </p>
-      <button type="button" id="resetBtn" class="px-4 py-2 bg-stone-900 text-white text-xs font-bold uppercase rounded-xs hover:bg-stone-800 transition">
-        Tüm Modelleri Göster
+      <button 
+        type="button" 
+        id="resetBtn" 
+        class="px-5 py-2.5 bg-stone-900 text-white text-xs font-bold uppercase tracking-wider hover:bg-stone-800 transition"
+      >
+        Tüm Modelleri Listele
       </button>
     </div>
   </section>
 
-  <!-- Alt Bilgilendirme ve Güven Paneli -->
+  <!-- Tunç Mutfak Lüks Lightbox Modalı (Tıklandığında Açılır) -->
+  <div 
+    id="lightboxModal" 
+    class="fixed inset-0 z-50 bg-stone-950/90 backdrop-blur-sm hidden items-center justify-center p-4 transition-all duration-300"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Model Detay Görseli"
+  >
+    <div class="relative max-w-4xl w-full bg-white rounded-none overflow-hidden shadow-2xl flex flex-col">
+      <!-- Üst Bar: Model Başlığı ve Kapatma -->
+      <div class="p-4 bg-stone-900 text-white flex items-center justify-between">
+        <div>
+          <span id="modalCategory" class="text-xs font-semibold text-[#F9C349] uppercase tracking-wider block"></span>
+          <h3 id="modalTitle" class="text-lg sm:text-xl font-serif font-bold text-white"></h3>
+        </div>
+        <button 
+          type="button" 
+          id="closeModal" 
+          class="text-stone-400 hover:text-white text-2xl font-light w-8 h-8 flex items-center justify-center"
+          aria-label="Kapat"
+        >
+          &times;
+        </button>
+      </div>
+
+      <!-- Büyük Görsel -->
+      <div class="relative bg-stone-950 flex items-center justify-center max-h-[70vh] overflow-hidden">
+        <img id="modalImg" src="" alt="" class="max-h-[70vh] w-auto object-contain mx-auto" />
+      </div>
+
+      <!-- Alt Bar: Model No ve WhatsApp İletişim Aksiyonu -->
+      <div class="p-4 bg-[#F8F7F3] border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="text-center sm:text-left">
+          <span class="text-xs text-stone-500 uppercase tracking-wider block">Referans Model Numarası</span>
+          <span id="modalModelNo" class="text-base font-mono font-bold text-stone-900"></span>
+        </div>
+        <a 
+          id="modalWhatsappBtn" 
+          href="#" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider shadow-sm transition"
+        >
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+          </svg>
+          <span>Bu Modeli 3D Çizdir &amp; Bilgi Al</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kurumsal Güven Bandı -->
   <section class="bg-stone-900 text-white py-12 px-4 sm:px-6 lg:px-8 border-t border-stone-800">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
       <div class="space-y-1">
-        <span class="text-emerald-400 text-2xl font-black">137+ Model</span>
-        <p class="text-xs text-stone-400">Eksiksiz tescilli tasarım arşivi</p>
+        <span class="text-[#E8B017] text-2xl font-serif font-bold">137+ Model</span>
+        <p class="text-xs text-stone-400">Tescilli Tasarım Arşivi</p>
       </div>
       <div class="space-y-1">
-        <span class="text-emerald-400 text-2xl font-black">Model No İle Arama</span>
-        <p class="text-xs text-stone-400">Tek tıkla modeli temsilciye bildirme</p>
+        <span class="text-[#E8B017] text-2xl font-serif font-bold">Model No İle Takip</span>
+        <p class="text-xs text-stone-400">Tek Tıkla Kolay Erişim</p>
       </div>
       <div class="space-y-1">
-        <span class="text-emerald-400 text-2xl font-black">10 Yıl Garanti</span>
-        <p class="text-xs text-stone-400">18mm E1 dayanıklı gövde güvencesi</p>
+        <span class="text-[#E8B017] text-2xl font-serif font-bold">10 Yıl Garanti</span>
+        <p class="text-xs text-stone-400">18mm E1 Gövde Güvencesi</p>
       </div>
       <div class="space-y-1">
-        <span class="text-emerald-400 text-2xl font-black">Ücretsiz 3D Çizim</span>
-        <p class="text-xs text-stone-400">Yerinde lazer rölöve ve sanal deneyim</p>
+        <span class="text-[#E8B017] text-2xl font-serif font-bold">Ücretsiz 3D Rölöve</span>
+        <p class="text-xs text-stone-400">Mekana Özel Çizim</p>
       </div>
     </div>
   </section>
 
-  <!-- Client-Side Hızlı Canlı Arama ve Kategori Filtreleme Scripti -->
+  <!-- Filtreleme, Canlı Arama ve Lightbox Modal Scripti -->
   <script is:inline>
     document.addEventListener("DOMContentLoaded", () => {
       const searchInput = document.getElementById("searchInput");
       const clearBtn = document.getElementById("clearSearch");
       const filterBtns = document.querySelectorAll(".filter-btn");
       const cards = document.querySelectorAll(".model-card");
-      const visibleCountEl = document.getElementById("visibleCount");
       const noResults = document.getElementById("noResults");
       const resetBtn = document.getElementById("resetBtn");
+
+      // Modal elemanları
+      const modal = document.getElementById("lightboxModal");
+      const closeModal = document.getElementById("closeModal");
+      const modalImg = document.getElementById("modalImg");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalCategory = document.getElementById("modalCategory");
+      const modalModelNo = document.getElementById("modalModelNo");
+      const modalWhatsappBtn = document.getElementById("modalWhatsappBtn");
 
       let currentFilter = "all";
       let currentQuery = "";
@@ -232,7 +308,6 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
           }
         });
 
-        if (visibleCountEl) visibleCountEl.textContent = count;
         if (noResults) {
           if (count === 0) {
             noResults.classList.remove("hidden");
@@ -242,7 +317,7 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
         }
       }
 
-      // Search input handler
+      // Canlı arama
       searchInput?.addEventListener("input", (e) => {
         currentQuery = e.target.value.toLowerCase().trim();
         if (clearBtn) {
@@ -255,7 +330,7 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
         filterCards();
       });
 
-      // Clear button
+      // Temizle
       clearBtn?.addEventListener("click", () => {
         if (searchInput) searchInput.value = "";
         currentQuery = "";
@@ -264,7 +339,7 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
         searchInput?.focus();
       });
 
-      // Reset button
+      // Sıfırla
       resetBtn?.addEventListener("click", () => {
         if (searchInput) searchInput.value = "";
         currentQuery = "";
@@ -272,24 +347,68 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
         currentFilter = "all";
         filterBtns.forEach(btn => {
           if (btn.getAttribute("data-filter") === "all") {
-            btn.className = "filter-btn px-4 py-2 bg-stone-900 text-white rounded-xs transition shadow-xs";
+            btn.className = "filter-btn px-4 py-1.5 text-xs sm:text-sm font-medium uppercase tracking-wider transition border-b-2 border-[#E8B017] text-[#1E1810] font-bold";
           } else {
-            btn.className = "filter-btn px-4 py-2 bg-white text-stone-700 border border-stone-200 hover:bg-stone-50 rounded-xs transition";
+            btn.className = "filter-btn px-4 py-1.5 text-xs sm:text-sm font-medium uppercase tracking-wider transition border-b-2 border-transparent text-stone-500 hover:text-[#1E1810]";
           }
         });
         filterCards();
       });
 
-      // Filter category buttons
+      // Filtre Butonları
       filterBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
           filterBtns.forEach(b => {
-            b.className = "filter-btn px-4 py-2 bg-white text-stone-700 border border-stone-200 hover:bg-stone-50 rounded-xs transition";
+            b.className = "filter-btn px-4 py-1.5 text-xs sm:text-sm font-medium uppercase tracking-wider transition border-b-2 border-transparent text-stone-500 hover:text-[#1E1810]";
           });
-          btn.className = "filter-btn px-4 py-2 bg-stone-900 text-white rounded-xs transition shadow-xs";
+          btn.className = "filter-btn px-4 py-1.5 text-xs sm:text-sm font-medium uppercase tracking-wider transition border-b-2 border-[#E8B017] text-[#1E1810] font-bold";
           currentFilter = btn.getAttribute("data-filter");
           filterCards();
         });
+      });
+
+      // Kart Tıklaması ile Lüks Modal Açma
+      cards.forEach((card) => {
+        card.addEventListener("click", () => {
+          const img = card.getAttribute("data-img");
+          const title = card.getAttribute("data-title-raw");
+          const category = card.getAttribute("data-category-name");
+          const modelNo = card.getAttribute("data-model-id");
+
+          if (modalImg) modalImg.src = img;
+          if (modalTitle) modalTitle.textContent = title;
+          if (modalCategory) modalCategory.textContent = category;
+          if (modalModelNo) modalModelNo.textContent = modelNo;
+
+          const whatsappText = encodeURIComponent(`Merhaba, web sitenizdeki ${modelNo} (${title} - ${category}) modelini beğendim. Kendi evim için özel ölçü rölöve ve 3D çizim projelendirmesi hakkında bilgi almak istiyorum.`);
+          if (modalWhatsappBtn) modalWhatsappBtn.href = `https://wa.me/905393333303?text=${whatsappText}`;
+
+          if (modal) {
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+            document.body.style.overflow = "hidden";
+          }
+        });
+      });
+
+      // Modal Kapatma
+      function closeLightbox() {
+        if (modal) {
+          modal.classList.add("hidden");
+          modal.classList.remove("flex");
+          document.body.style.overflow = "";
+        }
+      }
+
+      closeModal?.addEventListener("click", closeLightbox);
+      modal?.addEventListener("click", (e) => {
+        if (e.target === modal) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal && !modal.classList.contains("hidden")) {
+          closeLightbox();
+        }
       });
     });
   </script>
