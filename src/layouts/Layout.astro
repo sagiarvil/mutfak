@@ -3,6 +3,7 @@ import SEO, { type Props as SEOProps } from "../components/SEO.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import WhatsAppFloating from "../components/WhatsAppFloating.astro";
+import ScrollToTop from "../components/ScrollToTop.astro";
 
 export interface Props {
   seo: SEOProps;
@@ -60,6 +61,7 @@ const { seo, activeService } = Astro.props;
     </main>
     <Footer />
     <WhatsAppFloating service={activeService} />
+    <ScrollToTop />
   </body>
 </html>
 

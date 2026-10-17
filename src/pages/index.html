@@ -289,9 +289,7 @@
 
     <!-- Orta: Masaüstü Doğrudan Menü -->
     <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-xs font-bold uppercase tracking-wider text-stone-800">
-      <a href="/" class="hover:text-emerald-700 transition py-1">
-        Ana Sayfa
-      </a>
+
 
       <!-- TASARIMLAR & YAPILAN İŞLER (137 MODEL) -->
       <div class="relative group py-1">
@@ -2686,6 +2684,47 @@
       <span>WhatsApp Keşif Hattı</span>
     </a>
   </aside>
+
+<!-- Başa Dön / Yukarı Çık Butonu -->
+<button 
+  type="button" 
+  id="btnScrollToTop" 
+  class="fixed bottom-22 right-5 sm:bottom-24 sm:right-6 z-40 w-10 h-10 sm:w-11 sm:h-11 bg-stone-900/90 hover:bg-stone-950 text-white rounded-full shadow-xl border border-stone-700/80 flex items-center justify-center opacity-0 pointer-events-none translate-y-3 transition-all duration-300 backdrop-blur-xs cursor-pointer group"
+  aria-label="Sayfanın Başına Çık"
+  title="Sayfa Başına Çık"
+>
+  <svg class="w-5 h-5 text-stone-200 group-hover:text-[#F9C349] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path>
+  </svg>
+</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("btnScrollToTop");
+    if (!btn) return;
+
+    function checkScroll() {
+      if (window.scrollY > 280) {
+        btn.classList.remove("opacity-0", "pointer-events-none", "translate-y-3");
+        btn.classList.add("opacity-100", "pointer-events-auto", "translate-y-0");
+      } else {
+        btn.classList.remove("opacity-100", "pointer-events-auto", "translate-y-0");
+        btn.classList.add("opacity-0", "pointer-events-none", "translate-y-3");
+      }
+    }
+
+    window.addEventListener("scroll", checkScroll, { passive: true });
+    checkScroll();
+
+    btn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  });
+</script>
 </body>
+
 
 </html>
