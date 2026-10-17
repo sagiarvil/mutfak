@@ -59,14 +59,14 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 # Sitemaps & Image Feeds
-Sitemap: https://izmirmutfakbanyo.com.tr/sitemap.xml
-Sitemap: https://izmirmutfakbanyo.com.tr/sitemap-index.xml
-Sitemap: https://izmirmutfakbanyo.com.tr/sitemap-0.xml
-Sitemap: https://izmirmutfakbanyo.com.tr/image-sitemap.xml
+Sitemap: https://cemyesilay.com.tr/sitemap.xml
+Sitemap: https://cemyesilay.com.tr/sitemap-index.xml
+Sitemap: https://cemyesilay.com.tr/sitemap-0.xml
+Sitemap: https://cemyesilay.com.tr/image-sitemap.xml
 
 # LLMS & Agents (RFC Discovery)
-# LLMs-Txt: https://izmirmutfakbanyo.com.tr/llms.txt
-# LLMs-Full: https://izmirmutfakbanyo.com.tr/llms-full.txt
-# Agent-Card: https://izmirmutfakbanyo.com.tr/.well-known/agent-card.json
-# RSS-Feed: https://izmirmutfakbanyo.com.tr/feed.xml
-# RSS-Xml: https://izmirmutfakbanyo.com.tr/rss.xml
+# LLMs-Txt: https://cemyesilay.com.tr/llms.txt
+# LLMs-Full: https://cemyesilay.com.tr/llms-full.txt
+# Agent-Card: https://cemyesilay.com.tr/.well-known/agent-card.json
+# RSS-Feed: https://cemyesilay.com.tr/feed.xml
+# RSS-Xml: https://cemyesilay.com.tr/rss.xml

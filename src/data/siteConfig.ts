@@ -10,98 +10,99 @@ export interface ServiceItem {
 }
 
 export const siteConfig = {
-  name: "İzmir Mutfak Banyo Tadilatı",
-  legalName: "İzmir Mutfak Banyo & Anahtar Teslim Ev Tadilatı",
-  foundingYear: 1984,
-  experienceYears: 42,
-  customerCount: "2.463+",
-  ratingValue: "4.87",
-  domain: "izmirmutfakbanyo.com.tr",
-  siteUrl: "https://izmirmutfakbanyo.com.tr",
+  name: "Cem Yeşilay Mimarlık & Mutfak Banyo",
+  brandShort: "Cem Yeşilay",
+  legalName: "Cem Yeşilay İç Mimarlık, Mutfak Banyo & Anahtar Teslim Renovasyon",
+  foundingYear: 1998,
+  experienceYears: 28,
+  customerCount: "2.850+",
+  ratingValue: "4.96",
+  domain: "cemyesilay.com.tr",
+  siteUrl: "https://cemyesilay.com.tr",
   phoneRaw: "905393333303",
   phoneFormatted: "0539 333 33 03",
   whatsappUrl: "https://wa.me/905393333303",
-    address: {
-    streetAddress: "Buca İmalat Atölyesi & Mimarlık Ofisi",
-    addressLocality: "Buca, İzmir",
+  address: {
+    streetAddress: "Cem Yeşilay Mimarlık & Özel İmalat Atölyesi",
+    addressLocality: "Alsancak & Karşıyaka & Buca Tasarım Stüdyoları",
     addressRegion: "İzmir",
     addressCountry: "TR",
-    postalCode: "35000"
+    postalCode: "35220"
   },
   geo: {
     latitude: "38.4237",
     longitude: "27.1428"
   },
-  openingHours: "Mo-Sa 08:30-19:30",
+  openingHours: "Mo-Sa 09:00-19:30",
   socials: {
-        facebook: "https://facebook.com/izmirmutfakbanyo"
+    instagram: "https://instagram.com/cemyesilaymimarlik",
+    facebook: "https://facebook.com/cemyesilaymimarlik"
   },
   districts: [
-    "Karşıyaka", "Bornova", "Konak", "Bayraklı", "Çiğli",
-    "Buca", "Balçova", "Narlıdere", "Gaziemir", "Karabağlar",
-    "Urla", "Çeşme", "Güzelbahçe", "Menemen", "Torbalı",
-    "Seferihisar", "Menderes", "Kemalpaşa", "Foça", "Aliağa"
+    "Çeşme", "Urla", "Güzelbahçe", "Karşıyaka", "Bostanlı", "Mavişehir",
+    "Alsancak", "Bornova", "Narlıdere", "Balçova", "Bayraklı", "Konak",
+    "Buca", "Gaziemir", "Çiğli", "Seferihisar", "Foça", "Karabağlar"
   ],
   services: [
     {
       id: "mutfak-dolabi",
-      slug: "mutfak-dolabi",
-      title: "İzmir Özel İmalat Mutfak Dolabı & Akrilik / Lake Modeller",
+      slug: "izmir-mutfak-dolabi-imalati",
+      title: "Özel Ölçü Lüks Mutfak Dolabı & Mimari İmalat",
       navTitle: "Mutfak Dolabı",
-      description: "İzmir'de birinci sınıf MDF gövde, Hafele/Blum frenli aksam ve özel ölçü akrilik, lake, membran mutfak dolabı imalatı. 3D projelendirme ve garantili montaj.",
-      shortDesc: "Özel ölçü akrilik, lake, membran ve masif mutfak dolapları.",
-      keywords: ["izmir mutfak dolabı", "özel imalat mutfak dolabı izmir", "akrilik mutfak dolabı", "lake mutfak dolabı izmir", "hazır mutfak izmir"],
-      features: ["%100 MDF Lam Gövde", "Blum / Hafele Frenli Menteşe & Ray", "Ücretsiz 3D Çizim ve Keşif", "10 Yıl Gövde Garantisi"]
+      description: "Kişiye ve mekana özel projelendirilen akrilik, ipek mat lake, doğal meşe ve membran mutfak dolapları. Blum / Hafele frenli gizli mekanizmalar ve 3D sanal simülasyon.",
+      shortDesc: "Özel üretim lake, akrilik ve masif mutfak dolap sistemleri.",
+      keywords: ["cem yeşilay mutfak", "özel imalat mutfak dolabı", "lake mutfak dolabı izmir", "akrilik mutfak", "modern mutfak tasarımı"],
+      features: ["%100 E1 Sertifikalı Nem Dayanımlı MDF-Lam", "Blum / Hafele Entegre Sessiz Frenli Mekanizma", "Fotogerçekçi 3D İç Mimari Render", "10 Yıl Bütünleşik Gövde Garantisi"]
     },
     {
       id: "mutfak-tadilati",
-      slug: "mutfak-tadilati",
-      title: "İzmir Komple Mutfak Tadilatı & Yenileme",
-      navTitle: "Mutfak Tadilatı",
-      description: "Eski mutfağınızı kırım, tesisat, elektrik, seramik, tezgah ve dolap montajıyla A'dan Z'ye yeniliyoruz. Sözleşmeli ve gününde teslim mutfak tadilatı.",
-      shortDesc: "Kırım, tesisat, tezgâh ve dolap montajı dahil anahtar teslim mutfak yenileme.",
-      keywords: ["izmir mutfak tadilatı", "mutfak yenileme izmir", "komple mutfak tadilatı", "mutfak tezgahı izmir", "porselen tezgah izmir"],
-      features: ["Kırım ve Moloz Atımı Dahil", "Su ve Elektrik Altyapı Yenileme", "Çimstone / Belenco / Porselen Tezgâh", "Sözleşmeli Süre Taahhüdü"]
+      slug: "izmir-komple-mutfak-tadilati",
+      title: "Komple Mutfak Renovasyonu & Mimari Dönüşüm",
+      navTitle: "Mutfak Renovasyonu",
+      description: "Eski mutfağınızın kırım, su-elektrik altyapısı, porselen tezgah, zemin seramiği ve mimari aydınlatması dahil sıfırdan lüks dönüşümü.",
+      shortDesc: "Kırım, altyapı, tezgah ve dolap montajıyla anahtar teslim mutfak.",
+      keywords: ["komple mutfak tadilatı", "mutfak yenileme izmir", "porselen mutfak tezgahı", "çimstone tezgah"],
+      features: ["Tozsuz Kırım ve Moloz Tahliyesi", "Almanya Menşeili Tesisat & Kablolama", "Porselen / Kuvars Kompakt Mutfak Tezgahı", "Taahhüt Edilen Günde Eksiksiz Teslim"]
     },
     {
       id: "banyo-tadilati",
-      slug: "banyo-tadilati",
-      title: "İzmir Banyo Tadilatı, Duşakabin & Modern Seramik Uygulama",
-      navTitle: "Banyo Tadilatı",
-      description: "Su yalıtımı garantili banyo tadilatı. Gömme rezervuar, İtalyan duş kanalı, 60x120 granit seramik, banyo dolabı ve temperli cam duşakabin çözümleri.",
-      shortDesc: "Gömme rezervuar, seramik, duşakabin ve su yalıtımlı modern banyo dönüşümü.",
-      keywords: ["izmir banyo tadilatı", "banyo yenileme izmir", "duşakabin izmir", "banyo seramik döşeme", "gömme rezervuar montajı"],
-      features: ["Çift Kat Sürme İzolasyon & Su Yalıtımı", "Geberit / VitrA Gömme Rezervuar", "60x120 Rektifiyeli Granit Seramik", "Özel İmalat Banyo Dolabı"]
+      slug: "izmir-banyo-yenileme-seramik",
+      title: "Lüks Banyo Tasarımı, Islak Hacim İzolasyonu & Seramik",
+      navTitle: "Banyo Yenileme",
+      description: "Çift katman elastik su yalıtımı garantili, 60x120 ve 120x240 büyük ebatlı porselen seramik döşeme, gömme armatürler ve özel üretim asma banyo mobilyaları.",
+      shortDesc: "İtalyan duş kanalı, su yalıtımı ve lüks seramik banyo dönüşümü.",
+      keywords: ["banyo tadilatı izmir", "lüks banyo yenileme", "su yalıtımlı banyo", "banyo dolabı imalatı"],
+      features: ["Çift Kat Sürme Membran Yalıtım Güvencesi", "Geberit / VitrA Gizli Rezervuar & Ankastre Batarya", "Lazer Kesim Rektifiyeli Porselen Seramik", "Neme Mukavim Marin Gövde Banyo Mobilyası"]
     },
     {
       id: "ev-tadilati",
-      slug: "ev-tadilati",
-      title: "İzmir Komple Ev Tadilatı & Daire Yenileme",
-      navTitle: "Komple Ev Tadilatı",
-      description: "Mutfak, banyo, zemin parke, alçı boya, asma tavan ve iç kapılar dahil komple daire yenileme. Tek muhatap, şantiye takibi ve sabit bütçe garantisi.",
-      shortDesc: "Tüm evi tek elden, mimari takip ve sözleşmeli garanti ile yenileyin.",
-      keywords: ["izmir ev tadilatı", "komple daire tadilatı izmir", "anahtar teslim ev yenileme", "izmir tadilat dekorasyon", "daire kırım seramik boya"],
-      features: ["Tek Sözleşme, Tek Muhatap", "Alçı, Asma Tavan & Boya İşleri", "Laminat Parke & Lake İç Kapılar", "Düzenli Fotoğraflı Şantiye Raporu"]
+      slug: "izmir-komple-daire-tadilati",
+      title: "Komple Daire Renovasyonu & Konut Yenileme",
+      navTitle: "Daire Renovasyonu",
+      description: "Mutfaktan banyoya, parkeden tavan aydınlatma senaryolarına ve gizli kapılara kadar dairenizi baştan aşağı iç mimari vizyonla yeniden yaratıyoruz.",
+      shortDesc: "Tek elden, mimari denetimli komple daire yenileme süreci.",
+      keywords: ["komple ev tadilatı", "daire yenileme izmir", "lüks villa tadilatı", "iç mimari anahtar teslim"],
+      features: ["Tek Mimar, Tek Bütçe, Tek Sözleşme", "Gizli Menteşeli Manyetik Lake İç Kapılar", "Akustik Şilte Üstü Derzli Lüks Parke", "Günlük Fotoğraflı Şantiye İzleme Raporu"]
     },
     {
       id: "anahtar-teslim-tadilat",
-      slug: "anahtar-teslim-tadilat",
-      title: "İzmir Anahtar Teslim Tadilat & İç Mimari Uygulama",
+      slug: "izmir-anahtar-teslim-tadilat",
+      title: "Anahtar Teslim Mimari Taahhüt & Villa Renovasyonu",
       navTitle: "Anahtar Teslim",
-      description: "Sürpriz maliyet olmadan, resmi sözleşmeli ve gecikme cezalı anahtar teslim konut ve villa tadilatı. İzmir'in tüm ilçelerine keşif hizmeti.",
-      shortDesc: "Zamanında teslimat ve net bütçe taahhüdü garantili profesyonel anahtar teslim tadilat.",
-      keywords: ["izmir anahtar teslim tadilat", "villa tadilatı izmir", "iç mimarlık izmir tadilat", "lüks ev tadilatı izmir"],
-      features: ["Resmi Sözleşme ve Noter Taahhüt İmkanı", "3D Render Onaylı İmalat", "Mimar Onaylı Sözleşme Garantisi (Ek Maliyet Yok)", "Gecikme Cezalı Teslimat"]
+      description: "Çeşme, Urla ve İzmir genelinde villa ve lüks konutlar için sürpriz bütçe çıkarmayan, noter tasdikli sözleşmeli anahtar teslim mimari renovasyon.",
+      shortDesc: "Zaman ve bütçe garantili anahtar teslim prestijli mimari uygulama.",
+      keywords: ["anahtar teslim tadilat izmir", "çeşme villa tadilatı", "urla taş ev renovasyonu", "lüks mimari taahhüt"],
+      features: ["Sabit Maliyet & Fiyat Artış Muafiyeti Garantisi", "Gecikme Cezalı Hukuki Sözleşme", "Özel Detay İmalat & Şantiye Şefliği", "3 Yıl Koşulsuz Yerinde Teknik Servis"]
     },
     {
-      id: "mutfak-dolabi-mimari çizimlari",
-      slug: "mutfak-dolabi-mimari çizimlari",
-      title: "2026 İzmir Mutfak Dolabı Projelendirme & Mimari Danışmanlık",
-      navTitle: "Mimari Projelendirme",
-      description: "İzmir genelinde kadrolu iç mimarlarımızla yerinde ücretsiz lazer ölçü, 3D sanal mekan çizimi ve hayalinizdeki mutfağa özel şeffaf maliyet projelendirmesi.",
-      shortDesc: "Siz hayal edin biz ortaya çıkaralım: Mimarımızla 3D çizim ve özel proje teklifi.",
-      keywords: ["izmir mutfak dolabı modelleri ve mimari tasarımları", "mutfak dolabı metretül tasarımı 2026", "lake mutfak dolabı ne kadar", "mutfak tadilatı kaç para tutar"],
-      features: ["Kadrolu İç Mimar ile 3D Çizim", "Ücretsiz Yerinde Lazer Ölçü", "Sözleşmeli Sabit Maliyet Taahhüdü", "WhatsApp ile Anında Mimari Görüşme"]
+      id: "tasarim-koleksiyonu",
+      slug: "tasarimlar",
+      title: "Cem Yeşilay Tasarım Arşivi (137 Tescilli Model)",
+      navTitle: "Tasarım Koleksiyonu",
+      description: "Modern, Neoklasik, Country ve Minimalist çizgilerde üretilmiş 137 farklı mutfak, banyo, giyinme odası ve iç kapı modeli.",
+      shortDesc: "137 seçkin modelden oluşan özel mimari koleksiyon.",
+      keywords: ["mutfak modelleri 2026", "modern mutfak tasarımları", "country mutfak izmir", "giyinme odası dolapları"],
+      features: ["137 Özgün Tasarım Prototipi", "Kişiselleştirilebilir Renk ve Malzeme Skalası", "Ücretsiz Yerinde Lazerli Keşif", "İç Mimarlık Ofisinde Canlı Numune Sunumu"]
     }
   ]
 };

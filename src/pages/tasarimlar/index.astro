@@ -4,8 +4,8 @@ import tasarimlar from "../../data/tasarimlarData.json";
 
 const seo = {
   title: "Tasarımlar & Yapılan İşler | 137 Özel İmalat Model Kataloğu | İzmir Mutfak",
-  description: "İzmir Mutfak & Banyo atölyemizde üretilen 137 tescilli mutfak dolabı, lake iç oda kapısı, banyo dolabı ve gömme dolap modeli. Model numarası veya tarz arayarak 3D keşif isteyin.",
-  canonical: "https://izmirmutfakbanyo.com.tr/tasarimlar/",
+  description: "Cem Yeşilay Mimarlık atölyemizde üretilen 137 tescilli mutfak dolabı, lake iç oda kapısı, banyo dolabı ve gömme dolap modeli. Model numarası veya tarz arayarak 3D keşif isteyin.",
+  canonical: "https://cemyesilay.com.tr/tasarimlar/",
   serviceName: "Tasarımlar ve Yapılan İşler Model Kataloğu",
   breadcrumbs: [
     { name: "Ana Sayfa", url: "/" },
@@ -23,13 +23,13 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
 const schemaImageGallery = {
   "@context": "https://schema.org",
   "@type": "ImageGallery",
-  "name": "İzmir Mutfak & Banyo Özel Tasarım ve İmalat Model Kataloğu",
+  "name": "Cem Yeşilay Mimarlık Özel Tasarım ve İmalat Model Kataloğu",
   "description": "Buca imalat atölyemizde üretilen 137 tescilli mutfak dolabı, lake iç oda kapısı, banyo dolabı ve gömme dolap modeli.",
-  "url": "https://izmirmutfakbanyo.com.tr/tasarimlar/",
+  "url": "https://cemyesilay.com.tr/tasarimlar/",
   "publisher": {
     "@type": "HomeAndConstructionBusiness",
-    "name": "İzmir Mutfak & Banyo",
-    "url": "https://izmirmutfakbanyo.com.tr",
+    "name": "Cem Yeşilay Mimarlık",
+    "url": "https://cemyesilay.com.tr",
     "telephone": "+905393333303",
     "areaServed": "İzmir",
     "address": {
@@ -46,12 +46,12 @@ const schemaImageGallery = {
     "caption": item.altText,
     "description": item.aiDescription,
     "keywords": item.keywords.join(", "),
-    "contentUrl": `https://izmirmutfakbanyo.com.tr${item.img}`,
-    "thumbnailUrl": `https://izmirmutfakbanyo.com.tr${item.img}`,
+    "contentUrl": `https://cemyesilay.com.tr${item.img}`,
+    "thumbnailUrl": `https://cemyesilay.com.tr${item.img}`,
     "representativeOfPage": false,
     "creator": {
       "@type": "Organization",
-      "name": "İzmir Mutfak & Banyo"
+      "name": "Cem Yeşilay Mimarlık"
     }
   }))
 };

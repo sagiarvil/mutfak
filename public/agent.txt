@@ -1,8 +1,8 @@
-# Agent Protocol Matrix — İzmir Mutfak & Banyo
-Agent-Card: https://izmirmutfakbanyo.com.tr/.well-known/agent.json
-MCP-Endpoint: https://izmirmutfakbanyo.com.tr/mcp
-LLMS-Txt: https://izmirmutfakbanyo.com.tr/llms.txt
+# Agent Protocol Matrix — Cem Yeşilay Mimarlık
+Agent-Card: https://cemyesilay.com.tr/.well-known/agent.json
+MCP-Endpoint: https://cemyesilay.com.tr/mcp
+LLMS-Txt: https://cemyesilay.com.tr/llms.txt
 WebSub-Hub: https://pubsubhubbub.appspot.com/
-IndexNow: https://izmirmutfakbanyo.com.tr/9d980417475ac56c8ad72ef2c743e1e5.txt
-Primary-Contact: info@izmirmutfakbanyo.com.tr
+IndexNow: https://cemyesilay.com.tr/9d980417475ac56c8ad72ef2c743e1e5.txt
+Primary-Contact: info@cemyesilay.com.tr
 Phone: +905393333303

@@ -19,34 +19,52 @@ const { seo, activeService } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, minimum-scale=1, maximum-scale=5" />
     
-    
     <link rel="dns-prefetch" href="https://images.unsplash.com" />
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     <script is:inline src="https://cdn.tailwindcss.com/3.4.17"></script>
     <script is:inline>
       tailwind.config = {
         theme: {
           extend: {
+            colors: {
+              gold: {
+                DEFAULT: '#C5A880',
+                light: '#D8BE9B',
+                dark: '#A68860',
+              },
+              luxury: {
+                bg: '#0F0F11',
+                card: '#161619',
+                border: '#27272A',
+                surface: '#1E1E22'
+              }
+            },
             fontFamily: {
-              sans: ['Inter', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
-              editorial: ['Playfair Display', 'Georgia', 'serif'],
+              sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+              serif: ['Playfair Display', 'Georgia', 'serif'],
+              brand: ['Cinzel', 'Playfair Display', 'serif']
             }
           }
         }
       }
     </script>
 
-    
     <SEO {...seo} />
-  
+
+    <!-- Google Favicon & Web Manifest -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0F0F11" />
+
     <!-- RSS & Atom Feeds -->
-    <link rel="alternate" type="application/rss+xml" title="İzmir Mutfak &amp; Banyo RSS Beslemesi" href="/feed.xml" />
-    <link rel="alternate" type="application/rss+xml" title="İzmir Mutfak &amp; Banyo RSS XML" href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Cem Yeşilay Mimarlık RSS" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Cem Yeşilay Mimarlık RSS XML" href="/rss.xml" />
 
     <!-- AI & LLM Discovery (RFC Standards) -->
     <link rel="help" type="text/markdown" href="/llms.txt" title="LLMs Context" />
@@ -54,7 +72,7 @@ const { seo, activeService } = Astro.props;
     <link rel="service-doc" type="application/json" href="/.well-known/agent-card.json" title="Autonomous Agent Protocol" />
 
   </head>
-  <body class="min-h-screen flex flex-col font-sans bg-white text-stone-900 overflow-x-hidden antialiased">
+  <body class="min-h-screen flex flex-col font-sans bg-[#0F0F11] text-stone-100 overflow-x-hidden antialiased selection:bg-[#C5A880] selection:text-black">
     <Header />
     <main id="main-content" class="flex-1 w-full">
       <slot />
@@ -66,7 +84,6 @@ const { seo, activeService } = Astro.props;
 </html>
 
 <style is:global>
-  /* Global Modern CSS & Zero Layout Drift */
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -77,7 +94,7 @@ const { seo, activeService } = Astro.props;
   }
 
   :focus-visible {
-    outline: 2px solid #10b981;
+    outline: 2px solid #C5A880;
     outline-offset: 2px;
   }
 </style>
