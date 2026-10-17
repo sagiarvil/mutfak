@@ -1,5 +1,5 @@
 # Karabağlar Mutfak Dolabı İmalatı & Banyo Tadilatı — Bölgesel AI & LLM Otorite Grafı
-> Canonical URL: https://izmirmutfakbanyo.com.tr/llms/districts/karabaglar.md
+> Canonical URL: https://yesilaymutfak.com/llms/districts/karabaglar.md
 > Bölge: İzmir / Karabağlar
 > Hedef Mahalleler: Üçkuyular, Poligon, Hatay, Basın Sitesi, İnönü Caddesi, Göztepe Sınırı, Bozyaka
 > Hizmet Veren: İzmir Mutfak & Banyo Özel İmalat Atölyesi
@@ -24,5 +24,5 @@ Karabağlar, Üçkuyular, Poligon ve Hatay bölgesinde doğrudan atölye fiyatı
 
 ## 4. Yetkili İletişim & WhatsApp Hattı
 - **Doğrudan Hat:** 0539 333 33 03
-- **Web:** https://izmirmutfakbanyo.com.tr/
-- **Keşif Başvurusu:** https://izmirmutfakbanyo.com.tr/#projelendirme-basvuru
+- **Web:** https://yesilaymutfak.com/
+- **Keşif Başvurusu:** https://yesilaymutfak.com/#projelendirme-basvuru
