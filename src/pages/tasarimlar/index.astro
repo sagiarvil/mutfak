@@ -3,10 +3,10 @@ import Layout from "../../layouts/Layout.astro";
 import tasarimlar from "../../data/tasarimlarData.json";
 
 const seo = {
-  title: "Tasarımlar & Yapılan İşler | Tunç Mutfak Tarzı Özel İmalat Kataloğu | İzmir Mutfak",
-  description: "İzmir Mutfak & Banyo atölyemizde üretilen 137 tescilli mutfak, kapı, banyo ve gömme dolap tasarımı. Model numarasıyla arayın, mimarımızla 3D projelendirin.",
+  title: "Tasarımlar & Yapılan İşler | 137 Özel Tasarım Model Kataloğu | İzmir Mutfak",
+  description: "İzmir Mutfak & Banyo atölyemizde üretilen 137 tescilli mutfak dolabı, iç oda kapısı, banyo ve gömme dolap modeli. Model numarasıyla arayın, ücretsiz 3D keşif isteyin.",
   canonical: "https://izmirmutfakbanyo.com.tr/tasarimlar/",
-  serviceName: "Tasarımlar ve Yapılan İşler",
+  serviceName: "Tasarımlar ve Yapılan İşler Model Kataloğu",
   breadcrumbs: [
     { name: "Ana Sayfa", url: "/" },
     { name: "Tasarımlar & Yapılan İşler", url: "/tasarimlar/" }
@@ -18,9 +18,48 @@ const kitchenCount = tasarimlar.filter(t => t.category === "Mutfak Tasarımları
 const doorCount = tasarimlar.filter(t => t.category === "Kapılar").length;
 const wardrobeCount = tasarimlar.filter(t => t.category === "Gömme Dolap").length;
 const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").length;
+
+// Google & AI / LLM Botları İçin Schema.org ImageGallery & ItemList Yapısal Verisi
+const schemaImageGallery = {
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "İzmir Mutfak & Banyo Özel Tasarım ve İmalat Model Kataloğu",
+  "description": "Buca imalat atölyemizde üretilen 137 tescilli mutfak dolabı, lake iç oda kapısı, banyo dolabı ve gömme dolap modeli.",
+  "url": "https://izmirmutfakbanyo.com.tr/tasarimlar/",
+  "publisher": {
+    "@type": "HomeAndConstructionBusiness",
+    "name": "İzmir Mutfak & Banyo",
+    "url": "https://izmirmutfakbanyo.com.tr",
+    "telephone": "+905393333303",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Buca",
+      "addressRegion": "İzmir",
+      "addressCountry": "TR"
+    }
+  },
+  "itemListElement": tasarimlar.map((item, idx) => ({
+    "@type": "ImageObject",
+    "position": idx + 1,
+    "name": item.seoTitle,
+    "caption": item.altText,
+    "description": item.aiDescription,
+    "keywords": item.keywords.join(", "),
+    "contentUrl": `https://izmirmutfakbanyo.com.tr${item.img}`,
+    "thumbnailUrl": `https://izmirmutfakbanyo.com.tr${item.img}`,
+    "representativeOfPage": false,
+    "creator": {
+      "@type": "Organization",
+      "name": "İzmir Mutfak & Banyo"
+    }
+  }))
+};
 ---
 
 <Layout seo={seo}>
+  <!-- Google & LLM Botları İçin Zengin Yapısal Veri (UI Tasarımını Etkilemez) -->
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(schemaImageGallery)} />
+
   <!-- Sayfa Üst Başlığı (Tunç Mutfak Standartı - Sade, Lüks, Sıcak Kırık Beyaz) -->
   <section class="bg-[#F8F7F3] border-b border-stone-200/80 pt-32 pb-10 px-4 sm:px-6 lg:px-8">
     <div class="max-w-6xl mx-auto text-center space-y-3">
@@ -114,17 +153,28 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
           data-img={item.img}
           data-model-id={item.modelNo}
           data-title-raw={item.title}
+          itemscope 
+          itemtype="https://schema.org/ImageObject"
         >
-          <!-- 1:1 Tam Kare Görsel (Object-Cover ile Asla Taşmaz, Her Kutu Milimetrik Eşit) -->
+          <!-- 1:1 Tam Kare Görsel (Semantik Alt & Title İle Donatılmış) -->
           <img 
             src={item.img} 
-            alt={`${item.title} - ${item.category} - ${item.modelNo}`} 
+            alt={item.altText} 
+            title={item.seoTitle}
             loading="lazy" 
             decoding="async"
             width="600"
             height="600"
             class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-106"
+            itemprop="contentUrl"
           />
+
+          <!-- Google & AI Botları İçin Semantik W3C sr-only Katmanı (Görsel Tasarımı Asla Bozmaz) -->
+          <div class="sr-only">
+            <h2 itemprop="name">{item.seoTitle}</h2>
+            <p itemprop="description">{item.aiDescription}</p>
+            <span itemprop="keywords">{item.keywords.join(", ")}</span>
+          </div>
 
           <!-- Sol Üst Köşe Model No Rozeti (Kullanıcı Her Zaman Görsün) -->
           <div class="absolute top-3 left-3 z-10 pointer-events-none">
@@ -138,9 +188,9 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
             <span class="text-xs font-semibold tracking-widest uppercase text-stone-800 mb-1">
               {item.category}
             </span>
-            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-950 leading-tight">
+            <div class="text-2xl sm:text-3xl font-serif font-bold text-stone-950 leading-tight">
               {item.title}
-            </h2>
+            </div>
             <div class="mt-4 inline-flex items-center gap-1.5 px-4 py-2 bg-stone-950 text-white text-xs font-bold uppercase tracking-wider shadow-md">
               <span>İncele &bull; 3D Çizdir</span>
               <span>&rarr;</span>
@@ -248,6 +298,7 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
         else if (initialCat === "gomme-dolap" || initialCat === "gardrop") currentFilter = "gomme-dolap";
         else if (initialCat === "banyo") currentFilter = "banyo-dolaplari";
       }
+
       let currentQuery = "";
       if (currentFilter !== "all") {
         filterBtns.forEach(b => {
