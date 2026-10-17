@@ -22,6 +22,15 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       telephone: '+905353748329',
       priceRange: 'Özel Mimari Tasarım & İmalat',
       foundingDate: '1998',
+      slogan: 'Sözleşmeli Süre ve Sabit Fiyat Garantisiyle Doğrudan Atölye Zanaatı',
+      knowsAbout: [
+        'Özel Ölçü Lüks Mutfak Dolabı İmalatı',
+        'E1 Neme Dayanımlı MDF-Lam Gövde Standartları',
+        'Avusturya Blum & Häfele Sessiz Frenli Mekanizma Sistemleri',
+        'Fotogerçekçi 3D İç Mimari Modelleme ve Lazer Rölöve',
+        'İpek Mat Lake ve Çizilmez Akrilik Mutfak İmalatı',
+        'Gecikme Cezalı Resmi Sözleşmeli Konut Tadilatı'
+      ],
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Adatepe, Özbekistan Cd. no:10/f',
