@@ -3,8 +3,8 @@ import Layout from "../../layouts/Layout.astro";
 import tasarimlar from "../../data/tasarimlarData.json";
 
 const seo = {
-  title: "Tasarımlar & Yapılan İşler | 137 Özel Tasarım Model Kataloğu | İzmir Mutfak",
-  description: "İzmir Mutfak & Banyo atölyemizde üretilen 137 tescilli mutfak dolabı, iç oda kapısı, banyo ve gömme dolap modeli. Model numarasıyla arayın, ücretsiz 3D keşif isteyin.",
+  title: "Tasarımlar & Yapılan İşler | 137 Özel İmalat Model Kataloğu | İzmir Mutfak",
+  description: "İzmir Mutfak & Banyo atölyemizde üretilen 137 tescilli mutfak dolabı, lake iç oda kapısı, banyo dolabı ve gömme dolap modeli. Model numarası veya tarz arayarak 3D keşif isteyin.",
   canonical: "https://izmirmutfakbanyo.com.tr/tasarimlar/",
   serviceName: "Tasarımlar ve Yapılan İşler Model Kataloğu",
   breadcrumbs: [
@@ -19,7 +19,7 @@ const doorCount = tasarimlar.filter(t => t.category === "Kapılar").length;
 const wardrobeCount = tasarimlar.filter(t => t.category === "Gömme Dolap").length;
 const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").length;
 
-// Google & AI / LLM Botları İçin Schema.org ImageGallery & ItemList Yapısal Verisi
+// Google, Google Görseller & LLM Botları İçin Schema.org ImageGallery & ItemList
 const schemaImageGallery = {
   "@context": "https://schema.org",
   "@type": "ImageGallery",
@@ -31,6 +31,7 @@ const schemaImageGallery = {
     "name": "İzmir Mutfak & Banyo",
     "url": "https://izmirmutfakbanyo.com.tr",
     "telephone": "+905393333303",
+    "areaServed": "İzmir",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Buca",
@@ -67,10 +68,10 @@ const schemaImageGallery = {
         Tasarımlar
       </h1>
       <p class="text-xs sm:text-sm text-stone-500 max-w-xl mx-auto font-normal">
-        Özel üretim mutfak, kapı, banyo ve gömme dolap portfolyomuz. Model numarası girerek dilediğiniz tasarımı anında bulabilirsiniz.
+        Özel üretim mutfak, kapı, banyo ve gömme dolap portfolyomuz. Model numarası veya aradığınız tarzı yazarak anında bulabilirsiniz.
       </p>
 
-      <!-- Model Numarası Hızlı Arama Kutusu -->
+      <!-- Model Numarası & Arama Çubuğu (Genişletilmiş Ticari Arama) -->
       <div class="pt-2 max-w-md mx-auto">
         <div class="relative flex items-center bg-white border border-stone-300 shadow-xs focus-within:border-[#F9C349] transition">
           <div class="pl-3.5 text-stone-400">
@@ -81,7 +82,7 @@ const schemaImageGallery = {
           <input 
             type="text" 
             id="searchInput" 
-            placeholder="Model No ile ara (Örn: Model 46, Model 10...)" 
+            placeholder="Model No veya tarz ile ara (Örn: Model 46, Ada Mutfak, Lake...)" 
             class="w-full py-2.5 px-2.5 bg-transparent text-stone-900 placeholder-stone-400 text-xs sm:text-sm font-medium focus:outline-none"
             autocomplete="off"
           />
@@ -149,6 +150,8 @@ const schemaImageGallery = {
           data-category={item.categorySlug}
           data-model={item.modelNo.toLowerCase()}
           data-title={item.title.toLowerCase()}
+          data-keywords={item.keywords.join(" ").toLowerCase()}
+          data-desc={item.aiDescription.toLowerCase()}
           data-category-name={item.category}
           data-img={item.img}
           data-model-id={item.modelNo}
@@ -184,11 +187,11 @@ const schemaImageGallery = {
           </div>
 
           <!-- Tunç Mutfak Birebir Fly Overlay (Hover Durumunda Açılan Amber Katman) -->
-          <figcaption class="absolute inset-0 bg-[#E8B017]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6 text-stone-950 z-20 pointer-events-none">
+          <figcaption class="absolute inset-0 bg-[#E8B017]/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6 text-stone-950 z-20 pointer-events-none">
             <span class="text-xs font-semibold tracking-widest uppercase text-stone-800 mb-1">
               {item.category}
             </span>
-            <div class="text-2xl sm:text-3xl font-serif font-bold text-stone-950 leading-tight">
+            <div class="text-lg sm:text-xl font-serif font-bold text-stone-950 leading-tight max-w-xs">
               {item.title}
             </div>
             <div class="mt-4 inline-flex items-center gap-1.5 px-4 py-2 bg-stone-950 text-white text-xs font-bold uppercase tracking-wider shadow-md">
@@ -207,7 +210,7 @@ const schemaImageGallery = {
       </div>
       <h3 class="text-lg font-serif font-bold text-[#1E1810]">Aradığınız Model Bulunamadı</h3>
       <p class="text-xs sm:text-sm text-stone-500 max-w-sm mx-auto">
-        Lütfen model numarasını kontrol edin veya filtreleri sıfırlayın.
+        Lütfen model numarası veya arama kelimesini kontrol edin.
       </p>
       <button 
         type="button" 
@@ -317,9 +320,15 @@ const schemaImageGallery = {
           const cat = card.getAttribute("data-category");
           const model = card.getAttribute("data-model");
           const title = card.getAttribute("data-title");
+          const kw = card.getAttribute("data-keywords") || "";
+          const desc = card.getAttribute("data-desc") || "";
 
           const matchesCat = currentFilter === "all" || cat === currentFilter;
-          const matchesQuery = !currentQuery || model.includes(currentQuery) || title.includes(currentQuery);
+          const matchesQuery = !currentQuery || 
+            model.includes(currentQuery) || 
+            title.includes(currentQuery) || 
+            kw.includes(currentQuery) || 
+            desc.includes(currentQuery);
 
           if (matchesCat && matchesQuery) {
             card.style.display = "";
