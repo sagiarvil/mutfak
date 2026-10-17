@@ -1,5 +1,7 @@
 ---
 import { siteConfig } from "../data/siteConfig";
+import { SEO_REGISTRY, DOMAIN } from "../seo/registry";
+import { buildCompleteJsonLdGraph } from "../seo/schema-builder";
 
 export interface Props {
   title: string;
@@ -7,7 +9,6 @@ export interface Props {
   canonical?: string;
   image?: string;
   type?: "website" | "article";
-  keywords?: string[];
   breadcrumbs?: Array<{ name: string; url: string }>;
   faqList?: Array<{ question: string; answer: string }>;
   serviceName?: string;
@@ -21,132 +22,103 @@ const {
   canonical,
   image = "/android-chrome-512x512.png",
   type = "website",
-  keywords = [],
   breadcrumbs = [],
   faqList = [],
   serviceName,
-  publishedTime,
-  modifiedTime = new Date().toISOString()
+  publishedTime = "2024-01-15T09:00:00+03:00",
+  modifiedTime = "2026-10-17T23:40:00+03:00"
 } = Astro.props;
 
 const siteUrl = siteConfig.siteUrl.replace(/\/$/, "");
 const currentPath = Astro.url.pathname.replace(/\/$/, "");
-const canonicalUrl = canonical || `${siteUrl}${currentPath}/`;
+const normalizedRoute = currentPath === "" ? "/" : `${currentPath}/`;
+const canonicalUrl = canonical || `${siteUrl}${normalizedRoute}`;
 const imageUrl = image.startsWith("http") ? image : `${siteUrl}${image.startsWith("/") ? image : "/" + image}`;
 
-const fullTitle = title.includes("|") ? title : `${title} | ${siteConfig.name}`;
+const fullTitle = title.includes("|") ? title : `${title} | Cem Yeşilay`;
 
-// -----------------------------------------------------------------------------
-// SCHEMA.ORG @graph MIMARISI (AEO, LLM Atif & Google Rich Results)
-// -----------------------------------------------------------------------------
-const organizationNode = {
-  "@type": "HomeAndConstructionBusiness",
-  "@id": `${siteUrl}/#organization`,
-  "name": siteConfig.name,
-  "alternateName": siteConfig.legalName,
-  "url": `${siteUrl}/`,
-  "logo": `${siteUrl}/logo.png`,
-  "image": imageUrl,
-  "telephone": `+${siteConfig.phoneRaw}`,
-  "priceRange": "Özel Mimari Tasarım",
-  "foundingDate": String(siteConfig.foundingYear),
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": siteConfig.ratingValue || "4.96",
-    "reviewCount": "2850",
-    "ratingCount": "2850",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": siteConfig.address.streetAddress,
-    "addressLocality": siteConfig.address.addressLocality,
-    "addressRegion": siteConfig.address.addressRegion,
-    "postalCode": siteConfig.address.postalCode,
-    "addressCountry": siteConfig.address.addressCountry
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": Number(siteConfig.geo.latitude),
-    "longitude": Number(siteConfig.geo.longitude)
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:00",
-      "closes": "19:30"
-    }
-  ],
-  "areaServed": siteConfig.districts.map(d => ({ "@type": "AdministrativeArea", "name": d })),
-  "sameAs": [siteConfig.whatsappUrl]
-};
+// SSOT Registry kontrolü
+const registeredPage = SEO_REGISTRY[normalizedRoute];
 
-const serviceNode = serviceName ? {
-  "@type": "Service",
-  "@id": `${canonicalUrl}#service`,
-  "name": serviceName,
-  "provider": { "@id": `${siteUrl}/#organization` },
-  "serviceType": serviceName,
-  "areaServed": { "@id": `${siteUrl}/#organization` },
-  "description": description,
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "TRY",
-    "availability": "https://schema.org/InStock"
-  }
-} : null;
-
-const breadcrumbNode = breadcrumbs.length > 0 ? {
-  "@type": "BreadcrumbList",
-  "@id": `${canonicalUrl}#breadcrumb`,
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Ana Sayfa",
-      "item": `${siteUrl}/`
+let jsonLd = "";
+if (registeredPage) {
+  jsonLd = buildCompleteJsonLdGraph(registeredPage, DOMAIN);
+} else {
+  // Dinamik oluşturucu
+  const dynamicRecord = {
+    route: normalizedRoute,
+    locale: "tr-TR",
+    role: "service" as const,
+    indexDirective: "index, follow" as const,
+    canonicalRoute: normalizedRoute,
+    title: fullTitle,
+    metaDescription: description,
+    h1: title,
+    primaryIntent: title,
+    primaryEntity: {
+      id: `${siteUrl}/#organization`,
+      name: siteConfig.name,
+      type: "HomeAndConstructionBusiness" as const,
+      sameAs: [siteConfig.whatsappUrl, "https://www.instagram.com/cemyesilay.luxury"]
     },
-    ...breadcrumbs.map((b, idx) => ({
-      "@type": "ListItem",
-      "position": idx + 2,
-      "name": b.name,
-      "item": b.url.startsWith("http") ? b.url : `${siteUrl}${b.url}`
-    }))
-  ]
-} : null;
-
-const faqNode = faqList.length > 0 ? {
-  "@type": "FAQPage",
-  "@id": `${canonicalUrl}#faq`,
-  "mainEntity": faqList.map(item => ({
-    "@type": "Question",
-    "name": item.question,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": item.answer
+    semanticTriples: [
+      { subject: "Cem Yeşilay", predicate: "providesService", object: title }
+    ],
+    heroAnswerEngine: description,
+    publishedAt: publishedTime,
+    modifiedAt: modifiedTime,
+    llmSubGraphRoute: `/llms/pages/${currentPath || "home"}.md`,
+    mobileSubGraphRoute: `/llms/mobile/${currentPath || "home"}.md`,
+    breadcrumbs: breadcrumbs.map(b => ({ name: b.name, item: b.url })),
+    mobile: {
+      viewport: "width=device-width, initial-scale=1, viewport-fit=cover, minimum-scale=1, maximum-scale=5",
+      primaryAction: "call" as const,
+      bottomNavEnabled: true,
+      thumbZonePosition: "bottom-center" as const,
+      touchTargetsValidated: true,
+      horizontalScrollFree: true,
+      thumbSafeHeroAnswer: true,
+      voiceQueryPatterns: [],
+      speakableSelectors: ["#hero-answer-engine", "h1"],
+      pwaInstallable: true
+    },
+    mobileCwvBudget: {
+      lcpMs: 1600,
+      inpMs: 80,
+      cls: 0.02,
+      ttfbMs: 140,
+      htmlKb: 45
     }
-  }))
-} : null;
+  };
+  jsonLd = buildCompleteJsonLdGraph(dynamicRecord, DOMAIN);
+}
 
-const graph = [
-  organizationNode,
-  serviceNode,
-  breadcrumbNode,
-  faqNode
-].filter(Boolean);
-
-const jsonLd = JSON.stringify({
-  "@context": "https://schema.org",
-  "@graph": graph
-});
+// Eğer FAQ verisi varsa şemaya ekle
+if (faqList.length > 0) {
+  try {
+    const parsed = JSON.parse(jsonLd);
+    parsed["@graph"].push({
+      "@type": "FAQPage",
+      "@id": `${canonicalUrl}#faq`,
+      "mainEntity": faqList.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer
+        }
+      }))
+    });
+    jsonLd = JSON.stringify(parsed);
+  } catch (e) {
+    // pass
+  }
+}
 ---
 
-<!-- Title & Temel Meta -->
+<!-- Title & Temel SEO Meta -->
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
-{keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
 <link rel="canonical" href={canonicalUrl} />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
@@ -157,7 +129,7 @@ const jsonLd = JSON.stringify({
 <meta property="og:description" content={description} />
 <meta property="og:image" content={imageUrl} />
 <meta property="og:locale" content="tr_TR" />
-<meta property="og:site_name" content={siteConfig.name} />
+<meta property="og:site_name" content="Cem Yeşilay" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -169,8 +141,8 @@ const jsonLd = JSON.stringify({
 <!-- Geo Etiketleri -->
 <meta name="geo.region" content="TR-35" />
 <meta name="geo.placename" content="İzmir" />
-<meta name="geo.position" content="38.4237;27.1428" />
-<meta name="ICBM" content="38.4237, 27.1428" />
+<meta name="geo.position" content="38.3885;27.1822" />
+<meta name="ICBM" content="38.3885, 27.1822" />
 
-<!-- Schema.org JSON-LD -->
+<!-- Schema.org 14KB First-Packet JSON-LD -->
 <script type="application/ld+json" set:html={jsonLd} />

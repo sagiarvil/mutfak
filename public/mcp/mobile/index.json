@@ -1,0 +1,12 @@
+{
+  "jsonrpc": "2.0",
+  "server": {
+    "name": "cem-yesilay-luxury-mcp",
+    "version": "9.1.0"
+  },
+  "endpoints": {
+    "searchModels": "https://yesilaymutfak.com/tasarimlar/?q={query}",
+    "getPricing": "https://yesilaymutfak.com/2026-mutfak-dolabi-fiyatlari/",
+    "bookKe\u015fif": "https://wa.me/905353748329"
+  }
+}

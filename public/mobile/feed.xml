@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>İzmir Mutfak &amp; Banyo — Özel İmalat &amp; Komple Tadilat</title>
-    <link>https://izmirmutfakbanyo.com.tr/</link>
-    <description>İzmir genelinde birinci sınıf özel imalat mutfak dolapları, lüks banyo yenileme ve anahtar teslim ev tadilatı.</description>
+    <title>Cem Yeşilay Luxury — Mutfak &amp; Banyo Tasarım Yayını</title>
+    <link>https://yesilaymutfak.com/</link>
+    <description>İzmir özel ölçü mutfak dolabı imalatı ve anahtar teslim lüks renovasyon bülteni.</description>
     <language>tr-TR</language>
-    <lastBuildDate>Fri, 16 Oct 2026 00:10:00 +0300</lastBuildDate>
-    <atom:link href="https://izmirmutfakbanyo.com.tr/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Oct 2026 20:48:26 +0000</lastBuildDate>
+    <atom:link href="https://yesilaymutfak.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>2026 Özel İmalat Mutfak Dolabı Koleksiyonu</title>
-      <link>https://izmirmutfakbanyo.com.tr/mutfak-dolabi/</link>
-      <guid>https://izmirmutfakbanyo.com.tr/mutfak-dolabi/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:10:00 +0300</pubDate>
-      <description>İpek mat lake, çizilmez akrilik ve doğal meşe kapaklarla hazırlanan yeni nesil mutfak dolapları.</description>
+      <title>Cem Yeşilay Luxury 137 Tasarım Modeli Arşivi Yayında</title>
+      <link>https://yesilaymutfak.com/tasarimlar/</link>
+      <guid>https://yesilaymutfak.com/tasarimlar/</guid>
+      <pubDate>Sat, 17 Oct 2026 20:48:26 +0000</pubDate>
+      <description><![CDATA[İzmir genelinde villa ve lüks konutlar için geliştirilmiş 40 mutfak dolabı, 25 banyo mobilyası, 39 kapı ve 33 giyinme odası model arşivi.]]></description>
     </item>
     <item>
-      <title>Garantili Banyo Tadilatı ve Su İzolasyonu Rehberi</title>
-      <link>https://izmirmutfakbanyo.com.tr/banyo-tadilati/</link>
-      <guid>https://izmirmutfakbanyo.com.tr/banyo-tadilati/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:10:00 +0300</pubDate>
-      <description>Çift kat sürme izolasyon ve Geberit gömme rezervuarlarla anahtar teslim banyo yenileme.</description>
+      <title>2026 Mutfak Dolabı Metretül Fiyat ve İmalat Rehberi</title>
+      <link>https://yesilaymutfak.com/2026-mutfak-dolabi-fiyatlari/</link>
+      <guid>https://yesilaymutfak.com/2026-mutfak-dolabi-fiyatlari/</guid>
+      <pubDate>Sat, 17 Oct 2026 20:48:26 +0000</pubDate>
+      <description><![CDATA[Akrilik, ipek mat fırın lake ve doğal meşe kaplama mutfak dolabı maliyet hesaplama tablosu.]]></description>
     </item>
     <item>
-      <title>Anahtar Teslim Komple Daire Yenileme Aşamaları</title>
-      <link>https://izmirmutfakbanyo.com.tr/ev-tadilati/</link>
-      <guid>https://izmirmutfakbanyo.com.tr/ev-tadilati/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:10:00 +0300</pubDate>
-      <description>Kırım, tesisat, elektrik, alçı boya ve zemin parke dahil 5 cerrahi adımda ev tadilatı.</description>
+      <title>İzmir Komple Mutfak Tadilatında Tozsuz Kırım ve Sıhhi Tesisat</title>
+      <link>https://yesilaymutfak.com/izmir-komple-mutfak-tadilati/</link>
+      <guid>https://yesilaymutfak.com/izmir-komple-mutfak-tadilati/</guid>
+      <pubDate>Sat, 17 Oct 2026 20:48:26 +0000</pubDate>
+      <description><![CDATA[Eski mutfağın kırımından porselen tezgah ve lake dolap montajına anahtar teslim renovasyon rehberi.]]></description>
+    </item>
+    <item>
+      <title>Lüks Banyo Tasarımında Çift Katman Su Yalıtımı ve Porselen Seramik</title>
+      <link>https://yesilaymutfak.com/izmir-banyo-yenileme-seramik/</link>
+      <guid>https://yesilaymutfak.com/izmir-banyo-yenileme-seramik/</guid>
+      <pubDate>Sat, 17 Oct 2026 20:48:26 +0000</pubDate>
+      <description><![CDATA[Geberit gizli rezervuar, İtalyan duş kanalı ve marin banyo mobilyası imalat standartları.]]></description>
     </item>
   </channel>
 </rss>

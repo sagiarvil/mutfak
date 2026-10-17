@@ -1,16 +1,20 @@
 {
-  "@context": "https://schema.org",
-  "@type": "AgentCard",
-  "name": "İzmir Mutfak & Banyo AI Agent",
-  "url": "https://izmirmutfakbanyo.com.tr",
-  "description": "İzmir özel mutfak, banyo ve ev tadilatı için 3D keşif, malzeme danışmanlığı ve maliyet hesaplama aracı.",
-  "capabilities": [
-    "kitchen_design_quote",
-    "bathroom_renovation_calc",
-    "free_discovery_appointment"
-  ],
-  "endpoints": {
-    "mcp": "https://izmirmutfakbanyo.com.tr/mcp",
-    "whatsapp": "https://wa.me/905353748329"
+  "name": "Cem Yeşilay Luxury Agent",
+  "version": "9.1.0",
+  "description": "Cem Yeşilay Mimarlık & Lüks Mutfak Banyo Özel İmalat Atölyesi A2A İletişim Kartı",
+  "url": "https://yesilaymutfak.com",
+  "mcpEndpoint": "https://yesilaymutfak.com/mcp",
+  "mobileMcpEndpoint": "https://yesilaymutfak.com/mcp/mobile",
+  "llms": "https://yesilaymutfak.com/llms.txt",
+  "capabilities": {
+    "quoteGeneration": true,
+    "modelSearch": true,
+    "rölöveBooking": true,
+    "voiceAssistance": true
+  },
+  "contact": {
+    "phone": "+905353748329",
+    "whatsapp": "https://wa.me/905353748329",
+    "address": "Adatepe, Özbekistan Cd. no:10/f, Buca/İzmir"
   }
 }

@@ -1,9 +1,10 @@
-# İzmir Mutfak Banyo — On-Device Nano Graph
-Entity: İzmir Mutfak & Banyo
-Type: HomeAndConstructionBusiness
-Location: İzmir, Türkiye
-Services: Mutfak Dolabı, Mutfak Tadilatı, Banyo Yenileme, Komple Ev Tadilatı
-Phone: +90 539 333 33 03
-Warranty: 10 Yıl
-Free Discovery: Evet (İzmir İçi Ücretsiz 3D Keşif)
-URL: https://izmirmutfakbanyo.com.tr
+# Cem Yeşilay Luxury Nano Knowledge Graph (On-Device AI)
+- Marka: Cem Yeşilay Luxury (İç Mimarlık & Özel İmalat)
+- Kuruluş: 1998 (28 Yıl)
+- Merkez: Adatepe Mah. Özbekistan Cd. No:10/F, Buca, İzmir
+- Telefon: +90 535 374 83 29
+- Hizmetler: Özel ölçü mutfak dolabı, lüks banyo yenileme, komple daire tadilatı, villa renovasyonu
+- Koleksiyon: 137 Özgün Tasarım Modeli (Mutfak, Banyo, Kapı, Giyinme Odası)
+- Malzeme: E1 MDF-Lam gövde, Blum ve Häfele frenli gizli donanım, lake, akrilik, porselen tezgah
+- Garanti: 10 Yıl Bütünleşik Atölye Güvencesi
+- Servis Bölgesi: Buca, Çeşme, Urla, Karşıyaka, Alsancak, Bornova, Güzelbahçe ve tüm İzmir

@@ -111,20 +111,65 @@ const seo = {
           </a>
         </div>
 
-        <!-- Apple Trust Bar (13px, tracking-tight) -->
-        <div class="pt-6 grid grid-cols-3 gap-6 border-t border-[#E5DFD5] text-[#1D1D1F]">
-          <div class="space-y-0.5">
-            <div class="text-[22px] font-bold tracking-tight text-[#1D1D1F]">137 Model</div>
-            <div class="text-[12px] font-medium text-[#86868B]">Özgün Tasarım</div>
+      </div>
+
+      <!-- Genişletilmiş Premium Hareketli Sayaç Docku (Apple Glassmorphism Standartı) -->
+      <div class="mt-10 sm:mt-12 w-full max-w-5xl bg-white/90 backdrop-blur-md border border-[#E5DFD5] rounded-2xl p-6 sm:p-7 shadow-[0_12px_36px_rgba(27,56,47,0.06)] relative overflow-hidden">
+        <div class="absolute -right-8 -bottom-8 w-48 h-48 bg-[#1B382F]/5 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative z-10">
+          
+          <!-- Sayaç 1: 137 Model -->
+          <div class="space-y-1 pr-3 sm:border-r border-[#E5DFD5]/80">
+            <div class="flex items-baseline gap-1.5">
+              <span class="stat-counter text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#1D1D1F] font-sans" data-target="137">0</span>
+              <span class="text-sm sm:text-base font-bold text-[#8C693E]">Model</span>
+            </div>
+            <div class="text-[10.5px] uppercase tracking-wider text-[#8C693E] font-bold">Özgün Koleksiyon</div>
+            <p class="text-[12px] text-[#6E675F] leading-snug hidden sm:block">Mutfak, banyo ve kapı arşivi.</p>
           </div>
-          <div class="space-y-0.5">
-            <div class="text-[22px] font-bold tracking-tight text-[#1D1D1F]">10 Yıl</div>
-            <div class="text-[12px] font-medium text-[#86868B]">Gövde Garantisi</div>
+
+          <!-- Sayaç 2: 28 Yıl -->
+          <div class="space-y-1 pr-3 lg:border-r border-[#E5DFD5]/80">
+            <div class="flex items-baseline gap-1.5">
+              <span class="stat-counter text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#1D1D1F] font-sans" data-target="28">0</span>
+              <span class="text-sm sm:text-base font-bold text-[#1B382F]">Yıl</span>
+            </div>
+            <div class="text-[10.5px] uppercase tracking-wider text-[#1B382F] font-bold">Atölye Mirası</div>
+            <p class="text-[12px] text-[#6E675F] leading-snug hidden sm:block">1998'den bu yana kendi imalatımız.</p>
           </div>
-          <div class="space-y-0.5">
-            <div class="text-[22px] font-bold tracking-tight text-[#1D1D1F]">2.850+</div>
-            <div class="text-[12px] font-medium text-[#86868B]">Tamamlanan Proje</div>
+
+          <!-- Sayaç 3: 10 Yıl -->
+          <div class="space-y-1 pr-3 sm:border-r border-[#E5DFD5]/80">
+            <div class="flex items-baseline gap-1.5">
+              <span class="stat-counter text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#1D1D1F] font-sans" data-target="10">0</span>
+              <span class="text-sm sm:text-base font-bold text-[#8C693E]">Yıl</span>
+            </div>
+            <div class="text-[10.5px] uppercase tracking-wider text-[#8C693E] font-bold">Gövde Garantisi</div>
+            <p class="text-[12px] text-[#6E675F] leading-snug hidden sm:block">E1 sertifikalı nem mukavemetli MDF.</p>
           </div>
+
+          <!-- Sayaç 4: 2.850+ -->
+          <div class="space-y-1">
+            <div class="flex items-baseline gap-0.5">
+              <span class="stat-counter text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#1D1D1F] font-sans" data-target="2850" data-format="comma">0</span>
+              <span class="text-2xl sm:text-3xl font-extrabold text-[#1B382F]">+</span>
+            </div>
+            <div class="text-[10.5px] uppercase tracking-wider text-[#1B382F] font-bold">Tamamlanan Proje</div>
+            <p class="text-[12px] text-[#6E675F] leading-snug hidden sm:block">İzmir genelinde mutlu müşteri referansı.</p>
+          </div>
+
+        </div>
+
+        <!-- AEO & Grounding Micro Bar -->
+        <div class="mt-5 pt-3.5 border-t border-[#E5DFD5]/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11.5px] text-[#55504A]">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-[#10B981] animate-pulse"></span>
+            <span><strong>Adatepe İmalat Atölyesi:</strong> Aracı komisyonsuz, milimetrik lazer rölöve ve fotogerçekçi 3D mimari modelleme.</span>
+          </div>
+          <a href="/tasarimlar/" class="text-[#1B382F] font-bold hover:underline inline-flex items-center gap-1 shrink-0">
+            Koleksiyonu İncele →
+          </a>
         </div>
 
       </div>
@@ -412,5 +457,70 @@ const seo = {
       </div>
     </div>
   </section>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".stat-counter");
+      if (!counters.length) return;
+
+      let animated = false;
+      const animateCounters = () => {
+        if (animated) return;
+        animated = true;
+
+        counters.forEach((counter) => {
+          const target = parseInt(counter.getAttribute("data-target") || "0", 10);
+          const format = counter.getAttribute("data-format");
+          const duration = 1800;
+          const startTime = performance.now();
+
+          const updateCount = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic
+            const easeProgress = 1 - Math.pow(1 - progress, 3);
+            const currentVal = Math.floor(easeProgress * target);
+
+            if (format === "comma") {
+              counter.textContent = currentVal.toLocaleString("tr-TR");
+            } else {
+              counter.textContent = currentVal.toString();
+            }
+
+            if (progress < 1) {
+              requestAnimationFrame(updateCount);
+            } else {
+              if (format === "comma") {
+                counter.textContent = target.toLocaleString("tr-TR");
+              } else {
+                counter.textContent = target.toString();
+              }
+            }
+          };
+
+          requestAnimationFrame(updateCount);
+        });
+      };
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateCounters();
+              observer.disconnect();
+            }
+          });
+        }, { threshold: 0.15 });
+
+        const firstCounter = document.querySelector(".stat-counter");
+        if (firstCounter) {
+          const parentDock = firstCounter.closest("div.mt-10") || firstCounter;
+          observer.observe(parentDock);
+        }
+      } else {
+        animateCounters();
+      }
+    });
+  </script>
 
 </Layout>

@@ -1,6 +1,5 @@
-# Akreditasyonlar ve Malzeme Standartları
-- Blum Avusturya Resmi Entegrasyon Partneri
-- Hafele Almanya Çözüm Ortağı
-- Çimstone & Belenco Sertifikalı Kuvars Tezgâh İmalatçısı
-- Laminam & Neolith İtalyan Porselen Tezgâh Yetkili Uygulayıcısı
-- TSE ve CE Standartlarında 1. Sınıf Tesisat & Su Yalıtımı
+# Cem Yeşilay Luxury — Sertifikalar, Garanti ve Güvence
+- **E1 Standart Sertifikası:** İnsan sağlığına zararsız, düşük emisyonlu MDF gövde garantisi.
+- **Blum Yetkili Sistem Kullanımı:** 100.000 açma-kapama testli mekanizma garantisi.
+- **10 Yıl Bütünleşik Garanti:** Atölyemizden çıkan tüm dolapların gövde ve işçilik teminatı.
+- **Noter Tasdikli Sözleşme:** Anahtar teslim projelerde fiyat artış muafiyeti ve gecikme cezası teminatı.

@@ -1,22 +1,10 @@
-# Sesli Arama Doğrudan Yanıt Haritası (29-Kelime Kuralı)
+# 29-Kelime Sesli Arama Soru-Cevap Haritası (Siri, Assistant, Alexa)
 
-### Soru: İzmir'de en iyi mutfak dolabı nerede yaptırılır?
-**Cevap:** İzmir Mutfak & Banyo, Karşıyaka ve tüm İzmir genelinde birinci sınıf lake ve akrilik mutfak dolaplarını kendi atölyesinde üretir, ücretsiz 3D keşif ve 10 yıl garanti sağlar.
+### Soru: İzmir Buca'da özel imalat mutfak dolabı nerede yaptırılır?
+**Cevap:** Cem Yeşilay Luxury, Adatepe Özbekistan Caddesi'ndeki atölyesinde 28 yıllık tecrübeyle özel ölçü lake ve akrilik mutfak dolapları üretir; yerinde ücretsiz 3D keşif randevusu için 0535 374 83 29'u arayabilirsiniz.
 
-### Soru: Mutfak dolabı metretül fiyatları İzmir'de ne kadar?
-**Cevap:** İzmir'de mutfak dolabı fiyatları kapak malzemesine göre değişir; suntalam kullanılmaz, 18 milimetre MDF gövde ve Blum raylı modeller doğrudan atölye fiyatıyla ücretsiz ölçü alınarak hesaplanır.
+### Soru: İzmir'de komple mutfak tadilatı ne kadar sürer ve kaça mal olur?
+**Cevap:** Cem Yeşilay anahtar teslim mutfak tadilatı ortalama 14 ila 21 iş gününde tamamlanır; kırım, tesisat, porselen tezgah ve lake dolap dahil net fiyat ücretsiz yerinde keşifle belirlenir.
 
-### Soru: Banyo tadilatı kaç gün sürer?
-**Cevap:** Kırım, tesisat yenileme, çift kat su izolasyonu, 60x120 granit seramik döşemesi ve lake banyo dolabı montajı dahil anahtar teslim banyo tadilatı ortalama 7 ila 10 iş gününde tamamlanır.
-
-### Soru: Buca'da mutfak dolabı yapan güvenilir yer neresi?
-**Cevap:** İzmir Mutfak Banyo, Buca ve Şirinyer genelinde birinci sınıf lake ve akrilik mutfak dolaplarını kendi atölyesinde üreterek ücretsiz 3D keşif ve 10 yıl garanti sağlar.
-
-### Soru: Karabağlar ve Hatay'da banyo tadilatı kime yaptırılır?
-**Cevap:** Karabağlar ve Poligon bölgesinde çift kat su izolasyonu, Geberit gömme rezervuar ve lake banyo dolabı dahil anahtar teslim banyo tadilatını resmi sözleşmeyle İzmir Mutfak Banyo yapar.
-
-### Soru: Konak ve Alsancak'ta mutfak yenileme fiyatı ne kadar?
-**Cevap:** Konak ve Alsancak dairelerinde mutfak yenileme doğrudan atölye imalat fiyatıyla yapılır; suntalam kullanılmaz, MDF gövde ve Blum raylı sistemler yerinde ücretsiz ölçü alınarak hesaplanır.
-
-### Soru: Bornova Özkanlar'da hazır mutfak dolabı montajı kaç gün sürer?
-**Cevap:** Bornova ve Özkanlar'da ölçüye özel üretilen lake veya akrilik mutfak dolapları 3D proje onayından sonra ortalama 15 iş gününde tozsuz ve temiz montajla teslim edilir.
+### Soru: Mutfak dolabında lake mi akrilik kapak mı daha iyidir?
+**Cevap:** Akrilik kapaklar çizilmeye karşı daha dayanıklı ve parlakken; fırın kurutmalı ipek mat lake kapaklar pürüzsüz yüzeyi, zengin renk seçenekleri ve derzsiz mimari duruşuyla lüks projelerde tercih edilir.

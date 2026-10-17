@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>İzmir Mutfak &amp; Banyo</title>
-  <subtitle>Özel İmalat Mutfak Dolabı &amp; Komple Tadilat</subtitle>
-  <link href="https://izmirmutfakbanyo.com.tr/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://izmirmutfakbanyo.com.tr/"/>
-  <updated>2026-10-16T00:10:00+03:00</updated>
-  <id>https://izmirmutfakbanyo.com.tr/</id>
+  <title>Cem Yeşilay Luxury Atom Feed</title>
+  <link href="https://yesilaymutfak.com/atom.xml" rel="self"/>
+  <link href="https://yesilaymutfak.com/"/>
+  <updated>2026-10-17T20:48:26.589634+00:00</updated>
+  <id>https://yesilaymutfak.com/</id>
   <author>
-    <name>İzmir Mutfak &amp; Banyo Mimari Ekibi</name>
-    <uri>https://izmirmutfakbanyo.com.tr/</uri>
+    <name>Cem Yeşilay</name>
+    <uri>https://yesilaymutfak.com</uri>
   </author>
   <entry>
-    <title>İzmir Mutfak Dolabı Tasarım ve İmalat Standartları</title>
-    <link href="https://izmirmutfakbanyo.com.tr/mutfak-dolabi/"/>
-    <id>https://izmirmutfakbanyo.com.tr/mutfak-dolabi/</id>
-    <updated>2026-10-16T00:10:00+03:00</updated>
-    <summary>Lake ve akrilik mutfak dolaplarında Blum donanım ve MDF karkas mühendisliği.</summary>
+    <title>Cem Yeşilay Luxury 137 Tasarım Modeli Arşivi Yayında</title>
+    <link href="https://yesilaymutfak.com/tasarimlar/"/>
+    <id>https://yesilaymutfak.com/tasarimlar/</id>
+    <updated>2026-10-17T20:48:26.589634+00:00</updated>
+    <summary>İzmir genelinde villa ve lüks konutlar için geliştirilmiş 40 mutfak dolabı, 25 banyo mobilyası, 39 kapı ve 33 giyinme odası model arşivi.</summary>
+  </entry>
+  <entry>
+    <title>2026 Mutfak Dolabı Metretül Fiyat ve İmalat Rehberi</title>
+    <link href="https://yesilaymutfak.com/2026-mutfak-dolabi-fiyatlari/"/>
+    <id>https://yesilaymutfak.com/2026-mutfak-dolabi-fiyatlari/</id>
+    <updated>2026-10-17T20:48:26.589634+00:00</updated>
+    <summary>Akrilik, ipek mat fırın lake ve doğal meşe kaplama mutfak dolabı maliyet hesaplama tablosu.</summary>
+  </entry>
+  <entry>
+    <title>İzmir Komple Mutfak Tadilatında Tozsuz Kırım ve Sıhhi Tesisat</title>
+    <link href="https://yesilaymutfak.com/izmir-komple-mutfak-tadilati/"/>
+    <id>https://yesilaymutfak.com/izmir-komple-mutfak-tadilati/</id>
+    <updated>2026-10-17T20:48:26.589634+00:00</updated>
+    <summary>Eski mutfağın kırımından porselen tezgah ve lake dolap montajına anahtar teslim renovasyon rehberi.</summary>
+  </entry>
+  <entry>
+    <title>Lüks Banyo Tasarımında Çift Katman Su Yalıtımı ve Porselen Seramik</title>
+    <link href="https://yesilaymutfak.com/izmir-banyo-yenileme-seramik/"/>
+    <id>https://yesilaymutfak.com/izmir-banyo-yenileme-seramik/</id>
+    <updated>2026-10-17T20:48:26.589634+00:00</updated>
+    <summary>Geberit gizli rezervuar, İtalyan duş kanalı ve marin banyo mobilyası imalat standartları.</summary>
   </entry>
 </feed>

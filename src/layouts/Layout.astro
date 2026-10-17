@@ -67,20 +67,36 @@ const { seo, activeService } = Astro.props;
 
     <SEO {...seo} />
 
+    <!-- Favicon & Touch Icons (Google 48px Çoklu Boyut Standardı) -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:site_name" content="Cem Yeşilay" />
+
+    <!-- Mobil & PWA Standartları -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Cem Yeşilay" />
+    <meta name="format-detection" content="telephone=yes" />
     <meta name="theme-color" content="#FAF9F6" />
 
+    <!-- Syndication & Feed Katmanı ($10M Mandate v9.1) -->
     <link rel="alternate" type="application/rss+xml" title="Cem Yeşilay Luxury RSS" href="/feed.xml" />
-    <link rel="alternate" type="application/rss+xml" title="Cem Yeşilay Luxury RSS XML" href="/rss.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Cem Yeşilay Luxury Atom" href="/atom.xml" />
+    <link rel="alternate" type="application/feed+json" title="Cem Yeşilay Luxury JSON Feed" href="/feed.json" />
+    <link rel="alternate" type="application/rss+xml" title="Cem Yeşilay Mobile Voice Feed" href="/mobile/feed.xml" />
 
+    <!-- Multi-Tier LLMS & AI Agent Hub -->
     <link rel="help" type="text/markdown" href="/llms.txt" title="LLMs Context" />
     <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full AI Knowledge Base" />
-    <link rel="service-doc" type="application/json" href="/.well-known/agent-card.json" title="Autonomous Agent Protocol" />
+    <link rel="service-doc" type="application/json" href="/.well-known/agent.json" title="Autonomous Agent Protocol" />
 
   </head>
   <body class="min-h-screen flex flex-col font-sans bg-[#FAF9F6] text-[#1D1D1F] overflow-x-hidden antialiased selection:bg-[#1B382F] selection:text-white">

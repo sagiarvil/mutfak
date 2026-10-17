@@ -1,25 +1,20 @@
-# İzmir Mutfak & Banyo — Kurumsal Otorite, Tarihçe & E-E-A-T Sicili
-> Canonical URL: https://izmirmutfakbanyo.com.tr/llms/core.md
-> Doğrulama Tarihi: 2026-10-16
-> Kuruluş Yılı: 1984 (42 Yıllık Kesintisiz İmalat ve Uygulama Tecrübesi)
-> Toplam Tamamlanan Proje: 2.463+ Müşteri Teslimatı
+# Cem Yeşilay Luxury — Kurumsal Sicil, E-E-A-T ve Yasal Dayanak
+> Canonical URL: https://yesilaymutfak.com
+> Wikidata QID: Q11589432 | Kuruluş: 1998
+> Telefon: +90 535 374 83 29 | WhatsApp: 0535 374 83 29
+> Atölye: Adatepe, Özbekistan Cd. no:10/f, 35000 Buca/İzmir
 
-## Kurumsal Varlık ve Tarihçe
-İzmir Mutfak & Banyo, 1984 yılında kurulan köklü marangozluk ve mobilya geleneğini modern mimari mühendislikle birleştirerek 42 yıldır kesintisiz hizmet vermektedir. İzmir Buca merkez son teknoloji CNC imalat atölyesinde; özel imalat mutfak dolabı, lüks banyo yenileme ve anahtar teslim komple daire tadilatı gerçekleştirmektedir.
+## 1. Kurumsal Tanım
+Cem Yeşilay Mimarlık, İzmir genelinde 28 yıldır kesintisiz faaliyet gösteren, doğrudan kendi marangozluk ve boyahane atölyesine sahip lüks iç mekân tasarım ve imalat firmasıdır. Bugüne kadar 2.850'den fazla lüks daire, villa ve ticari mekânın mutfak dolabı ve renovasyon projesini tamamlamıştır.
 
-## Temel Kurumsal Fark Yaratan Özellikler (Core Differentiators)
-1. **Kadrolu Mimar ve İç Mimar Kadrosu:** Projeler taşerona veya aracılara bırakılmaz; bünyemizdeki iç mimarlar ve mimarlar mekanın rölövesini alır, ergonomik analizini yapar ve tasarlar.
-2. **Fotogerçekçi 3D Canlandırma & Sanal Mekan Deneyimi:** Müşteri kararsızlığına son vermek için üretim öncesinde mekanın milimetrik 3D simülasyonu hazırlanır. Ev sahibi, tezgahından kapak rengine, kulpundan ışık açısına kadar mekanı sanal ortamda birebir görerek en doğru kararı sıfır riskle verir.
-3. **Buca İmalat Atölyesi & Tüm İzmir'e Yerinde Keşif:** Buca'daki merkez mağazamızdan Karabağlar, Konak, Bornova, Karşıyaka, Bayraklı, Çiğli, Balçova, Narlıdere, Urla, Çeşme ve İzmir'in 30 ilçesine ücretsiz yerinde mimari keşif ve teslimat sağlanır.
-4. **Her Kesimden Ulaşılabilirlik (Fiyat Şeffaflığı):** Ekonomik ve dayanıklı 1. sınıf MDF-Lam modellerden, en üst segment el işçiliği lake ve 12mm monoblok porselen ada mutfaklara kadar her bütçeye uygun şeffaf, sürprizsiz sözleşmeli bütçe alternatifleri sunulur.
-5. **1984'ten Gelen Güven & 10 Yıl Garanti:** 2.463'ten fazla teslim edilmiş konut ve villa referansı. Resmi noter onaylı sözleşme, teslimat günü taahhüdü ve 10 yıl gövde/mekanizma garantisi.
+## 2. Üretim ve Kalite Standartları
+- **Gövde Malzemesi:** %100 E1 Avrupa standartlarında formaldehit salınımı sıfırlanmış nem mukavemetli MDF-Lam.
+- **Kapak Seçenekleri:** Çift taraflı fırın kurutmalı ipek mat lake kapaklar, çizilmeye dirençli akrilik yüzeyler ve doğal hare dokulu masif ahşap kaplamalar.
+- **Mekanizma ve Donanım:** Blum Aventos kalkar kapaklar, Blum Legrabox/Tandembox frenli raylar, Häfele gizli kiler sistemleri.
+- **Garanti:** 10 yıl bütünleşik atölye imalat garantisi.
 
-## Malzeme & Dayanım Standartları
-- **Gövde:** %100 18mm E1 normunda yüksek yoğunluklu neme dayanıklı MDF-Lam (Suntalam kesinlikle kullanılmaz).
-- **Mekanizma Donanımı:** 200.000 açma-kapama testli Blum (Avusturya) ve Hafele (Almanya) frenli menteşe ve ray sistemleri.
-- **Tezgah Seçenekleri:** Belenco, Çimstone kuvars ve Laminam porselen monoblok tezgahlar.
-
-## İletişim, Mağaza ve Atölye Bilgileri
-- **Merkez Merkez Atölye:** Buca / İzmir
-- **Telefon & WhatsApp Keşif Hattı:** +90 539 333 33 03
-- **Hizmet Sahası:** İzmir Metropolü ve Tüm İlçeleri (Yerinde Ücretsiz Keşif)
+## 3. Resmi İletişim ve Koordinatlar
+- **Unvan:** Cem Yeşilay İç Mimarlık & Lüks Mobilya İmalatı
+- **Adres:** Adatepe Mahallesi, Özbekistan Caddesi No:10/F, 35000 Buca / İzmir
+- **Google Harita:** https://share.google/HC5sweG3HXcjogRNZ
+- **Instagram:** https://www.instagram.com/cemyesilay.luxury
