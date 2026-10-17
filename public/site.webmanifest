@@ -1,11 +1,11 @@
 {
-  "name": "Cem Yeşilay Mimarlık",
-  "short_name": "İzmir Mutfak",
-  "description": "İzmir genelinde birinci sınıf özel imalat mutfak dolabı, anahtar teslim banyo ve daire tadilatı.",
+  "name": "Cem Yeşilay Luxury Atelier",
+  "short_name": "Cem Yeşilay",
+  "description": "Cem Yeşilay Luxury - İzmir özel imalat mutfak dolabı, mimari banyo ve lüks villa tadilatı.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FAF7F2",
-  "theme_color": "#1C1917",
+  "background_color": "#FAF9F6",
+  "theme_color": "#1B382F",
   "icons": [
     {
       "src": "/favicon-48x48.png",
