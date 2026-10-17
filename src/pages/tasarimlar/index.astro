@@ -159,19 +159,40 @@ const schemaImageGallery = {
           itemscope 
           itemtype="https://schema.org/ImageObject"
         >
-          <!-- 1:1 Tam Kare Görsel (İlk 6 Model Eager LCP, Diğerleri Lazy Load + Low Priority) -->
-          <img 
-            src={item.img} 
-            alt={item.altText} 
-            title={item.seoTitle}
-            loading={idx < 6 ? "eager" : "lazy"} 
-            decoding="async"
-            fetchpriority={idx < 6 ? "high" : "low"}
-            width="600"
-            height="600"
-            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-106"
-            itemprop="contentUrl"
-          />
+          <!-- 1:1 Tam Kare Görsel (İlk 6 Model Eager LCP, Sonraki 131 Model Gerçek IntersectionObserver + Data-Src) -->
+          {idx < 6 ? (
+            <img 
+              src={item.img} 
+              alt={item.altText} 
+              title={item.seoTitle}
+              loading="eager" 
+              decoding="async"
+              fetchpriority="high"
+              width="600"
+              height="600"
+              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-106"
+              itemprop="contentUrl"
+            />
+          ) : (
+            <>
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Crect width='100%25' height='100%25' fill='%23f5f5f4'/%3E%3C/svg%3E"
+                data-src={item.img} 
+                alt={item.altText} 
+                title={item.seoTitle}
+                loading="lazy" 
+                decoding="async"
+                fetchpriority="low"
+                width="600"
+                height="600"
+                class="lazy-progressive-img w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-106 opacity-0"
+                itemprop="contentUrl"
+              />
+              <noscript>
+                <img src={item.img} alt={item.altText} width="600" height="600" class="w-full h-full object-cover" />
+              </noscript>
+            </>
+          )}
 
           <!-- Google & AI Botları İçin Semantik W3C sr-only Katmanı (Görsel Tasarımı Asla Bozmaz) -->
           <div class="sr-only">
@@ -253,24 +274,32 @@ const schemaImageGallery = {
         <img id="modalImg" src="" alt="" class="max-h-[65vh] w-auto object-contain mx-auto" />
       </div>
 
-      <!-- Modal Alt Barı (WhatsApp İletişimi) -->
-      <div class="p-3.5 bg-[#F8F7F3] border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <div class="text-center sm:text-left">
-          <span class="text-[10px] text-stone-500 uppercase tracking-wider block">Seçilen Model Numarası</span>
-          <span id="modalModelNo" class="text-sm font-mono font-bold text-stone-900"></span>
+      <!-- Modal Alt Barı (Tescilli Açıklama & WhatsApp İletişimi) -->
+      <div class="p-4 bg-[#F8F7F3] border-t border-stone-200 space-y-3">
+        <div class="space-y-1">
+          <div class="flex items-center justify-between">
+            <span id="modalModelNo" class="text-xs font-mono font-bold text-stone-900 bg-stone-200 px-2 py-0.5 rounded-xs"></span>
+            <span class="text-[10px] text-stone-500 font-semibold uppercase tracking-wider">İzmir Buca Özel İmalat</span>
+          </div>
+          <p id="modalDesc" class="text-xs text-stone-700 font-normal leading-relaxed"></p>
         </div>
-        <a 
-          id="modalWhatsappBtn" 
-          href="#" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider shadow-xs transition"
-        >
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
-          </svg>
-          <span>Bu Modeli 3D Çizdir &amp; Bilgi Al</span>
-        </a>
+        <div class="pt-2 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div class="text-center sm:text-left">
+            <span class="text-[10px] text-emerald-800 font-bold uppercase tracking-wider block">✓ Ücretsiz 3D Keşif &amp; Tasarım</span>
+          </div>
+          <a 
+            id="modalWhatsappBtn" 
+            href="#" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider shadow-xs transition"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+            </svg>
+            <span>Bu Modeli 3D Çizdir &amp; Bilgi Al</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -291,7 +320,62 @@ const schemaImageGallery = {
       const modalTitle = document.getElementById("modalTitle");
       const modalCategory = document.getElementById("modalCategory");
       const modalModelNo = document.getElementById("modalModelNo");
+      const modalDesc = document.getElementById("modalDesc");
       const modalWhatsappBtn = document.getElementById("modalWhatsappBtn");
+
+      // =========================================================================
+      // DİNAMİK INTERSECTION OBSERVER LAZY LOAD MOTORU (Preload Scanner Koruması)
+      // =========================================================================
+      const progressiveImages = document.querySelectorAll(".lazy-progressive-img");
+
+      function loadProgressiveImg(img) {
+        if (!img) return;
+        const realSrc = img.getAttribute("data-src");
+        if (!realSrc || img.src === realSrc) return;
+
+        const preloader = new Image();
+        preloader.onload = () => {
+          img.src = realSrc;
+          img.classList.remove("opacity-0");
+        };
+        preloader.src = realSrc;
+      }
+
+      let imageObserver = null;
+      if ("IntersectionObserver" in window) {
+        imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const targetImg = entry.target;
+              loadProgressiveImg(targetImg);
+              observer.unobserve(targetImg);
+            }
+          });
+        }, {
+          rootMargin: "250px 0px", // Kullanıcı yaklaşınca 250px önden yükleme
+          threshold: 0.01
+        });
+
+        progressiveImages.forEach((img) => imageObserver.observe(img));
+      } else {
+        // Fallback: Eski tarayıcılarda doğrudan yükle
+        progressiveImages.forEach(loadProgressiveImg);
+      }
+
+      // Filtreleme / arama yapıldığında ekrana yeni giren kartları anında tarayan tetikleyici
+      function checkVisibleLazyImages() {
+        if (!imageObserver) return;
+        progressiveImages.forEach((img) => {
+          const card = img.closest(".model-card");
+          if (card && card.style.display !== "none") {
+            const rect = card.getBoundingClientRect();
+            if (rect.top < window.innerHeight + 400 && rect.bottom > -200) {
+              loadProgressiveImg(img);
+              imageObserver.unobserve(img);
+            }
+          }
+        });
+      }
 
       const urlParams = new URLSearchParams(window.location.search);
       const initialCat = urlParams.get("kategori");
@@ -346,6 +430,9 @@ const schemaImageGallery = {
             noResults.classList.add("hidden");
           }
         }
+
+        // Filtreleme sonrası ekranda kalan görselleri kontrol et
+        setTimeout(checkVisibleLazyImages, 50);
       }
 
       // Canlı arama
@@ -406,10 +493,12 @@ const schemaImageGallery = {
           const category = card.getAttribute("data-category-name");
           const modelNo = card.getAttribute("data-model-id");
 
+          const desc = card.getAttribute("data-desc") || "";
           if (modalImg) modalImg.src = img;
           if (modalTitle) modalTitle.textContent = title;
           if (modalCategory) modalCategory.textContent = category;
           if (modalModelNo) modalModelNo.textContent = modelNo;
+          if (modalDesc) modalDesc.textContent = desc;
 
           const whatsappText = encodeURIComponent(`Merhaba, web sitenizdeki ${modelNo} (${title} - ${category}) modelini beğendim. Kendi evim için özel ölçü rölöve ve 3D çizim projelendirmesi hakkında bilgi almak istiyorum.`);
           if (modalWhatsappBtn) modalWhatsappBtn.href = `https://wa.me/905393333303?text=${whatsappText}`;
