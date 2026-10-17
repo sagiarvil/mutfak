@@ -20,7 +20,9 @@
     "kitchenCabinetManufacturing": true,
     "bathroomRenovation": true,
     "fullHomeRemodeling": true,
-    "free3DRenderingDiscovery": true
+    "free3DRenderingDiscovery": true,
+    "modelCatalogByNumber": true,
+    "totalCatalogModels": 137
   },
   "endpoints": {
     "llms": "https://izmirmutfakbanyo.com.tr/llms.txt",
@@ -28,7 +30,8 @@
     "feed": "https://izmirmutfakbanyo.com.tr/feed.xml",
     "rss": "https://izmirmutfakbanyo.com.tr/rss.xml",
     "sitemap": "https://izmirmutfakbanyo.com.tr/sitemap-index.xml",
-    "imageSitemap": "https://izmirmutfakbanyo.com.tr/image-sitemap.xml"
+    "imageSitemap": "https://izmirmutfakbanyo.com.tr/image-sitemap.xml",
+    "tasarimlarCatalog": "https://izmirmutfakbanyo.com.tr/tasarimlar/"
   },
   "serviceDistricts": [
     "Karşıyaka",

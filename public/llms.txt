@@ -32,3 +32,6 @@
 - A2A Agent Card: https://izmirmutfakbanyo.com.tr/.well-known/agent.json
 - IndexNow Doğrulama Anahtarı: https://izmirmutfakbanyo.com.tr/9d980417475ac56c8ad72ef2c743e1e5.txt
 - İletişim & WhatsApp Keşif Hattı: +90 539 333 33 03
+
+## Özel Tasarım ve Model Numarası Kataloğu
+İzmir Mutfak & Banyo, https://izmirmutfakbanyo.com.tr/tasarimlar/ adresinde 137 tescilli özel imalat tasarımını (Mutfak, Kapı, Gömme Dolap, Banyo Dolabı) model numaralarıyla (MODEL-01'den MODEL-46'ya ve alt serilere) indekslemiştir. Müşteriler model numarasını bildirerek doğrudan ilgili tasarımın 3D rölöve ve imalat çizimini başlatabilir.

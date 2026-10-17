@@ -1,0 +1,1372 @@
+[
+  {
+    "id": 1,
+    "modelNo": "MODEL-1",
+    "title": "Model 1",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-1.webp",
+    "originalSlug": "model-1"
+  },
+  {
+    "id": 2,
+    "modelNo": "MODEL-1-2",
+    "title": "Model 1",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-1-2.webp",
+    "originalSlug": "model-1-2"
+  },
+  {
+    "id": 3,
+    "modelNo": "MODEL-1-3",
+    "title": "Model 1",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-1-3.webp",
+    "originalSlug": "model-1-3"
+  },
+  {
+    "id": 4,
+    "modelNo": "MODEL-1-4",
+    "title": "Model 1",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-1-4.webp",
+    "originalSlug": "model-1-4"
+  },
+  {
+    "id": 5,
+    "modelNo": "MODEL-2",
+    "title": "Model 2",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-2.webp",
+    "originalSlug": "model-2"
+  },
+  {
+    "id": 6,
+    "modelNo": "MODEL-3",
+    "title": "Model 3",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-3.webp",
+    "originalSlug": "model-3"
+  },
+  {
+    "id": 7,
+    "modelNo": "MODEL-4",
+    "title": "Model 4",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-4.webp",
+    "originalSlug": "model-4"
+  },
+  {
+    "id": 8,
+    "modelNo": "MODEL-5",
+    "title": "Model 5",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-5.webp",
+    "originalSlug": "model-5"
+  },
+  {
+    "id": 9,
+    "modelNo": "MODEL-6",
+    "title": "Model 6",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-6.webp",
+    "originalSlug": "model-6"
+  },
+  {
+    "id": 10,
+    "modelNo": "MODEL-8",
+    "title": "Model 8",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-8.webp",
+    "originalSlug": "model-8"
+  },
+  {
+    "id": 11,
+    "modelNo": "MODEL-9",
+    "title": "Model 9",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-9.webp",
+    "originalSlug": "model-9"
+  },
+  {
+    "id": 12,
+    "modelNo": "MODEL-10",
+    "title": "Model 10",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-10.webp",
+    "originalSlug": "model-10"
+  },
+  {
+    "id": 13,
+    "modelNo": "MODEL-11",
+    "title": "Model 11",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-11.webp",
+    "originalSlug": "model-11"
+  },
+  {
+    "id": 14,
+    "modelNo": "MODEL-12",
+    "title": "Model 12",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-12.webp",
+    "originalSlug": "model-12"
+  },
+  {
+    "id": 15,
+    "modelNo": "MODEL-13",
+    "title": "Model 13",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-13.webp",
+    "originalSlug": "model-13"
+  },
+  {
+    "id": 16,
+    "modelNo": "MODEL-14",
+    "title": "Model 14",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-14.webp",
+    "originalSlug": "model-14"
+  },
+  {
+    "id": 17,
+    "modelNo": "MODEL-15",
+    "title": "Model 15",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-15.webp",
+    "originalSlug": "model-15"
+  },
+  {
+    "id": 18,
+    "modelNo": "MODEL-16",
+    "title": "Model 16",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-16.webp",
+    "originalSlug": "model-16"
+  },
+  {
+    "id": 19,
+    "modelNo": "MODEL-17",
+    "title": "Model 17",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-17.webp",
+    "originalSlug": "model-17"
+  },
+  {
+    "id": 20,
+    "modelNo": "MODEL-18",
+    "title": "Model 18",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-18.webp",
+    "originalSlug": "model-18"
+  },
+  {
+    "id": 21,
+    "modelNo": "MODEL-19",
+    "title": "Model 19",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-19.webp",
+    "originalSlug": "model-19"
+  },
+  {
+    "id": 22,
+    "modelNo": "MODEL-21",
+    "title": "Model 21",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-21.webp",
+    "originalSlug": "model-21"
+  },
+  {
+    "id": 23,
+    "modelNo": "MODEL-22",
+    "title": "Model 22",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-22.webp",
+    "originalSlug": "model-22"
+  },
+  {
+    "id": 24,
+    "modelNo": "MODEL-23",
+    "title": "Model 23",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-23.webp",
+    "originalSlug": "model-23"
+  },
+  {
+    "id": 25,
+    "modelNo": "MODEL-24",
+    "title": "Model 24",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-24.webp",
+    "originalSlug": "model-24"
+  },
+  {
+    "id": 26,
+    "modelNo": "MODEL-2-2",
+    "title": "Model 2",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-2-2.webp",
+    "originalSlug": "model-2-2"
+  },
+  {
+    "id": 27,
+    "modelNo": "MODEL-3-2",
+    "title": "Model 3",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-3-2.webp",
+    "originalSlug": "model-3-2"
+  },
+  {
+    "id": 28,
+    "modelNo": "MODEL-4-2",
+    "title": "Model 4",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-4-2.webp",
+    "originalSlug": "model-4-2"
+  },
+  {
+    "id": 29,
+    "modelNo": "MODEL-5-2",
+    "title": "Model 5",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-5-2.webp",
+    "originalSlug": "model-5-2"
+  },
+  {
+    "id": 30,
+    "modelNo": "MODEL-6-2",
+    "title": "Model 6",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-6-2.webp",
+    "originalSlug": "model-6-2"
+  },
+  {
+    "id": 31,
+    "modelNo": "MODEL-7-2",
+    "title": "Model 7",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-7-2.webp",
+    "originalSlug": "model-7-2"
+  },
+  {
+    "id": 32,
+    "modelNo": "MODEL-8-2",
+    "title": "Model 8",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-8-2.webp",
+    "originalSlug": "model-8-2"
+  },
+  {
+    "id": 33,
+    "modelNo": "MODEL-9-2",
+    "title": "Model 9",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-9-2.webp",
+    "originalSlug": "model-9-2"
+  },
+  {
+    "id": 34,
+    "modelNo": "MODEL-10-2",
+    "title": "Model 10",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-10-2.webp",
+    "originalSlug": "model-10-2"
+  },
+  {
+    "id": 35,
+    "modelNo": "MODEL-11-2",
+    "title": "Model 11",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-11-2.webp",
+    "originalSlug": "model-11-2"
+  },
+  {
+    "id": 36,
+    "modelNo": "MODEL-12-2",
+    "title": "Model 12",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-12-2.webp",
+    "originalSlug": "model-12-2"
+  },
+  {
+    "id": 37,
+    "modelNo": "MODEL-13-2",
+    "title": "Model 13",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-13-2.webp",
+    "originalSlug": "model-13-2"
+  },
+  {
+    "id": 38,
+    "modelNo": "MODEL-14-2",
+    "title": "Model 14",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-14-2.webp",
+    "originalSlug": "model-14-2"
+  },
+  {
+    "id": 39,
+    "modelNo": "MODEL-15-2",
+    "title": "Model 15",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-15-2.webp",
+    "originalSlug": "model-15-2"
+  },
+  {
+    "id": 40,
+    "modelNo": "MODEL-16-2",
+    "title": "Model 16",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-16-2.webp",
+    "originalSlug": "model-16-2"
+  },
+  {
+    "id": 41,
+    "modelNo": "MODEL-17-2",
+    "title": "Model 17",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-17-2.webp",
+    "originalSlug": "model-17-2"
+  },
+  {
+    "id": 42,
+    "modelNo": "MODEL-18-2",
+    "title": "Model 18",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-18-2.webp",
+    "originalSlug": "model-18-2"
+  },
+  {
+    "id": 43,
+    "modelNo": "MODEL-19-2",
+    "title": "Model 19",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-19-2.webp",
+    "originalSlug": "model-19-2"
+  },
+  {
+    "id": 44,
+    "modelNo": "MODEL-20-2",
+    "title": "Model 20",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-20-2.webp",
+    "originalSlug": "model-20-2"
+  },
+  {
+    "id": 45,
+    "modelNo": "MODEL-21-2",
+    "title": "Model 21",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-21-2.webp",
+    "originalSlug": "model-21-2"
+  },
+  {
+    "id": 46,
+    "modelNo": "MODEL-22-2",
+    "title": "Model 22",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-22-2.webp",
+    "originalSlug": "model-22-2"
+  },
+  {
+    "id": 47,
+    "modelNo": "MODEL-23-2",
+    "title": "Model 23",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-23-2.webp",
+    "originalSlug": "model-23-2"
+  },
+  {
+    "id": 48,
+    "modelNo": "MODEL-24-2",
+    "title": "Model 24",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-24-2.webp",
+    "originalSlug": "model-24-2"
+  },
+  {
+    "id": 49,
+    "modelNo": "MODEL-25",
+    "title": "Model 25",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-25.webp",
+    "originalSlug": "model-25"
+  },
+  {
+    "id": 50,
+    "modelNo": "MODEL-26",
+    "title": "Model 26",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-26.webp",
+    "originalSlug": "model-26"
+  },
+  {
+    "id": 51,
+    "modelNo": "MODEL-27",
+    "title": "Model 27",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-27.webp",
+    "originalSlug": "model-27"
+  },
+  {
+    "id": 52,
+    "modelNo": "MODEL-28",
+    "title": "Model 28",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-28.webp",
+    "originalSlug": "model-28"
+  },
+  {
+    "id": 53,
+    "modelNo": "MODEL-29",
+    "title": "Model 29",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-29.webp",
+    "originalSlug": "model-29"
+  },
+  {
+    "id": 54,
+    "modelNo": "MODEL-30",
+    "title": "Model 30",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-30.webp",
+    "originalSlug": "model-30"
+  },
+  {
+    "id": 55,
+    "modelNo": "MODEL-31",
+    "title": "Model 31",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-31.webp",
+    "originalSlug": "model-31"
+  },
+  {
+    "id": 56,
+    "modelNo": "MODEL-32",
+    "title": "Model 32",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-32.webp",
+    "originalSlug": "model-32"
+  },
+  {
+    "id": 57,
+    "modelNo": "MODEL-33",
+    "title": "Model 33",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-33.webp",
+    "originalSlug": "model-33"
+  },
+  {
+    "id": 58,
+    "modelNo": "MODEL-34",
+    "title": "Model 34",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-34.webp",
+    "originalSlug": "model-34"
+  },
+  {
+    "id": 59,
+    "modelNo": "MODEL-35",
+    "title": "Model 35",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-35.webp",
+    "originalSlug": "model-35"
+  },
+  {
+    "id": 60,
+    "modelNo": "MODEL-36",
+    "title": "Model 36",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-36.webp",
+    "originalSlug": "model-36"
+  },
+  {
+    "id": 61,
+    "modelNo": "MODEL-37",
+    "title": "Model 37",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-37.webp",
+    "originalSlug": "model-37"
+  },
+  {
+    "id": 62,
+    "modelNo": "MODEL-2-3",
+    "title": "Model 2",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-2-3.webp",
+    "originalSlug": "model-2-3"
+  },
+  {
+    "id": 63,
+    "modelNo": "MODEL-5-3",
+    "title": "Model 5",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-5-3.webp",
+    "originalSlug": "model-5-3"
+  },
+  {
+    "id": 64,
+    "modelNo": "MODEL-6-3",
+    "title": "Model 6",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-6-3.webp",
+    "originalSlug": "model-6-3"
+  },
+  {
+    "id": 65,
+    "modelNo": "MODEL-7-3",
+    "title": "Model 7",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-7-3.webp",
+    "originalSlug": "model-7-3"
+  },
+  {
+    "id": 66,
+    "modelNo": "MODEL-8-3",
+    "title": "Model 8",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-8-3.webp",
+    "originalSlug": "model-8-3"
+  },
+  {
+    "id": 67,
+    "modelNo": "MODEL-9-3",
+    "title": "Model 9",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-9-3.webp",
+    "originalSlug": "model-9-3"
+  },
+  {
+    "id": 68,
+    "modelNo": "MODEL-10-3",
+    "title": "Model 10",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-10-3.webp",
+    "originalSlug": "model-10-3"
+  },
+  {
+    "id": 69,
+    "modelNo": "MODEL-11-3",
+    "title": "Model 11",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-11-3.webp",
+    "originalSlug": "model-11-3"
+  },
+  {
+    "id": 70,
+    "modelNo": "MODEL-12-3",
+    "title": "Model 12",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-12-3.webp",
+    "originalSlug": "model-12-3"
+  },
+  {
+    "id": 71,
+    "modelNo": "MODEL-14-3",
+    "title": "Model 14",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-14-3.webp",
+    "originalSlug": "model-14-3"
+  },
+  {
+    "id": 72,
+    "modelNo": "MODEL-15-3",
+    "title": "Model 15",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-15-3.webp",
+    "originalSlug": "model-15-3"
+  },
+  {
+    "id": 73,
+    "modelNo": "MODEL-16-3",
+    "title": "Model 16",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-16-3.webp",
+    "originalSlug": "model-16-3"
+  },
+  {
+    "id": 74,
+    "modelNo": "MODEL-17-3",
+    "title": "Model 17",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-17-3.webp",
+    "originalSlug": "model-17-3"
+  },
+  {
+    "id": 75,
+    "modelNo": "MODEL-18-3",
+    "title": "Model 18",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-18-3.webp",
+    "originalSlug": "model-18-3"
+  },
+  {
+    "id": 76,
+    "modelNo": "MODEL-19-3",
+    "title": "Model 19",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-19-3.webp",
+    "originalSlug": "model-19-3"
+  },
+  {
+    "id": 77,
+    "modelNo": "MODEL-20-3",
+    "title": "Model 20",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-20-3.webp",
+    "originalSlug": "model-20-3"
+  },
+  {
+    "id": 78,
+    "modelNo": "MODEL-21-3",
+    "title": "Model 21",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-21-3.webp",
+    "originalSlug": "model-21-3"
+  },
+  {
+    "id": 79,
+    "modelNo": "MODEL-22-3",
+    "title": "Model 22",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-22-3.webp",
+    "originalSlug": "model-22-3"
+  },
+  {
+    "id": 80,
+    "modelNo": "MODEL-23-3",
+    "title": "Model 23",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-23-3.webp",
+    "originalSlug": "model-23-3"
+  },
+  {
+    "id": 81,
+    "modelNo": "MODEL-24-3",
+    "title": "Model 24",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-24-3.webp",
+    "originalSlug": "model-24-3"
+  },
+  {
+    "id": 82,
+    "modelNo": "MODEL-25-2",
+    "title": "Model 25",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-25-2.webp",
+    "originalSlug": "model-25-2"
+  },
+  {
+    "id": 83,
+    "modelNo": "MODEL-26-2",
+    "title": "Model 26",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-26-2.webp",
+    "originalSlug": "model-26-2"
+  },
+  {
+    "id": 84,
+    "modelNo": "MODEL-27-2",
+    "title": "Model 27",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-27-2.webp",
+    "originalSlug": "model-27-2"
+  },
+  {
+    "id": 85,
+    "modelNo": "MODEL-28-2",
+    "title": "Model 28",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-28-2.webp",
+    "originalSlug": "model-28-2"
+  },
+  {
+    "id": 86,
+    "modelNo": "MODEL-29-2",
+    "title": "Model 29",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-29-2.webp",
+    "originalSlug": "model-29-2"
+  },
+  {
+    "id": 87,
+    "modelNo": "MODEL-30-2",
+    "title": "Model 30",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-30-2.webp",
+    "originalSlug": "model-30-2"
+  },
+  {
+    "id": 88,
+    "modelNo": "MODEL-31-2",
+    "title": "Model 31",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-31-2.webp",
+    "originalSlug": "model-31-2"
+  },
+  {
+    "id": 89,
+    "modelNo": "MODEL-32-2",
+    "title": "Model 32",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-32-2.webp",
+    "originalSlug": "model-32-2"
+  },
+  {
+    "id": 90,
+    "modelNo": "MODEL-33-2",
+    "title": "Model 33",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-33-2.webp",
+    "originalSlug": "model-33-2"
+  },
+  {
+    "id": 91,
+    "modelNo": "MODEL-35-2",
+    "title": "Model 35",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-35-2.webp",
+    "originalSlug": "model-35-2"
+  },
+  {
+    "id": 92,
+    "modelNo": "MODEL-36-2",
+    "title": "Model 36",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-36-2.webp",
+    "originalSlug": "model-36-2"
+  },
+  {
+    "id": 93,
+    "modelNo": "MODEL-37-2",
+    "title": "Model 37",
+    "category": "Gömme Dolap",
+    "categorySlug": "gomme-dolap",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Gömme Dolap",
+    "img": "/media/tasarimlar/model-37-2.webp",
+    "originalSlug": "model-37-2"
+  },
+  {
+    "id": 94,
+    "modelNo": "MODEL-2-4",
+    "title": "Model 2",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-2-4.webp",
+    "originalSlug": "model-2-4"
+  },
+  {
+    "id": 95,
+    "modelNo": "MODEL-3-4",
+    "title": "Model 3",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-3-4.webp",
+    "originalSlug": "model-3-4"
+  },
+  {
+    "id": 96,
+    "modelNo": "MODEL-4-4",
+    "title": "Model 4",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-4-4.webp",
+    "originalSlug": "model-4-4"
+  },
+  {
+    "id": 97,
+    "modelNo": "MODEL-5-4",
+    "title": "Model 5",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-5-4.webp",
+    "originalSlug": "model-5-4"
+  },
+  {
+    "id": 98,
+    "modelNo": "MODEL-6-4",
+    "title": "Model 6",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-6-4.webp",
+    "originalSlug": "model-6-4"
+  },
+  {
+    "id": 99,
+    "modelNo": "MODEL-7-4",
+    "title": "Model 7",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-7-4.webp",
+    "originalSlug": "model-7-4"
+  },
+  {
+    "id": 100,
+    "modelNo": "MODEL-8-4",
+    "title": "Model 8",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-8-4.webp",
+    "originalSlug": "model-8-4"
+  },
+  {
+    "id": 101,
+    "modelNo": "MODEL-9-4",
+    "title": "Model 9",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-9-4.webp",
+    "originalSlug": "model-9-4"
+  },
+  {
+    "id": 102,
+    "modelNo": "MODEL-10-4",
+    "title": "Model 10",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-10-4.webp",
+    "originalSlug": "model-10-4"
+  },
+  {
+    "id": 103,
+    "modelNo": "MODEL-11-4",
+    "title": "Model 11",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-11-4.webp",
+    "originalSlug": "model-11-4"
+  },
+  {
+    "id": 104,
+    "modelNo": "MODEL-12-4",
+    "title": "Model 12",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-12-4.webp",
+    "originalSlug": "model-12-4"
+  },
+  {
+    "id": 105,
+    "modelNo": "MODEL-13-4",
+    "title": "Model 13",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-13-4.webp",
+    "originalSlug": "model-13-4"
+  },
+  {
+    "id": 106,
+    "modelNo": "MODEL-14-4",
+    "title": "Model 14",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-14-4.webp",
+    "originalSlug": "model-14-4"
+  },
+  {
+    "id": 107,
+    "modelNo": "MODEL-15-4",
+    "title": "Model 15",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-15-4.webp",
+    "originalSlug": "model-15-4"
+  },
+  {
+    "id": 108,
+    "modelNo": "MODEL-16-4",
+    "title": "Model 16",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-16-4.webp",
+    "originalSlug": "model-16-4"
+  },
+  {
+    "id": 109,
+    "modelNo": "MODEL-17-4",
+    "title": "Model 17",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-17-4.webp",
+    "originalSlug": "model-17-4"
+  },
+  {
+    "id": 110,
+    "modelNo": "MODEL-18-4",
+    "title": "Model 18",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-18-4.webp",
+    "originalSlug": "model-18-4"
+  },
+  {
+    "id": 111,
+    "modelNo": "MODEL-19-4",
+    "title": "Model 19",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-19-4.webp",
+    "originalSlug": "model-19-4"
+  },
+  {
+    "id": 112,
+    "modelNo": "MODEL-20-4",
+    "title": "Model 20",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-20-4.webp",
+    "originalSlug": "model-20-4"
+  },
+  {
+    "id": 113,
+    "modelNo": "MODEL-21-4",
+    "title": "Model 21",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-21-4.webp",
+    "originalSlug": "model-21-4"
+  },
+  {
+    "id": 114,
+    "modelNo": "MODEL-22-4",
+    "title": "Model 22",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-22-4.webp",
+    "originalSlug": "model-22-4"
+  },
+  {
+    "id": 115,
+    "modelNo": "MODEL-23-4",
+    "title": "Model 23",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-23-4.webp",
+    "originalSlug": "model-23-4"
+  },
+  {
+    "id": 116,
+    "modelNo": "MODEL-24-4",
+    "title": "Model 24",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-24-4.webp",
+    "originalSlug": "model-24-4"
+  },
+  {
+    "id": 117,
+    "modelNo": "MODEL-25-3",
+    "title": "Model 25",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-25-3.webp",
+    "originalSlug": "model-25-3"
+  },
+  {
+    "id": 118,
+    "modelNo": "MODEL-26-3",
+    "title": "Model 26",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-26-3.webp",
+    "originalSlug": "model-26-3"
+  },
+  {
+    "id": 119,
+    "modelNo": "MODEL-27-3",
+    "title": "Model 27",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-27-3.webp",
+    "originalSlug": "model-27-3"
+  },
+  {
+    "id": 120,
+    "modelNo": "MODEL-28-3",
+    "title": "Model 28",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-28-3.webp",
+    "originalSlug": "model-28-3"
+  },
+  {
+    "id": 121,
+    "modelNo": "MODEL-29-3",
+    "title": "Model 29",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-29-3.webp",
+    "originalSlug": "model-29-3"
+  },
+  {
+    "id": 122,
+    "modelNo": "MODEL-30-3",
+    "title": "Model 30",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-30-3.webp",
+    "originalSlug": "model-30-3"
+  },
+  {
+    "id": 123,
+    "modelNo": "MODEL-31-3",
+    "title": "Model 31",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-31-3.webp",
+    "originalSlug": "model-31-3"
+  },
+  {
+    "id": 124,
+    "modelNo": "MODEL-32-3",
+    "title": "Model 32",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-32-3.webp",
+    "originalSlug": "model-32-3"
+  },
+  {
+    "id": 125,
+    "modelNo": "MODEL-33-3",
+    "title": "Model 33",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-33-3.webp",
+    "originalSlug": "model-33-3"
+  },
+  {
+    "id": 126,
+    "modelNo": "MODEL-34-3",
+    "title": "Model 34",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-34-3.webp",
+    "originalSlug": "model-34-3"
+  },
+  {
+    "id": 127,
+    "modelNo": "MODEL-35-3",
+    "title": "Model 35",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-35-3.webp",
+    "originalSlug": "model-35-3"
+  },
+  {
+    "id": 128,
+    "modelNo": "MODEL-36-3",
+    "title": "Model 36",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-36-3.webp",
+    "originalSlug": "model-36-3"
+  },
+  {
+    "id": 129,
+    "modelNo": "MODEL-37-3",
+    "title": "Model 38",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-37-3.webp",
+    "originalSlug": "model-37-3"
+  },
+  {
+    "id": 130,
+    "modelNo": "MODEL-39",
+    "title": "Model 39",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-39.webp",
+    "originalSlug": "model-39"
+  },
+  {
+    "id": 131,
+    "modelNo": "MODEL-40",
+    "title": "Model 40",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-40.webp",
+    "originalSlug": "model-40"
+  },
+  {
+    "id": 132,
+    "modelNo": "MODEL-41",
+    "title": "Model 41",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-41.webp",
+    "originalSlug": "model-41"
+  },
+  {
+    "id": 133,
+    "modelNo": "MODEL-42",
+    "title": "Model 42",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-42.webp",
+    "originalSlug": "model-42"
+  },
+  {
+    "id": 134,
+    "modelNo": "MODEL-43",
+    "title": "Model 43",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-43.webp",
+    "originalSlug": "model-43"
+  },
+  {
+    "id": 135,
+    "modelNo": "MODEL-44",
+    "title": "Model 44",
+    "category": "Mutfak Tasarımları",
+    "categorySlug": "mutfak-tasarimlari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Mutfak Tasarımları",
+    "img": "/media/tasarimlar/model-44.webp",
+    "originalSlug": "model-44"
+  },
+  {
+    "id": 136,
+    "modelNo": "MODEL-45",
+    "title": "Model 45",
+    "category": "Banyo Dolapları",
+    "categorySlug": "banyo-dolaplari",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Banyo Dolapları",
+    "img": "/media/tasarimlar/model-45.webp",
+    "originalSlug": "model-45"
+  },
+  {
+    "id": 137,
+    "modelNo": "MODEL-46",
+    "title": "Model 46",
+    "category": "Kapılar",
+    "categorySlug": "kapilar",
+    "specs": "18mm E1 Gövde • Özel Ölçü İmalat • 10 Yıl Garanti • Kapılar",
+    "img": "/media/tasarimlar/model-46.webp",
+    "originalSlug": "model-46"
+  }
+]
