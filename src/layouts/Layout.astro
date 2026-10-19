@@ -37,9 +37,13 @@ const { seo, activeService } = Astro.props;
                 text: '#1D1D1F',
                 secondary: '#86868B',
                 dark: '#161617',
-                forest: '#1B382F',
-                forestHover: '#132821',
-                gold: '#8C693E'
+                forest: '#006039',
+                forestDeep: '#0B3B2C',
+                forestHover: '#00482B',
+                rolex: '#006039',
+                gold: '#C5A880',
+                goldLight: '#E6D7C3',
+                crimson: '#8B1E2D'
               }
             },
             fontFamily: {
@@ -99,7 +103,7 @@ const { seo, activeService } = Astro.props;
     <link rel="service-doc" type="application/json" href="/.well-known/agent.json" title="Autonomous Agent Protocol" />
 
   </head>
-  <body class="min-h-screen flex flex-col font-sans bg-[#FAF9F6] text-[#1D1D1F] overflow-x-hidden antialiased selection:bg-[#1B382F] selection:text-white">
+  <body class="min-h-screen flex flex-col font-sans bg-[#FAF9F6] text-[#1D1D1F] overflow-x-hidden antialiased selection:bg-[#006039] selection:text-white">
     <Header />
     <main id="main-content" class="flex-1 w-full overflow-hidden">
       <slot />
@@ -126,7 +130,7 @@ const { seo, activeService } = Astro.props;
   }
 
   :focus-visible {
-    outline: 2px solid #1B382F;
+    outline: 2px solid #006039;
     outline-offset: 2px;
   }
 
@@ -147,7 +151,7 @@ const { seo, activeService } = Astro.props;
 
   .apple-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 16px 36px -6px rgba(0, 0, 0, 0.08);
-    border-color: #1B382F;
+    box-shadow: 0 16px 36px -6px rgba(0, 96, 57, 0.10);
+    border-color: #006039;
   }
 </style>

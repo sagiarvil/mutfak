@@ -86,24 +86,25 @@ const defaultUrl = buildWhatsAppUrl({ service });
     padding: 0 1rem;
   }
   .cta-card {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background: linear-gradient(135deg, #0B2A1F 0%, #051610 100%);
     border-radius: 20px;
     padding: 2.5rem 2rem;
     color: #ffffff;
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 96, 57, 0.15);
+    border: 1px solid rgba(197, 168, 128, 0.3);
     text-align: center;
   }
   .cta-badge {
-    background: rgba(56, 189, 248, 0.15);
-    color: #38bdf8;
+    background: rgba(139, 30, 45, 0.3);
+    color: #E2CEB4;
     padding: 0.35rem 0.85rem;
     border-radius: 9999px;
     font-size: 0.8125rem;
     font-weight: 700;
     display: inline-block;
     margin-bottom: 1rem;
-    border: 1px solid rgba(56, 189, 248, 0.3);
+    border: 1px solid rgba(139, 30, 45, 0.55);
+    letter-spacing: 0.04em;
   }
   .cta-title {
     font-size: 1.85rem;
@@ -114,7 +115,7 @@ const defaultUrl = buildWhatsAppUrl({ service });
   }
   .cta-subtitle {
     font-size: 1rem;
-    color: #94a3b8;
+    color: #cbd5e1;
     max-width: 650px;
     margin: 0 auto 2rem;
     line-height: 1.6;
@@ -131,21 +132,21 @@ const defaultUrl = buildWhatsAppUrl({ service });
     font-size: 0.85rem;
     font-weight: 600;
     margin-bottom: 0.4rem;
-    color: #cbd5e1;
+    color: #C5A880;
   }
   .form-control {
     width: 100%;
     padding: 0.75rem 1rem;
     border-radius: 10px;
-    border: 1px solid #334155;
-    background: #0b1120;
+    border: 1px solid #1E4D3B;
+    background: #071D15;
     color: #ffffff;
     font-size: 0.95rem;
     outline: none;
     transition: border-color 0.2s ease;
   }
   .form-control:focus {
-    border-color: #38bdf8;
+    border-color: #C5A880;
   }
   .cta-action {
     display: flex;
@@ -154,7 +155,7 @@ const defaultUrl = buildWhatsAppUrl({ service });
     gap: 0.75rem;
   }
   .btn-wa-action {
-    background: #25d366;
+    background: #006039;
     color: #ffffff;
     padding: 1rem 2.25rem;
     border-radius: 9999px;
@@ -164,17 +165,19 @@ const defaultUrl = buildWhatsAppUrl({ service });
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    border: 1px solid rgba(197, 168, 128, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 96, 57, 0.4);
     transition: all 0.2s ease;
   }
   .btn-wa-action:hover {
-    background: #1eb954;
+    background: #00482B;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+    box-shadow: 0 8px 25px rgba(0, 96, 57, 0.5);
+    border-color: #C5A880;
   }
   .cta-microcopy {
     font-size: 0.78rem;
-    color: #64748b;
+    color: #94a3b8;
   }
 
   @media (max-width: 700px) {
