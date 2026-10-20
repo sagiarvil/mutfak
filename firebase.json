@@ -1,180 +1,360 @@
 {
-  "hosting": {
-    "site": "cem-yesilay",
-    "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "trailingSlash": true,
-    "headers": [
-      {
-        "source": "**/*.xml",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/xml; charset=utf-8"
-          },
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          },
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=3600, stale-while-revalidate=86400"
-          }
-        ]
-      },
-      {
-        "source": "**/*.@(html|htm)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400"
-          }
-        ]
-      },
-      {
-        "source": "/_astro/**",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000, immutable"
-          }
-        ]
-      },
-      {
-        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|avif|ico|woff2|woff)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000, immutable"
-          }
-        ]
-      },
-      {
-        "source": "**",
-        "headers": [
-          {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff"
-          },
-          {
-            "key": "X-Frame-Options",
-            "value": "DENY"
-          },
-          {
-            "key": "Referrer-Policy",
-            "value": "strict-origin-when-cross-origin"
-          },
-          {
-            "key": "Permissions-Policy",
-            "value": "camera=(), microphone=(), geolocation=()"
-          }
-        ]
-      },
-      {
-        "source": "/llms*.txt",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "text/markdown; charset=utf-8"
-          },
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          },
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=3600, stale-while-revalidate=86400"
-          }
-        ]
-      },
-      {
-        "source": "/.well-known/agent-card.json",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/json; charset=utf-8"
-          },
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          },
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=3600, stale-while-revalidate=86400"
-          }
-        ]
-      }
-    ],
-    "redirects": [
-      {
-        "source": "/mutfak-dolabi",
-        "destination": "/izmir-mutfak-dolabi-imalati/",
-        "type": 301
-      },
-      {
-        "source": "/mutfak-tadilati",
-        "destination": "/izmir-komple-mutfak-tadilati/",
-        "type": 301
-      },
-      {
-        "source": "/banyo-tadilati",
-        "destination": "/izmir-banyo-yenileme-seramik/",
-        "type": 301
-      },
-      {
-        "source": "/ev-tadilati",
-        "destination": "/izmir-komple-daire-tadilati/",
-        "type": 301
-      },
-      {
-        "source": "/anahtar-teslim-tadilat",
-        "destination": "/izmir-anahtar-teslim-tadilat/",
-        "type": 301
-      },
-      {
-        "source": "/hazir-mutfak",
-        "destination": "/hazir-mutfak-modelleri-izmir/",
-        "type": 301
-      },
-      {
-        "source": "/mutfak-dolabi-fiyatlari",
-        "destination": "/2026-mutfak-dolabi-fiyatlari/",
-        "type": 301
-      },
-      {
-        "source": "/modern-mutfak",
-        "destination": "/modern-mutfak-modelleri/",
-        "type": 301
-      },
-      {
-        "source": "/klasik-mutfak",
-        "destination": "/klasik-country-mutfak-modelleri/",
-        "type": 301
-      },
-      {
-        "source": "/country-mutfak",
-        "destination": "/klasik-country-mutfak-modelleri/",
-        "type": 301
-      },
-      {
-        "source": "/yasam-alanlari",
-        "destination": "/yasam-alanlari-mutfak-modelleri/",
-        "type": 301
-      },
-      {
-        "source": "/rss",
-        "destination": "/rss.xml",
-        "type": 301
-      },
-      {
-        "source": "/feed",
-        "destination": "/feed.xml",
-        "type": 301
-      }
-    ]
-  }
+  "hosting": [
+    {
+      "target": "cem-yesilay",
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "trailingSlash": true,
+      "headers": [
+        {
+          "source": "**/*.xml",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/xml; charset=utf-8"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600, stale-while-revalidate=86400"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(html|htm)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400"
+            }
+          ]
+        },
+        {
+          "source": "/_astro/**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=31536000, immutable"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|avif|ico|woff2|woff)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=31536000, immutable"
+            }
+          ]
+        },
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
+            },
+            {
+              "key": "Permissions-Policy",
+              "value": "camera=(), microphone=(), geolocation=()"
+            }
+          ]
+        },
+        {
+          "source": "/llms*.txt",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "text/markdown; charset=utf-8"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600, stale-while-revalidate=86400"
+            }
+          ]
+        },
+        {
+          "source": "/.well-known/agent-card.json",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600, stale-while-revalidate=86400"
+            }
+          ]
+        }
+      ],
+      "redirects": [
+        {
+          "source": "/mutfak-dolabi",
+          "destination": "/izmir-mutfak-dolabi-imalati/",
+          "type": 301
+        },
+        {
+          "source": "/mutfak-tadilati",
+          "destination": "/izmir-komple-mutfak-tadilati/",
+          "type": 301
+        },
+        {
+          "source": "/banyo-tadilati",
+          "destination": "/izmir-banyo-yenileme-seramik/",
+          "type": 301
+        },
+        {
+          "source": "/ev-tadilati",
+          "destination": "/izmir-komple-daire-tadilati/",
+          "type": 301
+        },
+        {
+          "source": "/anahtar-teslim-tadilat",
+          "destination": "/izmir-anahtar-teslim-tadilat/",
+          "type": 301
+        },
+        {
+          "source": "/hazir-mutfak",
+          "destination": "/hazir-mutfak-modelleri-izmir/",
+          "type": 301
+        },
+        {
+          "source": "/mutfak-dolabi-fiyatlari",
+          "destination": "/2026-mutfak-dolabi-fiyatlari/",
+          "type": 301
+        },
+        {
+          "source": "/modern-mutfak",
+          "destination": "/modern-mutfak-modelleri/",
+          "type": 301
+        },
+        {
+          "source": "/klasik-mutfak",
+          "destination": "/klasik-country-mutfak-modelleri/",
+          "type": 301
+        },
+        {
+          "source": "/country-mutfak",
+          "destination": "/klasik-country-mutfak-modelleri/",
+          "type": 301
+        },
+        {
+          "source": "/yasam-alanlari",
+          "destination": "/yasam-alanlari-mutfak-modelleri/",
+          "type": 301
+        },
+        {
+          "source": "/rss",
+          "destination": "/rss.xml",
+          "type": 301
+        },
+        {
+          "source": "/feed",
+          "destination": "/feed.xml",
+          "type": 301
+        }
+      ]
+    },
+    {
+      "target": "mutfak",
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "trailingSlash": true,
+      "headers": [
+        {
+          "source": "**/*.xml",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/xml; charset=utf-8"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600, stale-while-revalidate=86400"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(html|htm)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400"
+            }
+          ]
+        },
+        {
+          "source": "/_astro/**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=31536000, immutable"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|avif|ico|woff2|woff)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=31536000, immutable"
+            }
+          ]
+        },
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
+            },
+            {
+              "key": "Permissions-Policy",
+              "value": "camera=(), microphone=(), geolocation=()"
+            }
+          ]
+        },
+        {
+          "source": "/llms*.txt",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "text/markdown; charset=utf-8"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600, stale-while-revalidate=86400"
+            }
+          ]
+        },
+        {
+          "source": "/.well-known/agent-card.json",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600, stale-while-revalidate=86400"
+            }
+          ]
+        }
+      ],
+      "redirects": [
+        {
+          "source": "/mutfak-dolabi",
+          "destination": "/izmir-mutfak-dolabi-imalati/",
+          "type": 301
+        },
+        {
+          "source": "/mutfak-tadilati",
+          "destination": "/izmir-komple-mutfak-tadilati/",
+          "type": 301
+        },
+        {
+          "source": "/banyo-tadilati",
+          "destination": "/izmir-banyo-yenileme-seramik/",
+          "type": 301
+        },
+        {
+          "source": "/ev-tadilati",
+          "destination": "/izmir-komple-daire-tadilati/",
+          "type": 301
+        },
+        {
+          "source": "/anahtar-teslim-tadilat",
+          "destination": "/izmir-anahtar-teslim-tadilat/",
+          "type": 301
+        },
+        {
+          "source": "/hazir-mutfak",
+          "destination": "/hazir-mutfak-modelleri-izmir/",
+          "type": 301
+        },
+        {
+          "source": "/mutfak-dolabi-fiyatlari",
+          "destination": "/2026-mutfak-dolabi-fiyatlari/",
+          "type": 301
+        },
+        {
+          "source": "/modern-mutfak",
+          "destination": "/modern-mutfak-modelleri/",
+          "type": 301
+        },
+        {
+          "source": "/klasik-mutfak",
+          "destination": "/klasik-country-mutfak-modelleri/",
+          "type": 301
+        },
+        {
+          "source": "/country-mutfak",
+          "destination": "/klasik-country-mutfak-modelleri/",
+          "type": 301
+        },
+        {
+          "source": "/yasam-alanlari",
+          "destination": "/yasam-alanlari-mutfak-modelleri/",
+          "type": 301
+        },
+        {
+          "source": "/rss",
+          "destination": "/rss.xml",
+          "type": 301
+        },
+        {
+          "source": "/feed",
+          "destination": "/feed.xml",
+          "type": 301
+        }
+      ]
+    }
+  ]
 }
