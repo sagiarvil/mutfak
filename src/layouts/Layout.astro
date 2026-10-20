@@ -16,6 +16,16 @@ const { seo, activeService } = Astro.props;
 <!doctype html>
 <html lang="tr" class="scroll-smooth overflow-x-hidden bg-[#FAF9F6] text-[#1D1D1F]">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-26Y17F0C6Q"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-26Y17F0C6Q');
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, minimum-scale=1, maximum-scale=5" />
     
