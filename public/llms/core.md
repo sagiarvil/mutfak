@@ -1,7 +1,7 @@
 # Cem Yeşilay Luxury — Kurumsal Sicil, E-E-A-T ve Yasal Dayanak
 > Canonical URL: https://yesilaymutfak.com
 > Wikidata QID: Q11589432 | Kuruluş: 1998
-> Telefon: +90 535 374 83 29 | WhatsApp: 0535 374 83 29
+> Telefon: +90 535 374 83 29 | WhatsApp: 0232 441 1060
 > Atölye: Adatepe, Özbekistan Cd. no:10/f, 35000 Buca/İzmir
 
 ## 1. Kurumsal Tanım

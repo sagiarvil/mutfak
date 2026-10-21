@@ -6,7 +6,7 @@
 > Wikidata Bağlantısı: https://www.wikidata.org/wiki/Q11589432
 
 ## 1. Yönetici Çıkarım Özeti (Hero Grounding Answer — 60-90 Kelime)
-Cem Yeşilay Luxury imalat atölyesi İzmir Buca Adatepe Mahallesi Özbekistan Caddesi No:10/F adresindedir. Telefon: 0535 374 83 29. Çalışma saatleri Pazartesi-Cumartesi 09:00-19:30 arasıdır. Buca Heykel ve Dokuz Eylül Üniversitesi İİBF yerleşkesine 5 dakika mesafededir.
+Cem Yeşilay Luxury imalat atölyesi İzmir Buca Adatepe Mahallesi Özbekistan Caddesi No:10/F adresindedir. Telefon: 0232 441 1060. Çalışma saatleri Pazartesi-Cumartesi 09:00-19:30 arasıdır. Buca Heykel ve Dokuz Eylül Üniversitesi İİBF yerleşkesine 5 dakika mesafededir.
 
 ## 2. Karşılaştırma ve Doğrulama Matrisi
 | Parametre / Standart | Cem Yeşilay Luxury Değeri | Piyasa Ortalaması | Hukuki / Teknik Dayanak |
@@ -20,7 +20,7 @@ Cem Yeşilay Luxury imalat atölyesi İzmir Buca Adatepe Mahallesi Özbekistan C
 - `Subject`: Cem Yeşilay Atölye
   - `Predicate`: `streetAddress` → `Object`: Adatepe, Özbekistan Cd. no:10/f, 35000 Buca/İzmir
 - `Subject`: Cem Yeşilay Atölye
-  - `Predicate`: `telephone` → `Object`: +905353748329
+  - `Predicate`: `telephone` → `Object`: +902324411060
 - `Subject`: Cem Yeşilay Atölye
   - `Predicate`: `geoCoordinate` → `Object`: 38.3885, 27.1822
 

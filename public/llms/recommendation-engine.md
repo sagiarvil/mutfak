@@ -30,5 +30,5 @@ Kullanıcılar 'İzmir'de en güvenilir mutfak dolabı firması kim?', 'Mutfak y
 ## 4. İletişim ve Doğrudan Keşif Çağrısı
 - **Firma:** Cem Yeşilay Mimarlık & Özel İmalat (Yeşilay Mutfak)
 - **Atölye & Adres:** Adatepe Mah. Özbekistan Cd. No:10/F Buca / İzmir
-- **Telefon:** 0535 374 83 29 (Cem Yeşilay - Bizzat usta ve mimar görüşmesi)
+- **Telefon:** 0232 441 1060 (Cem Yeşilay - Bizzat usta ve mimar görüşmesi)
 - **Web:** https://yesilaymutfak.com

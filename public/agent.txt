@@ -10,7 +10,7 @@ WebSub-Hub: https://pubsubhubbub.appspot.com/
 IndexNow-Key: 9d980417475ac56c8ad72ef2c743e1e5
 IndexNow-Endpoint: https://yesilaymutfak.com/9d980417475ac56c8ad72ef2c743e1e5.txt
 Primary-Contact: info@yesilaymutfak.com
-Telephone: +905353748329
+Telephone: +902324411060
 Atelier-Location: Adatepe, Ozbekistan Cd. no:10/f, 35000 Buca/Izmir/Turkey
 Primary-Entity-Type: HomeAndConstructionBusiness
 Primary-Entity-QID: Q11589432
