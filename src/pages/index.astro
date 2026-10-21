@@ -3,9 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import BeforeAfter from "../components/BeforeAfter.astro";
 import { siteConfig } from "../data/siteConfig";
 import tasarimlar from "../data/tasarimlarData.json";
+import yapilanIsler from "../data/yapilanIslerData.json";
 
-// Kare formatta sergilenecek 8 seçkin tasarım modeli
+// Kare formatta sergilenecek 8 seçkin tasarım modeli ve 8 canlı yapılan iş
 const featuredModels = tasarimlar.slice(0, 8);
+const featuredWorks = yapilanIsler.slice(0, 8);
 
 const seo = {
   title: "Cem Yeşilay — Lüks Mutfak Tasarımı, Banyo & Anahtar Teslim Renovasyon",
@@ -293,6 +295,85 @@ const seo = {
                   target="_blank" 
                   rel="noopener noreferrer" 
                   class="px-3 py-1 bg-[#041F14] hover:bg-[#073322] text-[#C5A880] rounded font-bold text-[11px] transition flex items-center gap-1 border border-[#C5A880]/30"
+                >
+                  <span>3D Keşif</span> <span>→</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 4.5. ATÖLYEMİZDEN GERÇEK YAPILAN İŞLER (CANLI MONTAJ KARELERİ - 96 PROJE) -->
+  <!-- ===================================================================== -->
+  <section class="py-20 bg-slate-900 text-white border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-10">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-zinc-800 pb-6">
+        <div class="space-y-1">
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#041F14] text-[#C5A880] rounded-full border border-[#C5A880]/30 text-[10.5px] font-bold uppercase tracking-widest">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#00FF66] animate-pulse"></span>
+            CANLI ŞANTİYE & MONTAJ KARELERİ
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight font-serif mt-2">
+            Son Tamamlanan Gerçek Projelerimiz
+          </h2>
+          <p class="text-xs sm:text-sm text-zinc-400 font-light">
+            Kendi atölyemizde üretip teslim ettiğimiz 96+ projeden seçkin montaj kareleri.
+          </p>
+        </div>
+        <div>
+          <a href="/yapilan-isler/" class="px-6 py-3 bg-[#C5A880] hover:bg-[#D4AF37] text-[#041F14] text-xs font-extrabold uppercase tracking-wider rounded transition shadow-lg inline-flex items-center gap-2">
+            <span>Tüm 96 Yapılan İşi Gör</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 8 Seçkin Kare Simetrik Görsel (1:1 Aspect Square, Sıfır Bozulma) -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        {featuredWorks.map((work) => (
+          <div class="group bg-zinc-950 border border-zinc-800 hover:border-[#C5A880] rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+            
+            <div class="relative w-full aspect-square overflow-hidden bg-zinc-900 shrink-0">
+              <img 
+                src={work.img} 
+                alt={work.altText} 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                loading="lazy" 
+                width="800"
+                height="800"
+              />
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-[#041F14]/90 backdrop-blur-md text-[#C5A880] text-[10px] font-bold uppercase tracking-wider rounded border border-[#C5A880]/30">
+                #{String(work.id).padStart(2, '0')}
+              </span>
+              <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 bg-black/75 backdrop-blur-md text-white text-[9.5px] font-medium rounded">
+                📍 {work.location}
+              </span>
+            </div>
+
+            <div class="p-4 flex-1 flex flex-col justify-between space-y-2">
+              <div>
+                <span class="text-[9.5px] uppercase tracking-wider font-bold text-[#C5A880] block">
+                  {work.category}
+                </span>
+                <h3 class="text-xs font-bold text-white group-hover:text-[#C5A880] transition line-clamp-1 mt-0.5">
+                  {work.title}
+                </h3>
+              </div>
+              
+              <div class="pt-2 border-t border-zinc-800/80 flex items-center justify-between text-xs">
+                <span class="text-[10px] text-zinc-400">Atölye İmalatı</span>
+                <a 
+                  href={`https://wa.me/905353748329?text=Merhaba%20Cem%20Bey,%20web%20sitenizdeki%20#${work.id}%20numaralı%20${work.location}%20projeniz%20hakkında%20ücretsiz%203D%20keşif%20istiyorum.`}
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="px-2.5 py-1 bg-[#041F14] hover:bg-[#073322] text-[#C5A880] rounded font-bold text-[10.5px] transition flex items-center gap-1 border border-[#C5A880]/30"
                 >
                   <span>3D Keşif</span> <span>→</span>
                 </a>
