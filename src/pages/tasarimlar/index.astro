@@ -271,7 +271,7 @@ const schemaImageGallery = {
 
       <!-- Modal Görsel Alanı -->
       <div class="relative bg-stone-950 flex items-center justify-center max-h-[65vh] overflow-hidden">
-        <img id="modalImg" src="" alt="" class="max-h-[65vh] w-auto object-contain mx-auto" />
+        <img id="modalImg" src="" alt="" class="max-h-[65vh] w-auto object-contain mx-auto" width="1200" height="900" loading="eager" decoding="async" />
       </div>
 
       <!-- Modal Alt Barı (Tescilli Açıklama & WhatsApp İletişimi) -->
@@ -473,16 +473,48 @@ const schemaImageGallery = {
         filterCards();
       });
 
-      // Kategori filtreleri
+      // Kategori filtreleri (URL Senkronizasyonu & Geri/İleri Düğme Desteği)
+      function applyFilter(filterKey, updateUrl = true) {
+        currentFilter = filterKey;
+        filterBtns.forEach(b => {
+          if (b.getAttribute("data-filter") === filterKey) {
+            b.className = "filter-btn px-3 py-1.5 transition border-b-2 border-[#006039] text-[#1E1810] font-bold";
+          } else {
+            b.className = "filter-btn px-3 py-1.5 transition border-b-2 border-transparent text-stone-500 hover:text-[#1E1810]";
+          }
+        });
+
+        if (updateUrl && window.history && window.history.replaceState) {
+          const url = new URL(window.location.href);
+          if (filterKey === "all") {
+            url.searchParams.delete("kategori");
+          } else {
+            let catParam = filterKey;
+            if (filterKey === "mutfak-tasarimlari") catParam = "mutfak";
+            else if (filterKey === "banyo-dolaplari") catParam = "banyo";
+            url.searchParams.set("kategori", catParam);
+          }
+          window.history.replaceState({}, "", url);
+        }
+
+        filterCards();
+      }
+
       filterBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
-          filterBtns.forEach(b => {
-            b.className = "filter-btn px-3 py-1.5 transition border-b-2 border-transparent text-stone-500 hover:text-[#1E1810]";
-          });
-          btn.className = "filter-btn px-3 py-1.5 transition border-b-2 border-[#006039] text-[#1E1810] font-bold";
-          currentFilter = btn.getAttribute("data-filter");
-          filterCards();
+          applyFilter(btn.getAttribute("data-filter"), true);
         });
+      });
+
+      window.addEventListener("popstate", () => {
+        const params = new URLSearchParams(window.location.search);
+        const cat = params.get("kategori");
+        let targetFilter = "all";
+        if (cat === "mutfak") targetFilter = "mutfak-tasarimlari";
+        else if (cat === "kapilar" || cat === "kapi") targetFilter = "kapilar";
+        else if (cat === "gomme-dolap" || cat === "gardrop") targetFilter = "gomme-dolap";
+        else if (cat === "banyo") targetFilter = "banyo-dolaplari";
+        applyFilter(targetFilter, false);
       });
 
       // Modal açma

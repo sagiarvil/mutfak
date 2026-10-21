@@ -413,6 +413,9 @@ const seo = {
                 alt={item.altText || item.title} 
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                 loading="lazy" 
+                decoding="async"
+                width="600"
+                height="600"
               />
               <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/60 backdrop-blur-md text-[#C5A880] text-[10px] font-bold uppercase tracking-wider rounded-lg border border-white/20">
                 {item.modelNo}
@@ -726,6 +729,115 @@ const seo = {
             </tbody>
           </table>
         </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6.5. TESCİLLİ MÜŞTERİ DENEYİMİ & GOOGLE OTORİTE KONSOLU (4.9 / 5.0)   -->
+  <!-- ===================================================================== -->
+  <section class="py-20 bg-[#F9F8F5] border-b border-[#EAE5DC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-[#E5DFD5] pb-6">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-white border border-[#C5A880]/50 rounded-full shadow-xs">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#107C41]"></span>
+            <span class="text-[11px] font-bold uppercase tracking-[0.22em] text-[#8C6D3F]">DOĞRULANMIŞ MÜŞTERİ DENEYİMLERİ</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#083322] tracking-tight font-serif">
+            2.850+ Ailenin Yaşam Alanı Güvencesi
+          </h2>
+          <p class="text-xs sm:text-sm text-zinc-600 font-light">
+            İzmir genelinde teslim ettiğimiz villa, daire ve mutfak dönüşümlerinden gerçek yorumlar.
+          </p>
+        </div>
+        
+        <!-- Google Haritalar Otorite Rozeti -->
+        <a 
+          href="https://maps.google.com/?q=Cem+Ye%C5%9Filay+Mutfak+Buca" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="inline-flex items-center gap-3.5 px-5 py-3 bg-white border border-[#E5DFD5] hover:border-[#C5A880] rounded-2xl shadow-xs transition hover:shadow-md group"
+        >
+          <div class="w-10 h-10 rounded-xl bg-[#FAF7F2] border border-[#C5A880]/40 flex items-center justify-center text-lg">
+            📍
+          </div>
+          <div class="text-left">
+            <div class="flex items-center gap-1.5 text-xs font-bold text-[#083322]">
+              <span>Google Haritalar</span>
+              <span class="text-[#E6A100]">★★★★★</span>
+              <span class="text-[#8C6D3F]">4.9</span>
+            </div>
+            <div class="text-[10.5px] text-zinc-500 font-light">Tescilli Müşteri Tavsiyeleri →</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 3 Gerçek Müşteri Değerlendirme Kartı -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Yorum 1 -->
+        <div class="bg-white border border-[#E5DFD5] hover:border-[#C5A880] rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(197,168,128,0.18)] flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="text-amber-500 text-sm font-bold tracking-widest">★★★★★</div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-[#8C6D3F] bg-[#FAF7F2] px-2 py-0.5 rounded border border-[#C5A880]/30">DOĞRULANMIŞ TESLİMAT</span>
+            </div>
+            <p class="text-xs sm:text-[13px] text-zinc-700 font-light leading-relaxed italic">
+              "Mavişehir'deki dairemizin mutfak dolabı ve tezgah yenilemesini Cem Bey bizzat yönetti. 3D çizimde gördüğümüz milimetrik renk tonu ve Blum mekanizmalar tam sözleşme gününde 1 günde monte edildi."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#F0EBE2] flex items-center justify-between text-xs">
+            <div>
+              <strong class="text-sm font-serif font-bold text-[#083322] block">Selin &amp; Murat Aksoy</strong>
+              <span class="text-[11px] text-zinc-500 font-light">Mavişehir / Karşıyaka</span>
+            </div>
+            <span class="text-[10px] text-zinc-400">Lake Ada Mutfak</span>
+          </div>
+        </div>
+
+        <!-- Yorum 2 -->
+        <div class="bg-white border border-[#E5DFD5] hover:border-[#C5A880] rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(197,168,128,0.18)] flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="text-amber-500 text-sm font-bold tracking-widest">★★★★★</div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-[#8C6D3F] bg-[#FAF7F2] px-2 py-0.5 rounded border border-[#C5A880]/30">DOĞRULANMIŞ TESLİMAT</span>
+            </div>
+            <p class="text-xs sm:text-[13px] text-zinc-700 font-light leading-relaxed italic">
+              "Urla Kekliktepe'deki taş villamız için masif meşe kaplama mutfak ve marin banyo dolapları yaptırdık. Atölyeye gidip gövde kesitlerini incelemiştik, sonuç hayal ettiğimizin de üzerinde oldu."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#F0EBE2] flex items-center justify-between text-xs">
+            <div>
+              <strong class="text-sm font-serif font-bold text-[#083322] block">Av. Cengiz Yılmaz</strong>
+              <span class="text-[11px] text-zinc-500 font-light">Kekliktepe / Urla</span>
+            </div>
+            <span class="text-[10px] text-zinc-400">Villa Komple İmalat</span>
+          </div>
+        </div>
+
+        <!-- Yorum 3 -->
+        <div class="bg-white border border-[#E5DFD5] hover:border-[#C5A880] rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(197,168,128,0.18)] flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="text-amber-500 text-sm font-bold tracking-widest">★★★★★</div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-[#8C6D3F] bg-[#FAF7F2] px-2 py-0.5 rounded border border-[#C5A880]/30">DOĞRULANMIŞ TESLİMAT</span>
+            </div>
+            <p class="text-xs sm:text-[13px] text-zinc-700 font-light leading-relaxed italic">
+              "Piyasada birçok yer aracı marangozla çalışırken Cem Yeşilay'ın kendi imalat atölyesinin olması ve noter gecikme cezası taahhüdü vermesi kararımızda belirleyici oldu. Sıfır aksama ile teslim aldık."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#F0EBE2] flex items-center justify-between text-xs">
+            <div>
+              <strong class="text-sm font-serif font-bold text-[#083322] block">Dr. Nilgün Özkan</strong>
+              <span class="text-[11px] text-zinc-500 font-light">Bornova / İzmir</span>
+            </div>
+            <span class="text-[10px] text-zinc-400">Akrilik Mutfak &amp; Banyo</span>
+          </div>
+        </div>
+
       </div>
 
     </div>

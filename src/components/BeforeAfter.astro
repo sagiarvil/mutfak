@@ -29,14 +29,17 @@
       
       <!-- Sol: İnteraktif Before/After Karşılaştırma Kutusu (8 Sütun) -->
       <div class="lg:col-span-8">
-        <div class="relative w-full overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(4,31,20,0.12)] border-2 border-white ring-1 ring-[#E5DFD5] bg-black select-none aspect-[16/10] sm:aspect-[16/9]" id="beforeAfterContainer">
+        <div class="relative w-full overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(4,31,20,0.12)] border-2 border-white ring-1 ring-[#E5DFD5] bg-black select-none aspect-[16/10] sm:aspect-[16/9]" id="beforeAfterContainer" style="touch-action: pan-y;">
           
           <!-- Sonra Görseli (Altta tam genişlik) -->
           <img 
             src="/media/oncesi_sonrasi_sonra.webp" 
             alt="Mutfak Renovasyonu Sonrası" 
             class="absolute inset-0 w-full h-full object-cover" 
+            width="960" 
+            height="600" 
             loading="lazy" 
+            decoding="async" 
           />
           <div class="absolute bottom-4 right-4 px-3.5 py-1.5 bg-[#083322]/90 backdrop-blur-md text-[#00FF66] border border-[#00FF66]/40 rounded-full text-[11px] font-extrabold tracking-wider pointer-events-none uppercase shadow-lg">
             SONRA (TESLİMAT)
@@ -49,7 +52,10 @@
               alt="Mutfak Renovasyonu Öncesi" 
               class="absolute inset-0 w-full h-full object-cover max-w-none" 
               id="beforeImg"
+              width="960" 
+              height="600" 
               loading="lazy" 
+              decoding="async" 
             />
             <div class="absolute bottom-4 left-4 px-3.5 py-1.5 bg-black/80 backdrop-blur-md text-[#C5A880] border border-[#C5A880]/40 rounded-full text-[11px] font-extrabold tracking-wider pointer-events-none uppercase shadow-lg">
               ÖNCE (ESKİ HALİ)
@@ -170,26 +176,39 @@
 
     const startDrag = (e) => {
       isDragging = true;
-      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      if (e.pointerId && container.setPointerCapture) {
+        try { container.setPointerCapture(e.pointerId); } catch(err) {}
+      }
+      const clientX = e.clientX !== undefined ? e.clientX : (e.touches ? e.touches[0].clientX : 0);
       setPosition(clientX);
     };
 
-    const stopDrag = () => {
+    const stopDrag = (e) => {
       isDragging = false;
+      if (e && e.pointerId && container.releasePointerCapture) {
+        try { container.releasePointerCapture(e.pointerId); } catch(err) {}
+      }
     };
 
     const onMove = (e) => {
       if (!isDragging) return;
-      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const clientX = e.clientX !== undefined ? e.clientX : (e.touches ? e.touches[0].clientX : 0);
       setPosition(clientX);
     };
 
-    container.addEventListener("mousedown", startDrag);
-    window.addEventListener("mouseup", stopDrag);
-    window.addEventListener("mousemove", onMove);
+    if (window.PointerEvent) {
+      container.addEventListener("pointerdown", startDrag);
+      window.addEventListener("pointerup", stopDrag);
+      window.addEventListener("pointercancel", stopDrag);
+      window.addEventListener("pointermove", onMove);
+    } else {
+      container.addEventListener("mousedown", startDrag);
+      window.addEventListener("mouseup", stopDrag);
+      window.addEventListener("mousemove", onMove);
 
-    container.addEventListener("touchstart", startDrag, { passive: true });
-    window.addEventListener("touchend", stopDrag);
-    window.addEventListener("touchmove", onMove, { passive: true });
+      container.addEventListener("touchstart", startDrag, { passive: true });
+      window.addEventListener("touchend", stopDrag);
+      window.addEventListener("touchmove", onMove, { passive: true });
+    }
   });
 </script>
