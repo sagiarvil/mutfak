@@ -90,106 +90,163 @@ const models = [
 
 <Layout seo={seo} activeService="Yaşam Alanları | Life">
   
-  <!-- HERO BÖLÜMÜ (AYDINLIK, FERAH & AÇIK PLAN YAŞAM VİTRİNİ) -->
-  <section class="relative py-20 sm:py-28 overflow-hidden bg-[#041F14]">
-    <div class="absolute inset-0 bg-cover bg-center opacity-75 scale-105 transition-transform duration-1000" style="background-image: url('/media/projeler/proje-12.webp');"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-[#02130C]/90 via-[#041F14]/60 to-black/25"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-[#02130C] via-transparent to-transparent"></div>
-    
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6 z-10 [text-shadow:_0_2px_12px_rgba(0,0,0,0.8)]">
-      <nav class="flex items-center gap-2 text-xs font-semibold text-[#D8D2C7] uppercase tracking-widest" aria-label="Breadcrumb">
-        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
-        <span>/</span>
-        <span class="text-[#C5A880]">Yaşam Alanları | Life</span>
-      </nav>
+  <!-- HERO BÖLÜMÜ (AYDINLIK, FERAH & SALONLA BÜTÜNLEŞEN YAŞAM ALANI) -->
+  <section class="relative bg-[#FAFAF9] border-b border-[#E7E5E4] py-12 sm:py-20 overflow-hidden">
+    <!-- Yumuşak Aydınlık Arka Plan Işığı -->
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#F5F5F4]/60 to-transparent pointer-events-none"></div>
 
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-black/40 backdrop-blur-md border border-[#C5A880]/50 text-[#C5A880] text-[11px] font-bold tracking-[0.2em] uppercase rounded-full shadow-lg">
-        <span class="w-2 h-2 rounded-full bg-[#00FF66] animate-pulse"></span>
-        <span>03 / KOLEKSİYON • AÇIK PLAN &amp; SALONLA BÜTÜNLEŞİK YAŞAM</span>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- SOL: 5 SANİYEDE ANLAŞILIR YAŞAM ALANI MİMARİSİ (7 SÜTUN) -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Breadcrumb -->
+          <nav class="flex items-center gap-2 text-xs font-semibold text-zinc-500 uppercase tracking-wider" aria-label="Breadcrumb">
+            <a href="/" class="hover:text-[#041F14] transition">Ana Sayfa</a>
+            <span>/</span>
+            <span class="text-[#0284C7] font-bold">Yaşam Alanları | Life</span>
+          </nav>
+
+          <!-- Prestij Rozeti -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-[#BAE6FD] rounded-full shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-[#0284C7]"></span>
+            <span class="text-xs font-bold tracking-[0.16em] uppercase text-[#0369A1] font-sans">
+              AÇIK PLAN MİMARİSİ • SALONLA BÜTÜNLEŞİK ADA BAR
+            </span>
+          </div>
+
+          <!-- Ana Başlık (Heyecan Uyandıran Sosyal Mutfak Konsepti) -->
+          <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold text-[#0C4A6E] leading-[1.12] tracking-tight">
+            Mutfak Artık Servis Odası Değil; <br />
+            <span class="text-[#0284C7] font-serif font-normal italic">Salonla Konuşan Ada Bar &amp;</span> <br />
+            <span class="text-[#041F14]">Dostların Buluştuğu Yaşam Alanı.</span>
+          </h1>
+
+          <!-- Net & İkna Edici Açıklama -->
+          <p class="text-base sm:text-lg text-zinc-600 font-normal leading-relaxed max-w-xl">
+            Duvarları yıkarak mutfağınızı salona katan, 4 kişilik ada yemek masaları, gizli kadeh ve kahve köşeleriyle donatılan modern mimari çözümler. Buca Adatepe tesisimizde mekanınıza özel statik analiz ve 3D simülasyonla tasarlıyoruz.
+          </p>
+
+          <!-- Kadınların Sevdiği 3 Yaşam Alanı Özelliği -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-xs">
+            <div class="flex items-center gap-2 bg-white p-2.5 rounded-lg border border-[#E7E5E4] shadow-xs">
+              <span class="text-[#0284C7] font-bold text-sm">✓</span>
+              <span class="text-zinc-800 font-semibold">Duvar Kırım &amp; Güvenli Statik</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white p-2.5 rounded-lg border border-[#E7E5E4] shadow-xs">
+              <span class="text-[#0284C7] font-bold text-sm">✓</span>
+              <span class="text-zinc-800 font-semibold">Ada Bar &amp; Gizli Priz Sistemleri</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white p-2.5 rounded-lg border border-[#E7E5E4] shadow-xs">
+              <span class="text-[#0284C7] font-bold text-sm">✓</span>
+              <span class="text-zinc-800 font-semibold">Sıfır Koku Emiş Çözümleri</span>
+            </div>
+          </div>
+
+          <!-- Aksiyon Butonları -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a 
+              href="https://wa.me/905324261788?text=Merhaba%20Cem%20Bey,%20açık%20plan%20mutfak%20ve%20ada%20bar%20tasarımı%20için%20ücretsiz%203D%20keşif%20istiyorum." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="px-8 py-4 bg-[#C5A880] hover:bg-[#D4AF37] text-[#041F14] text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded-lg border border-[#E5C378] shadow-lg transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.02]"
+            >
+              <span>WhatsApp ile Açık Mutfak Keşfi</span>
+              <span>→</span>
+            </a>
+            <a 
+              href="#modeller" 
+              class="px-8 py-4 bg-white hover:bg-zinc-50 border border-[#D6D3D1] text-[#0C4A6E] text-xs sm:text-sm font-bold uppercase tracking-wider rounded-lg shadow-xs transition duration-300 flex items-center justify-center gap-2 hover:scale-[1.02]"
+            >
+              <span>Modelleri İncele ↓</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- SAĞ: BÜYÜLEYİCİ AÇIK PLAN ADA BAR KARESI (5 SÜTUN) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(12,74,110,0.12)] border-4 border-white group">
+            <img 
+              src="/media/projeler/proje-12.webp" 
+              alt="İzmir Salonla Bütünleşik Açık Mutfak ve Ada Bar Tasarımı" 
+              class="w-full h-[380px] sm:h-[460px] object-cover transition-transform duration-1000 group-hover:scale-105"
+              width="600"
+              height="460"
+              loading="eager"
+            />
+            <!-- Zarif Alt Bilgi Şeridi -->
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-5 text-white">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-[#C5A880] block">CANLI MONTAJ REFERANSI</span>
+              <p class="text-sm font-semibold text-white mt-0.5">Güzelbahçe Yelki • Açık Plan Ada Bar &amp; Şömine Entegre</p>
+            </div>
+            <!-- Rozet -->
+            <div class="absolute top-4 right-4 px-3 py-1 bg-white/95 backdrop-blur-md rounded-full shadow-md border border-[#E7E5E4] text-[11px] font-bold text-[#0C4A6E]">
+              Sosyal Yaşam Alanı
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12] drop-shadow-xl">
-        İzmir Yaşam Alanları &amp; Açık Mutfak: <br /><span class="text-[#C5A880] font-serif font-normal italic">Ada Barlar &amp; Bütünleşik Salon Mimarisi</span>
-      </h1>
-
-      <p class="text-base sm:text-lg text-[#F0EAE1] font-light leading-relaxed max-w-2xl drop-shadow-md">
-        Mutfak artık 4 duvar arasına hapsolmuş bir servis odası değil; ailenin buluştuğu, dostların ağırlandığı ve evin enerjisini belirleyen yaşam alanı. Ada tipi oturma barları, salon mobilyalarıyla entegre ahşap geçişler ve akıllı mekan kurgusuyla evinizi baştan yaratıyoruz.
-      </p>
-
-      <div class="flex flex-wrap items-center gap-4 pt-3">
-        <a 
-          href="https://wa.me/905324261788?text=Merhaba,%20açık%20plan%20mutfak%20ve%20yaşam%20alanı%20modelleriniz%20hakkında%20bilgi%20ve%20ücretsiz%203D%20keşif%20istiyorum." 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="px-8 py-4 bg-[#C5A880] hover:bg-[#D4AF37] text-[#041F14] text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded border border-[#E5C378] shadow-2xl transition-all duration-300 flex items-center gap-2 hover:scale-[1.02]"
-        >
-          <span>WhatsApp ile Açık Mutfak Başlat</span>
-          <span>→</span>
-        </a>
-        <a 
-          href="#modeller" 
-          class="px-8 py-4 bg-black/40 hover:bg-black/60 border border-white/30 text-white text-xs sm:text-sm font-semibold uppercase tracking-wider rounded backdrop-blur-md transition duration-300 hover:scale-[1.02]"
-        >
-          Modelleri İncele ↓
-        </a>
-      </div>
-
-      <!-- Rozetler -->
-      <div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-white/15 text-xs text-white">
-        <div class="space-y-0.5">
-          <strong class="text-[#C5A880] block text-sm font-bold">Duvar Kırım &amp; Mimari</strong>
-          <span class="text-[#D8D2C7] text-[11px]">Güvenli statik analiz ve kırım</span>
+      <!-- Alt Güvence Şeridi -->
+      <div class="mt-12 pt-8 border-t border-[#E7E5E4] grid grid-cols-2 md:grid-cols-4 gap-6 text-center sm:text-left">
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-[#0284C7] font-sans">Açık Plan</span>
+          <span class="text-xs text-zinc-600 block mt-0.5 font-medium">Geniş ve Aydınlık Salon Hissiyatı</span>
         </div>
-        <div class="space-y-0.5">
-          <strong class="text-[#C5A880] block text-sm font-bold">Ada Bar Entegrasyonu</strong>
-          <span class="text-[#D8D2C7] text-[11px]">Yemek masası ve ada bir arada</span>
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-[#041F14] font-sans">Ada Bar</span>
+          <span class="text-xs text-zinc-600 block mt-0.5 font-medium">Yemek Masası ve Bar Bir Arada</span>
         </div>
-        <div class="space-y-0.5">
-          <strong class="text-[#C5A880] block text-sm font-bold">Sıfır Koku &amp; Sessizlik</strong>
-          <span class="text-[#D8D2C7] text-[11px]">Yüksek debili plazma filtre ada emiş</span>
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-[#C5A880] font-sans">Akustik Panel</span>
+          <span class="text-xs text-zinc-600 block mt-0.5 font-medium">Doğal Ahşap Çıta Geçişleri</span>
         </div>
-        <div class="space-y-0.5">
-          <strong class="text-[#C5A880] block text-sm font-bold">Tüm İzmir'e Keşif</strong>
-          <span class="text-[#D8D2C7] text-[11px]">Buca atölyemizden ücretsiz 3D</span>
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-[#006039] font-sans">3D Simülasyon</span>
+          <span class="text-xs text-zinc-600 block mt-0.5 font-medium">Önceden Birebir Canlandırma</span>
         </div>
       </div>
+
     </div>
   </section>
     </div>
   </section>
 
   <!-- TEKNİK STANDARTLAR TABLOSU -->
-  <section class="bg-stone-100 border-b border-stone-200 py-12" id="teknik-standartlar">
+  <section class="bg-[#F8F9FA] border-b border-[#E5DFD5] py-16" id="teknik-standartlar">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
       <div class="border-l-4 border-blue-600 pl-4 space-y-1">
         <span class="text-xs font-bold uppercase tracking-widest text-blue-800">AÇIK PLAN MİMARİ STANDARTLAR</span>
-        <h2 class="text-xl sm:text-2xl font-bold text-stone-900">Açık Plan Mutfak &amp; Yaşam Alanı Mühendislik Kriterleri</h2>
+        <h2 class="text-xl sm:text-2xl font-bold text-[#041F14]">Açık Plan Mutfak &amp; Yaşam Alanı Mühendislik Kriterleri</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Statik Kırım &amp; Güçlendirme</strong>
-          <p class="text-stone-600 leading-relaxed">İç mimar ve mühendis eşliğinde kolon/kiriş röntgeni. Taşıyıcı olmayan duvarların güvenli yıkımı, moloz tahliyesi ve tavan alçıpan birleşimleri.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">İç mimar ve mühendis eşliğinde kolon/kiriş röntgeni. Taşıyıcı olmayan duvarların güvenli yıkımı, moloz tahliyesi ve tavan alçıpan birleşimleri.</p>
         </div>
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Hava Emiş ve Koku Bariyeri</strong>
-          <p class="text-stone-600 leading-relaxed">Ada üstü pişirme alanlarında minimum 850 m³/h emiş gücüne sahip sessiz fırçasız motorlar ve koku moleküllerini parçalayan aktif karbon filtreler.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">Ada üstü pişirme alanlarında minimum 850 m³/h emiş gücüne sahip sessiz fırçasız motorlar ve koku moleküllerini parçalayan aktif karbon filtreler.</p>
         </div>
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Salon Zemin ve Akış Geçişi</strong>
-          <p class="text-stone-600 leading-relaxed">Mutfak seramiği ile salon parkesi arasında kot farkını sıfırlayan gizli pirinç/alüminyum L profiller veya kesintisiz 60x120 derzsiz porselen zemin.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">Mutfak seramiği ile salon parkesi arasında kot farkını sıfırlayan gizli pirinç/alüminyum L profiller veya kesintisiz 60x120 derzsiz porselen zemin.</p>
         </div>
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Entegre TV ve Konsol Uyumu</strong>
-          <p class="text-stone-600 leading-relaxed">Mutfakta kullanılan kapak malzemesi (lake, meşe kaplama) ile salonun TV ünitesi, kütüphane ve yemek konsolunun birebir aynı dokuda üretimi.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">Mutfakta kullanılan kapak malzemesi (lake, meşe kaplama) ile salonun TV ünitesi, kütüphane ve yemek konsolunun birebir aynı dokuda üretimi.</p>
         </div>
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Cepli (Pocket Door) Gizleme</strong>
-          <p class="text-stone-600 leading-relaxed">Gerektiğinde tezgahı, küçük ev aletlerini ve bulaşık alanını 2 saniyede salon görüntüsünden izole eden sessiz cepli sürme kapak sistemleri.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">Gerektiğinde tezgahı, küçük ev aletlerini ve bulaşık alanını 2 saniyede salon görüntüsünden izole eden sessiz cepli sürme kapak sistemleri.</p>
         </div>
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-blue-800">Elektrik &amp; Ada Su Tesisatı</strong>
-          <p class="text-stone-600 leading-relaxed">Zemin altından adaya taşınan temiz su, gider ve 380V indüksiyon kablolaması. Zemin izolasyonu garantili anahtar teslim uygulama.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">Zemin altından adaya taşınan temiz su, gider ve 380V indüksiyon kablolaması. Zemin izolasyonu garantili anahtar teslim uygulama.</p>
         </div>
       </div>
     </div>
@@ -225,7 +282,7 @@ const models = [
                 <span class="px-2.5 py-1 bg-stone-950/85 text-blue-300 text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm">
                   {m.badge}
                 </span>
-                <span class="px-2.5 py-0.5 bg-white/90 text-stone-900 text-[9.5px] font-bold uppercase tracking-wider">
+                <span class="px-2.5 py-0.5 bg-white/90 text-[#041F14] text-[9.5px] font-bold uppercase tracking-wider">
                   {m.tag}
                 </span>
               </div>
@@ -233,7 +290,7 @@ const models = [
 
             <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
               <div class="space-y-2">
-                <h3 class="text-xl font-bold text-stone-900 group-hover:text-blue-800 transition">{m.title}</h3>
+                <h3 class="text-xl font-bold text-[#041F14] group-hover:text-blue-800 transition">{m.title}</h3>
                 <p class="text-xs text-stone-600 font-light leading-relaxed line-clamp-3">{m.desc}</p>
               </div>
 
@@ -344,13 +401,13 @@ const models = [
     <div class="max-w-4xl mx-auto px-4 sm:px-8 space-y-8">
       <div class="text-center space-y-2">
         <span class="text-xs font-bold uppercase tracking-widest text-blue-800 block">AKLINIZA TAKILANLAR</span>
-        <h2 class="text-2xl sm:text-3xl font-bold text-stone-900">Açık Plan Mutfak &amp; Yaşam Alanları SSS</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-[#041F14]">Açık Plan Mutfak &amp; Yaşam Alanları SSS</h2>
       </div>
 
       <div class="space-y-4">
         {seo.faqList.map((faq) => (
           <div class="bg-white p-5 border border-stone-200 shadow-2xs space-y-2">
-            <h3 class="text-sm sm:text-base font-bold text-stone-900 flex items-center gap-2">
+            <h3 class="text-sm sm:text-base font-bold text-[#041F14] flex items-center gap-2">
               <span class="text-blue-700">Q:</span>
               <span>{faq.question}</span>
             </h3>

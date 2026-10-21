@@ -90,107 +90,163 @@ const models = [
 
 <Layout seo={seo} activeService="Klasik & Country Mutfak Modelleri">
   
-  <!-- HERO BÖLÜMÜ (AYDINLIK, FERAH & PRESTİJLİ COUNTRY VİTRİN) -->
-  <section class="relative py-20 sm:py-28 overflow-hidden bg-[#041F14]">
-    <!-- Canlı & Aydınlık Country Mutfak Görseli -->
-    <div class="absolute inset-0 bg-cover bg-center opacity-75 scale-105 transition-transform duration-1000" style="background-image: url('/media/projeler/proje-04.webp');"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-[#02130C]/90 via-[#041F14]/60 to-black/25"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-[#02130C] via-transparent to-transparent"></div>
-    
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6 z-10 [text-shadow:_0_2px_12px_rgba(0,0,0,0.8)]">
-      <nav class="flex items-center gap-2 text-xs font-semibold text-[#D8D2C7] uppercase tracking-widest" aria-label="Breadcrumb">
-        <a href="/" class="hover:text-white transition">Ana Sayfa</a>
-        <span>/</span>
-        <span class="text-[#C5A880]">Klasik &amp; Country Koleksiyonu</span>
-      </nav>
+  <!-- HERO BÖLÜMÜ (SICAK COUNTRY, AYDINLIK FİLDİŞİ & NEFES KESEN ZARAFET) -->
+  <section class="relative bg-[#FDFCFA] border-b border-[#EAE3D6] py-12 sm:py-20 overflow-hidden">
+    <!-- Yumuşak Sıcak Güneş Işığı Hissiyatı -->
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#FAF4E8]/70 to-transparent pointer-events-none"></div>
 
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-black/40 backdrop-blur-md border border-[#C5A880]/50 text-[#C5A880] text-[11px] font-bold tracking-[0.2em] uppercase rounded-full shadow-lg">
-        <span class="w-2 h-2 rounded-full bg-[#00FF66] animate-pulse"></span>
-        <span>02 / KOLEKSİYON • ZARİF ÇITA İŞÇİLİĞİ &amp; MASİF SICAKLIĞI</span>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- SOL: 5 SANİYEDE ANLAŞILIR SICAK COUNTRY DOKUSU (7 SÜTUN) -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Breadcrumb -->
+          <nav class="flex items-center gap-2 text-xs font-semibold text-zinc-500 uppercase tracking-wider" aria-label="Breadcrumb">
+            <a href="/" class="hover:text-[#041F14] transition">Ana Sayfa</a>
+            <span>/</span>
+            <span class="text-[#8B5E3C] font-bold">Klasik &amp; Country Koleksiyonu</span>
+          </nav>
+
+          <!-- Prestij Rozeti -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-[#D4B996] rounded-full shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-[#10B981]"></span>
+            <span class="text-xs font-bold tracking-[0.16em] uppercase text-[#5C3D28] font-sans">
+              ZAMANSIZ COUNTRY MİMARİSİ • İTALYAN ÇITA &amp; İPEK LAKE
+            </span>
+          </div>
+
+          <!-- Ana Başlık (Sıcak, Duygusal & Kadınların Göz Bebeği Country Zarafeti) -->
+          <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold text-[#2C1810] leading-[1.12] tracking-tight">
+            Evinizin Kalbi, <br />
+            <span class="text-[#8B5E3C] font-serif font-normal italic">Zarif Çıta &amp; Masif Sıcaklığıyla</span> <br />
+            <span class="text-[#041F14]">Huzur Veren Bir Masala Dönüşsün.</span>
+          </h1>
+
+          <!-- Net & İkna Edici Açıklama -->
+          <p class="text-base sm:text-lg text-zinc-600 font-normal leading-relaxed max-w-xl">
+            Modası yıllar geçse de eskimeyen çıtalı kapak işçiliği, sararma yapmayan UV korumalı 4 kat fırın boyası, antik pirinç kulplar ve masif ada masası entegrasyonu. Buca atölyemizde kişiye özel ölçüyle hayalinizdeki country sıcaklığını üretiyoruz.
+          </p>
+
+          <!-- Kadınların Sevdiği 3 Country Detayı -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-xs">
+            <div class="flex items-center gap-2 bg-white p-2.5 rounded-lg border border-[#EAE3D6] shadow-xs">
+              <span class="text-[#8B5E3C] font-bold text-sm">✓</span>
+              <span class="text-zinc-800 font-semibold">Sararmayan İpek Mat Boya</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white p-2.5 rounded-lg border border-[#EAE3D6] shadow-xs">
+              <span class="text-[#8B5E3C] font-bold text-sm">✓</span>
+              <span class="text-zinc-800 font-semibold">Geniş Ada &amp; Kahvaltı Masası</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white p-2.5 rounded-lg border border-[#EAE3D6] shadow-xs">
+              <span class="text-[#8B5E3C] font-bold text-sm">✓</span>
+              <span class="text-zinc-800 font-semibold">Antik Pirinç Porselen Donanım</span>
+            </div>
+          </div>
+
+          <!-- Aksiyon Butonları -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a 
+              href="https://wa.me/905324261788?text=Merhaba%20Cem%20Bey,%20country%20ve%20klasik%20mutfak%20modelleriniz%20hakkında%20bilgi%20ve%20ücretsiz%203D%20keşif%20istiyorum." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="px-8 py-4 bg-[#C5A880] hover:bg-[#D4AF37] text-[#041F14] text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded-lg border border-[#E5C378] shadow-lg transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.02]"
+            >
+              <span>WhatsApp ile Country Keşif İste</span>
+              <span>→</span>
+            </a>
+            <a 
+              href="#modeller" 
+              class="px-8 py-4 bg-white hover:bg-zinc-50 border border-[#D5CFC5] text-[#2C1810] text-xs sm:text-sm font-bold uppercase tracking-wider rounded-lg shadow-xs transition duration-300 flex items-center justify-center gap-2 hover:scale-[1.02]"
+            >
+              <span>Modelleri İncele ↓</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- SAĞ: IŞIK SAÇAN SICAK COUNTRY MUTFAK KARESI (5 SÜTUN) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(92,61,40,0.12)] border-4 border-white group">
+            <img 
+              src="/media/projeler/proje-04.webp" 
+              alt="İzmir Klasik & Country Çıtalı Mutfak Dolabı İmalatı" 
+              class="w-full h-[380px] sm:h-[460px] object-cover transition-transform duration-1000 group-hover:scale-105"
+              width="600"
+              height="460"
+              loading="eager"
+            />
+            <!-- Zarif Alt Bilgi Şeridi -->
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-5 text-white">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-[#C5A880] block">CANLI MONTAJ REFERANSI</span>
+              <p class="text-sm font-semibold text-white mt-0.5">Çeşme Alaçatı • Fildişi Çıtalı Ada Mutfak</p>
+            </div>
+            <!-- Rozet -->
+            <div class="absolute top-4 right-4 px-3 py-1 bg-white/95 backdrop-blur-md rounded-full shadow-md border border-[#EAE3D6] text-[11px] font-bold text-[#5C3D28]">
+              45° Kusursuz CNC Gönye
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12] drop-shadow-xl">
-        İzmir Klasik &amp; Country Mutfak: <br /><span class="text-[#C5A880] font-serif font-normal italic">Zarif Çıta İşçiliği &amp; İpek Mat Lake Zarafeti</span>
-      </h1>
-
-      <p class="text-base sm:text-lg text-[#F0EAE1] font-light leading-relaxed max-w-2xl drop-shadow-md">
-        Modası asla geçmeyen zamansız bir estetik: Kusursuz 45 derece köşe birleşimli CNC çıtalar, asla sararmayan 4 kat ipek mat fırın boyası, antik pirinç ve porselen aksesuarlar. 1998'den bu yana İzmir Buca atölyemizde ahşaba ruh katıyoruz.
-      </p>
-
-      <div class="flex flex-wrap items-center gap-4 pt-3">
-        <a 
-          href="https://wa.me/905324261788?text=Merhaba,%20klasik%20ve%20country%20mutfak%20modelleriniz%20hakkında%20bilgi%20ve%20ücretsiz%203D%20keşif%20istiyorum." 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="px-8 py-4 bg-[#C5A880] hover:bg-[#D4AF37] text-[#041F14] text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded border border-[#E5C378] shadow-2xl transition-all duration-300 flex items-center gap-2 hover:scale-[1.02]"
-        >
-          <span>WhatsApp ile Country Mutfak Başlat</span>
-          <span>→</span>
-        </a>
-        <a 
-          href="#modeller" 
-          class="px-8 py-4 bg-black/40 hover:bg-black/60 border border-white/30 text-white text-xs sm:text-sm font-semibold uppercase tracking-wider rounded backdrop-blur-md transition duration-300 hover:scale-[1.02]"
-        >
-          Modelleri İncele ↓
-        </a>
-      </div>
-
-      <!-- Rozetler -->
-      <div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-white/15 text-xs text-white">
-        <div class="space-y-0.5">
-          <strong class="text-[#C5A880] block text-sm font-bold">10 Yıl Boya Garantisi</strong>
-          <span class="text-[#D8D2C7] text-[11px]">Sararmayan UV filtreli İtalyan Lake</span>
+      <!-- Alt Güvence Şeridi -->
+      <div class="mt-12 pt-8 border-t border-[#EAE3D6] grid grid-cols-2 md:grid-cols-4 gap-6 text-center sm:text-left">
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-[#8B5E3C] font-sans">10 Yıl</span>
+          <span class="text-xs text-zinc-600 block mt-0.5 font-medium">Sararmaz Lake Garantisi</span>
         </div>
-        <div class="space-y-0.5">
-          <strong class="text-[#C5A880] block text-sm font-bold">Usta Çıta İşçiliği</strong>
-          <span class="text-[#D8D2C7] text-[11px]">Milimetrik CNC freze ve el zımparası</span>
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-[#2C1810] font-sans">E1 MDF</span>
+          <span class="text-xs text-zinc-600 block mt-0.5 font-medium">Rutubete Dirençli Yeşil Marin Gövde</span>
         </div>
-        <div class="space-y-0.5">
-          <strong class="text-[#C5A880] block text-sm font-bold">Blum Frenli Donanım</strong>
-          <span class="text-[#D8D2C7] text-[11px]">Sessiz ve ömür boyu garantili raylar</span>
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-[#C5A880] font-sans">Masif Ahşap</span>
+          <span class="text-xs text-zinc-600 block mt-0.5 font-medium">Doğal Ağaç Hare ve Dokusu</span>
         </div>
-        <div class="space-y-0.5">
-          <strong class="text-[#C5A880] block text-sm font-bold">Yerinde Lazer Keşif</strong>
-          <span class="text-[#D8D2C7] text-[11px]">Tüm İzmir'e ücretsiz iç mimar desteği</span>
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-[#006039] font-sans">Sözleşmeli</span>
+          <span class="text-xs text-zinc-600 block mt-0.5 font-medium">Zamanında Teslim Taahhüdü</span>
         </div>
       </div>
+
     </div>
   </section>
     </div>
   </section>
 
   <!-- TEKNİK STANDARTLAR TABLOSU -->
-  <section class="bg-stone-100 border-b border-stone-200 py-12" id="teknik-standartlar">
+  <section class="bg-[#F8F9FA] border-b border-[#E5DFD5] py-16" id="teknik-standartlar">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
       <div class="border-l-4 border-amber-600 pl-4 space-y-1">
         <span class="text-xs font-bold uppercase tracking-widest text-amber-800">COUNTRY &amp; KLASİK TEKNİK DETAYLAR</span>
-        <h2 class="text-xl sm:text-2xl font-bold text-stone-900">Klasik &amp; Country Mutfak Malzeme ve Ustalık Standartları</h2>
+        <h2 class="text-xl sm:text-2xl font-bold text-[#041F14]">Klasik &amp; Country Mutfak Malzeme ve Ustalık Standartları</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">Çıta &amp; Göbek Profili</strong>
-          <p class="text-stone-600 leading-relaxed">Özel açılı CNC freze makinelerinde açılan ve el zımparasıyla pürüzsüzleştirilen 45° çıtalar. Toz tutmayan, kolay silinebilir özel pah kırımları.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">Özel açılı CNC freze makinelerinde açılan ve el zımparasıyla pürüzsüzleştirilen 45° çıtalar. Toz tutmayan, kolay silinebilir özel pah kırımları.</p>
         </div>
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">4 Kat Fırın Lake Boya</strong>
-          <p class="text-stone-600 leading-relaxed">2 kat poliüretan astar + 2 kat sararmayan son kat ipek mat boya. Atölyemizdeki pozitif basınçlı tozsuz fırınlarda kurutulur.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">2 kat poliüretan astar + 2 kat sararmayan son kat ipek mat boya. Atölyemizdeki pozitif basınçlı tozsuz fırınlarda kurutulur.</p>
         </div>
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">Aksesuar &amp; Kulp Seçenekleri</strong>
-          <p class="text-stone-600 leading-relaxed">Antik eskitme sarı pirinç fincan kulplar, porselen çiçek desenli düğmeler, camlı vitrin çıtaları ve gizlenebilir çekmece içi baharatlıklar.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">Antik eskitme sarı pirinç fincan kulplar, porselen çiçek desenli düğmeler, camlı vitrin çıtaları ve gizlenebilir çekmece içi baharatlıklar.</p>
         </div>
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">Taç, Baza ve Şömine Tasarımı</strong>
-          <p class="text-stone-600 leading-relaxed">Tavan birleşiminde oymalı ahşap taçlar, alt kısımda ayakları gizleyen country bazalar ve ocak üstü için görkemli şömine davlumbaz mimarisi.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">Tavan birleşiminde oymalı ahşap taçlar, alt kısımda ayakları gizleyen country bazalar ve ocak üstü için görkemli şömine davlumbaz mimarisi.</p>
         </div>
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">Gövde ve Neme Dayanım</strong>
-          <p class="text-stone-600 leading-relaxed">18 mm neme dayanıklı E1 MDF-Lam gövde, 1 mm kalınlığında darbelere dayanıklı ABS kenar bantları ile su sızıntılarına karşı tam koruma.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">18 mm neme dayanıklı E1 MDF-Lam gövde, 1 mm kalınlığında darbelere dayanıklı ABS kenar bantları ile su sızıntılarına karşı tam koruma.</p>
         </div>
-        <div class="bg-white p-5 border border-stone-200 shadow-sm space-y-1.5">
+        <div class="relative bg-gradient-to-br from-white via-[#FCFDFB] to-[#F7FAF8] p-6 rounded-xl border border-[#C5A880]/30 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(4,31,20,0.1)] hover:-translate-y-1 transition-all duration-300 space-y-2.5 group">
           <strong class="text-stone-950 block text-xs uppercase tracking-wider text-amber-800">Evye ve Batarya Uyumu</strong>
-          <p class="text-stone-600 leading-relaxed">Tezgah altı veya önü açık döküm porselen (apron sink) tekne evyeler ve döner borulu kuğu rustik bataryalar ile kusursuz uyum.</p>
+          <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">Tezgah altı veya önü açık döküm porselen (apron sink) tekne evyeler ve döner borulu kuğu rustik bataryalar ile kusursuz uyum.</p>
         </div>
       </div>
     </div>
@@ -226,7 +282,7 @@ const models = [
                 <span class="px-2.5 py-1 bg-stone-950/85 text-amber-300 text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm">
                   {m.badge}
                 </span>
-                <span class="px-2.5 py-0.5 bg-white/90 text-stone-900 text-[9.5px] font-bold uppercase tracking-wider">
+                <span class="px-2.5 py-0.5 bg-white/90 text-[#041F14] text-[9.5px] font-bold uppercase tracking-wider">
                   {m.tag}
                 </span>
               </div>
@@ -234,7 +290,7 @@ const models = [
 
             <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
               <div class="space-y-2">
-                <h3 class="text-xl font-bold text-stone-900 group-hover:text-amber-800 transition">{m.title}</h3>
+                <h3 class="text-xl font-bold text-[#041F14] group-hover:text-amber-800 transition">{m.title}</h3>
                 <p class="text-xs text-stone-600 font-light leading-relaxed line-clamp-3">{m.desc}</p>
               </div>
 
@@ -345,13 +401,13 @@ const models = [
     <div class="max-w-4xl mx-auto px-4 sm:px-8 space-y-8">
       <div class="text-center space-y-2">
         <span class="text-xs font-bold uppercase tracking-widest text-amber-800 block">AKLINIZA TAKILANLAR</span>
-        <h2 class="text-2xl sm:text-3xl font-bold text-stone-900">Klasik &amp; Country Mutfaklar Hakkında Merak Edilenler</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-[#041F14]">Klasik &amp; Country Mutfaklar Hakkında Merak Edilenler</h2>
       </div>
 
       <div class="space-y-4">
         {seo.faqList.map((faq) => (
           <div class="bg-white p-5 border border-stone-200 shadow-2xs space-y-2">
-            <h3 class="text-sm sm:text-base font-bold text-stone-900 flex items-center gap-2">
+            <h3 class="text-sm sm:text-base font-bold text-[#041F14] flex items-center gap-2">
               <span class="text-amber-700">Q:</span>
               <span>{faq.question}</span>
             </h3>
