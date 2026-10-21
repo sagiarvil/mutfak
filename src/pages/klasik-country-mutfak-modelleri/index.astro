@@ -90,60 +90,72 @@ const models = [
 
 <Layout seo={seo} activeService="Klasik & Country Mutfak Modelleri">
   
-  <!-- HERO BÖLÜMÜ -->
-  <section class="relative bg-stone-950 text-white py-24 sm:py-32 overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-35" style="background-image: url('/media/cinematic/klasik_mutfak.webp');"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/75 to-stone-950/40"></div>
+  <!-- HERO BÖLÜMÜ (AYDINLIK, FERAH & PRESTİJLİ COUNTRY VİTRİN) -->
+  <section class="relative py-20 sm:py-28 overflow-hidden bg-[#041F14]">
+    <!-- Canlı & Aydınlık Country Mutfak Görseli -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-75 scale-105 transition-transform duration-1000" style="background-image: url('/media/projeler/proje-04.webp');"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#02130C]/90 via-[#041F14]/60 to-black/25"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#02130C] via-transparent to-transparent"></div>
     
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
-      <nav class="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-widest" aria-label="Breadcrumb">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 space-y-6 z-10 [text-shadow:_0_2px_12px_rgba(0,0,0,0.8)]">
+      <nav class="flex items-center gap-2 text-xs font-semibold text-[#D8D2C7] uppercase tracking-widest" aria-label="Breadcrumb">
         <a href="/" class="hover:text-white transition">Ana Sayfa</a>
         <span>/</span>
-        <span class="text-amber-300">Klasik &amp; Country Koleksiyonu</span>
+        <span class="text-[#C5A880]">Klasik &amp; Country Koleksiyonu</span>
       </nav>
 
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-amber-950/90 border border-amber-400/40 text-amber-300 text-[11px] font-black tracking-[0.2em] uppercase shadow-lg">
-        <span>02 / KOLEKSİYON</span>
-        <span>•</span>
-        <span>ZARİF ÇITA İŞÇİLİĞİ &amp; MASİF SICAKLIĞI</span>
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-black/40 backdrop-blur-md border border-[#C5A880]/50 text-[#C5A880] text-[11px] font-bold tracking-[0.2em] uppercase rounded-full shadow-lg">
+        <span class="w-2 h-2 rounded-full bg-[#00FF66] animate-pulse"></span>
+        <span>02 / KOLEKSİYON • ZARİF ÇITA İŞÇİLİĞİ &amp; MASİF SICAKLIĞI</span>
       </div>
 
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
-        İzmir Klasik &amp; Country Mutfak: <br /><span class="font-normal italic text-amber-200">Zarif Çıta İşçiliği &amp; İpek Mat Lake Zarafeti</span>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12] drop-shadow-xl">
+        İzmir Klasik &amp; Country Mutfak: <br /><span class="text-[#C5A880] font-serif font-normal italic">Zarif Çıta İşçiliği &amp; İpek Mat Lake Zarafeti</span>
       </h1>
 
-      <p class="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-2xl">
+      <p class="text-base sm:text-lg text-[#F0EAE1] font-light leading-relaxed max-w-2xl drop-shadow-md">
         Modası asla geçmeyen zamansız bir estetik: Kusursuz 45 derece köşe birleşimli CNC çıtalar, asla sararmayan 4 kat ipek mat fırın boyası, antik pirinç ve porselen aksesuarlar. 1998'den bu yana İzmir Buca atölyemizde ahşaba ruh katıyoruz.
       </p>
 
       <div class="flex flex-wrap items-center gap-4 pt-3">
-        <a href="https://wa.me/905324261788?text=Merhaba,%20klasik%20ve%20country%20mutfak%20modelleriniz%20hakkında%20bilgi%20ve%20ücretsiz%203D%20keşif%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-amber-500 text-stone-950 text-xs font-bold uppercase tracking-widest hover:bg-amber-400 transition shadow-xl inline-flex items-center gap-2">
-          <span>💬</span> <span>WhatsApp ile Country Mutfak Projesi Başlat</span>
+        <a 
+          href="https://wa.me/905324261788?text=Merhaba,%20klasik%20ve%20country%20mutfak%20modelleriniz%20hakkında%20bilgi%20ve%20ücretsiz%203D%20keşif%20istiyorum." 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="px-8 py-4 bg-[#C5A880] hover:bg-[#D4AF37] text-[#041F14] text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded border border-[#E5C378] shadow-2xl transition-all duration-300 flex items-center gap-2 hover:scale-[1.02]"
+        >
+          <span>WhatsApp ile Country Mutfak Başlat</span>
+          <span>→</span>
         </a>
-        <a href="#modeller" class="px-8 py-4 bg-transparent border border-stone-400 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-stone-950 transition">
+        <a 
+          href="#modeller" 
+          class="px-8 py-4 bg-black/40 hover:bg-black/60 border border-white/30 text-white text-xs sm:text-sm font-semibold uppercase tracking-wider rounded backdrop-blur-md transition duration-300 hover:scale-[1.02]"
+        >
           Modelleri İncele ↓
         </a>
       </div>
 
       <!-- Rozetler -->
-      <div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-stone-800 text-xs text-stone-300">
-        <div>
-          <strong class="text-white block text-sm font-semibold">10 Yıl Boya Garantisi</strong>
-          <span class="text-stone-400 text-[11px]">Sararmayan UV filtreli İtalyan Lake</span>
+      <div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-white/15 text-xs text-white">
+        <div class="space-y-0.5">
+          <strong class="text-[#C5A880] block text-sm font-bold">10 Yıl Boya Garantisi</strong>
+          <span class="text-[#D8D2C7] text-[11px]">Sararmayan UV filtreli İtalyan Lake</span>
         </div>
-        <div>
-          <strong class="text-white block text-sm font-semibold">Usta Çıta İşçiliği</strong>
-          <span class="text-stone-400 text-[11px]">Milimetrik CNC freze ve el zımparası</span>
+        <div class="space-y-0.5">
+          <strong class="text-[#C5A880] block text-sm font-bold">Usta Çıta İşçiliği</strong>
+          <span class="text-[#D8D2C7] text-[11px]">Milimetrik CNC freze ve el zımparası</span>
         </div>
-        <div>
-          <strong class="text-white block text-sm font-semibold">Blum Frenli Donanım</strong>
-          <span class="text-stone-400 text-[11px]">Sessiz ve ömür boyu garantili raylar</span>
+        <div class="space-y-0.5">
+          <strong class="text-[#C5A880] block text-sm font-bold">Blum Frenli Donanım</strong>
+          <span class="text-[#D8D2C7] text-[11px]">Sessiz ve ömür boyu garantili raylar</span>
         </div>
-        <div>
-          <strong class="text-white block text-sm font-semibold">Yerinde Lazer Keşif</strong>
-          <span class="text-stone-400 text-[11px]">Tüm İzmir'e ücretsiz iç mimar desteği</span>
+        <div class="space-y-0.5">
+          <strong class="text-[#C5A880] block text-sm font-bold">Yerinde Lazer Keşif</strong>
+          <span class="text-[#D8D2C7] text-[11px]">Tüm İzmir'e ücretsiz iç mimar desteği</span>
         </div>
       </div>
+    </div>
+  </section>
     </div>
   </section>
 
