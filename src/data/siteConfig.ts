@@ -23,9 +23,9 @@ export const siteConfig = {
   phoneFormatted: "0232 441 1060",
   phoneCompany: "0232 441 1060",
   phoneCompanyRaw: "02324411060",
-  whatsappRaw: "905324261788",
-  whatsappFormatted: "0532 426 17 88",
-  whatsappUrl: "https://wa.me/905324261788",
+  whatsappRaw: "905393333303",
+  whatsappFormatted: "0539 333 33 03",
+  whatsappUrl: "https://wa.me/905393333303",
   address: {
     streetAddress: "Adatepe, Özbekistan Cd. no:10/f",
     addressLocality: "Buca",

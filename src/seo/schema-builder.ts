@@ -61,7 +61,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       },
       sameAs: [
         'https://www.instagram.com/cemyesilay.luxury',
-        'https://wa.me/905324261788',
+        'https://wa.me/905393333303',
         'https://share.google/HC5sweG3HXcjogRNZ',
         `https://www.wikidata.org/wiki/${page.primaryEntity.wikidataQid || 'Q11589432'}`
       ]
