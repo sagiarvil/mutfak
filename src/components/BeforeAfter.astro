@@ -1,22 +1,22 @@
 ---
 // src/components/BeforeAfter.astro
-// evdekortadilat.com referanslı interaktif Öncesi / Sonrası Dönüşüm Bileşeni
+// evdekortadilat.com referanslı interaktif Öncesi / Sonrası Dönüşüm Bileşeni (Cartier Gold & Deep Dark)
 ---
 
-<section id="oncesi-sonrasi" class="py-20 bg-zinc-900 text-white relative overflow-hidden border-b border-zinc-800">
+<section id="oncesi-sonrasi" class="py-20 bg-[#081812] text-white relative overflow-hidden border-b border-[#0E2E20]">
   
-  <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-10">
     
-    <!-- Başlık & Açıklama (evdekortadilat.com Stili) -->
-    <div class="text-center max-w-3xl mx-auto space-y-3">
-      <div class="inline-flex items-center gap-2 px-3 py-1 bg-zinc-800 text-amber-400 rounded-full border border-zinc-700 text-xs font-bold tracking-widest uppercase">
-        <span>★ DÖNÜŞÜMÜN GÜCÜ</span>
+    <!-- Başlık & Açıklama (Rafine, Az Metin, Maksimum Etki) -->
+    <div class="text-center max-w-2xl mx-auto space-y-3">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-[#051F14] text-[#C5A880] rounded-full border border-[#C5A880]/30 text-[11px] font-bold tracking-widest uppercase">
+        <span>★ GERÇEK DÖNÜŞÜM ÖRNEĞİ</span>
       </div>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
-        Her Detayıyla Dönüşen Mekanlar
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white font-serif">
+        Her Detayıyla Yenilenen Mekanlar
       </h2>
-      <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
-        Eski, kullanışsız ve yıpranmış mekanları Adatepe atölyemizin zanaatı ve modern mimari mühendislikle hayalinizdeki lüks yaşam alanına dönüştürüyoruz. Sürgüyü kaydırarak değişimi keşfedin.
+      <p class="text-[#D8D2C7] text-xs sm:text-sm font-light">
+        Adatepe atölyemizin zanaatıyla eski ve yıpranmış mekanların kusursuz lüks yaşam alanına dönüşümü.
       </p>
     </div>
 
@@ -25,7 +25,7 @@
       
       <!-- Sol: İnteraktif Before/After Karşılaştırma Kutusu (8 Sütun) -->
       <div class="lg:col-span-8">
-        <div class="relative w-full overflow-hidden rounded-2xl shadow-2xl border border-zinc-700 bg-zinc-950 select-none aspect-[16/10] sm:aspect-[16/9]" id="beforeAfterContainer">
+        <div class="relative w-full overflow-hidden rounded-2xl shadow-2xl border border-[#C5A880]/30 bg-black select-none aspect-[16/10] sm:aspect-[16/9]" id="beforeAfterContainer">
           
           <!-- Sonra Görseli (Altta tam genişlik) -->
           <img 
@@ -34,7 +34,7 @@
             class="absolute inset-0 w-full h-full object-cover" 
             loading="lazy" 
           />
-          <div class="absolute bottom-4 right-4 px-3 py-1 bg-black/75 backdrop-blur-md text-emerald-400 border border-emerald-500/40 rounded text-xs font-extrabold tracking-wider pointer-events-none uppercase">
+          <div class="absolute bottom-4 right-4 px-3 py-1 bg-black/80 backdrop-blur-md text-[#00FF66] border border-[#00FF66]/40 rounded text-[11px] font-extrabold tracking-wider pointer-events-none uppercase">
             SONRA (TESLİMAT)
           </div>
 
@@ -47,69 +47,69 @@
               id="beforeImg"
               loading="lazy" 
             />
-            <div class="absolute bottom-4 left-4 px-3 py-1 bg-black/75 backdrop-blur-md text-amber-400 border border-amber-500/40 rounded text-xs font-extrabold tracking-wider pointer-events-none uppercase">
+            <div class="absolute bottom-4 left-4 px-3 py-1 bg-black/80 backdrop-blur-md text-[#C5A880] border border-[#C5A880]/40 rounded text-[11px] font-extrabold tracking-wider pointer-events-none uppercase">
               ÖNCE (ESKİ HALİ)
             </div>
           </div>
 
           <!-- Sürgü Çizgisi ve Butonu (Divider / Handle) -->
-          <div class="absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(255,255,255,0.8)] cursor-ew-resize z-20" id="sliderHandle" style="left: 50%;">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 bg-white text-zinc-900 rounded-full shadow-2xl flex items-center justify-center font-bold text-sm border-2 border-zinc-900 transition-transform active:scale-95">
-              <svg class="w-5 h-5 text-zinc-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(255,255,255,0.9)] cursor-ew-resize z-20" id="sliderHandle" style="left: 50%;">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 bg-white text-[#041F14] rounded-full shadow-2xl flex items-center justify-center font-bold text-sm border-2 border-[#C5A880] transition-transform active:scale-95">
+              <svg class="w-5 h-5 text-[#041F14]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/>
               </svg>
             </div>
           </div>
 
         </div>
-        <div class="text-center text-xs text-zinc-400 mt-3 font-medium flex items-center justify-center gap-1.5">
+        <div class="text-center text-xs text-[#C5BBAF] mt-3 font-medium flex items-center justify-center gap-1.5">
           <span>👈</span>
-          <span>Sürgüyü sola ve sağa kaydırarak önce / sonra farkını görün</span>
+          <span>Sürgüyü kaydırarak dönüşümü canlı görün</span>
           <span>👉</span>
         </div>
       </div>
 
-      <!-- Sağ: Dönüşümün Aşamaları & Bilgi Kartı (4 Sütun) -->
-      <div class="lg:col-span-4 space-y-4">
+      <!-- Sağ: 3 Adımlı Rafine Dönüşüm Süreci -->
+      <div class="lg:col-span-4 space-y-3.5">
         
-        <div class="p-6 bg-zinc-800/80 border border-zinc-700 rounded-xl space-y-3">
-          <div class="flex items-center gap-3">
-            <span class="w-8 h-8 rounded-full bg-amber-500 text-zinc-900 flex items-center justify-center font-extrabold text-sm">1</span>
-            <h3 class="text-base font-bold text-white">Lazer Rölöve & 3D Planlama</h3>
+        <div class="p-5 bg-[#051F14]/80 border border-[#0D3826] rounded-xl space-y-1.5">
+          <div class="flex items-center gap-2.5">
+            <span class="w-7 h-7 rounded-full bg-[#C5A880] text-[#041F14] flex items-center justify-center font-extrabold text-xs">1</span>
+            <h3 class="text-sm font-bold text-white">Lazer Rölöve & 3D Planlama</h3>
           </div>
-          <p class="text-xs text-zinc-400 leading-relaxed">
-            Eski mutfağın kırım planı çıkarıldı. Milimetrik 3D modelleme ile dolap hacmi %40 artırıldı.
+          <p class="text-xs text-[#D8D2C7] leading-relaxed pl-9">
+            Milimetrik lazer ölçüsü ile alan kapasitesi ve ışık optimizasyonu sağlandı.
           </p>
         </div>
 
-        <div class="p-6 bg-zinc-800/80 border border-zinc-700 rounded-xl space-y-3">
-          <div class="flex items-center gap-3">
-            <span class="w-8 h-8 rounded-full bg-amber-500 text-zinc-900 flex items-center justify-center font-extrabold text-sm">2</span>
-            <h3 class="text-base font-bold text-white">Sıfırdan Tesisat & İzolasyon</h3>
+        <div class="p-5 bg-[#051F14]/80 border border-[#0D3826] rounded-xl space-y-1.5">
+          <div class="flex items-center gap-2.5">
+            <span class="w-7 h-7 rounded-full bg-[#C5A880] text-[#041F14] flex items-center justify-center font-extrabold text-xs">2</span>
+            <h3 class="text-sm font-bold text-white">Altyapı & Su İzolasyonu</h3>
           </div>
-          <p class="text-xs text-zinc-400 leading-relaxed">
-            Eski su ve elektrik altyapısı yenilendi; neme karşı E1 mukavemetli çift yüz MDF kullanıldı.
+          <p class="text-xs text-[#D8D2C7] leading-relaxed pl-9">
+            Tüm tesisat yenilenerek %100 neme dayanıklı E1 MDF-Lam gövde uygulandı.
           </p>
         </div>
 
-        <div class="p-6 bg-zinc-800/80 border border-zinc-700 rounded-xl space-y-3">
-          <div class="flex items-center gap-3">
-            <span class="w-8 h-8 rounded-full bg-amber-500 text-zinc-900 flex items-center justify-center font-extrabold text-sm">3</span>
-            <h3 class="text-base font-bold text-white">İpek Mat Lake & Blum Konfor</h3>
+        <div class="p-5 bg-[#051F14]/80 border border-[#0D3826] rounded-xl space-y-1.5">
+          <div class="flex items-center gap-2.5">
+            <span class="w-7 h-7 rounded-full bg-[#C5A880] text-[#041F14] flex items-center justify-center font-extrabold text-xs">3</span>
+            <h3 class="text-sm font-bold text-white">İpek Mat Lake & Blum Konfor</h3>
           </div>
-          <p class="text-xs text-zinc-400 leading-relaxed">
-            Leke tutmayan kapaklar ve Avusturya Blum sessiz ray mekanizmaları ile 10 yıl garantili teslimat.
+          <p class="text-xs text-[#D8D2C7] leading-relaxed pl-9">
+            Leke tutmayan İtalyan lake kapaklar ve sessiz frenli ray mekanizmaları monte edildi.
           </p>
         </div>
 
         <div class="pt-2">
           <a 
-            href="https://wa.me/905353748329?text=Merhaba%20Cem%20Bey,%20benim%20de%20mutfağımda%20böyle%20bir%20öncesi/sonrası%20dönüşüm%20için%20fiyat%20almak%20istiyorum." 
+            href="https://wa.me/905353748329?text=Merhaba%20Cem%20Bey,%20mutfağımda%20öncesi/sonrası%20dönüşüm%20için%20ücretsiz%203D%20keşif%20istiyorum." 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="w-full py-3.5 bg-amber-600 hover:bg-amber-500 text-white font-bold text-center rounded-lg block uppercase text-xs tracking-wider transition shadow-lg"
+            class="w-full py-3.5 bg-[#C5A880] hover:bg-[#D4AF37] text-[#041F14] font-extrabold text-center rounded block uppercase text-xs tracking-wider transition shadow-lg"
           >
-            Sizin Mekanınızı da Dönüştürelim →
+            Mekanınız İçin Keşif Alın →
           </a>
         </div>
 
@@ -143,7 +143,6 @@
       beforeLayer.style.width = `${percentage}%`;
       sliderHandle.style.left = `${percentage}%`;
 
-      // Resmin genişliğini container ile eşit tutarak oran bozulmasını önle
       if (beforeImg) {
         beforeImg.style.width = `${rect.width}px`;
         beforeImg.style.height = `${rect.height}px`;
@@ -177,7 +176,6 @@
       setPosition(clientX);
     };
 
-    // Event listeners
     container.addEventListener("mousedown", startDrag);
     window.addEventListener("mouseup", stopDrag);
     window.addEventListener("mousemove", onMove);
