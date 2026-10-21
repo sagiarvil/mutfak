@@ -1,0 +1,189 @@
+---
+// src/components/BeforeAfter.astro
+// evdekortadilat.com referanslı interaktif Öncesi / Sonrası Dönüşüm Bileşeni
+---
+
+<section id="oncesi-sonrasi" class="py-20 bg-zinc-900 text-white relative overflow-hidden border-b border-zinc-800">
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+    
+    <!-- Başlık & Açıklama (evdekortadilat.com Stili) -->
+    <div class="text-center max-w-3xl mx-auto space-y-3">
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-zinc-800 text-amber-400 rounded-full border border-zinc-700 text-xs font-bold tracking-widest uppercase">
+        <span>★ DÖNÜŞÜMÜN GÜCÜ</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+        Her Detayıyla Dönüşen Mekanlar
+      </h2>
+      <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+        Eski, kullanışsız ve yıpranmış mekanları Adatepe atölyemizin zanaatı ve modern mimari mühendislikle hayalinizdeki lüks yaşam alanına dönüştürüyoruz. Sürgüyü kaydırarak değişimi keşfedin.
+      </p>
+    </div>
+
+    <!-- İnteraktif Öncesi / Sonrası Slider Alanı -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- Sol: İnteraktif Before/After Karşılaştırma Kutusu (8 Sütun) -->
+      <div class="lg:col-span-8">
+        <div class="relative w-full overflow-hidden rounded-2xl shadow-2xl border border-zinc-700 bg-zinc-950 select-none aspect-[16/10] sm:aspect-[16/9]" id="beforeAfterContainer">
+          
+          <!-- Sonra Görseli (Altta tam genişlik) -->
+          <img 
+            src="/media/oncesi_sonrasi_sonra.webp" 
+            alt="Mutfak Renovasyonu Sonrası" 
+            class="absolute inset-0 w-full h-full object-cover" 
+            loading="lazy" 
+          />
+          <div class="absolute bottom-4 right-4 px-3 py-1 bg-black/75 backdrop-blur-md text-emerald-400 border border-emerald-500/40 rounded text-xs font-extrabold tracking-wider pointer-events-none uppercase">
+            SONRA (TESLİMAT)
+          </div>
+
+          <!-- Önce Görseli (Üstte kırpılan katman) -->
+          <div class="absolute inset-0 overflow-hidden" id="beforeLayer" style="width: 50%;">
+            <img 
+              src="/media/oncesi_sonrasi_once.webp" 
+              alt="Mutfak Renovasyonu Öncesi" 
+              class="absolute inset-0 w-full h-full object-cover max-w-none" 
+              id="beforeImg"
+              loading="lazy" 
+            />
+            <div class="absolute bottom-4 left-4 px-3 py-1 bg-black/75 backdrop-blur-md text-amber-400 border border-amber-500/40 rounded text-xs font-extrabold tracking-wider pointer-events-none uppercase">
+              ÖNCE (ESKİ HALİ)
+            </div>
+          </div>
+
+          <!-- Sürgü Çizgisi ve Butonu (Divider / Handle) -->
+          <div class="absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(255,255,255,0.8)] cursor-ew-resize z-20" id="sliderHandle" style="left: 50%;">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 bg-white text-zinc-900 rounded-full shadow-2xl flex items-center justify-center font-bold text-sm border-2 border-zinc-900 transition-transform active:scale-95">
+              <svg class="w-5 h-5 text-zinc-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+        <div class="text-center text-xs text-zinc-400 mt-3 font-medium flex items-center justify-center gap-1.5">
+          <span>👈</span>
+          <span>Sürgüyü sola ve sağa kaydırarak önce / sonra farkını görün</span>
+          <span>👉</span>
+        </div>
+      </div>
+
+      <!-- Sağ: Dönüşümün Aşamaları & Bilgi Kartı (4 Sütun) -->
+      <div class="lg:col-span-4 space-y-4">
+        
+        <div class="p-6 bg-zinc-800/80 border border-zinc-700 rounded-xl space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-amber-500 text-zinc-900 flex items-center justify-center font-extrabold text-sm">1</span>
+            <h3 class="text-base font-bold text-white">Lazer Rölöve & 3D Planlama</h3>
+          </div>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Eski mutfağın kırım planı çıkarıldı. Milimetrik 3D modelleme ile dolap hacmi %40 artırıldı.
+          </p>
+        </div>
+
+        <div class="p-6 bg-zinc-800/80 border border-zinc-700 rounded-xl space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-amber-500 text-zinc-900 flex items-center justify-center font-extrabold text-sm">2</span>
+            <h3 class="text-base font-bold text-white">Sıfırdan Tesisat & İzolasyon</h3>
+          </div>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Eski su ve elektrik altyapısı yenilendi; neme karşı E1 mukavemetli çift yüz MDF kullanıldı.
+          </p>
+        </div>
+
+        <div class="p-6 bg-zinc-800/80 border border-zinc-700 rounded-xl space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-amber-500 text-zinc-900 flex items-center justify-center font-extrabold text-sm">3</span>
+            <h3 class="text-base font-bold text-white">İpek Mat Lake & Blum Konfor</h3>
+          </div>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Leke tutmayan kapaklar ve Avusturya Blum sessiz ray mekanizmaları ile 10 yıl garantili teslimat.
+          </p>
+        </div>
+
+        <div class="pt-2">
+          <a 
+            href="https://wa.me/905353748329?text=Merhaba%20Cem%20Bey,%20benim%20de%20mutfağımda%20böyle%20bir%20öncesi/sonrası%20dönüşüm%20için%20fiyat%20almak%20istiyorum." 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="w-full py-3.5 bg-amber-600 hover:bg-amber-500 text-white font-bold text-center rounded-lg block uppercase text-xs tracking-wider transition shadow-lg"
+          >
+            Sizin Mekanınızı da Dönüştürelim →
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- İnteraktif Before / After Sürgü Scripti -->
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("beforeAfterContainer");
+    const beforeLayer = document.getElementById("beforeLayer");
+    const beforeImg = document.getElementById("beforeImg");
+    const sliderHandle = document.getElementById("sliderHandle");
+
+    if (!container || !beforeLayer || !sliderHandle) return;
+
+    let isDragging = false;
+
+    const setPosition = (x) => {
+      const rect = container.getBoundingClientRect();
+      let offsetX = x - rect.left;
+      if (offsetX < 0) offsetX = 0;
+      if (offsetX > rect.width) offsetX = rect.width;
+      
+      const percentage = (offsetX / rect.width) * 100;
+      beforeLayer.style.width = `${percentage}%`;
+      sliderHandle.style.left = `${percentage}%`;
+
+      // Resmin genişliğini container ile eşit tutarak oran bozulmasını önle
+      if (beforeImg) {
+        beforeImg.style.width = `${rect.width}px`;
+        beforeImg.style.height = `${rect.height}px`;
+      }
+    };
+
+    const updateDimensions = () => {
+      const rect = container.getBoundingClientRect();
+      if (beforeImg) {
+        beforeImg.style.width = `${rect.width}px`;
+        beforeImg.style.height = `${rect.height}px`;
+      }
+    };
+
+    window.addEventListener("resize", updateDimensions);
+    updateDimensions();
+
+    const startDrag = (e) => {
+      isDragging = true;
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      setPosition(clientX);
+    };
+
+    const stopDrag = () => {
+      isDragging = false;
+    };
+
+    const onMove = (e) => {
+      if (!isDragging) return;
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      setPosition(clientX);
+    };
+
+    // Event listeners
+    container.addEventListener("mousedown", startDrag);
+    window.addEventListener("mouseup", stopDrag);
+    window.addEventListener("mousemove", onMove);
+
+    container.addEventListener("touchstart", startDrag, { passive: true });
+    window.addEventListener("touchend", stopDrag);
+    window.addEventListener("touchmove", onMove, { passive: true });
+  });
+</script>
