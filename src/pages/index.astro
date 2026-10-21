@@ -52,11 +52,11 @@ const seo = {
 <Layout seo={seo} activeService="Ana Sayfa">
 
   <!-- ===================================================================== -->
-  <!-- 1. SİNEMATİK PREMİUM VİDEO HERO (DOĞAL RENK DENGESİ, KIRMIZILIK SIFIRLANDI) -->
+  <!-- 1. SİNEMATİK PREMİUM VİDEO HERO (%100 DOĞAL IŞIK, SIFIR SARILIK/KIRMIZILIK) -->
   <!-- ===================================================================== -->
-  <section class="relative w-full overflow-hidden bg-[#062417] border-b border-[#0D3B26]" style="min-height: 85vh;">
+  <section class="relative w-full overflow-hidden bg-[#041910] border-b border-[#0D3826]" style="min-height: 85vh;">
     
-    <!-- Referans Video Arka Planı (Doğal Mimari Ahşap & Nötr Sinematik Tonlama) -->
+    <!-- Referans Video Arka Planı (Tamamen Doğal Ham Işık & Nötr Mimari Denge) -->
     <div class="absolute inset-0 w-full h-full overflow-hidden">
       <video
         id="heroBgVideo"
@@ -68,13 +68,12 @@ const seo = {
         preload="auto"
         poster="/media/cinematic/home_video_photo.webp"
         class="w-full h-full object-cover scale-102 transition-transform duration-1000"
-        style="filter: hue-rotate(20deg) saturate(0.86) contrast(1.04) brightness(1.06);"
+        style="filter: contrast(1.02) brightness(1.02) saturate(0.92);"
       >
         <source src="/media/cinematic/home_video.mp4" type="video/mp4" />
       </video>
       
-      <!-- Aydınlık & Doğal Netlik Sağlayan İnce Yumuşak Gölgeleme (Karartma Yok, Kırmızı Nötrleme) -->
-      <div class="absolute inset-0 bg-[#062417]/10 pointer-events-none"></div>
+      <!-- Aydınlık & Netlik Sağlayan İnce Nötr Gölgeleme (Renklendirme ve Sararma Yok) -->
       <div class="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent"></div>
     </div>
@@ -179,56 +178,184 @@ const seo = {
   <BeforeAfter />
 
   <!-- ===================================================================== -->
-  <!-- 3. MİMARİ AVANTAJ KARTLARI (PREMİUM STANDARTLAR)                     -->
+  <!-- 3. MİMARİ AVANTAJ KARTLARI (HAUTE COUTURE LUXURY ATELIER STANDARDI)     -->
   <!-- ===================================================================== -->
-  <section class="py-16 bg-[#F8FAFC] border-b border-gray-200">
+  <section class="py-20 bg-gradient-to-b from-[#FAF8F5] via-[#F5F2EB] to-[#FAF8F5] border-b border-[#E8E2D8]">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
       
-      <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
-        <span class="text-xs font-bold uppercase tracking-widest text-[#041F14]">MİMARİ KALİTE STANDARDI</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-zinc-900 font-serif">Neden Cem Yeşilay Atölyesi?</h2>
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-2.5">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-[#083322]/5 border border-[#C5A880]/30 rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#C5A880]"></span>
+          <span class="text-[11px] font-bold uppercase tracking-[0.22em] text-[#8C6D3F]">MİMARİ KALİTE STANDARDI</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-[#083322] font-serif tracking-tight">
+          Neden Cem Yeşilay Atölyesi?
+        </h2>
+        <p class="text-xs sm:text-sm text-zinc-600 font-light max-w-xl mx-auto">
+          28 yıllık zanaat tecrübesi, Avusturya ve İtalya menşeili birinci sınıf hammadde güvencesi.
+        </p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <div class="p-6 bg-white border border-gray-200 rounded-xl apple-card space-y-3">
-          <div class="w-9 h-9 rounded bg-[#041F14] text-[#C5A880] flex items-center justify-center text-xs font-bold shadow-md">
-            01
+        <!-- KART 01: MAT LAKE -->
+        <div class="group relative bg-gradient-to-b from-white via-[#FCFAF7] to-[#F7F4EC] border border-[#E8E1D5] hover:border-[#C5A880] rounded-2xl p-7 transition-all duration-500 hover:-translate-y-2 shadow-[0_4px_24px_rgba(4,31,20,0.04)] hover:shadow-[0_20px_45px_rgba(197,168,128,0.22)] overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#C5A880] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <div>
+            <div class="flex items-center justify-between pb-5 border-b border-[#EFEAE2]">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#083322] to-[#041F14] border border-[#C5A880]/40 flex items-center justify-center text-[#C5A880] shadow-md group-hover:scale-110 group-hover:border-[#C5A880] transition-all duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+              </div>
+              <span class="font-serif text-2xl font-bold tracking-wider text-[#C5A880]/70 group-hover:text-[#C5A880] transition">
+                01
+              </span>
+            </div>
+
+            <div class="pt-5 space-y-2">
+              <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C5A880] block font-sans">
+                İTALYAN LAKE
+              </span>
+              <h3 class="text-base sm:text-lg font-serif font-bold text-[#083322] tracking-tight group-hover:text-[#8C6D3F] transition">
+                Leke Tutmayan Mat Yüzeyler
+              </h3>
+              <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">
+                Parmak izi bırakmayan, nem ve buhardan etkilenmeyen antibakteriyel İtalyan lake kapak teknolojisi.
+              </p>
+            </div>
           </div>
-          <h3 class="text-sm font-bold text-zinc-900 tracking-tight">Leke Tutmayan Mat Yüzeyler</h3>
-          <p class="text-xs text-zinc-600 font-normal leading-relaxed">
-            Parmak izi bırakmayan, nem ve buhardan etkilenmeyen antibakteriyel İtalyan lake kapak teknolojisi.
-          </p>
+
+          <div class="pt-5 mt-5 border-t border-[#EFEAE2] flex items-center justify-between text-[11px] font-semibold text-[#083322]">
+            <span class="inline-flex items-center gap-1.5 text-[#8C6D3F]">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#C5A880]"></span>
+              İtalyan ICA & Milesi
+            </span>
+            <span class="text-[9.5px] uppercase font-bold tracking-wider text-[#C5A880] bg-[#083322]/5 px-2 py-0.5 rounded">
+              İPEK MAT
+            </span>
+          </div>
         </div>
 
-        <div class="p-6 bg-white border border-gray-200 rounded-xl apple-card space-y-3">
-          <div class="w-9 h-9 rounded bg-[#041F14] text-[#C5A880] flex items-center justify-center text-xs font-bold shadow-md">
-            02
+        <!-- KART 02: BLUM RAY -->
+        <div class="group relative bg-gradient-to-b from-white via-[#FCFAF7] to-[#F7F4EC] border border-[#E8E1D5] hover:border-[#C5A880] rounded-2xl p-7 transition-all duration-500 hover:-translate-y-2 shadow-[0_4px_24px_rgba(4,31,20,0.04)] hover:shadow-[0_20px_45px_rgba(197,168,128,0.22)] overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#C5A880] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <div>
+            <div class="flex items-center justify-between pb-5 border-b border-[#EFEAE2]">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#083322] to-[#041F14] border border-[#C5A880]/40 flex items-center justify-center text-[#C5A880] shadow-md group-hover:scale-110 group-hover:border-[#C5A880] transition-all duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                </svg>
+              </div>
+              <span class="font-serif text-2xl font-bold tracking-wider text-[#C5A880]/70 group-hover:text-[#C5A880] transition">
+                02
+              </span>
+            </div>
+
+            <div class="pt-5 space-y-2">
+              <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C5A880] block font-sans">
+                AVUSTURYA MEKANİK
+              </span>
+              <h3 class="text-base sm:text-lg font-serif font-bold text-[#083322] tracking-tight group-hover:text-[#8C6D3F] transition">
+                Kadife Sessizliğinde Blum Ray
+              </h3>
+              <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">
+                Orijinal Avusturya Blum entegre frenli raylar ve kiler sistemleri ile 10 yıl mekanik garanti.
+              </p>
+            </div>
           </div>
-          <h3 class="text-sm font-bold text-zinc-900 tracking-tight">Kadife Sessizliğinde Blum Ray</h3>
-          <p class="text-xs text-zinc-600 font-normal leading-relaxed">
-            Orijinal Avusturya Blum entegre frenli raylar ve kiler sistemleri ile 10 yıl mekanik garanti.
-          </p>
+
+          <div class="pt-5 mt-5 border-t border-[#EFEAE2] flex items-center justify-between text-[11px] font-semibold text-[#083322]">
+            <span class="inline-flex items-center gap-1.5 text-[#8C6D3F]">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#C5A880]"></span>
+              Blum Legrabox & Motion
+            </span>
+            <span class="text-[9.5px] uppercase font-bold tracking-wider text-[#C5A880] bg-[#083322]/5 px-2 py-0.5 rounded">
+              10 YIL GARANTİ
+            </span>
+          </div>
         </div>
 
-        <div class="p-6 bg-white border border-gray-200 rounded-xl apple-card space-y-3">
-          <div class="w-9 h-9 rounded bg-[#041F14] text-[#C5A880] flex items-center justify-center text-xs font-bold shadow-md">
-            03
+        <!-- KART 03: 3D PROJELENDİRME -->
+        <div class="group relative bg-gradient-to-b from-white via-[#FCFAF7] to-[#F7F4EC] border border-[#E8E1D5] hover:border-[#C5A880] rounded-2xl p-7 transition-all duration-500 hover:-translate-y-2 shadow-[0_4px_24px_rgba(4,31,20,0.04)] hover:shadow-[0_20px_45px_rgba(197,168,128,0.22)] overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#C5A880] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <div>
+            <div class="flex items-center justify-between pb-5 border-b border-[#EFEAE2]">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#083322] to-[#041F14] border border-[#C5A880]/40 flex items-center justify-center text-[#C5A880] shadow-md group-hover:scale-110 group-hover:border-[#C5A880] transition-all duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <span class="font-serif text-2xl font-bold tracking-wider text-[#C5A880]/70 group-hover:text-[#C5A880] transition">
+                03
+              </span>
+            </div>
+
+            <div class="pt-5 space-y-2">
+              <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C5A880] block font-sans">
+                3D MİMARİ MODELLEME
+              </span>
+              <h3 class="text-base sm:text-lg font-serif font-bold text-[#083322] tracking-tight group-hover:text-[#8C6D3F] transition">
+                3D Fotogerçekçi Projelendirme
+              </h3>
+              <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">
+                Evinizin lazer ölçülerine göre renk, kulp ve ışık uyumunu üretime girmeden ekranda birebir görün.
+              </p>
+            </div>
           </div>
-          <h3 class="text-sm font-bold text-zinc-900 tracking-tight">3D Fotogerçekçi Projelendirme</h3>
-          <p class="text-xs text-zinc-600 font-normal leading-relaxed">
-            Evinizin lazer ölçülerine göre renk, kulp ve ışık uyumunu üretime girmeden ekranda birebir görün.
-          </p>
+
+          <div class="pt-5 mt-5 border-t border-[#EFEAE2] flex items-center justify-between text-[11px] font-semibold text-[#083322]">
+            <span class="inline-flex items-center gap-1.5 text-[#8C6D3F]">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#C5A880]"></span>
+              1:1 Milimetrik Lazer Keşif
+            </span>
+            <span class="text-[9.5px] uppercase font-bold tracking-wider text-[#C5A880] bg-[#083322]/5 px-2 py-0.5 rounded">
+              ÜCRETSİZ
+            </span>
+          </div>
         </div>
 
-        <div class="p-6 bg-white border border-gray-200 rounded-xl apple-card space-y-3">
-          <div class="w-9 h-9 rounded bg-[#041F14] text-[#C5A880] flex items-center justify-center text-xs font-bold shadow-md">
-            04
+        <!-- KART 04: SÖZLEŞMELİ TESLİM -->
+        <div class="group relative bg-gradient-to-b from-white via-[#FCFAF7] to-[#F7F4EC] border border-[#E8E1D5] hover:border-[#C5A880] rounded-2xl p-7 transition-all duration-500 hover:-translate-y-2 shadow-[0_4px_24px_rgba(4,31,20,0.04)] hover:shadow-[0_20px_45px_rgba(197,168,128,0.22)] overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#C5A880] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <div>
+            <div class="flex items-center justify-between pb-5 border-b border-[#EFEAE2]">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#083322] to-[#041F14] border border-[#C5A880]/40 flex items-center justify-center text-[#C5A880] shadow-md group-hover:scale-110 group-hover:border-[#C5A880] transition-all duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+              </div>
+              <span class="font-serif text-2xl font-bold tracking-wider text-[#C5A880]/70 group-hover:text-[#C5A880] transition">
+                04
+              </span>
+            </div>
+
+            <div class="pt-5 space-y-2">
+              <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C5A880] block font-sans">
+                RESMİ TAAHHÜT
+              </span>
+              <h3 class="text-base sm:text-lg font-serif font-bold text-[#083322] tracking-tight group-hover:text-[#8C6D3F] transition">
+                Sözleşmeli Teslim & Sabit Fiyat
+              </h3>
+              <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">
+                Sürpriz masraf çıkarmayan resmi sözleşme, gecikme cezası garantisi ve temiz montaj teslimi.
+              </p>
+            </div>
           </div>
-          <h3 class="text-sm font-bold text-zinc-900 tracking-tight">Sözleşmeli Teslim & Sabit Fiyat</h3>
-          <p class="text-xs text-zinc-600 font-normal leading-relaxed">
-            Sürpriz masraf çıkarmayan resmi sözleşme, gecikme cezası garantisi ve temiz montaj teslimi.
-          </p>
+
+          <div class="pt-5 mt-5 border-t border-[#EFEAE2] flex items-center justify-between text-[11px] font-semibold text-[#083322]">
+            <span class="inline-flex items-center gap-1.5 text-[#8C6D3F]">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#C5A880]"></span>
+              Gecikme Cezası Güvencesi
+            </span>
+            <span class="text-[9.5px] uppercase font-bold tracking-wider text-[#C5A880] bg-[#083322]/5 px-2 py-0.5 rounded">
+              RESMİ
+            </span>
+          </div>
         </div>
 
       </div>
@@ -407,63 +534,71 @@ const seo = {
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <div class="bg-white border border-gray-200 hover:border-[#041F14] rounded-xl p-6 space-y-3 apple-card flex flex-col justify-between group transition">
-          <div class="space-y-2.5">
-            <span class="text-[9.5px] font-bold uppercase tracking-wider text-[#C5A880] bg-[#041F14] px-2.5 py-1 rounded inline-block">
-              MUTFAK
+        <!-- HİZMET 01 -->
+        <div class="group relative bg-gradient-to-b from-white via-[#FCFAF7] to-[#F7F4EC] border border-[#E8E1D5] hover:border-[#C5A880] rounded-2xl p-7 transition-all duration-500 hover:-translate-y-2 shadow-[0_4px_24px_rgba(4,31,20,0.04)] hover:shadow-[0_20px_45px_rgba(197,168,128,0.22)] overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#C5A880] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="space-y-3">
+            <span class="text-[9.5px] font-bold uppercase tracking-wider text-[#C5A880] bg-[#083322] px-3 py-1 rounded-full inline-block">
+              ÖZEL İMALAT
             </span>
-            <h3 class="text-base font-bold text-zinc-900 group-hover:text-[#041F14] transition">Lüks Mutfak Dolabı</h3>
-            <p class="text-xs text-zinc-600 font-normal leading-relaxed">
+            <h3 class="text-lg font-serif font-bold text-[#083322] group-hover:text-[#8C6D3F] transition">Lüks Mutfak Dolabı</h3>
+            <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">
               İpek mat lake ve İtalyan akrilik kapaklar, Blum ray mekanizmaları ile milimetrik üretim.
             </p>
           </div>
-          <a href="/izmir-mutfak-dolabi-imalati/" class="text-xs font-bold text-[#041F14] hover:underline inline-flex items-center gap-1 pt-2">
-            <span>İncele</span> <span>→</span>
+          <a href="/izmir-mutfak-dolabi-imalati/" class="pt-5 mt-4 border-t border-[#EFEAE2] text-xs font-bold text-[#083322] group-hover:text-[#8C6D3F] inline-flex items-center gap-1.5 transition">
+            <span>Mimari Detayları İncele</span> <span>→</span>
           </a>
         </div>
 
-        <div class="bg-white border border-gray-200 hover:border-[#041F14] rounded-xl p-6 space-y-3 apple-card flex flex-col justify-between group transition">
-          <div class="space-y-2.5">
-            <span class="text-[9.5px] font-bold uppercase tracking-wider text-[#C5A880] bg-[#041F14] px-2.5 py-1 rounded inline-block">
+        <!-- HİZMET 02 -->
+        <div class="group relative bg-gradient-to-b from-white via-[#FCFAF7] to-[#F7F4EC] border border-[#E8E1D5] hover:border-[#C5A880] rounded-2xl p-7 transition-all duration-500 hover:-translate-y-2 shadow-[0_4px_24px_rgba(4,31,20,0.04)] hover:shadow-[0_20px_45px_rgba(197,168,128,0.22)] overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#C5A880] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="space-y-3">
+            <span class="text-[9.5px] font-bold uppercase tracking-wider text-[#C5A880] bg-[#083322] px-3 py-1 rounded-full inline-block">
               RENOVASYON
             </span>
-            <h3 class="text-base font-bold text-zinc-900 group-hover:text-[#041F14] transition">Komple Mutfak Tadilatı</h3>
-            <p class="text-xs text-zinc-600 font-normal leading-relaxed">
+            <h3 class="text-lg font-serif font-bold text-[#083322] group-hover:text-[#8C6D3F] transition">Komple Mutfak Tadilatı</h3>
+            <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">
               Kırım, sıhhi tesisat, elektrik altyapısı ve porselen tezgah dahil anahtar teslim dönüşüm.
             </p>
           </div>
-          <a href="/izmir-komple-mutfak-tadilati/" class="text-xs font-bold text-[#041F14] hover:underline inline-flex items-center gap-1 pt-2">
-            <span>İncele</span> <span>→</span>
+          <a href="/izmir-komple-mutfak-tadilati/" class="pt-5 mt-4 border-t border-[#EFEAE2] text-xs font-bold text-[#083322] group-hover:text-[#8C6D3F] inline-flex items-center gap-1.5 transition">
+            <span>Mimari Detayları İncele</span> <span>→</span>
           </a>
         </div>
 
-        <div class="bg-white border border-gray-200 hover:border-[#041F14] rounded-xl p-6 space-y-3 apple-card flex flex-col justify-between group transition">
-          <div class="space-y-2.5">
-            <span class="text-[9.5px] font-bold uppercase tracking-wider text-[#C5A880] bg-[#041F14] px-2.5 py-1 rounded inline-block">
+        <!-- HİZMET 03 -->
+        <div class="group relative bg-gradient-to-b from-white via-[#FCFAF7] to-[#F7F4EC] border border-[#E8E1D5] hover:border-[#C5A880] rounded-2xl p-7 transition-all duration-500 hover:-translate-y-2 shadow-[0_4px_24px_rgba(4,31,20,0.04)] hover:shadow-[0_20px_45px_rgba(197,168,128,0.22)] overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#C5A880] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="space-y-3">
+            <span class="text-[9.5px] font-bold uppercase tracking-wider text-[#C5A880] bg-[#083322] px-3 py-1 rounded-full inline-block">
               ISLAK HACİM
             </span>
-            <h3 class="text-base font-bold text-zinc-900 group-hover:text-[#041F14] transition">Lüks Banyo & Seramik</h3>
-            <p class="text-xs text-zinc-600 font-normal leading-relaxed">
+            <h3 class="text-lg font-serif font-bold text-[#083322] group-hover:text-[#8C6D3F] transition">Lüks Banyo & Seramik</h3>
+            <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">
               Çift kat sürme su izolasyonu, 60x120 İtalyan porselen seramik ve marin banyo dolapları.
             </p>
           </div>
-          <a href="/izmir-banyo-yenileme-seramik/" class="text-xs font-bold text-[#041F14] hover:underline inline-flex items-center gap-1 pt-2">
-            <span>İncele</span> <span>→</span>
+          <a href="/izmir-banyo-yenileme-seramik/" class="pt-5 mt-4 border-t border-[#EFEAE2] text-xs font-bold text-[#083322] group-hover:text-[#8C6D3F] inline-flex items-center gap-1.5 transition">
+            <span>Mimari Detayları İncele</span> <span>→</span>
           </a>
         </div>
 
-        <div class="bg-white border border-gray-200 hover:border-[#041F14] rounded-xl p-6 space-y-3 apple-card flex flex-col justify-between group transition">
-          <div class="space-y-2.5">
-            <span class="text-[9.5px] font-bold uppercase tracking-wider text-[#C5A880] bg-[#041F14] px-2.5 py-1 rounded inline-block">
+        <!-- HİZMET 04 -->
+        <div class="group relative bg-gradient-to-b from-white via-[#FCFAF7] to-[#F7F4EC] border border-[#E8E1D5] hover:border-[#C5A880] rounded-2xl p-7 transition-all duration-500 hover:-translate-y-2 shadow-[0_4px_24px_rgba(4,31,20,0.04)] hover:shadow-[0_20px_45px_rgba(197,168,128,0.22)] overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#C5A880] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="space-y-3">
+            <span class="text-[9.5px] font-bold uppercase tracking-wider text-[#C5A880] bg-[#083322] px-3 py-1 rounded-full inline-block">
               ANAHTAR TESLİM
             </span>
-            <h3 class="text-base font-bold text-zinc-900 group-hover:text-[#041F14] transition">Daire & Villa Taahhüt</h3>
-            <p class="text-xs text-zinc-600 font-normal leading-relaxed">
+            <h3 class="text-lg font-serif font-bold text-[#083322] group-hover:text-[#8C6D3F] transition">Daire & Villa Taahhüt</h3>
+            <p class="text-xs sm:text-[13px] text-zinc-600 font-light leading-relaxed">
               Çeşme, Urla ve İzmir genelinde iç kapılar, zemin parke ve boya dahil tek muhatap garantisi.
             </p>
           </div>
-          <a href="/izmir-anahtar-teslim-tadilat/" class="text-xs font-bold text-[#041F14] hover:underline inline-flex items-center gap-1 pt-2">
-            <span>İncele</span> <span>→</span>
+          <a href="/izmir-anahtar-teslim-tadilat/" class="pt-5 mt-4 border-t border-[#EFEAE2] text-xs font-bold text-[#083322] group-hover:text-[#8C6D3F] inline-flex items-center gap-1.5 transition">
+            <span>Mimari Detayları İncele</span> <span>→</span>
           </a>
         </div>
 
