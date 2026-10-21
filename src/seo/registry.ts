@@ -45,7 +45,7 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
       type: 'HomeAndConstructionBusiness',
       sameAs: [
         'https://www.instagram.com/cemyesilay.luxury',
-        'https://wa.me/905393333303'
+        'https://wa.me/905324261788'
       ],
       wikidataQid: 'Q11589432'
     },
@@ -106,7 +106,7 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
     indexDirective: 'index, follow',
     canonicalRoute: '/iletisim/',
     title: 'İletişim & Atölye Ulaşım Rehberi | Cem Yeşilay Luxury Buca',
-    metaDescription: 'İzmir Buca Adatepe imalat atölyemize yol tarifi alın, doğrudan telefon veya WhatsApp ile mimari keşif randevusu oluşturun. 0539 333 33 03.',
+    metaDescription: 'İzmir Buca Adatepe imalat atölyemize yol tarifi alın, doğrudan telefon veya WhatsApp ile mimari keşif randevusu oluşturun. 0532 426 17 88.',
     h1: 'Atölyemizde Kahve Eşliğinde Projenizi Birlikte Çizelim.',
     primaryIntent: 'cem yeşilay mutfak iletişim adres telefon yol tarifi',
     primaryEntity: {
