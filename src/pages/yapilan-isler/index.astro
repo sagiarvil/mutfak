@@ -26,47 +26,100 @@ const categories = ["Tümü", "Mutfak İmalatı", "Mutfak Tadilatı", "Lüks Ban
 <Layout seo={seo} activeService="Yapılan İşler">
 
   <!-- ===================================================================== -->
-  <!-- 1. HERO BAŞLIK BÖLÜMÜ (TÜRKÇE ARAMA NİYETİ & NET PROJE VİTRİNİ)       -->
+  <!-- 1. HERO BAŞLIK BÖLÜMÜ (AYDINLIK, PREMİUM SPLIT VİTRİN - DARK HERO YOK)   -->
   <!-- ===================================================================== -->
-  <section class="relative py-16 sm:py-20 bg-[#02130C] border-b border-[#0A2E1D] overflow-hidden text-white">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(197,168,128,0.12)_0%,transparent_60%)] pointer-events-none"></div>
+  <section class="relative bg-[#FBF9F5] border-b border-[#EAE5DC] py-12 sm:py-20 overflow-hidden text-zinc-900">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#F5EFE6]/60 to-transparent pointer-events-none"></div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10 space-y-5">
-      
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#041F14] text-[#C5A880] border border-[#C5A880]/40 rounded-full shadow-lg">
-        <span class="w-2 h-2 rounded-full bg-[#00FF66] animate-pulse"></span>
-        <span class="text-[11px] font-bold tracking-[0.16em] uppercase font-sans">
-          CANLI UYGULAMA FOTOĞRAFLARI • 96 TAMAMLANAN PROJE
-        </span>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- SOL: NET, DOĞAL & PREMİUM ANLATI (7 SÜTUN) -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Breadcrumb -->
+          <nav class="flex items-center gap-2 text-xs font-semibold text-zinc-500 uppercase tracking-wider" aria-label="Breadcrumb">
+            <a href="/" class="hover:text-[#083322] transition">Ana Sayfa</a>
+            <span>/</span>
+            <span class="text-[#8C6D3F] font-bold">Yapılan İşler</span>
+          </nav>
+
+          <!-- Prestij Rozeti -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-[#C5A880]/50 rounded-full shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-[#00FF66] animate-pulse"></span>
+            <span class="text-xs font-bold tracking-[0.16em] uppercase text-[#083322] font-sans">
+              CANLI ŞANTİYE MONTAJLARI • 96 GERÇEK PROJE
+            </span>
+          </div>
+
+          <!-- Ana Başlık (Net, Okunabilir & Lüks Tipografi) -->
+          <h1 class="text-3xl sm:text-5xl lg:text-[50px] font-extrabold text-[#083322] leading-[1.14] tracking-tight">
+            İzmir Mutfak Dolabı & <br />
+            <span class="text-[#8C6D3F] font-serif font-normal italic">Anahtar Teslim Tadilat</span> <br />
+            <span class="text-[#2B231D]">Canlı Projelerimiz.</span>
+          </h1>
+
+          <!-- Net Açıklama -->
+          <p class="text-base sm:text-lg text-zinc-600 font-normal leading-relaxed max-w-xl">
+            Katalog veya sanal render değil; Buca Adatepe imalat atölyemizde bizzat üretip İzmir genelinde montajını tamamladığımız gerçek mutfak dolapları, lüks banyo yenileme ve komple daire/villa taahhütlerimiz.
+          </p>
+
+          <!-- İstatistik Şeridi (Aydınlık Kart Formatı) -->
+          <div class="grid grid-cols-3 gap-3 pt-1 text-xs">
+            <div class="bg-white p-3 rounded-xl border border-[#EAE5DC] shadow-xs text-center sm:text-left">
+              <span class="text-2xl sm:text-3xl font-extrabold text-[#083322] block font-serif">96</span>
+              <span class="text-zinc-600 uppercase tracking-wider text-[10px] font-bold">Teslim Edilen Proje</span>
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-[#EAE5DC] shadow-xs text-center sm:text-left">
+              <span class="text-2xl sm:text-3xl font-extrabold text-[#8C6D3F] block font-serif">28</span>
+              <span class="text-zinc-600 uppercase tracking-wider text-[10px] font-bold">Yıllık Atölye Mirası</span>
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-[#EAE5DC] shadow-xs text-center sm:text-left">
+              <span class="text-2xl sm:text-3xl font-extrabold text-[#083322] block font-serif">%100</span>
+              <span class="text-zinc-600 uppercase tracking-wider text-[10px] font-bold">Birinci El İmalat</span>
+            </div>
+          </div>
+
+          <!-- Aksiyon Butonları (Cartier Altın & Beyaz) -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a 
+              href="https://wa.me/905324261788?text=Merhaba%20Cem%20Bey,%20yaptığınız%20projeleri%20inceledim,%20evim%20için%20ücretsiz%203D%20keşif%20almak%20istiyorum." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="px-8 py-4 bg-[#C5A880] hover:bg-[#D4AF37] text-[#041F14] text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded-lg border border-[#E5C378] shadow-lg transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.02]"
+            >
+              <span>WhatsApp ile 3D Keşif İste</span>
+              <span>→</span>
+            </a>
+            <a 
+              href="#galeri" 
+              class="px-8 py-4 bg-white hover:bg-zinc-50 border border-[#D5CFC5] text-[#083322] text-xs sm:text-sm font-bold uppercase tracking-wider rounded-lg shadow-xs transition duration-300 flex items-center justify-center gap-2 hover:scale-[1.02]"
+            >
+              <span>96 Projeyi Filtrele ↓</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- SAĞ: BÜYÜLEYİCİ, AYDINLIK GERÇEK MONTAJ SAHNESİ (5 SÜTUN) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(4,31,20,0.12)] border-4 border-white group">
+            <img 
+              src="/media/projeler/proje-01.webp" 
+              alt="İzmir Gerçek Mutfak Dolabı İmalatı ve Canlı Montajı" 
+              class="w-full h-[380px] sm:h-[460px] object-cover transition-transform duration-1000 group-hover:scale-105"
+              width="600"
+              height="460"
+              loading="eager"
+            />
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-5 text-white">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A880] block">CANLI TESLİMAT REFERANSI</span>
+              <p class="text-sm font-serif font-bold text-white mt-0.5">Mavişehir Rezidans • Lake & Ada Mutfak Dönüşümü</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-
-      <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold text-white leading-[1.12] tracking-tight max-w-4xl uppercase">
-        İzmir Mutfak Dolabı & <br />
-        <span class="text-[#C5A880] font-serif font-normal italic lowercase first-letter:uppercase">Anahtar Teslim Tadilat Projelerimiz</span>
-      </h1>
-
-      <p class="text-sm sm:text-base text-[#D8D2C7] font-light leading-relaxed max-w-3xl">
-        Katalog veya sanal render değil; Buca Adatepe imalat atölyemizde bizzat üretip İzmir genelinde daire, villa ve iş yerlerine montajını yaptığımız gerçek mutfak dolapları, lüks banyo yenileme ve komple anahtar teslim ev tadilatı işlerimiz.
-      </p>
-
-      <!-- İstatistik Şeridi -->
-      <div class="flex flex-wrap items-center gap-6 sm:gap-10 pt-4 border-t border-[#0D3826] text-xs">
-        <div>
-          <span class="text-2xl sm:text-3xl font-extrabold text-[#C5A880] block font-sans">96</span>
-          <span class="text-[#D8D2C7] uppercase tracking-wider text-[10px]">Tamamlanan Proje</span>
-        </div>
-        <div class="w-px h-8 bg-[#0D3826]"></div>
-        <div>
-          <span class="text-2xl sm:text-3xl font-extrabold text-white block font-sans">28</span>
-          <span class="text-[#D8D2C7] uppercase tracking-wider text-[10px]">Yıllık Atölye Tecrübesi</span>
-        </div>
-        <div class="w-px h-8 bg-[#0D3826]"></div>
-        <div>
-          <span class="text-2xl sm:text-3xl font-extrabold text-[#00FF66] block font-sans">%100</span>
-          <span class="text-[#D8D2C7] uppercase tracking-wider text-[10px]">Kendi İmalatımız</span>
-        </div>
-      </div>
-
     </div>
   </section>
 
