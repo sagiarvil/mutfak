@@ -52,11 +52,11 @@ const seo = {
 <Layout seo={seo} activeService="Ana Sayfa">
 
   <!-- ===================================================================== -->
-  <!-- 1. SİNEMATİK PREMİUM VİDEO HERO (KIRMIZILIK GİDERİLDİ, ASİL TON)      -->
+  <!-- 1. SİNEMATİK PREMİUM VİDEO HERO (DOĞAL RENK DENGESİ, KIRMIZILIK SIFIRLANDI) -->
   <!-- ===================================================================== -->
-  <section class="relative w-full overflow-hidden bg-[#02130C] border-b border-[#0A2E1D]" style="min-height: 85vh;">
+  <section class="relative w-full overflow-hidden bg-[#062417] border-b border-[#0D3B26]" style="min-height: 85vh;">
     
-    <!-- Referans Video Arka Planı (Aydınlık & Canlı Sinematik Tonlama) -->
+    <!-- Referans Video Arka Planı (Doğal Mimari Ahşap & Nötr Sinematik Tonlama) -->
     <div class="absolute inset-0 w-full h-full overflow-hidden">
       <video
         id="heroBgVideo"
@@ -68,12 +68,13 @@ const seo = {
         preload="auto"
         poster="/media/cinematic/home_video_photo.webp"
         class="w-full h-full object-cover scale-102 transition-transform duration-1000"
-        style="filter: hue-rotate(-8deg) saturate(1.05) contrast(1.08) brightness(1.08);"
+        style="filter: hue-rotate(20deg) saturate(0.86) contrast(1.04) brightness(1.06);"
       >
         <source src="/media/cinematic/home_video.mp4" type="video/mp4" />
       </video>
       
-      <!-- Aydınlık & Netlik Sağlayan İnce Yumuşak Gölgeleme (Karartma Yok) -->
+      <!-- Aydınlık & Doğal Netlik Sağlayan İnce Yumuşak Gölgeleme (Karartma Yok, Kırmızı Nötrleme) -->
+      <div class="absolute inset-0 bg-[#062417]/10 pointer-events-none"></div>
       <div class="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent"></div>
     </div>
