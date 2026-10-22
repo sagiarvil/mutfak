@@ -2,242 +2,307 @@
 import Layout from "../../layouts/Layout.astro";
 
 const pageSeo = {
-  title: "2026 Mutfak, Banyo ve Komple Ev Tadilatı Maliyet Hesaplama | İzmir Mutfak Banyo",
-  description: "İzmir mutfak dolabı, lüks banyo yenileme ve komple daire tadilatı maliyetlerini canlı hesaplayın. 2026 güncel malzeme, işçilik ve anahtar teslim atölye fiyatları.",
+  title: "Tadilat ve Özel İmalat Maliyet Hesaplama Motoru 2026 | İzmir Mutfak Banyo",
+  description: "İzmir mutfak dolabı, lüks banyo renovasyonu ve anahtar teslim daire tadilatı maliyetlerini canlı hesaplayın. 2026 doğrudan atölye imalat ve montaj cetveli.",
   canonical: "https://izmirmutfakbanyo.com.tr/maliyet-hesapla/",
   ogType: "website"
 };
 ---
 
 <Layout seo={pageSeo}>
-  <div class="bg-[#FBFBFC] text-slate-800 min-h-screen py-10 sm:py-16">
+  <!-- ULTRA PREMİUM EDİTORYAL MİMARİ SAYFA DOKUSU -->
+  <div class="bg-[#FBFBFA] text-[#1A1A1A] min-h-screen selection:bg-neutral-900 selection:text-white">
     
-    <!-- BAŞLIK & MİMARİ AÇIKLAMA -->
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 mb-12 text-center">
-      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-[11px] font-bold tracking-wider uppercase mb-4">
-        <span>2026 İzmir Atölye ve Şantiye Metraj Standardı</span>
-      </div>
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight font-serif">
-        Tadilat &amp; İmalat Maliyet Hesaplama
-      </h1>
-      <p class="mt-4 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-        Ankara ve İzmir piyasasındaki reel usta işçilikleri, E1 MDF-Lam, akrilik, lake dolap imalatı, porselen tezgah ve anahtar teslim şantiye giderlerini baz alan şeffaf metraj motoru.
-      </p>
+    <!-- ÜST EDİTORYAL GİRİŞ -->
+    <section class="border-b border-[#EBEBE8] pt-14 pb-12 sm:pt-20 sm:pb-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-4">
+        
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white border border-[#E2E2DC] shadow-[0_2px_8px_rgba(0,0,0,0.03)] text-[11px] font-bold tracking-[0.18em] text-neutral-800 uppercase">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>İZMİR ATÖLYE METRAJ STANDARDI • 2026</span>
+        </div>
 
-      <!-- 3 ANA SEKME (MINIMALIST KURUMSAL KONTROL) -->
-      <div class="mt-8 inline-flex p-1.5 bg-slate-200/70 rounded-xl border border-slate-300/80 max-w-xl w-full">
-        <button 
-          type="button" 
-          id="tabBtnMutfak" 
-          class="calc-tab-btn flex-1 py-2.5 px-4 rounded-lg text-xs font-bold transition-all duration-150 bg-white text-slate-900 shadow-xs"
-          data-target="panelMutfak"
-        >
-          Mutfak Tadilatı
-        </button>
-        <button 
-          type="button" 
-          id="tabBtnBanyo" 
-          class="calc-tab-btn flex-1 py-2.5 px-4 rounded-lg text-xs font-semibold transition-all duration-150 text-slate-600 hover:text-slate-900"
-          data-target="panelBanyo"
-        >
-          Banyo Yenileme
-        </button>
-        <button 
-          type="button" 
-          id="tabBtnKomple" 
-          class="calc-tab-btn flex-1 py-2.5 px-4 rounded-lg text-xs font-semibold transition-all duration-150 text-slate-600 hover:text-slate-900"
-          data-target="panelKomple"
-        >
-          Komple Ev Tadilatı
-        </button>
-      </div>
-    </div>
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light tracking-[-0.03em] text-[#111111] font-serif">
+          Tadilat &amp; İmalat <span class="italic font-normal">Maliyet Hesaplayıcı</span>
+        </h1>
 
-    <!-- HESAPLAMA GÖVDESİ -->
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <p class="text-sm sm:text-base text-neutral-600 max-w-2xl mx-auto font-light leading-relaxed">
+          Kişiye ve mekânın karakterine özel mutfak dolapları, lüks banyo dönüşümleri ve anahtar teslim mimari renovasyon projeleriniz için doğrudan atölye maliyetini şeffaf olarak simüle edin.
+        </p>
+
+        <!-- PREMİUM SEGMENTLİ KONTROL ÇUBUĞU (MILANO MİMARİ TABS) -->
+        <div class="pt-6">
+          <div class="inline-flex p-1.5 bg-[#EFEFEA] rounded-2xl border border-[#DFDFD8] shadow-inner max-w-xl w-full">
+            <button 
+              type="button" 
+              id="tabBtnMutfak" 
+              class="calc-tab-btn flex-1 py-3 px-5 rounded-xl text-xs font-bold transition-all duration-200 bg-neutral-900 text-white shadow-md flex items-center justify-center gap-2"
+              data-target="panelMutfak"
+            >
+              <span>Mutfak İmalatı</span>
+            </button>
+            <button 
+              type="button" 
+              id="tabBtnBanyo" 
+              class="calc-tab-btn flex-1 py-3 px-5 rounded-xl text-xs font-semibold transition-all duration-200 text-neutral-600 hover:text-neutral-900 flex items-center justify-center gap-2"
+              data-target="panelBanyo"
+            >
+              <span>Banyo Renovasyonu</span>
+            </button>
+            <button 
+              type="button" 
+              id="tabBtnKomple" 
+              class="calc-tab-btn flex-1 py-3 px-5 rounded-xl text-xs font-semibold transition-all duration-200 text-neutral-600 hover:text-neutral-900 flex items-center justify-center gap-2"
+              data-target="panelKomple"
+            >
+              <span>Komple Daire</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ANA GÖVDE (İKİ KOLON: FORM + MİMARİ RAPOR KARTI) -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
       
       <!-- ============================================================== -->
       <!-- 1. MUTFAK PANELİ                                               -->
       <!-- ============================================================== -->
       <div id="panelMutfak" class="calc-panel block">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           
-          <!-- Sol Parametreler -->
-          <div class="lg:col-span-8 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-xs space-y-7">
+          <!-- SOL FORM BÖLÜMÜ (7 SÜTUN) -->
+          <div class="lg:col-span-7 space-y-10">
             
-            <!-- Alan Slider -->
-            <div class="space-y-3 pb-6 border-b border-slate-100">
-              <div class="flex justify-between items-center">
-                <span class="text-xs uppercase tracking-wider font-bold text-slate-900">Mutfak Taban Alanı</span>
-                <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-3 py-1 rounded-lg">
-                  <input type="number" id="m_alan_input" min="5" max="40" value="12" class="w-12 bg-transparent text-center font-bold text-slate-900 text-sm focus:outline-none" />
-                  <span class="text-xs text-slate-500 font-medium">m²</span>
+            <!-- 1. ALAN AYARI -->
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-5">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block mb-1">01 / MEKÂN ÖLÇÜSÜ</span>
+                  <h3 class="text-base font-serif font-bold text-neutral-900">Mutfak Taban Alanı</h3>
+                </div>
+                <div class="flex items-center gap-2 bg-[#F7F7F4] border border-[#E5E5DE] px-4 py-2 rounded-xl">
+                  <input type="number" id="m_alan_input" min="5" max="40" value="12" class="w-12 bg-transparent text-center font-serif text-lg font-bold text-neutral-900 focus:outline-none" />
+                  <span class="text-xs font-bold text-neutral-500 uppercase">m²</span>
                 </div>
               </div>
-              <input type="range" id="m_alan_slider" min="5" max="40" value="12" class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-slate-900" />
-              <div class="flex justify-between text-[11px] text-slate-400 font-medium">
-                <span>5 m² (Kompakt)</span>
-                <span>12 m² (Standart Daire)</span>
-                <span>20 m² (Ada Mutfak)</span>
-                <span>40 m² (Büyük Villa)</span>
+
+              <div class="pt-2">
+                <input type="range" id="m_alan_slider" min="5" max="40" value="12" class="w-full h-1.5 bg-[#E8E8E3] rounded-lg appearance-none cursor-pointer accent-neutral-900" />
+                <div class="flex justify-between text-[11px] text-neutral-400 font-medium pt-2">
+                  <span>5 m² (Kompakt Daire)</span>
+                  <span class="text-neutral-700 font-bold">12 m² (Standart)</span>
+                  <span>20 m² (Ada Mutfak)</span>
+                  <span>40 m² (Lüks Villa)</span>
+                </div>
+              </div>
+
+              <div class="pt-2 flex items-center justify-between text-xs text-neutral-500 bg-[#FAFAF8] p-3 rounded-xl border border-[#EDEDE8]">
+                <span>📐 Hesaplanan Tahmini Dolap Boyu:</span>
+                <span class="font-bold text-neutral-900 font-mono" id="m_calc_mtul">4.6 Metretül (mtül)</span>
               </div>
             </div>
 
-            <!-- Bina Yaşı -->
-            <div class="space-y-2.5">
-              <span class="text-xs uppercase tracking-wider font-bold text-slate-900 block">Bina Yaşı (Altyapı Riski)</span>
-              <div class="grid grid-cols-3 gap-3">
-                <button type="button" class="opt-btn active p-3 rounded-xl border text-center text-xs font-bold transition" data-group="m_bina" data-val="yeni">
-                  0 - 10 Yıl
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Standart Altyapı</span>
+            <!-- 2. BİNA YAŞI -->
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-4">
+              <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">02 / YAPI ALTYAPISI</span>
+              <h3 class="text-base font-serif font-bold text-neutral-900">Bina Yaşı &amp; Tesisat Durumu</h3>
+              
+              <div class="grid grid-cols-3 gap-3 pt-1">
+                <button type="button" class="opt-card active p-4 rounded-2xl border text-left transition relative" data-group="m_bina" data-val="yeni">
+                  <div class="text-xs font-bold text-neutral-900">0 – 10 Yıl</div>
+                  <div class="text-[11px] text-neutral-500 font-normal mt-0.5">Standart Altyapı</div>
                 </button>
-                <button type="button" class="opt-btn p-3 rounded-xl border text-center text-xs font-bold transition" data-group="m_bina" data-val="orta">
-                  11 - 20 Yıl
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Kısmi Yenileme (+%20)</span>
+                <button type="button" class="opt-card p-4 rounded-2xl border text-left transition relative" data-group="m_bina" data-val="orta">
+                  <div class="text-xs font-bold text-neutral-900">11 – 20 Yıl</div>
+                  <div class="text-[11px] text-neutral-500 font-normal mt-0.5">Kısmi Revizyon (+%15)</div>
                 </button>
-                <button type="button" class="opt-btn p-3 rounded-xl border text-center text-xs font-bold transition" data-group="m_bina" data-val="eski">
-                  20+ Yıl
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Eski Tesisat (+%30)</span>
-                </button>
-              </div>
-            </div>
-
-            <!-- Dolap Kapak Malzemesi -->
-            <div class="space-y-2.5">
-              <span class="text-xs uppercase tracking-wider font-bold text-slate-900 block">Dolap Gövde &amp; Kapak Standardı</span>
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                <button type="button" class="opt-btn p-3.5 rounded-xl border text-left text-xs font-bold transition" data-group="m_dolap" data-val="mdf">
-                  MDF-Lam Kapak
-                  <span class="block text-[10px] text-slate-500 font-normal mt-1">Dayanıklı &amp; Ekonomik Çözüm</span>
-                </button>
-                <button type="button" class="opt-btn active p-3.5 rounded-xl border text-left text-xs font-bold transition" data-group="m_dolap" data-val="akrilik">
-                  Çizilmez Akrilik / Membran
-                  <span class="block text-[10px] text-slate-500 font-normal mt-1">İpeksi Mat veya Yüksek Parlak</span>
-                </button>
-                <button type="button" class="opt-btn p-3.5 rounded-xl border text-left text-xs font-bold transition" data-group="m_dolap" data-val="lake">
-                  İpek Mat Fırın Lake / Meşe
-                  <span class="block text-[10px] text-slate-500 font-normal mt-1">Özel İmalat Prestij Zanaatı</span>
+                <button type="button" class="opt-card p-4 rounded-2xl border text-left transition relative" data-group="m_bina" data-val="eski">
+                  <div class="text-xs font-bold text-neutral-900">20+ Yıl</div>
+                  <div class="text-[11px] text-neutral-500 font-normal mt-0.5">Eski Tesisat (+%25)</div>
                 </button>
               </div>
             </div>
 
-            <!-- Tezgah Malzemesi -->
-            <div class="space-y-2.5">
-              <span class="text-xs uppercase tracking-wider font-bold text-slate-900 block">Mutfak Tezgahı</span>
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-                <button type="button" class="opt-btn p-3 rounded-xl border text-center text-xs font-bold transition" data-group="m_tezgah" data-val="laminat">
-                  Laminat
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Giriş Seviye</span>
+            <!-- 3. DOLAP KAPAK & GÖVDE -->
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-4">
+              <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">03 / ATÖLYE İMALAT MALZEMESİ</span>
+              <h3 class="text-base font-serif font-bold text-neutral-900">Kapak ve Gövde Standardı</h3>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
+                <button type="button" class="opt-card p-4 rounded-2xl border text-left transition relative flex flex-col justify-between" data-group="m_dolap" data-val="mdf">
+                  <div>
+                    <div class="text-xs font-bold text-neutral-900">MDF-Lam Kapak</div>
+                    <div class="text-[11px] text-neutral-500 font-normal mt-1 leading-relaxed">Ekonomik, çizilmeye dirençli ve uzun ömürlü.</div>
+                  </div>
+                  <div class="text-[11px] font-mono text-neutral-700 font-bold mt-3">₺8.500 / mtül'den</div>
                 </button>
-                <button type="button" class="opt-btn p-3 rounded-xl border text-center text-xs font-bold transition" data-group="m_tezgah" data-val="granit">
-                  Doğal Granit
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Klasik Taş</span>
+
+                <button type="button" class="opt-card active p-4 rounded-2xl border text-left transition relative flex flex-col justify-between" data-group="m_dolap" data-val="akrilik">
+                  <div class="absolute -top-2.5 right-3 bg-neutral-900 text-white text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full font-bold">Popüler</div>
+                  <div>
+                    <div class="text-xs font-bold text-neutral-900">Çizilmez Akrilik</div>
+                    <div class="text-[11px] text-neutral-500 font-normal mt-1 leading-relaxed">Ayna parlaklığı veya mat doku, kolay temizlenir.</div>
+                  </div>
+                  <div class="text-[11px] font-mono text-neutral-700 font-bold mt-3">₺12.500 / mtül'den</div>
                 </button>
-                <button type="button" class="opt-btn active p-3 rounded-xl border text-center text-xs font-bold transition" data-group="m_tezgah" data-val="kuvars">
-                  Kuvars (Çimstone)
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Leke Tutmaz</span>
-                </button>
-                <button type="button" class="opt-btn p-3 rounded-xl border text-center text-xs font-bold transition" data-group="m_tezgah" data-val="porselen">
-                  Lamar Porselen
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Isıya %100 Direnç</span>
+
+                <button type="button" class="opt-card p-4 rounded-2xl border text-left transition relative flex flex-col justify-between" data-group="m_dolap" data-val="lake">
+                  <div>
+                    <div class="text-xs font-bold text-neutral-900">İpek Mat Fırın Lake</div>
+                    <div class="text-[11px] text-neutral-500 font-normal mt-1 leading-relaxed">Poliüretan kabin boyası, sınırsız renk seçeneği.</div>
+                  </div>
+                  <div class="text-[11px] font-mono text-neutral-700 font-bold mt-3">₺19.500 / mtül'den</div>
                 </button>
               </div>
             </div>
 
-            <!-- Ek Yapısal İmalatlar -->
-            <div class="space-y-3 pt-2">
-              <span class="text-xs uppercase tracking-wider font-bold text-slate-900 block">Şantiye &amp; Tesisat Kalemleri</span>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                <label class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 flex items-center justify-between cursor-pointer bg-slate-50/50">
+            <!-- 4. TEZGAH -->
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-4">
+              <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">04 / TEZGAH SEÇİMİ</span>
+              <h3 class="text-base font-serif font-bold text-neutral-900">Mutfak Tezgahı Malzemesi</h3>
+              
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+                <button type="button" class="opt-card p-3.5 rounded-2xl border text-center transition" data-group="m_tezgah" data-val="laminat">
+                  <div class="text-xs font-bold text-neutral-900">Laminat</div>
+                  <div class="text-[10px] text-neutral-400 mt-0.5">Ekonomik</div>
+                </button>
+                <button type="button" class="opt-card p-3.5 rounded-2xl border text-center transition" data-group="m_tezgah" data-val="granit">
+                  <div class="text-xs font-bold text-neutral-900">Doğal Granit</div>
+                  <div class="text-[10px] text-neutral-400 mt-0.5">Doğal Taş</div>
+                </button>
+                <button type="button" class="opt-card active p-3.5 rounded-2xl border text-center transition" data-group="m_tezgah" data-val="kuvars">
+                  <div class="text-xs font-bold text-neutral-900">Kuvars (Çimstone)</div>
+                  <div class="text-[10px] text-neutral-400 mt-0.5">Leke Tutmaz</div>
+                </button>
+                <button type="button" class="opt-card p-3.5 rounded-2xl border text-center transition" data-group="m_tezgah" data-val="porselen">
+                  <div class="text-xs font-bold text-neutral-900">Lamar Porselen</div>
+                  <div class="text-[10px] text-neutral-400 mt-0.5">Isıya %100 Direnç</div>
+                </button>
+              </div>
+            </div>
+
+            <!-- 5. ŞANTİYE VE TESİSAT -->
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-4">
+              <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">05 / UYGULAMA VE ŞANTİYE KAPSAMI</span>
+              <h3 class="text-base font-serif font-bold text-neutral-900">İlave Şantiye &amp; Tesisat Kalemleri</h3>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] hover:border-neutral-300 flex items-center justify-between cursor-pointer bg-[#FDFDFD] transition">
                   <div>
-                    <span class="font-bold text-slate-900 block">Kırım &amp; Moloz Tahliyesi</span>
-                    <span class="text-[11px] text-slate-500">Mevcut dolap ve fayans sökümü</span>
+                    <span class="font-bold text-neutral-900 block">Kırım &amp; Moloz Tahliyesi</span>
+                    <span class="text-[11px] text-neutral-500">Eski dolap ve fayansların sökülmesi</span>
                   </div>
-                  <input type="checkbox" id="m_chk_yikim" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="m_chk_yikim" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] hover:border-neutral-300 flex items-center justify-between cursor-pointer bg-[#FDFDFD] transition">
                   <div>
-                    <span class="font-bold text-slate-900 block">Zemin Seramik / Granit</span>
-                    <span class="text-[11px] text-slate-500">60x120 lazer kesim döşeme</span>
+                    <span class="font-bold text-neutral-900 block">Zemin Granit / Seramik</span>
+                    <span class="text-[11px] text-neutral-500">60x120 derzsiz porselen döşeme</span>
                   </div>
-                  <input type="checkbox" id="m_chk_zemin" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="m_chk_zemin" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] hover:border-neutral-300 flex items-center justify-between cursor-pointer bg-[#FDFDFD] transition">
                   <div>
-                    <span class="font-bold text-slate-900 block">Sıhhi Tesisat Yenileme</span>
-                    <span class="text-[11px] text-slate-500">PPRC temiz su ve atık giderleri</span>
+                    <span class="font-bold text-neutral-900 block">Sıhhi Su Tesisatı</span>
+                    <span class="text-[11px] text-neutral-500">PPRC temiz su ve atık giderleri</span>
                   </div>
-                  <input type="checkbox" id="m_chk_su" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="m_chk_su" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] hover:border-neutral-300 flex items-center justify-between cursor-pointer bg-[#FDFDFD] transition">
                   <div>
-                    <span class="font-bold text-slate-900 block">Elektrik Hattı &amp; Prizler</span>
-                    <span class="text-[11px] text-slate-500">Ankastre ve tezgah priz hatları</span>
+                    <span class="font-bold text-neutral-900 block">Elektrik Altyapısı</span>
+                    <span class="text-[11px] text-neutral-500">Ankastre ve tezgah priz hatları</span>
                   </div>
-                  <input type="checkbox" id="m_chk_elektrik" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="m_chk_elektrik" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] hover:border-neutral-300 flex items-center justify-between cursor-pointer bg-[#FDFDFD] transition">
                   <div>
-                    <span class="font-bold text-slate-900 block">Tavan &amp; Duvar Boya</span>
-                    <span class="text-[11px] text-slate-500">Silinebilir su bazlı boya</span>
+                    <span class="font-bold text-neutral-900 block">Boya Badana</span>
+                    <span class="text-[11px] text-neutral-500">Tavan ve duvar silinebilir boya</span>
                   </div>
-                  <input type="checkbox" id="m_chk_boya" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="m_chk_boya" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] hover:border-neutral-300 flex items-center justify-between cursor-pointer bg-[#FDFDFD] transition">
                   <div>
-                    <span class="font-bold text-slate-900 block">Gizli LED &amp; Aydınlatma</span>
-                    <span class="text-[11px] text-slate-500">Tezgah altı lineer alüminyum profil</span>
+                    <span class="font-bold text-neutral-900 block">Lineer Gizli LED</span>
+                    <span class="text-[11px] text-neutral-500">Tezgah altı alüminyum profil</span>
                   </div>
-                  <input type="checkbox" id="m_chk_aydinlatma" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="m_chk_aydinlatma" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
               </div>
             </div>
 
           </div>
 
-          <!-- Sağ Bütçe Kartı (Monokrom Mat Antrasit / Mimari Rapor) -->
-          <div class="lg:col-span-4 sticky top-24 space-y-4">
-            <div class="bg-slate-900 text-white p-7 rounded-2xl border border-slate-800 shadow-xl">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-                <span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">MUTFAK MALİYET RAPORU</span>
-                <span class="text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono">2026</span>
-              </div>
-
-              <div class="my-6 text-center">
-                <span class="text-[11px] text-slate-400 block mb-1">Tahmini Yaklaşık Bütçe</span>
-                <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight" id="m_total_display">
-                  ₺ 125.000 – ₺ 185.000
+          <!-- SAĞ SÜTUN: MİMARİ BÜTÇE KARTI (5 SÜTUN - STICKY) -->
+          <div class="lg:col-span-5 sticky top-28 space-y-5">
+            <div class="bg-neutral-900 text-white p-8 sm:p-9 rounded-3xl shadow-2xl border border-neutral-800 space-y-6">
+              
+              <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                <div>
+                  <span class="text-[10px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">İZMİR ATÖLYE HESABI</span>
+                  <span class="text-xs text-neutral-200 font-medium">Mutfak İmalat Özeti</span>
                 </div>
-                <span class="text-[11px] text-emerald-400 block mt-1.5 font-medium">Doğrudan Atölye İmalatı (%30 Aracı Komisyonsuz)</span>
+                <div class="px-2.5 py-1 rounded-full bg-neutral-800 border border-neutral-700 text-[10px] font-mono text-emerald-400">
+                  ARACISIZ ATÖLYE
+                </div>
               </div>
 
-              <!-- Kalem Dağılımı -->
-              <div class="space-y-2 py-4 border-t border-b border-slate-800 text-xs" id="m_breakdown_list"></div>
+              <!-- FİYAT ALANI -->
+              <div class="py-2 text-center">
+                <span class="text-xs text-neutral-400 font-light block mb-2">Tahmini Bütçe Aralığı</span>
+                <div class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight" id="m_total_display">
+                  ₺ 85.000 – ₺ 120.000
+                </div>
+                <div class="inline-flex items-center gap-1.5 mt-3 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/80 text-emerald-400 text-[11px] font-medium">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>%30 Doğrudan Atölye İmalat Avantajı</span>
+                </div>
+              </div>
 
-              <!-- Aksiyon Butonları -->
-              <div class="mt-6 space-y-2.5">
+              <!-- KALEM DÖKÜMÜ -->
+              <div class="border-t border-b border-neutral-800 py-4 space-y-2.5 text-xs" id="m_breakdown_list"></div>
+
+              <!-- GARANTİ MADDELERİ -->
+              <div class="space-y-1.5 text-[11px] text-neutral-400 pt-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-emerald-400">✓</span> E1 Sertifikalı Neme Dayanıklı MDF-Lam Gövde
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-emerald-400">✓</span> Blum &amp; Häfele Frenli Sessiz Menteşeler
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-emerald-400">✓</span> 3D Fotogerçekçi Mimari Çizim Ücretsiz
+                </div>
+              </div>
+
+              <!-- AKSİYON BUTONLARI -->
+              <div class="pt-2 space-y-3">
                 <a 
                   id="m_btn_whatsapp" 
                   href="#" 
                   target="_blank" 
-                  class="w-full py-3.5 px-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-center block text-xs tracking-wider uppercase transition"
+                  class="w-full py-4 px-5 bg-white hover:bg-neutral-100 text-neutral-900 font-bold rounded-2xl text-center block text-xs tracking-wider uppercase transition shadow-lg"
                 >
                   Bu Hesabı WhatsApp'a Gönder →
                 </a>
                 <a 
                   href="tel:02324411060" 
-                  class="w-full py-2.5 px-4 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl text-center block text-xs transition border border-slate-700"
+                  class="w-full py-3 px-4 bg-neutral-800/80 hover:bg-neutral-800 text-neutral-200 font-semibold rounded-2xl text-center block text-xs transition border border-neutral-700"
                 >
-                  0232 441 1060 - Bize Danışın
+                  Mimarımızla Görüşün: 0232 441 1060
                 </a>
               </div>
-              <p class="text-[10px] text-slate-500 text-center mt-3 leading-relaxed">
-                * Kesin bütçe, atölye ustamızın yerinde lazer rölöve alımı ve seçilecek aksesuar/fren mekanizması detayına göre netleştirilir.
+
+              <p class="text-[10px] text-neutral-500 text-center leading-relaxed">
+                * Kesin bütçe, atölye mimarımızın evinizde yapacağı lazer rölöve keşfi ve seçilecek ray/kulp mekanizmaları ile sabitlenir.
               </p>
             </div>
           </div>
@@ -250,155 +315,175 @@ const pageSeo = {
       <!-- 2. BANYO PANELİ                                                -->
       <!-- ============================================================== -->
       <div id="panelBanyo" class="calc-panel hidden">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           
-          <div class="lg:col-span-8 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-xs space-y-7">
+          <div class="lg:col-span-7 space-y-10">
             
-            <div class="space-y-3 pb-6 border-b border-slate-100">
-              <div class="flex justify-between items-center">
-                <span class="text-xs uppercase tracking-wider font-bold text-slate-900">Banyo Taban Alanı</span>
-                <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-3 py-1 rounded-lg">
-                  <input type="number" id="b_alan_input" min="3" max="25" value="6" class="w-12 bg-transparent text-center font-bold text-slate-900 text-sm focus:outline-none" />
-                  <span class="text-xs text-slate-500 font-medium">m²</span>
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-5">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block mb-1">01 / BANYO ÖLÇÜSÜ</span>
+                  <h3 class="text-base font-serif font-bold text-neutral-900">Banyo Taban Alanı</h3>
+                </div>
+                <div class="flex items-center gap-2 bg-[#F7F7F4] border border-[#E5E5DE] px-4 py-2 rounded-xl">
+                  <input type="number" id="b_alan_input" min="3" max="25" value="6" class="w-12 bg-transparent text-center font-serif text-lg font-bold text-neutral-900 focus:outline-none" />
+                  <span class="text-xs font-bold text-neutral-500 uppercase">m²</span>
                 </div>
               </div>
-              <input type="range" id="b_alan_slider" min="3" max="25" value="6" class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-slate-900" />
-              <div class="flex justify-between text-[11px] text-slate-400 font-medium">
+              <input type="range" id="b_alan_slider" min="3" max="25" value="6" class="w-full h-1.5 bg-[#E8E8E3] rounded-lg appearance-none cursor-pointer accent-neutral-900" />
+              <div class="flex justify-between text-[11px] text-neutral-400 font-medium">
                 <span>3 m² (Misafir Banyo)</span>
-                <span>6 m² (Standart Ebeveyn)</span>
+                <span class="text-neutral-700 font-bold">6 m² (Standart)</span>
                 <span>12 m² (Lüks Geniş)</span>
                 <span>25 m² (Villa SPA)</span>
               </div>
             </div>
 
-            <div class="space-y-2.5">
-              <span class="text-xs uppercase tracking-wider font-bold text-slate-900 block">Bina Yaşı</span>
-              <div class="grid grid-cols-3 gap-3">
-                <button type="button" class="opt-btn active p-3 rounded-xl border text-center text-xs font-bold transition" data-group="b_bina" data-val="yeni">
-                  0 - 10 Yıl
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-4">
+              <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">02 / BİNA YAŞI</span>
+              <h3 class="text-base font-serif font-bold text-neutral-900">Altyapı Durumu</h3>
+              <div class="grid grid-cols-3 gap-3 pt-1">
+                <button type="button" class="opt-card active p-4 rounded-2xl border text-left transition" data-group="b_bina" data-val="yeni">
+                  <div class="text-xs font-bold text-neutral-900">0 – 10 Yıl</div>
+                  <div class="text-[11px] text-neutral-500 mt-0.5">Standart</div>
                 </button>
-                <button type="button" class="opt-btn p-3 rounded-xl border text-center text-xs font-bold transition" data-group="b_bina" data-val="orta">
-                  11 - 20 Yıl (+%20)
+                <button type="button" class="opt-card p-4 rounded-2xl border text-left transition" data-group="b_bina" data-val="orta">
+                  <div class="text-xs font-bold text-neutral-900">11 – 20 Yıl</div>
+                  <div class="text-[11px] text-neutral-500 mt-0.5">Kısmi Yenileme (+%15)</div>
                 </button>
-                <button type="button" class="opt-btn p-3 rounded-xl border text-center text-xs font-bold transition" data-group="b_bina" data-val="eski">
-                  20+ Yıl (+%30)
-                </button>
-              </div>
-            </div>
-
-            <div class="space-y-2.5">
-              <span class="text-xs uppercase tracking-wider font-bold text-slate-900 block">Seramik &amp; Fayans Kalitesi</span>
-              <div class="grid grid-cols-2 gap-3">
-                <button type="button" class="opt-btn active p-3.5 rounded-xl border text-left text-xs font-bold transition" data-group="b_seramik" data-val="standart">
-                  Standart 60x60 Seramik
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Çanakkale / VitrA Kalitesi</span>
-                </button>
-                <button type="button" class="opt-btn p-3.5 rounded-xl border text-left text-xs font-bold transition" data-group="b_seramik" data-val="premium">
-                  60x120 / 120x240 Porselen Granit
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Lazer Kesim Derzsiz Lüks</span>
+                <button type="button" class="opt-card p-4 rounded-2xl border text-left transition" data-group="b_bina" data-val="eski">
+                  <div class="text-xs font-bold text-neutral-900">20+ Yıl</div>
+                  <div class="text-[11px] text-neutral-500 mt-0.5">Eski Tesisat (+%25)</div>
                 </button>
               </div>
             </div>
 
-            <div class="space-y-2.5">
-              <span class="text-xs uppercase tracking-wider font-bold text-slate-900 block">Gömme Rezervuar &amp; Vitrifiye</span>
-              <div class="grid grid-cols-2 gap-3">
-                <button type="button" class="opt-btn active p-3.5 rounded-xl border text-left text-xs font-bold transition" data-group="b_klozet" data-val="standart">
-                  Standart Takım Klozet
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-4">
+              <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">03 / SERAMİK TERCİHİ</span>
+              <h3 class="text-base font-serif font-bold text-neutral-900">Fayans &amp; Porselen Kalitesi</h3>
+              <div class="grid grid-cols-2 gap-3.5 pt-1">
+                <button type="button" class="opt-card active p-4 rounded-2xl border text-left transition" data-group="b_seramik" data-val="standart">
+                  <div class="text-xs font-bold text-neutral-900">Standart 60x60 Seramik</div>
+                  <div class="text-[11px] text-neutral-500 mt-1">Çanakkale / VitrA Kalitesi</div>
                 </button>
-                <button type="button" class="opt-btn p-3.5 rounded-xl border text-left text-xs font-bold transition" data-group="b_klozet" data-val="asma">
-                  Geberit / VitrA Gömme Rezervuar
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Asma Sessiz Klozet</span>
+                <button type="button" class="opt-card p-4 rounded-2xl border text-left transition" data-group="b_seramik" data-val="premium">
+                  <div class="text-xs font-bold text-neutral-900">60x120 Derzsiz Porselen</div>
+                  <div class="text-[11px] text-neutral-500 mt-1">Lazer Kesim Prestij Karolar</div>
                 </button>
               </div>
             </div>
 
-            <div class="space-y-3 pt-2">
-              <span class="text-xs uppercase tracking-wider font-bold text-slate-900 block">Banyo Kapsam Kalemleri</span>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-4">
+              <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">04 / VİTRİFİYE &amp; REZERVUAR</span>
+              <h3 class="text-base font-serif font-bold text-neutral-900">Gömme Rezervuar Tercihi</h3>
+              <div class="grid grid-cols-2 gap-3.5 pt-1">
+                <button type="button" class="opt-card active p-4 rounded-2xl border text-left transition" data-group="b_klozet" data-val="standart">
+                  <div class="text-xs font-bold text-neutral-900">Standart Klozet Takımı</div>
+                  <div class="text-[11px] text-neutral-500 mt-1">Yerden Bağlantılı Sistem</div>
+                </button>
+                <button type="button" class="opt-card p-4 rounded-2xl border text-left transition" data-group="b_klozet" data-val="asma">
+                  <div class="text-xs font-bold text-neutral-900">Geberit / VitrA Gömme Rezervuar</div>
+                  <div class="text-[11px] text-neutral-500 mt-1">Asma Sessiz Klozet</div>
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-4">
+              <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">05 / BANYO UYGULAMA KALEMLERİ</span>
+              <h3 class="text-base font-serif font-bold text-neutral-900">Donatı &amp; İzolasyon Kalemleri</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Kırım &amp; Moloz Atımı</span>
-                    <span class="text-[11px] text-slate-500">Eski küvet ve fayans sökümü</span>
+                    <span class="font-bold text-neutral-900 block">Kırım &amp; Moloz Sökümü</span>
+                    <span class="text-[11px] text-neutral-500">Eski küvet ve fayansların tahliyesi</span>
                   </div>
-                  <input type="checkbox" id="b_chk_yikim" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="b_chk_yikim" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Çift Kat İzolasyon (Membran)</span>
-                    <span class="text-[11px] text-slate-500">Sızdırmazlık yalıtım garantisi</span>
+                    <span class="font-bold text-neutral-900 block">Çift Kat Membran İzolasyon</span>
+                    <span class="text-[11px] text-neutral-500">Sızdırmazlık sürme yalıtımı</span>
                   </div>
-                  <input type="checkbox" id="b_chk_izolasyon" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="b_chk_izolasyon" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Marin Banyo Dolabı &amp; Ayna</span>
-                    <span class="text-[11px] text-slate-500">Suya mukavim lake dolap</span>
+                    <span class="font-bold text-neutral-900 block">Marin Gövde Banyo Dolabı</span>
+                    <span class="text-[11px] text-neutral-500">Suya dayanıklı lake gövde &amp; ayna</span>
                   </div>
-                  <input type="checkbox" id="b_chk_dolap" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="b_chk_dolap" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Temperli Duşakabin &amp; Gider</span>
-                    <span class="text-[11px] text-slate-500">Paslanmaz duş kanalı</span>
+                    <span class="font-bold text-neutral-900 block">Temperli Duşakabin</span>
+                    <span class="text-[11px] text-neutral-500">İtalyan paslanmaz duş kanalı</span>
                   </div>
-                  <input type="checkbox" id="b_chk_dus" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="b_chk_dus" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Su &amp; Gider Tesisatı</span>
-                    <span class="text-[11px] text-slate-500">PPRC borulama ve test</span>
+                    <span class="font-bold text-neutral-900 block">Su &amp; Gider Tesisatı</span>
+                    <span class="text-[11px] text-neutral-500">Sıva altı borulama ve test</span>
                   </div>
-                  <input type="checkbox" id="b_chk_su" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="b_chk_su" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Havlupan Radyatör</span>
-                    <span class="text-[11px] text-slate-500">Antrasit / krom havlupan</span>
+                    <span class="font-bold text-neutral-900 block">Havlupan Radyatör</span>
+                    <span class="text-[11px] text-neutral-500">Krom / antrasit radyatör</span>
                   </div>
-                  <input type="checkbox" id="b_chk_havlupan" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="b_chk_havlupan" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
               </div>
             </div>
 
           </div>
 
-          <div class="lg:col-span-4 sticky top-24 space-y-4">
-            <div class="bg-slate-900 text-white p-7 rounded-2xl border border-slate-800 shadow-xl">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-                <span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">BANYO MALİYET RAPORU</span>
-                <span class="text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono">2026</span>
-              </div>
-
-              <div class="my-6 text-center">
-                <span class="text-[11px] text-slate-400 block mb-1">Tahmini Banyo Bütçesi</span>
-                <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight" id="b_total_display">
-                  ₺ 65.000 – ₺ 110.000
+          <div class="lg:col-span-5 sticky top-28 space-y-5">
+            <div class="bg-neutral-900 text-white p-8 sm:p-9 rounded-3xl shadow-2xl border border-neutral-800 space-y-6">
+              
+              <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                <div>
+                  <span class="text-[10px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">İZMİR BANYO RAPORU</span>
+                  <span class="text-xs text-neutral-200 font-medium">Renovasyon Özeti</span>
                 </div>
-                <span class="text-[11px] text-emerald-400 block mt-1.5 font-medium">Taşeronsuz Usta Kadrosu &amp; Çift Kat İzolasyon</span>
+                <div class="px-2.5 py-1 rounded-full bg-neutral-800 border border-neutral-700 text-[10px] font-mono text-emerald-400">
+                  İZOLASYON GARANTİLİ
+                </div>
               </div>
 
-              <div class="space-y-2 py-4 border-t border-b border-slate-800 text-xs" id="b_breakdown_list"></div>
+              <div class="py-2 text-center">
+                <span class="text-xs text-neutral-400 font-light block mb-2">Tahmini Banyo Bütçesi</span>
+                <div class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight" id="b_total_display">
+                  ₺ 55.000 – ₺ 89.000
+                </div>
+                <div class="inline-flex items-center gap-1.5 mt-3 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/80 text-emerald-400 text-[11px] font-medium">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Taşeronsuz Usta Kadrosu &amp; Çift Kat Membran</span>
+                </div>
+              </div>
 
-              <div class="mt-6 space-y-2.5">
+              <div class="border-t border-b border-neutral-800 py-4 space-y-2.5 text-xs" id="b_breakdown_list"></div>
+
+              <div class="pt-2 space-y-3">
                 <a 
                   id="b_btn_whatsapp" 
                   href="#" 
                   target="_blank" 
-                  class="w-full py-3.5 px-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-center block text-xs tracking-wider uppercase transition"
+                  class="w-full py-4 px-5 bg-white hover:bg-neutral-100 text-neutral-900 font-bold rounded-2xl text-center block text-xs tracking-wider uppercase transition shadow-lg"
                 >
                   Bu Banyo İçin Teklif Al →
                 </a>
                 <a 
                   href="tel:02324411060" 
-                  class="w-full py-2.5 px-4 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl text-center block text-xs transition border border-slate-700"
+                  class="w-full py-3 px-4 bg-neutral-800/80 hover:bg-neutral-800 text-neutral-200 font-semibold rounded-2xl text-center block text-xs transition border border-neutral-700"
                 >
-                  0232 441 1060 - Bize Danışın
+                  0232 441 1060 - Bize Ulaşın
                 </a>
               </div>
             </div>
@@ -409,151 +494,165 @@ const pageSeo = {
 
 
       <!-- ============================================================== -->
-      <!-- 3. KOMPLE EV PANELİ                                            -->
+      <!-- 3. KOMPLE DAİRE PANELİ                                         -->
       <!-- ============================================================== -->
       <div id="panelKomple" class="calc-panel hidden">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           
-          <div class="lg:col-span-8 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-xs space-y-7">
+          <div class="lg:col-span-7 space-y-10">
             
-            <div class="space-y-3 pb-6 border-b border-slate-100">
-              <div class="flex justify-between items-center">
-                <span class="text-xs uppercase tracking-wider font-bold text-slate-900">Ev / Daire Net Alanı</span>
-                <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-3 py-1 rounded-lg">
-                  <input type="number" id="k_alan_input" min="40" max="350" value="110" class="w-14 bg-transparent text-center font-bold text-slate-900 text-sm focus:outline-none" />
-                  <span class="text-xs text-slate-500 font-medium">m²</span>
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-5">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block mb-1">01 / KONUT ALANI</span>
+                  <h3 class="text-base font-serif font-bold text-neutral-900">Ev / Daire Net Alanı</h3>
+                </div>
+                <div class="flex items-center gap-2 bg-[#F7F7F4] border border-[#E5E5DE] px-4 py-2 rounded-xl">
+                  <input type="number" id="k_alan_input" min="40" max="350" value="110" class="w-14 bg-transparent text-center font-serif text-lg font-bold text-neutral-900 focus:outline-none" />
+                  <span class="text-xs font-bold text-neutral-500 uppercase">m²</span>
                 </div>
               </div>
-              <input type="range" id="k_alan_slider" min="40" max="350" value="110" class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-slate-900" />
-              <div class="flex justify-between text-[11px] text-slate-400 font-medium">
+              <input type="range" id="k_alan_slider" min="40" max="350" value="110" class="w-full h-1.5 bg-[#E8E8E3] rounded-lg appearance-none cursor-pointer accent-neutral-900" />
+              <div class="flex justify-between text-[11px] text-neutral-400 font-medium">
                 <span>50 m² (1+1)</span>
                 <span>85 m² (2+1)</span>
-                <span>120 m² (3+1)</span>
+                <span class="text-neutral-700 font-bold">120 m² (3+1)</span>
                 <span>180 m² (4+1)</span>
                 <span>350 m² (Villa)</span>
               </div>
             </div>
 
-            <div class="space-y-2.5">
-              <span class="text-xs uppercase tracking-wider font-bold text-slate-900 block">Kalite &amp; Malzeme Paketi</span>
-              <div class="grid grid-cols-3 gap-3">
-                <button type="button" class="opt-btn p-3 rounded-xl border text-center text-xs font-bold transition" data-group="k_kalite" data-val="ekonomik">
-                  Ekonomik
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Kiralık Daire</span>
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-4">
+              <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">02 / MALZEME KALİTE PAKETİ</span>
+              <h3 class="text-base font-serif font-bold text-neutral-900">Segment Tercihi</h3>
+              <div class="grid grid-cols-3 gap-3 pt-1">
+                <button type="button" class="opt-card p-4 rounded-2xl border text-left transition" data-group="k_kalite" data-val="ekonomik">
+                  <div class="text-xs font-bold text-neutral-900">Ekonomik</div>
+                  <div class="text-[11px] text-neutral-500 mt-0.5">Kiralık Konutlar</div>
                 </button>
-                <button type="button" class="opt-btn active p-3 rounded-xl border text-center text-xs font-bold transition" data-group="k_kalite" data-val="standart">
-                  Standart A+
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Aile Konutu Popüler</span>
+                <button type="button" class="opt-card active p-4 rounded-2xl border text-left transition" data-group="k_kalite" data-val="standart">
+                  <div class="text-xs font-bold text-neutral-900">Standart A+</div>
+                  <div class="text-[11px] text-neutral-500 mt-0.5">Aile Konutu Popüler</div>
                 </button>
-                <button type="button" class="opt-btn p-3 rounded-xl border text-center text-xs font-bold transition" data-group="k_kalite" data-val="luks">
-                  Lüks Mimari
-                  <span class="block text-[10px] text-slate-500 font-normal mt-0.5">İthal &amp; Özel İmalat</span>
+                <button type="button" class="opt-card p-4 rounded-2xl border text-left transition" data-group="k_kalite" data-val="luks">
+                  <div class="text-xs font-bold text-neutral-900">Lüks Mimari</div>
+                  <div class="text-[11px] text-neutral-500 mt-0.5">İthal &amp; Özel İmalat</div>
                 </button>
               </div>
             </div>
 
-            <div class="space-y-3 pt-2">
-              <span class="text-xs uppercase tracking-wider font-bold text-slate-900 block">Yenilenecek Bölümler</span>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+            <div class="bg-white p-7 sm:p-9 rounded-3xl border border-[#E8E8E3] shadow-[0_4px_24px_rgba(0,0,0,0.02)] space-y-4">
+              <span class="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">03 / YENİLENECEK ALANLAR</span>
+              <h3 class="text-base font-serif font-bold text-neutral-900">İmalat &amp; Renovasyon Kalemleri</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Komple Mutfak Renovasyonu</span>
-                    <span class="text-[11px] text-slate-500">Dolap, tezgah, zemin ve tesisat</span>
+                    <span class="font-bold text-neutral-900 block">Mutfak Renovasyonu</span>
+                    <span class="text-[11px] text-neutral-500">Dolap, tezgah, zemin ve tesisat</span>
                   </div>
-                  <input type="checkbox" id="k_chk_mutfak" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="k_chk_mutfak" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Komple Banyo Yenileme</span>
-                    <span class="text-[11px] text-slate-500">Fayans, duşakabin, gömme rezervuar</span>
+                    <span class="font-bold text-neutral-900 block">Banyo Yenileme</span>
+                    <span class="text-[11px] text-neutral-500">Fayans, duşakabin, gömme rezervuar</span>
                   </div>
-                  <input type="checkbox" id="k_chk_banyo" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="k_chk_banyo" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Zemin Parke &amp; Süpürgelik</span>
-                    <span class="text-[11px] text-slate-500">32. sınıf derzli laminat parke</span>
+                    <span class="font-bold text-neutral-900 block">Zemin Parke &amp; Süpürgelik</span>
+                    <span class="text-[11px] text-neutral-500">32. sınıf derzli laminat parke</span>
                   </div>
-                  <input type="checkbox" id="k_chk_parke" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="k_chk_parke" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Tüm Ev Boya Badana &amp; Alçı</span>
-                    <span class="text-[11px] text-slate-500">Alçı tamiratı ve 2 kat astar-boya</span>
+                    <span class="font-bold text-neutral-900 block">Tüm Ev Boya Badana &amp; Alçı</span>
+                    <span class="text-[11px] text-neutral-500">Alçı tamiratı ve 2 kat astar-boya</span>
                   </div>
-                  <input type="checkbox" id="k_chk_boya" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="k_chk_boya" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">İç Oda Kapıları (5 Adet)</span>
-                    <span class="text-[11px] text-slate-500">Lake veya meşe panel oda kapıları</span>
+                    <span class="font-bold text-neutral-900 block">İç Oda Kapıları (5 Adet)</span>
+                    <span class="text-[11px] text-neutral-500">Lake veya meşe panel kapılar</span>
                   </div>
-                  <input type="checkbox" id="k_chk_kapi" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="k_chk_kapi" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Monoblok Çelik Kapı</span>
-                    <span class="text-[11px] text-slate-500">Ağır emniyet kilitli daire kapısı</span>
+                    <span class="font-bold text-neutral-900 block">Monoblok Çelik Kapı</span>
+                    <span class="text-[11px] text-neutral-500">Ağır emniyet kilitli daire kapısı</span>
                   </div>
-                  <input type="checkbox" id="k_chk_celik_kapi" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="k_chk_celik_kapi" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Asma Tavan &amp; Işık Bandı</span>
-                    <span class="text-[11px] text-slate-500">Salon ve koridor alçıpan tavan</span>
+                    <span class="font-bold text-neutral-900 block">Asma Tavan &amp; Işık Bandı</span>
+                    <span class="text-[11px] text-neutral-500">Salon ve koridor alçıpan tavan</span>
                   </div>
-                  <input type="checkbox" id="k_chk_alcipan" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="k_chk_alcipan" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
 
-                <label class="p-3.5 rounded-xl border border-slate-200 flex items-center justify-between cursor-pointer bg-slate-50/50">
+                <label class="p-4 rounded-2xl border border-[#E8E8E3] flex items-center justify-between cursor-pointer bg-[#FDFDFD]">
                   <div>
-                    <span class="font-bold text-slate-900 block">Elektrik &amp; Sıhhi Tesisat</span>
-                    <span class="text-[11px] text-slate-500">Sıfırdan pano ve hat yenileme</span>
+                    <span class="font-bold text-neutral-900 block">Elektrik &amp; Sıhhi Tesisat</span>
+                    <span class="text-[11px] text-neutral-500">Sıfırdan pano ve hat yenileme</span>
                   </div>
-                  <input type="checkbox" id="k_chk_tesisat" class="w-4 h-4 rounded text-slate-900 focus:ring-0 cursor-pointer" checked />
+                  <input type="checkbox" id="k_chk_tesisat" class="w-4 h-4 rounded text-neutral-900 accent-neutral-900 cursor-pointer" checked />
                 </label>
               </div>
             </div>
 
           </div>
 
-          <div class="lg:col-span-4 sticky top-24 space-y-4">
-            <div class="bg-slate-900 text-white p-7 rounded-2xl border border-slate-800 shadow-xl">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-                <span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">ANAHTAR TESLİM RAPOR</span>
-                <span class="text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono">2026</span>
-              </div>
-
-              <div class="my-6 text-center">
-                <span class="text-[11px] text-slate-400 block mb-1">Tahmini Komple Tadilat Bütçesi</span>
-                <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight" id="k_total_display">
-                  ₺ 380.000 – ₺ 590.000
+          <div class="lg:col-span-5 sticky top-28 space-y-5">
+            <div class="bg-neutral-900 text-white p-8 sm:p-9 rounded-3xl shadow-2xl border border-neutral-800 space-y-6">
+              
+              <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                <div>
+                  <span class="text-[10px] uppercase tracking-[0.2em] text-neutral-400 font-bold block">İZMİR ANAHTAR TESLİM</span>
+                  <span class="text-xs text-neutral-200 font-medium">Komple Daire Raporu</span>
                 </div>
-                <span class="text-[11px] text-emerald-400 block mt-1.5 font-medium">Müteahhit Kârı Yok • Doğrudan İmalatçı Sözleşmesi</span>
+                <div class="px-2.5 py-1 rounded-full bg-neutral-800 border border-neutral-700 text-[10px] font-mono text-emerald-400">
+                  SABİT FİYAT GARANTİLİ
+                </div>
               </div>
 
-              <div class="space-y-2 py-4 border-t border-b border-slate-800 text-xs" id="k_breakdown_list"></div>
+              <div class="py-2 text-center">
+                <span class="text-xs text-neutral-400 font-light block mb-2">Tahmini Anahtar Teslim Bütçe</span>
+                <div class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight" id="k_total_display">
+                  ₺ 285.000 – ₺ 465.000
+                </div>
+                <div class="inline-flex items-center gap-1.5 mt-3 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/80 text-emerald-400 text-[11px] font-medium">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Müteahhit Kârı Yok • Doğrudan İmalatçı Sözleşmesi</span>
+                </div>
+              </div>
 
-              <div class="mt-6 space-y-2.5">
+              <div class="border-t border-b border-neutral-800 py-4 space-y-2.5 text-xs" id="k_breakdown_list"></div>
+
+              <div class="pt-2 space-y-3">
                 <a 
                   id="k_btn_whatsapp" 
                   href="#" 
                   target="_blank" 
-                  class="w-full py-3.5 px-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-center block text-xs tracking-wider uppercase transition"
+                  class="w-full py-4 px-5 bg-white hover:bg-neutral-100 text-neutral-900 font-bold rounded-2xl text-center block text-xs tracking-wider uppercase transition shadow-lg"
                 >
-                  Bu Ev İçin Keşif İste →
+                  Bu Ev İçin Keşif Randevusu Al →
                 </a>
                 <a 
                   href="tel:02324411060" 
-                  class="w-full py-2.5 px-4 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl text-center block text-xs transition border border-slate-700"
+                  class="w-full py-3 px-4 bg-neutral-800/80 hover:bg-neutral-800 text-neutral-200 font-semibold rounded-2xl text-center block text-xs transition border border-neutral-700"
                 >
-                  0232 441 1060 - Bize Danışın
+                  0232 441 1060 - Bize Ulaşın
                 </a>
               </div>
             </div>
@@ -564,31 +663,29 @@ const pageSeo = {
 
     </div>
 
-    <!-- HESAPLAMA SİSTEMATİĞİ & ŞEFFAFLIK DOKTRİNİ (MÜHENDİSLİK İZAHATI) -->
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 mt-16 pt-12 border-t border-slate-200">
-      <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-xs space-y-6">
-        <h3 class="text-lg sm:text-xl font-bold font-serif text-slate-900 tracking-tight">
-          Hesaplama Motorunun Arkasındaki Metraj &amp; Mühendislik Mantığı
-        </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-600 leading-relaxed">
-          <div class="space-y-2">
-            <h4 class="font-bold text-slate-900 text-sm">1. Mutfak Metraj Formülü</h4>
-            <p>
-              Mutfak dolabı uzunluğu sadece taban alanıyla sınırlı kalmaz. Standart mimari normda taban alanının ortalama <strong>0.38 katı</strong> net alt+üst dolap metretülü (mtül) üretir. Akrilik ve lake için E1 neme mukavim gövde, Blum/Häfele frenli menteşeler baz alınır.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="font-bold text-slate-900 text-sm">2. Bina Yaşı &amp; Tesisat Çarpanı</h4>
-            <p>
-              10 yıldan eski binalarda demir boru çürümesi ve elektrik sigorta yükü nedeniyle kırıp yenileme riski artar. Bu sebeple 11-20 yıllık yapılarda <strong>1.20</strong>, 20 yıldan eski yapılarda <strong>1.30</strong> altyapı güvenlik katsayısı uygulanır.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="font-bold text-slate-900 text-sm">3. Sözleşmeli Sabit Fiyat İlkesi</h4>
-            <p>
-              Çıkan bütçe aralığı, İzmir'de piyasa spekülasyonlarından arındırılmış doğrudan atölye imalat ve usta yevmiyesi gerçekliğidir. Noter tasdikli sözleşme imzalandığı andan itibaren fiyat sabitlenir.
-            </p>
-          </div>
+    <!-- MİMARİ İŞLEYİŞ & SÖZLEŞME GÜVENCESİ -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-16 border-t border-[#EBEBE8] pb-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-8 bg-white rounded-3xl border border-[#E8E8E3] shadow-xs space-y-3">
+          <div class="font-serif text-2xl font-bold text-neutral-900">01.</div>
+          <h4 class="font-serif font-bold text-neutral-900 text-base">Ücretsiz Lazer Rölöve &amp; 3D</h4>
+          <p class="text-xs text-neutral-600 leading-relaxed font-light">
+            Hesaplama sonrası mimarımız adresinize gelerek lazer metre ile net ölçü alır; mutfağınızın ve odalarınızın fotogerçekçi 3D renkli tasarımını hazırlar.
+          </p>
+        </div>
+        <div class="p-8 bg-white rounded-3xl border border-[#E8E8E3] shadow-xs space-y-3">
+          <div class="font-serif text-2xl font-bold text-neutral-900">02.</div>
+          <h4 class="font-serif font-bold text-neutral-900 text-base">Gecikme Cezalı Sözleşme</h4>
+          <p class="text-xs text-neutral-600 leading-relaxed font-light">
+            İş başlangıcında malzeme marka kodları ve teslim günü resmi hukuki sözleşmeye bağlanır. Taahhüt edilen gün aşılırsa gecikme tazminatı ödenir.
+          </p>
+        </div>
+        <div class="p-8 bg-white rounded-3xl border border-[#E8E8E3] shadow-xs space-y-3">
+          <div class="font-serif text-2xl font-bold text-neutral-900">03.</div>
+          <h4 class="font-serif font-bold text-neutral-900 text-base">Kendi Atölyemizden Montaj</h4>
+          <p class="text-xs text-neutral-600 leading-relaxed font-light">
+            Aracı, bayi veya taşeron kullanmıyoruz. Buca imalat atölyemizde CNC makinelerimizde hazırlıyor, kendi kadrolu ustalarımızla montajını yapıyoruz.
+          </p>
         </div>
       </div>
     </section>
@@ -597,23 +694,26 @@ const pageSeo = {
 </Layout>
 
 <style>
-  .opt-btn {
-    border-color: #E2E8F0;
+  .opt-card {
+    border-color: #E8E8E3;
     background-color: #FFFFFF;
-    color: #1E293B;
+    color: #111111;
   }
-  .opt-btn:hover {
-    border-color: #94A3B8;
-    background-color: #F8FAFC;
+  .opt-card:hover {
+    border-color: #A3A3A3;
+    background-color: #FAFAF8;
   }
-  .opt-btn.active {
-    border-color: #0F172A;
-    background-color: #0F172A;
+  .opt-card.active {
+    border-color: #111111;
+    background-color: #111111;
     color: #FFFFFF;
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   }
-  .opt-btn.active span {
-    color: #94A3B8 !important;
+  .opt-card.active div {
+    color: #FFFFFF !important;
+  }
+  .opt-card.active span {
+    color: #A3A3A3 !important;
   }
 </style>
 
@@ -627,11 +727,11 @@ const pageSeo = {
       tab.addEventListener("click", () => {
         const targetId = tab.dataset.target;
         tabs.forEach(t => {
-          t.classList.remove("bg-white", "text-slate-900", "shadow-xs", "font-bold");
-          t.classList.add("text-slate-600", "font-semibold");
+          t.classList.remove("bg-neutral-900", "text-white", "shadow-md", "font-bold");
+          t.classList.add("text-neutral-600", "font-semibold");
         });
-        tab.classList.add("bg-white", "text-slate-900", "shadow-xs", "font-bold");
-        tab.classList.remove("text-slate-600", "font-semibold");
+        tab.classList.add("bg-neutral-900", "text-white", "shadow-md", "font-bold");
+        tab.classList.remove("text-neutral-600", "font-semibold");
 
         panels.forEach(p => p.classList.add("hidden"));
         const targetPanel = document.getElementById(targetId);
@@ -682,8 +782,10 @@ const pageSeo = {
       const m2 = mState.alan;
       const dolapMetre = Math.max(3, m2 * 0.38);
 
-      let totalMin = 0;
-      let totalMax = 0;
+      const mtulEl = document.getElementById("m_calc_mtul");
+      if (mtulEl) mtulEl.textContent = `${dolapMetre.toFixed(1)} Metretül (mtül)`;
+
+      let totalMin = 0; let totalMax = 0;
       const breakdown = [];
 
       const iscMin = mPrices.iscilikM2.min * m2 * mult;
@@ -707,7 +809,7 @@ const pageSeo = {
       }
       if (mState.zemin) {
         totalMin += mPrices.zeminM2.min * m2; totalMax += mPrices.zeminM2.max * m2;
-        breakdown.push({ name: "Zemin Seramik / Granit", min: mPrices.zeminM2.min * m2, max: mPrices.zeminM2.max * m2 });
+        breakdown.push({ name: "Zemin Porselen / Seramik", min: mPrices.zeminM2.min * m2, max: mPrices.zeminM2.max * m2 });
       }
       if (mState.su) {
         totalMin += mPrices.su.min * mult; totalMax += mPrices.su.max * mult;
@@ -715,7 +817,7 @@ const pageSeo = {
       }
       if (mState.elektrik) {
         totalMin += mPrices.elektrik.min * mult; totalMax += mPrices.elektrik.max * mult;
-        breakdown.push({ name: "Elektrik Altyapısı & Prizler", min: mPrices.elektrik.min * mult, max: mPrices.elektrik.max * mult });
+        breakdown.push({ name: "Elektrik Altyapısı & Priz", min: mPrices.elektrik.min * mult, max: mPrices.elektrik.max * mult });
       }
       if (mState.boya) {
         totalMin += mPrices.boya.min; totalMax += mPrices.boya.max;
@@ -730,14 +832,14 @@ const pageSeo = {
       
       const listEl = document.getElementById("m_breakdown_list");
       listEl.innerHTML = breakdown.map(item => `
-        <div class="flex justify-between items-center text-slate-300">
-          <span class="text-slate-400 font-light truncate max-w-[200px]">${item.name}</span>
+        <div class="flex justify-between items-center text-neutral-300">
+          <span class="text-neutral-400 font-light truncate max-w-[200px]">${item.name}</span>
           <span class="font-mono text-white">${fmt(item.min)} – ${fmt(item.max)}</span>
         </div>
       `).join("");
 
       const msg = `Merhaba İzmir Mutfak Banyo,
-Mutfak Tadilatı Maliyet Hesaplama sonucum:
+Mutfak Maliyet Hesaplama sonucum:
 
 ` +
         `📐 Alan: ${mState.alan} m²
@@ -758,7 +860,7 @@ Mutfak Tadilatı Maliyet Hesaplama sonucum:
         `💰 Bütçe Aralığı: ${fmt(totalMin)} – ${fmt(totalMax)}
 
 ` +
-        `Detaylı teklif ve yerinde rölöve keşfi rica ediyorum.`;
+        `Ücretsiz 3D mimari çizim ve yerinde keşif randevusu rica ediyorum.`;
       
       document.getElementById("m_btn_whatsapp").href = `https://wa.me/905324261788?text=${encodeURIComponent(msg)}`;
     }
@@ -860,7 +962,7 @@ Mutfak Tadilatı Maliyet Hesaplama sonucum:
       }
       if (bState.izolasyon) {
         totalMin += bPrices.izolasyon.min; totalMax += bPrices.izolasyon.max;
-        breakdown.push({ name: "Çift Kat İzolasyon (Membran)", min: bPrices.izolasyon.min, max: bPrices.izolasyon.max });
+        breakdown.push({ name: "Çift Kat Membran İzolasyon", min: bPrices.izolasyon.min, max: bPrices.izolasyon.max });
       }
       if (bState.dolap) {
         totalMin += bPrices.dolap.min; totalMax += bPrices.dolap.max;
@@ -883,8 +985,8 @@ Mutfak Tadilatı Maliyet Hesaplama sonucum:
       
       const listEl = document.getElementById("b_breakdown_list");
       listEl.innerHTML = breakdown.map(item => `
-        <div class="flex justify-between items-center text-slate-300">
-          <span class="text-slate-400 font-light truncate max-w-[200px]">${item.name}</span>
+        <div class="flex justify-between items-center text-neutral-300">
+          <span class="text-neutral-400 font-light truncate max-w-[200px]">${item.name}</span>
           <span class="font-mono text-white">${fmt(item.min)} – ${fmt(item.max)}</span>
         </div>
       `).join("");
@@ -904,10 +1006,10 @@ Banyo Yenileme Maliyet Hesaplama sonucum:
         `🪞 Dolap: ${bState.dolap ? "Dahil" : "Hariç"}
 
 ` +
-        `💰 Bütçe: ${fmt(totalMin)} – ${fmt(totalMax)}
+        `💰 Bütçe Aralığı: ${fmt(totalMin)} – ${fmt(totalMax)}
 
 ` +
-        `Keşif randevusu almak istiyorum.`;
+        `Yerinde keşif randevusu almak istiyorum.`;
       
       document.getElementById("b_btn_whatsapp").href = `https://wa.me/905324261788?text=${encodeURIComponent(msg)}`;
     }
@@ -1023,7 +1125,7 @@ Banyo Yenileme Maliyet Hesaplama sonucum:
         const minVal = kPrices.celikKapi.min * mult;
         const maxVal = kPrices.celikKapi.max * mult;
         totalMin += minVal; totalMax += maxVal;
-        breakdown.push({ name: "Çelik Giriş Kapısı", min: minVal, max: maxVal });
+        breakdown.push({ name: "Çelik Daire Giriş Kapısı", min: minVal, max: maxVal });
       }
       if (kState.alcipan) {
         const aM2 = m2 * 0.4;
@@ -1043,17 +1145,17 @@ Banyo Yenileme Maliyet Hesaplama sonucum:
       
       const listEl = document.getElementById("k_breakdown_list");
       listEl.innerHTML = breakdown.map(item => `
-        <div class="flex justify-between items-center text-slate-300">
-          <span class="text-slate-400 font-light truncate max-w-[200px]">${item.name}</span>
+        <div class="flex justify-between items-center text-neutral-300">
+          <span class="text-neutral-400 font-light truncate max-w-[200px]">${item.name}</span>
           <span class="font-mono text-white">${fmt(item.min)} – ${fmt(item.max)}</span>
         </div>
       `).join("");
 
       const msg = `Merhaba İzmir Mutfak Banyo,
-Komple Ev Tadilatı Hesaplama sonucum:
+Komple Daire Tadilatı Hesaplama sonucum:
 
 ` +
-        `🏠 Daire Alanı: ${kState.alan} m²
+        `🏠 Alan: ${kState.alan} m²
 ` +
         `✨ Paket: ${kState.kalite.toUpperCase()}
 ` +
@@ -1066,10 +1168,10 @@ Komple Ev Tadilatı Hesaplama sonucum:
         `🚪 Kapılar: ${kState.kapi ? "Dahil" : "Hariç"}
 
 ` +
-        `💰 Tahmini Bütçe: ${fmt(totalMin)} – ${fmt(totalMax)}
+        `💰 Bütçe Aralığı: ${fmt(totalMin)} – ${fmt(totalMax)}
 
 ` +
-        `Evimde ücretsiz yerinde keşif yapılmasını rica ediyorum.`;
+        `Yerinde keşif ve mimari sözleşme detayları için görüşmek istiyorum.`;
       
       document.getElementById("k_btn_whatsapp").href = `https://wa.me/905324261788?text=${encodeURIComponent(msg)}`;
     }
