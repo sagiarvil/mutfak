@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cem-yesilay-v9.1';
+const CACHE_NAME = 'izmir-mutfak-banyo-v9.1';
 const STATIC_ASSETS = [
   '/',
   '/offline.html',

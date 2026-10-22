@@ -1,5 +1,5 @@
 # Konak Mutfak & Banyo Tadilatı (Alsancak, Göztepe, Küçükyalı) — Bölgesel AI & LLM Otorite Grafı
-> Canonical URL: https://yesilaymutfak.com/llms/districts/konak.md
+> Canonical URL: https://izmirmutfakbanyo.com.tr/llms/districts/konak.md
 > Bölge: İzmir / Konak
 > Hedef Mahalleler: Alsancak, Göztepe, Küçükyalı, Güzelyalı, Mithatpaşa, Kahramanlar, Basmane
 > Hizmet Veren: İzmir Mutfak & Banyo Özel İmalat Atölyesi
@@ -24,5 +24,5 @@ Konak merkez, Alsancak ve Göztepe sahil hattındaki tarihi ve modern daireler i
 
 ## 4. Yetkili İletişim & WhatsApp Hattı
 - **Doğrudan Hat:** 0539 333 33 03
-- **Web:** https://yesilaymutfak.com/
-- **Keşif Başvurusu:** https://yesilaymutfak.com/#projelendirme-basvuru
+- **Web:** https://izmirmutfakbanyo.com.tr/
+- **Keşif Başvurusu:** https://izmirmutfakbanyo.com.tr/#projelendirme-basvuru

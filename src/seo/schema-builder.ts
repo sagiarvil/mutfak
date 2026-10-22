@@ -10,7 +10,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       '@type': 'HomeAndConstructionBusiness',
       '@id': `${origin}/#organization`,
       name: 'İzmir Mutfak Banyo Mimarlık & Lüks İmalat Atölyesi',
-      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo İç Mimarlık', 'Yeşilay Mutfak'],
+      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo İç Mimarlık', 'İzmir Mutfak Banyo'],
       url: `${origin}/`,
       logo: {
         '@type': 'ImageObject',
@@ -19,7 +19,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         caption: 'İzmir Mutfak Banyo Luxury Logo'
       },
       image: `${origin}/android-chrome-512x512.png`,
-      telephone: '+902324411060',
+      telephone: '+905393333303',
       priceRange: 'Özel Mimari Tasarım & İmalat',
       foundingDate: '1998',
       slogan: 'Sözleşmeli Süre ve Sabit Fiyat Garantisiyle Doğrudan Atölye Zanaatı',
@@ -60,8 +60,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         worstRating: '1'
       },
       sameAs: [
-        'https://www.instagram.com/izmirmutfakbanyo',
-        'https://wa.me/905324261788',
+        'https://wa.me/905393333303',
         'https://share.google/HC5sweG3HXcjogRNZ',
         `https://www.wikidata.org/wiki/${page.primaryEntity.wikidataQid || 'Q11589432'}`
       ]
@@ -105,7 +104,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       },
       potentialAction: {
         '@type': page.mobile.primaryAction === 'call' ? 'CommunicateAction' : 'ViewAction',
-        target: page.mobile.primaryAction === 'call' ? 'tel:+902324411060' : pageUrl
+        target: page.mobile.primaryAction === 'call' ? 'tel:+905393333303' : pageUrl
       }
     }
   ];

@@ -19,13 +19,13 @@ export const siteConfig = {
   ratingValue: "4.96",
   domain: "izmirmutfakbanyo.com.tr",
   siteUrl: "https://izmirmutfakbanyo.com.tr",
-  phoneRaw: "02324411060",
-  phoneFormatted: "0232 441 1060",
-  phoneCompany: "0232 441 1060",
-  phoneCompanyRaw: "02324411060",
-  whatsappRaw: "905324261788",
-  whatsappFormatted: "0532 426 17 88",
-  whatsappUrl: "https://wa.me/905324261788",
+  phoneRaw: "05393333303",
+  phoneFormatted: "0539 333 33 03",
+  phoneCompany: "0539 333 33 03",
+  phoneCompanyRaw: "05393333303",
+  whatsappRaw: "905393333303",
+  whatsappFormatted: "0539 333 33 03",
+  whatsappUrl: "https://wa.me/905393333303",
   address: {
     streetAddress: "Adatepe, Özbekistan Cd. no:10/f",
     addressLocality: "Buca",
@@ -38,10 +38,7 @@ export const siteConfig = {
     longitude: "27.1822"
   },
   openingHours: "Mo-Sa 09:00-19:30",
-  socials: {
-    instagram: "https://www.instagram.com/izmirmutfakbanyo",
-    facebook: "https://www.instagram.com/izmirmutfakbanyo"
-  },
+  socials: {},
   districts: [
     "Buca", "Karşıyaka", "Bostanlı", "Mavişehir", "Alsancak", "Bornova",
     "Çeşme", "Urla", "Güzelbahçe", "Narlıdere", "Balçova", "Bayraklı",

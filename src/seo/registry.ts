@@ -44,8 +44,7 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
       name: 'İzmir Mutfak Banyo Mimarlık & Lüks İmalat Atölyesi',
       type: 'HomeAndConstructionBusiness',
       sameAs: [
-        'https://www.instagram.com/izmirmutfakbanyo',
-        'https://wa.me/905324261788'
+        'https://wa.me/905393333303'
       ],
       wikidataQid: 'Q11589432'
     },
@@ -74,12 +73,12 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
     title: 'Hakkımızda | 28 Yıllık Zanaat & Lüks Atölye Mirası | İzmir Mutfak Banyo',
     metaDescription: '1998 yılından bu yana İzmir Adatepe atölyemizde kişiye özel lüks mutfak dolabı ve mimari mobilya üretiyoruz. 2.850+ tamamlanan proje ve 10 yıl garanti.',
     h1: '28 Yıllık Usta Zanaatı, Çağdaş İç Mimari Mühendislikle Buluşuyor.',
-    primaryIntent: 'cem yeşilay kimdir atölye imalat tecrübesi',
+    primaryIntent: 'izmir mutfak banyo kimdir atölye imalat tecrübesi',
     primaryEntity: {
       id: 'https://izmirmutfakbanyo.com.tr/#organization',
       name: 'İzmir Mutfak Banyo Luxury',
       type: 'Organization',
-      sameAs: ['https://www.instagram.com/izmirmutfakbanyo']
+      sameAs: ['https://wa.me/905393333303']
     },
     semanticTriples: [
       { subject: 'İzmir Mutfak Banyo', predicate: 'foundedIn', object: '1998' },
@@ -106,9 +105,9 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
     indexDirective: 'index, follow',
     canonicalRoute: '/iletisim/',
     title: 'İletişim & Atölye Ulaşım Rehberi | İzmir Mutfak Banyo Luxury Buca',
-    metaDescription: 'İzmir Buca Adatepe imalat atölyemize yol tarifi alın, doğrudan telefon veya WhatsApp ile mimari keşif randevusu oluşturun. 0532 426 17 88.',
+    metaDescription: 'İzmir Buca Adatepe imalat atölyemize yol tarifi alın, doğrudan telefon veya WhatsApp ile mimari keşif randevusu oluşturun. 0539 333 33 03.',
     h1: 'Atölyemizde Kahve Eşliğinde Projenizi Birlikte Çizelim.',
-    primaryIntent: 'cem yeşilay mutfak iletişim adres telefon yol tarifi',
+    primaryIntent: 'izmir mutfak banyo mutfak iletişim adres telefon yol tarifi',
     primaryEntity: {
       id: 'https://izmirmutfakbanyo.com.tr/#organization',
       name: 'İzmir Mutfak Banyo Luxury Atölye',
@@ -117,10 +116,10 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
     },
     semanticTriples: [
       { subject: 'İzmir Mutfak Banyo Atölye', predicate: 'streetAddress', object: 'Adatepe, Özbekistan Cd. no:10/f, 35000 Buca/İzmir' },
-      { subject: 'İzmir Mutfak Banyo Atölye', predicate: 'telephone', object: '+902324411060' },
+      { subject: 'İzmir Mutfak Banyo Atölye', predicate: 'telephone', object: '+905393333303' },
       { subject: 'İzmir Mutfak Banyo Atölye', predicate: 'geoCoordinate', object: '38.3885, 27.1822' }
     ],
-    heroAnswerEngine: 'İzmir Mutfak Banyo Luxury imalat atölyesi İzmir Buca Adatepe Mahallesi Özbekistan Caddesi No:10/F adresindedir. Telefon: 0232 441 1060. Çalışma saatleri Pazartesi-Cumartesi 09:00-19:30 arasıdır. Buca Heykel ve Dokuz Eylül Üniversitesi İİBF yerleşkesine 5 dakika mesafededir.',
+    heroAnswerEngine: 'İzmir Mutfak Banyo Luxury imalat atölyesi İzmir Buca Adatepe Mahallesi Özbekistan Caddesi No:10/F adresindedir. Telefon: 0539 333 33 03. Çalışma saatleri Pazartesi-Cumartesi 09:00-19:30 arasıdır. Buca Heykel ve Dokuz Eylül Üniversitesi İİBF yerleşkesine 5 dakika mesafededir.',
     publishedAt: '2024-01-15T09:00:00+03:00',
     modifiedAt: '2026-10-17T23:40:00+03:00',
     llmSubGraphRoute: '/llms/pages/iletisim.md',

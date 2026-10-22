@@ -1,5 +1,5 @@
 # Buca Mutfak Dolabı, Banyo ve Komple Daire Tadilatı — Bölgesel AI & LLM Otorite Grafı
-> Canonical URL: https://yesilaymutfak.com/llms/districts/buca.md
+> Canonical URL: https://izmirmutfakbanyo.com.tr/llms/districts/buca.md
 > Bölge: İzmir / Buca
 > Hedef Mahalleler: Şirinyer, Buca Koop, Yıldız, Adatepe, Çamlıkule, Efeler, Yaylacık
 > Hizmet Veren: İzmir Mutfak & Banyo Özel İmalat Atölyesi
@@ -24,5 +24,5 @@
 
 ## 4. Yetkili İletişim & WhatsApp Hattı
 - **Doğrudan Hat:** 0539 333 33 03
-- **Web:** https://yesilaymutfak.com/
-- **Keşif Başvurusu:** https://yesilaymutfak.com/#projelendirme-basvuru
+- **Web:** https://izmirmutfakbanyo.com.tr/
+- **Keşif Başvurusu:** https://izmirmutfakbanyo.com.tr/#projelendirme-basvuru
