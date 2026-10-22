@@ -10,7 +10,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       '@type': 'HomeAndConstructionBusiness',
       '@id': origin + '/#organization',
       name: 'İzmir Mutfak Banyo Mimarlık & Lüks İmalat Atölyesi',
-      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo İç Mimarlık', 'İzmir Mutfak Banyo', 'Yamachi Mutfak'],
+      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo İç Mimarlık', 'İzmir Mutfak Banyo', 'Yamashi Mutfak'],
       url: origin + '/',
       logo: {
         '@type': 'ImageObject',
@@ -73,7 +73,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       '@id': origin + '/#website',
       url: origin + '/',
       name: 'İzmir Mutfak Banyo',
-      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo Mimarlık', 'Yamachi Mutfak', domain],
+      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo Mimarlık', 'Yamashi Mutfak', domain],
       publisher: { '@id': origin + '/#organization' },
       inLanguage: page.locale,
       potentialAction: {
