@@ -213,7 +213,7 @@ const pageSeo = {
                 <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight" id="m_total_display">
                   ₺ 125.000 – ₺ 185.000
                 </div>
-                <span class="text-[11px] text-emerald-400 block mt-1.5 font-medium">Malzeme + Atölye İmalatı + Montaj</span>
+                <span class="text-[11px] text-emerald-400 block mt-1.5 font-medium">Doğrudan Atölye İmalatı (%30 Aracı Komisyonsuz)</span>
               </div>
 
               <!-- Kalem Dağılımı -->
@@ -380,7 +380,7 @@ const pageSeo = {
                 <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight" id="b_total_display">
                   ₺ 65.000 – ₺ 110.000
                 </div>
-                <span class="text-[11px] text-emerald-400 block mt-1.5 font-medium">İzolasyon &amp; İşçilik Garantili</span>
+                <span class="text-[11px] text-emerald-400 block mt-1.5 font-medium">Taşeronsuz Usta Kadrosu &amp; Çift Kat İzolasyon</span>
               </div>
 
               <div class="space-y-2 py-4 border-t border-b border-slate-800 text-xs" id="b_breakdown_list"></div>
@@ -535,7 +535,7 @@ const pageSeo = {
                 <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight" id="k_total_display">
                   ₺ 380.000 – ₺ 590.000
                 </div>
-                <span class="text-[11px] text-emerald-400 block mt-1.5 font-medium">Sözleşmeli &amp; Sabit Fiyat Garantili</span>
+                <span class="text-[11px] text-emerald-400 block mt-1.5 font-medium">Müteahhit Kârı Yok • Doğrudan İmalatçı Sözleşmesi</span>
               </div>
 
               <div class="space-y-2 py-4 border-t border-b border-slate-800 text-xs" id="k_breakdown_list"></div>
@@ -656,25 +656,25 @@ const pageSeo = {
     };
 
     const mPrices = {
-      binaMultiplier: { yeni: 1.0, orta: 1.2, eski: 1.3 },
-      iscilikM2: { min: 1400, max: 2100 },
+      binaMultiplier: { yeni: 1.0, orta: 1.15, eski: 1.25 },
+      iscilikM2: { min: 1100, max: 1650 },
       dolap: {
-        mdf: { min: 9500, max: 13500 },
-        akrilik: { min: 14000, max: 19500 },
-        lake: { min: 22000, max: 38000 }
+        mdf: { min: 8500, max: 11000 },
+        akrilik: { min: 12500, max: 16500 },
+        lake: { min: 19500, max: 28500 }
       },
       tezgah: {
-        laminat: { min: 1800, max: 3500 },
-        granit: { min: 4200, max: 7500 },
-        kuvars: { min: 9500, max: 18500 },
-        porselen: { min: 16000, max: 29000 }
+        laminat: { min: 1400, max: 2800 },
+        granit: { min: 3800, max: 6500 },
+        kuvars: { min: 8500, max: 13500 },
+        porselen: { min: 14500, max: 22000 }
       },
-      yikim: { min: 4000, max: 8500 },
-      zeminM2: { min: 1800, max: 3200 },
-      su: { min: 7500, max: 13500 },
-      elektrik: { min: 5500, max: 11000 },
-      boya: { min: 4500, max: 8000 },
-      aydinlatma: { min: 3500, max: 7000 }
+      yikim: { min: 3000, max: 6000 },
+      zeminM2: { min: 1400, max: 2400 },
+      su: { min: 5500, max: 9500 },
+      elektrik: { min: 4000, max: 7500 },
+      boya: { min: 3500, max: 6000 },
+      aydinlatma: { min: 2500, max: 4500 }
     };
 
     function calcMutfak() {
@@ -815,22 +815,22 @@ Mutfak Tadilatı Maliyet Hesaplama sonucum:
     };
 
     const bPrices = {
-      binaMultiplier: { yeni: 1.0, orta: 1.2, eski: 1.3 },
-      iscilikM2: { min: 2800, max: 4800 },
+      binaMultiplier: { yeni: 1.0, orta: 1.15, eski: 1.25 },
+      iscilikM2: { min: 2200, max: 3600 },
       seramik: {
-        standart: { min: 2800, max: 4600 },
-        premium: { min: 5500, max: 9000 }
+        standart: { min: 2200, max: 3600 },
+        premium: { min: 4200, max: 6800 }
       },
       klozet: {
-        standart: { min: 6500, max: 12000 },
-        asma: { min: 14000, max: 26000 }
+        standart: { min: 4800, max: 8500 },
+        asma: { min: 9500, max: 17500 }
       },
-      yikim: { min: 4500, max: 9000 },
-      izolasyon: { min: 5000, max: 8500 },
-      dolap: { min: 11000, max: 24000 },
-      dus: { min: 9500, max: 19500 },
-      su: { min: 6500, max: 12500 },
-      havlupan: { min: 3800, max: 7500 }
+      yikim: { min: 3500, max: 6500 },
+      izolasyon: { min: 3800, max: 6500 },
+      dolap: { min: 7500, max: 16500 },
+      dus: { min: 6800, max: 14500 },
+      su: { min: 4800, max: 8500 },
+      havlupan: { min: 2800, max: 5500 }
     };
 
     function calcBanyo() {
@@ -964,16 +964,16 @@ Banyo Yenileme Maliyet Hesaplama sonucum:
     };
 
     const kPrices = {
-      multiplier: { ekonomik: 1.0, standart: 1.45, luks: 2.2 },
-      baseM2: { min: 2800, max: 4200 },
-      mutfak: { min: 85000, max: 145000 },
-      banyo: { min: 55000, max: 95000 },
-      parkeM2: { min: 650, max: 1200 },
-      boyaM2: { min: 220, max: 450 },
-      kapiBirim: { min: 6500, max: 12500 },
-      celikKapi: { min: 14000, max: 28000 },
-      alcipanM2: { min: 450, max: 900 },
-      tesisatM2: { min: 700, max: 1350 }
+      multiplier: { ekonomik: 1.0, standart: 1.35, luks: 1.9 },
+      baseM2: { min: 2000, max: 3200 },
+      mutfak: { min: 65000, max: 115000 },
+      banyo: { min: 45000, max: 75000 },
+      parkeM2: { min: 480, max: 850 },
+      boyaM2: { min: 160, max: 320 },
+      kapiBirim: { min: 4800, max: 9000 },
+      celikKapi: { min: 11000, max: 19500 },
+      alcipanM2: { min: 350, max: 650 },
+      tesisatM2: { min: 500, max: 950 }
     };
 
     function calcKomple() {
