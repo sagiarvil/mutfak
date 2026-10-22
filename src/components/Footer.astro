@@ -4,162 +4,116 @@ import { siteConfig } from "../data/siteConfig";
 const currentYear = new Date().getFullYear();
 ---
 
-<!-- BÖLÜM: KURUMSAL ŞEFFAFLIK & DOĞRULAMA (FOOTER ÜSTÜ) -->
-<section class="bg-[#F8FAFC] text-zinc-600 py-10 border-t border-gray-200 text-xs">
-  <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-200 pb-6">
-      <div class="space-y-1">
-        <span class="text-[10px] uppercase font-bold tracking-[0.25em] text-sky-600 block">
-          ŞEFFAF MİMARİ & DİJİTAL ALTYAPI
-        </span>
-        <h4 class="text-base font-serif font-semibold text-zinc-900">
-          İzmir Mutfak Banyo & Özel İmalat Atölyesi
-        </h4>
-      </div>
-      <div class="flex items-center gap-4 text-xs font-medium text-zinc-700 whitespace-nowrap">
-        <span>📍 Adatepe İmalat Atölyesi</span>
-        <span>•</span>
-        <span>📐 3D Lazer Rölöve</span>
-        <span>•</span>
-        <span>🏛️ 28 Yıllık Tasarım Mirası</span>
-      </div>
-    </div>
+<!-- ===================================================================== -->
+<!-- PLAN MUTFAK BİREBİR FOOTER YAPISI & RENKLERİ (#23323A + #172127)      -->
+<!-- ===================================================================== -->
+<footer id="footer" class="bg-[#23323A] text-[#9AA7AF] font-['Open_Sans',sans-serif] text-xs pt-16 border-t-4 border-[#CB000F]">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
     
-    <!-- Linkler -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 text-[11.5px]">
-      <a href="/sitemap.xml" target="_blank" class="p-3 bg-white border border-gray-200 hover:border-sky-500 transition flex items-center justify-between group rounded shadow-xs">
-        <span class="group-hover:text-sky-600 text-zinc-700 font-medium">XML Site Haritası</span>
-        <span class="text-sky-400">↗</span>
-      </a>
-      <a href="/robots.txt" target="_blank" class="p-3 bg-white border border-gray-200 hover:border-sky-500 transition flex items-center justify-between group rounded shadow-xs">
-        <span class="group-hover:text-sky-600 text-zinc-700 font-medium">Robots.txt İndeksi</span>
-        <span class="text-sky-400">↗</span>
-      </a>
-      <a href="/llms.txt" target="_blank" class="p-3 bg-white border border-gray-200 hover:border-sky-500 transition flex items-center justify-between group rounded shadow-xs">
-        <span class="group-hover:text-sky-600 text-zinc-700 font-medium">LLMs.txt Bilgi Grafı</span>
-        <span class="text-sky-400">↗</span>
-      </a>
-      <a href="/feed.xml" target="_blank" class="p-3 bg-white border border-gray-200 hover:border-sky-500 transition flex items-center justify-between group rounded shadow-xs">
-        <span class="group-hover:text-sky-600 text-zinc-700 font-medium">RSS 2.0 Yayını</span>
-        <span class="text-sky-400">↗</span>
-      </a>
-        <span class="text-sky-400">↗</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ANA CARTIER & ROLEX LÜKS DARK EMERALD FOOTER -->
-<footer class="bg-slate-950 text-slate-400 border-t border-slate-800 py-16 text-xs">
-  <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
-    
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-slate-800 pb-12">
+    <!-- 4 KOLONLU PLAN MUTFAK DÜZENİ -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-[#2D3E48]">
       
-      <!-- Kolon 1: Marka & Açıklama -->
+      <!-- KOLON 1: LOGO + FİRMA TANITIMI -->
       <div class="space-y-4">
-        <div class="flex items-center gap-3">
+        <a href="/" class="flex items-center gap-3">
           <img 
             src="/logo.png" 
-            alt="İzmir Mutfak Banyo Logo" 
-            class="h-12 w-auto object-contain shrink-0" 
-            style="filter: drop-shadow(0 0 10px rgba(14, 165, 233, 0.4));"
+            alt="İzmir Mutfak Banyo" 
+            class="h-12 w-auto object-contain bg-white rounded p-1" 
             width="48" 
             height="48" 
           />
           <div>
-            <span class="text-sm font-serif tracking-wider text-white uppercase block leading-none font-bold">İZMİR MUTFAK BANYO</span>
-            <span class="text-[9px] uppercase tracking-[0.25em] text-sky-400 font-semibold block mt-1">LUXURY ATELIER & MIMARLIK</span>
+            <span class="font-['Montserrat',sans-serif] text-sm font-extrabold text-white uppercase block leading-none">
+              İZMİR MUTFAK BANYO
+            </span>
+            <span class="text-[9px] uppercase tracking-wider text-[#CB000F] font-bold block mt-1">
+              TASARIM &amp; İMALAT
+            </span>
+          </div>
+        </a>
+        <p class="text-xs text-[#B2BFC7] font-light leading-relaxed">
+          İzmir Mutfak Banyo sahip olduğu 28 yıllık deneyimi ile yenilikçi mutfak tasarımları ve anahtar teslim dekorasyon üzerine hizmet vermektedir. Doğrudan Buca Adatepe imalat atölyemizden birinci el üretim ve profesyonel montaj garantisi sunuyoruz.
+        </p>
+      </div>
+
+      <!-- KOLON 2: MODELLERİMİZ -->
+      <div class="space-y-3">
+        <h4 class="font-['Montserrat',sans-serif] text-sm font-bold uppercase tracking-wider text-white border-b-2 border-[#CB000F] pb-2 inline-block">
+          Modellerimiz
+        </h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="/modern-mutfak-modelleri/" class="hover:text-white hover:translate-x-1 inline-block transition">Modern Mutfak Modelleri</a></li>
+          <li><a href="/klasik-country-mutfak-modelleri/" class="hover:text-white hover:translate-x-1 inline-block transition">Klasik &amp; Country Mutfak</a></li>
+          <li><a href="/hazir-mutfak-modelleri-izmir/" class="hover:text-white hover:translate-x-1 inline-block transition">Akrilik &amp; Lake Dolaplar</a></li>
+          <li><a href="/yasam-alanlari-mutfak-modelleri/" class="hover:text-white hover:translate-x-1 inline-block transition">Ada Mutfak &amp; Yaşam Alanları</a></li>
+          <li><a href="/tasarimlar/?kategori=banyo" class="hover:text-white hover:translate-x-1 inline-block transition">Lüks Banyo Tasarımları</a></li>
+          <li><a href="/tasarimlar/?kategori=kapilar" class="hover:text-white hover:translate-x-1 inline-block transition">İç Mimari Kapılar</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLON 3: HİZMETLERİMİZ & MALİYET -->
+      <div class="space-y-3">
+        <h4 class="font-['Montserrat',sans-serif] text-sm font-bold uppercase tracking-wider text-white border-b-2 border-[#CB000F] pb-2 inline-block">
+          Tadilat &amp; Hesaplama
+        </h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="/izmir-komple-mutfak-tadilati/" class="hover:text-white hover:translate-x-1 inline-block transition">Komple Mutfak Tadilatı</a></li>
+          <li><a href="/izmir-banyo-yenileme-seramik/" class="hover:text-white hover:translate-x-1 inline-block transition">Banyo Yenileme &amp; Seramik</a></li>
+          <li><a href="/izmir-komple-daire-tadilati/" class="hover:text-white hover:translate-x-1 inline-block transition">Komple Daire Tadilatı</a></li>
+          <li><a href="/izmir-anahtar-teslim-tadilat/" class="hover:text-white hover:translate-x-1 inline-block transition">Anahtar Teslim Taahhüt</a></li>
+          <li>
+            <a href="/maliyet-hesapla/" class="text-[#CB000F] hover:text-white font-bold inline-flex items-center gap-1 transition">
+              <span>🧮 Canlı Maliyet Hesapla</span> <span>→</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- KOLON 4: İLETİŞİM & ATÖLYE -->
+      <div class="space-y-3">
+        <h4 class="font-['Montserrat',sans-serif] text-sm font-bold uppercase tracking-wider text-white border-b-2 border-[#CB000F] pb-2 inline-block">
+          İletişim Bilgileri
+        </h4>
+        <div class="space-y-2 text-xs text-[#B2BFC7]">
+          <div>
+            <strong class="text-white block font-['Montserrat',sans-serif]">İmalat Atölyesi:</strong>
+            <span>Adatepe, Özbekistan Cd. no:10/f, 35000 Buca/İzmir</span>
+          </div>
+          <div>
+            <strong class="text-white block font-['Montserrat',sans-serif]">Telefon:</strong>
+            <a href="tel:05393333303" class="text-white hover:text-[#CB000F] font-bold text-sm transition">0539 333 33 03</a>
+          </div>
+          <div>
+            <strong class="text-white block font-['Montserrat',sans-serif]">WhatsApp Destek:</strong>
+            <a href={siteConfig.whatsappUrl} target="_blank" rel="noopener noreferrer" class="text-[#25D366] hover:underline font-bold transition">0539 333 33 03</a>
+          </div>
+          <div class="pt-1">
+            <span class="text-[11px] text-[#7F8C8D]">Pzt - Cmt: 09:00 - 19:30</span>
           </div>
         </div>
-        <p class="text-slate-400 font-light leading-relaxed text-[11.5px]">
-          Kişiye ve mekânın karakterine özel tasarlanan mutfak dolapları, lüks banyo renovasyonları ve anahtar teslim mimari taahhüt. 28 yıllık tecrübe, 137 tescilli model arşivi.
-        </p>
-        <div class="text-[11px] text-slate-300 font-medium space-y-1 pt-1">
-          <div>📍 <strong>Atölye:</strong> Adatepe, Özbekistan Cd. no:10/f, 35000 Buca/İzmir</div>
-          <div>📞 <strong>Telefon:</strong> <a href="tel:05393333303" class="hover:text-sky-400 transition font-bold text-white">0539 333 33 03</a></div>
-          <div>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/905393333303" target="_blank" class="text-[#00FF66] font-bold hover:underline">0539 333 33 03</a></div>
-        </div>
       </div>
 
-      <!-- Kolon 2: Mimari Hizmetler -->
-      <div class="space-y-3">
-        <h4 class="text-xs font-bold uppercase tracking-widest text-white">Mimari Hizmetler</h4>
-        <ul class="space-y-2.5 text-[11.5px]">
-          <li><a href="/izmir-mutfak-dolabi-imalati/" class="hover:text-sky-400 transition">Özel Ölçü Lüks Mutfak Dolabı</a></li>
-          <li><a href="/izmir-komple-mutfak-tadilati/" class="hover:text-sky-400 transition">Komple Mutfak Renovasyonu</a></li>
-          <li><a href="/izmir-banyo-yenileme-seramik/" class="hover:text-sky-400 transition">Lüks Banyo Tasarımı & Seramik</a></li>
-          <li><a href="/izmir-komple-daire-tadilati/" class="hover:text-sky-400 transition">Komple Daire Renovasyonu</a></li>
-          <li><a href="/izmir-anahtar-teslim-tadilat/" class="hover:text-sky-400 transition">Anahtar Teslim Taahhüt</a></li>
-        </ul>
-      </div>
-
-      <!-- Kolon 3: Tasarım Koleksiyonu -->
-      <div class="space-y-3">
-        <h4 class="text-xs font-bold uppercase tracking-widest text-white">Tasarım Koleksiyonu (137)</h4>
-        <ul class="space-y-2.5 text-[11.5px]">
-          <li><a href="/tasarimlar/?kategori=mutfak" class="hover:text-sky-400 transition">Mutfak Modelleri (40 Model)</a></li>
-          <li><a href="/tasarimlar/?kategori=banyo" class="hover:text-sky-400 transition">Lüks Banyo Mobilyaları (25 Model)</a></li>
-          <li><a href="/tasarimlar/?kategori=kapilar" class="hover:text-sky-400 transition">Özel Tasarım Kapılar (39 Model)</a></li>
-          <li><a href="/tasarimlar/?kategori=gomme-dolap" class="hover:text-sky-400 transition">Giyinme Odası (33 Model)</a></li>
-          <li><a href="/tasarimlar/" class="hover:text-white font-bold transition text-sky-400">Tüm Koleksiyonu İncele (137) →</a></li>
-        </ul>
-      </div>
-
-      <!-- Kolon 4: Çalışma Saatleri & Keşif -->
-      <div class="space-y-3">
-        <h4 class="text-xs font-bold uppercase tracking-widest text-white">Atölye & Keşif</h4>
-        <p class="text-[11.5px] text-slate-400 leading-relaxed">
-          Pazartesi – Cumartesi: 08:30 – 19:30<br>
-          Pazar: Randevu ile Lazer Keşif
-        </p>
-        <div class="pt-2">
-          <a 
-            href={siteConfig.whatsappUrl} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#C5A880] hover:bg-[#D4AF37] text-sky-600 font-bold rounded transition border border-[#E5C378]"
-          >
-            <span>Hızlı 3D Keşif İste</span>
-            <span>→</span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- BÖLÜM: KURUMSAL EKOSİSTEM & OTORİTE AĞI -->
-    <div class="pt-2 pb-6 border-b border-slate-800 text-center space-y-3">
-      <span class="text-[10.5px] uppercase font-bold tracking-[0.2em] text-sky-400/90 block">
-        Kurumsal Ekosistem & Otorite Ağı
-      </span>
-      <div class="flex flex-wrap items-center justify-center gap-x-3.5 gap-y-2 text-[11px] text-[#A69B8D]">
-        <a href="https://drfin.com.tr/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition underline-offset-4 hover:underline">drfin.com.tr</a>
-        <span class="text-[#092B1B] select-none">•</span>
-        <a href="https://excelarsiv.com/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition underline-offset-4 hover:underline">excelarsiv.com</a>
-        <span class="text-[#092B1B] select-none">•</span>
-        <a href="https://inversioncore.com/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition underline-offset-4 hover:underline">inversioncore.com</a>
-        <span class="text-[#092B1B] select-none">•</span>
-        <a href="https://belginkuyumculuk.com/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition underline-offset-4 hover:underline">belginkuyumculuk.com</a>
-        <span class="text-[#092B1B] select-none">•</span>
-        <a href="https://saatchi.com.tr/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition underline-offset-4 hover:underline">saatchi.com.tr</a>
-        <span class="text-[#092B1B] select-none">•</span>
-        <a href="https://dilekceyazdir.com.tr/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition underline-offset-4 hover:underline">dilekceyazdir.com.tr</a>
-        <span class="text-[#092B1B] select-none">•</span>
-        <a href="https://htmlandhtml.com/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition underline-offset-4 hover:underline">htmlandhtml.com</a>
-        <span class="text-[#092B1B] select-none">•</span>
-        <a href="https://degerlet.com/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition underline-offset-4 hover:underline">degerlet.com</a>
-      </div>
-    </div>
-
-    <!-- Alt Telif & Bilgi -->
-    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#8C8377]">
-      <p>© {currentYear} İzmir Mutfak Banyo Luxury Mimarlık & Atölye İmalatı. Tüm hakları saklıdır.</p>
-      <div class="flex items-center gap-4">
-        <span>İzmir / Buca</span>
-        <span>•</span>
-        <span>Mutfak, Banyo, Kapı & Anahtar Teslim Renovasyon</span>
-      </div>
     </div>
 
   </div>
+
+  <!-- LOWER FOOTER (TELİF ALANI) -->
+  <div id="lower-footer" class="bg-[#172127] py-4 text-[#7F8C8D] text-xs">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div>
+        <span>Copyright © {currentYear} </span>
+        <a href="/" class="text-white hover:text-[#CB000F] font-bold transition">İzmir Mutfak Banyo</a>
+        <span> Tüm Hakları Saklıdır.</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px]">
+        <a href="/sitemap.xml" class="hover:text-white transition">Site Haritası</a>
+        <span>•</span>
+        <a href="/hakkimizda/" class="hover:text-white transition">Hakkımızda</a>
+        <span>•</span>
+        <a href="/iletisim/" class="hover:text-white transition">İletişim</a>
+      </div>
+    </div>
+  </div>
+
 </footer>
