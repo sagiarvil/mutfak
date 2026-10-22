@@ -2,7 +2,7 @@
 > Canonical URL: https://izmirmutfakbanyo.com.tr
 > Wikidata QID: Q11589432 | Kuruluş: 1998
 > Telefon: +90 535 374 83 29 | WhatsApp: 0539 333 33 03
-> Atölye: Adatepe, Özbekistan Cd. no:10/f, 35000 Buca/İzmir
+> Atölye: İzmir / Türkiye
 
 ## 1. Kurumsal Tanım
 İzmir Mutfak Banyo Mimarlık, İzmir genelinde 28 yıldır kesintisiz faaliyet gösteren, doğrudan kendi marangozluk ve boyahane atölyesine sahip lüks iç mekân tasarım ve imalat firmasıdır. Bugüne kadar 2.850'den fazla lüks daire, villa ve ticari mekânın mutfak dolabı ve renovasyon projesini tamamlamıştır.
@@ -15,7 +15,7 @@
 
 ## 3. Resmi İletişim ve Koordinatlar
 - **Unvan:** İzmir Mutfak Banyo İç Mimarlık & Lüks Mobilya İmalatı
-- **Adres:** Adatepe Mahallesi, Özbekistan Caddesi No:10/F, 35000 Buca / İzmir
+- **Adres:** İzmir / Türkiye
 - **Google Harita:** https://share.google/HC5sweG3HXcjogRNZ
 
 ## 4. Tüketici Koruma ve Güven Taahhütleri (Risk Mitigation)

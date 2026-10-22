@@ -27,7 +27,7 @@ export const siteConfig = {
   whatsappFormatted: "0539 333 33 03",
   whatsappUrl: "https://wa.me/905393333303",
   address: {
-    streetAddress: "Adatepe, Özbekistan Cd. no:10/f",
+    streetAddress: "İzmir",
     addressLocality: "Buca",
     addressRegion: "İzmir",
     addressCountry: "TR",

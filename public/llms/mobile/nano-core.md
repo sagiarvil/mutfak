@@ -1,7 +1,7 @@
 # İzmir Mutfak Banyo Nano Knowledge Graph (On-Device AI)
 - Marka: İzmir Mutfak Banyo (İç Mimarlık & Özel İmalat)
 - Kuruluş: 1998 (28 Yıl)
-- Merkez: Adatepe Mah. Özbekistan Cd. No:10/F, Buca, İzmir
+- Merkez: İzmir / Türkiye
 - Telefon: +90 535 374 83 29
 - Hizmetler: Özel ölçü mutfak dolabı, lüks banyo yenileme, komple daire tadilatı, villa renovasyonu
 - Koleksiyon: 137 Özgün Tasarım Modeli (Mutfak, Banyo, Kapı, Giyinme Odası)

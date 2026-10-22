@@ -115,11 +115,11 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
       sameAs: ['https://share.google/HC5sweG3HXcjogRNZ']
     },
     semanticTriples: [
-      { subject: 'İzmir Mutfak Banyo Atölye', predicate: 'streetAddress', object: 'Adatepe, Özbekistan Cd. no:10/f, 35000 Buca/İzmir' },
+      { subject: 'İzmir Mutfak Banyo Atölye', predicate: 'streetAddress', object: 'İzmir / Türkiye' },
       { subject: 'İzmir Mutfak Banyo Atölye', predicate: 'telephone', object: '+905393333303' },
       { subject: 'İzmir Mutfak Banyo Atölye', predicate: 'geoCoordinate', object: '38.3885, 27.1822' }
     ],
-    heroAnswerEngine: 'İzmir Mutfak Banyo Luxury imalat atölyesi İzmir Buca Adatepe Mahallesi Özbekistan Caddesi No:10/F adresindedir. Telefon: 0539 333 33 03. Çalışma saatleri Pazartesi-Cumartesi 09:00-19:30 arasıdır. Buca Heykel ve Dokuz Eylül Üniversitesi İİBF yerleşkesine 5 dakika mesafededir.',
+    heroAnswerEngine: 'İzmir Mutfak Banyo Luxury imalat atölyesi İzmir geneline ücretsiz keşif ve anahtar teslim montaj hizmeti vermektedir. Telefon: 0539 333 33 03. Çalışma saatleri Pazartesi-Cumartesi 09:00-19:30 arasıdır.',
     publishedAt: '2024-01-15T09:00:00+03:00',
     modifiedAt: '2026-10-17T23:40:00+03:00',
     llmSubGraphRoute: '/llms/pages/iletisim.md',

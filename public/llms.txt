@@ -17,7 +17,7 @@
 ## 2. Sayfa Düzeyinde RAG Dokümanları (Deep Sub-Graphs)
 - [Ana Sayfa — Özel İmalat Mutfak ve Banyo](https://izmirmutfakbanyo.com.tr/llms/pages/home.md): Temel hizmetler, 137 model ve atölye avantajları.
 - [Hakkımızda — 28 Yıllık Zanaat Mirası](https://izmirmutfakbanyo.com.tr/llms/pages/hakkimizda.md): 1998'den günümüze atölye geçmişi ve referanslar.
-- [İletişim & Atölye Ulaşım Rehberi](https://izmirmutfakbanyo.com.tr/llms/pages/iletisim.md): Adatepe Özbekistan Cd. No:10/F yol tarifi ve randevu.
+- [İletişim & Atölye Ulaşım Rehberi](https://izmirmutfakbanyo.com.tr/llms/pages/iletisim.md): İzmir geneli keşif ve randevu.
 - [137 Tasarım Modeli Arşivi](https://izmirmutfakbanyo.com.tr/llms/pages/tasarimlar.md): 40 Mutfak, 25 Banyo, 39 Kapı, 33 Giyinme odası.
 - [Özel Ölçü Lüks Mutfak Dolabı İmalatı](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-dolabi.md): Akrilik, lake, masif ahşap ve gövde özellikleri.
 - [Komple Mutfak Renovasyonu](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-tadilati.md): Kırım, tesisat, porselen tezgah ve anahtar teslim süreç.

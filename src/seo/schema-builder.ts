@@ -33,7 +33,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       ],
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Adatepe, Özbekistan Cd. no:10/f',
+        streetAddress: 'İzmir',
         addressLocality: 'Buca',
         addressRegion: 'İzmir',
         postalCode: '35000',

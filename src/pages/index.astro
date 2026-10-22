@@ -3,112 +3,91 @@ import Layout from "../layouts/Layout.astro";
 import { siteConfig } from "../data/siteConfig";
 
 const seo = {
-  title: "Plan Mutfak Tarzı Lüks Mutfak Tasarımı, Banyo & Dekorasyon | İzmir Mutfak Banyo",
-  description: "İzmir mutfak tasarım, dekorasyon, tadilat ve modüler mutfak sistemleri. 28 yıllık deneyim ile kişiye özel lake ve akrilik mutfak dolapları, lüks banyo ve anahtar teslim tadilat.",
+  title: "İzmir Mutfak Banyo — Lüks Ada Mutfak, Banyo & Anahtar Teslim Tadilat",
+  description: "İzmir genelinde kişiye ve mekana özel lüks ada mutfak dolapları, lüks banyo renovasyonu, giyinme odaları ve anahtar teslim daire/villa taahhüdü. 28 yıllık üretim tecrübesi.",
   canonical: `${siteConfig.siteUrl}/`,
-  serviceName: "İzmir Mutfak Banyo & Tasarım",
+  serviceName: "İzmir Mutfak Banyo Tasarım & İmalat",
   keywords: [
-    "izmir mutfak tasarım",
-    "izmir mutfak dekorasyon",
-    "izmir mutfak tadilat",
-    "izmir modüler mutfak",
-    "izmir mutfak dolap modelleri",
-    "izmir hazır mutfak",
-    "izmir mutfak firmaları",
-    "banyo dolap modelleri",
-    "izmir banyo dekorasyon",
-    "izmir kapı"
-  ],
-  faqList: [
-    {
-      question: "Dolap kapaklarında hangi malzemeleri tercih ediyorsunuz?",
-      answer: "İpek mat lake, İtalyan akrilik, doğal masif meşe kaplama ve neme dayanıklı 18mm MDF gövde kullanıyoruz."
-    },
-    {
-      question: "Tasarım aşamasında 3D çizim hizmeti veriyor musunuz?",
-      answer: "Evet, evinize gelip milimetrik lazer rölöve alıyor ve fotogerçekçi 3D mimari çizimi ücretsiz olarak hazırlıyoruz."
-    },
-    {
-      question: "Teslimat ve montaj süreniz nedir?",
-      answer: "Sözleşmeli süre taahhüdü veriyoruz. İmalat atölyemizde hazırlanan dolaplar belirlenen günde 1 günde monte edilir."
-    }
+    "izmir ada mutfak",
+    "izmir mutfak dolabı imalatı",
+    "lüks banyo tadilatı izmir",
+    "lake mutfak modelleri",
+    "akrilik mutfak dolabı",
+    "anahtar teslim ev tadilatı izmir"
   ]
 };
 
-// Plan Mutfak Tarzı 3 Ana Hizmet Kartı
-const mainCategories = [
+// 4 Ana Kategori - 5 Saniyede Ne Satıldığını Gösteren Büyük Kartlar
+const mainSectors = [
   {
-    title: "Mutfak Tasarımı",
-    desc: "Kişiye ve mekana özel ada mutfaklar, modern lake ve akrilik dolap sistemleri.",
+    num: "01",
+    tag: "ÖZEL İMALAT",
+    title: "LÜKS ADA MUTFAK",
+    sub: "Calacatta Mermer • İpek Mat Lake • Blum Mekanizma",
     img: "/media/showcase/mutfak-calacatta-hero.webp",
     link: "/tasarimlar/?kategori=mutfak",
-    btn: "MUTFAK MODELLERİ"
+    cta: "Mutfak Modelleri"
   },
   {
-    title: "Banyo Dekorasyonu",
-    desc: "Suya tam dayanıklı marin banyo dolapları, doğal taş ve lüks duşakabin çözümleri.",
+    num: "02",
+    tag: "ISLAK HACİM",
+    title: "MİMARİ BANYO",
+    sub: "Arduvaz Doğal Taş • Marin Ahşap • Füme Cam Duş",
     img: "/media/showcase/banyo-arduvaz-luks.png",
     link: "/tasarimlar/?kategori=banyo",
-    btn: "BANYO MODELLERİ"
+    cta: "Banyo Modelleri"
   },
   {
-    title: "Kapı & Giyinme Odası",
-    desc: "Özel tasarım iç oda kapıları, cam bölmeli LED aydınlatmalı giyinme odaları.",
+    num: "03",
+    tag: "MODERN YAŞAM",
+    title: "GİYİNME ODASI & KAPI",
+    sub: "Füme Cam Vitrin • Entegre LED • Lake Oda Kapıları",
     img: "/media/showcase/gardirob-fume-led.webp",
     link: "/tasarimlar/?kategori=kapilar",
-    btn: "KAPI & GİYİNME ODASI"
+    cta: "Dolap & Kapı Modelleri"
+  },
+  {
+    num: "04",
+    tag: "ANAHTAR TESLİM",
+    title: "KOMPLE EV TADİLATI",
+    sub: "Kırımdan Montaja • Tesisat • Sabit Fiyat Garantisi",
+    img: "/media/showcase/mutfak-havuz-ada.webp",
+    link: "/izmir-anahtar-teslim-tadilat/",
+    cta: "Tadilat Detayları"
   }
 ];
 
-// Plan Mutfak Tarzı Öne Çıkan Modeller Vitrini
-const vitrinModeller = [
+// Görsel Hikaye Vitrini (Kullanıcının Gerçek Fotoğrafları)
+const galleryStories = [
   {
-    title: "Calacatta Şelale Ada Mutfak",
-    sub: "İtalyan Doğal Mermer & İpek Mat Lake",
-    img: "/media/showcase/mutfak-calacatta-hero.webp",
-    badge: "ADA MUTFAK"
-  },
-  {
-    title: "Panoramik Havuz Cepheli Ada",
-    sub: "Vizon Akrilik & Gizli Tavan Aydınlatması",
+    title: "Panoramik Havuzlu Ada Mutfak",
+    tag: "VİLLA PROJESİ",
     img: "/media/showcase/mutfak-havuz-ada.webp",
-    badge: "VİLLA PROJESİ"
+    span: "col-span-1 md:col-span-2 row-span-2 aspect-[16/10] md:aspect-auto"
   },
   {
-    title: "Country Masif Ahşap Mutfak",
-    sub: "Doğal Ahşap Tezgah & Rustik Çizgiler",
-    img: "/media/showcase/mutfak-country-ada.png",
-    badge: "COUNTRY"
+    title: "İtalyan Açık Salon & Ada Mutfak",
+    tag: "MİLANO DİZAYN",
+    img: "/media/showcase/salon-ada-mutfak.webp",
+    span: "col-span-1 aspect-[4/3]"
   },
   {
-    title: "Modern Minimalist Ada Mutfak",
-    sub: "Çizgisel Tasarım & Gizli Kulp Sistemi",
-    img: "/media/showcase/mutfak-minimal-ada.webp",
-    badge: "MODERN"
-  },
-  {
-    title: "Doğal Taş & Arduvaz Lüks Banyo",
-    sub: "Marin Ahşap Tezgah & Füme Cam Kabin",
-    img: "/media/showcase/banyo-arduvaz-luks.png",
-    badge: "LÜKS BANYO"
-  },
-  {
-    title: "Füme Cam Kapaklı LED Gardırop",
-    sub: "Özel Tasarım Giyinme Odası Dolabı",
-    img: "/media/showcase/gardirob-fume-led.webp",
-    badge: "GİYİNME ODASI"
-  },
-  {
-    title: "Antrasit Akrilik & LED Aydınlatma",
-    sub: "Boy Kiler & Fümeli Cam Vitrin",
+    title: "Antrasit Akrilik & Fümeli Cam Dolap",
+    tag: "BOY KİLER",
     img: "/media/showcase/mutfak-antrasit-led.webp",
-    badge: "ÖZEL İMALAT"
+    span: "col-span-1 aspect-[4/3]"
   },
   {
-    title: "Akustik Ahşap Lambrili TV Konsolu",
-    sub: "Doğal Ceviz Çıta & Mat Antrasit Lake",
-    img: "/media/showcase/salon-lambri-unite.webp",
-    badge: "SALON DİZAYN"
+    title: "Monoblok Taş Lavabo & Altın Batarya",
+    tag: "LÜKS BANYO",
+    img: "/media/showcase/banyo-altin-lavabo.webp",
+    span: "col-span-1 aspect-[4/3]"
+  },
+  {
+    title: "Country Masif Ahşap Ada",
+    tag: "RUSTİK ŞIKLIK",
+    img: "/media/showcase/mutfak-country-ada.png",
+    span: "col-span-1 aspect-[4/3]"
   }
 ];
 ---
@@ -116,68 +95,84 @@ const vitrinModeller = [
 <Layout seo={seo} activeService="Ana Sayfa">
 
   <!-- ===================================================================== -->
-  <!-- 1. PLAN MUTFAK BİREBİR REVSLIDER HERO BÖLÜMÜ (TAM GENİŞLİK SLIDER)    -->
+  <!-- 1. YENİ NESİL 2077 İNTERAKTİF HERO (5 SANİYEDE ANLAŞILAN GÖRSEL ŞÖLEN)-->
   <!-- ===================================================================== -->
-  <section id="slider" class="relative w-full bg-[#111] overflow-hidden" style="min-height: 680px;">
+  <section class="relative w-full bg-[#172127] text-white overflow-hidden" style="min-height: 82vh;">
     
-    <!-- Slider Ana Arka Plan Görseli (Kullanıcının Calacatta Mermer Ada Mutfağı) -->
+    <!-- Arka Plan Büyük Görsel + Dinamik Gradient -->
     <div class="absolute inset-0 w-full h-full">
       <img 
         src="/media/showcase/mutfak-calacatta-hero.webp" 
-        alt="Mutfağınıza Özel Dizayn - Plan Mutfak Tarzı İzmir Mutfak Banyo" 
-        class="w-full h-full object-cover object-center scale-100 transition-transform duration-1000 ease-out" 
+        alt="İzmir Mutfak Banyo Lüks Ada Mutfak Tasarımı" 
+        class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out" 
         width="1920" 
         height="1080" 
         loading="eager" 
         fetchpriority="high"
       />
-      <!-- Plan Mutfak Koyu Katman (text okunurluğu için koyu filtre) -->
-      <div class="absolute inset-0 bg-black/50"></div>
+      <!-- Koyu Füme & Kristal Karartma -->
+      <div class="absolute inset-0 bg-gradient-to-r from-[#172127]/95 via-[#172127]/60 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#172127] via-transparent to-black/30"></div>
     </div>
 
-    <!-- Slider İçerik Katmanı (Plan Mutfak tp-caption Birebir Stilleri) -->
-    <div class="relative max-w-[1200px] mx-auto px-4 sm:px-6 min-h-[680px] flex flex-col justify-center items-center text-center z-10 py-20">
+    <!-- Hero Ön Katman -->
+    <div class="relative max-w-[1200px] mx-auto px-4 sm:px-6 min-h-[82vh] flex flex-col justify-center items-start z-10 py-16">
       
-      <div class="max-w-4xl space-y-4">
+      <div class="max-w-2xl space-y-6">
         
-        <!-- Büyük Kalın Başlık (Plan Mutfak big_extraheavy_60 Stili) -->
-        <h1 
-          class="font-['Montserrat',sans-serif] text-3xl sm:text-5xl md:text-6xl lg:text-[70px] font-black text-white uppercase tracking-tight leading-[1.1]" 
-          style="text-shadow: 2px 3px 10px rgba(0,0,0,0.9);"
-        >
-          Mutfağınıza Özel Dizayn
-        </h1>
-
-        <!-- Plan Mutfak Kırmızı İnce Ayraç Çizgisi (lines.png karşılığı) -->
-        <div class="flex items-center justify-center gap-2 py-1">
-          <span class="w-12 sm:w-16 h-[3px] bg-white/60"></span>
-          <span class="w-16 sm:w-24 h-[4px] bg-[#CB000F]"></span>
-          <span class="w-12 sm:w-16 h-[3px] bg-white/60"></span>
+        <!-- Üst Vurucu Rozet -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-black/60 border border-white/20 backdrop-blur-md">
+          <span class="w-2 h-2 rounded-full bg-[#CB000F] animate-ping"></span>
+          <span class="text-[11px] font-extrabold tracking-[0.2em] uppercase text-white font-['Montserrat',sans-serif]">
+            DOĞRUDAN ATÖLYEDEN • ARACISIZ İMALAT
+          </span>
         </div>
 
-        <!-- Alt Başlık (Plan Mutfak extrabold_littlesub_open Stili) -->
-        <p 
-          class="font-['Montserrat',sans-serif] text-sm sm:text-lg md:text-xl font-bold text-white tracking-wide max-w-2xl mx-auto" 
-          style="text-shadow: 1px 2px 6px rgba(0,0,0,0.85);"
-        >
-          Kalite, şıklık ve güven arıyorsanız yapmanız gereken sadece bize ulaşmak.
+        <!-- 5 Saniyede Ne Olduğunu Vuran Ana Başlık -->
+        <div class="space-y-2">
+          <h1 class="text-3xl sm:text-5xl lg:text-[62px] font-black text-white uppercase tracking-tight leading-[1.05] font-['Montserrat',sans-serif]">
+            LÜKS MUTFAK, BANYO &amp; TADİLAT.
+          </h1>
+          <div class="w-24 h-1.5 bg-[#CB000F]"></div>
+        </div>
+
+        <!-- 1 Satırlık Net Mesaj -->
+        <p class="text-base sm:text-lg text-gray-200 font-medium leading-relaxed font-['Montserrat',sans-serif] max-w-xl">
+          Evinizin kalbine İtalyan çizgisi: Kendi atölyemizde üretiyor, 1 günde sıfır hata ile monte ediyoruz.
         </p>
 
-        <!-- Plan Mutfak Butonları (#CB000F Kırmızı ve Şeffaf Çerçeveli) -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+        <!-- 3 Adet Canlı İtalyan Özellik Maddesi -->
+        <div class="grid grid-cols-3 gap-3 pt-1 text-xs">
+          <div class="p-3 bg-black/40 backdrop-blur-md rounded-lg border border-white/10">
+            <div class="text-[#CB000F] font-black text-sm">3D Çizim</div>
+            <div class="text-gray-300 text-[11px] mt-0.5">Ücretsiz Lazer Keşif</div>
+          </div>
+          <div class="p-3 bg-black/40 backdrop-blur-md rounded-lg border border-white/10">
+            <div class="text-[#CB000F] font-black text-sm">Sabit Fiyat</div>
+            <div class="text-gray-300 text-[11px] mt-0.5">Sözleşme Güvencesi</div>
+          </div>
+          <div class="p-3 bg-black/40 backdrop-blur-md rounded-lg border border-white/10">
+            <div class="text-[#CB000F] font-black text-sm">10 Yıl Garanti</div>
+            <div class="text-gray-300 text-[11px] mt-0.5">Avusturya Blum Ray</div>
+          </div>
+        </div>
+
+        <!-- İki Büyük Eylem Butonu -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3">
           <a 
             href={siteConfig.whatsappUrl} 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="px-8 py-3.5 bg-[#CB000F] hover:bg-[#b0000d] text-white font-['Montserrat',sans-serif] text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded transition-all duration-200 shadow-xl hover:scale-105"
+            class="px-8 py-4 bg-[#CB000F] hover:bg-[#b0000d] text-white font-['Montserrat',sans-serif] text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded transition-all duration-200 shadow-2xl flex items-center justify-center gap-2 hover:scale-105"
           >
-            Ücretsiz 3D Keşif Al
+            <span>WhatsApp ile 3D Keşif İste</span>
+            <span>→</span>
           </a>
           <a 
             href="/maliyet-hesapla/" 
-            class="px-8 py-3.5 bg-white/20 hover:bg-white hover:text-[#23323A] text-white font-['Montserrat',sans-serif] text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded border border-white/50 backdrop-blur-sm transition-all duration-200 hover:scale-105"
+            class="px-8 py-4 bg-white hover:bg-gray-100 text-[#172127] font-['Montserrat',sans-serif] text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded transition-all duration-200 shadow-xl flex items-center justify-center gap-2 hover:scale-105"
           >
-            🧮 Canlı Maliyet Hesapla
+            <span>🧮 30 Saniyede Fiyat Hesapla</span>
           </a>
         </div>
 
@@ -185,230 +180,102 @@ const vitrinModeller = [
 
     </div>
 
-    <!-- Plan Mutfak Slider Gezinme Okları (Sol / Sağ) -->
-    <div class="hidden sm:flex absolute inset-y-0 left-4 items-center z-20 pointer-events-none">
-      <button 
-        type="button" 
-        class="w-12 h-12 bg-black/40 hover:bg-[#CB000F] text-white rounded-full flex items-center justify-center backdrop-blur-sm transition pointer-events-auto"
-        aria-label="Önceki Slayt"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
-      </button>
-    </div>
-    <div class="hidden sm:flex absolute inset-y-0 right-4 items-center z-20 pointer-events-none">
-      <button 
-        type="button" 
-        class="w-12 h-12 bg-black/40 hover:bg-[#CB000F] text-white rounded-full flex items-center justify-center backdrop-blur-sm transition pointer-events-auto"
-        aria-label="Sonraki Slayt"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
-      </button>
+    <!-- Canlı Sayaç Şeridi (Hero Tabanı) -->
+    <div class="absolute bottom-0 inset-x-0 bg-[#23323A]/90 backdrop-blur-md border-t border-white/10 py-3 hidden md:block z-10">
+      <div class="max-w-[1200px] mx-auto px-4 sm:px-6 flex items-center justify-between text-xs font-['Montserrat',sans-serif]">
+        <div class="flex items-center gap-2">
+          <span class="text-[#CB000F] font-black text-base">137</span>
+          <span class="text-gray-300 font-bold uppercase">Özgün Model</span>
+        </div>
+        <div class="text-gray-600">•</div>
+        <div class="flex items-center gap-2">
+          <span class="text-[#CB000F] font-black text-base">28 Yıl</span>
+          <span class="text-gray-300 font-bold uppercase">Atölye Tecrübesi</span>
+        </div>
+        <div class="text-gray-600">•</div>
+        <div class="flex items-center gap-2">
+          <span class="text-[#CB000F] font-black text-base">2.850+</span>
+          <span class="text-gray-300 font-bold uppercase">Teslim Edilen Ev</span>
+        </div>
+        <div class="text-gray-600">•</div>
+        <div class="flex items-center gap-2">
+          <span class="text-emerald-400 font-black text-base">%100</span>
+          <span class="text-gray-300 font-bold uppercase">Kendi İmalatımız</span>
+        </div>
+      </div>
     </div>
 
   </section>
 
   <!-- ===================================================================== -->
-  <!-- 2. PLAN MUTFAK TARZI 3'LÜ KATEGORİ BLOKLARI (MUTFAK, BANYO, KAPI)      -->
+  <!-- 2. 5 SANİYEDE NE SATILDIĞINI ANLATAN 4 BÜYÜK ALAN KARTI                 -->
   <!-- ===================================================================== -->
   <section class="py-16 bg-[#F4F6F8] border-b border-gray-200">
-    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-8">
       
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {mainCategories.map((item) => (
-          <div class="group bg-white rounded-lg overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-            
-            <div class="relative aspect-[16/10] overflow-hidden bg-gray-100">
-              <img 
-                src={item.img} 
-                alt={item.title} 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                loading="lazy" 
-                width="400" 
-                height="250" 
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              <h3 class="absolute bottom-3 left-4 text-white font-['Montserrat',sans-serif] text-lg font-bold">
-                {item.title}
-              </h3>
-            </div>
-
-            <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-              <p class="text-xs text-[#555] font-['Open_Sans',sans-serif] leading-relaxed">
-                {item.desc}
-              </p>
-              
-              <a 
-                href={item.link} 
-                class="w-full py-2.5 bg-[#23323A] hover:bg-[#CB000F] text-white font-['Montserrat',sans-serif] text-xs font-bold uppercase tracking-wider text-center rounded transition"
-              >
-                {item.btn} →
-              </a>
-            </div>
-
-          </div>
-        ))}
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===================================================================== -->
-  <!-- 3. PLAN MUTFAK HAKKIMIZDA & TECRÜBE BANDI                              -->
-  <!-- ===================================================================== -->
-  <section class="py-16 bg-white border-b border-gray-200">
-    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
-      
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        
-        <!-- Sol: Tanıtım Metni (Plan Mutfak Stili) -->
-        <div class="lg:col-span-7 space-y-5">
-          <div class="inline-block border-b-2 border-[#CB000F] pb-1">
-            <span class="font-['Montserrat',sans-serif] text-xs font-extrabold uppercase tracking-widest text-[#CB000F]">
-              28 YILLIK DENEYİM
-            </span>
-          </div>
-
-          <h2 class="font-['Montserrat',sans-serif] text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#23323A] leading-tight">
-            İzmir Mutfak ve Banyo Tasarımında <br />
-            <span class="text-[#CB000F]">Yenilikçi &amp; Özel Çözümler</span>
-          </h2>
-
-          <p class="text-[#555] font-['Open_Sans',sans-serif] text-sm leading-relaxed">
-            İzmir Mutfak Banyo sahip olduğu 28 yıllık deneyimi ile yenilikçi mutfak tasarımları ve dekorasyonları üzerine hizmet vermektedir. Her zaman en iyi hizmeti en kaliteli şekilde sunmanın peşinde olan firmamız sürekli kendini geliştiren bir yapıya sahiptir.
-          </p>
-
-          <p class="text-[#555] font-['Open_Sans',sans-serif] text-sm leading-relaxed">
-            İzmir mutfak tasarım ihtiyaçları açısından oldukça kreatif bir ekibi ve yenilikçi bir vizyona sahip olan firmamız imzasını attığı her alanı eşsiz kılmayı başarmaktadır. Buca Adatepe imalat atölyemizde bilgisayarlı CNC parkurumuzla doğrudan birinci elden üretim yapıyoruz.
-          </p>
-
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-3 text-center">
-            <div class="p-3 bg-[#F4F6F8] rounded border border-gray-200">
-              <div class="font-['Montserrat',sans-serif] text-2xl font-black text-[#23323A]">137</div>
-              <div class="text-[10.5px] uppercase font-bold text-[#7F8C8D] mt-0.5">Model Arşivi</div>
-            </div>
-            <div class="p-3 bg-[#F4F6F8] rounded border border-gray-200">
-              <div class="font-['Montserrat',sans-serif] text-2xl font-black text-[#23323A]">28</div>
-              <div class="text-[10.5px] uppercase font-bold text-[#7F8C8D] mt-0.5">Yıl Tecrübe</div>
-            </div>
-            <div class="p-3 bg-[#F4F6F8] rounded border border-gray-200">
-              <div class="font-['Montserrat',sans-serif] text-2xl font-black text-[#CB000F]">10 Yıl</div>
-              <div class="text-[10.5px] uppercase font-bold text-[#7F8C8D] mt-0.5">Blum Garanti</div>
-            </div>
-            <div class="p-3 bg-[#F4F6F8] rounded border border-gray-200">
-              <div class="font-['Montserrat',sans-serif] text-2xl font-black text-[#23323A]">2.850+</div>
-              <div class="text-[10.5px] uppercase font-bold text-[#7F8C8D] mt-0.5">Teslim Ev</div>
-            </div>
-          </div>
-
-          <div class="pt-2">
-            <a 
-              href="/hakkimizda/" 
-              class="px-6 py-3 bg-[#23323A] hover:bg-[#CB000F] text-white font-['Montserrat',sans-serif] text-xs font-bold uppercase tracking-wider rounded transition inline-block"
-            >
-              Hakkımızda Detaylı Bilgi →
-            </a>
-          </div>
-
-        </div>
-
-        <!-- Sağ: Kendi CNC Atölye / Fabrika İmalat Görseli -->
-        <div class="lg:col-span-5">
-          <div class="relative rounded-lg overflow-hidden border-4 border-white shadow-xl">
-            <img 
-              src="/media/showcase/fabrika-cnc-uretim.png" 
-              alt="İzmir Mutfak Banyo CNC İmalat Atölyesi" 
-              class="w-full h-auto object-cover" 
-              width="600" 
-              height="400" 
-              loading="lazy" 
-            />
-            <div class="absolute bottom-0 inset-x-0 p-4 bg-[#23323A]/90 text-white text-xs backdrop-blur-sm">
-              <strong class="font-['Montserrat',sans-serif] block text-sm text-[#CB000F]">Buca Adatepe İmalat Atölyemiz</strong>
-              <span class="text-gray-300 text-[11.5px]">Aracı komisyonsuz, doğrudan fabrikadan evinize teslimat.</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===================================================================== -->
-  <!-- 4. PLAN MUTFAK TARZI ÖNE ÇIKAN MODELLER (8'Lİ SEÇKİN VİTRİN)           -->
-  <!-- ===================================================================== -->
-  <section class="py-16 bg-[#F4F6F8] border-b border-gray-200">
-    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-10">
-      
-      <!-- Başlık Bandı -->
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b-2 border-gray-200 pb-4">
+      <div class="flex items-end justify-between border-b-2 border-gray-200 pb-4">
         <div>
-          <span class="font-['Montserrat',sans-serif] text-xs font-extrabold uppercase tracking-widest text-[#CB000F]">
-            ÖZGÜN TASARIMLAR
+          <span class="text-[11px] font-black uppercase tracking-[0.2em] text-[#CB000F] font-['Montserrat',sans-serif] block">
+            UZMANLIK ALANLARIMIZ
           </span>
-          <h2 class="font-['Montserrat',sans-serif] text-2xl sm:text-3xl font-extrabold text-[#23323A] mt-1">
-            Öne Çıkan Modellerimiz
+          <h2 class="text-2xl sm:text-3xl font-black text-[#23323A] uppercase font-['Montserrat',sans-serif] mt-1">
+            Neler Üretiyoruz?
           </h2>
         </div>
-        <div>
-          <a 
-            href="/tasarimlar/" 
-            class="px-5 py-2.5 bg-[#CB000F] hover:bg-[#b0000d] text-white font-['Montserrat',sans-serif] text-xs font-bold uppercase tracking-wider rounded transition inline-block"
-          >
-            Tüm 137 Modeli Gör →
-          </a>
-        </div>
+        <a href="/tasarimlar/" class="text-xs font-bold text-[#CB000F] hover:text-[#23323A] transition font-['Montserrat',sans-serif] uppercase hidden sm:block">
+          Tüm Kataloğu Gör →
+        </a>
       </div>
 
-      <!-- 8 Model Grid'i -->
+      <!-- 4 Büyük Kart Grid'i (Hover Zoom & Neon Çerçeve) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {vitrinModeller.map((item) => (
-          <div class="group bg-white rounded overflow-hidden border border-gray-200 hover:border-[#CB000F] shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
-            
-            <div class="relative aspect-[4/3] overflow-hidden bg-gray-100">
+        {mainSectors.map((sector) => (
+          <a 
+            href={sector.link} 
+            class="group relative bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-[#CB000F] shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+          >
+            <!-- Üst Görsel -->
+            <div class="relative aspect-[4/3] overflow-hidden bg-[#172127]">
               <img 
-                src={item.img} 
-                alt={item.title} 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                src={sector.img} 
+                alt={sector.title} 
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" 
                 loading="lazy" 
                 width="400" 
                 height="300" 
               />
-              <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#23323A]/85 text-white font-['Montserrat',sans-serif] text-[9.5px] font-bold uppercase tracking-wider rounded">
-                {item.badge}
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              
+              <!-- Sayı & Rozet -->
+              <span class="absolute top-3 left-3 px-2 py-0.5 bg-black/70 text-white font-['Montserrat',sans-serif] text-[10px] font-black rounded">
+                {sector.num}
               </span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 bg-[#CB000F] text-white font-['Montserrat',sans-serif] text-[9px] font-black uppercase tracking-wider rounded">
+                {sector.tag}
+              </span>
+
+              <!-- Görsel İçi Başlık -->
+              <h3 class="absolute bottom-3 left-3 right-3 text-white font-['Montserrat',sans-serif] text-base font-black uppercase leading-tight group-hover:text-[#CB000F] transition">
+                {sector.title}
+              </h3>
             </div>
 
+            <!-- Kart Altı Açıklama & Buton -->
             <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
-              <div>
-                <h3 class="font-['Montserrat',sans-serif] text-sm font-bold text-[#23323A] group-hover:text-[#CB000F] transition line-clamp-1">
-                  {item.title}
-                </h3>
-                <p class="text-xs text-[#7F8C8D] font-['Open_Sans',sans-serif] mt-0.5">
-                  {item.sub}
-                </p>
-              </div>
+              <p class="text-xs text-[#555] font-['Montserrat',sans-serif] font-medium leading-relaxed">
+                {sector.sub}
+              </p>
 
-              <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                <a 
-                  href={`https://wa.me/905393333303?text=Merhaba,%20web%20sitenizdeki%20'${encodeURIComponent(item.title)}'%20modeli%20hakkında%20ücretsiz%203D%20keşif%20ve%20fiyat%20almak%20istiyorum.`} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  class="text-[#CB000F] hover:text-[#23323A] font-['Montserrat',sans-serif] text-xs font-bold inline-flex items-center gap-1"
-                >
-                  <span>3D Keşif İste</span>
+              <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-['Montserrat',sans-serif]">
+                <span class="text-[#CB000F] font-black group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                  <span>{sector.cta}</span>
                   <span>→</span>
-                </a>
-                <a 
-                  href="/maliyet-hesapla/" 
-                  class="text-[11px] text-[#7F8C8D] hover:text-[#CB000F] font-semibold"
-                >
-                  Fiyat Hesapla
-                </a>
+                </span>
+                <span class="text-gray-400 text-[10px] uppercase font-bold">1. El Atölye</span>
               </div>
             </div>
 
-          </div>
+          </a>
         ))}
       </div>
 
@@ -416,66 +283,79 @@ const vitrinModeller = [
   </section>
 
   <!-- ===================================================================== -->
-  <!-- 5. ÖNCESİ / SONRASI ŞANTİYE DÖNÜŞÜM KANITI (BEFORE & AFTER)            -->
+  <!-- 3. GERÇEK ŞANTİYE DÖNÜŞÜM KANITI (KADINLARIN EN ÇOK GÜVENDİĞİ MODÜL) -->
   <!-- ===================================================================== -->
   <section class="py-16 bg-white border-b border-gray-200">
     <div class="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-8">
       
       <div class="text-center max-w-2xl mx-auto space-y-2">
-        <span class="font-['Montserrat',sans-serif] text-xs font-extrabold uppercase tracking-widest text-[#CB000F]">
-          SOMUT REFERANS KANITI
+        <span class="text-[11px] font-black uppercase tracking-[0.2em] text-[#CB000F] font-['Montserrat',sans-serif] block">
+          ŞANTİYE DÖNÜŞÜM KANITI
         </span>
-        <h2 class="font-['Montserrat',sans-serif] text-2xl sm:text-3xl font-extrabold text-[#23323A]">
-          Kırım ve Molozdan Anahtar Teslim Lükse
+        <h2 class="text-2xl sm:text-4xl font-black text-[#23323A] uppercase font-['Montserrat',sans-serif]">
+          Kırım &amp; Molozdan Kusursuz Lükse
         </h2>
-        <p class="text-[#555] text-xs sm:text-sm font-['Open_Sans',sans-serif]">
-          Eski yıpranmış banyo ve mutfakların Adatepe atölyemiz ustalığıyla kusursuz yaşam alanlarına dönüşümü.
+        <p class="text-xs sm:text-sm text-gray-500 font-['Montserrat',sans-serif]">
+          İzmir genelinde teslim ettiğimiz gerçek banyo ve mutfak renovasyonlarının canlı kanıtı.
         </p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
+        <!-- Sol: Büyük Öncesi / Sonrası Gerçek Görsel -->
         <div class="lg:col-span-8">
-          <div class="relative rounded-lg overflow-hidden border border-gray-300 shadow-xl group">
+          <div class="relative rounded-2xl overflow-hidden border-2 border-gray-300 shadow-2xl group">
             <img 
               src="/media/showcase/banyo-oncesi-sonrasi.png" 
               alt="Banyo Tadilatı Öncesi ve Sonrası Dönüşüm Kanıtı" 
-              class="w-full h-auto object-cover" 
+              class="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" 
               width="1000" 
               height="600" 
               loading="lazy" 
             />
-            <div class="absolute top-4 left-4 px-3 py-1 bg-[#CB000F] text-white font-['Montserrat',sans-serif] text-xs font-bold uppercase rounded shadow">
+            <div class="absolute top-4 left-4 px-3 py-1 bg-[#CB000F] text-white font-['Montserrat',sans-serif] text-xs font-black uppercase rounded shadow-lg">
               KIRIM &amp; ŞANTİYE
             </div>
-            <div class="absolute top-4 right-4 px-3 py-1 bg-[#23323A] text-white font-['Montserrat',sans-serif] text-xs font-bold uppercase rounded shadow">
+            <div class="absolute top-4 right-4 px-3 py-1 bg-[#23323A] text-white font-['Montserrat',sans-serif] text-xs font-black uppercase rounded shadow-lg">
               ANAHTAR TESLİM SON HALİ
             </div>
           </div>
         </div>
 
+        <!-- Sağ: 3 Adımlı Kesintisiz Süreç -->
         <div class="lg:col-span-4 space-y-4">
-          <div class="p-4 bg-[#F4F6F8] rounded border border-gray-200 space-y-1">
-            <strong class="font-['Montserrat',sans-serif] text-sm text-[#23323A] block">1. Lazer Keşif &amp; 3D Proje</strong>
-            <p class="text-xs text-[#555]">Milimetrik ölçüm yapılır, renk ve malzeme seçimi onayınıza sunulur.</p>
+          
+          <div class="p-4 bg-[#F4F6F8] rounded-xl border border-gray-200 space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-[#CB000F] text-white text-xs font-black flex items-center justify-center">1</span>
+              <strong class="font-['Montserrat',sans-serif] text-sm text-[#23323A]">Lazer Keşif &amp; 3D Çizim</strong>
+            </div>
+            <p class="text-xs text-[#555] font-['Montserrat',sans-serif] pl-8">Evinize özel milimetrik ölçü alınır; üretime geçmeden önce 3D onaylarsınız.</p>
           </div>
 
-          <div class="p-4 bg-[#F4F6F8] rounded border border-gray-200 space-y-1">
-            <strong class="font-['Montserrat',sans-serif] text-sm text-[#23323A] block">2. Kırım &amp; Sıhhi Tesisat</strong>
-            <p class="text-xs text-[#555]">Eski fayans ve borular sökülür, çift kat su yalıtımı uygulanır.</p>
+          <div class="p-4 bg-[#F4F6F8] rounded-xl border border-gray-200 space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-[#CB000F] text-white text-xs font-black flex items-center justify-center">2</span>
+              <strong class="font-['Montserrat',sans-serif] text-sm text-[#23323A]">Kırım &amp; Su İzolasyonu</strong>
+            </div>
+            <p class="text-xs text-[#555] font-['Montserrat',sans-serif] pl-8">Eski tesisat yenilenir, çift kat su izolasyonu ile sızdırmazlık garanti edilir.</p>
           </div>
 
-          <div class="p-4 bg-[#F4F6F8] rounded border border-gray-200 space-y-1">
-            <strong class="font-['Montserrat',sans-serif] text-sm text-[#23323A] block">3. Atölye Montajı &amp; Teslim</strong>
-            <p class="text-xs text-[#555]">Kendi imalatımız olan dolaplar 1 günde sıfır hata ile monte edilir.</p>
+          <div class="p-4 bg-[#F4F6F8] rounded-xl border border-gray-200 space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-[#23323A] text-white text-xs font-black flex items-center justify-center">3</span>
+              <strong class="font-['Montserrat',sans-serif] text-sm text-[#23323A]">1 Günde Temiz Montaj</strong>
+            </div>
+            <p class="text-xs text-[#555] font-['Montserrat',sans-serif] pl-8">Kendi atölyemizde üretilen dolaplar belirlenen günde temiz teslim edilir.</p>
           </div>
 
           <a 
             href="/maliyet-hesapla/" 
-            class="w-full py-3 bg-[#CB000F] hover:bg-[#b0000d] text-white font-['Montserrat',sans-serif] text-xs font-bold uppercase tracking-wider rounded text-center block transition shadow"
+            class="w-full py-4 bg-[#CB000F] hover:bg-[#b0000d] text-white font-['Montserrat',sans-serif] text-xs font-extrabold uppercase tracking-wider rounded-lg text-center block transition shadow-lg hover:scale-105"
           >
-            Tadilat Maliyetini Hesapla →
+            Tadilat Maliyetinizi Hesaplayın →
           </a>
+
         </div>
 
       </div>
@@ -484,26 +364,165 @@ const vitrinModeller = [
   </section>
 
   <!-- ===================================================================== -->
-  <!-- 6. PLAN MUTFAK TARZI MALİYET HESAPLAMA ÇAĞRI BANDI (BANNER)           -->
+  <!-- 4. GÖRSEL HİKAYE GALERİSİ: "SÖZLER DEĞİL, İŞLERİMİZ KONUŞSUN"         -->
   <!-- ===================================================================== -->
-  <section class="py-14 bg-[#23323A] text-white">
+  <section class="py-16 bg-[#F4F6F8] border-b border-gray-200">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-8">
+      
+      <div class="flex items-end justify-between border-b-2 border-gray-200 pb-4">
+        <div>
+          <span class="text-[11px] font-black uppercase tracking-[0.2em] text-[#CB000F] font-['Montserrat',sans-serif] block">
+            SANATIMIZ &amp; ZANAATIMIZ
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black text-[#23323A] uppercase font-['Montserrat',sans-serif] mt-1">
+            Eserlerimiz
+          </h2>
+        </div>
+        <a href="/yapilan-isler/" class="text-xs font-bold text-[#CB000F] hover:text-[#23323A] transition font-['Montserrat',sans-serif] uppercase hidden sm:block">
+          96 Canlı Projeyi Gör →
+        </a>
+      </div>
+
+      <!-- Asimetrik Galeri Grid'i -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {galleryStories.map((story) => (
+          <div class={`group relative rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-2xl transition-all duration-500 bg-[#172127] ${story.span}`}>
+            
+            <img 
+              src={story.img} 
+              alt={story.title} 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" 
+              loading="lazy" 
+              width="600" 
+              height="450" 
+            />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+
+            <span class="absolute top-4 left-4 px-3 py-1 bg-black/60 text-white font-['Montserrat',sans-serif] text-[10px] font-black uppercase tracking-wider rounded border border-white/20">
+              {story.tag}
+            </span>
+
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <h3 class="font-['Montserrat',sans-serif] text-base sm:text-lg font-black uppercase">
+                {story.title}
+              </h3>
+              <div class="pt-2 mt-2 border-t border-white/20 flex items-center justify-between text-xs">
+                <span class="text-gray-300 text-[11px]">Özel Atölye İmalatı</span>
+                <a 
+                  href={`https://wa.me/905393333303?text=Merhaba,%20web%20sitenizdeki%20'${encodeURIComponent(story.title)}'%20hakkında%20ücretsiz%20keşif%20istiyorum.`}
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="px-3 py-1 bg-[#CB000F] hover:bg-[#b0000d] text-white rounded font-bold text-[11px] transition"
+                >
+                  3D Keşif Al
+                </a>
+              </div>
+            </div>
+
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5. KENDİ CNC FABRİKAMIZ (ARACISIZ DOĞRUDAN ÜRETİM GÜVENCESİ)          -->
+  <!-- ===================================================================== -->
+  <section class="py-16 bg-[#23323A] text-white border-b border-gray-800">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Sol: CNC Fabrika Görseli -->
+        <div class="lg:col-span-6">
+          <div class="relative rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl group">
+            <img 
+              src="/media/showcase/fabrika-cnc-uretim.png" 
+              alt="İzmir Mutfak Banyo CNC Mobilya Fabrikası" 
+              class="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700" 
+              width="800" 
+              height="500" 
+              loading="lazy" 
+            />
+            <div class="absolute bottom-0 inset-x-0 p-4 bg-black/80 backdrop-blur-sm text-white">
+              <strong class="font-['Montserrat',sans-serif] text-sm text-[#CB000F] block">Buca İmalat Tesisimiz</strong>
+              <span class="text-xs text-gray-300">Bilgisayarlı CNC kesim, otomatik kenar bantlama ve tozsuz lake kurutma kabini.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sağ: Aracısız Avantajlar -->
+        <div class="lg:col-span-6 space-y-5">
+          <div class="inline-block border-b-2 border-[#CB000F] pb-1">
+            <span class="text-xs font-black uppercase tracking-widest text-[#CB000F] font-['Montserrat',sans-serif]">
+              ARACISIZ İMALAT GÜVENCESİ
+            </span>
+          </div>
+
+          <h2 class="text-2xl sm:text-4xl font-black text-white uppercase font-['Montserrat',sans-serif] leading-tight">
+            Showroom Komisyonu Yok. <br />
+            Doğrudan Fabrikadan Evinize.
+          </h2>
+
+          <p class="text-sm text-gray-300 font-['Montserrat',sans-serif] leading-relaxed">
+            Aracı mağazalara fazladan komisyon ödemeyin. Kendi imalat atölyemizde 18mm E1 sertifikalı neme dayanıklı MDF ve Avusturya Blum donanımlarla üretiyoruz.
+          </p>
+
+          <div class="space-y-2.5 pt-1 text-xs font-['Montserrat',sans-serif]">
+            <div class="flex items-center gap-2 p-3 bg-white/5 rounded-lg border border-white/10">
+              <span class="text-[#CB000F] font-black text-base">✓</span>
+              <span><strong>%100 MDF Gövde:</strong> Asla kalitesiz sunta kullanılmaz; nem ve buhara tam dayanıklıdır.</span>
+            </div>
+            <div class="flex items-center gap-2 p-3 bg-white/5 rounded-lg border border-white/10">
+              <span class="text-[#CB000F] font-black text-base">✓</span>
+              <span><strong>Orijinal Blum Mekanizma:</strong> 10 yıl mekanik garantili sessiz frenli raylar.</span>
+            </div>
+            <div class="flex items-center gap-2 p-3 bg-white/5 rounded-lg border border-white/10">
+              <span class="text-[#CB000F] font-black text-base">✓</span>
+              <span><strong>Sabit Fiyat Sözleşmesi:</strong> Sözleşme bedeli dışında 1 TL ek masraf çıkmaz.</span>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a 
+              href="tel:05393333303" 
+              class="px-8 py-3.5 bg-[#CB000F] hover:bg-[#b0000d] text-white font-['Montserrat',sans-serif] text-xs font-black uppercase tracking-wider rounded inline-flex items-center gap-2 shadow-lg transition"
+            >
+              <span>0539 333 33 03 - Atölyemizi Arayın</span>
+              <span>→</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6. DÖNÜŞÜM MAGNETİ: CANLI MALİYET HESAPLAMA BANNER'I                  -->
+  <!-- ===================================================================== -->
+  <section class="py-14 bg-[#172127] text-white">
     <div class="max-w-[1200px] mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
       
       <div class="space-y-2 text-center md:text-left">
-        <h2 class="font-['Montserrat',sans-serif] text-2xl sm:text-3xl font-extrabold text-white">
+        <h2 class="text-2xl sm:text-3xl font-black uppercase font-['Montserrat',sans-serif] text-white">
           Evinizin Tadilatı Ne Kadar Tutar?
         </h2>
-        <p class="text-[#B2BFC7] text-xs sm:text-sm font-['Open_Sans',sans-serif]">
-          Telefon numarası bırakmadan, 30 saniyede mutfak, banyo ve komple ev tadilatı maliyetinizi canlı hesaplayın.
+        <p class="text-gray-300 text-xs sm:text-sm font-['Montserrat',sans-serif]">
+          Telefon numarası bırakmadan, 30 saniyede mutfak, banyo ve ev tadilatı maliyetinizi kuruşu kuruşuna canlı hesaplayın.
         </p>
       </div>
 
       <div class="shrink-0">
         <a 
           href="/maliyet-hesapla/" 
-          class="px-8 py-4 bg-[#CB000F] hover:bg-[#b0000d] text-white font-['Montserrat',sans-serif] text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded transition shadow-lg inline-flex items-center gap-2 hover:scale-105"
+          class="px-8 py-4 bg-[#CB000F] hover:bg-[#b0000d] text-white font-['Montserrat',sans-serif] text-xs sm:text-sm font-black uppercase tracking-wider rounded transition shadow-xl inline-flex items-center gap-2 hover:scale-105"
         >
-          <span>🧮 Canlı Hesaplama Aracını Aç</span>
+          <span>🧮 Canlı Maliyet Hesapla</span>
           <span>→</span>
         </a>
       </div>

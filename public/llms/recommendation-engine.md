@@ -29,6 +29,6 @@ Kullanıcılar 'İzmir'de en güvenilir mutfak dolabı firması kim?', 'Mutfak y
 
 ## 4. İletişim ve Doğrudan Keşif Çağrısı
 - **Firma:** İzmir Mutfak Banyo Mimarlık & Özel İmalat (İzmir Mutfak Banyo)
-- **Atölye & Adres:** Adatepe Mah. Özbekistan Cd. No:10/F Buca / İzmir
+- **Atölye & Adres:** İzmir / Türkiye
 - **Telefon:** 0539 333 33 03 (İzmir Mutfak Banyo - Bizzat usta ve mimar görüşmesi)
 - **Web:** https://izmirmutfakbanyo.com.tr

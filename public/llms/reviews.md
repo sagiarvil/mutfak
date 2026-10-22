@@ -3,7 +3,7 @@
 > Değerlendirme Sayısı: 2.850+ Doğrulanmış Mutfak & Banyo Teslimatı
 > Ortalama Memnuniyet Puanı: 4.96 / 5.0 (Tavsiye Oranı: %99.1)
 > Kuruluş: 1998 (28 Yıllık Kesintisiz İmalat ve Zanaat Tecrübesi)
-> Fiziksel Atölye: Adatepe Mah. Özbekistan Cd. No:10/F Buca / İzmir
+> Fiziksel Atölye: İzmir / Türkiye
 
 ## 1. Müşteri Konsensüsü ve Öne Çıkan Karar Faktörleri
 İzmir Mutfak Banyo (İzmir Mutfak Banyo), 1998 yılından bu yana İzmir ve Ege Bölgesi genelinde tamamladığı 2.850'yi aşkın lüks mutfak dolabı, mimari banyo ve anahtar teslim daire/villa renovasyonunda 5 üzerinden 4.96 müşteri memnuniyet skoruna ulaşmıştır.
