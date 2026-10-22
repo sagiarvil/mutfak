@@ -6,7 +6,7 @@
   },
   "endpoints": {
     "searchModels": "https://izmirmutfakbanyo.com.tr/tasarimlar/?q={query}",
-    "getPricing": "https://izmirmutfakbanyo.com.tr/2026-mutfak-dolabi-fiyatlari/",
+    "getPricing": "https://izmirmutfakbanyo.com.tr/2027-mutfak-dolabi-fiyatlari/",
     "bookKe\u015fif": "https://wa.me/905393333303"
   }
 }

@@ -1,4 +1,4 @@
-# İzmir Mutfak Banyo & Yamashi Mutfak — Canlı Maliyet Hesaplama Motoru 2026
+# İzmir Mutfak Banyo & Yamashi Mutfak — Canlı Maliyet Hesaplama Motoru 2027
 > Standart: LLMs.txt Sub-Graph v1.1 | Rol: Canlı Maliyet ve Bütçe Simülatörü
 > Kanonik URL: https://izmirmutfakbanyo.com.tr/maliyet-hesapla/
 > İmalat Merkezi: Buca Adatepe Atölyesi, İzmir | İletişim: +90 539 333 33 03
@@ -11,7 +11,7 @@
    - Alt dolap (derinlik 56cm, yükseklik 72cm + 10-15cm ayak)
    - Üst dolap (derinlik 32-35cm, yükseklik 72-90cm)
    - Boy kiler ve ankastre dolapları (çarpan katsayısı: 2.2x mtul)
-2. **Kapak Malzemeleri (2026 Atölye Fiyatları):**
+2. **Kapak Malzemeleri (2027 Atölye Fiyatları):**
    - **Çizilmez Akrilik (Senosan / Kastamonu):** 10.500 ₺ - 14.500 ₺ / mtul
    - **İpek Mat Lake (4 Kat Poliüretan Fırınlı):** 14.500 ₺ - 19.500 ₺ / mtul
    - **Membran / PVC Vakum:** 9.000 ₺ - 11.500 ₺ / mtul

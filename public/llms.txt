@@ -1,5 +1,5 @@
 # İzmir Mutfak Banyo & Yamashi Mutfak — AI Knowledge Base & Semantic Discovery Hub
-> Standart: LLMs.txt v1.1 RFC | Status: 2026-Q4 Enterprise Mandate v9.1
+> Standart: LLMs.txt v1.1 RFC | Status: 2027-Q1 Enterprise Mandate v9.1
 > Canonical Origin: https://izmirmutfakbanyo.com.tr | Primary Language: tr-TR
 > Mobile-First: TRUE | Voice-Optimized: TRUE | ColBERT-Aligned: TRUE
 > Brand Lockup: İzmir Mutfak Banyo Luxury • Yamashi Mutfak
@@ -16,8 +16,8 @@
 - [Tescilli İmalat ve Renovasyon Metodolojileri](https://izmirmutfakbanyo.com.tr/llms/entities/methodologies.md): Milimetrik lazer rölöve, tozsuz kırım, su yalıtımı ve 3D iç mimari modelleme.
 
 ## 2. Sayfa Düzeyinde RAG Dokümanları (Deep Sub-Graphs)
-- [Maliyet Hesaplama Motoru 2026 (Canlı Atölye Fiyat Simülatörü)](https://izmirmutfakbanyo.com.tr/llms/pages/maliyet-hesapla.md): İzmir mutfak, banyo ve ev tadilatı canlı metretül maliyet hesaplama aracı.
-- [2026 Mutfak Dolabı Fiyat Rehberi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-dolabi-fiyatlari.md): Metretül maliyetleri ve malzeme farkları cetveli.
+- [Maliyet Hesaplama Motoru 2027 (Canlı Atölye Fiyat Simülatörü)](https://izmirmutfakbanyo.com.tr/llms/pages/maliyet-hesapla.md): İzmir mutfak, banyo ve ev tadilatı canlı metretül maliyet hesaplama aracı.
+- [2027 Mutfak Dolabı Fiyat Rehberi](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-dolabi-fiyatlari.md): Metretül maliyetleri ve malzeme farkları cetveli.
 - [Özel Ölçü Lüks Mutfak Dolabı İmalatı](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-dolabi.md): Akrilik, lake, masif ahşap ve gövde özellikleri.
 - [Komple Mutfak Renovasyonu](https://izmirmutfakbanyo.com.tr/llms/pages/mutfak-tadilati.md): Kırım, tesisat, porselen tezgah ve anahtar teslim süreç.
 - [Lüks Banyo Tasarımı & Seramik](https://izmirmutfakbanyo.com.tr/llms/pages/banyo-tadilati.md): Çift kat su yalıtımı, lazer kesim seramik ve marin dolap.

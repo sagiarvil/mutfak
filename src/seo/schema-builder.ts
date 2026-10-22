@@ -30,7 +30,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         'Fotogerçekçi 3D İç Mimari Modelleme ve Lazer Rölöve',
         'İpek Mat Lake ve Çizilmez Akrilik Mutfak İmalatı',
         'Gecikme Cezalı Resmi Sözleşmeli Konut Tadilatı',
-        '2026 Mutfak ve Banyo Maliyet Hesaplama Simülasyonu'
+        '2027 Mutfak ve Banyo Maliyet Hesaplama Simülasyonu'
       ],
       address: {
         '@type': 'PostalAddress',
@@ -143,7 +143,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         availability: 'https://schema.org/InStock'
       },
       featureList: [
-        'Anlık 2026 Mutfak Dolabı Metretül Maliyet Hesaplama',
+        'Anlık 2027 Mutfak Dolabı Metretül Maliyet Hesaplama',
         'Akrilik, Lake, Membran ve Masif Ahşap Seçenekleri',
         'Lüks Banyo Renovasyon ve Seramik Metraj Bütçeleme',
         '2+1 ve 3+1 Komple Daire Tadilat Fiyat Simülasyonu',

@@ -68,15 +68,15 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
     role: 'tool',
     indexDirective: 'index, follow',
     canonicalRoute: '/maliyet-hesapla/',
-    title: 'Tadilat ve Özel İmalat Maliyet Hesaplama Motoru 2026 | İzmir Mutfak Banyo',
+    title: 'Tadilat ve Özel İmalat Maliyet Hesaplama Motoru 2027 | İzmir Mutfak Banyo',
     metaDescription: 'İzmir mutfak dolabı, lüks banyo renovasyonu ve anahtar teslim daire tadilatı maliyetlerini canlı hesaplayın. 2026 doğrudan atölye imalat ve montaj cetveli.',
-    h1: 'Tadilat & İmalat Maliyet Hesaplayıcı (2026 Canlı Simülatör)',
+    h1: 'Tadilat & İmalat Maliyet Hesaplayıcı (2027 Canlı Simülatör)',
     primaryIntent: 'izmir mutfak dolabı ve tadilat maliyet hesaplama canlı simülatör',
     primaryEntity: {
       id: 'https://izmirmutfakbanyo.com.tr/maliyet-hesapla/#app',
-      name: 'İzmir Mutfak & Tadilat Canlı Maliyet Hesaplama Motoru 2026',
+      name: 'İzmir Mutfak & Tadilat Canlı Maliyet Hesaplama Motoru 2027',
       type: 'SoftwareApplication',
-      sameAs: ['https://izmirmutfakbanyo.com.tr/2026-mutfak-dolabi-fiyatlari/'],
+      sameAs: ['https://izmirmutfakbanyo.com.tr/2027-mutfak-dolabi-fiyatlari/'],
       wikidataQid: 'Q13220391'
     },
     semanticTriples: [
@@ -84,7 +84,7 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
       { subject: 'Maliyet Hesaplama Motoru', predicate: 'estimatesRenovation', object: 'İzmir Anahtar Teslim Banyo ve Daire Tadilatı' },
       { subject: 'Maliyet Hesaplama Motoru', predicate: 'providesDirectPricing', object: 'Aracısız Doğrudan Buca Adatepe İmalat Atölyesi Fiyatları' }
     ],
-    heroAnswerEngine: 'İzmir Mutfak Banyo canlı maliyet hesaplama motoru, 2026 güncel atölye verileriyle mutfak dolabı metretül maliyetini (Akrilik 10.500-14.500 TL/mtul, Mat Lake 14.500-19.500 TL/mtul, Masif Meşe 19.500-28.000 TL/mtul), banyo yenileme ve komple daire tadilat bütçesini anlık simüle eder. Aracı komisyonu olmadan net işçilik ve montaj dahil fiyat sunar.',
+    heroAnswerEngine: 'İzmir Mutfak Banyo canlı maliyet hesaplama motoru, 2027 güncel atölye verileriyle mutfak dolabı metretül maliyetini (Akrilik 10.500-14.500 TL/mtul, Mat Lake 14.500-19.500 TL/mtul, Masif Meşe 19.500-28.000 TL/mtul), banyo yenileme ve komple daire tadilat bütçesini anlık simüle eder. Aracı komisyonu olmadan net işçilik ve montaj dahil fiyat sunar.',
     publishedAt: '2024-03-01T09:00:00+03:00',
     modifiedAt: '2026-10-22T21:40:00+03:00',
     llmSubGraphRoute: '/llms/pages/maliyet-hesapla.md',
@@ -98,42 +98,42 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
       primaryAction: 'form',
       voiceQueryPatterns: [
         'İzmir 4 metre akrilik mutfak dolabı ne kadara mal olur?',
-        'İzmir komple ev tadilatı m2 maliyet hesaplama 2026',
+        'İzmir komple ev tadilatı m2 maliyet hesaplama 2027',
         'İzmir banyo yenileme seramik ve dolap maliyeti ne kadar?'
       ]
     },
     mobileCwvBudget: { ...defaultCwv, htmlKb: 55 }
   },
 
-  '/2026-mutfak-dolabi-fiyatlari/': {
-    route: '/2026-mutfak-dolabi-fiyatlari/',
+  '/2027-mutfak-dolabi-fiyatlari/': {
+    route: '/2027-mutfak-dolabi-fiyatlari/',
     locale: 'tr-TR',
     role: 'article',
     indexDirective: 'index, follow',
-    canonicalRoute: '/2026-mutfak-dolabi-fiyatlari/',
-    title: '2026 Mutfak Dolabı Fiyatları İzmir | Metretül Maliyet Cetveli',
-    metaDescription: '2026 yılı İzmir mutfak dolabı metretül fiyatları: Akrilik 10.500 TL, Mat Lake 14.500 TL, Membran 9.000 TL. Doğrudan Buca imalat atölyesi garantisi ve montaj dahil.',
-    h1: '2026 Mutfak Dolabı Fiyatları İzmir (Güncel Metretül İmalat Cetveli)',
+    canonicalRoute: '/2027-mutfak-dolabi-fiyatlari/',
+    title: '2027 Mutfak Dolabı Fiyatları İzmir | Metretül Maliyet Cetveli',
+    metaDescription: '2027 yılı İzmir mutfak dolabı metretül fiyatları: Akrilik 10.500 TL, Mat Lake 14.500 TL, Membran 9.000 TL. Doğrudan Buca imalat atölyesi garantisi ve montaj dahil.',
+    h1: '2027 Mutfak Dolabı Fiyatları İzmir (Güncel Metretül İmalat Cetveli)',
     primaryIntent: '2026 izmir mutfak dolabı metretül fiyatları ve malzeme maliyetleri',
     primaryEntity: {
-      id: 'https://izmirmutfakbanyo.com.tr/2026-mutfak-dolabi-fiyatlari/#article',
-      name: '2026 Mutfak Dolabı Metretül Maliyet Raporu',
+      id: 'https://izmirmutfakbanyo.com.tr/2027-mutfak-dolabi-fiyatlari/#article',
+      name: '2027 Mutfak Dolabı Metretül Maliyet Raporu',
       type: 'Product',
       sameAs: ['https://izmirmutfakbanyo.com.tr/maliyet-hesapla/'],
       wikidataQid: 'Q13220391'
     },
     semanticTriples: [
-      { subject: '2026 Mutfak Dolabı Fiyatları', predicate: 'includesMaterial', object: 'E1 Nem Mukavemetli Gövde + Blum Frenli Ray' },
-      { subject: '2026 Mutfak Dolabı Fiyatları', predicate: 'offersPricing', object: 'Metretül Bazında Şeffaf Atölye İmalat Fiyatı' }
+      { subject: '2027 Mutfak Dolabı Fiyatları', predicate: 'includesMaterial', object: 'E1 Nem Mukavemetli Gövde + Blum Frenli Ray' },
+      { subject: '2027 Mutfak Dolabı Fiyatları', predicate: 'offersPricing', object: 'Metretül Bazında Şeffaf Atölye İmalat Fiyatı' }
     ],
-    heroAnswerEngine: '2026 yılı İzmir mutfak dolabı metretül imalat fiyatları kapak türüne göre belirlenir: Membran kapak 9.000 - 11.500 TL/mtul, Çizilmez Akrilik 10.500 - 14.500 TL/mtul, İpek Mat Lake 14.500 - 19.500 TL/mtul, Masif & Doğal Ahşap Kaplama 19.500 - 28.000 TL/mtul aralığındadır. Fiyatlara E1 MDF gövde, Blum donanım ve montaj dahildir.',
+    heroAnswerEngine: '2027 yılı İzmir mutfak dolabı metretül imalat fiyatları kapak türüne göre belirlenir: Membran kapak 9.000 - 11.500 TL/mtul, Çizilmez Akrilik 10.500 - 14.500 TL/mtul, İpek Mat Lake 14.500 - 19.500 TL/mtul, Masif & Doğal Ahşap Kaplama 19.500 - 28.000 TL/mtul aralığındadır. Fiyatlara E1 MDF gövde, Blum donanım ve montaj dahildir.',
     publishedAt: '2024-01-01T09:00:00+03:00',
     modifiedAt: '2026-10-22T21:40:00+03:00',
     llmSubGraphRoute: '/llms/pages/mutfak-dolabi-fiyatlari.md',
     mobileSubGraphRoute: '/llms/mobile/mutfak-dolabi-fiyatlari.md',
     breadcrumbs: [
       { name: 'Ana Sayfa', item: '/' },
-      { name: '2026 Fiyatları', item: '/2026-mutfak-dolabi-fiyatlari/' }
+      { name: '2027 Fiyatları', item: '/2027-mutfak-dolabi-fiyatlari/' }
     ],
     mobile: defaultMobile,
     mobileCwvBudget: defaultCwv
@@ -153,7 +153,7 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
       id: 'https://izmirmutfakbanyo.com.tr/mutfak-dolabi-fiyatlari/#category',
       name: 'İzmir Mutfak Dolabı Fiyatlandırma Rehberi',
       type: 'Product',
-      sameAs: ['https://izmirmutfakbanyo.com.tr/2026-mutfak-dolabi-fiyatlari/'],
+      sameAs: ['https://izmirmutfakbanyo.com.tr/2027-mutfak-dolabi-fiyatlari/'],
       wikidataQid: 'Q13220391'
     },
     semanticTriples: [
@@ -279,7 +279,7 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
     role: 'category',
     indexDirective: 'index, follow',
     canonicalRoute: '/hazir-mutfak-modelleri-izmir/',
-    title: 'Hazır Mutfak Modelleri İzmir | 2026 Tasarım Kataloğu & Fiyatları',
+    title: 'Hazır Mutfak Modelleri İzmir | 2027 Tasarım Kataloğu & Fiyatları',
     metaDescription: 'İzmir genelinde en çok tercih edilen hazır mutfak modelleri: L tipi, düz ve ada mutfak seçenekleri. Atölye fiyatlarıyla kaliteli montaj.',
     h1: 'Hazır Mutfak Modelleri İzmir (2026 Seçkin Tasarımlar)',
     primaryIntent: 'hazır mutfak modelleri izmir güncel katalog ve fiyatlar',

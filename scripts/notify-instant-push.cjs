@@ -129,7 +129,7 @@ if (require.main === module) {
     'https://izmirmutfakbanyo.com.tr/izmir-komple-mutfak-tadilati/',
     'https://izmirmutfakbanyo.com.tr/izmir-banyo-yenileme-seramik/',
     'https://izmirmutfakbanyo.com.tr/izmir-anahtar-teslim-tadilat/',
-    'https://izmirmutfakbanyo.com.tr/2026-mutfak-dolabi-fiyatlari/'
+    'https://izmirmutfakbanyo.com.tr/2027-mutfak-dolabi-fiyatlari/'
   ];
   executeTriplePush(targetUrls).then(() => {
     process.exit(0);

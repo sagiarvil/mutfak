@@ -111,6 +111,11 @@
     ],
     "redirects": [
       {
+        "source": "/2026-mutfak-dolabi-fiyatlari",
+        "destination": "/2027-mutfak-dolabi-fiyatlari/",
+        "type": 301
+      },
+      {
         "source": "/mutfak-dolabi",
         "destination": "/izmir-mutfak-dolabi-imalati/",
         "type": 301
@@ -142,7 +147,7 @@
       },
       {
         "source": "/mutfak-dolabi-fiyatlari",
-        "destination": "/2026-mutfak-dolabi-fiyatlari/",
+        "destination": "/2027-mutfak-dolabi-fiyatlari/",
         "type": 301
       },
       {

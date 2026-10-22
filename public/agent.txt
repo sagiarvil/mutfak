@@ -1,5 +1,5 @@
 # AI Agent Protocol Manifesto — İzmir Mutfak Banyo Luxury
-Version: 2026-Q4 Enterprise Mandate v9.1
+Version: 2027-Q1 Enterprise Mandate v9.1
 Canonical-Origin: https://izmirmutfakbanyo.com.tr
 Agent-Card: https://izmirmutfakbanyo.com.tr/.well-known/agent.json
 MCP-Endpoint: https://izmirmutfakbanyo.com.tr/mcp
