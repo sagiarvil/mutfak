@@ -1,26 +1,26 @@
 import type { SeoPageRecord } from './registry.types';
 
 export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = 'izmirmutfakbanyo.com.tr'): string {
-  const origin = `https://${domain}`;
-  const pageUrl = `${origin}${page.route === '/' ? '' : page.route}`;
+  const origin = 'https://' + domain;
+  const pageUrl = origin + (page.route === '/' ? '' : page.route);
 
   const graph: Record<string, any>[] = [
     // 1. Organization (Wikidata & Google MID Konsensüs Kilidi)
     {
       '@type': 'HomeAndConstructionBusiness',
-      '@id': `${origin}/#organization`,
+      '@id': origin + '/#organization',
       name: 'İzmir Mutfak Banyo Mimarlık & Lüks İmalat Atölyesi',
-      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo İç Mimarlık', 'İzmir Mutfak Banyo'],
-      url: `${origin}/`,
+      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo İç Mimarlık', 'İzmir Mutfak Banyo', 'Yamachi Mutfak'],
+      url: origin + '/',
       logo: {
         '@type': 'ImageObject',
-        '@id': `${origin}/#logo`,
-        url: `${origin}/logo.png`,
+        '@id': origin + '/#logo',
+        url: origin + '/logo.png',
         caption: 'İzmir Mutfak Banyo Luxury Logo'
       },
-      image: `${origin}/android-chrome-512x512.png`,
+      image: origin + '/android-chrome-512x512.png',
       telephone: '+905393333303',
-      priceRange: 'Özel Mimari Tasarım & İmalat',
+      priceRange: '₺₺ - ₺₺₺',
       foundingDate: '1998',
       slogan: 'Sözleşmeli Süre ve Sabit Fiyat Garantisiyle Doğrudan Atölye Zanaatı',
       knowsAbout: [
@@ -29,14 +29,15 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         'Avusturya Blum & Häfele Sessiz Frenli Mekanizma Sistemleri',
         'Fotogerçekçi 3D İç Mimari Modelleme ve Lazer Rölöve',
         'İpek Mat Lake ve Çizilmez Akrilik Mutfak İmalatı',
-        'Gecikme Cezalı Resmi Sözleşmeli Konut Tadilatı'
+        'Gecikme Cezalı Resmi Sözleşmeli Konut Tadilatı',
+        '2026 Mutfak ve Banyo Maliyet Hesaplama Simülasyonu'
       ],
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'İzmir',
+        streetAddress: 'Adatepe Mah.',
         addressLocality: 'Buca',
         addressRegion: 'İzmir',
-        postalCode: '35000',
+        postalCode: '35390',
         addressCountry: 'TR'
       },
       geo: {
@@ -62,24 +63,24 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       sameAs: [
         'https://wa.me/905393333303',
         'https://share.google/HC5sweG3HXcjogRNZ',
-        `https://www.wikidata.org/wiki/${page.primaryEntity.wikidataQid || 'Q11589432'}`
+        'https://www.wikidata.org/wiki/' + (page.primaryEntity.wikidataQid || 'Q11589432')
       ]
     },
 
     // 2. WebSite + Google Site Names + SearchAction
     {
       '@type': 'WebSite',
-      '@id': `${origin}/#website`,
-      url: `${origin}/`,
+      '@id': origin + '/#website',
+      url: origin + '/',
       name: 'İzmir Mutfak Banyo',
-      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo Mimarlık', domain],
-      publisher: { '@id': `${origin}/#organization` },
+      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo Mimarlık', 'Yamachi Mutfak', domain],
+      publisher: { '@id': origin + '/#organization' },
       inLanguage: page.locale,
       potentialAction: {
         '@type': 'SearchAction',
         target: {
           '@type': 'EntryPoint',
-          urlTemplate: `${origin}/tasarimlar/?q={search_term_string}`
+          urlTemplate: origin + '/tasarimlar/?q={search_term_string}'
         },
         'query-input': 'required name=search_term_string'
       }
@@ -88,15 +89,15 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
     // 3. WebPage + Speakable + Mobile Actions + RDF Entity
     {
       '@type': 'WebPage',
-      '@id': `${pageUrl}#webpage`,
+      '@id': pageUrl + '#webpage',
       url: pageUrl,
       name: page.title,
       description: page.metaDescription,
-      isPartOf: { '@id': `${origin}/#website` },
+      isPartOf: { '@id': origin + '/#website' },
       about: { '@id': page.primaryEntity.id },
       datePublished: page.publishedAt,
       dateModified: page.modifiedAt,
-      breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
+      breadcrumb: { '@id': pageUrl + '#breadcrumb' },
       inLanguage: page.locale,
       speakable: {
         '@type': 'SpeakableSpecification',
@@ -109,35 +110,66 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
     }
   ];
 
-  // 4. BreadcrumbList (Ana Sayfa hariç veya tek seviyeli)
+  // 4. BreadcrumbList
   if (page.breadcrumbs && page.breadcrumbs.length > 0) {
     graph.push({
       '@type': 'BreadcrumbList',
-      '@id': `${pageUrl}#breadcrumb`,
+      '@id': pageUrl + '#breadcrumb',
       itemListElement: page.breadcrumbs.map((b, idx) => ({
         '@type': 'ListItem',
         position: idx + 1,
         name: b.name,
-        item: b.item.startsWith('http') ? b.item : `${origin}${b.item}`
+        item: b.item.startsWith('http') ? b.item : (origin + b.item)
       }))
     });
   }
 
-  // 5. Service / Product Node (Hizmet ve Katalog Sayfaları)
+  // 5. Tool / WebApplication (Maliyet Hesaplama Motoru)
+  if (page.role === 'tool') {
+    graph.push({
+      '@type': 'WebApplication',
+      '@id': pageUrl + '#app',
+      name: page.h1,
+      description: page.metaDescription,
+      applicationCategory: 'DesignApplication, BusinessApplication',
+      operatingSystem: 'All',
+      browserRequirements: 'Requires JavaScript and HTML5 support',
+      url: pageUrl,
+      author: { '@id': origin + '/#organization' },
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'TRY',
+        availability: 'https://schema.org/InStock'
+      },
+      featureList: [
+        'Anlık 2026 Mutfak Dolabı Metretül Maliyet Hesaplama',
+        'Akrilik, Lake, Membran ve Masif Ahşap Seçenekleri',
+        'Lüks Banyo Renovasyon ve Seramik Metraj Bütçeleme',
+        '2+1 ve 3+1 Komple Daire Tadilat Fiyat Simülasyonu',
+        'Tek Tıkla WhatsApp Doğrudan Teklif ve Keşif Talebi'
+      ]
+    });
+  }
+
+  // 6. Service Node
   if (page.role === 'service') {
     graph.push({
       '@type': 'Service',
-      '@id': `${pageUrl}#service`,
+      '@id': pageUrl + '#service',
       name: page.h1,
-      provider: { '@id': `${origin}/#organization` },
+      provider: { '@id': origin + '/#organization' },
       serviceType: page.primaryIntent,
       description: page.metaDescription,
-      areaServed: { '@id': `${origin}/#organization` },
+      areaServed: {
+        '@type': 'AdministrativeArea',
+        name: 'İzmir'
+      },
       offers: {
         '@type': 'Offer',
         priceCurrency: 'TRY',
         availability: 'https://schema.org/InStock',
-        seller: { '@id': `${origin}/#organization` }
+        seller: { '@id': origin + '/#organization' }
       }
     });
   }

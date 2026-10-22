@@ -7,99 +7,141 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://izmirmutfakbanyo.com.tr/izmir-mutfak-dolabi-imalati/</loc>
+    <loc>https://izmirmutfakbanyo.com.tr/maliyet-hesapla/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://izmirmutfakbanyo.com.tr/2026-mutfak-dolabi-fiyatlari/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/izmir-mutfak-dolabi-imalati/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://izmirmutfakbanyo.com.tr/izmir-komple-mutfak-tadilati/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://izmirmutfakbanyo.com.tr/izmir-banyo-yenileme-seramik/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://izmirmutfakbanyo.com.tr/izmir-komple-daire-tadilati/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://izmirmutfakbanyo.com.tr/izmir-anahtar-teslim-tadilat/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://izmirmutfakbanyo.com.tr/modern-mutfak-modelleri/</loc>
+    <loc>https://izmirmutfakbanyo.com.tr/izmir-komple-daire-tadilati/</loc>
     <lastmod>2026-10-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://izmirmutfakbanyo.com.tr/klasik-country-mutfak-modelleri/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://izmirmutfakbanyo.com.tr/hazir-mutfak-modelleri-izmir/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://izmirmutfakbanyo.com.tr/yasam-alanlari-mutfak-modelleri/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://izmirmutfakbanyo.com.tr/tasarimlar/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/mutfak-dolabi-fiyatlari/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/mutfak-dolabi/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/modern-mutfak-modelleri/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/klasik-country-mutfak-modelleri/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/hazir-mutfak-modelleri-izmir/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/hazir-mutfak/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/yasam-alanlari-mutfak-modelleri/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/mutfak-tadilati/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/banyo-tadilati/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/ev-tadilati/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://izmirmutfakbanyo.com.tr/anahtar-teslim-tadilat/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://izmirmutfakbanyo.com.tr/yapilan-isler/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://izmirmutfakbanyo.com.tr/projeler/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://izmirmutfakbanyo.com.tr/hakkimizda/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://izmirmutfakbanyo.com.tr/iletisim/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://izmirmutfakbanyo.com.tr/maliyet-hesapla/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.80</priority>
   </url>
 </urlset>
