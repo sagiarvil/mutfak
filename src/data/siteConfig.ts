@@ -10,15 +10,15 @@ export interface ServiceItem {
 }
 
 export const siteConfig = {
-  name: "Cem Yeşilay Mimarlık & Özel İmalat",
-  brandShort: "Cem Yeşilay",
-  legalName: "Cem Yeşilay İç Mimarlık, Lüks Mutfak Banyo & Anahtar Teslim Renovasyon",
+  name: "İzmir Mutfak Banyo & Özel İmalat",
+  brandShort: "İzmir Mutfak Banyo",
+  legalName: "İzmir Mutfak Banyo & Anahtar Teslim Tadilat Dekorasyon",
   foundingYear: 1998,
   experienceYears: 28,
   customerCount: "2.850+",
   ratingValue: "4.96",
-  domain: "yesilaymutfak.com",
-  siteUrl: "https://yesilaymutfak.com",
+  domain: "izmirmutfakbanyo.com.tr",
+  siteUrl: "https://izmirmutfakbanyo.com.tr",
   phoneRaw: "02324411060",
   phoneFormatted: "0232 441 1060",
   phoneCompany: "0232 441 1060",
@@ -39,8 +39,8 @@ export const siteConfig = {
   },
   openingHours: "Mo-Sa 09:00-19:30",
   socials: {
-    instagram: "https://www.instagram.com/cemyesilay.luxury",
-    facebook: "https://www.instagram.com/cemyesilay.luxury"
+    instagram: "https://www.instagram.com/izmirmutfakbanyo",
+    facebook: "https://www.instagram.com/izmirmutfakbanyo"
   },
   districts: [
     "Buca", "Karşıyaka", "Bostanlı", "Mavişehir", "Alsancak", "Bornova",
@@ -55,7 +55,7 @@ export const siteConfig = {
       navTitle: "Mutfak Dolabı",
       description: "Doğrudan Adatepe atölyemizde kişiye ve mekâna özel projelendirilen akrilik, ipek mat fırın lake ve doğal meşe kaplamalı mutfak dolapları. Blum ve Häfele frenli gizli mekanizmalar.",
       shortDesc: "Özel üretim lake, akrilik ve masif ahşap mutfak dolap sistemleri.",
-      keywords: ["cem yeşilay mutfak", "buca mutfak dolabı imalatı", "lake mutfak dolabı izmir", "akrilik mutfak", "modern mutfak tasarımı"],
+      keywords: ["izmir mutfak banyo", "buca mutfak dolabı imalatı", "lake mutfak dolabı izmir", "akrilik mutfak", "modern mutfak tasarımı"],
       features: ["%100 E1 Sertifikalı Neme Dayanımlı MDF-Lam Gövde", "Blum Entegre Sessiz Frenli Menteşe ve Ray Sistemleri", "Fotogerçekçi 3D İç Mimari Rölöve ve Modelleme", "10 Yıl Bütünleşik Atölye İmalat Garantisi"]
     },
     {

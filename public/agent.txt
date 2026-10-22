@@ -1,15 +1,15 @@
-# AI Agent Protocol Manifesto — Cem Yeşilay Luxury
+# AI Agent Protocol Manifesto — İzmir Mutfak Banyo Luxury
 Version: 2026-Q4 Enterprise Mandate v9.1
-Canonical-Origin: https://yesilaymutfak.com
-Agent-Card: https://yesilaymutfak.com/.well-known/agent.json
-MCP-Endpoint: https://yesilaymutfak.com/mcp
-MCP-Mobile-Endpoint: https://yesilaymutfak.com/mcp/mobile
-LLMS-Txt: https://yesilaymutfak.com/llms.txt
-LLMS-Core: https://yesilaymutfak.com/llms/core.md
+Canonical-Origin: https://izmirmutfakbanyo.com.tr
+Agent-Card: https://izmirmutfakbanyo.com.tr/.well-known/agent.json
+MCP-Endpoint: https://izmirmutfakbanyo.com.tr/mcp
+MCP-Mobile-Endpoint: https://izmirmutfakbanyo.com.tr/mcp/mobile
+LLMS-Txt: https://izmirmutfakbanyo.com.tr/llms.txt
+LLMS-Core: https://izmirmutfakbanyo.com.tr/llms/core.md
 WebSub-Hub: https://pubsubhubbub.appspot.com/
 IndexNow-Key: 9d980417475ac56c8ad72ef2c743e1e5
-IndexNow-Endpoint: https://yesilaymutfak.com/9d980417475ac56c8ad72ef2c743e1e5.txt
-Primary-Contact: info@yesilaymutfak.com
+IndexNow-Endpoint: https://izmirmutfakbanyo.com.tr/9d980417475ac56c8ad72ef2c743e1e5.txt
+Primary-Contact: info@izmirmutfakbanyo.com.tr
 Telephone: +902324411060
 Atelier-Location: Adatepe, Ozbekistan Cd. no:10/f, 35000 Buca/Izmir/Turkey
 Primary-Entity-Type: HomeAndConstructionBusiness

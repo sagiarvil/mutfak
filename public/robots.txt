@@ -1,5 +1,5 @@
 # =====================================================================
-# CEM YEŞİLAY LUXURY — UNIVERSAL DISCOVERY MATRIX (MANDATE V9.1 $10M TIER)
+# İZMİR MUTFAK BANYO LUXURY — UNIVERSAL DISCOVERY MATRIX (MANDATE V9.1 $10M TIER)
 # =====================================================================
 User-agent: *
 Allow: /
@@ -71,16 +71,16 @@ User-agent: Amazonbot
 Allow: /
 
 # Sitemap Index (Google Alexandria & Bing Engine)
-Sitemap: https://yesilaymutfak.com/sitemap.xml
-Sitemap: https://yesilaymutfak.com/sitemap-index.xml
-Sitemap: https://yesilaymutfak.com/image-sitemap.xml
+Sitemap: https://izmirmutfakbanyo.com.tr/sitemap.xml
+Sitemap: https://izmirmutfakbanyo.com.tr/sitemap-index.xml
+Sitemap: https://izmirmutfakbanyo.com.tr/image-sitemap.xml
 
 # LLMS & Agent Discovery Headers
-# LLMs-Txt: https://yesilaymutfak.com/llms.txt
-# LLMs-Core: https://yesilaymutfak.com/llms/core.md
-# Agent-Card: https://yesilaymutfak.com/.well-known/agent.json
-# MCP-Endpoint: https://yesilaymutfak.com/mcp
-# RSS-Feed: https://yesilaymutfak.com/feed.xml
-# Atom-Feed: https://yesilaymutfak.com/atom.xml
-# JSON-Feed: https://yesilaymutfak.com/feed.json
-# Mobile-Feed: https://yesilaymutfak.com/mobile/feed.xml
+# LLMs-Txt: https://izmirmutfakbanyo.com.tr/llms.txt
+# LLMs-Core: https://izmirmutfakbanyo.com.tr/llms/core.md
+# Agent-Card: https://izmirmutfakbanyo.com.tr/.well-known/agent.json
+# MCP-Endpoint: https://izmirmutfakbanyo.com.tr/mcp
+# RSS-Feed: https://izmirmutfakbanyo.com.tr/feed.xml
+# Atom-Feed: https://izmirmutfakbanyo.com.tr/atom.xml
+# JSON-Feed: https://izmirmutfakbanyo.com.tr/feed.json
+# Mobile-Feed: https://izmirmutfakbanyo.com.tr/mobile/feed.xml

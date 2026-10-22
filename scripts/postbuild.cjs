@@ -19,11 +19,11 @@ console.log('\n⚙️ [POST-BUILD] Sitemap ve Keşif Entegrasyonu Başlatılıyo
 const sitemapIndexContent = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://yesilaymutfak.com/sitemap.xml</loc>
+    <loc>https://izmirmutfakbanyo.com.tr/sitemap.xml</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://yesilaymutfak.com/image-sitemap.xml</loc>
+    <loc>https://izmirmutfakbanyo.com.tr/image-sitemap.xml</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
   </sitemap>
 </sitemapindex>
@@ -56,20 +56,20 @@ try {
 
 // 5. Triple Push (IndexNow & WebSub)
 const targetUrls = [
-  'https://yesilaymutfak.com/',
-  'https://yesilaymutfak.com/izmir-mutfak-dolabi-imalati/',
-  'https://yesilaymutfak.com/2026-mutfak-dolabi-fiyatlari/',
-  'https://yesilaymutfak.com/izmir-komple-mutfak-tadilati/',
-  'https://yesilaymutfak.com/izmir-banyo-yenileme-seramik/',
-  'https://yesilaymutfak.com/izmir-komple-daire-tadilati/',
-  'https://yesilaymutfak.com/izmir-anahtar-teslim-tadilat/',
-  'https://yesilaymutfak.com/modern-mutfak-modelleri/',
-  'https://yesilaymutfak.com/klasik-country-mutfak-modelleri/',
-  'https://yesilaymutfak.com/hazir-mutfak-modelleri-izmir/',
-  'https://yesilaymutfak.com/tasarimlar/',
-  'https://yesilaymutfak.com/yapilan-isler/',
-  'https://yesilaymutfak.com/hakkimizda/',
-  'https://yesilaymutfak.com/iletisim/'
+  'https://izmirmutfakbanyo.com.tr/',
+  'https://izmirmutfakbanyo.com.tr/izmir-mutfak-dolabi-imalati/',
+  'https://izmirmutfakbanyo.com.tr/2026-mutfak-dolabi-fiyatlari/',
+  'https://izmirmutfakbanyo.com.tr/izmir-komple-mutfak-tadilati/',
+  'https://izmirmutfakbanyo.com.tr/izmir-banyo-yenileme-seramik/',
+  'https://izmirmutfakbanyo.com.tr/izmir-komple-daire-tadilati/',
+  'https://izmirmutfakbanyo.com.tr/izmir-anahtar-teslim-tadilat/',
+  'https://izmirmutfakbanyo.com.tr/modern-mutfak-modelleri/',
+  'https://izmirmutfakbanyo.com.tr/klasik-country-mutfak-modelleri/',
+  'https://izmirmutfakbanyo.com.tr/hazir-mutfak-modelleri-izmir/',
+  'https://izmirmutfakbanyo.com.tr/tasarimlar/',
+  'https://izmirmutfakbanyo.com.tr/yapilan-isler/',
+  'https://izmirmutfakbanyo.com.tr/hakkimizda/',
+  'https://izmirmutfakbanyo.com.tr/iletisim/'
 ];
 
 executeTriplePush(targetUrls).then(() => {

@@ -13,7 +13,7 @@ const REDIRECT_PATHS = [
 ];
 
 export default defineConfig({
-  site: "https://yesilaymutfak.com",
+  site: "https://izmirmutfakbanyo.com.tr",
   output: "static",
   trailingSlash: "always",
   build: {

@@ -6,7 +6,7 @@
 const https = require('https');
 
 const CONFIG = {
-  host: 'yesilaymutfak.com',
+  host: 'izmirmutfakbanyo.com.tr',
   indexNowKey: '9d980417475ac56c8ad72ef2c743e1e5',
   indexNowEndpoints: [
     'https://api.indexnow.org/indexnow',
@@ -18,8 +18,8 @@ const CONFIG = {
     'https://pubsubhubbub.superfeedr.com/'
   ],
   feeds: [
-    'https://yesilaymutfak.com/feed.xml',
-    'https://yesilaymutfak.com/mobile/feed.xml'
+    'https://izmirmutfakbanyo.com.tr/feed.xml',
+    'https://izmirmutfakbanyo.com.tr/mobile/feed.xml'
   ]
 };
 
@@ -121,15 +121,15 @@ function executeTriplePush(urls) {
 // Doğrudan çalıştırma
 if (require.main === module) {
   const targetUrls = [
-    'https://yesilaymutfak.com/',
-    'https://yesilaymutfak.com/hakkimizda/',
-    'https://yesilaymutfak.com/iletisim/',
-    'https://yesilaymutfak.com/tasarimlar/',
-    'https://yesilaymutfak.com/izmir-mutfak-dolabi-imalati/',
-    'https://yesilaymutfak.com/izmir-komple-mutfak-tadilati/',
-    'https://yesilaymutfak.com/izmir-banyo-yenileme-seramik/',
-    'https://yesilaymutfak.com/izmir-anahtar-teslim-tadilat/',
-    'https://yesilaymutfak.com/2026-mutfak-dolabi-fiyatlari/'
+    'https://izmirmutfakbanyo.com.tr/',
+    'https://izmirmutfakbanyo.com.tr/hakkimizda/',
+    'https://izmirmutfakbanyo.com.tr/iletisim/',
+    'https://izmirmutfakbanyo.com.tr/tasarimlar/',
+    'https://izmirmutfakbanyo.com.tr/izmir-mutfak-dolabi-imalati/',
+    'https://izmirmutfakbanyo.com.tr/izmir-komple-mutfak-tadilati/',
+    'https://izmirmutfakbanyo.com.tr/izmir-banyo-yenileme-seramik/',
+    'https://izmirmutfakbanyo.com.tr/izmir-anahtar-teslim-tadilat/',
+    'https://izmirmutfakbanyo.com.tr/2026-mutfak-dolabi-fiyatlari/'
   ];
   executeTriplePush(targetUrls).then(() => {
     process.exit(0);

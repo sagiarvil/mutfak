@@ -35,7 +35,7 @@ const normalizedRoute = currentPath === "" ? "/" : `${currentPath}/`;
 const canonicalUrl = canonical || `${siteUrl}${normalizedRoute}`;
 const imageUrl = image.startsWith("http") ? image : `${siteUrl}${image.startsWith("/") ? image : "/" + image}`;
 
-const fullTitle = title.includes("|") ? title : `${title} | Cem Yeşilay`;
+const fullTitle = title.includes("|") ? title : `${title} | İzmir Mutfak Banyo`;
 
 // SSOT Registry kontrolü
 const registeredPage = SEO_REGISTRY[normalizedRoute];
@@ -59,10 +59,10 @@ if (registeredPage) {
       id: `${siteUrl}/#organization`,
       name: siteConfig.name,
       type: "HomeAndConstructionBusiness" as const,
-      sameAs: [siteConfig.whatsappUrl, "https://www.instagram.com/cemyesilay.luxury"]
+      sameAs: [siteConfig.whatsappUrl, "https://www.instagram.com/izmirmutfakbanyo"]
     },
     semanticTriples: [
-      { subject: "Cem Yeşilay", predicate: "providesService", object: title }
+      { subject: "İzmir Mutfak Banyo", predicate: "providesService", object: title }
     ],
     heroAnswerEngine: description,
     publishedAt: publishedTime,
@@ -129,7 +129,7 @@ if (faqList.length > 0) {
 <meta property="og:description" content={description} />
 <meta property="og:image" content={imageUrl} />
 <meta property="og:locale" content="tr_TR" />
-<meta property="og:site_name" content="Cem Yeşilay" />
+<meta property="og:site_name" content="İzmir Mutfak Banyo" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
