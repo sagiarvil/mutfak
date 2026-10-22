@@ -135,7 +135,7 @@ const categories = ["Tümü", "Mutfak İmalatı", "Mutfak Tadilatı", "Lüks Ban
           <button 
             type="button" 
             data-filter={cat}
-            class={`px-4 py-2.5 rounded font-bold uppercase tracking-wider text-[11px] transition-all duration-200 cursor-pointer ${idx === 0 ? 'bg-[#23323A] text-[#CB000F] border border-[#CB000F]/30 shadow-md active-filter' : 'bg-white text-zinc-700 hover:bg-zinc-100 border border-gray-300'}`}
+            class={`px-4 py-2.5 rounded font-bold uppercase tracking-wider text-[11px] transition-all duration-200 cursor-pointer ${idx === 0 ? 'bg-[#23323A] text-white border border-[#CB000F]/30 shadow-md active-filter' : 'bg-white text-zinc-700 hover:bg-zinc-100 border border-gray-300'}`}
           >
             {cat}
           </button>
@@ -159,7 +159,7 @@ const categories = ["Tümü", "Mutfak İmalatı", "Mutfak Tadilatı", "Lüks Ban
                 width="800"
                 height="800"
               />
-              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-[#23323A]/90 backdrop-blur-md text-[#CB000F] text-[10px] font-bold uppercase tracking-wider rounded border border-[#CB000F]/30">
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-[#23323A]/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider rounded border border-[#CB000F]/30">
                 #{String(item.id).padStart(2, '0')}
               </span>
               <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 bg-black/75 backdrop-blur-md text-white text-[9.5px] font-medium rounded">
@@ -184,7 +184,7 @@ const categories = ["Tümü", "Mutfak İmalatı", "Mutfak Tadilatı", "Lüks Ban
                   href={`https://wa.me/905393333303?text=Merhaba,%20web%20sitenizdeki%20#${item.id}%20numaralı%20${item.location}%20projeniz%20hakkında%20bilgi%20ve%20ücretsiz%20keşif%20istiyorum.`}
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  class="px-2.5 py-1 bg-[#23323A] hover:bg-[#073322] text-[#CB000F] rounded font-bold text-[10.5px] transition flex items-center gap-1 border border-[#CB000F]/30"
+                  class="px-2.5 py-1 bg-[#23323A] hover:bg-[#073322] text-white rounded font-bold text-[10.5px] transition flex items-center gap-1 border border-[#CB000F]/30"
                 >
                   <span>3D Keşif</span> <span>→</span>
                 </a>
@@ -218,7 +218,7 @@ const categories = ["Tümü", "Mutfak İmalatı", "Mutfak Tadilatı", "Lüks Ban
           href="https://wa.me/905393333303?text=Merhaba,%20yaptığınız%20işleri%20inceledim,%20benim%20evim%20için%20de%20ücretsiz%203D%20keşif%20istiyorum." 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="w-full sm:w-auto px-9 py-4 bg-[#23323A] hover:bg-[#172127] text-[#CB000F] font-extrabold text-xs uppercase tracking-wider rounded-xl border border-[#CB000F]/40 shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.02]"
+          class="w-full sm:w-auto px-9 py-4 bg-[#23323A] hover:bg-[#172127] text-white font-extrabold text-xs uppercase tracking-wider rounded-xl border border-[#CB000F]/40 shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.02]"
         >
           <span>WhatsApp ile VIP Keşif Al</span>
           <span>→</span>
@@ -247,7 +247,7 @@ const categories = ["Tümü", "Mutfak İmalatı", "Mutfak Tadilatı", "Lüks Ban
           filterBtns.forEach(b => {
             b.className = "px-4 py-2.5 rounded font-bold uppercase tracking-wider text-[11px] transition-all duration-200 cursor-pointer bg-white text-zinc-700 hover:bg-zinc-100 border border-gray-300";
           });
-          btn.className = "px-4 py-2.5 rounded font-bold uppercase tracking-wider text-[11px] transition-all duration-200 cursor-pointer bg-[#23323A] text-[#CB000F] border border-[#CB000F]/30 shadow-md active-filter";
+          btn.className = "px-4 py-2.5 rounded font-bold uppercase tracking-wider text-[11px] transition-all duration-200 cursor-pointer bg-[#23323A] text-white border border-[#CB000F]/30 shadow-md active-filter";
 
           // Kartları filtrele
           cards.forEach(card => {
