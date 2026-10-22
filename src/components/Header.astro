@@ -14,13 +14,22 @@ import { siteConfig } from "../data/siteConfig";
       <!-- LOGO (Plan Mutfak Düzeni) -->
       <div class="logo flex items-center gap-3">
         <a href="/" title="Yamashi Mutfak" class="flex items-center gap-3 sm:gap-4 group">
-          <img 
-            src="/logo.png" 
-            alt="İzmir Mutfak Banyo" 
-            class="h-14 sm:h-16 lg:h-[72px] w-auto object-contain transition-transform group-hover:scale-105" 
-            width="72" 
-            height="72"
-          />
+          <div class="relative h-14 sm:h-16 lg:h-[72px] aspect-square flex-shrink-0">
+            <img 
+              src="/logo.png" 
+              alt="İzmir Mutfak Banyo" 
+              class="h-full w-auto object-contain transition-opacity duration-300 group-hover:opacity-0" 
+              width="72" 
+              height="72"
+            />
+            <img 
+              src="/logo-hover.png" 
+              alt="İzmir Mutfak Banyo" 
+              class="h-full w-auto object-contain absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" 
+              width="72" 
+              height="72"
+            />
+          </div>
           <img 
             src="/media/branding/yamashi-mutfak-red-badge.png" 
             alt="Yamashi Mutfak" 

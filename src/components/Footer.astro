@@ -16,13 +16,22 @@ const currentYear = new Date().getFullYear();
       <!-- KOLON 1: LOGO + FİRMA TANITIMI -->
       <div class="space-y-4">
         <a href="/" title="Yamashi Mutfak" class="flex items-center gap-3 sm:gap-4 group">
-          <img 
-            src="/logo.png" 
-            alt="İzmir Mutfak Banyo" 
-            class="h-14 w-14 object-contain bg-white rounded-full p-1.5 shadow-md" 
-            width="56" 
-            height="56" 
-          />
+          <div class="relative h-14 w-14 bg-white rounded-full p-1.5 shadow-md flex items-center justify-center flex-shrink-0">
+            <img 
+              src="/logo.png" 
+              alt="İzmir Mutfak Banyo" 
+              class="h-full w-full object-contain transition-opacity duration-300 group-hover:opacity-0" 
+              width="56" 
+              height="56" 
+            />
+            <img 
+              src="/logo-hover.png" 
+              alt="İzmir Mutfak Banyo" 
+              class="h-full w-full object-contain absolute inset-0 p-1.5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" 
+              width="56" 
+              height="56" 
+            />
+          </div>
           <img 
             src="/media/branding/yamashi-mutfak-red-badge.png" 
             alt="Yamashi Mutfak" 
