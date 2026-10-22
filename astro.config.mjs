@@ -1,6 +1,17 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
+const REDIRECT_PATHS = [
+  '/404',
+  '/mutfak-dolabi/',
+  '/mutfak-dolabi-fiyatlari/',
+  '/mutfak-tadilati/',
+  '/banyo-tadilati/',
+  '/ev-tadilati/',
+  '/anahtar-teslim-tadilat/',
+  '/hazir-mutfak/'
+];
+
 export default defineConfig({
   site: "https://yesilaymutfak.com",
   output: "static",
@@ -10,7 +21,7 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/404/'),
+      filter: (page) => !REDIRECT_PATHS.some(redirectPath => page.includes(redirectPath)),
       changefreq: 'weekly',
       priority: 0.8,
       lastmod: new Date()

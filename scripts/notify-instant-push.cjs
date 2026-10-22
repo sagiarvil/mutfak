@@ -23,70 +23,98 @@ const CONFIG = {
   ]
 };
 
-async function executeTriplePush(urls) {
-  console.log(`🚀 [Triple-Push] ${urls.length} adet URL anlık dağıtıma iletiliyor...`);
+function executeTriplePush(urls) {
+  return new Promise((resolve) => {
+    console.log(`🚀 [Triple-Push] ${urls.length} adet URL anlık dağıtıma iletiliyor...`);
 
-  // 1. IndexNow Multi-Hub
-  const payload = JSON.stringify({
-    host: CONFIG.host,
-    key: CONFIG.indexNowKey,
-    keyLocation: `https://${CONFIG.host}/${CONFIG.indexNowKey}.txt`,
-    urlList: urls
-  });
+    const payload = JSON.stringify({
+      host: CONFIG.host,
+      key: CONFIG.indexNowKey,
+      keyLocation: `https://${CONFIG.host}/${CONFIG.indexNowKey}.txt`,
+      urlList: urls
+    });
 
-  CONFIG.indexNowEndpoints.forEach(endpoint => {
-    try {
-      const u = new URL(endpoint);
-      const req = https.request({
-        hostname: u.hostname,
-        path: u.pathname,
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Content-Length': Buffer.byteLength(payload)
+    const promises = [];
+
+    // 1. IndexNow Multi-Hub
+    CONFIG.indexNowEndpoints.forEach(endpoint => {
+      promises.push(new Promise(resDone => {
+        try {
+          const u = new URL(endpoint);
+          const req = https.request({
+            hostname: u.hostname,
+            path: u.pathname,
+            method: 'POST',
+            timeout: 5000,
+            headers: {
+              'Content-Type': 'application/json',
+              'Content-Length': Buffer.byteLength(payload)
+            }
+          }, res => {
+            console.log(`  ✅ [IndexNow: ${u.hostname}] HTTP ${res.statusCode}`);
+            res.resume();
+            resDone();
+          });
+
+          req.on('error', err => {
+            console.error(`  ⚠️ [IndexNow: ${u.hostname}] Hata:`, err.message);
+            resDone();
+          });
+          req.on('timeout', () => {
+            req.destroy();
+            resDone();
+          });
+
+          req.write(payload);
+          req.end();
+        } catch (e) {
+          console.error(`  ⚠️ [IndexNow] İstek oluşturulamadı:`, e.message);
+          resDone();
         }
-      }, res => {
-        console.log(`  ✅ [IndexNow: ${u.hostname}] HTTP ${res.statusCode}`);
-      });
+      }));
+    });
 
-      req.on('error', err => {
-        console.error(`  ⚠️ [IndexNow: ${u.hostname}] Hata:`, err.message);
-      });
+    // 2. WebSub Hubs Ping
+    const params = CONFIG.feeds.map(f => `hub.url=${encodeURIComponent(f)}`).join('&') + '&hub.mode=publish';
 
-      req.write(payload);
-      req.end();
-    } catch (e) {
-      console.error(`  ⚠️ [IndexNow] İstek oluşturulamadı:`, e.message);
-    }
-  });
+    CONFIG.webSubHubs.forEach(hub => {
+      promises.push(new Promise(resDone => {
+        try {
+          const u = new URL(hub);
+          const req = https.request({
+            hostname: u.hostname,
+            path: u.pathname,
+            method: 'POST',
+            timeout: 5000,
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+              'Content-Length': Buffer.byteLength(params)
+            }
+          }, res => {
+            console.log(`  ✅ [WebSub: ${u.hostname}] HTTP ${res.statusCode}`);
+            res.resume();
+            resDone();
+          });
 
-  // 2. WebSub Hubs Ping
-  const params = CONFIG.feeds.map(f => `hub.url=${encodeURIComponent(f)}`).join('&') + '&hub.mode=publish';
+          req.on('error', err => {
+            console.error(`  ⚠️ [WebSub: ${u.hostname}] Hata:`, err.message);
+            resDone();
+          });
+          req.on('timeout', () => {
+            req.destroy();
+            resDone();
+          });
 
-  CONFIG.webSubHubs.forEach(hub => {
-    try {
-      const u = new URL(hub);
-      const req = https.request({
-        hostname: u.hostname,
-        path: u.pathname,
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'Content-Length': Buffer.byteLength(params)
+          req.write(params);
+          req.end();
+        } catch (e) {
+          console.error(`  ⚠️ [WebSub] İstek oluşturulamadı:`, e.message);
+          resDone();
         }
-      }, res => {
-        console.log(`  ✅ [WebSub: ${u.hostname}] HTTP ${res.statusCode}`);
-      });
+      }));
+    });
 
-      req.on('error', err => {
-        console.error(`  ⚠️ [WebSub: ${u.hostname}] Hata:`, err.message);
-      });
-
-      req.write(params);
-      req.end();
-    } catch (e) {
-      console.error(`  ⚠️ [WebSub] İstek oluşturulamadı:`, e.message);
-    }
+    Promise.all(promises).then(() => resolve());
   });
 }
 
@@ -103,7 +131,9 @@ if (require.main === module) {
     'https://yesilaymutfak.com/izmir-anahtar-teslim-tadilat/',
     'https://yesilaymutfak.com/2026-mutfak-dolabi-fiyatlari/'
   ];
-  executeTriplePush(targetUrls);
+  executeTriplePush(targetUrls).then(() => {
+    process.exit(0);
+  });
 }
 
 module.exports = { executeTriplePush };
