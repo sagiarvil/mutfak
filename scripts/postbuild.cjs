@@ -59,6 +59,7 @@ const targetUrls = [
   'https://izmirmutfakbanyo.com.tr/',
   'https://izmirmutfakbanyo.com.tr/izmir-mutfak-dolabi-imalati/',
   'https://izmirmutfakbanyo.com.tr/2026-mutfak-dolabi-fiyatlari/',
+  'https://izmirmutfakbanyo.com.tr/maliyet-hesapla/',
   'https://izmirmutfakbanyo.com.tr/izmir-komple-mutfak-tadilati/',
   'https://izmirmutfakbanyo.com.tr/izmir-banyo-yenileme-seramik/',
   'https://izmirmutfakbanyo.com.tr/izmir-komple-daire-tadilati/',
