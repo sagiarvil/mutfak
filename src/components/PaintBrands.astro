@@ -1,0 +1,165 @@
+---
+// src/components/PaintBrands.astro
+// Çözüm Ortakları & Sertifikalı Boya Markaları Vitrini (Retina & Ultra Yüksek Çözünürlük)
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  badge?: string;
+  class?: string;
+}
+
+const {
+  title = "Tadilat ve İmalatta Kullandığımız 1. Sınıf Boya Markaları",
+  subtitle = "İzmir genelindeki tüm mutfak dolabı, lake yüzey ve komple daire boya badana uygulamalarımızda; sararma yapmayan, silinebilir, anti-bakteriyel ve kokusuz A+ kalite sertifikalı markalarla çalışıyoruz.",
+  badge = "SERTİFİKALI ÇÖZÜM ORTAKLARIMIZ",
+  class: className = ""
+} = Astro.props;
+
+const brands = [
+  {
+    name: "Polisan",
+    slug: "polisan",
+    logo: "/media/brands/polisan.webp",
+    badge: "Silinebilir & Hijyen",
+    desc: "Ekstra örtücülük, küf önleyici ve silinebilir iç cephe teknolojisi."
+  },
+  {
+    name: "Fawori",
+    slug: "fawori",
+    logo: "/media/brands/fawori.webp",
+    badge: "Canlı Renkler",
+    desc: "Yüksek pigment yoğunluğu ve nefes alan mineral duvar yüzeyleri."
+  },
+  {
+    name: "Filli Boya",
+    slug: "filli-boya",
+    logo: "/media/brands/filli-boya.webp",
+    badge: "Aktif Silikonlu",
+    desc: "Tam silinebilir ipeksi mat doku, leke tutmayan su bazlı formül."
+  },
+  {
+    name: "Caparol",
+    slug: "caparol",
+    logo: "/media/brands/caparol.webp",
+    badge: "Alman Standartı",
+    desc: "Ağır hava koşullarına ve neme tam dayanıklı dış/iç cephe sistemleri."
+  },
+  {
+    name: "Marshall",
+    slug: "marshall",
+    logo: "/media/brands/marshall.webp",
+    badge: "Antibakteriyel",
+    desc: "AkzoNobel teknolojisiyle silikonlu özel iç mekan renk kartelaları."
+  },
+  {
+    name: "Dyo",
+    slug: "dyo",
+    logo: "/media/brands/dyo.webp",
+    badge: "Nanoteknolojik",
+    desc: "Kendi kendini temizleyen, nano partiküllü pürüzsüz yüzey koruması."
+  },
+  {
+    name: "Casati Boya",
+    slug: "casati",
+    logo: "/media/brands/casati.webp",
+    badge: "İtalyan Zarafeti",
+    desc: "Dekoratif efekt boyalar, kadife dokulu sıva ve sedef kaplamalar."
+  },
+  {
+    name: "Jotun Boya",
+    slug: "jotun",
+    logo: "/media/brands/jotun.webp",
+    badge: "Premium Fenomastic",
+    desc: "İskandinav lüks kalitesi, sıfır koku, zengin matlık ve 10 yıl renk güvencesi."
+  }
+];
+---
+
+<section class={`py-16 sm:py-20 bg-white border-b border-gray-200 relative overflow-hidden ${className}`}>
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-10">
+    
+    <!-- Üst Başlık & Açıklama -->
+    <div class="text-center max-w-3xl mx-auto space-y-3">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#FAF6F6] border border-[#CB000F]/40 rounded-full shadow-xs">
+        <span class="w-2 h-2 rounded-full bg-[#CB000F] animate-pulse"></span>
+        <span class="text-[11px] font-black uppercase tracking-[0.2em] text-[#CB000F] font-['Montserrat',sans-serif]">
+          {badge}
+        </span>
+      </div>
+      
+      <h2 class="text-2xl sm:text-4xl font-black text-[#23323A] tracking-tight font-['Montserrat',sans-serif] uppercase">
+        {title}
+      </h2>
+      
+      <p class="text-xs sm:text-sm text-gray-600 font-normal leading-relaxed max-w-2xl mx-auto font-['Montserrat',sans-serif]">
+        {subtitle}
+      </p>
+    </div>
+
+    <!-- 8 Marka Kartı Grid (Responsive 4x2 / 2x4) -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+      {brands.map((brand) => (
+        <div class="group bg-[#F8FAFC] hover:bg-white rounded-2xl p-5 border border-gray-200/90 hover:border-[#CB000F] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-between text-center relative overflow-hidden">
+          
+          <!-- Üst Rozet -->
+          <div class="w-full flex justify-between items-center pb-2 border-b border-gray-200/60 mb-3">
+            <span class="text-[10px] font-black uppercase tracking-wider text-[#CB000F] bg-white px-2 py-0.5 rounded border border-gray-100 group-hover:border-[#CB000F]/30 transition">
+              {brand.badge}
+            </span>
+            <span class="text-[10px] font-bold text-emerald-600 flex items-center gap-0.5">
+              <span>✓</span> Orijinal
+            </span>
+          </div>
+
+          <!-- Yüksek Çözünürlüklü Logo Kutusu -->
+          <div class="h-16 sm:h-20 w-full flex items-center justify-center p-2 my-auto">
+            <img 
+              src={brand.logo} 
+              alt={`${brand.name} Boya Yetkili Uygulayıcı`} 
+              class="max-h-full max-w-[85%] object-contain filter group-hover:scale-108 transition-transform duration-300"
+              width="240"
+              height="100"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <!-- Alt Açıklama -->
+          <div class="pt-3 border-t border-gray-200/60 w-full mt-3">
+            <h3 class="text-xs font-bold text-[#23323A] font-['Montserrat',sans-serif] group-hover:text-[#CB000F] transition">
+              {brand.name}
+            </h3>
+            <p class="text-[11px] text-gray-500 leading-tight mt-1 line-clamp-2">
+              {brand.desc}
+            </p>
+          </div>
+
+        </div>
+      ))}
+    </div>
+
+    <!-- Güvence ve Canlı Bilgi Şeridi -->
+    <div class="p-4 sm:p-5 bg-[#F4F6F8] rounded-xl border border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-['Montserrat',sans-serif]">
+      <div class="flex items-center gap-3">
+        <span class="w-10 h-10 rounded-full bg-[#CB000F] text-white flex items-center justify-center text-lg font-black shrink-0">
+          🛡️
+        </span>
+        <div>
+          <strong class="text-[#23323A] block text-sm font-bold">10 Yıl Sararmama ve Kabarma Garantisi</strong>
+          <span class="text-gray-500">Tüm projelerimizde ambalajı müşterimizin yanında açılan orijinal faturalı ve barkodlu boyalar kullanılır.</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 shrink-0">
+        <a 
+          href="/maliyet-hesapla/" 
+          class="px-5 py-2.5 bg-[#23323A] hover:bg-[#172127] text-white font-bold rounded text-xs uppercase tracking-wider transition"
+        >
+          Boya &amp; Tadilat Hesapla →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>

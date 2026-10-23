@@ -1,0 +1,464 @@
+---
+// src/pages/oncesi-sonrasi/index.astro
+// Öncesi & Sonrası Dönüşüm Vitrini (evseldekorasyon.com referanslı interaktif karşılaştırma)
+
+import Layout from "../../layouts/Layout.astro";
+import PaintBrands from "../../components/PaintBrands.astro";
+import { siteConfig } from "../../data/siteConfig";
+
+const seo = {
+  title: "Öncesi & Sonrası Tadilat Projeleri | Canlı Şantiye Dönüşüm Kanıtları | İzmir Mutfak Banyo",
+  description: "İzmir banyo, mutfak ve daire tadilatı öncesi sonrası canlı dönüşüm galerisi. 60x120 seramik kaplama, modern lake dolap, siyah duşakabin ve anahtar teslim yenileme örnekleri.",
+  canonical: "https://izmirmutfakbanyo.com.tr/oncesi-sonrasi/",
+  serviceName: "Öncesi & Sonrası Tadilat ve Dönüşüm Projeleri",
+  breadcrumbs: [
+    { name: "Öncesi & Sonrası", url: "/oncesi-sonrasi/" }
+  ],
+  faqList: [
+    {
+      question: "Öncesi ve sonrası gösterilen banyo tadilatları ne kadar sürede tamamlanıyor?",
+      answer: "Standart bir banyo kırımından seramik, su izolasyonu, duşakabin ve dolap montajına kadar ortalama 5 ila 8 iş günü içerisinde temizliği yapılmış halde teslim edilir."
+    },
+    {
+      question: "Tadilat sürecinde evde otururken çalışma yapılabiliyor mu?",
+      answer: "Banyo ve mutfak dönüşümlerinde toz izolasyon perdeleri kullanılır ve günlük moloz tahliyesi yapılarak evdeki yaşam konforu maksimum düzeyde korunur."
+    },
+    {
+      question: "Kullanılan malzemeler sözleşmede açıkça belirtiliyor mu?",
+      answer: "Evet; seramik ebat ve markası (Kütahya, VitrA, Bien vb.), boya markası (Jotun, Filli Boya, Polisan vb.), armatür ve banyo mobilyası gövde standartları noter onaylı sözleşmemizde sabitlenir."
+    }
+  ]
+};
+
+const projects = [
+  {
+    id: "proje-1",
+    title: "LÜKS BANYO YENİLEME",
+    category: ["banyo", "komple-ev"],
+    categoryName: "Banyo Tadilatı & Komple Yenileme",
+    location: "Bornova / İzmir",
+    duration: "8 İş Günü",
+    beforeImg: "/media/oncesi-sonrasi/Kapisiz-Yazisiz-Eski-Banyo-Girisi-1.webp",
+    afterImg: "/media/oncesi-sonrasi/Luks-Siyah-Mermerli-Modern-Banyo-1.webp",
+    features: ["60×120 Siyah Mermer Seramik", "Gizli Niş LED Ambiyans", "Gömme Rezervuar & Asma Klozet"],
+    desc: "Eski dar banyonun kırım ve moloz tahliyesi yapıldı; çift kat elastik sürme izolasyon üzerine 60x120 porselen seramik döşenerek modern siyah mermer konsepti uygulandı."
+  },
+  {
+    id: "proje-2",
+    title: "60×120 SERAMİK & DUVAR KAPLAMA",
+    category: ["seramik", "banyo"],
+    categoryName: "Seramik Uygulama & Islak Hacim",
+    location: "Karşıyaka / İzmir",
+    duration: "6 İş Günü",
+    beforeImg: "/media/oncesi-sonrasi/Modern-Mermer-Detayli-Kucuk-Banyo-1.webp",
+    afterImg: "/media/oncesi-sonrasi/Mermer-ve-Ahsabin-Luks-Uyumu-1.webp",
+    features: ["Lazer Kesim Rektifiyeli Porselen", "Ahşap & Mermer Kontrastı", "Sıfır Derz Pürüzsüzlük"],
+    desc: "Küçük banyo alanında ferahlık sağlamak için açık renk damarlı mermer seramik ile sıcak ahşap kaplama kombinlendi; milimetrik lazer gönyesiyle döşendi."
+  },
+  {
+    id: "proje-3",
+    title: "MODERN BANYO DOLABI & LED AYNA",
+    category: ["dolap", "banyo"],
+    categoryName: "Özel İmalat Dolap & Banyo Mobilyası",
+    location: "Mavişehir / İzmir",
+    duration: "5 İş Günü",
+    beforeImg: "/media/oncesi-sonrasi/Modern-Mavi-Gri-Banyo-Duzeni-1.webp",
+    afterImg: "/media/oncesi-sonrasi/Modern-Aydinlatmali-Mermer-Banyo-1.webp",
+    features: ["Suya Dayanıklı Marin Yeşil MDF", "Dokunmatik Buğu Önleyici LED Ayna", "Blum Frenli Gizli Ray"],
+    desc: "Buca Adatepe imalat atölyemizde kişiye özel ebatlanan neme dayanımlı marin MDF banyo mobilyası, porselen lavabo ve entegre sensörlü lüks LED ayna montajı tamamlandı."
+  },
+  {
+    id: "proje-4",
+    title: "LÜKS SİYAH DUŞAKABİN & KLOZET DÖNÜŞÜMÜ",
+    category: ["banyo", "komple-ev"],
+    categoryName: "Banyo Yenileme & Duş Alanı",
+    location: "Gaziemir / İzmir",
+    duration: "7 İş Günü",
+    beforeImg: "/media/oncesi-sonrasi/Modern-Bej-Banyo-ve-Cam-Dusakabin-1.webp",
+    afterImg: "/media/oncesi-sonrasi/Luks-Siyah-Beyaz-Mermer-Banyo-1.webp",
+    features: ["8mm Temperli Güvenlikli Cam", "Elektrostatik Mat Siyah Profil", "Lineer Paslanmaz Süzgeç"],
+    desc: "Eski hantal küvet kırılarak yerine hemzemin engelsiz duş alanı oluşturuldu; 8mm temperli cam duşakabin ve siyah mat batarya grubu entegre edildi."
+  },
+  {
+    id: "proje-5",
+    title: "KOMPLE MUTFAK RENOVASYONU & ADA ENTEGRASYONU",
+    category: ["komple-ev", "dolap"],
+    categoryName: "Mutfak Tadilatı & Özel İmalat",
+    location: "Buca Adatepe / İzmir",
+    duration: "18 İş Günü",
+    beforeImg: "/media/oncesi_sonrasi_once.webp",
+    afterImg: "/media/oncesi_sonrasi_sonra.webp",
+    features: ["İpek Mat Fırın Lake Kapaklar", "Belenco Çizilmez Porselen Tezgah", "Blum Aventos Kalkar Kapak"],
+    desc: "28 yıllık eski mutfağın komple sökümü, elektrik-su tesisatının yenilenmesi, tavana kadar dolap imalatı ve çok fonksiyonlu ada masa montajıyla lüks yaşam alanına dönüşüm."
+  }
+];
+---
+
+<Layout seo={seo} activeService="Öncesi & Sonrası">
+
+  <!-- ===================================================================== -->
+  <!-- 1. HERO BÖLÜMÜ (AYDINLIK & GÜVEN VEREN DÖNÜŞÜM BAŞLIĞI)              -->
+  <!-- ===================================================================== -->
+  <section class="relative bg-[#F4F6F8] border-b border-[#E2E8F0] py-14 sm:py-20 overflow-hidden text-zinc-900">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+      
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-[#23323A] transition">Ana Sayfa</a>
+        <span>/</span>
+        <span class="text-[#CB000F] font-bold">Öncesi &amp; Sonrası Dönüşümler</span>
+      </nav>
+
+      <div class="max-w-3xl space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-[#CB000F]/40 rounded-full shadow-xs">
+          <span class="w-2 h-2 rounded-full bg-[#00FF66] animate-pulse"></span>
+          <span class="text-[11px] font-black uppercase tracking-[0.2em] text-[#CB000F] font-['Montserrat',sans-serif]">
+            CANLI ŞANTİYE REFERANSLARI
+          </span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-black text-[#23323A] leading-tight font-['Montserrat',sans-serif] tracking-tight">
+          Öncesi &amp; Sonrası: <br />
+          <span class="text-[#CB000F]">Eski &amp; Yıpranmış Alanlardan</span> Lüks Dönüşüm.
+        </h1>
+
+        <p class="text-sm sm:text-base text-zinc-600 leading-relaxed font-normal">
+          Sözler değil, teslim ettiğimiz gerçek projeler konuşsun. Buca Adatepe atölyemizin zanaatı ve kadrolu mimarlarımızın yönettiği şantiyelerden canlı interaktif öncesi-sonrası dönüşüm kanıtları.
+        </p>
+
+        <!-- Hızlı Metrik Rozetleri -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 text-xs font-['Montserrat',sans-serif]">
+          <div class="bg-white p-3 rounded-xl border border-gray-200 shadow-xs">
+            <span class="text-lg font-black text-[#CB000F] block">2.850+</span>
+            <span class="text-zinc-600 font-bold">Teslim Daire &amp; Mutfak</span>
+          </div>
+          <div class="bg-white p-3 rounded-xl border border-gray-200 shadow-xs">
+            <span class="text-lg font-black text-[#23323A] block">28 Yıl</span>
+            <span class="text-zinc-600 font-bold">Kesintisiz Atölye Tecrübesi</span>
+          </div>
+          <div class="bg-white p-3 rounded-xl border border-gray-200 shadow-xs">
+            <span class="text-lg font-black text-emerald-600 block">%100</span>
+            <span class="text-zinc-600 font-bold">Sözleşmeli Sabit Fiyat</span>
+          </div>
+          <div class="bg-white p-3 rounded-xl border border-gray-200 shadow-xs">
+            <span class="text-lg font-black text-[#23323A] block">10 Yıl</span>
+            <span class="text-zinc-600 font-bold">Bütünleşik İmalat Garantisi</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 2. İNTERAKTİF FİLTRELEME & DÖNÜŞÜM PROJELERİ LİSTESİ (SLIDER MODÜLÜ)  -->
+  <!-- ===================================================================== -->
+  <section class="py-16 bg-[#F8FAFC] border-b border-gray-200">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-12">
+      
+      <!-- Kategori Filtre Butonları (evseldekorasyon.com birebir filtre mimarisi) -->
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3" id="filterContainer">
+        <button 
+          type="button" 
+          class="filter-btn active px-5 py-2.5 rounded-full text-xs font-black uppercase tracking-wider font-['Montserrat',sans-serif] transition-all bg-[#CB000F] text-white shadow-md"
+          data-filter="all"
+        >
+          TÜMÜ
+        </button>
+        <button 
+          type="button" 
+          class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider font-['Montserrat',sans-serif] transition-all bg-white text-zinc-700 hover:text-[#CB000F] border border-gray-200 shadow-xs"
+          data-filter="banyo"
+        >
+          BANYO TADİLATI
+        </button>
+        <button 
+          type="button" 
+          class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider font-['Montserrat',sans-serif] transition-all bg-white text-zinc-700 hover:text-[#CB000F] border border-gray-200 shadow-xs"
+          data-filter="komple-ev"
+        >
+          KOMPLE EV YENİLEME
+        </button>
+        <button 
+          type="button" 
+          class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider font-['Montserrat',sans-serif] transition-all bg-white text-zinc-700 hover:text-[#CB000F] border border-gray-200 shadow-xs"
+          data-filter="dolap"
+        >
+          ÖZEL İMALAT DOLAP
+        </button>
+        <button 
+          type="button" 
+          class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider font-['Montserrat',sans-serif] transition-all bg-white text-zinc-700 hover:text-[#CB000F] border border-gray-200 shadow-xs"
+          data-filter="seramik"
+        >
+          SERAMİK UYGULAMA
+        </button>
+      </div>
+
+      <!-- Projeler Listesi (Her Biri İnteraktif Çift Katmanlı Sürgülü Slider) -->
+      <div class="space-y-16" id="projectsGrid">
+        {projects.map((item, idx) => (
+          <article 
+            class="project-item bg-white rounded-3xl p-6 sm:p-8 border border-gray-200/90 shadow-sm hover:shadow-xl transition-all duration-300"
+            data-categories={item.category.join(",")}
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              
+              <!-- SOL: İNTERAKTİF SÜRGÜLÜ ÖNCESİ / SONRASI SLIDER (7 SÜTUN) -->
+              <div class="lg:col-span-7">
+                <div 
+                  class="before-after-slider relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden border-2 border-gray-200 shadow-md select-none cursor-ew-resize bg-black"
+                  id={`slider-${item.id}`}
+                  style="touch-action: pan-y;"
+                >
+                  <!-- SONRA GÖRSELİ (ALTTI TAM KAPLAYAN VİTRİN) -->
+                  <img 
+                    src={item.afterImg} 
+                    alt={`${item.title} - Teslim Edilen Son Hali`} 
+                    class="absolute inset-0 w-full h-full object-cover" 
+                    width="1200" 
+                    height="750" 
+                    loading={idx < 2 ? "eager" : "lazy"} 
+                    decoding="async" 
+                  />
+                  <div class="absolute bottom-4 right-4 px-3.5 py-1.5 bg-[#23323A]/90 backdrop-blur-md text-emerald-400 border border-emerald-500/40 rounded-full text-[11px] font-black uppercase tracking-wider pointer-events-none shadow-md">
+                    ✓ SONRA (TESLİMAT)
+                  </div>
+
+                  <!-- ÖNCE GÖRSELİ (ÜSTTE KIRPILAN KATMAN) -->
+                  <div class="slider-before-layer absolute inset-0 overflow-hidden" style="width: 50%;">
+                    <img 
+                      src={item.beforeImg} 
+                      alt={`${item.title} - Tadilat Öncesi Eski Hali`} 
+                      class="absolute inset-0 w-full h-full object-cover max-w-none" 
+                      style="width: 100%; height: 100%;"
+                      width="1200" 
+                      height="750" 
+                      loading={idx < 2 ? "eager" : "lazy"} 
+                      decoding="async" 
+                    />
+                    <div class="absolute bottom-4 left-4 px-3.5 py-1.5 bg-black/85 backdrop-blur-md text-amber-300 border border-amber-400/40 rounded-full text-[11px] font-black uppercase tracking-wider pointer-events-none shadow-md">
+                      ✕ ÖNCE (ESKİ HALİ)
+                    </div>
+                  </div>
+
+                  <!-- AYIRICI SÜRGÜ ÇİZGİSİ & TUTAMAÇ BUTONU -->
+                  <div class="slider-handle absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(255,255,255,0.9)] z-20 pointer-events-none" style="left: 50%;">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 bg-white text-[#23323A] rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.35)] flex items-center justify-center font-black text-sm border-2 border-[#CB000F] pointer-events-auto cursor-ew-resize transition-transform active:scale-95">
+                      <svg class="w-5 h-5 text-[#23323A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/>
+                      </svg>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="text-center text-[11px] text-gray-500 mt-2.5 font-['Montserrat',sans-serif] flex items-center justify-center gap-1.5">
+                  <span class="text-[#CB000F]">↔</span>
+                  <span>Sürgüyü sağa/sola kaydırarak eski ve yeni halini kıyaslayın</span>
+                  <span class="text-[#CB000F]">↔</span>
+                </div>
+              </div>
+
+              <!-- SAĞ: PROJE DETAYLARI & İŞÇİLİK BİLGİLERİ (5 SÜTUN) -->
+              <div class="lg:col-span-5 space-y-5">
+                
+                <div class="space-y-2">
+                  <div class="flex items-center gap-2">
+                    <span class="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 bg-[#FAF6F6] text-[#CB000F] border border-[#CB000F]/30 rounded">
+                      {item.categoryName}
+                    </span>
+                    <span class="text-[11px] text-gray-500 font-semibold">📍 {item.location}</span>
+                  </div>
+
+                  <h2 class="text-xl sm:text-2xl font-black text-[#23323A] uppercase font-['Montserrat',sans-serif] tracking-tight">
+                    {item.title}
+                  </h2>
+
+                  <p class="text-xs sm:text-sm text-gray-600 leading-relaxed font-normal">
+                    {item.desc}
+                  </p>
+                </div>
+
+                <!-- Öne Çıkan Özellikler -->
+                <div class="space-y-2 pt-2 border-t border-gray-100">
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-gray-400 block font-['Montserrat',sans-serif]">UYGULANAN İŞLEMLER:</span>
+                  <div class="flex flex-wrap gap-2">
+                    {item.features.map((feat) => (
+                      <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-[#F4F6F8] rounded-lg border border-gray-200 text-[11px] font-bold text-zinc-800">
+                        <span class="text-emerald-600">✓</span>
+                        {feat}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <!-- Teslimat & Eylem Butonu -->
+                <div class="pt-3 border-t border-gray-100 flex items-center justify-between gap-4">
+                  <div>
+                    <span class="text-[10px] uppercase text-gray-400 block font-bold">TESLİMAT SÜRESİ:</span>
+                    <strong class="text-xs sm:text-sm font-extrabold text-[#23323A] font-['Montserrat',sans-serif]">{item.duration}</strong>
+                  </div>
+
+                  <a 
+                    href={`https://wa.me/905393333303?text=Merhaba,%20web%20sitenizdeki%20${encodeURIComponent(item.title)}%20projesine%20benzer%20bir%20tadilat%20için%20fiyat%20almak%20istiyorum.`} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="px-5 py-2.5 bg-[#CB000F] hover:bg-[#b0000d] text-white text-xs font-bold uppercase tracking-wider rounded-lg transition shadow-md hover:scale-105 inline-flex items-center gap-1.5 font-['Montserrat',sans-serif]"
+                  >
+                    <span>Benzer Fiyat İste</span>
+                    <span>→</span>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </article>
+        ))}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 3. SERTİFİKALI BOYA VE YÜZEY ÇÖZÜM ORTAKLARIMIZ                      -->
+  <!-- ===================================================================== -->
+  <PaintBrands 
+    title="Tadilat Projelerimizde Kullandığımız 1. Sınıf Boya Markaları"
+    subtitle="Tüm dönüşüm projelerimizde duvar tamiratı, alçı astar ve son kat ipek mat boyalarda Türkiye ve dünyanın en güvenilir lider markalarıyla çalışıyoruz."
+  />
+
+  <!-- ===================================================================== -->
+  <!-- 4. SSS BÖLÜMÜ                                                         -->
+  <!-- ===================================================================== -->
+  <section class="py-16 bg-[#F4F6F8] border-b border-gray-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-8">
+      <div class="text-center space-y-2">
+        <span class="text-[11px] font-black uppercase tracking-[0.2em] text-[#CB000F] font-['Montserrat',sans-serif] block">
+          MERAK EDİLENLER
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black text-[#23323A] uppercase font-['Montserrat',sans-serif]">
+          Öncesi &amp; Sonrası Tadilat Hakkında
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        {seo.faqList.map((faq) => (
+          <div class="bg-white border border-gray-200 p-6 rounded-2xl shadow-xs space-y-2">
+            <h3 class="font-bold text-sm sm:text-base text-[#23323A] font-['Montserrat',sans-serif]">{faq.question}</h3>
+            <p class="text-xs sm:text-sm text-gray-600 font-normal leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5. EYLEM ÇAĞRISI (CTA) BANNER                                        -->
+  <!-- ===================================================================== -->
+  <section class="py-14 bg-[#172127] text-white">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-2 text-center md:text-left">
+        <h2 class="text-2xl sm:text-3xl font-black uppercase font-['Montserrat',sans-serif] text-white">
+          Sizin Mekanınızı da Birlikte Dönüştürelim
+        </h2>
+        <p class="text-gray-300 text-xs sm:text-sm font-['Montserrat',sans-serif]">
+          Evinizin fotoğraflarını WhatsApp üzerinden gönderin, mimarımız 30 dakikada tahmini maliyet ve 3D tasarım alternatiflerini iletsin.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-3 shrink-0">
+        <a 
+          href={siteConfig.whatsappUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="px-6 py-4 bg-[#25D366] hover:bg-[#20ba59] text-white font-['Montserrat',sans-serif] text-xs sm:text-sm font-black uppercase tracking-wider rounded transition shadow-xl inline-flex items-center gap-2 hover:scale-105"
+        >
+          <span>WhatsApp Fotoğraf Gönder</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<!-- İNTERAKTİF SLIDER VE FİLTRELEME İSTEMCİ SCRİPTİ -->
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. KATEGORİ FİLTRELEME
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-filter');
+        
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-[#CB000F]', 'text-white', 'shadow-md');
+          b.classList.add('bg-white', 'text-zinc-700', 'border', 'border-gray-200');
+        });
+        btn.classList.add('bg-[#CB000F]', 'text-white', 'shadow-md');
+        btn.classList.remove('bg-white', 'text-zinc-700', 'border', 'border-gray-200');
+
+        projectItems.forEach(item => {
+          const cats = item.getAttribute('data-categories') || '';
+          if (target === 'all' || cats.split(',').includes(target)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 2. İNTERAKTİF BEFORE/AFTER SLIDER SÜRÜKLEME KODU
+    const sliders = document.querySelectorAll('.before-after-slider');
+
+    sliders.forEach(slider => {
+      const beforeLayer = slider.querySelector('.slider-before-layer');
+      const handle = slider.querySelector('.slider-handle');
+      let isDragging = false;
+
+      function updatePosition(x) {
+        const rect = slider.getBoundingClientRect();
+        let posX = x - rect.left;
+        if (posX < 0) posX = 0;
+        if (posX > rect.width) posX = rect.width;
+        
+        const pct = (posX / rect.width) * 100;
+        beforeLayer.style.width = pct + '%';
+        handle.style.left = pct + '%';
+      }
+
+      function onMove(e) {
+        if (!isDragging) return;
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        updatePosition(clientX);
+      }
+
+      function onEnd() {
+        isDragging = false;
+        window.removeEventListener('mousemove', onMove);
+        window.removeEventListener('mouseup', onEnd);
+        window.removeEventListener('touchmove', onMove);
+        window.removeEventListener('touchend', onEnd);
+      }
+
+      function onStart(e) {
+        isDragging = true;
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        updatePosition(clientX);
+        window.addEventListener('mousemove', onMove);
+        window.addEventListener('mouseup', onEnd);
+        window.addEventListener('touchmove', onMove, { passive: true });
+        window.addEventListener('touchend', onEnd);
+      }
+
+      slider.addEventListener('mousedown', onStart);
+      slider.addEventListener('touchstart', onStart, { passive: true });
+    });
+  });
+</script>

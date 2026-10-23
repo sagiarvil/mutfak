@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import PaintBrands from "../components/PaintBrands.astro";
 import { siteConfig } from "../data/siteConfig";
 
 const seo = {
@@ -349,12 +350,20 @@ const galleryStories = [
             <p class="text-xs text-[#555] font-['Montserrat',sans-serif] pl-8">Kendi atölyemizde üretilen dolaplar belirlenen günde temiz teslim edilir.</p>
           </div>
 
-          <a 
-            href="/maliyet-hesapla/" 
-            class="w-full py-4 bg-[#CB000F] hover:bg-[#b0000d] text-white font-['Montserrat',sans-serif] text-xs font-extrabold uppercase tracking-wider rounded-lg text-center block transition shadow-lg hover:scale-105"
-          >
-            Tadilat Maliyetinizi Hesaplayın →
-          </a>
+          <div class="space-y-2 pt-2">
+            <a 
+              href="/oncesi-sonrasi/" 
+              class="w-full py-3.5 bg-[#23323A] hover:bg-[#172127] text-white font-['Montserrat',sans-serif] text-xs font-extrabold uppercase tracking-wider rounded-lg text-center block transition shadow-md hover:scale-[1.02]"
+            >
+              ✨ Tüm Öncesi / Sonrası Projelerini İncele →
+            </a>
+            <a 
+              href="/maliyet-hesapla/" 
+              class="w-full py-3.5 bg-[#CB000F] hover:bg-[#b0000d] text-white font-['Montserrat',sans-serif] text-xs font-extrabold uppercase tracking-wider rounded-lg text-center block transition shadow-lg hover:scale-[1.02]"
+            >
+              Tadilat Maliyetinizi Canlı Hesaplayın →
+            </a>
+          </div>
 
         </div>
 
@@ -503,7 +512,12 @@ const galleryStories = [
   </section>
 
   <!-- ===================================================================== -->
-  <!-- 6. DÖNÜŞÜM MAGNETİ: CANLI MALİYET HESAPLAMA BANNER'I                  -->
+  <!-- 6. SERTİFİKALI BOYA VE YÜZEY ÇÖZÜM ORTAKLARIMIZ                      -->
+  <!-- ===================================================================== -->
+  <PaintBrands />
+
+  <!-- ===================================================================== -->
+  <!-- 7. DÖNÜŞÜM MAGNETİ: CANLI MALİYET HESAPLAMA BANNER'I                  -->
   <!-- ===================================================================== -->
   <section class="py-14 bg-[#172127] text-white">
     <div class="max-w-[1200px] mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">

@@ -834,5 +834,39 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
     ],
     mobile: defaultMobile,
     mobileCwvBudget: defaultCwv
+  },
+
+  '/oncesi-sonrasi/': {
+    route: '/oncesi-sonrasi/',
+    locale: 'tr-TR',
+    role: 'article',
+    indexDirective: 'index, follow',
+    canonicalRoute: '/oncesi-sonrasi/',
+    title: 'Öncesi & Sonrası Tadilat Projeleri | Canlı Şantiye Dönüşüm Kanıtları | İzmir Mutfak Banyo',
+    metaDescription: 'İzmir banyo, mutfak ve daire tadilatı öncesi sonrası canlı dönüşüm galerisi. 60x120 seramik kaplama, modern lake dolap, siyah duşakabin ve anahtar teslim yenileme örnekleri.',
+    h1: 'Öncesi & Sonrası: Eski & Yıpranmış Alanlardan Lüks Dönüşüm',
+    primaryIntent: 'izmir banyo mutfak tadilatı öncesi sonrası dönüşüm projeleri',
+    primaryEntity: {
+      id: 'https://izmirmutfakbanyo.com.tr/oncesi-sonrasi/#gallery',
+      name: 'İzmir Mutfak Banyo Öncesi ve Sonrası Şantiye Galerisi',
+      type: 'CollectionPage',
+      sameAs: ['https://izmirmutfakbanyo.com.tr/yapilan-isler/'],
+      wikidataQid: 'Q2013'
+    },
+    semanticTriples: [
+      { subject: 'İzmir Mutfak Banyo', predicate: 'showcasesWork', object: 'Canlı Banyo ve Mutfak Öncesi Sonrası Dönüşüm Projeleri' },
+      { subject: 'Öncesi Sonrası Projeler', predicate: 'usesMaterial', object: '60x120 Porselen Seramik, Marin MDF Dolap ve Jotun Boya' }
+    ],
+    heroAnswerEngine: 'İzmir Mutfak Banyo öncesi-sonrası dönüşüm galerisi; İzmir genelinde tamamlanmış banyo kırım-seramik yenilemeleri, özel imalat lake dolaplar ve komple daire tadilatlarının interaktif karşılaştırmalı görsel kanıtlarını sunar.',
+    publishedAt: '2024-03-10T09:00:00+03:00',
+    modifiedAt: '2026-10-23T22:00:00+03:00',
+    llmSubGraphRoute: '/llms/pages/oncesi-sonrasi.md',
+    mobileSubGraphRoute: '/llms/mobile/oncesi-sonrasi.md',
+    breadcrumbs: [
+      { name: 'Ana Sayfa', item: '/' },
+      { name: 'Öncesi & Sonrası', item: '/oncesi-sonrasi/' }
+    ],
+    mobile: defaultMobile,
+    mobileCwvBudget: defaultCwv
   }
 };
