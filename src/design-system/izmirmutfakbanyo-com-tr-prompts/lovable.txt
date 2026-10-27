@@ -1,0 +1,12 @@
+Clone the design language of this landing page and build a fresh equivalent.
+Visual feel: material-you. Tone: playful · Headings: Title Case
+Primary palette: #e5e7eb, #ffffff, #18181b, #cb000f, #9aa7af.
+Typography: [object Object].
+Corner radius vocabulary: 1, 4, 8, 12, 16, 9999.
+Shadow vocabulary: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px.
+Use: Use plain Tailwind CSS without a component library.
+Page structure:
+- steps — heading: "LÜKS MUTFAK, BANYO & TADİLAT."
+- steps — heading: "NELER ÜRETİYORUZ?"
+- steps — heading: "TADİLAT VE İMALATTA KULLANDIĞIMIZ 1. SINIF BOYA MARKALARI"
+- footer

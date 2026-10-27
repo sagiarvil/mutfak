@@ -1,0 +1,29 @@
+Build a landing page with this exact visual language.
+COLORS:
+  #e5e7eb
+  #ffffff
+  #18181b
+  #cb000f
+  #9aa7af
+  #23323a
+  #2d3e48
+  #172127
+  #d1d5db
+  #059669
+  #000000
+  #7f8c8d
+  #6b7280
+  #555555
+FONTS: [object Object]
+SPACING: 2, 32, 40, 48, 56, 64, 80, 192
+RADIUS: 1, 4, 8, 12, 16, 9999
+SHADOWS: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px
+MATERIAL LANGUAGE: material-you
+VOICE: Tone: playful · Headings: Title Case
+LIBRARY: Use plain Tailwind CSS without a component library.
+SECTIONS (in order):
+- steps — heading: "LÜKS MUTFAK, BANYO & TADİLAT."
+- steps — heading: "NELER ÜRETİYORUZ?"
+- steps — heading: "TADİLAT VE İMALATTA KULLANDIĞIMIZ 1. SINIF BOYA MARKALARI"
+- footer
+Use Tailwind. Match these tokens exactly. Keep the material language consistent.

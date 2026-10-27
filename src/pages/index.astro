@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import PaintBrands from "../components/PaintBrands.astro";
 import { siteConfig } from "../data/siteConfig";
+import CountUpWrapper from "../components/react-bits/CountUpWrapper";
 
 const seo = {
   title: "İzmir Mutfak Banyo — Lüks Ada Mutfak, Banyo & Anahtar Teslim Tadilat",
@@ -181,26 +182,34 @@ const galleryStories = [
 
     </div>
 
-    <!-- Canlı Sayaç Şeridi (Hero Tabanı) -->
+    <!-- Canlı Sayaç Şeridi (Hero Tabanı - React Bits & GSAP Aktif) -->
     <div class="absolute bottom-0 inset-x-0 bg-[#23323A]/90 backdrop-blur-md border-t border-white/10 py-3 hidden md:block z-10">
       <div class="max-w-[1200px] mx-auto px-4 sm:px-6 flex items-center justify-between text-xs font-['Montserrat',sans-serif]">
         <div class="flex items-center gap-2">
-          <span class="text-[#CB000F] font-black text-base">137</span>
+          <span class="text-[#CB000F] font-black text-base">
+            <CountUpWrapper client:visible to={137} from={0} />
+          </span>
           <span class="text-gray-300 font-bold uppercase">Özgün Model</span>
         </div>
         <div class="text-gray-600">•</div>
         <div class="flex items-center gap-2">
-          <span class="text-[#CB000F] font-black text-base">28 Yıl</span>
+          <span class="text-[#CB000F] font-black text-base">
+            <CountUpWrapper client:visible to={28} from={0} suffix=" Yıl" />
+          </span>
           <span class="text-gray-300 font-bold uppercase">Atölye Tecrübesi</span>
         </div>
         <div class="text-gray-600">•</div>
         <div class="flex items-center gap-2">
-          <span class="text-[#CB000F] font-black text-base">2.850+</span>
+          <span class="text-[#CB000F] font-black text-base">
+            <CountUpWrapper client:visible to={2850} from={2500} suffix="+" />
+          </span>
           <span class="text-gray-300 font-bold uppercase">Teslim Edilen Ev</span>
         </div>
         <div class="text-gray-600">•</div>
         <div class="flex items-center gap-2">
-          <span class="text-emerald-400 font-black text-base">%100</span>
+          <span class="text-emerald-400 font-black text-base">
+            <CountUpWrapper client:visible to={100} from={0} suffix="%" />
+          </span>
           <span class="text-gray-300 font-bold uppercase">Kendi İmalatımız</span>
         </div>
       </div>
@@ -233,7 +242,7 @@ const galleryStories = [
         {mainSectors.map((sector) => (
           <a 
             href={sector.link} 
-            class="group relative bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-[#CB000F] shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+            class="group relative bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-[#CB000F] shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between transition-card reveal-on-scroll"
           >
             <!-- Üst Görsel -->
             <div class="relative aspect-[4/3] overflow-hidden bg-[#172127]">

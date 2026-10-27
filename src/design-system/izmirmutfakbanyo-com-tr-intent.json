@@ -1,0 +1,293 @@
+{
+  "pageIntent": {
+    "type": "landing",
+    "confidence": 0.45,
+    "path": "/",
+    "title": "İzmir Mutfak Banyo — Lüks Ada Mutfak, Banyo & Anahtar Teslim Tadilat | İzmir Mutfak Banyo",
+    "description": "İzmir genelinde kişiye ve mekana özel lüks ada mutfak dolapları, lüks banyo renovasyonu, giyinme odaları ve anahtar teslim daire/villa taahhüdü. 28 yıllık üretim tecrübesi.",
+    "signals": [
+      {
+        "kind": "url",
+        "type": "landing",
+        "weight": 0.45,
+        "detail": "root-path"
+      }
+    ],
+    "alternates": [],
+    "needsSmart": true
+  },
+  "sectionRoles": {
+    "sections": [
+      {
+        "index": 0,
+        "tag": "header",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.4,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 153.5
+        },
+        "buttonCount": 1,
+        "cardCount": 10,
+        "slots": {
+          "ctaCount": 1,
+          "lede": "Bize Ulaşın :\n0539 333 33 03\nWHATSAPP\nANA SAYFA\nHAKKIMIZDA\nMODELLER\nTADİLAT\nMALİYET HESAPLA\nYAPILAN İŞLER\nİLETİŞİM"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 1,
+        "tag": "nav",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": null,
+        "bounds": {
+          "x": 64,
+          "y": 106,
+          "w": 1152,
+          "h": 47.5
+        },
+        "buttonCount": 0,
+        "cardCount": 3,
+        "slots": {
+          "lede": "ANA SAYFA\nHAKKIMIZDA\nMODELLER\nTADİLAT\nMALİYET HESAPLA\nYAPILAN İŞLER\nİLETİŞİM"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 2,
+        "tag": "main",
+        "role": "steps",
+        "subrole": null,
+        "confidence": 0.75,
+        "heading": "LÜKS MUTFAK, BANYO & TADİLAT.",
+        "bounds": {
+          "x": 0,
+          "y": 153.5,
+          "w": 1280,
+          "h": 4949.25
+        },
+        "buttonCount": 0,
+        "cardCount": 76,
+        "slots": {
+          "heading": "LÜKS MUTFAK, BANYO & TADİLAT.",
+          "subheadings": [
+            "NELER ÜRETİYORUZ?",
+            "LÜKS ADA MUTFAK",
+            "MİMARİ BANYO",
+            "GİYİNME ODASI & KAPI"
+          ],
+          "lede": "DOĞRUDAN ATÖLYEDEN • ARACISIZ İMALAT\nLÜKS MUTFAK, BANYO & TADİLAT."
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 3,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "LÜKS MUTFAK, BANYO & TADİLAT.",
+        "bounds": {
+          "x": 0,
+          "y": 153.5,
+          "w": 1280,
+          "h": 656
+        },
+        "buttonCount": 0,
+        "cardCount": 10,
+        "slots": {
+          "heading": "LÜKS MUTFAK, BANYO & TADİLAT.",
+          "lede": "DOĞRUDAN ATÖLYEDEN • ARACISIZ İMALAT\nLÜKS MUTFAK, BANYO & TADİLAT."
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 4,
+        "tag": "section",
+        "role": "steps",
+        "subrole": null,
+        "confidence": 0.75,
+        "heading": "NELER ÜRETİYORUZ?",
+        "bounds": {
+          "x": 0,
+          "y": 809.5,
+          "w": 1280,
+          "h": 550.5
+        },
+        "buttonCount": 0,
+        "cardCount": 9,
+        "slots": {
+          "heading": "NELER ÜRETİYORUZ?",
+          "subheadings": [
+            "LÜKS ADA MUTFAK",
+            "MİMARİ BANYO",
+            "GİYİNME ODASI & KAPI",
+            "KOMPLE EV TADİLATI"
+          ],
+          "lede": "UZMANLIK ALANLARIMIZ\nNELER ÜRETİYORUZ?\nTÜM KATALOĞU GÖR →\n01\nÖZEL İMALAT\nLÜKS ADA MUTFAK"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 5,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "KIRIM & MOLOZDAN KUSURSUZ LÜKSE",
+        "bounds": {
+          "x": 0,
+          "y": 1360,
+          "w": 1280,
+          "h": 727.5
+        },
+        "buttonCount": 0,
+        "cardCount": 7,
+        "slots": {
+          "heading": "KIRIM & MOLOZDAN KUSURSUZ LÜKSE",
+          "lede": "ŞANTİYE DÖNÜŞÜM KANITI\nKIRIM & MOLOZDAN KUSURSUZ LÜKSE"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 6,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "ESERLERİMİZ",
+        "bounds": {
+          "x": 0,
+          "y": 2087.5,
+          "w": 1280,
+          "h": 1111.5
+        },
+        "buttonCount": 0,
+        "cardCount": 6,
+        "slots": {
+          "heading": "ESERLERİMİZ",
+          "subheadings": [
+            "PANORAMİK HAVUZLU ADA MUTFAK",
+            "İTALYAN AÇIK SALON & ADA MUTFAK",
+            "ANTRASİT AKRİLİK & FÜMELİ CAM DOLAP",
+            "MONOBLOK TAŞ LAVABO & ALTIN BATARYA"
+          ]
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 7,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "SHOWROOM KOMİSYONU YOK.\nDOĞRUDAN FABRİKADAN EVİNİZE.",
+        "bounds": {
+          "x": 0,
+          "y": 3199,
+          "w": 1280,
+          "h": 693.25
+        },
+        "buttonCount": 0,
+        "cardCount": 5,
+        "slots": {
+          "heading": "SHOWROOM KOMİSYONU YOK.\nDOĞRUDAN FABRİKADAN EVİNİZE.",
+          "lede": "Buca İmalat Tesisimiz\nBilgisayarlı CNC kesim, otomatik kenar bantlama ve tozsuz lake kurutma kabini.\nARACISIZ İMALAT GÜVENCESİ\nSHOWROOM KOMİSYONU YOK.\nDOĞRUDAN FABRİKADAN EVİNİZE."
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 8,
+        "tag": "section",
+        "role": "steps",
+        "subrole": null,
+        "confidence": 0.75,
+        "heading": "TADİLAT VE İMALATTA KULLANDIĞIMIZ 1. SINIF BOYA MARKALARI",
+        "bounds": {
+          "x": 0,
+          "y": 3892.25,
+          "w": 1280,
+          "h": 1014.5
+        },
+        "buttonCount": 0,
+        "cardCount": 37,
+        "slots": {
+          "heading": "TADİLAT VE İMALATTA KULLANDIĞIMIZ 1. SINIF BOYA MARKALARI",
+          "subheadings": [
+            "Polisan",
+            "Fawori",
+            "Filli Boya",
+            "Caparol"
+          ],
+          "lede": "SERTİFİKALI ÇÖZÜM ORTAKLARIMIZ\nTADİLAT VE İMALATTA KULLANDIĞIMIZ 1. SINIF BOYA MARKALARI"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 9,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "EVİNİZİN TADİLATI NE KADAR TUTAR?",
+        "bounds": {
+          "x": 0,
+          "y": 4906.75,
+          "w": 1280,
+          "h": 196
+        },
+        "buttonCount": 0,
+        "cardCount": 2,
+        "slots": {
+          "heading": "EVİNİZİN TADİLATI NE KADAR TUTAR?"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 10,
+        "tag": "footer",
+        "role": "footer",
+        "subrole": null,
+        "confidence": 0.95,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 5102.75,
+          "w": 1280,
+          "h": 354
+        },
+        "buttonCount": 0,
+        "cardCount": 17,
+        "slots": {
+          "lede": "İzmir Mutfak Banyo sahip olduğu 28 yıllık deneyimi ile yenilikçi mutfak tasarımları ve anahtar teslim dekorasyon üzerine hizmet vermektedir. Doğrudan Buca İzmir imalat atölyemizden birinci el üretim ve profesyonel montaj garantisi sunuyoruz."
+        },
+        "needsSmart": false
+      }
+    ],
+    "counts": {
+      "nav": 2,
+      "steps": 3,
+      "content": 5,
+      "footer": 1
+    },
+    "readingOrder": [
+      "nav",
+      "nav",
+      "steps",
+      "content",
+      "steps",
+      "content",
+      "content",
+      "content",
+      "steps",
+      "content",
+      "footer"
+    ]
+  }
+}

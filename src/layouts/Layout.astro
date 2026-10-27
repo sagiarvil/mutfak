@@ -4,6 +4,8 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import WhatsAppFloating from "../components/WhatsAppFloating.astro";
 import ScrollToTop from "../components/ScrollToTop.astro";
+import { ClientRouter } from "astro:transitions";
+import "../styles/design-tokens.css";
 
 export interface Props {
   seo: SEOProps;
@@ -28,6 +30,8 @@ const { seo, activeService } = Astro.props;
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, minimum-scale=1, maximum-scale=5" />
+    <ClientRouter />
+    <script src="../scripts/gsap-motion.ts"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -137,6 +141,9 @@ const { seo, activeService } = Astro.props;
     <Footer />
     <WhatsAppFloating service={activeService} />
     <ScrollToTop />
+
+    <!-- MOTOR 5: GSAP Skills Client Engine -->
+    <script src="../scripts/gsap-motion.client.ts"></script>
   </body>
 </html>
 

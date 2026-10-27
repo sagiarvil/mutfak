@@ -1,0 +1,697 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#e5e7eb",
+        "rgb": {
+          "r": 229,
+          "g": 231,
+          "b": 235,
+          "a": 1
+        },
+        "hsl": {
+          "h": 220,
+          "s": 13,
+          "l": 91
+        },
+        "count": 499,
+        "areaShare": 0,
+        "contexts": [
+          "border",
+          "text"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 205,
+        "areaShare": 0.834,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#18181b",
+        "rgb": {
+          "r": 24,
+          "g": 24,
+          "b": 27,
+          "a": 1
+        },
+        "hsl": {
+          "h": 240,
+          "s": 6,
+          "l": 10
+        },
+        "count": 195,
+        "areaShare": 0,
+        "contexts": [
+          "text",
+          "background"
+        ]
+      },
+      {
+        "hex": "#cb000f",
+        "rgb": {
+          "r": 203,
+          "g": 0,
+          "b": 15,
+          "a": 1
+        },
+        "hsl": {
+          "h": 356,
+          "s": 100,
+          "l": 40
+        },
+        "count": 74,
+        "areaShare": 0.004,
+        "contexts": [
+          "background",
+          "border",
+          "text"
+        ]
+      },
+      {
+        "hex": "#9aa7af",
+        "rgb": {
+          "r": 154,
+          "g": 167,
+          "b": 175,
+          "a": 1
+        },
+        "hsl": {
+          "h": 203,
+          "s": 12,
+          "l": 65
+        },
+        "count": 44,
+        "areaShare": 0,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#23323a",
+        "rgb": {
+          "r": 35,
+          "g": 50,
+          "b": 58,
+          "a": 1
+        },
+        "hsl": {
+          "h": 201,
+          "s": 25,
+          "l": 18
+        },
+        "count": 31,
+        "areaShare": 0.063,
+        "contexts": [
+          "text",
+          "background",
+          "border"
+        ]
+      },
+      {
+        "hex": "#2d3e48",
+        "rgb": {
+          "r": 45,
+          "g": 62,
+          "b": 72,
+          "a": 1
+        },
+        "hsl": {
+          "h": 202,
+          "s": 23,
+          "l": 23
+        },
+        "count": 27,
+        "areaShare": 0,
+        "contexts": [
+          "border"
+        ]
+      },
+      {
+        "hex": "#172127",
+        "rgb": {
+          "r": 23,
+          "g": 33,
+          "b": 39,
+          "a": 1
+        },
+        "hsl": {
+          "h": 203,
+          "s": 26,
+          "l": 12
+        },
+        "count": 22,
+        "areaShare": 0.093,
+        "contexts": [
+          "border",
+          "background",
+          "text"
+        ]
+      },
+      {
+        "hex": "#d1d5db",
+        "rgb": {
+          "r": 209,
+          "g": 213,
+          "b": 219,
+          "a": 1
+        },
+        "hsl": {
+          "h": 216,
+          "s": 12,
+          "l": 84
+        },
+        "count": 16,
+        "areaShare": 0,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#059669",
+        "rgb": {
+          "r": 5,
+          "g": 150,
+          "b": 105,
+          "a": 1
+        },
+        "hsl": {
+          "h": 161,
+          "s": 94,
+          "l": 30
+        },
+        "count": 16,
+        "areaShare": 0,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.6
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 14,
+        "areaShare": 0.005,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#7f8c8d",
+        "rgb": {
+          "r": 127,
+          "g": 140,
+          "b": 141,
+          "a": 1
+        },
+        "hsl": {
+          "h": 184,
+          "s": 6,
+          "l": 53
+        },
+        "count": 13,
+        "areaShare": 0,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#6b7280",
+        "rgb": {
+          "r": 107,
+          "g": 114,
+          "b": 128,
+          "a": 1
+        },
+        "hsl": {
+          "h": 220,
+          "s": 9,
+          "l": 46
+        },
+        "count": 10,
+        "areaShare": 0,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#555555",
+        "rgb": {
+          "r": 85,
+          "g": 85,
+          "b": 85,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 33
+        },
+        "count": 7,
+        "areaShare": 0,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#c5a880",
+        "rgb": {
+          "r": 197,
+          "g": 168,
+          "b": 128,
+          "a": 0.3
+        },
+        "hsl": {
+          "h": 35,
+          "s": 37,
+          "l": 64
+        },
+        "count": 7,
+        "areaShare": 0,
+        "contexts": [
+          "border",
+          "text"
+        ]
+      },
+      {
+        "hex": "#b2bfc7",
+        "rgb": {
+          "r": 178,
+          "g": 191,
+          "b": 199,
+          "a": 1
+        },
+        "hsl": {
+          "h": 203,
+          "s": 16,
+          "l": 74
+        },
+        "count": 5,
+        "areaShare": 0,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#4b5563",
+        "rgb": {
+          "r": 75,
+          "g": 85,
+          "b": 99,
+          "a": 1
+        },
+        "hsl": {
+          "h": 215,
+          "s": 14,
+          "l": 34
+        },
+        "count": 4,
+        "areaShare": 0,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#041f14",
+        "rgb": {
+          "r": 4,
+          "g": 31,
+          "b": 20,
+          "a": 0.95
+        },
+        "hsl": {
+          "h": 156,
+          "s": 77,
+          "l": 7
+        },
+        "count": 4,
+        "areaShare": 0.001,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#34d399",
+        "rgb": {
+          "r": 52,
+          "g": 211,
+          "b": 153,
+          "a": 1
+        },
+        "hsl": {
+          "h": 158,
+          "s": 64,
+          "l": 52
+        },
+        "count": 3,
+        "areaShare": 0,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#00ff66",
+        "rgb": {
+          "r": 0,
+          "g": 255,
+          "b": 102,
+          "a": 1
+        },
+        "hsl": {
+          "h": 144,
+          "s": 100,
+          "l": 50
+        },
+        "count": 3,
+        "areaShare": 0,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#25d366",
+        "rgb": {
+          "r": 37,
+          "g": 211,
+          "b": 102,
+          "a": 1
+        },
+        "hsl": {
+          "h": 142,
+          "s": 70,
+          "l": 49
+        },
+        "count": 2,
+        "areaShare": 0,
+        "contexts": [
+          "background",
+          "text"
+        ]
+      },
+      {
+        "hex": "#fde047",
+        "rgb": {
+          "r": 253,
+          "g": 224,
+          "b": 71,
+          "a": 1
+        },
+        "hsl": {
+          "h": 50,
+          "s": 98,
+          "l": 64
+        },
+        "count": 1,
+        "areaShare": 0,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#44403c",
+        "rgb": {
+          "r": 68,
+          "g": 64,
+          "b": 60,
+          "a": 0.8
+        },
+        "hsl": {
+          "h": 30,
+          "s": 6,
+          "l": 25
+        },
+        "count": 1,
+        "areaShare": 0,
+        "contexts": [
+          "border"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 153.5
+      },
+      "heading": null,
+      "buttonCount": 1,
+      "cardCount": 10,
+      "className": "w-full bg-white z-50 sticky top-0 shadow-md"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 64,
+        "y": 106,
+        "w": 1152,
+        "h": 47.5
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 3,
+      "className": "hidden lg:flex items-center font-['Montserrat',sans-serif] text-[13px] font-bold tracking-wider uppercase"
+    },
+    {
+      "role": "content",
+      "tag": "main",
+      "bounds": {
+        "x": 0,
+        "y": 153.5,
+        "w": 1280,
+        "h": 4949.25
+      },
+      "heading": "LÜKS MUTFAK, BANYO & TADİLAT.",
+      "buttonCount": 0,
+      "cardCount": 76,
+      "className": "flex-1 w-full overflow-hidden"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 153.5,
+        "w": 1280,
+        "h": 656
+      },
+      "heading": "LÜKS MUTFAK, BANYO & TADİLAT.",
+      "buttonCount": 0,
+      "cardCount": 10,
+      "className": "relative w-full bg-[#172127] text-white overflow-hidden"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 809.5,
+        "w": 1280,
+        "h": 550.5
+      },
+      "heading": "NELER ÜRETİYORUZ?",
+      "buttonCount": 0,
+      "cardCount": 9,
+      "className": "py-16 bg-[#F4F6F8] border-b border-gray-200"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 1360,
+        "w": 1280,
+        "h": 727.5
+      },
+      "heading": "KIRIM & MOLOZDAN KUSURSUZ LÜKSE",
+      "buttonCount": 0,
+      "cardCount": 7,
+      "className": "py-16 bg-white border-b border-gray-200"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 2087.5,
+        "w": 1280,
+        "h": 1111.5
+      },
+      "heading": "ESERLERİMİZ",
+      "buttonCount": 0,
+      "cardCount": 6,
+      "className": "py-16 bg-[#F4F6F8] border-b border-gray-200"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 3199,
+        "w": 1280,
+        "h": 693.25
+      },
+      "heading": "SHOWROOM KOMİSYONU YOK.\nDOĞRUDAN FABRİKADAN EVİNİZE.",
+      "buttonCount": 0,
+      "cardCount": 5,
+      "className": "py-16 bg-[#23323A] text-white border-b border-gray-800"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 3892.25,
+        "w": 1280,
+        "h": 1014.5
+      },
+      "heading": "TADİLAT VE İMALATTA KULLANDIĞIMIZ 1. SINIF BOYA MARKALARI",
+      "buttonCount": 0,
+      "cardCount": 37,
+      "className": "py-16 sm:py-20 bg-white border-b border-gray-200 relative overflow-hidden "
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 4906.75,
+        "w": 1280,
+        "h": 196
+      },
+      "heading": "EVİNİZİN TADİLATI NE KADAR TUTAR?",
+      "buttonCount": 0,
+      "cardCount": 2,
+      "className": "py-14 bg-[#172127] text-white"
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 0,
+        "y": 5102.75,
+        "w": 1280,
+        "h": 354
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 17,
+      "className": "bg-[#23323A] text-[#9AA7AF] font-['Open_Sans',sans-serif] text-xs pt-16 border-t-4 border-[#CB000F]"
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "button>svg",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(28, 25, 23, 0.9)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "9999px",
+            "border": "1px solid rgba(68, 64, 60, 0.8)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": [
+      {
+        "fg": "#cb000f",
+        "bg": "#1c282f",
+        "ratio": 2.54,
+        "rule": "AA-normal",
+        "suggestion": {
+          "replace": "fg",
+          "color": "#ffffff",
+          "newRatio": 15.07
+        }
+      }
+    ]
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://izmirmutfakbanyo.com.tr/",
+        "totalBytes": 965,
+        "usedBytes": 532,
+        "unusedBytes": 433,
+        "unusedPercent": 45
+      },
+      {
+        "url": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap",
+        "totalBytes": 33796,
+        "usedBytes": 0,
+        "unusedBytes": 33796,
+        "unusedPercent": 100
+      }
+    ],
+    "totalBytes": 34761,
+    "usedBytes": 532,
+    "unusedBytes": 34229,
+    "unusedPercent": 98,
+    "importantCount": 3,
+    "duplicates": 394,
+    "vendorPrefixes": {
+      "webkit": 2,
+      "moz": 1,
+      "ms": 0,
+      "o": 0
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        0,
+        2,
+        1
+      ],
+      "average": [
+        0,
+        0.08,
+        0.91
+      ],
+      "count": 90
+    },
+    "issues": [
+      "3 !important rules",
+      "394 duplicate declarations",
+      "98% unused CSS"
+    ]
+  }
+}

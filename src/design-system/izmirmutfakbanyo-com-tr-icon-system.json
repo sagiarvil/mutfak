@@ -1,0 +1,68 @@
+{
+  "library": "phosphor",
+  "confidence": 0.7,
+  "alternates": [
+    {
+      "id": "feather",
+      "score": 0.7
+    },
+    {
+      "id": "tabler",
+      "score": 0.6
+    }
+  ],
+  "stats": {
+    "count": 6,
+    "strokeOnly": 4,
+    "fillOnly": 2,
+    "mixed": 0,
+    "avgStrokeWidth": 2.42,
+    "gridDistribution": {
+      "24": 6
+    },
+    "roundedCapsFraction": 0.67
+  },
+  "signals": [
+    "strokeDominant",
+    "roundedCaps",
+    "grid24"
+  ],
+  "icons": [
+    {
+      "class": "w-4 h-4 fill-current",
+      "grid": 24,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "w-3 h-3 text-gray-400 group-hover:text-[#CB000F]",
+      "grid": 24,
+      "strokeWidth": 2.5,
+      "style": "stroke"
+    },
+    {
+      "class": "w-3 h-3 text-gray-400 group-hover:text-[#CB000F]",
+      "grid": 24,
+      "strokeWidth": 2.5,
+      "style": "stroke"
+    },
+    {
+      "class": "w-3.5 h-3.5",
+      "grid": 24,
+      "strokeWidth": 2.2,
+      "style": "stroke"
+    },
+    {
+      "class": "w-4 h-4 fill-current",
+      "grid": 24,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "w-5 h-5 text-stone-200 group-hover:text-[#F9C349] transition-colors",
+      "grid": 24,
+      "strokeWidth": 2.5,
+      "style": "stroke"
+    }
+  ]
+}

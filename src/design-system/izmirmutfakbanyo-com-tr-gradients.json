@@ -1,0 +1,88 @@
+{
+  "$schema": "https://designlang.app/schemas/gradients.json",
+  "source": "https://izmirmutfakbanyo.com.tr",
+  "generated": "2026-10-27T19:46:12.940Z",
+  "count": 4,
+  "gradients": [
+    {
+      "raw": "linear-gradient(to right, rgba(23, 33, 39, 0.95), rgba(23, 33, 39, 0.6), rgba(0, 0, 0, 0))",
+      "type": "linear",
+      "direction": "to right",
+      "stops": [
+        {
+          "color": "rgba(23, 33, 39, 0.95)",
+          "position": null
+        },
+        {
+          "color": "rgba(23, 33, 39, 0.6)",
+          "position": null
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": null
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(to top, rgb(23, 33, 39), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3))",
+      "type": "linear",
+      "direction": "to top",
+      "stops": [
+        {
+          "color": "rgb(23, 33, 39)",
+          "position": null
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": null
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "position": null
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0))",
+      "type": "linear",
+      "direction": "to top",
+      "stops": [
+        {
+          "color": "rgba(0, 0, 0, 0.8)",
+          "position": null
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.2)",
+          "position": null
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": null
+        }
+      ],
+      "classification": "bold"
+    },
+    {
+      "raw": "linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))",
+      "type": "linear",
+      "direction": "to top",
+      "stops": [
+        {
+          "color": "rgba(0, 0, 0, 0.85)",
+          "position": null
+        },
+        {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "position": null
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": null
+        }
+      ],
+      "classification": "bold"
+    }
+  ]
+}

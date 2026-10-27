@@ -1,0 +1,19 @@
+/* shadcn/ui Theme — extracted from https://izmirmutfakbanyo.com.tr */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 240 6% 10%;
+    --primary: 356 100% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 142 70% 49%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 201 25% 18%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 30 6% 25%;
+    --muted-foreground: 220 13% 91%;
+    --border: 202 23% 23%;
+    --radius: 8px;
+  }
+}

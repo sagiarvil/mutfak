@@ -1,0 +1,24 @@
+{
+  "tone": "playful",
+  "pronoun": "third-person",
+  "headingStyle": "Title Case",
+  "headingLengthClass": "balanced",
+  "ctaVerbs": [],
+  "buttonPatterns": [],
+  "sampleHeadings": [
+    "LÜKS MUTFAK, BANYO & TADİLAT.",
+    "NELER ÜRETİYORUZ?",
+    "LÜKS ADA MUTFAK",
+    "MİMARİ BANYO",
+    "GİYİNME ODASI & KAPI",
+    "LÜKS MUTFAK, BANYO & TADİLAT.",
+    "NELER ÜRETİYORUZ?",
+    "LÜKS ADA MUTFAK",
+    "MİMARİ BANYO",
+    "GİYİNME ODASI & KAPI"
+  ],
+  "stats": {
+    "buttons": 0,
+    "headings": 24
+  }
+}
