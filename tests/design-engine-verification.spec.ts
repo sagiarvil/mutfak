@@ -18,13 +18,13 @@ test.describe("7 Tasarım Motoru Canlı Doğrulama Testi", () => {
     // Sayaç DOM'da görünür veya mevcut olmalıdır
     expect(counterText).toBeTruthy();
 
-    // 4. Motor 4 & 6 (GSAP & ScrollTrigger): reveal-on-scroll sınıflı kartların varlığı
-    const revealCards = page.locator(".reveal-on-scroll");
+    // 4. Motor 4 & 6 (GSAP & ScrollTrigger): gsap-reveal veya reveal-on-scroll sınıflı kartların varlığı
+    const revealCards = page.locator(".gsap-reveal, .reveal-on-scroll");
     const count = await revealCards.count();
     expect(count).toBeGreaterThan(0);
 
-    // 5. Motor 5 (transitions.dev): transition-card sınıflı elemanların varlığı
-    const transitionCards = page.locator(".transition-card");
+    // 5. Motor 5 (transitions.dev): td-card-spring veya transition-card sınıflı elemanların varlığı
+    const transitionCards = page.locator(".td-card-spring, .transition-card");
     const transitionCount = await transitionCards.count();
     expect(transitionCount).toBeGreaterThan(0);
   });
