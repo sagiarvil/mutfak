@@ -53,7 +53,7 @@ const seo = {
   <!-- ===================================================================== -->
   <section class="relative w-full overflow-hidden bg-[#FAF9F6] border-b border-[#E5DFD5]" style="min-height: 88vh;">
     
-    <!-- Referans Video Arka Planı (Hollywood Standartlarında Kesintisiz Sinematik Vignette) -->
+    <!-- Referans Video Arka Planı (Garantili Otomatik Oynatma & Pürüzsüz Kristal Sahne) -->
     <div class="absolute inset-0 w-full h-full overflow-hidden">
       <video
         id="heroBgVideo"
@@ -62,16 +62,15 @@ const seo = {
         loop
         playsinline
         webkit-playsinline
-        preload="auto"
+        preload="metadata"
         poster="/media/cinematic/home_video_photo.webp"
-        class="w-full h-full object-cover opacity-100 scale-100"
+        class="w-full h-full object-cover opacity-100 scale-100 transition-opacity duration-700"
       >
         <source src="/media/cinematic/home_video.mp4" type="video/mp4" />
       </video>
-      <!-- Çizgisiz, organık ve pürüzsüz çok katmanlı sinematik ışık süzmesi -->
-      <div class="absolute inset-0 bg-gradient-to-r from-[#FAF9F6] via-[#FAF9F6]/85 to-transparent pointer-events-none w-full md:w-[60%] lg:w-[52%]"></div>
-      <div class="absolute inset-0 bg-gradient-to-b from-[#041F14]/30 via-transparent to-transparent pointer-events-none h-20 top-0"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#FAF9F6] via-transparent to-transparent pointer-events-none h-24 bottom-0"></div>
+      <!-- Organik Işık Süzmesi: Sol metin alanını rahatlatır, sağdaki mutfak sahnesini %100 net bırakır -->
+      <div class="absolute inset-0 bg-gradient-to-r from-[#FAF9F6] via-[#FAF9F6]/80 to-transparent pointer-events-none w-full md:w-[55%] lg:w-[48%]"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#FAF9F6] via-transparent to-transparent pointer-events-none h-20 bottom-0"></div>
     </div>
 
     <!-- Hero İçerik (Kutusuz, Havada Süzülen Organik Apple Tipografisi) -->
@@ -184,48 +183,64 @@ const seo = {
   </section>
 
   <!-- ===================================================================== -->
-  <!-- 2. APPLE 4-SÜTUNLU MİMARİ AVANTAJ KARTLARI                           -->
+  <!-- 2. APPLE 4-SÜTUNLU MİMARİ AVANTAJ KARTLARI (BÜYÜK & PREMİUM NUMARALAR)-->
   <!-- ===================================================================== -->
-  <section class="py-16 bg-[#F4F1EA] border-b border-[#E5DFD5]">
+  <section class="py-16 sm:py-20 bg-[#F4F1EA] border-b border-[#E5DFD5]">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <div class="p-6 bg-white border border-[#E5DFD5] rounded-xl apple-card space-y-3">
-          <div class="w-10 h-10 rounded-full bg-[#006039] text-[#C5A880] border border-[#C5A880]/40 flex items-center justify-center text-sm font-bold shadow-[0_4px_12px_rgba(0,96,57,0.25)]">
-            01
+        <!-- Kart 01 -->
+        <div class="p-7 bg-white border border-[#E5DFD5] hover:border-[#006039]/40 rounded-2xl apple-card space-y-4 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_32px_rgba(0,96,57,0.08)] transition duration-300 relative overflow-hidden group">
+          <div class="flex items-center justify-between">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#006039] to-[#042015] text-[#C5A880] border border-[#C5A880]/50 flex items-center justify-center text-2xl font-black font-sans shadow-[0_6px_18px_rgba(0,96,57,0.35)] group-hover:scale-105 transition-transform duration-300">
+              01
+            </div>
+            <span class="text-[46px] font-extrabold text-[#006039]/10 font-sans tracking-tighter select-none">#1</span>
           </div>
-          <h3 class="text-[16px] font-semibold text-[#1D1D1F] tracking-tight">Leke Tutmayan Mat Yüzeyler</h3>
-          <p class="text-[13px] text-[#6E675F] font-normal leading-[1.45]">
+          <h3 class="text-[17px] font-bold text-[#1D1D1F] tracking-tight">Leke Tutmayan Mat Yüzeyler</h3>
+          <p class="text-[13.5px] text-[#6E675F] font-normal leading-[1.5]">
             Parmak izi bırakmayan, nem ve buhardan etkilenmeyen antibakteriyel İtalyan lake ve akrilik teknolojisi.
           </p>
         </div>
 
-        <div class="p-6 bg-white border border-[#E5DFD5] rounded-xl apple-card space-y-3">
-          <div class="w-10 h-10 rounded-full bg-[#006039] text-[#C5A880] border border-[#C5A880]/40 flex items-center justify-center text-sm font-bold shadow-[0_4px_12px_rgba(0,96,57,0.25)]">
-            02
+        <!-- Kart 02 -->
+        <div class="p-7 bg-white border border-[#E5DFD5] hover:border-[#006039]/40 rounded-2xl apple-card space-y-4 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_32px_rgba(0,96,57,0.08)] transition duration-300 relative overflow-hidden group">
+          <div class="flex items-center justify-between">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#006039] to-[#042015] text-[#C5A880] border border-[#C5A880]/50 flex items-center justify-center text-2xl font-black font-sans shadow-[0_6px_18px_rgba(0,96,57,0.35)] group-hover:scale-105 transition-transform duration-300">
+              02
+            </div>
+            <span class="text-[46px] font-extrabold text-[#006039]/10 font-sans tracking-tighter select-none">#2</span>
           </div>
-          <h3 class="text-[16px] font-semibold text-[#1D1D1F] tracking-tight">Kadife Sessizliğinde Blum Ray</h3>
-          <p class="text-[13px] text-[#6E675F] font-normal leading-[1.45]">
+          <h3 class="text-[17px] font-bold text-[#1D1D1F] tracking-tight">Kadife Sessizliğinde Blum Ray</h3>
+          <p class="text-[13.5px] text-[#6E675F] font-normal leading-[1.5]">
             Avusturya menşeili entegre frenli mekanizmalar ile dolap kapakları ve çekmeceler daima sessizce kapanır.
           </p>
         </div>
 
-        <div class="p-6 bg-white border border-[#E5DFD5] rounded-xl apple-card space-y-3">
-          <div class="w-10 h-10 rounded-full bg-[#006039] text-[#C5A880] border border-[#C5A880]/40 flex items-center justify-center text-sm font-bold shadow-[0_4px_12px_rgba(0,96,57,0.25)]">
-            03
+        <!-- Kart 03 -->
+        <div class="p-7 bg-white border border-[#E5DFD5] hover:border-[#006039]/40 rounded-2xl apple-card space-y-4 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_32px_rgba(0,96,57,0.08)] transition duration-300 relative overflow-hidden group">
+          <div class="flex items-center justify-between">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#006039] to-[#042015] text-[#C5A880] border border-[#C5A880]/50 flex items-center justify-center text-2xl font-black font-sans shadow-[0_6px_18px_rgba(0,96,57,0.35)] group-hover:scale-105 transition-transform duration-300">
+              03
+            </div>
+            <span class="text-[46px] font-extrabold text-[#006039]/10 font-sans tracking-tighter select-none">#3</span>
           </div>
-          <h3 class="text-[16px] font-semibold text-[#1D1D1F] tracking-tight">3D Çizimle Birebir Önizleme</h3>
-          <p class="text-[13px] text-[#6E675F] font-normal leading-[1.45]">
+          <h3 class="text-[17px] font-bold text-[#1D1D1F] tracking-tight">3D Çizimle Birebir Önizleme</h3>
+          <p class="text-[13.5px] text-[#6E675F] font-normal leading-[1.5]">
             Evinizin ölçülerine özel fotogerçekçi 3D mimari modelleme ile renkleri ve kulpları önceden görün.
           </p>
         </div>
 
-        <div class="p-6 bg-white border border-[#E5DFD5] rounded-xl apple-card space-y-3">
-          <div class="w-10 h-10 rounded-full bg-[#006039] text-[#C5A880] border border-[#C5A880]/40 flex items-center justify-center text-sm font-bold shadow-[0_4px_12px_rgba(0,96,57,0.25)]">
-            04
+        <!-- Kart 04 -->
+        <div class="p-7 bg-white border border-[#E5DFD5] hover:border-[#006039]/40 rounded-2xl apple-card space-y-4 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_32px_rgba(0,96,57,0.08)] transition duration-300 relative overflow-hidden group">
+          <div class="flex items-center justify-between">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#006039] to-[#042015] text-[#C5A880] border border-[#C5A880]/50 flex items-center justify-center text-2xl font-black font-sans shadow-[0_6px_18px_rgba(0,96,57,0.35)] group-hover:scale-105 transition-transform duration-300">
+              04
+            </div>
+            <span class="text-[46px] font-extrabold text-[#006039]/10 font-sans tracking-tighter select-none">#4</span>
           </div>
-          <h3 class="text-[16px] font-semibold text-[#1D1D1F] tracking-tight">Sözleşmeli Süre & Sabit Fiyat</h3>
-          <p class="text-[13px] text-[#6E675F] font-normal leading-[1.45]">
+          <h3 class="text-[17px] font-bold text-[#1D1D1F] tracking-tight">Sözleşmeli Süre & Sabit Fiyat</h3>
+          <p class="text-[13.5px] text-[#6E675F] font-normal leading-[1.5]">
             Sürpriz masraf çıkarmayan resmi sözleşme, gecikme cezası garantisi ve temiz, tertipli montaj teslimi.
           </p>
         </div>
@@ -636,6 +651,25 @@ const seo = {
 
   <script is:inline>
     document.addEventListener("DOMContentLoaded", () => {
+      // Hero video otonom ve kesintisiz oynatma garantisi (iOS / Safari / Chrome Low-Power Safe)
+      const heroVid = document.getElementById("heroBgVideo");
+      if (heroVid) {
+        heroVid.muted = true;
+        heroVid.defaultMuted = true;
+        const tryPlay = () => {
+          heroVid.play().catch(() => {
+            // Autoplay kısıtlaması durumunda ilk dokunuşta başlat
+            document.body.addEventListener("touchstart", () => heroVid.play(), { once: true });
+            document.body.addEventListener("click", () => heroVid.play(), { once: true });
+          });
+        };
+        if (heroVid.readyState >= 2) {
+          tryPlay();
+        } else {
+          heroVid.addEventListener("loadeddata", tryPlay, { once: true });
+        }
+      }
+
       const counters = document.querySelectorAll(".stat-counter");
       if (!counters.length) return;
 
