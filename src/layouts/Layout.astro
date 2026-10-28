@@ -4,8 +4,6 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import WhatsAppFloating from "../components/WhatsAppFloating.astro";
 import ScrollToTop from "../components/ScrollToTop.astro";
-import { ClientRouter } from "astro:transitions";
-import "../styles/design-tokens.css";
 
 export interface Props {
   seo: SEOProps;
@@ -19,19 +17,17 @@ const { seo, activeService } = Astro.props;
 <html lang="tr" class="scroll-smooth overflow-x-hidden bg-[#F8FAFC] text-zinc-900">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-77F2ZSXE4C"></script>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-26Y17F0C6Q"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-77F2ZSXE4C');
+      gtag('config', 'G-26Y17F0C6Q');
     </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, minimum-scale=1, maximum-scale=5" />
-    <ClientRouter />
-    <script src="../scripts/gsap-motion.ts"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -141,9 +137,6 @@ const { seo, activeService } = Astro.props;
     <Footer />
     <WhatsAppFloating service={activeService} />
     <ScrollToTop />
-
-    <!-- MOTOR 5: GSAP Skills Client Engine -->
-    <script src="../scripts/gsap-motion.client.ts"></script>
   </body>
 </html>
 

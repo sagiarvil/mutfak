@@ -9,14 +9,14 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
     {
       '@type': 'HomeAndConstructionBusiness',
       '@id': origin + '/#organization',
-      name: 'İzmir Mutfak Banyo Mimarlık & Lüks İmalat Atölyesi',
-      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo İç Mimarlık', 'İzmir Mutfak Banyo', 'Yamashi Mutfak'],
+      name: 'CASA HOME Mimarlık & Lüks İmalat Atölyesi',
+      alternateName: ['CASA HOME Mutfak & Banyo', 'CASA HOME', 'İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo'],
       url: origin + '/',
       logo: {
         '@type': 'ImageObject',
         '@id': origin + '/#logo',
-        url: origin + '/logo.png',
-        caption: 'İzmir Mutfak Banyo Luxury Logo'
+        url: origin + '/media/branding/casa-home-logo.png',
+        caption: 'CASA HOME Mutfak & Banyo Logo'
       },
       image: origin + '/android-chrome-512x512.png',
       telephone: '+905393333303',
@@ -72,8 +72,8 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       '@type': 'WebSite',
       '@id': origin + '/#website',
       url: origin + '/',
-      name: 'İzmir Mutfak Banyo',
-      alternateName: ['İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo Mimarlık', 'Yamashi Mutfak', domain],
+      name: 'CASA HOME Mutfak & Banyo',
+      alternateName: ['CASA HOME', 'İzmir Mutfak Banyo Luxury', 'İzmir Mutfak Banyo Mimarlık', domain],
       publisher: { '@id': origin + '/#organization' },
       inLanguage: page.locale,
       potentialAction: {

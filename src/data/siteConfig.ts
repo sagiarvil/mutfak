@@ -10,9 +10,9 @@ export interface ServiceItem {
 }
 
 export const siteConfig = {
-  name: "İzmir Mutfak Banyo & Özel İmalat",
-  brandShort: "İzmir Mutfak Banyo",
-  legalName: "İzmir Mutfak Banyo & Anahtar Teslim Tadilat Dekorasyon",
+  name: "CASA HOME Mutfak & Banyo",
+  brandShort: "CASA HOME",
+  legalName: "CASA HOME Mutfak Banyo & Mimari İmalat",
   foundingYear: 1998,
   experienceYears: 28,
   customerCount: "2.850+",

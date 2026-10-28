@@ -7,6 +7,10 @@ test.describe("7 Tasarım Motoru Canlı Doğrulama Testi", () => {
     // 1. Title ve Temel Meta Kontrolü
     await expect(page).toHaveTitle(/İzmir Mutfak Banyo/);
 
+    // 2. CASA HOME Logo Kontrolü
+    const logo = page.locator("img[alt='CASA HOME Mutfak & Banyo']");
+    await expect(logo.first()).toBeVisible();
+
     // 2. Motor 1 (designlang & design-tokens.css): CSS kök değişkenlerinin yüklendiğini doğrula
     const bodyBg = await page.evaluate(() => {
       return window.getComputedStyle(document.body).backgroundColor;

@@ -4,23 +4,11 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@layouts/*": [
-        "src/layouts/*"
-      ],
-      "@data/*": [
-        "src/data/*"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ]
-    },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@data/*": ["src/data/*"],
+      "@utils/*": ["src/utils/*"]
+    }
   }
 }
