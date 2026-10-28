@@ -122,6 +122,50 @@ const { seo, activeService } = Astro.props;
     <Footer />
     <WhatsAppFloating service={activeService} />
     <ScrollToTop />
+  
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", () => {
+        const targetSelectors = [
+          "section > div > div.grid > div",
+          ".apple-card",
+          "details",
+          "table",
+          "section h2",
+          "section .space-y-3"
+        ];
+        
+        const elements = document.querySelectorAll(targetSelectors.join(", "));
+        elements.forEach((el, index) => {
+          if (!el.classList.contains("reveal-on-scroll") && !el.closest("#siteHeader") && !el.closest("footer")) {
+            el.classList.add("reveal-on-scroll");
+            const stagger = (index % 4) * 80;
+            if (stagger > 0) el.style.transitionDelay = stagger + "ms";
+          }
+        });
+
+        if ("IntersectionObserver" in window) {
+          const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-revealed");
+                revealObserver.unobserve(entry.target);
+              }
+            });
+          }, {
+            threshold: 0.05,
+            rootMargin: "0px 0px -30px 0px"
+          });
+
+          document.querySelectorAll(".reveal-on-scroll").forEach(el => {
+            revealObserver.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal-on-scroll").forEach(el => {
+            el.classList.add("is-revealed");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
 
@@ -164,5 +208,36 @@ const { seo, activeService } = Astro.props;
     transform: translateY(-3px);
     box-shadow: 0 16px 36px -6px rgba(0, 96, 57, 0.10);
     border-color: #006039;
+  }
+
+  /* ===================================================================== */
+  /* CINEMATIC SCROLL & INTERACTION MOTION ENGINE (Apple & GSAP Standard) */
+  /* ===================================================================== */
+  
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal-on-scroll.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Micro Stagger Delays */
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+  .delay-400 { transition-delay: 400ms; }
+
+  /* Premium Card Hover Lift */
+  .hover-lift {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -10px rgba(0, 96, 57, 0.12);
   }
 </style>
