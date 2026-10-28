@@ -1,0 +1,56 @@
+/**
+ * Apple Motion Architecture
+ * Scroll-Driven Reveal with Staggered Fade-Up
+ * 
+ * 1. Fade-Up: opacity 0 -> 1 & translateY 24px -> 0
+ * 2. Stagger Effect: 80ms aralıklı kademeli domino akışı
+ * 3. Scroll-Driven: IntersectionObserver tabanlı donanım hızlandırmalı tetikleme
+ * 4. Apple Easing: cubic-bezier(0.16, 1, 0.3, 1)
+ */
+
+/* Temel Görünürlük Durumu */
+.scroll-reveal,
+[data-scroll-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--stagger-index, 0) * 80ms);
+  will-change: opacity, transform;
+}
+
+/* Tetiklendiğinde (Viewport'a girdiğinde) */
+.scroll-reveal.is-revealed,
+[data-scroll-reveal].is-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
+}
+
+/* Stagger Grup Kapsayıcısı */
+.stagger-container > * {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--stagger-index, 0) * 80ms);
+  will-change: opacity, transform;
+}
+
+.stagger-container.is-revealed > *,
+.stagger-container > *.is-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
+}
+
+/* Erişilebilirlik: Kullanıcı hareketi azalttıysa animasyonu anında tamamla */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  [data-scroll-reveal],
+  .stagger-container > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
