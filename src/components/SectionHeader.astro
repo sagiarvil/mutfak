@@ -1,6 +1,6 @@
 ---
 export interface Props {
-  watermark: string;      // Üstte dinamik ölçeklenen soft dev filigran metin
+  watermark: string;      // Üstte sayfayı enlemesine dolduran dev dinamik filigran
   title: string;          // Altındaki ana başlık
   subtitle?: string;       // Açıklama alt metni
   tag?: string;           // Üst kırmızı rozet etiketi (opsiyonel)
@@ -23,25 +23,25 @@ const isDark = theme === "dark";
 const isCenter = align === "center";
 ---
 
-<div class={`select-none ${isCenter ? "text-center" : "text-left"} ${className}`}>
+<div class={`w-full select-none ${isCenter ? "text-center" : "text-left"} ${className}`}>
   
-  <!-- 1. GHOST / WATERMARK TYPOGRAPHY (Üstte, Ekrana Dinamik Oto Boyutlanan, Asla Kırılmayan/Kesilmeyen Soft Vektörel Katman) -->
+  <!-- 1. DEV GHOST / WATERMARK BACKDROP (Sayfayı Enlemesine Dolduran, Asla Taşmayan & Kırılmayan Vektörel Mimari) -->
   {watermark && (
-    <div class={`w-full overflow-hidden pointer-events-none select-none flex ${isCenter ? "justify-center" : "justify-start"} mb-1 sm:mb-2`}>
+    <div class={`w-full overflow-hidden pointer-events-none select-none flex ${isCenter ? "justify-center" : "justify-start"} -mb-2 sm:-mb-4`}>
       <svg 
-        viewBox={isCenter ? "0 0 1000 120" : "0 0 800 120"} 
-        class={`w-full h-auto select-none pointer-events-none ${isCenter ? "max-w-[700px] sm:max-w-[850px]" : "max-w-[500px] sm:max-w-[650px]"}`}
+        viewBox={isCenter ? "0 0 1000 135" : "0 0 1000 135"} 
+        class="w-full h-auto select-none pointer-events-none"
         preserveAspectRatio={isCenter ? "xMidYMid meet" : "xMinYMid meet"}
         aria-hidden="true"
       >
         <text 
           x={isCenter ? "500" : "0"} 
-          y="88" 
+          y="100" 
           text-anchor={isCenter ? "middle" : "start"} 
           font-family="'Montserrat', sans-serif" 
           font-weight="900" 
-          font-size="100" 
-          letter-spacing="-1.5"
+          font-size="120" 
+          letter-spacing="-3"
           class={`select-none antialiased ${
             isDark ? "fill-white/[0.07]" : "fill-[#172127]/[0.055]"
           }`}
@@ -52,8 +52,8 @@ const isCenter = align === "center";
     </div>
   )}
 
-  <!-- 2. ALT BAŞLIK & METİN GRUBU (Asla Watermark Üstüne Basmayan, Bağımsız, Ferah ve Jilet Netliğinde Katman) -->
-  <div class="space-y-2">
+  <!-- 2. ALT BAŞLIK & METİN GRUBU (Watermark'ın Altında, Sıfır Ezilme, Kristal Netliğinde) -->
+  <div class="relative z-10 space-y-2">
     {tag && (
       <span class="inline-block text-[11px] sm:text-xs font-black uppercase tracking-[0.25em] text-[#CB000F] font-['Montserrat',sans-serif]">
         {tag}
