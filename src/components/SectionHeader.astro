@@ -1,6 +1,6 @@
 ---
 export interface Props {
-  watermark: string;      // Mimari dev üst filigran metin
+  watermark: string;      // Arka plandaki dev açık gri filigran metin
   title: string;          // Ön plandaki ana başlık
   subtitle?: string;       // Açıklama alt metni
   tag?: string;           // Üst kırmızı rozet etiketi (opsiyonel)
@@ -23,35 +23,38 @@ const isDark = theme === "dark";
 const isCenter = align === "center";
 ---
 
-<div class={`select-none ${isCenter ? "text-center" : "text-left"} ${className}`}>
+<div class={`relative py-12 sm:py-16 md:py-20 select-none overflow-hidden ${isCenter ? "text-center" : "text-left"} ${className}`}>
   
-  <!-- 1. MİMARÎ DEV FİLİGRAN METİN (Asla Başlığı Ezmeyen, Üstte Yükselen Kristal Netliğinde Katman) -->
+  <!-- 1. DEV AÇIK GRİ WATERMARK (Referans Standartı: Devasa Punto, Açık Gri, Kusursuz Derinlik) -->
   {watermark && (
-    <div class="pointer-events-none select-none pb-1 sm:pb-2 overflow-hidden leading-none" aria-hidden="true">
-      <span class={`inline-block font-['Montserrat',sans-serif] text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-wider antialiased select-none ${
-        isDark ? "text-white/20" : "text-slate-900/[0.12]"
+    <div 
+      class={`absolute inset-0 flex items-center ${isCenter ? "justify-center" : "justify-start"} pointer-events-none select-none z-0`}
+      aria-hidden="true"
+    >
+      <span class={`font-['Montserrat',sans-serif] text-7xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[170px] font-black tracking-tighter leading-none whitespace-nowrap antialiased select-none ${
+        isDark ? "text-white/[0.09]" : "text-[#172127]/[0.07]"
       }`}>
         {watermark}
       </span>
     </div>
   )}
 
-  <!-- 2. ROZET, ANA BAŞLIK VE AÇIKLAMA METNİ (Sıfır Ezilme, Ferah ve Jilet Netliğinde Hiyerarşi) -->
-  <div class="space-y-2">
+  <!-- 2. ÖN PLAN BAŞLIK VE METİN (Kristal Netliğinde, Kusursuz Okunur) -->
+  <div class="relative z-10 space-y-2.5">
     {tag && (
       <span class="inline-block text-[11px] sm:text-xs font-black uppercase tracking-[0.25em] text-[#CB000F] font-['Montserrat',sans-serif]">
         {tag}
       </span>
     )}
     
-    <h2 class={`text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight font-['Montserrat',sans-serif] leading-tight ${
+    <h2 class={`text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-extrabold tracking-tight font-['Montserrat',sans-serif] leading-tight ${
       isDark ? "text-white" : "text-[#172127]"
     }`}>
       {title}
     </h2>
 
     {subtitle && (
-      <p class={`text-xs sm:text-sm font-normal max-w-2xl ${isCenter ? "mx-auto" : ""} leading-relaxed ${
+      <p class={`text-xs sm:text-sm md:text-base font-normal max-w-2xl ${isCenter ? "mx-auto" : ""} leading-relaxed ${
         isDark ? "text-gray-300" : "text-neutral-500"
       }`}>
         {subtitle}
