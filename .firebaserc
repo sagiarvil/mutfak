@@ -6,7 +6,7 @@
   "targets": {
     "yesilay-finans-kokpit": {
       "hosting": {
-        "cem-yesilay": [
+        "mutfak": [
           "cem-yesilay"
         ]
       }
@@ -18,5 +18,6 @@
         ]
       }
     }
-  }
+  },
+  "etags": {}
 }
