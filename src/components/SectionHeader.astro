@@ -1,0 +1,59 @@
+---
+export interface Props {
+  watermark: string;      // Arka plandaki dev açık gri metin (örn: "İMALAT", "DÖNÜŞÜM", "PROJELER")
+  title: string;          // Ön plandaki ana başlık (örn: "Senin Evin. Senin Çizgin.")
+  subtitle?: string;       // Açıklama alt metni
+  tag?: string;           // Üst kırmızı rozet etiketi (opsiyonel)
+  theme?: "light" | "dark";
+  align?: "center" | "left";
+  className?: string;
+}
+
+const {
+  watermark,
+  title,
+  subtitle,
+  tag,
+  theme = "light",
+  align = "center",
+  className = ""
+} = Astro.props;
+
+const isDark = theme === "dark";
+const isCenter = align === "center";
+---
+
+<div class={`relative py-4 sm:py-8 overflow-hidden select-none ${isCenter ? "text-center" : "text-left"} ${className}`}>
+  <!-- 1. GHOST / WATERMARK TYPOGRAPHY (Arka Plandaki Dev Soluk Başlık Katmanı) -->
+  <span 
+    class={`absolute inset-0 flex items-center ${isCenter ? "justify-center" : "justify-start"} text-4xl sm:text-6xl md:text-7xl lg:text-[84px] font-black uppercase tracking-tight pointer-events-none transform -translate-y-2 sm:-translate-y-3 leading-none opacity-40 transition-transform duration-700 ease-out ${
+      isDark ? "text-white/10" : "text-slate-900/10"
+    }`}
+    aria-hidden="true"
+  >
+    {watermark}
+  </span>
+
+  <!-- 2. ÖN PLAN BAŞLIK & AÇIKLAMA (Foreground Title & Subtitle) -->
+  <div class="relative z-10 space-y-2">
+    {tag && (
+      <span class="inline-block text-[10px] sm:text-[11px] font-black uppercase tracking-[0.22em] text-[#CB000F] font-['Montserrat',sans-serif]">
+        {tag}
+      </span>
+    )}
+    
+    <h2 class={`text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight font-['Montserrat',sans-serif] leading-tight ${
+      isDark ? "text-white" : "text-[#172127]"
+    }`}>
+      {title}
+    </h2>
+
+    {subtitle && (
+      <p class={`text-xs sm:text-sm font-normal max-w-2xl mx-auto leading-relaxed ${
+        isDark ? "text-gray-300" : "text-neutral-600"
+      }`}>
+        {subtitle}
+      </p>
+    )}
+  </div>
+</div>

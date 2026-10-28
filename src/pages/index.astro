@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import PaintBrands from "../components/PaintBrands.astro";
+import SectionHeader from "../components/SectionHeader.astro";
 import { siteConfig } from "../data/siteConfig";
 
 const seo = {
@@ -214,16 +215,15 @@ const galleryStories = [
   <section class="py-16 bg-[#F4F6F8] border-b border-gray-200">
     <div class="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-8">
       
-      <div class="flex items-end justify-between border-b-2 border-gray-200 pb-4">
-        <div>
-          <span class="text-[11px] font-black uppercase tracking-[0.2em] text-[#CB000F] font-['Montserrat',sans-serif] block">
-            UZMANLIK ALANLARIMIZ
-          </span>
-          <h2 class="text-2xl sm:text-3xl font-black text-[#172127] uppercase font-['Montserrat',sans-serif] mt-1">
-            Neler Üretiyoruz?
-          </h2>
-        </div>
-        <a href="/tasarimlar/" class="text-xs font-bold text-[#CB000F] hover:text-[#172127] transition font-['Montserrat',sans-serif] uppercase hidden sm:block">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-gray-200 pb-4 gap-4">
+        <SectionHeader 
+          watermark="İMALAT"
+          tag="UZMANLIK ALANLARIMIZ"
+          title="Daha Ferah Yaşam Alanı. Neler Üretiyoruz?"
+          align="left"
+          className="py-0 sm:py-0"
+        />
+        <a href="/tasarimlar/" class="text-xs font-bold text-[#CB000F] hover:text-[#172127] transition font-['Montserrat',sans-serif] uppercase shrink-0 pb-2">
           Tüm Kataloğu Gör →
         </a>
       </div>
@@ -289,17 +289,13 @@ const galleryStories = [
   <section class="py-16 bg-white border-b border-gray-200">
     <div class="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-8">
       
-      <div class="text-center max-w-2xl mx-auto space-y-2">
-        <span class="text-[11px] font-black uppercase tracking-[0.2em] text-[#CB000F] font-['Montserrat',sans-serif] block">
-          ŞANTİYE DÖNÜŞÜM KANITI
-        </span>
-        <h2 class="text-2xl sm:text-4xl font-black text-[#23323A] uppercase font-['Montserrat',sans-serif]">
-          Kırım &amp; Molozdan Kusursuz Lükse
-        </h2>
-        <p class="text-xs sm:text-sm text-gray-500 font-['Montserrat',sans-serif]">
-          İzmir genelinde teslim ettiğimiz gerçek banyo ve mutfak renovasyonlarının canlı kanıtı.
-        </p>
-      </div>
+      <SectionHeader 
+        watermark="DÖNÜŞÜM"
+        tag="ŞANTİYE DÖNÜŞÜM KANITI"
+        title="Kırım & Molozdan Kusursuz Lükse."
+        subtitle="İzmir genelinde teslim ettiğimiz gerçek banyo ve mutfak renovasyonlarının canlı kanıtı."
+        align="center"
+      />
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
@@ -378,16 +374,15 @@ const galleryStories = [
   <section class="py-16 bg-[#F4F6F8] border-b border-gray-200">
     <div class="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-8">
       
-      <div class="flex items-end justify-between border-b-2 border-gray-200 pb-4">
-        <div>
-          <span class="text-[11px] font-black uppercase tracking-[0.2em] text-[#CB000F] font-['Montserrat',sans-serif] block">
-            SANATIMIZ &amp; ZANAATIMIZ
-          </span>
-          <h2 class="text-2xl sm:text-3xl font-black text-[#172127] uppercase font-['Montserrat',sans-serif] mt-1">
-            Eserlerimiz
-          </h2>
-        </div>
-        <a href="/yapilan-isler/" class="text-xs font-bold text-[#CB000F] hover:text-[#172127] transition font-['Montserrat',sans-serif] uppercase hidden sm:block">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-gray-200 pb-4 gap-4">
+        <SectionHeader 
+          watermark="ESERLERİMİZ"
+          tag="SANATIMIZ & ZANAATIMIZ"
+          title="Senin Tarzın. Senin Yaşam Alanın."
+          align="left"
+          className="py-0 sm:py-0"
+        />
+        <a href="/yapilan-isler/" class="text-xs font-bold text-[#CB000F] hover:text-[#172127] transition font-['Montserrat',sans-serif] uppercase shrink-0 pb-2">
           96 Canlı Projeyi Gör →
         </a>
       </div>
@@ -464,20 +459,15 @@ const galleryStories = [
 
         <!-- Sağ: Aracısız Avantajlar -->
         <div class="lg:col-span-6 space-y-5">
-          <div class="inline-block border-b-2 border-[#CB000F] pb-1">
-            <span class="text-xs font-black uppercase tracking-widest text-[#CB000F] font-['Montserrat',sans-serif]">
-              ARACISIZ İMALAT GÜVENCESİ
-            </span>
-          </div>
-
-          <h2 class="text-2xl sm:text-4xl font-black text-white uppercase font-['Montserrat',sans-serif] leading-tight">
-            Showroom Komisyonu Yok. <br />
-            Doğrudan Fabrikadan Evinize.
-          </h2>
-
-          <p class="text-sm text-gray-300 font-['Montserrat',sans-serif] leading-relaxed">
-            Aracı mağazalara fazladan komisyon ödemeyin. Kendi imalat atölyemizde 18mm E1 sertifikalı neme dayanıklı MDF ve Avusturya Blum donanımlarla üretiyoruz.
-          </p>
+          <SectionHeader 
+            watermark="ATÖLYE"
+            tag="ARACISIZ İMALAT GÜVENCESİ"
+            title="Showroom Komisyonu Yok. Doğrudan Fabrikadan Evinize."
+            subtitle="Aracı mağazalara fazladan komisyon ödemeyin. Kendi imalat atölyemizde 18mm E1 sertifikalı neme dayanıklı MDF ve Avusturya Blum donanımlarla üretiyoruz."
+            theme="dark"
+            align="left"
+            className="py-0 sm:py-0"
+          />
 
           <div class="space-y-2.5 pt-1 text-xs font-['Montserrat',sans-serif]">
             <div class="flex items-center gap-2 p-3 bg-white/5 rounded-lg border border-white/10">
