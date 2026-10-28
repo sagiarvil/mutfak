@@ -4,7 +4,7 @@ import tasarimlar from "../../data/tasarimlarData.json";
 
 const seo = {
   title: "Tasarımlar & Yapılan İşler | 137 Özel İmalat Model Kataloğu | İzmir Mutfak",
-  description: "Cem Yeşilay Mimarlık atölyemizde üretilen 137 tescilli mutfak dolabı, lake iç oda kapısı, banyo dolabı ve gömme dolap modeli. Model numarası veya tarz arayarak 3D keşif isteyin.",
+  description: "Yeşilay Mutfak & Mimarlık atölyemizde üretilen 137 tescilli mutfak dolabı, lake iç oda kapısı, banyo dolabı ve gömme dolap modeli. Model numarası veya tarz arayarak 3D keşif isteyin.",
   canonical: "https://yesilaymutfak.com/tasarimlar/",
   serviceName: "Tasarımlar ve Yapılan İşler Model Kataloğu",
   breadcrumbs: [
@@ -23,12 +23,12 @@ const bathCount = tasarimlar.filter(t => t.category === "Banyo Dolapları").leng
 const schemaImageGallery = {
   "@context": "https://schema.org",
   "@type": "ImageGallery",
-  "name": "Cem Yeşilay Mimarlık Özel Tasarım ve İmalat Model Kataloğu",
+  "name": "Yeşilay Mutfak Özel Tasarım ve İmalat Model Kataloğu",
   "description": "Buca imalat atölyemizde üretilen 137 tescilli mutfak dolabı, lake iç oda kapısı, banyo dolabı ve gömme dolap modeli.",
   "url": "https://yesilaymutfak.com/tasarimlar/",
   "publisher": {
     "@type": "HomeAndConstructionBusiness",
-    "name": "Cem Yeşilay Mimarlık",
+    "name": "Yeşilay Mutfak & Mimarlık",
     "url": "https://yesilaymutfak.com",
     "telephone": "+902324411060",
     "areaServed": "İzmir",
@@ -51,7 +51,7 @@ const schemaImageGallery = {
     "representativeOfPage": false,
     "creator": {
       "@type": "Organization",
-      "name": "Cem Yeşilay Mimarlık"
+      "name": "Yeşilay Mutfak & Mimarlık"
     }
   }))
 };
@@ -61,7 +61,7 @@ const schemaImageGallery = {
   <!-- Google & LLM Botları İçin Zengin Yapısal Veri (UI Tasarımını Etkilemez) -->
   <script type="application/ld+json" is:inline set:html={JSON.stringify(schemaImageGallery)} />
 
-  <!-- Sayfa Üst Başlığı (Cem Yeşilay Standartı - Sade, Lüks, Sıcak Kırık Beyaz) -->
+  <!-- Sayfa Üst Başlığı (Yeşilay Mutfak Standartı - Sade, Lüks, Sıcak Kırık Beyaz) -->
   <section class="bg-[#F8F7F3] border-b border-stone-200/80 pt-6 sm:pt-8 pb-5 sm:pb-6 px-4 sm:px-6 lg:px-8">
     <div class="max-w-6xl mx-auto text-center space-y-3">
       <h1 class="text-3xl sm:text-5xl font-serif font-bold text-[#1E1810] tracking-tight">
@@ -98,7 +98,7 @@ const schemaImageGallery = {
     </div>
   </section>
 
-  <!-- Kategori Filtreleri (Cem Yeşilay Birebir Filtre Dizilimi) -->
+  <!-- Kategori Filtreleri (Yeşilay Mutfak Birebir Filtre Dizilimi) -->
   <section class="bg-white border-b border-stone-200 sticky top-16 z-30 shadow-xs">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
       <div class="flex items-center justify-center gap-1 sm:gap-4 flex-wrap text-xs sm:text-sm font-medium">
@@ -141,7 +141,7 @@ const schemaImageGallery = {
     </div>
   </section>
 
-  <!-- Cem Yeşilay Birebir KARE KUTULAR Portfolyo Galerisi (1:1 Aspect Ratio & 15px Boşluk) -->
+  <!-- Yeşilay Mutfak Birebir KARE KUTULAR Portfolyo Galerisi (1:1 Aspect Ratio & 15px Boşluk) -->
   <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-[70vh]">
     <div id="modelsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[15px]">
       {tasarimlar.map((item, idx) => (
@@ -208,7 +208,7 @@ const schemaImageGallery = {
             </span>
           </div>
 
-          <!-- Cem Yeşilay Birebir Fly Overlay (Hover Durumunda Açılan Amber Katman) -->
+          <!-- Yeşilay Mutfak Birebir Fly Overlay (Hover Durumunda Açılan Amber Katman) -->
           <figcaption class="absolute inset-0 bg-[#006039]/92 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6 text-white z-20 pointer-events-none backdrop-blur-xs">
             <span class="text-xs font-semibold tracking-widest uppercase text-white/90 mb-1 text-[11px] font-bold">
               {item.category}
@@ -244,7 +244,7 @@ const schemaImageGallery = {
     </div>
   </section>
 
-  <!-- Cem Yeşilay Birebir Lightbox Modalı (Tıklanan Modeli Açar) -->
+  <!-- Yeşilay Mutfak Birebir Lightbox Modalı (Tıklanan Modeli Açar) -->
   <div 
     id="lightboxModal" 
     class="fixed inset-0 z-50 bg-stone-950/90 backdrop-blur-sm hidden items-center justify-center p-4 transition-all duration-300"

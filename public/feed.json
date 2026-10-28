@@ -1,15 +1,15 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
-  "title": "Cem Yeşilay Luxury JSON Feed",
+  "title": "Yeşilay Mutfak JSON Feed",
   "home_page_url": "https://yesilaymutfak.com/",
   "feed_url": "https://yesilaymutfak.com/feed.json",
-  "description": "Cem Yeşilay Mimarlık & Lüks İmalat Haber ve Proje Akışı",
+  "description": "Yeşilay Mutfak & Mimarlık & Lüks İmalat Haber ve Proje Akışı",
   "language": "tr-TR",
   "items": [
     {
       "id": "https://yesilaymutfak.com/tasarimlar/",
       "url": "https://yesilaymutfak.com/tasarimlar/",
-      "title": "Cem Yeşilay Luxury 137 Tasarım Modeli Arşivi Yayında",
+      "title": "Yeşilay Mutfak 137 Tasarım Modeli Arşivi Yayında",
       "content_text": "İzmir genelinde villa ve lüks konutlar için geliştirilmiş 40 mutfak dolabı, 25 banyo mobilyası, 39 kapı ve 33 giyinme odası model arşivi.",
       "date_published": "2026-10-17T20:48:26.589634+00:00"
     },

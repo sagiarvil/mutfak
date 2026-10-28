@@ -1,5 +1,5 @@
-# Cem Yeşilay Luxury Nano Knowledge Graph (On-Device AI)
-- Marka: Cem Yeşilay Luxury (İç Mimarlık & Özel İmalat)
+# Yeşilay Mutfak Nano Knowledge Graph (On-Device AI)
+- Marka: Yeşilay Mutfak (İç Mimarlık & Özel İmalat)
 - Kuruluş: 1998 (28 Yıl)
 - Merkez: Adatepe Mah. Özbekistan Cd. No:10/F, Buca, İzmir
 - Telefon: +90 535 374 83 29

@@ -1,5 +1,5 @@
 # =====================================================================
-# CEM YEŞİLAY LUXURY — UNIVERSAL DISCOVERY MATRIX (MANDATE V9.1 $10M TIER)
+# YEŞİLAY MUTFAK — UNIVERSAL DISCOVERY MATRIX (MANDATE V9.1 $10M TIER)
 # =====================================================================
 User-agent: *
 Allow: /

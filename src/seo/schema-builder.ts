@@ -9,14 +9,14 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
     {
       '@type': 'HomeAndConstructionBusiness',
       '@id': `${origin}/#organization`,
-      name: 'Cem Yeşilay Mimarlık & Lüks İmalat Atölyesi',
-      alternateName: ['Cem Yeşilay Luxury', 'Cem Yeşilay İç Mimarlık', 'Yeşilay Mutfak'],
+      name: 'Yeşilay Mutfak & Mimarlık Lüks İmalat Atölyesi',
+      alternateName: ['Yeşilay Mutfak', 'Yeşilay Mutfak İç Mimarlık', 'Yeşilay Mutfak'],
       url: `${origin}/`,
       logo: {
         '@type': 'ImageObject',
         '@id': `${origin}/#logo`,
         url: `${origin}/logo.png`,
-        caption: 'Cem Yeşilay Luxury Logo'
+        caption: 'Yeşilay Mutfak Logo'
       },
       image: `${origin}/android-chrome-512x512.png`,
       telephone: '+902324411060',
@@ -60,7 +60,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         worstRating: '1'
       },
       sameAs: [
-        'https://www.instagram.com/cemyesilay.luxury',
+        'https://www.instagram.com/yesilaymutfak',
         'https://wa.me/905324261788',
         'https://share.google/HC5sweG3HXcjogRNZ',
         `https://www.wikidata.org/wiki/${page.primaryEntity.wikidataQid || 'Q11589432'}`
@@ -72,8 +72,8 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       '@type': 'WebSite',
       '@id': `${origin}/#website`,
       url: `${origin}/`,
-      name: 'Cem Yeşilay',
-      alternateName: ['Cem Yeşilay Luxury', 'Cem Yeşilay Mimarlık', domain],
+      name: 'Yeşilay Mutfak',
+      alternateName: ['Yeşilay Mutfak', 'Yeşilay Mutfak & Mimarlık', domain],
       publisher: { '@id': `${origin}/#organization` },
       inLanguage: page.locale,
       potentialAction: {

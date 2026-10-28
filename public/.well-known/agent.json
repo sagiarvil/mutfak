@@ -1,7 +1,7 @@
 {
-  "name": "Cem Yeşilay Luxury Agent",
+  "name": "Yeşilay Mutfak Agent",
   "version": "9.1.0",
-  "description": "Cem Yeşilay Mimarlık & Lüks Mutfak Banyo Özel İmalat Atölyesi A2A İletişim Kartı",
+  "description": "Yeşilay Mutfak & Mimarlık & Lüks Mutfak Banyo Özel İmalat Atölyesi A2A İletişim Kartı",
   "url": "https://yesilaymutfak.com",
   "mcpEndpoint": "https://yesilaymutfak.com/mcp",
   "mobileMcpEndpoint": "https://yesilaymutfak.com/mcp/mobile",
@@ -13,7 +13,7 @@
     "voiceAssistance": true
   },
   "contact": {
-    "phone": "+905353748329",
+    "phone": "+902324411060",
     "whatsapp": "https://wa.me/905353748329",
     "address": "Adatepe, Özbekistan Cd. no:10/f, Buca/İzmir"
   }
