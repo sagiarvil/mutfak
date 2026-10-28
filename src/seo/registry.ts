@@ -45,7 +45,7 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
       type: 'HomeAndConstructionBusiness',
       sameAs: [
         'https://www.instagram.com/cemyesilay.luxury',
-        'https://wa.me/905353748329'
+        'https://wa.me/905324261788'
       ],
       wikidataQid: 'Q11589432'
     },
@@ -106,7 +106,7 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
     indexDirective: 'index, follow',
     canonicalRoute: '/iletisim/',
     title: 'İletişim & Atölye Ulaşım Rehberi | Cem Yeşilay Luxury Buca',
-    metaDescription: 'İzmir Buca Adatepe imalat atölyemize yol tarifi alın, doğrudan telefon veya WhatsApp ile mimari keşif randevusu oluşturun. 0535 374 83 29.',
+    metaDescription: 'İzmir Buca Adatepe imalat atölyemize yol tarifi alın, doğrudan telefon veya WhatsApp ile mimari keşif randevusu oluşturun. 0232 441 10 60.',
     h1: 'Atölyemizde Kahve Eşliğinde Projenizi Birlikte Çizelim.',
     primaryIntent: 'cem yeşilay mutfak iletişim adres telefon yol tarifi',
     primaryEntity: {
@@ -117,10 +117,10 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
     },
     semanticTriples: [
       { subject: 'Cem Yeşilay Atölye', predicate: 'streetAddress', object: 'Adatepe, Özbekistan Cd. no:10/f, 35000 Buca/İzmir' },
-      { subject: 'Cem Yeşilay Atölye', predicate: 'telephone', object: '+905353748329' },
+      { subject: 'Cem Yeşilay Atölye', predicate: 'telephone', object: '+902324411060' },
       { subject: 'Cem Yeşilay Atölye', predicate: 'geoCoordinate', object: '38.3885, 27.1822' }
     ],
-    heroAnswerEngine: 'Cem Yeşilay Luxury imalat atölyesi İzmir Buca Adatepe Mahallesi Özbekistan Caddesi No:10/F adresindedir. Telefon: 0535 374 83 29. Çalışma saatleri Pazartesi-Cumartesi 09:00-19:30 arasıdır. Buca Heykel ve Dokuz Eylül Üniversitesi İİBF yerleşkesine 5 dakika mesafededir.',
+    heroAnswerEngine: 'Cem Yeşilay Luxury imalat atölyesi İzmir Buca Adatepe Mahallesi Özbekistan Caddesi No:10/F adresindedir. Telefon: 0232 441 10 60. Çalışma saatleri Pazartesi-Cumartesi 09:00-19:30 arasıdır. Buca Heykel ve Dokuz Eylül Üniversitesi İİBF yerleşkesine 5 dakika mesafededir.',
     publishedAt: '2024-01-15T09:00:00+03:00',
     modifiedAt: '2026-10-17T23:40:00+03:00',
     llmSubGraphRoute: '/llms/pages/iletisim.md',

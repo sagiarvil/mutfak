@@ -19,7 +19,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         caption: 'Cem Yeşilay Luxury Logo'
       },
       image: `${origin}/android-chrome-512x512.png`,
-      telephone: '+905353748329',
+      telephone: '+902324411060',
       priceRange: 'Özel Mimari Tasarım & İmalat',
       foundingDate: '1998',
       slogan: 'Sözleşmeli Süre ve Sabit Fiyat Garantisiyle Doğrudan Atölye Zanaatı',
@@ -61,7 +61,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       },
       sameAs: [
         'https://www.instagram.com/cemyesilay.luxury',
-        'https://wa.me/905353748329',
+        'https://wa.me/905324261788',
         'https://share.google/HC5sweG3HXcjogRNZ',
         `https://www.wikidata.org/wiki/${page.primaryEntity.wikidataQid || 'Q11589432'}`
       ]
@@ -105,7 +105,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       },
       potentialAction: {
         '@type': page.mobile.primaryAction === 'call' ? 'CommunicateAction' : 'ViewAction',
-        target: page.mobile.primaryAction === 'call' ? 'tel:+905353748329' : pageUrl
+        target: page.mobile.primaryAction === 'call' ? 'tel:+902324411060' : pageUrl
       }
     }
   ];

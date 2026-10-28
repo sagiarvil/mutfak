@@ -19,9 +19,9 @@ export const siteConfig = {
   ratingValue: "4.96",
   domain: "yesilaymutfak.com",
   siteUrl: "https://yesilaymutfak.com",
-  phoneRaw: "905353748329",
-  phoneFormatted: "0535 374 83 29",
-  whatsappUrl: "https://wa.me/905353748329",
+  phoneRaw: "902324411060",
+  phoneFormatted: "0232 441 10 60",
+  whatsappUrl: "https://wa.me/905324261788",
   address: {
     streetAddress: "Adatepe, Özbekistan Cd. no:10/f",
     addressLocality: "Buca",

@@ -64,12 +64,14 @@ const seo = {
         webkit-playsinline
         preload="auto"
         poster="/media/cinematic/home_video_photo.webp"
-        class="w-full h-full object-cover opacity-85 scale-102 transition-transform duration-1000"
+        class="w-full h-full object-cover opacity-95 scale-100 transition-transform duration-1000"
+        style="filter: contrast(1.05) saturate(1.05);"
       >
         <source src="/media/cinematic/home_video.mp4" type="video/mp4" />
       </video>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#FAF9F6] via-[#FAF9F6]/45 to-black/35"></div>
-      <div class="absolute inset-0 bg-gradient-to-r from-[#FAF9F6]/95 via-[#FAF9F6]/75 to-transparent"></div>
+      <!-- Zemin ferahlığı ve video netliğini dengeleyen cerrahi gradyanlar -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#FAF9F6] via-transparent to-black/25 pointer-events-none"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#FAF9F6]/90 via-[#FAF9F6]/40 to-transparent pointer-events-none"></div>
     </div>
 
     <!-- Hero İçerik (Apple Typography Scale) -->
@@ -140,9 +142,6 @@ const seo = {
               <span class="stat-counter text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#006039] font-sans" data-target="28">0</span>
               <span class="text-sm sm:text-base font-bold text-[#006039]">Yıl</span>
             </div>
-            <div class="text-[10.5px] uppercase tracking-wider text-[#006039] font-bold">Atölye Mirası</div>
-            <p class="text-[12px] text-[#6E675F] leading-snug hidden sm:block">1998'den bu yana kendi imalatımız.</p>
-          </div>
             <div class="text-[10.5px] uppercase tracking-wider text-[#006039] font-bold">Atölye Mirası</div>
             <p class="text-[12px] text-[#6E675F] leading-snug hidden sm:block">1998'den bu yana kendi imalatımız.</p>
           </div>
@@ -299,7 +298,7 @@ const seo = {
               <div class="pt-3 border-t border-[#E5DFD5] flex items-center justify-between text-[12px]">
                 <span class="text-[#86868B]">Özel Ölçü Üretim</span>
                 <a 
-                  href={`https://wa.me/905353748329?text=Merhaba%20Cem%20Bey,%20${item.modelNo}%20kodlu%20modeliniz%20hakkında%20bilgi%20ve%20ücretsiz%203D%20keşif%20istiyorum.`} 
+                  href={`https://wa.me/905324261788?text=Merhaba%20Cem%20Bey,%20${item.modelNo}%20kodlu%20modeliniz%20hakkında%20bilgi%20ve%20ücretsiz%203D%20keşif%20istiyorum.`} 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   class="px-2.5 py-1 bg-[#006039]/10 hover:bg-[#006039] text-[#006039] hover:text-white rounded-full font-semibold text-[11.5px] transition flex items-center gap-1 border border-[#006039]/20 hover:border-[#006039]"
@@ -547,7 +546,7 @@ const seo = {
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-3">
         <a 
-          href="https://wa.me/905353748329" 
+          href="https://wa.me/905324261788" 
           target="_blank" 
           rel="noopener noreferrer" 
           class="w-full sm:w-auto px-10 py-4 bg-[#006039] hover:bg-[#00482B] text-white font-bold text-[13px] tracking-wide uppercase rounded-full border border-[#C5A880] shadow-[0_8px_24px_rgba(0,96,57,0.5)] transition duration-300 flex items-center justify-center gap-2 group"
@@ -556,10 +555,10 @@ const seo = {
           <span class="text-[#C5A880] group-hover:translate-x-1 transition-transform">→</span>
         </a>
         <a 
-          href="tel:05353748329" 
+          href="tel:02324411060" 
           class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-md font-semibold text-[13px] tracking-tight rounded-full transition"
         >
-          📞 0535 374 83 29
+          📞 0232 441 10 60
         </a>
       </div>
     </div>
