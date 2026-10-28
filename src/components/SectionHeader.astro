@@ -1,6 +1,6 @@
 ---
 export interface Props {
-  watermark: string;      // Arka plandaki dev filigran metin
+  watermark: string;      // Mimari dev üst filigran metin
   title: string;          // Ön plandaki ana başlık
   subtitle?: string;       // Açıklama alt metni
   tag?: string;           // Üst kırmızı rozet etiketi (opsiyonel)
@@ -23,24 +23,23 @@ const isDark = theme === "dark";
 const isCenter = align === "center";
 ---
 
-<div class={`relative py-8 sm:py-12 select-none ${isCenter ? "text-center" : "text-left"} ${className}`}>
+<div class={`select-none ${isCenter ? "text-center" : "text-left"} ${className}`}>
   
-  <!-- 1. GHOST / WATERMARK TYPOGRAPHY (Ferah, Geniş, Asla Ezilmeyen Arka Plan Katmanı) -->
-  <div 
-    class={`absolute inset-x-0 -top-2 sm:-top-4 flex items-center ${isCenter ? "justify-center" : "justify-start"} pointer-events-none select-none z-0`}
-    aria-hidden="true"
-  >
-    <span class={`text-4xl sm:text-6xl md:text-7xl lg:text-[80px] font-black tracking-tight leading-none uppercase whitespace-nowrap ${
-      isDark ? "text-white/[0.06]" : "text-slate-900/[0.06]"
-    }`}>
-      {watermark}
-    </span>
-  </div>
+  <!-- 1. MİMARÎ DEV FİLİGRAN METİN (Asla Başlığı Ezmeyen, Üstte Yükselen Kristal Netliğinde Katman) -->
+  {watermark && (
+    <div class="pointer-events-none select-none pb-1 sm:pb-2 overflow-hidden leading-none" aria-hidden="true">
+      <span class={`inline-block font-['Montserrat',sans-serif] text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-wider antialiased select-none ${
+        isDark ? "text-white/20" : "text-slate-900/[0.12]"
+      }`}>
+        {watermark}
+      </span>
+    </div>
+  )}
 
-  <!-- 2. ÖN PLAN BAŞLIK VE METİN (Foreground Title & Subtitle) -->
-  <div class="relative z-10 space-y-2.5 pt-2 sm:pt-4">
+  <!-- 2. ROZET, ANA BAŞLIK VE AÇIKLAMA METNİ (Sıfır Ezilme, Ferah ve Jilet Netliğinde Hiyerarşi) -->
+  <div class="space-y-2">
     {tag && (
-      <span class="inline-block text-[10px] sm:text-[11px] font-black uppercase tracking-[0.25em] text-[#CB000F] font-['Montserrat',sans-serif]">
+      <span class="inline-block text-[11px] sm:text-xs font-black uppercase tracking-[0.25em] text-[#CB000F] font-['Montserrat',sans-serif]">
         {tag}
       </span>
     )}
