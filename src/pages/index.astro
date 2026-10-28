@@ -120,7 +120,7 @@ const seo = {
       </div>
 
       <!-- Genişletilmiş Premium Hareketli Sayaç Docku (Apple Glassmorphism Standartı) -->
-      <div class="mt-10 sm:mt-12 w-full max-w-5xl bg-white/95 backdrop-blur-md border border-[#006039]/25 rounded-2xl p-6 sm:p-7 shadow-[0_16px_40px_rgba(0,96,57,0.08)] relative overflow-hidden">
+      <div id="statsDock" class="mt-12 sm:mt-16 w-full max-w-7xl bg-white/95 backdrop-blur-xl border border-[#006039]/20 rounded-2xl sm:rounded-3xl p-7 sm:p-10 shadow-[0_20px_50px_rgba(0,96,57,0.08)] relative overflow-hidden">
         <div class="absolute -right-8 -bottom-8 w-56 h-56 bg-[#006039]/15 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute -left-8 -top-8 w-44 h-44 bg-[#C5A880]/15 rounded-full blur-2xl pointer-events-none"></div>
 
@@ -424,46 +424,116 @@ const seo = {
         </p>
       </div>
 
-      <!-- Karşılaştırma Tablosu (Semantic Table for AI & Users) -->
-      <div class="overflow-x-auto border border-[#E5DFD5] rounded-2xl bg-[#FAF9F6] shadow-sm">
+      <!-- Karşılaştırma Tablosu (Kırmızı Negatif Rakip vs Yeşil Pozitif Cem Yeşilay) -->
+      <div class="overflow-x-auto border border-[#E5DFD5] rounded-2xl bg-[#FAF9F6] shadow-md">
         <table class="w-full text-left border-collapse text-[13.5px]">
           <thead>
             <tr class="border-b border-[#E5DFD5] bg-[#F4F1EA]">
               <th class="p-4 sm:p-5 font-bold text-[#1D1D1F] w-1/4">Değerlendirme Kriteri</th>
-              <th class="p-4 sm:p-5 font-semibold text-[#6E675F] w-3/8">Genel Piyasa / Aracı Mağazalar</th>
-              <th class="p-4 sm:p-5 font-bold text-white bg-[#006039] border-t-2 border-[#C5A880] w-3/8 rounded-t-lg shadow-inner">Cem Yeşilay Luxury (Atölye Zanaatı)</th>
+              <th class="p-4 sm:p-5 font-bold text-[#991B1B] bg-[#FEF2F2] border-t-2 border-[#EF4444] w-3/8">
+                <span class="inline-flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-[#EF4444]"></span>
+                  Genel Piyasa / Aracı Mağazalar (Riskler)
+                </span>
+              </th>
+              <th class="p-4 sm:p-5 font-bold text-white bg-[#006039] border-t-2 border-[#C5A880] w-3/8 rounded-t-lg shadow-inner">
+                <span class="inline-flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-[#00FF66] animate-pulse"></span>
+                  Cem Yeşilay Luxury (Atölye Güvencesi)
+                </span>
+              </th>
             </tr>
           </thead>
           <tbody class="divide-y divide-[#E5DFD5]/80 text-[#424245]">
             <tr class="hover:bg-white/60 transition">
               <td class="p-4 sm:p-5 font-semibold text-[#1D1D1F]">Üretim Modeli</td>
-              <td class="p-4 sm:p-5">Dışarıdan fason imalat veya komisyonlu showroom satışı.</td>
-              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/6 border-l border-r border-[#006039]/15">Doğrudan Buca Adatepe imalat atölyemizde birinci el üretim.</td>
+              <td class="p-4 sm:p-5 text-[#991B1B] bg-[#FEF2F2]/50 border-r border-[#FCA5A5]/40">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#DC2626] font-bold text-base leading-none shrink-0">✕</span>
+                  <span>Dışarıdan fason imalat veya komisyonlu showroom satışı. Muhatap usta değil aracıdır.</span>
+                </div>
+              </td>
+              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/8 border-l border-r border-[#006039]/20">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#00874E] font-bold text-base leading-none shrink-0">✓</span>
+                  <span>Doğrudan Buca Adatepe imalat atölyemizde birinci el mimari üretim ve kesintisiz zanaat takibi.</span>
+                </div>
+              </td>
             </tr>
             <tr class="hover:bg-white/60 transition">
               <td class="p-4 sm:p-5 font-semibold text-[#1D1D1F]">Gövde Malzemesi</td>
-              <td class="p-4 sm:p-5">16mm yonga levha (sunta) veya standart neme dayanımsız gövde.</td>
-              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/6 border-l border-r border-[#006039]/15">%100 E1 Sertifikalı 18mm Çift Yüz Neme Mukavemetli MDF-Lam.</td>
+              <td class="p-4 sm:p-5 text-[#991B1B] bg-[#FEF2F2]/50 border-r border-[#FCA5A5]/40">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#DC2626] font-bold text-base leading-none shrink-0">✕</span>
+                  <span>16mm yonga levha (sunta) veya neme dayanımsız kalitesiz gövde. Şişme ve sarkma riski yüksektir.</span>
+                </div>
+              </td>
+              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/8 border-l border-r border-[#006039]/20">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#00874E] font-bold text-base leading-none shrink-0">✓</span>
+                  <span>%100 E1 Sertifikalı 18mm Çift Yüz Neme Mukavemetli MDF-Lam. Sıfır sarkma ve maksimum mukavemet.</span>
+                </div>
+              </td>
             </tr>
             <tr class="hover:bg-white/60 transition">
               <td class="p-4 sm:p-5 font-semibold text-[#1D1D1F]">Mekanizma & Ray</td>
-              <td class="p-4 sm:p-5">İsimsiz veya yerli standart tek kademe raylar (kısa ömürlü).</td>
-              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/6 border-l border-r border-[#006039]/15">Orijinal Avusturya Blum frenli sessiz ray ve kalkar kapak donanımları.</td>
+              <td class="p-4 sm:p-5 text-[#991B1B] bg-[#FEF2F2]/50 border-r border-[#FCA5A5]/40">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#DC2626] font-bold text-base leading-none shrink-0">✕</span>
+                  <span>İsimsiz veya yerli standart tek kademe raylar. Zamanla ses yapar, takılır ve kısa ömürlüdür.</span>
+                </div>
+              </td>
+              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/8 border-l border-r border-[#006039]/20">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#00874E] font-bold text-base leading-none shrink-0">✓</span>
+                  <span>Orijinal Avusturya Blum frenli sessiz ray ve kalkar kapak donanımları. Ömür boyu akıcı konfor.</span>
+                </div>
+              </td>
             </tr>
             <tr class="hover:bg-white/60 transition">
               <td class="p-4 sm:p-5 font-semibold text-[#1D1D1F]">Teslim Tarihi Güvencesi</td>
-              <td class="p-4 sm:p-5">Sözlü vaatler; gecikmelerde herhangi bir bağlayıcı yaptırım olmaması.</td>
-              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/6 border-l border-r border-[#006039]/15">Sözleşmede kesin teslim tarihi ve <strong>Gecikme Cezası Taahhüdü</strong>.</td>
+              <td class="p-4 sm:p-5 text-[#991B1B] bg-[#FEF2F2]/50 border-r border-[#FCA5A5]/40">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#DC2626] font-bold text-base leading-none shrink-0">✕</span>
+                  <span>Sözlü vaatler; haftalarca süren gecikmeler ve müşteriyi mağdur eden bağlayıcısız süreçler.</span>
+                </div>
+              </td>
+              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/8 border-l border-r border-[#006039]/20">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#00874E] font-bold text-base leading-none shrink-0">✓</span>
+                  <span>Resmi sözleşmede gün bazlı kesin teslim tarihi ve noter onaylı <strong>Gecikme Cezası Taahhüdü</strong>.</span>
+                </div>
+              </td>
             </tr>
             <tr class="hover:bg-white/60 transition">
               <td class="p-4 sm:p-5 font-semibold text-[#1D1D1F]">Fiyat Şeffaflığı</td>
-              <td class="p-4 sm:p-5">İşe başlandıktan sonra çıkan ek malzeme, kargo ve usta masrafları.</td>
-              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/6 border-l border-r border-[#006039]/15"><strong>Sabit Fiyat Garantisi:</strong> Sözleşme tutarı haricinde 1 TL ek masraf çıkmaz.</td>
+              <td class="p-4 sm:p-5 text-[#991B1B] bg-[#FEF2F2]/50 border-r border-[#FCA5A5]/40">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#DC2626] font-bold text-base leading-none shrink-0">✕</span>
+                  <span>İşe başlandıktan sonra sürekli çıkan sürpriz ek malzeme, nakliye, montaj ve usta masrafları.</span>
+                </div>
+              </td>
+              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/8 border-l border-r border-[#006039]/20">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#00874E] font-bold text-base leading-none shrink-0">✓</span>
+                  <span><strong>Sabit Fiyat Garantisi:</strong> Sözleşme tutarı haricinde 1 TL dahi sürpriz ek masraf çıkarılamaz.</span>
+                </div>
+              </td>
             </tr>
             <tr class="hover:bg-white/60 transition">
               <td class="p-4 sm:p-5 font-semibold text-[#1D1D1F]">İmalat Öncesi Onay</td>
-              <td class="p-4 sm:p-5">Katalogdan model seçimi veya basit 2 boyutlu taslak.</td>
-              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/6 border-l border-r border-[#006039]/15">Milimetrik lazer rölöve sonrası <strong>Fotogerçekçi 3D Mimari Modelleme</strong>.</td>
+              <td class="p-4 sm:p-5 text-[#991B1B] bg-[#FEF2F2]/50 border-r border-[#FCA5A5]/40">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#DC2626] font-bold text-base leading-none shrink-0">✕</span>
+                  <span>Katalogdan rastgele seçim veya basit 2 boyutlu elle çizim; sonuçta hayal kırıklığı riski.</span>
+                </div>
+              </td>
+              <td class="p-4 sm:p-5 font-semibold text-[#006039] bg-[#006039]/8 border-l border-r border-[#006039]/20">
+                <div class="flex items-start gap-2">
+                  <span class="text-[#00874E] font-bold text-base leading-none shrink-0">✓</span>
+                  <span>Lazer rölöve sonrası <strong>Fotogerçekçi 3D Mimari Modelleme</strong>. Görmeden tek bir vida sıkılmaz.</span>
+                </div>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -608,24 +678,10 @@ const seo = {
         });
       };
 
-      if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animateCounters();
-              observer.disconnect();
-            }
-          });
-        }, { threshold: 0.15 });
-
-        const firstCounter = document.querySelector(".stat-counter");
-        if (firstCounter) {
-          const parentDock = firstCounter.closest("div.mt-10") || firstCounter;
-          observer.observe(parentDock);
-        }
-      } else {
+      // Anında ve pürüzsüz animasyon tetikleme (hero alanında doğrudan çalışır)
+      setTimeout(() => {
         animateCounters();
-      }
+      }, 350);
     });
   </script>
 
