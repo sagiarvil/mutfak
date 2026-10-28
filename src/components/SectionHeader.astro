@@ -1,7 +1,7 @@
 ---
 export interface Props {
-  watermark: string;      // Arka plandaki dev açık gri filigran metin
-  title: string;          // Ön plandaki ana başlık
+  watermark: string;      // Üstte dinamik ölçeklenen soft dev filigran metin
+  title: string;          // Altındaki ana başlık
   subtitle?: string;       // Açıklama alt metni
   tag?: string;           // Üst kırmızı rozet etiketi (opsiyonel)
   theme?: "light" | "dark";
@@ -23,31 +23,44 @@ const isDark = theme === "dark";
 const isCenter = align === "center";
 ---
 
-<div class={`relative py-12 sm:py-16 md:py-20 select-none overflow-hidden ${isCenter ? "text-center" : "text-left"} ${className}`}>
+<div class={`select-none ${isCenter ? "text-center" : "text-left"} ${className}`}>
   
-  <!-- 1. DEV AÇIK GRİ WATERMARK (Referans Standartı: Devasa Punto, Açık Gri, Kusursuz Derinlik) -->
+  <!-- 1. GHOST / WATERMARK TYPOGRAPHY (Üstte, Ekrana Dinamik Oto Boyutlanan, Asla Kırılmayan/Kesilmeyen Soft Vektörel Katman) -->
   {watermark && (
-    <div 
-      class={`absolute inset-0 flex items-center ${isCenter ? "justify-center" : "justify-start"} pointer-events-none select-none z-0`}
-      aria-hidden="true"
-    >
-      <span class={`font-['Montserrat',sans-serif] text-7xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[170px] font-black tracking-tighter leading-none whitespace-nowrap antialiased select-none ${
-        isDark ? "text-white/[0.09]" : "text-[#172127]/[0.07]"
-      }`}>
-        {watermark}
-      </span>
+    <div class={`w-full overflow-hidden pointer-events-none select-none flex ${isCenter ? "justify-center" : "justify-start"} mb-1 sm:mb-2`}>
+      <svg 
+        viewBox={isCenter ? "0 0 1000 120" : "0 0 800 120"} 
+        class={`w-full h-auto select-none pointer-events-none ${isCenter ? "max-w-[700px] sm:max-w-[850px]" : "max-w-[500px] sm:max-w-[650px]"}`}
+        preserveAspectRatio={isCenter ? "xMidYMid meet" : "xMinYMid meet"}
+        aria-hidden="true"
+      >
+        <text 
+          x={isCenter ? "500" : "0"} 
+          y="88" 
+          text-anchor={isCenter ? "middle" : "start"} 
+          font-family="'Montserrat', sans-serif" 
+          font-weight="900" 
+          font-size="100" 
+          letter-spacing="-1.5"
+          class={`select-none antialiased ${
+            isDark ? "fill-white/[0.07]" : "fill-[#172127]/[0.055]"
+          }`}
+        >
+          {watermark}
+        </text>
+      </svg>
     </div>
   )}
 
-  <!-- 2. ÖN PLAN BAŞLIK VE METİN (Kristal Netliğinde, Kusursuz Okunur) -->
-  <div class="relative z-10 space-y-2.5">
+  <!-- 2. ALT BAŞLIK & METİN GRUBU (Asla Watermark Üstüne Basmayan, Bağımsız, Ferah ve Jilet Netliğinde Katman) -->
+  <div class="space-y-2">
     {tag && (
       <span class="inline-block text-[11px] sm:text-xs font-black uppercase tracking-[0.25em] text-[#CB000F] font-['Montserrat',sans-serif]">
         {tag}
       </span>
     )}
     
-    <h2 class={`text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-extrabold tracking-tight font-['Montserrat',sans-serif] leading-tight ${
+    <h2 class={`text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight font-['Montserrat',sans-serif] leading-tight ${
       isDark ? "text-white" : "text-[#172127]"
     }`}>
       {title}
