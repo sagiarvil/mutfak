@@ -11,6 +11,15 @@
       "trailingSlash": true,
       "headers": [
         {
+          "source": "**/favicon*.*",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=0, must-revalidate"
+            }
+          ]
+        },
+        {
           "source": "**/*.xml",
           "headers": [
             {
@@ -188,6 +197,15 @@
       ],
       "trailingSlash": true,
       "headers": [
+        {
+          "source": "**/favicon*.*",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=0, must-revalidate"
+            }
+          ]
+        },
         {
           "source": "**/*.xml",
           "headers": [
