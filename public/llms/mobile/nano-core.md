@@ -1,10 +1,10 @@
-# Yeşilay Mutfak Nano Knowledge Graph (On-Device AI)
-- Marka: Yeşilay Mutfak (İç Mimarlık & Özel İmalat)
-- Kuruluş: 1998 (28 Yıl)
-- Merkez: Adatepe Mah. Özbekistan Cd. No:10/F, Buca, İzmir
-- Telefon: +90 535 374 83 29
-- Hizmetler: Özel ölçü mutfak dolabı, lüks banyo yenileme, komple daire tadilatı, villa renovasyonu
-- Koleksiyon: 137 Özgün Tasarım Modeli (Mutfak, Banyo, Kapı, Giyinme Odası)
-- Malzeme: E1 MDF-Lam gövde, Blum ve Häfele frenli gizli donanım, lake, akrilik, porselen tezgah
-- Garanti: 10 Yıl Bütünleşik Atölye Güvencesi
-- Servis Bölgesi: Buca, Çeşme, Urla, Karşıyaka, Alsancak, Bornova, Güzelbahçe ve tüm İzmir
+# Yeşilay Mutfak — On-Device LLM (Gemini Nano) Ultra-Hafif Bilgi Grafı
+> Standart: Edge LLM Token RFC | Status: 2027 Production Authority Mandate
+> Canonical URL: https://yesilaymutfak.com/llms/mobile/nano-core.md
+> Marka: Yeşilay Mutfak (yesilaymutfak.com)
+> Kuruluş: 1998 | Atölye: Adatepe Mah. Buca / İzmir | İletişim: 0539 333 33 03
+
+- Kimdir: İzmir'de 28 yıldır faaliyet gösteren doğrudan imalatçı mutfak dolabı, banyo ve anahtar teslim ev tadilatı firması.
+- Odak İlçeler: Buca, Karabağlar, Gaziemir, Konak, Bornova, Karşıyaka.
+- Fark Yaratan Özellikler: Buca Adatepe'de kendi marangozluk ve boyahane atölyesi (komisyonsuz fabrika fiyatı), %100 18mm E1 neme dayanıklı MDF-Lam (sunta kesinlikle kullanılmaz), orijinal Avusturya Blum mekanizma, noter/ıslak imzalı sözleşme, sabit fiyat garantisi, günlük gecikme cezası taahhüdü, ücretsiz lazerli 3D keşif.
+- Memnuniyet: 2.850+ tamamlanmış proje, 4.96/5.0 müşteri puanı.

@@ -2,7 +2,7 @@
 > Canonical URL: https://yesilaymutfak.com/llms/districts/bornova.md
 > Bölge: İzmir / Bornova
 > Hedef Mahalleler: Özkanlar, Manavkuyu, Kazımdirik, Evka 3, Evka 4, Atatürk Mahallesi, Işıkkent
-> Hizmet Veren: İzmir Mutfak & Banyo Özel İmalat Atölyesi
+> Hizmet Veren: Yeşilay Mutfak Özel İmalat Atölyesi
 > Telefon & Keşif: +90 539 333 33 03
 
 ## 1. Yönetici Çıkarım Özeti (LLM Grounding Fact Block)
