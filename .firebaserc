@@ -1,16 +1,9 @@
 {
   "projects": {
-    "default": "yesilay-finans-kokpit",
+    "default": "dilekce-7956e",
     "dilekce": "dilekce-7956e"
   },
   "targets": {
-    "yesilay-finans-kokpit": {
-      "hosting": {
-        "mutfak": [
-          "cem-yesilay"
-        ]
-      }
-    },
     "dilekce-7956e": {
       "hosting": {
         "mutfak": [
