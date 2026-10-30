@@ -116,11 +116,11 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
       sameAs: ['https://share.google/HC5sweG3HXcjogRNZ']
     },
     semanticTriples: [
-      { subject: 'Yeşilay Mutfak Atölye', predicate: 'streetAddress', object: 'Adatepe, Özbekistan Cd. no:10/f, 35000 Buca/İzmir' },
+      { subject: 'Yeşilay Mutfak Atölye', predicate: 'streetAddress', object: 'Gaziler Mahallesi 1084/2 Sokak No: 1/A Buca/İzmir' },
       { subject: 'Yeşilay Mutfak Atölye', predicate: 'telephone', object: '+902324411060' },
       { subject: 'Yeşilay Mutfak Atölye', predicate: 'geoCoordinate', object: '38.3885, 27.1822' }
     ],
-    heroAnswerEngine: 'Yeşilay Mutfak imalat atölyesi İzmir Buca Adatepe Mahallesi Özbekistan Caddesi No:10/F adresindedir. Telefon: 0232 441 10 60. Çalışma saatleri Pazartesi-Cumartesi 09:00-19:30 arasıdır. Buca Heykel ve Dokuz Eylül Üniversitesi İİBF yerleşkesine 5 dakika mesafededir.',
+    heroAnswerEngine: 'Yeşilay Mutfak mağaza ve imalat atölyesi İzmir Buca Gaziler Mahallesi 1084/2 Sokak No: 1/A adresindedir. Telefon: 0232 441 10 60. Çalışma saatleri Pazartesi-Cumartesi 09:00-19:30 arasıdır.',
     publishedAt: '2024-01-15T09:00:00+03:00',
     modifiedAt: '2026-10-17T23:40:00+03:00',
     llmSubGraphRoute: '/llms/pages/iletisim.md',

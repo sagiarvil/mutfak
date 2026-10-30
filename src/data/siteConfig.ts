@@ -23,7 +23,7 @@ export const siteConfig = {
   phoneFormatted: "0232 441 10 60",
   whatsappUrl: "https://wa.me/905324261788",
   address: {
-    streetAddress: "Adatepe, Özbekistan Cd. no:10/f",
+    streetAddress: "Gaziler Mahallesi 1084/2 Sokak No: 1/A",
     addressLocality: "Buca",
     addressRegion: "İzmir",
     addressCountry: "TR",
