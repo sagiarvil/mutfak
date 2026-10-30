@@ -33,16 +33,17 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       ],
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Gaziler Mahallesi 1084/2 Sokak No: 1/A',
+        streetAddress: 'Gaziler Mahallesi 1084/2 Sokak No: 1/A (Gazi Osman Paşa Cd. Köşesi)',
         addressLocality: 'Buca',
         addressRegion: 'İzmir',
         postalCode: '35000',
         addressCountry: 'TR'
       },
+      hasMap: 'https://share.google/C0WRDJ4gisVAQIAzr',
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: 38.3885,
-        longitude: 27.1822
+        latitude: 38.392083,
+        longitude: 27.180623
       },
       openingHoursSpecification: [
         {
@@ -62,7 +63,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       sameAs: [
         'https://www.instagram.com/yesilaymutfak',
         'https://wa.me/905324261788',
-        'https://share.google/HC5sweG3HXcjogRNZ',
+        'https://share.google/C0WRDJ4gisVAQIAzr',
         `https://www.wikidata.org/wiki/${page.primaryEntity.wikidataQid || 'Q11589432'}`
       ]
     },

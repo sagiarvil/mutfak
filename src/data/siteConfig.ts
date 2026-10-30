@@ -22,16 +22,17 @@ export const siteConfig = {
   phoneRaw: "902324411060",
   phoneFormatted: "0232 441 10 60",
   whatsappUrl: "https://wa.me/905324261788",
+  googleMapsUrl: "https://share.google/C0WRDJ4gisVAQIAzr",
   address: {
-    streetAddress: "Gaziler Mahallesi 1084/2 Sokak No: 1/A",
+    streetAddress: "Gaziler Mahallesi 1084/2 Sokak No: 1/A (Gazi Osman Paşa Cd. Köşesi)",
     addressLocality: "Buca",
     addressRegion: "İzmir",
     addressCountry: "TR",
     postalCode: "35000"
   },
   geo: {
-    latitude: "38.3885",
-    longitude: "27.1822"
+    latitude: "38.392083",
+    longitude: "27.180623"
   },
   openingHours: "Mo-Sa 09:00-19:30",
   socials: {

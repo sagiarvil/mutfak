@@ -141,8 +141,8 @@ if (faqList.length > 0) {
 <!-- Geo Etiketleri -->
 <meta name="geo.region" content="TR-35" />
 <meta name="geo.placename" content="İzmir" />
-<meta name="geo.position" content="38.3885;27.1822" />
-<meta name="ICBM" content="38.3885, 27.1822" />
+<meta name="geo.position" content={`${siteConfig.geo.latitude};${siteConfig.geo.longitude}`} />
+<meta name="ICBM" content={`${siteConfig.geo.latitude}, ${siteConfig.geo.longitude}`} />
 
 <!-- Schema.org 14KB First-Packet JSON-LD -->
 <script type="application/ld+json" set:html={jsonLd} />

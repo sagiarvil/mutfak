@@ -113,12 +113,12 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
       id: 'https://yesilaymutfak.com/#organization',
       name: 'Yeşilay Mutfak Atölye',
       type: 'HomeAndConstructionBusiness',
-      sameAs: ['https://share.google/HC5sweG3HXcjogRNZ']
+      sameAs: ['https://share.google/C0WRDJ4gisVAQIAzr']
     },
     semanticTriples: [
-      { subject: 'Yeşilay Mutfak Atölye', predicate: 'streetAddress', object: 'Gaziler Mahallesi 1084/2 Sokak No: 1/A Buca/İzmir' },
+      { subject: 'Yeşilay Mutfak Atölye', predicate: 'streetAddress', object: 'Gaziler Mahallesi 1084/2 Sokak No: 1/A (Gazi Osman Paşa Cd. Köşesi) Buca/İzmir' },
       { subject: 'Yeşilay Mutfak Atölye', predicate: 'telephone', object: '+902324411060' },
-      { subject: 'Yeşilay Mutfak Atölye', predicate: 'geoCoordinate', object: '38.3885, 27.1822' }
+      { subject: 'Yeşilay Mutfak Atölye', predicate: 'geoCoordinate', object: '38.392083, 27.180623' }
     ],
     heroAnswerEngine: 'Yeşilay Mutfak mağaza ve imalat atölyesi İzmir Buca Gaziler Mahallesi 1084/2 Sokak No: 1/A adresindedir. Telefon: 0232 441 10 60. Çalışma saatleri Pazartesi-Cumartesi 09:00-19:30 arasıdır.',
     publishedAt: '2024-01-15T09:00:00+03:00',
