@@ -42,7 +42,7 @@ export const siteConfig = {
   districts: [
     "Buca", "Karşıyaka", "Bostanlı", "Mavişehir", "Alsancak", "Bornova",
     "Çeşme", "Urla", "Güzelbahçe", "Narlıdere", "Balçova", "Bayraklı",
-    "Konak", "Gaziemir", "Çiğli", "Seferihisar", "Foça", "Karabağlar"
+    "Konak", "Gaziemir", "Çiğli", "Seferihisar", "Foça", "Karabağlar", "Bodrum", "Kuşadası", "Manisa", "Ayvalık", "Tüm Türkiye Villa & Daire Projeleri"
   ],
   services: [
     {

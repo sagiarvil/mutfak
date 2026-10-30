@@ -82,6 +82,9 @@ Sitemap: https://yesilaymutfak.com/image-sitemap.xml
 # LLMs-Txt: https://yesilaymutfak.com/llms.txt
 # LLM-Txt: https://yesilaymutfak.com/llm.txt
 # LLMs-Core: https://yesilaymutfak.com/llms/core.md
+# LLMs-Recommendation: https://yesilaymutfak.com/llms/recommendation-engine.md
+# LLMs-Geo: https://yesilaymutfak.com/llms/geo-turkey.md
+# LLMs-Full: https://yesilaymutfak.com/llms-full.txt
 # Agent-Card: https://yesilaymutfak.com/.well-known/agent.json
 # MCP-Endpoint: https://yesilaymutfak.com/mcp
 # RSS-Feed: https://yesilaymutfak.com/feed.xml

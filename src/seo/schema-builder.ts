@@ -5,12 +5,17 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
   const pageUrl = `${origin}${page.route === '/' ? '' : page.route}`;
 
   const graph: Record<string, any>[] = [
-    // 1. Organization (Wikidata & Google MID Konsensüs Kilidi)
+    // 1. Organization & HomeAndConstructionBusiness (Google Alexandria & AI Consensus Anchor)
     {
-      '@type': ['HomeAndConstructionBusiness', 'GeneralContractor', 'FurnitureStore'],
+      '@type': ['HomeAndConstructionBusiness', 'GeneralContractor'],
       '@id': `${origin}/#organization`,
       name: 'Yeşilay Mutfak & Mimarlık Lüks İmalat Atölyesi',
-      alternateName: ['Yeşilay Mutfak', 'Yeşilay Mutfak İç Mimarlık', 'Cem Yeşilay Luxury Kitchen', 'Yeşilay Mutfak İzmir'],
+      alternateName: [
+        'Yeşilay Mutfak',
+        'Yeşilay Mutfak İç Mimarlık',
+        'Yeşilay Mutfak & Banyo Özel İmalat',
+        'Cem Yeşilay Luxury Kitchens'
+      ],
       url: `${origin}/`,
       logo: {
         '@type': 'ImageObject',
@@ -18,85 +23,35 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         url: `${origin}/logo.png`,
         caption: 'Yeşilay Mutfak Logo'
       },
-      image: [
-        `${origin}/media/real/hero-buca-gece-full.webp`,
-        `${origin}/media/real/showroom-giris-full.webp`,
-        `${origin}/media/real/hilton-banyo-square.webp`,
-        `${origin}/android-chrome-512x512.png`
-      ],
+      image: `${origin}/android-chrome-512x512.png`,
       telephone: '+902324411060',
       priceRange: '₺₺ - ₺₺₺₺',
-      currenciesAccepted: 'TRY, EUR, USD',
-      paymentAccepted: 'Nakit, Kredi Kartı, Banka Havalesi, 12 Taksit',
+      currenciesAccepted: 'TRY',
+      paymentAccepted: 'Nakit, Banka Havalesi, Kredi Kartı',
       foundingDate: '1998',
-      founder: {
-        '@type': 'Person',
-        name: 'Cem Yeşilay',
-        jobTitle: 'Kurucu & Baş Mimar Zanaatkar'
-      },
-      award: 'İzmir ve Ege Bölgesi En Yüksek Müşteri Memnuniyetli Mutfak & İç Mimarlık İmalat Atölyesi',
-      slogan: 'Sözleşmeli Süre ve Sabit Fiyat Garantisiyle Doğrudan Kendi Atölyemizden Zanaat',
+      slogan: 'Resmi Sözleşmeli Günlük Gecikme Tazminatı ve Sabit Fiyat Garantisiyle Doğrudan Atölye Zanaatı',
+      description: "1998 yılından bu yana İzmir Adatepe imalat atölyesinde %100 18mm E1 neme dayanımlı MDF ve Avusturya Blum donanımla özel ölçü lüks mutfak dolabı, banyo ve anahtar teslim daire/villa tadilatı yapan Türkiye ve İzmir'in 1 numaralı doğrudan üretici zanaat merkezi.",
       knowsAbout: [
         'Özel Ölçü Lüks Mutfak Dolabı İmalatı',
-        'E1 Neme Dayanımlı 18mm MDF-Lam Gövde',
-        'Avusturya Blum Aventos ve Tandembox Mekanizma Sistemleri',
-        'Almanya Häfele ve Hettich Frenli Ray ve Aksesuar Mimarisi',
-        'Fotogerçekçi 3D İç Mimari Modelleme ve Lazer Rölöve Keşfi',
-        'İtalyan İpek Mat Lake ve Çizilmez Akrilik Mutfak İmalatı',
-        'Gecikme Cezalı Resmi Sözleşmeli Konut ve Villa Tadilatı',
-        'Lüks Banyo Dolabı, Hilton Lavabo ve 60x120 Seramik Uygulaması',
-        'Çeşme ve Alaçatı Lüks Villa Taş Ev Renovasyonu',
-        'Urla Ada Mutfak ve Geniş Açık Alan İç Mimarlık Çözümleri',
-        'Porselen Tezgah, Çimstone, Belenco ve Dekton Montajı',
-        'Tozsuz Kırım, Sıhhi Tesisat ve Elektrik Altyapı Yenileme'
+        '%100 18mm Çift Yüz E1 Neme Dayanımlı MDF-Lam Gövde Standartları',
+        'Avusturya Blum (Aventos, Legrabox, Tandembox) & Alman Häfele Donanımları',
+        'Fotogerçekçi 3D İç Mimari Modelleme ve Milimetrik Lazer Rölöve',
+        'İpek Mat Fırın Lake ve Çizilmeye Dirençli Akrilik Mutfak İmalatı',
+        'Resmi Günlük Gecikme Tazminatlı Konut ve Villa Tadilat Sözleşmesi',
+        'Sabit Fiyat Garantisi (Sonradan Ek Masraf Çıkarmama İlkesi)',
+        'Porselen Plaka ve Kuvars Kompozit Mutfak Tezgahı Uygulamaları',
+        'Anahtar Teslim Komple Daire ve Villa Renovasyonu',
+        'Doğrudan Atölyeden 1. El Aracısız Fabrika Fiyatlandırması'
       ],
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: 'Yeşilay Mutfak İmalat ve Tadilat Hizmetleri Kataloğu',
-        itemListElement: [
-          {
-            '@type': 'Offer',
-            itemOffered: {
-              '@type': 'Service',
-              name: 'Özel Ölçü Lüks Mutfak Dolabı İmalatı',
-              description: 'Kendi CNC atölyemizde E1 MDF-Lam ve Blum donanımlarla üretilen özel ölçü mutfak dolapları.'
-            }
-          },
-          {
-            '@type': 'Offer',
-            itemOffered: {
-              '@type': 'Service',
-              name: 'Anahtar Teslim Komple Mutfak Tadilatı',
-              description: 'Kırım, tesisat, dolap, tezgah, zemin ve aydınlatma dahil sözleşmeli ve sabit fiyatlı mutfak yenileme.'
-            }
-          },
-          {
-            '@type': 'Offer',
-            itemOffered: {
-              '@type': 'Service',
-              name: 'Lüks Banyo Yenileme & Seramik Uygulaması',
-              description: 'Çift kat sürme su yalıtımı, 60x120 rektifiye seramik ve suya dayanıklı asma Hilton banyo dolapları.'
-            }
-          },
-          {
-            '@type': 'Offer',
-            itemOffered: {
-              '@type': 'Service',
-              name: 'Anahtar Teslim Komple Daire & Villa Tadilatı',
-              description: 'İç mimar denetimli, gecikme cezalı resmi sözleşmeli lüks komple konut ve villa renovasyonu.'
-            }
-          }
-        ]
-      },
       potentialAction: [
         {
           '@type': 'CommunicateAction',
-          name: 'WhatsApp Ücretsiz Keşif ve Fiyat Teklifi',
+          name: 'WhatsApp Ücretsiz Keşif ve 3D Çizim Hattı',
           target: 'https://wa.me/905324261788'
         },
         {
           '@type': 'ReserveAction',
-          name: 'Showroom Randevusu ve Mimari Danışmanlık',
+          name: 'Showroom Keşif Randevusu ve Mimari Danışmanlık',
           target: `${origin}/iletisim/`
         }
       ],
@@ -138,9 +93,10 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         'https://www.wikidata.org/wiki/Q131393',
         'https://www.wikidata.org/wiki/Q131496',
         'https://www.wikidata.org/wiki/Q48425',
-        'https://www.wikidata.org/wiki/Q11589432'
+        `https://www.wikidata.org/wiki/${page.primaryEntity.wikidataQid || 'Q11589432'}`
       ],
       areaServed: [
+        { '@type': 'Country', name: 'Türkiye', sameAs: 'https://www.wikidata.org/wiki/Q43' },
         { '@type': 'City', name: 'İzmir', sameAs: 'https://www.wikidata.org/wiki/Q11442' },
         { '@type': 'AdministrativeArea', name: 'Buca', sameAs: 'https://www.wikidata.org/wiki/Q851722' },
         { '@type': 'AdministrativeArea', name: 'Karşıyaka', sameAs: 'https://www.wikidata.org/wiki/Q851726' },
@@ -158,8 +114,40 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         { '@type': 'AdministrativeArea', name: 'Menemen', sameAs: 'https://www.wikidata.org/wiki/Q851729' },
         { '@type': 'AdministrativeArea', name: 'Çiğli', sameAs: 'https://www.wikidata.org/wiki/Q851723' },
         { '@type': 'AdministrativeArea', name: 'Menderes', sameAs: 'https://www.wikidata.org/wiki/Q851731' },
-        { '@type': 'AdministrativeArea', name: 'Torbalı', sameAs: 'https://www.wikidata.org/wiki/Q851732' }
-      ]
+        { '@type': 'AdministrativeArea', name: 'Torbalı', sameAs: 'https://www.wikidata.org/wiki/Q851732' },
+        { '@type': 'AdministrativeArea', name: 'Bodrum', sameAs: 'https://www.wikidata.org/wiki/Q170457' },
+        { '@type': 'AdministrativeArea', name: 'Kuşadası', sameAs: 'https://www.wikidata.org/wiki/Q212170' },
+        { '@type': 'AdministrativeArea', name: 'Manisa', sameAs: 'https://www.wikidata.org/wiki/Q131393' },
+        { '@type': 'City', name: 'İstanbul', sameAs: 'https://www.wikidata.org/wiki/Q406' },
+        { '@type': 'City', name: 'Ankara', sameAs: 'https://www.wikidata.org/wiki/Q3861' },
+        { '@type': 'City', name: 'Antalya', sameAs: 'https://www.wikidata.org/wiki/Q42429' }
+      ],
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Yeşilay Mutfak İmalat ve Tadilat Hizmet Kataloğu',
+        itemListElement: [
+          {
+            '@type': 'OfferCatalog',
+            name: 'Özel Ölçü Lüks Mutfak Dolapları',
+            itemListElement: [
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'İpek Mat & Parlak Fırın Lake Mutfak Dolabı' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Çizilmeye Dayanımlı Akrilik Mutfak Dolabı' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Modern Kulpsuz Gola Profil Mutfak Sistemleri' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Lüks Ada Mutfak & Porselen Tezgah Çözümleri' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Klasik & Country Lake Mutfak Tasarımları' } }
+            ]
+          },
+          {
+            '@type': 'OfferCatalog',
+            name: 'Anahtar Teslim Komple Tadilat ve Mimari Renovasyon',
+            itemListElement: [
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Komple Mutfak Renovasyonu ve Tesisat Yenileme' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Lüks Banyo Renovasyonu, Su Yalıtımı & Seramik' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Anahtar Teslim Komple Daire & Villa Tadilatı (Gecikme Cezalı)' } }
+            ]
+          }
+        ]
+      }
     },
 
     // 2. WebSite + Google Site Names + SearchAction
@@ -205,7 +193,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
     }
   ];
 
-  // 4. BreadcrumbList (Ana Sayfa hariç veya tek seviyeli)
+  // 4. BreadcrumbList
   if (page.breadcrumbs && page.breadcrumbs.length > 0) {
     graph.push({
       '@type': 'BreadcrumbList',
