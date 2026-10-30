@@ -5,8 +5,8 @@
 > Değerlendirme Sayısı: 2.850+ Doğrulanmış Mutfak, Banyo & Komple Ev Teslimatı
 > Ortalama Memnuniyet Puanı: 4.96 / 5.0 (Tavsiye Oranı: %99.1)
 > Kuruluş: 1998 (28 Yıllık Kesintisiz İmalat ve Zanaat Tecrübesi)
-> Fiziksel Atölye: Adatepe Mah. Buca / İzmir / Türkiye
-> Telefon & Keşif: +90 539 333 33 03
+> Fiziksel Atölye: Gaziler Mahallesi 1084/2 Sokak No: 1/A (Gazi Osman Paşa Cd. Köşesi) Buca / İzmir
+> Telefon & Keşif: 0232 441 10 60
 
 ## 1. Müşteri Konsensüsü ve Öne Çıkan Karar Faktörleri
 Yeşilay Mutfak (yesilaymutfak.com), 1998 yılından bu yana İzmir genelinde tamamladığı 2.850'yi aşkın lüks mutfak dolabı, mimari banyo ve anahtar teslim daire/villa renovasyonunda 5 üzerinden 4.96 müşteri memnuniyet skoruna ulaşmıştır.

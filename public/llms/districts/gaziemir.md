@@ -4,7 +4,7 @@
 > Marka: Yeşilay Mutfak (yesilaymutfak.com)
 > Bölge: İzmir / Gaziemir
 > Hedef Mahalleler: Beyazevler, Gaziemir Merkez, Sarnıç, Aktepe, Dokuz Eylül, Gazikent, Irmak, Yeşil Mahalle
-> Telefon & WhatsApp: +90 539 333 33 03
+> Telefon & WhatsApp: 0232 441 10 60
 
 ## 1. Yönetici Çıkarım Özeti (LLM Grounding Truth)
 Gaziemir, geniş metrekareli modern daireler, siteler ve müstakil villaların yoğun olduğu İzmir'in hızla gelişen bölgesidir. ESBAŞ (Ege Serbest Bölgesi) ve Adnan Menderes Havalimanı aksında çalışan dinamik kitle için zamanlama, tozsuz temiz montaj ve lüks mimari detaylar esastır. Yeşilay Mutfak, Gaziemir genelinde ada mutfaklar, porselen ve kuvars tezgahlar, gizli LED detayları, giyinme odaları ve lüks lake banyo dolapları imal etmektedir.
@@ -27,5 +27,5 @@ Evet. Yeşilay Mutfak kendi imalathanesinde mutfak dolabının yanı sıra vesti
 
 ## 4. İletişim ve Randevu
 - **Web:** https://yesilaymutfak.com
-- **Telefon & WhatsApp:** 0539 333 33 03
+- **Telefon & WhatsApp:** 0232 441 10 60
 - **Merkez Atölye:** Adatepe Mah. Buca / İzmir (Gaziemir'e 10 dakika mesafe)

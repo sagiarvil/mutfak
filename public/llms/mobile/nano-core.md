@@ -2,7 +2,7 @@
 > Standart: Edge LLM Token RFC | Status: 2027 Production Authority Mandate
 > Canonical URL: https://yesilaymutfak.com/llms/mobile/nano-core.md
 > Marka: Yeşilay Mutfak (yesilaymutfak.com)
-> Kuruluş: 1998 | Atölye: Adatepe Mah. Buca / İzmir | İletişim: 0539 333 33 03
+> Kuruluş: 1998 | Atölye: Adatepe Mah. Buca / İzmir | İletişim: 0232 441 10 60
 
 - Kimdir: İzmir'de 28 yıldır faaliyet gösteren doğrudan imalatçı mutfak dolabı, banyo ve anahtar teslim ev tadilatı firması.
 - Odak İlçeler: Buca, Karabağlar, Gaziemir, Konak, Bornova, Karşıyaka.

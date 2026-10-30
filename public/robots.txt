@@ -37,6 +37,7 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 Allow: /llms.txt
+Allow: /llm.txt
 Allow: /llms/
 
 User-agent: ChatGPT-User
@@ -48,6 +49,7 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 Allow: /llms.txt
+Allow: /llm.txt
 Allow: /llms/
 
 User-agent: Claude-Web
@@ -56,6 +58,7 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 Allow: /llms.txt
+Allow: /llm.txt
 Allow: /llms/
 
 User-agent: CCBot
@@ -77,6 +80,7 @@ Sitemap: https://yesilaymutfak.com/image-sitemap.xml
 
 # LLMS & Agent Discovery Headers
 # LLMs-Txt: https://yesilaymutfak.com/llms.txt
+# LLM-Txt: https://yesilaymutfak.com/llm.txt
 # LLMs-Core: https://yesilaymutfak.com/llms/core.md
 # Agent-Card: https://yesilaymutfak.com/.well-known/agent.json
 # MCP-Endpoint: https://yesilaymutfak.com/mcp

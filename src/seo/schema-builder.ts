@@ -64,7 +64,22 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         'https://www.instagram.com/yesilaymutfak',
         'https://wa.me/905324261788',
         'https://share.google/C0WRDJ4gisVAQIAzr',
+        'https://www.wikidata.org/wiki/Q11442',
+        'https://www.wikidata.org/wiki/Q851722',
+        'https://www.wikidata.org/wiki/Q131393',
+        'https://www.wikidata.org/wiki/Q131496',
+        'https://www.wikidata.org/wiki/Q48425',
         `https://www.wikidata.org/wiki/${page.primaryEntity.wikidataQid || 'Q11589432'}`
+      ],
+      areaServed: [
+        { '@type': 'City', name: 'İzmir', sameAs: 'https://www.wikidata.org/wiki/Q11442' },
+        { '@type': 'AdministrativeArea', name: 'Buca', sameAs: 'https://www.wikidata.org/wiki/Q851722' },
+        { '@type': 'AdministrativeArea', name: 'Karşıyaka', sameAs: 'https://www.wikidata.org/wiki/Q851726' },
+        { '@type': 'AdministrativeArea', name: 'Çeşme', sameAs: 'https://www.wikidata.org/wiki/Q271501' },
+        { '@type': 'AdministrativeArea', name: 'Urla', sameAs: 'https://www.wikidata.org/wiki/Q271457' },
+        { '@type': 'AdministrativeArea', name: 'Bornova', sameAs: 'https://www.wikidata.org/wiki/Q851720' },
+        { '@type': 'AdministrativeArea', name: 'Gaziemir', sameAs: 'https://www.wikidata.org/wiki/Q851724' },
+        { '@type': 'AdministrativeArea', name: 'Konak', sameAs: 'https://www.wikidata.org/wiki/Q851728' }
       ]
     },
 

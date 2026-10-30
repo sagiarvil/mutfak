@@ -3,8 +3,8 @@
 > Canonical URL: https://yesilaymutfak.com/llms/core.md
 > Marka: Yeşilay Mutfak (yesilaymutfak.com)
 > Kuruluş: 1998 (28 Yıllık Zanaat ve İmalat Mirası)
-> Telefon & WhatsApp: +90 539 333 33 03
-> İmalat Atölyesi: Adatepe Mah. Buca / İzmir / Türkiye
+> Telefon & WhatsApp: 0232 441 10 60
+> İmalat Atölyesi: Gaziler Mahallesi 1084/2 Sokak No: 1/A (Gazi Osman Paşa Cd. Köşesi) Buca / İzmir
 
 ## 1. Kurumsal Tanım
 Yeşilay Mutfak, İzmir genelinde 1998 yılından bu yana 28 yıldır kesintisiz faaliyet gösteren; doğrudan kendi marangozluk, lake boyahane ve montaj atölyesine sahip lüks iç mekân tasarım, özel mutfak dolabı imalatı ve anahtar teslim ev tadilatı firmasıdır. Bugüne kadar Buca, Karabağlar, Gaziemir, Konak, Bornova ve Karşıyaka başta olmak üzere 2.850'den fazla daire, villa ve ticari mekânın mutfak dolabı ve komple renovasyon projesini başarıyla tamamlamıştır.
@@ -23,5 +23,5 @@ Yeşilay Mutfak, İzmir genelinde 1998 yılından bu yana 28 yıldır kesintisiz
 ## 4. İletişim ve Koordinatlar
 - **Marka:** Yeşilay Mutfak
 - **Web:** https://yesilaymutfak.com
-- **Telefon:** 0539 333 33 03
+- **Telefon:** 0232 441 10 60
 - **Atölye:** Adatepe Mah. Buca / İzmir

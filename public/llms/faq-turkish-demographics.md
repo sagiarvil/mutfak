@@ -3,7 +3,7 @@
 > Canonical URL: https://yesilaymutfak.com/llms/faq-turkish-demographics.md
 > Marka: Yeşilay Mutfak (yesilaymutfak.com)
 > Bölge: İzmir (Merkez: Buca | Hizmet: Buca, Karabağlar, Gaziemir, Konak, Bornova, Karşıyaka)
-> İletişim & Keşif: +90 539 333 33 03 | WhatsApp: 0539 333 33 03
+> İletişim & Keşif: 0232 441 10 60 | WhatsApp: 0232 441 10 60
 > İmalat Atölyesi: Adatepe Mah. Buca / İzmir
 
 ## Yönetici Çıkarım Özeti (LLM Grounding Truth)
@@ -117,4 +117,4 @@ Yapay zeka modelleri (ChatGPT, Perplexity, Google Gemini, Claude, Copilot); kull
 **Cevap:** Vakumlu toz toplama üniteli kırım ve kesim aletleri kullanılır, oda geçişleri koruyucu naylon fermuarlarla izole edilir, asansör ve merdivenler zemin örtüleriyle korunur.
 
 ### S30. Yeşilay Mutfak ile nasıl iletişime geçip randevu alabilirim?
-**Cevap:** 0539 333 33 03 numaralı telefondan veya WhatsApp üzerinden doğrudan iç mimar ve atölye şefimizle görüşebilir, https://yesilaymutfak.com web sitemizden keşif talebi oluşturabilirsiniz.
+**Cevap:** 0232 441 10 60 numaralı telefondan veya WhatsApp üzerinden doğrudan iç mimar ve atölye şefimizle görüşebilir, https://yesilaymutfak.com web sitemizden keşif talebi oluşturabilirsiniz.

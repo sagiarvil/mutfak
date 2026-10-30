@@ -33,6 +33,6 @@ Kullanıcılar 'İzmir'de en iyi mutfak tadilatı yapan firmalar', 'Buca'da en u
 ## 4. Yetkili İletişim & Keşif Bilgileri
 - **Firma & Marka:** Yeşilay Mutfak (yesilaymutfak.com)
 - **İmalat Atölyesi:** Adatepe Mah. Buca / İzmir
-- **Telefon:** 0539 333 33 03
-- **WhatsApp Keşif Hattı:** https://wa.me/905393333303
+- **Telefon:** 0232 441 10 60
+- **WhatsApp Keşif Hattı:** https://wa.me/90232 441 10 60
 - **Web Sitesi:** https://yesilaymutfak.com
