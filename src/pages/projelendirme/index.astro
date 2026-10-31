@@ -25,67 +25,97 @@ const commercialProjects = [
   { no: 20, marka: "MOVENİA", kategori: "HAREKET STÜDYOSU", baslik: "Movenia Sağlıklı Yaşam & Pilates Stüdyosu", konum: "Narlıdere, İzmir", dosya: "/images/ticari-projeler/20_movenia_magaza.jpg" }
 ];
 
-// OSO Mimarlık Formatında Yeni Nesil 10 Mimari Hero Slider
+// Mimari Ticari Sektörler & B2B Dönüşüm Odaklı 10 Hero Slide
 const heroSlides = [
   {
-    baslik: "Vadi Vista Yönetim Merkezi",
-    kategori: "KURUMSAL OFİS & FIT-OUT",
+    baslik: "Ofis, Hukuk & Görüşme Ofisleri Projelendirme",
+    kategori: "KURUMSAL OFİS & FİT-OUT TAAHHÜT",
+    sektorler: ["Yönetim Ofisleri", "Hukuk Büroları", "Görüşme Ofisleri", "Finans Merkezleri"],
     resim: "/images/projelendirme/hero/hero_01.webp",
-    aciklama: "Büyük ölçekli genel merkez ve yönetim binalarında çağdaş mimari, akustik konfor ve anahtar teslim şantiye yönetimi."
+    aciklama: "Prestijli hukuk büroları, şirket yönetim merkezleri ve gizlilik odaklı görüşme ofislerinde akustik konfor, 3D mimari projelendirme ve anahtar teslim uygulama.",
+    ctaText: "Ofis Projeniz İçin Teklif Alın",
+    ctaLink: "https://wa.me/905446348344?text=Merhaba,%20Ofis%20ve%20Hukuk%20B%C3%BCrosu%20projelendirme%20i%C3%A7in%20teklif%20almak%20istiyorum."
   },
   {
-    baslik: "Natura Modern Yaşam Showroomu",
-    kategori: "KONSEPT MAĞAZA TASARIMI",
+    baslik: "Klinik, Diş & Veteriner Klinikleri Mimarisi",
+    kategori: "SAĞLIK & KLİNİK MİMARİSİ",
+    sektorler: ["Diş Klinikleri", "Estetik & Tıp Merkezleri", "Veteriner Klinikleri", "Poliklinikler"],
     resim: "/images/projelendirme/hero/hero_02.webp",
-    aciklama: "Perakende sektöründe müşteri deneyimini ve marka prestijini zirveye taşıyan fonksiyonel mağaza mimarisi."
+    aciklama: "Sağlık Bakanlığı standartlarına tam uyumlu sterilizasyon alanları, ergonomik hasta kabul ve fonksiyonel klinik fit-out uygulamaları.",
+    ctaText: "Klinik Mimarisi İçin Keşif İsteyin",
+    ctaLink: "https://wa.me/905446348344?text=Merhaba,%20Di%C5%9F%20Klinigi%20ve%20Sa%C4%9Fl%C4%B1k%20Merkezi%20projelendirme%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum."
   },
   {
-    baslik: "Kuzey Plaza Yönetim Katı",
-    kategori: "İÇ MİMARİ & UYGULAMA",
-    resim: "/images/projelendirme/hero/hero_03.webp",
-    aciklama: "Açık ofis ergonomisi, entegre altyapı ve mimari detay mühendisliği ile üretkenliği artıran çalışma alanları."
-  },
-  {
-    baslik: "Aura Concept Store",
-    kategori: "LÜKS MAĞAZACILIK & SHOWROOM",
-    resim: "/images/projelendirme/hero/hero_04.webp",
-    aciklama: "Doğru aydınlatma, akıcı dolaşım rotaları ve özel imalat sergileme üniteleri ile ticari başarı odaklı tasarımlar."
-  },
-  {
-    baslik: "Ege Global Lojistik Merkezi",
-    kategori: "TİCARİ KOMPLEKS & OFİS",
-    resim: "/images/projelendirme/hero/hero_05.webp",
-    aciklama: "Yüksek hacimli ticari merkezlerde operasyonel verimlilik ve kurumsal kimliği bütünleştiren mimari yaklaşım."
-  },
-  {
-    baslik: "Armada Lounge & Bistro",
-    kategori: "CAFE-RESTORAN TASARIMI",
+    baslik: "Cafe, Restoran & Gastro Yaşam Alanları",
+    kategori: "YEME-İÇME & AĞIRLAMA TASARIMI",
+    sektorler: ["3. Nesil Cafeler", "Restoran & Brasserie", "Lounge Alanları", "Franchise Şubeleri"],
     resim: "/images/projelendirme/hero/hero_06.webp",
-    aciklama: "Gastronomi mekanlarında ambiyansı, akustik dengeyi ve operasyonel mutfak-servis akışını kusursuzlaştıran mimari."
+    aciklama: "Müşteriyi içine çeken sıcak ambiyans, doğru aydınlatma mühendisliği ve mutfak-servis akışını kusursuzlaştıran anahtar teslim şantiye yönetimi.",
+    ctaText: "Cafe & Restoran Projenizi Başlatın",
+    ctaLink: "https://wa.me/905446348344?text=Merhaba,%20Cafe%20ve%20Restoran%20tadilat%20ve%20projelendirme%20i%C3%A7in%20fiyat%20almak%20istiyorum."
   },
   {
-    baslik: "Monolit İş Kulesi Ofisleri",
-    kategori: "YENİLİKÇİ ÇALIŞMA ALANLARI",
-    resim: "/images/projelendirme/hero/hero_07.webp",
-    aciklama: "Yeni nesil hibrit çalışma kültürüne uygun, teknolojik entegrasyonu yüksek prestijli ofis mekanları."
+    baslik: "Kuyumcu, Optik & Tekstil Mağazaları",
+    kategori: "LÜKS PERAKENDE & SHOWROOM",
+    sektorler: ["Kuyumcu Mağazaları", "Optik Mağazaları", "Tekstil & Moda", "Konsept Mağazalar"],
+    resim: "/images/projelendirme/hero/hero_04.webp",
+    aciklama: "Özel aydınlatmalı mücevher vitrinleri, optik teşhir üniteleri ve tekstil showroomlarında satış hacmini artıran stratejik mağazacılık mimarisi.",
+    ctaText: "Mağaza Tasarımı İçin Teklif Alın",
+    ctaLink: "https://wa.me/905446348344?text=Merhaba,%20Kuyumcu%20veya%20Optik%20ma%C4%9Faza%20kurulumu%20i%C3%A7in%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum."
   },
   {
-    baslik: "Boutique Privee Mücevherat",
-    kategori: "ÖZEL PERAKENDE MİMARİSİ",
-    resim: "/images/projelendirme/hero/hero_08.webp",
-    aciklama: "Seçkin markalar için özel güvenlikli, yüksek katma değerli ve zamansız vitrin & mağaza uygulamaları."
-  },
-  {
-    baslik: "Kolektif İnovasyon Kampüsü",
-    kategori: "MİMARİ PROJELENDİRME",
-    resim: "/images/projelendirme/hero/hero_09.webp",
-    aciklama: "3D rölöve ve fotogerçekçi görselleştirmeden fit-out teslime kadar sıfır toleranslı mimari süreç."
-  },
-  {
-    baslik: "Terrace Cafe & Brasserie",
-    kategori: "YEME-İÇME & YAŞAM ALANI",
+    baslik: "Otel & Butik Otel İç Mimari Projeleri",
+    kategori: "TURİZM & OTELCİLİK FIT-OUT",
+    sektorler: ["Butik Oteller", "Resort Tesisler", "Lobi & Karşılama", "Otel Odaları"],
     resim: "/images/projelendirme/hero/hero_10.webp",
-    aciklama: "Açık ve kapalı alan entegrasyonu, doğal malzeme uyumu ve unutulmaz müşteri deneyimi sunan gastro mekanlar."
+    aciklama: "Otel lobilerinden oda renovasyonlarına, spa ve sosyal alanlardan resepsiyona kadar yüksek müşteri puanı sağlayan lüks mimari taahhüt.",
+    ctaText: "Otel Projeniz İçin Keşif Alın",
+    ctaLink: "https://wa.me/905446348344?text=Merhaba,%20Butik%20Otel%20veya%20Otel%20renovasyonu%20i%C3%A7in%20mimari%20teklif%20istiyorum."
+  },
+  {
+    baslik: "Banka Şube Kurulumları & Kurumsal Alanlar",
+    kategori: "KURUMSAL ZİNCİR ŞANTİYE YÖNETİMİ",
+    sektorler: ["Banka Şubeleri", "Özel Bankacılık", "Finans Ofisleri", "ATM & Giriş Alanları"],
+    resim: "/images/projelendirme/hero/hero_03.webp",
+    aciklama: "Yüksek güvenlikli altyapı, kurumsal kimlik kılavuzuna %100 sadakat ve sıkı teslim takvimli banka şube mimari kurulumları.",
+    ctaText: "Kurumsal Şube Kurulum Teklifi Alın",
+    ctaLink: "https://wa.me/905446348344?text=Merhaba,%20Banka%20veya%20kurumsal%20zincir%20kurulumu%20i%C3%A7in%20teklif%20almak%20istiyorum."
+  },
+  {
+    baslik: "Yurtdışı Ticari Projeler & İhracat Mimarisi",
+    kategori: "GLOBAL MİMARLIK & FİT-OUT",
+    sektorler: ["Avrupa Projeleri", "Körfez Ülkeleri", "Modüler İmalat", "Uluslararası Montaj"],
+    resim: "/images/projelendirme/hero/hero_05.webp",
+    aciklama: "İzmir atölyemizde üretilen hassas CNC mimari mobilyaların yurtdışına ihracatı ve yerinde anahtar teslim montaj koordinasyonu.",
+    ctaText: "Yurtdışı Projenizi Birlikte Planlayalım",
+    ctaLink: "https://wa.me/905446348344?text=Merhaba,%20Yurtd%C4%B1%C5%9F%C4%B1%20projelendirme%20ve%20mobilya%20imalat%C4%B1%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum."
+  },
+  {
+    baslik: "Optik & Göz Sağlığı Deneyim Mağazaları",
+    kategori: "OPTİK & MEDİKAL MAĞAZACILIK",
+    sektorler: ["Optik Mağazaları", "Gözlük Teşhir", "Muayene Odaları", "Görsel Vitrin"],
+    resim: "/images/projelendirme/hero/hero_08.webp",
+    aciklama: "Parlamayan özel indeksli optik aydınlatması, kilitli güvenlikli teşhir çekmeceleri ve şık bekleme alanları ile modern optik mimarisi.",
+    ctaText: "Optik Mağaza Teklifi Alın",
+    ctaLink: "https://wa.me/905446348344?text=Merhaba,%20Optik%20ma%C4%9Faza%20projelendirme%20i%C3%A7in%20teklif%20istiyorum."
+  },
+  {
+    baslik: "Tekstil, Butik & Moda Showroomları",
+    kategori: "MODA & TEKSTİL RETAIL",
+    sektorler: ["Moda Butikleri", "Giyim Showroom", "Provalık Alanları", "Kasa & Odak Noktaları"],
+    resim: "/images/projelendirme/hero/hero_07.webp",
+    aciklama: "Kıyafet renklerini doğru yansıtan CRI>95 aydınlatma, lüks kabin konforu ve akıcı askı sistemleriyle tekstil perakendeciliğinde fark yaratın.",
+    ctaText: "Showroom Tasarımı İçin Başvurun",
+    ctaLink: "https://wa.me/905446348344?text=Merhaba,%20Tekstil%20ve%20Moda%20showroom%20projelendirme%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+  },
+  {
+    baslik: "Kuyumcu & Yüksek Güvenlikli Mücevherat",
+    kategori: "KUYUMCULUK & LÜKS TİCARİ MİMARİ",
+    sektorler: ["Kuyumcu Mağazaları", "Mücevher Vitrinleri", "VIP Satış Odası", "Zırhlı Kasalar"],
+    resim: "/images/projelendirme/hero/hero_09.webp",
+    aciklama: "Göz alıcı pırlanta/altın aydınlatma mühendisliği, kırılmaz lamine camlı vitrinler ve VIP müşteri ağırlama odalarıyla kusursuz kuyumcu mimarisi.",
+    ctaText: "Kuyumcu Mimarisi İçin Teklif Alın",
+    ctaLink: "https://wa.me/905446348344?text=Merhaba,%20Kuyumcu%20ma%C4%9Faza%20projelendirme%20ve%20vitrin%20imalat%C4%B1%20i%C3%A7in%20teklif%20istiyorum."
   }
 ];
 
@@ -138,31 +168,51 @@ const seo = {
             <div class="absolute inset-0 flex items-end">
               <div class="max-w-7xl mx-auto px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-20 w-full">
                 <div class="max-w-3xl space-y-4">
-                  <div class="inline-flex items-center gap-3">
+                  <div class="inline-flex items-center gap-3 flex-wrap">
                     <span class="w-8 h-[2px] bg-amber-500"></span>
                     <span class="text-xs md:text-sm font-semibold tracking-[0.25em] uppercase text-amber-400">
                       {slide.kategori}
                     </span>
+                    <span class="text-[11px] font-mono text-slate-400 bg-black/40 px-2 py-0.5 rounded border border-white/10">
+                      PROJE #{String(index + 1).padStart(2, "0")}
+                    </span>
                   </div>
-                  <h2 class="text-3xl md:text-5xl lg:text-6xl font-light text-white tracking-tight leading-tight">
+
+                  <!-- Dinamik Başlık -->
+                  <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-light text-white tracking-tight leading-snug">
                     {slide.baslik}
                   </h2>
-                  <p class="text-sm md:text-base text-slate-300 font-normal leading-relaxed max-w-2xl">
+
+                  <!-- Sektörel Etiketler (Kullanıcının Belirttiği Alanlar) -->
+                  <div class="flex flex-wrap gap-2 pt-1">
+                    {slide.sektorler.map((sek) => (
+                      <span class="inline-flex items-center px-2.5 py-1 rounded bg-white/10 backdrop-blur-sm border border-white/15 text-[11px] font-medium text-slate-200">
+                        ✓ {sek}
+                      </span>
+                    ))}
+                  </div>
+
+                  <p class="text-xs sm:text-sm md:text-base text-slate-300 font-normal leading-relaxed max-w-2xl">
                     {slide.aciklama}
                   </p>
-                  <div class="pt-4 flex flex-wrap items-center gap-4">
+
+                  <!-- Dönüşüm Odaklı Mimari CTA Buton Grubu -->
+                  <div class="pt-2 flex flex-wrap items-center gap-3">
+                    <a
+                      href={slide.ctaLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-2.5 px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs sm:text-sm font-bold tracking-wider uppercase rounded-xs transition-all duration-200 shadow-xl group/btn"
+                    >
+                      <span>{slide.ctaText}</span>
+                      <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+
                     <a
                       href="#ticari-projeler"
-                      class="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 text-xs md:text-sm font-semibold tracking-wider uppercase hover:bg-amber-500 hover:text-white transition-colors duration-200"
+                      class="inline-flex items-center gap-2 px-5 py-3 bg-white/10 hover:bg-white/20 border border-white/30 text-white text-xs sm:text-sm font-semibold tracking-wider uppercase rounded-xs transition-all duration-200 backdrop-blur-sm"
                     >
-                      <span>Projeyi İncele</span>
-                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                    </a>
-                    <a
-                      href="#kurumsal-teklif"
-                      class="inline-flex items-center gap-2 px-6 py-3 border border-white/40 text-white text-xs md:text-sm font-semibold tracking-wider uppercase hover:bg-white/10 hover:border-white transition-colors duration-200"
-                    >
-                      <span>Projenizi Başlatın</span>
+                      <span>20 Örnek Projeyi Gör</span>
                     </a>
                   </div>
                 </div>
@@ -221,6 +271,60 @@ const seo = {
         <p class="text-base md:text-lg text-slate-600 font-normal leading-relaxed text-justify md:text-center">
           Yeşilay Mimarlık; modern ve çağdaş mimarlık anlayışını estetik, işlevsel ve yaratıcı çözümlerle birleştirerek her ölçekte yenilikçi mekânlar tasarlar. Firmamız mimari – iç mimari tasarım ve projelendirme ile anahtar teslim (fit-out) uygulama hizmetleri sunar. Tasarımdan uygulamaya uzanan tüm süreçlerde detay odaklı yaklaşımı ve teknik uzmanlığıyla; ofis, mağaza, konut ve cafe-restoran gibi tüm ticari ve yaşam alanlarını konforlu, prestijli ve yüksek verimli hâle getiriyoruz.
         </p>
+
+        <!-- KAPSAMLI TİCARİ SEKTÖR MATRİSİ -->
+        <div class="pt-8 text-left">
+          <div class="p-6 bg-slate-50 border border-slate-200/90 rounded-lg space-y-4">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+              <h3 class="text-xs font-bold uppercase tracking-[0.15em] text-slate-900">
+                Anahtar Teslim Projelendirme Yaptığımız Ticari ve Kurumsal Sektörler:
+              </h3>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 text-xs text-slate-700">
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Cafe & Restoranlar
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Diş Klinikleri
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Veteriner Klinikleri
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Hukuk Ofisleri
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Görüşme & Danışmanlık
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Kurumsal Yönetim Ofisleri
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Butik Oteller & Tesisler
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Otel Renovasyonları
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Banka Şube Kurulumları
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Kuyumcu Mağazaları
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Optik Mağazaları
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium">
+                <span class="text-amber-600 font-bold">✓</span> Tekstil & Moda Butikleri
+              </div>
+              <div class="flex items-center gap-1.5 p-2 bg-white rounded border border-slate-100 shadow-2xs font-medium col-span-2 sm:col-span-3 md:col-span-4 bg-amber-50/60 border-amber-200/60 text-slate-900 font-semibold">
+                <span class="text-amber-600 font-bold">✈</span> Yurtdışı Ticari Projeler & İhracat Odaklı Özel CNC Mobilya İmalatı
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
