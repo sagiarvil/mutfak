@@ -1,0 +1,642 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { 
+  manifestoProjects, 
+  projectCategories, 
+  meartPhases, 
+  meartAboutData, 
+  meartClients 
+} from "../../data/projelendirmeData";
+
+const seo = {
+  title: "Projelendirme & Mimari Fit-Out Hizmetleri | Lüks Perakende, Ofis, Otel ve Ticari Projeler | Yeşilay Mimarlık",
+  description: "İzmir mimarlık ofisi ve fit-out taahhüt firması. Lüks perakende mağaza, holding genel müdürlük, otel, satış ofisi ve restoran projelerinde 3D tasarım, teknik projelendirme ve anahtar teslim uygulama.",
+  canonical: "https://yesilaymutfak.com/projelendirme/"
+};
+---
+
+<Layout seo={seo} activeService="projelendirme">
+  <main 
+    class="w-full text-[#15231C] bg-[#FAF9F6] font-sans antialiased selection:bg-[#006039] selection:text-white"
+    x-data="{
+      activeFilter: 'all',
+      modalOpen: false,
+      selectedProject: null,
+      openModal(project) {
+        this.selectedProject = project;
+        this.modalOpen = true;
+        document.body.classList.add('overflow-hidden');
+      },
+      closeModal() {
+        this.modalOpen = false;
+        document.body.classList.remove('overflow-hidden');
+      }
+    }"
+    @keydown.escape="closeModal()"
+  >
+
+    <!-- ===================================================================== -->
+    <!-- BÖLÜM 1: MANIFESTO & MEART ORTAK PRESTİJ HERO                         -->
+    <!-- Mimari Zarafet, Türkiye Çapında Taahhüt Ağı ve Başarı Metrikleri      -->
+    <!-- ===================================================================== -->
+    <section class="relative w-full pt-10 pb-16 sm:pt-14 sm:pb-20 border-b border-[#E5E2DA] overflow-hidden bg-gradient-to-b from-[#FAF9F6] via-[#F3EFEA] to-[#FAF9F6]">
+      
+      <!-- Arka Plan Mimari Dinamik Vektörel Watermark (Kural: Dinamik SVG, Üstte ve Taşmayan) -->
+      <div class="absolute inset-x-0 top-0 h-44 overflow-hidden pointer-events-none select-none opacity-40">
+        <svg viewBox="0 0 1200 140" class="w-full h-full text-[#ECEAE5] fill-current" preserveAspectRatio="xMidYMid meet">
+          <text x="50%" y="65%" text-anchor="middle" font-size="88" font-weight="900" letter-spacing="0.18em" font-family="system-ui, sans-serif">PROJELENDİRME</text>
+        </svg>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Üst Kategori Etiketi -->
+        <div class="flex items-center justify-center gap-2 mb-4">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold tracking-widest uppercase bg-[#C5A880]/15 text-[#8F7249] border border-[#C5A880]/40">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#006039] animate-pulse"></span>
+            YEŞİLAY MİMARLIK · PROJELENDİRME, TASARIM & FIT-OUT TAAHHÜT
+          </span>
+        </div>
+
+        <!-- H1 Başlık (Manifesto Mimari Standardı) -->
+        <div class="text-center max-w-4xl mx-auto">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#15231C] leading-[1.12]">
+            Projelerimiz — <span class="font-light text-[#4A443D]">Lüks Perakende, Ofis,</span> Otel ve Ticari Projeler
+          </h1>
+          <p class="mt-5 text-base sm:text-lg md:text-xl text-[#5A544C] leading-relaxed max-w-3xl mx-auto font-normal">
+            Geçmişten gelen tecrübe ve kurumsal kültürle; yaşamınızı ve ticari vizyonunuzu doğru çizgilerle buluşturuyor, 
+            3D mimari projeden kendi CNC atölyemizde anahtar teslim uygulamaya kadar eksiksiz taahhüt sunuyoruz.
+          </p>
+        </div>
+
+        <!-- Eylemler (CTA) -->
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+          <a 
+            href="#projeler-grid" 
+            class="px-6 py-3.5 bg-[#006039] hover:bg-[#00482B] text-white text-xs sm:text-sm font-bold uppercase tracking-wider rounded-lg shadow-[0_4px_16px_rgba(0,96,57,0.22)] transition-all duration-200 flex items-center gap-2 border border-[#C5A880]/50"
+          >
+            <span>PROJELERİ İNCELEYİN</span>
+            <span class="text-[#C5A880]">↓</span>
+          </a>
+          <a 
+            href="https://wa.me/905324261788?text=Merhaba,%20Projelendirme%20ve%20Fit-Out%20hizmetleriniz%20hakk%C4%B1nda%20teklif%20almak%20istiyorum." 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="px-6 py-3.5 bg-white hover:bg-[#F3EFEA] text-[#15231C] text-xs sm:text-sm font-bold uppercase tracking-wider rounded-lg border border-[#D0CAC0] shadow-sm transition-all duration-200 flex items-center gap-2"
+          >
+            <span class="text-[#006039]">💬</span>
+            <span>WHATSAPP TEKLİF HATTI</span>
+          </a>
+        </div>
+
+        <!-- MeArt İstatistik & Türkiye Harita Bloğu (Bileşke) -->
+        <div class="mt-14 bg-white rounded-2xl border border-[#E5E2DA] shadow-[0_12px_40px_rgba(21,35,28,0.06)] overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+            
+            <!-- Sol: İstatistikler -->
+            <div class="lg:col-span-5 p-6 sm:p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-[#E5E2DA] bg-[#FAF9F6]/50">
+              <span class="text-[11px] font-bold text-[#8F7249] tracking-widest uppercase">GÜÇLÜ KURUMSAL TAAHHÜT</span>
+              <h2 class="text-xl sm:text-2xl font-bold text-[#15231C] mt-1.5 leading-snug">
+                Güzel Türkiye'mizin Hemen Her Şehrinde Mükemmel Projelere İmzamızı Attık
+              </h2>
+              <p class="mt-3 text-xs sm:text-sm text-[#5A544C] leading-relaxed">
+                1998 yılından itibaren holding merkezlerinden lüks perakende zincirlerine, otellerden franchise mekanlara kadar yüzlerce projeyi tam zamanında başarı ile tamamladık.
+              </p>
+
+              <!-- 4 Metrik Kartı -->
+              <div class="grid grid-cols-2 gap-3 sm:gap-4 mt-6">
+                {meartAboutData.stats.map(st => (
+                  <div class="p-3.5 rounded-xl bg-white border border-[#E5E2DA] shadow-sm">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-[#006039] tracking-tight">{st.value}</div>
+                    <div class="text-xs font-bold text-[#15231C] mt-0.5">{st.label}</div>
+                    <div class="text-[10px] text-[#756E65] mt-0.5">{st.sub}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <!-- Sağ: Türkiye Proje Haritası (MeArt Orijinal Görseli) -->
+            <div class="lg:col-span-7 p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center bg-white">
+              <div class="relative w-full max-w-xl">
+                <img 
+                  src="https://static.wixstatic.com/media/990e90_73a7a98912a1427a89dce7e048450c69~mv2.png" 
+                  alt="Türkiye Proje Dağılım Haritası - Yeşilay & MeArt" 
+                  class="w-full h-auto object-contain drop-shadow-md rounded-lg"
+                  loading="eager"
+                  width="948"
+                  height="542"
+                />
+              </div>
+              <p class="mt-3 text-[11px] text-[#756E65] text-center font-medium">
+                📍 İstanbul, İzmir, Ankara, Bursa, Antalya, Gaziantep, Bodrum ve 81 ilde anahtar teslim şantiye koordinasyonu
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- BÖLÜM 2: MEART "NELER YAPARIZ" 3 AŞAMALI MİMARİ SÜREÇ                 -->
+    <!-- Tasarım -> Proje & Planlama -> Uygulama                                -->
+    <!-- ===================================================================== -->
+    <section class="py-16 sm:py-20 bg-[#FAF9F6] border-b border-[#E5E2DA]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+          <span class="text-[11px] font-bold text-[#8F7249] tracking-widest uppercase">MİMARİ METODOLOJİ</span>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#15231C] tracking-tight mt-1.5">
+            Neler Yaparız?
+          </h2>
+          <p class="mt-3 text-sm sm:text-base text-[#5A544C]">
+            Beraber hayal edip, doğru çizgilerle buluşturuyoruz. Hikâyeniz, senaryonuz ve şantiyeniz hazır…
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          {meartPhases.map((phase) => (
+            <div class="relative bg-white rounded-2xl p-6 sm:p-8 border border-[#E5E2DA] shadow-[0_4px_20px_rgba(21,35,28,0.04)] hover:shadow-[0_12px_32px_rgba(21,35,28,0.08)] transition-all duration-300 flex flex-col justify-between group">
+              
+              <!-- Üst Step & İkon -->
+              <div>
+                <div class="flex items-center justify-between mb-5">
+                  <span class="text-3xl sm:text-4xl font-black text-[#C5A880]/40 group-hover:text-[#006039] transition-colors">
+                    {phase.step}
+                  </span>
+                  <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-[#F3EFEA] text-[#15231C] border border-[#E5E2DA]">
+                    {phase.subtitle}
+                  </span>
+                </div>
+
+                <h3 class="text-xl sm:text-2xl font-bold text-[#15231C] tracking-tight group-hover:text-[#006039] transition-colors">
+                  {phase.title}
+                </h3>
+
+                <p class="mt-3 text-xs sm:text-sm text-[#5A544C] leading-relaxed italic border-l-2 border-[#C5A880] pl-3">
+                  "{phase.desc}"
+                </p>
+
+                <!-- Özellikler -->
+                <ul class="mt-6 space-y-2.5 text-xs text-[#2A241F]">
+                  {phase.features.map(f => (
+                    <li class="flex items-center gap-2">
+                      <span class="text-[#006039] font-bold">✓</span>
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <!-- Alt Çizgi -->
+              <div class="mt-8 pt-4 border-t border-[#F3EFEA] flex items-center justify-between text-[11px] font-bold text-[#8F7249]">
+                <span>AŞAMA {phase.step} / 03</span>
+                <span class="group-hover:translate-x-1 transition-transform">Keşif & Planlama →</span>
+              </div>
+
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- BÖLÜM 3: MANIFESTO KATEGORİ SEKMELERİ & CANLI FİLTRELİ PROJE GRİDİ    -->
+    <!-- Birebir Manifesto Mimari Antra-Project Kart Yapısı & Görselleri       -->
+    <!-- ===================================================================== -->
+    <section id="projeler-grid" class="py-16 sm:py-20 bg-white border-b border-[#E5E2DA]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Bölüm Başlığı -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-6 border-b border-[#E5E2DA]">
+          <div>
+            <span class="text-[11px] font-bold text-[#8F7249] tracking-widest uppercase">PORTFÖY & REFERANSLAR</span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#15231C] tracking-tight mt-1.5">
+              Proje Uygulamalarımız
+            </h2>
+            <p class="mt-2 text-xs sm:text-sm text-[#5A544C] max-w-xl">
+              Uluslararası lüks perakende mağazaları, holding merkez ofisleri, satış ofisleri ve otel projelerinden seçilmiş çalışmalarımız.
+            </p>
+          </div>
+
+          <div class="text-xs text-[#756E65] font-medium shrink-0">
+            Toplam <span class="font-bold text-[#15231C]">44+ Prestij Proje</span> Listeleniyor
+          </div>
+        </div>
+
+        <!-- Manifesto Tarzı Kategori Sekmeleri (Alpine.js Filtreleme) -->
+        <div class="flex flex-wrap items-center gap-2 mb-10">
+          {projectCategories.map((cat) => (
+            <button
+              type="button"
+              class="px-3.5 sm:px-4 py-2 rounded-lg text-xs font-bold tracking-tight transition-all duration-200 cursor-pointer"
+              :class={`activeFilter === '${cat.id}' ? 'bg-[#15231C] text-white shadow-sm' : 'bg-[#F3EFEA] text-[#4A443D] hover:bg-[#EAE4DC] hover:text-[#15231C]'`}
+              @click={`activeFilter = '${cat.id}'`}
+            >
+              <span>{cat.label}</span>
+              <span 
+                class="ml-1.5 px-1.5 py-0.2 rounded text-[10px]"
+                :class={`activeFilter === '${cat.id}' ? 'bg-white/20 text-white' : 'bg-[#E5E2DA] text-[#5A544C]'`}
+              >
+                {cat.count}
+              </span>
+            </button>
+          ))}
+        </div>
+
+        <!-- Manifesto 3-Kolonlu Mimari Kart Izgarası -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {manifestoProjects.map((p, index) => (
+            <article 
+              class="group relative bg-[#FAF9F6] rounded-xl overflow-hidden border border-[#E5E2DA] hover:border-[#C5A880]/60 shadow-[0_2px_12px_rgba(21,35,28,0.04)] hover:shadow-[0_16px_36px_rgba(21,35,28,0.1)] transition-all duration-300 flex flex-col cursor-pointer"
+              x-show={`activeFilter === 'all' || activeFilter === '${p.categoryGroup}'`}
+              x-transition:enter="transition ease-out duration-200"
+              x-transition:enter-start="opacity-0 scale-95"
+              x-transition:enter-end="opacity-100 scale-100"
+              @click={`openModal(${JSON.stringify(p)})`}
+            >
+              
+              <!-- Görsel Taşıyıcı & Zoom Efekti -->
+              <div class="relative w-full aspect-[4/3] bg-[#EAE7E0] overflow-hidden">
+                <img 
+                  src={p.image} 
+                  alt={p.title} 
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                  width="768"
+                  height="576"
+                />
+                
+                <!-- Hover Overlay & Görüntüle Rozeti (Manifesto 'View' Etkisi) -->
+                <div class="absolute inset-0 bg-gradient-to-t from-[#15231C]/80 via-[#15231C]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white text-[#15231C] text-[11px] font-bold rounded shadow-lg uppercase tracking-wider">
+                    <span>Detayları İncele</span>
+                    <span class="text-[#006039]">→</span>
+                  </span>
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-xs">
+                    🔍
+                  </span>
+                </div>
+
+                <!-- Kategori Rozeti (Üst Sol) -->
+                <div class="absolute top-3 left-3">
+                  <span class="px-2.5 py-1 bg-[#15231C]/80 backdrop-blur-md text-white text-[10px] font-bold rounded tracking-wider uppercase">
+                    {p.categoryLabel}
+                  </span>
+                </div>
+              </div>
+
+              <!-- Metin Alanı (Manifesto Tipografik Standart) -->
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="text-base sm:text-lg font-bold text-[#15231C] tracking-tight group-hover:text-[#006039] transition-colors leading-snug">
+                    {p.title}
+                  </h3>
+                  
+                  {p.location && (
+                    <p class="mt-2 text-xs text-[#756E65] flex items-center gap-1.5 font-medium">
+                      <span class="text-[#C5A880]">📍</span>
+                      <span>{p.location}</span>
+                    </p>
+                  )}
+                </div>
+
+                <!-- Alt Çizgi & Buton -->
+                <div class="mt-4 pt-3 border-t border-[#E5E2DA]/80 flex items-center justify-between text-[11px]">
+                  <span class="text-[#8F7249] font-bold uppercase tracking-wider">MİMARİ FIT-OUT</span>
+                  <span class="text-[#006039] font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    <span>Projeyi Gör</span>
+                    <span>→</span>
+                  </span>
+                </div>
+              </div>
+
+            </article>
+          ))}
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- BÖLÜM 4: MEART HAKKIMIZDA & FIT-OUT TAAHHÜT TARİHİ                    -->
+    <!-- 1998'den Bu Yana 200+ Ticari Proje Tecrübesi                          -->
+    <!-- ===================================================================== -->
+    <section class="py-16 sm:py-20 bg-[#F3EFEA] border-b border-[#E5E2DA]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <div class="lg:col-span-7">
+            <span class="text-[11px] font-bold text-[#8F7249] tracking-widest uppercase">KÖKLÜ GEÇMİŞ & TAAHHÜT KÜLTÜRÜ</span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#15231C] tracking-tight mt-2 leading-tight">
+              1998 Yılından İtibaren Prestijli Projelerin Mimari Taahhüdü
+            </h2>
+
+            <p class="mt-4 text-xs sm:text-sm md:text-base text-[#4A443D] leading-relaxed">
+              Banka, Benzin istasyonu, Daire & Villa & Ofis, Fabrika, Fast Food & Restaurant, İş Merkezi, Mağaza & Alışveriş Merkezi, Okul, Otel & Tatil Köyü, Sinema, Stadyum, Süpermarket & Hipermarket & Yapı Market, Telekomünikasyon, Kargo gibi yapılara ait tadilat, dekorasyon, renovasyon, fit out yaklaşık 200 projeyi başarı ile tamamlayarak inşaat sektörüne hizmet etmiştir.
+            </p>
+
+            <p class="mt-3 text-xs sm:text-sm md:text-base text-[#4A443D] leading-relaxed">
+              Geldiğimiz noktada geçmişten gelen tecrübe ve bu tecrübenin getirdiği kültürle prestijli projelerin yapımını üstlenerek mimarlık ve inşaat sektörüne hizmet etmeye devam etmektedir.
+            </p>
+
+            <div class="mt-6 flex flex-wrap items-center gap-2 sm:gap-3 text-xs font-semibold text-[#15231C]">
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-[#E5E2DA]">🏢 Holding & Genel Müdürlük</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-[#E5E2DA]">🛍️ Lüks Perakende & Vitrin</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-[#E5E2DA]">🏨 Otel & Yaşam Alanları</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-[#E5E2DA]">🍽️ Restoran & Kafe Mimarisi</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-[#E5E2DA]">🏦 Banka & Finans Şubeleri</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-[#E5E2DA]">🏛️ Tarihi Eser Restorasyonu</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-[#E5E2DA] shadow-sm">
+            <h3 class="text-base sm:text-lg font-bold text-[#15231C]">Neden Yeşilay & MeArt Projelendirme?</h3>
+            <ul class="mt-4 space-y-3.5 text-xs sm:text-sm text-[#4A443D]">
+              <li class="flex items-start gap-2.5">
+                <span class="text-[#006039] font-bold text-base leading-none">✓</span>
+                <div>
+                  <strong class="text-[#15231C]">Tek Elden Çözüm:</strong> Tasarım, 3D çizim, mühendislik, imalat ve montaj tek çatı altında yürütülür.
+                </div>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-[#006039] font-bold text-base leading-none">✓</span>
+                <div>
+                  <strong class="text-[#15231C]">Sıfır Sapmalı Bütçe & Takvim:</strong> Sürpriz maliyetler olmadan, belirlenen takvimde şantiye teslimi.
+                </div>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-[#006039] font-bold text-base leading-none">✓</span>
+                <div>
+                  <strong class="text-[#15231C]">Kendi İmalat Gücümüz:</strong> Buca atölyemizde CNC router ve bantlama hatlarıyla milimetrik mobilya üretimi.
+                </div>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-[#006039] font-bold text-base leading-none">✓</span>
+                <div>
+                  <strong class="text-[#15231C]">Kurumsal Şartname Uyumu:</strong> Yangın, akustik, havalandırma ve ISG yönetmeliklerine %100 sadakat.
+                </div>
+              </li>
+            </ul>
+
+            <div class="mt-6 pt-5 border-t border-[#E5E2DA]">
+              <a 
+                href="tel:+902324411060" 
+                class="w-full py-3 bg-[#15231C] hover:bg-[#006039] text-white font-bold text-xs uppercase tracking-wider rounded-lg text-center block transition-colors"
+              >
+                📞 0232 441 10 60 — Mimarımızla Görüşün
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- BÖLÜM 5: MEART SEÇKİN MÜŞTERİLERİMİZ & KURUMSAL REFERANSLAR           -->
+    <!-- Akbank, Garanti BBVA, HSBC, Shell, Hugo Boss, McDonald's Portföyü     -->
+    <!-- ===================================================================== -->
+    <section class="py-16 sm:py-20 bg-white border-b border-[#E5E2DA]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+          <span class="text-[11px] font-bold text-[#8F7249] tracking-widest uppercase">GÜVEN VE İTİBAR</span>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#15231C] tracking-tight mt-1.5">
+            Seçkin Müşterilerimiz & Referanslarımız
+          </h2>
+          <p class="mt-3 text-xs sm:text-sm text-[#5A544C]">
+            Türkiye'nin ve dünyanın önde gelen bankacılık, perakende, lojistik ve sanayi markalarına kurumsal mimari taahhüt sunduk.
+          </p>
+        </div>
+
+        <!-- 28 Kurumsal Referans Izgarası -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-4">
+          {meartClients.map((client) => (
+            <div class="p-3.5 bg-[#FAF9F6] rounded-xl border border-[#E5E2DA] hover:border-[#C5A880] hover:bg-white transition-all duration-200 flex flex-col justify-center items-center text-center shadow-xs">
+              <span class="text-xs sm:text-sm font-extrabold text-[#15231C] tracking-tight">{client.name}</span>
+              <span class="text-[10px] text-[#8F7249] mt-0.5 font-medium">{client.sector}</span>
+              <span class="text-[9px] text-[#756E65] mt-1 bg-white px-1.5 py-0.2 rounded border border-[#E5E2DA]/60">{client.highlight}</span>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- BÖLÜM 6: B2B MİMARİ KEŞİF & PROJELENDİRME TALEP FORMU                 -->
+    <!-- ===================================================================== -->
+    <section class="py-16 sm:py-20 bg-[#FAF9F6] border-b border-[#E5E2DA]" id="kesif-form">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="bg-white rounded-3xl p-6 sm:p-10 md:p-12 border border-[#E5E2DA] shadow-[0_16px_48px_rgba(21,35,28,0.08)]">
+          <div class="text-center max-w-xl mx-auto">
+            <span class="text-[11px] font-bold text-[#8F7249] tracking-widest uppercase">HIZLI TEKLİF & KEŞİF TALEBİ</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-[#15231C] tracking-tight mt-1.5">
+              Projenizi Birlikte Hayata Geçirelim
+            </h2>
+            <p class="mt-2 text-xs sm:text-sm text-[#5A544C]">
+              Ofis, mağaza, restoran veya konut projeniz için rölöve, 3D çizim ve anahtar teslim uygulama bütçesi hazırlayalım.
+            </p>
+          </div>
+
+          <form 
+            class="mt-8 space-y-4 sm:space-y-5"
+            action="https://wa.me/905324261788" 
+            method="GET" 
+            target="_blank"
+            onsubmit="
+              event.preventDefault();
+              var ad = document.getElementById('b2b_ad').value;
+              var firma = document.getElementById('b2b_firma').value;
+              var tip = document.getElementById('b2b_tip').value;
+              var alan = document.getElementById('b2b_alan').value;
+              var il = document.getElementById('b2b_il').value;
+              var not = document.getElementById('b2b_not').value;
+              var msg = 'Merhaba Yeşilay Mimarlık, Projelendirme Keşif Talebim:%0A' +
+                        '• Ad Soyad: ' + encodeURIComponent(ad) + '%0A' +
+                        '• Firma / Marka: ' + encodeURIComponent(firma) + '%0A' +
+                        '• Proje Tipi: ' + encodeURIComponent(tip) + '%0A' +
+                        '• Alan (m²): ' + encodeURIComponent(alan) + '%0A' +
+                        '• Şehir / Lokasyon: ' + encodeURIComponent(il) + '%0A' +
+                        '• Detay / Not: ' + encodeURIComponent(not);
+              window.open('https://wa.me/905324261788?text=' + msg, '_blank');
+            "
+          >
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="b2b_ad" class="block text-xs font-bold text-[#15231C] mb-1">Adınız Soyadınız *</label>
+                <input 
+                  type="text" 
+                  id="b2b_ad" 
+                  required 
+                  placeholder="Örn: Ahmet Yılmaz" 
+                  class="w-full px-3.5 py-2.5 rounded-lg border border-[#D0CAC0] bg-[#FAF9F6] text-xs text-[#15231C] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#006039]"
+                />
+              </div>
+              <div>
+                <label for="b2b_firma" class="block text-xs font-bold text-[#15231C] mb-1">Firma / Marka Adı</label>
+                <input 
+                  type="text" 
+                  id="b2b_firma" 
+                  placeholder="Örn: Yılmaz Holding A.Ş." 
+                  class="w-full px-3.5 py-2.5 rounded-lg border border-[#D0CAC0] bg-[#FAF9F6] text-xs text-[#15231C] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#006039]"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label for="b2b_tip" class="block text-xs font-bold text-[#15231C] mb-1">Proje Tipi *</label>
+                <select 
+                  id="b2b_tip" 
+                  required
+                  class="w-full px-3.5 py-2.5 rounded-lg border border-[#D0CAC0] bg-[#FAF9F6] text-xs text-[#15231C] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#006039]"
+                >
+                  <option value="Lüks Perakende & Mağaza">Lüks Perakende & Mağaza</option>
+                  <option value="Ofis & Genel Müdürlük">Ofis & Genel Müdürlük</option>
+                  <option value="Satış Ofisi & Showroom">Satış Ofisi & Showroom</option>
+                  <option value="Restoran & Cafe">Restoran & Cafe</option>
+                  <option value="Otel & Konaklama">Otel & Konaklama</option>
+                  <option value="Klinik & Sağlık Merkezi">Klinik & Sağlık Merkezi</option>
+                  <option value="Villa & Özel Konut">Villa & Özel Konut</option>
+                  <option value="Tarihi Restorasyon">Tarihi Restorasyon</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="b2b_alan" class="block text-xs font-bold text-[#15231C] mb-1">Tahmini Alan (m²)</label>
+                <input 
+                  type="text" 
+                  id="b2b_alan" 
+                  placeholder="Örn: 250 m²" 
+                  class="w-full px-3.5 py-2.5 rounded-lg border border-[#D0CAC0] bg-[#FAF9F6] text-xs text-[#15231C] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#006039]"
+                />
+              </div>
+
+              <div>
+                <label for="b2b_il" class="block text-xs font-bold text-[#15231C] mb-1">Şehir / Lokasyon</label>
+                <input 
+                  type="text" 
+                  id="b2b_il" 
+                  placeholder="Örn: İzmir / Alsancak" 
+                  class="w-full px-3.5 py-2.5 rounded-lg border border-[#D0CAC0] bg-[#FAF9F6] text-xs text-[#15231C] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#006039]"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="b2b_not" class="block text-xs font-bold text-[#15231C] mb-1">Proje Notu & Detaylar</label>
+              <textarea 
+                id="b2b_not" 
+                rows="3" 
+                placeholder="Mevcut durum, hedeflenen teslim tarihi ve özel isteklerinizi belirtebilirsiniz..."
+                class="w-full px-3.5 py-2.5 rounded-lg border border-[#D0CAC0] bg-[#FAF9F6] text-xs text-[#15231C] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#006039]"
+              ></textarea>
+            </div>
+
+            <div class="pt-2">
+              <button 
+                type="submit" 
+                class="w-full py-4 bg-[#006039] hover:bg-[#00482B] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-[0_4px_16px_rgba(0,96,57,0.25)] transition-all duration-200 border border-[#C5A880]/50 flex items-center justify-center gap-2 cursor-pointer"
+              >
+                <span>WHATSAPP İLE MİMARİ KEŞİF TALEBİ GÖNDER</span>
+                <span class="text-[#C5A880] text-base">→</span>
+              </button>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- İNTERAKTİF PROJE DETAY MODALI (LIGHTBOX - ALPINE.JS)                   -->
+    <!-- ===================================================================== -->
+    <div 
+      x-show="modalOpen" 
+      class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-sm"
+      style="display: none;"
+      x-transition:enter="transition ease-out duration-200"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-150"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      @click.self="closeModal()"
+    >
+      <div 
+        class="relative w-full max-w-4xl bg-white rounded-2xl overflow-hidden shadow-2xl border border-[#E5E2DA] max-h-[90vh] flex flex-col"
+        x-show="modalOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0 scale-95"
+        x-transition:enter-end="opacity-100 scale-100"
+      >
+        <!-- Kapat Butonu -->
+        <button 
+          type="button" 
+          class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black/60 text-white hover:bg-black flex items-center justify-center transition-colors text-lg"
+          @click="closeModal()"
+          aria-label="Kapat"
+        >
+          ✕
+        </button>
+
+        <!-- Modal İçeriği (Kaydırılabilir) -->
+        <div class="overflow-y-auto">
+          <template x-if="selectedProject">
+            <div>
+              <!-- Büyük Görsel -->
+              <div class="relative w-full aspect-[16/10] bg-black">
+                <img 
+                  :src="selectedProject.image" 
+                  :alt="selectedProject.title" 
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <!-- Detaylar -->
+              <div class="p-6 sm:p-8 bg-white">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-1 rounded bg-[#006039]/10 text-[#006039] text-xs font-bold uppercase tracking-wider" x-text="selectedProject.categoryLabel"></span>
+                  <span class="text-xs text-[#756E65]" x-text="selectedProject.location"></span>
+                </div>
+
+                <h3 class="text-xl sm:text-2xl font-bold text-[#15231C]" x-text="selectedProject.title"></h3>
+
+                <p class="mt-3 text-xs sm:text-sm text-[#5A544C] leading-relaxed">
+                  Bu proje; mimari tasarım, detay çözümleri, CNC mobilya imalatı ve anahtar teslim şantiye yönetimi kapsamında uluslararası kalite standartlarında tamamlanmıştır.
+                </p>
+
+                <!-- CTA -->
+                <div class="mt-6 pt-5 border-t border-[#E5E2DA] flex flex-wrap items-center justify-between gap-4">
+                  <div class="text-xs text-[#15231C]">
+                    Benzer bir mekan mı projelendirmek istiyorsunuz?
+                  </div>
+                  <a 
+                    :href="'https://wa.me/905324261788?text=' + encodeURIComponent('Merhaba, ' + selectedProject.title + ' projenize benzer bir proje için teklif almak istiyorum.')"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="px-5 py-2.5 bg-[#006039] hover:bg-[#00482B] text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-sm flex items-center gap-2"
+                  >
+                    <span>BENZER PROJE İÇİN TEKLİF ALIN</span>
+                    <span>→</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </template>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</Layout>
