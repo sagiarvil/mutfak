@@ -121,7 +121,7 @@ const { seo, activeService } = Astro.props;
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
   </head>
   <body class="min-h-screen flex flex-col font-sans architect-grid-bg text-[#1D1D1F] overflow-x-hidden antialiased selection:bg-[#006039] selection:text-white">
-    <Header />
+    <Header activeService={activeService} />
     <main id="main-content" class="flex-1 w-full overflow-hidden">
       <slot />
     </main>
