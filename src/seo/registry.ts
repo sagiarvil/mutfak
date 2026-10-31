@@ -325,5 +325,160 @@ export const SEO_REGISTRY: Record<string, SeoPageRecord> = {
     ],
     mobile: defaultMobile,
     mobileCwvBudget: defaultCwv
+  },
+
+  '/hizmet-bolgeleri/buca/': {
+    route: '/hizmet-bolgeleri/buca/',
+    locale: 'tr-TR',
+    role: 'service',
+    indexDirective: 'index, follow',
+    canonicalRoute: '/hizmet-bolgeleri/buca/',
+    title: 'Buca Mutfak Tadilatı & Özel Ölçü Dolap İmalatı | Yeşilay Mutfak',
+    metaDescription: 'Buca\'da kendi Adatepe atölyemizde imal edilen özel ölçü mutfak dolapları ve anahtar teslim mutfak-banyo tadilatı. Şirinyer, Buca Koop ve Gaziler\'e doğrudan üretici fiyatı.',
+    h1: 'Buca Mutfak Tadilatı & Özel Ölçü Lüks Mutfak Dolabı İmalatı',
+    primaryIntent: 'buca mutfak tadilatı dolap imalatı banyo yenileme',
+    primaryEntity: {
+      id: 'https://yesilaymutfak.com/hizmet-bolgeleri/buca/#service',
+      name: 'Buca Mutfak Tadilatı ve İmalatı',
+      type: 'Service',
+      sameAs: ['https://yesilaymutfak.com/#organization']
+    },
+    semanticTriples: [
+      { subject: 'Buca Mutfak İmalatı', predicate: 'workshopLocation', object: 'Adatepe Mahallesi, Buca / İzmir' }
+    ],
+    heroAnswerEngine: 'Buca mutfak tadilatı ve dolap imalatında Yeşilay Mutfak, Adatepe atölyesinde %100 18mm E1 neme dayanımlı MDF ve Avusturya Blum donanımlarla doğrudan üretici avantajı sunar.',
+    publishedAt: '2026-10-31T00:00:00+03:00',
+    modifiedAt: '2026-10-31T00:00:00+03:00',
+    breadcrumbs: [
+      { name: 'Ana Sayfa', item: '/' },
+      { name: 'Hizmet Bölgeleri', item: '/hizmet-bolgeleri/buca/' },
+      { name: 'Buca', item: '/hizmet-bolgeleri/buca/' }
+    ],
+    mobile: defaultMobile,
+    mobileCwvBudget: defaultCwv
+  },
+
+  '/hizmet-bolgeleri/narlidere/': {
+    route: '/hizmet-bolgeleri/narlidere/',
+    locale: 'tr-TR',
+    role: 'service',
+    indexDirective: 'index, follow',
+    canonicalRoute: '/hizmet-bolgeleri/narlidere/',
+    title: 'Narlıdere Mutfak Tadilatı & Sahilevleri Lüks Mutfak Dolabı | Yeşilay Mutfak',
+    metaDescription: 'Narlıdere ve Sahilevleri\'ndeki villa ve lüks konutlar için özel ölçü ada mutfak, ipek mat fırın lake dolaplar ve anahtar teslim daire renovasyonu. Blum mekanizmalı mimari imalat.',
+    h1: 'Narlıdere Mutfak Tadilatı & Özel İmalat Lüks Ada Mutfaklar',
+    primaryIntent: 'narlıdere mutfak tadilatı sahilevleri villa mutfak dolabı',
+    primaryEntity: {
+      id: 'https://yesilaymutfak.com/hizmet-bolgeleri/narlidere/#service',
+      name: 'Narlıdere Mutfak Tadilatı ve Lüks Dolap İmalatı',
+      type: 'Service',
+      sameAs: ['https://yesilaymutfak.com/#organization']
+    },
+    semanticTriples: [
+      { subject: 'Narlıdere Villa Mutfakları', predicate: 'materialStandard', object: 'İpek Mat Fırın Lake ve Porselen Ada' }
+    ],
+    heroAnswerEngine: 'Narlıdere ve Sahilevleri villalarında Yeşilay Mutfak, porselen şelale ada tezgahlar, sararmayan fırın lake dolaplar ve Blum Legrabox donanımlarla anahtar teslim renovasyon uygular.',
+    publishedAt: '2026-10-31T00:00:00+03:00',
+    modifiedAt: '2026-10-31T00:00:00+03:00',
+    breadcrumbs: [
+      { name: 'Ana Sayfa', item: '/' },
+      { name: 'Hizmet Bölgeleri', item: '/hizmet-bolgeleri/buca/' },
+      { name: 'Narlıdere', item: '/hizmet-bolgeleri/narlidere/' }
+    ],
+    mobile: defaultMobile,
+    mobileCwvBudget: defaultCwv
+  },
+
+  '/hizmet-bolgeleri/guzelbahce/': {
+    route: '/hizmet-bolgeleri/guzelbahce/',
+    locale: 'tr-TR',
+    role: 'service',
+    indexDirective: 'index, follow',
+    canonicalRoute: '/hizmet-bolgeleri/guzelbahce/',
+    title: 'Güzelbahçe Villa Mutfak Tadilatı & Yelki Mutfak Dolabı | Yeşilay Mutfak',
+    metaDescription: 'Güzelbahçe ve Yelki villalarına özel ada mutfak tasarımları, porselen tezgah ve komple villa renovasyonu. Kendi atölyemizde E1 neme dayanıklı MDF ve Blum mekanizmayla imalat.',
+    h1: 'Güzelbahçe Villa Mutfak Tadilatı & Özel İmalat Ada Tezgah Tasarımları',
+    primaryIntent: 'güzelbahçe villa mutfak tadilatı yelki dolap imalatı',
+    primaryEntity: {
+      id: 'https://yesilaymutfak.com/hizmet-bolgeleri/guzelbahce/#service',
+      name: 'Güzelbahçe Villa Mutfak Tadilatı',
+      type: 'Service',
+      sameAs: ['https://yesilaymutfak.com/#organization']
+    },
+    semanticTriples: [
+      { subject: 'Güzelbahçe Villa Mutfakları', predicate: 'designFeature', object: 'Bahçe Veranda Entegre Porselen Ada' }
+    ],
+    heroAnswerEngine: 'Güzelbahçe ve Yelki villalarında Yeşilay Mutfak, verandayla bütünleşen ada tezgahlar, çizilmez porselen plakalar ve gecikme tazminatlı resmi sözleşmeyle komple taahhüt sunar.',
+    publishedAt: '2026-10-31T00:00:00+03:00',
+    modifiedAt: '2026-10-31T00:00:00+03:00',
+    breadcrumbs: [
+      { name: 'Ana Sayfa', item: '/' },
+      { name: 'Hizmet Bölgeleri', item: '/hizmet-bolgeleri/buca/' },
+      { name: 'Güzelbahçe', item: '/hizmet-bolgeleri/guzelbahce/' }
+    ],
+    mobile: defaultMobile,
+    mobileCwvBudget: defaultCwv
+  },
+
+  '/hizmet-bolgeleri/urla/': {
+    route: '/hizmet-bolgeleri/urla/',
+    locale: 'tr-TR',
+    role: 'service',
+    indexDirective: 'index, follow',
+    canonicalRoute: '/hizmet-bolgeleri/urla/',
+    title: 'Urla Mutfak Tadilatı & Taş Ev Villa Mutfak Dolabı | Yeşilay Mutfak',
+    metaDescription: 'Urla, Kekliktepe ve İskele\'de taş ev ve lüks villalara özel ahşap kaplama, lake mutfak dolapları ve komple ev tadilatı. 28 yıllık atölye zanaatı ve mimari taahhüt.',
+    h1: 'Urla Mutfak Tadilatı & Taş Ev ve Bağ Villası Özel İmalatı',
+    primaryIntent: 'urla mutfak tadilatı kekliktepe taş ev mutfak dolabı',
+    primaryEntity: {
+      id: 'https://yesilaymutfak.com/hizmet-bolgeleri/urla/#service',
+      name: 'Urla Mutfak Tadilatı ve Taş Ev İmalatı',
+      type: 'Service',
+      sameAs: ['https://yesilaymutfak.com/#organization']
+    },
+    semanticTriples: [
+      { subject: 'Urla Taş Ev Mutfakları', predicate: 'materialSpec', object: 'Doğal Meşe Kaplama ve E1 Marin MDF' }
+    ],
+    heroAnswerEngine: 'Urla ve Kekliktepe taş ev ve bağ villalarında Yeşilay Mutfak, doğal meşe kaplama, rustik lake kapaklar ve neme mukavim marin MDF gövde ile mimari renovasyon gerçekleştirir.',
+    publishedAt: '2026-10-31T00:00:00+03:00',
+    modifiedAt: '2026-10-31T00:00:00+03:00',
+    breadcrumbs: [
+      { name: 'Ana Sayfa', item: '/' },
+      { name: 'Hizmet Bölgeleri', item: '/hizmet-bolgeleri/buca/' },
+      { name: 'Urla', item: '/hizmet-bolgeleri/urla/' }
+    ],
+    mobile: defaultMobile,
+    mobileCwvBudget: defaultCwv
+  },
+
+  '/hizmet-bolgeleri/cesme/': {
+    route: '/hizmet-bolgeleri/cesme/',
+    locale: 'tr-TR',
+    role: 'service',
+    indexDirective: 'index, follow',
+    canonicalRoute: '/hizmet-bolgeleri/cesme/',
+    title: 'Çeşme & Alaçatı Villa Mutfak Tadilatı | Yeşilay Mutfak',
+    metaDescription: 'Çeşme, Alaçatı, Ilıca ve Dalyan\'daki lüks villalara özel marin gövde mutfak dolapları, porselen tezgah ve komple yazlık tadilatı. Sezon öncesi gün garantili teslimat.',
+    h1: 'Çeşme & Alaçatı Villa Mutfak Tadilatı: Sezon Öncesi Gün Garantili Lüks Renovasyon',
+    primaryIntent: 'çeşme mutfak tadilatı alaçatı villa dolap yenileme',
+    primaryEntity: {
+      id: 'https://yesilaymutfak.com/hizmet-bolgeleri/cesme/#service',
+      name: 'Çeşme Villa Mutfak Tadilatı',
+      type: 'Service',
+      sameAs: ['https://yesilaymutfak.com/#organization']
+    },
+    semanticTriples: [
+      { subject: 'Çeşme Yazlık Tadilatı', predicate: 'guarantee', object: 'Sezon Öncesi Gün Bazlı Gecikme Tazminatlı Teslim' }
+    ],
+    heroAnswerEngine: 'Çeşme ve Alaçatı villalarında Yeşilay Mutfak, tuzlu sahil havasına dirençli yeşil marin MDF gövdeler, sararmayan fırın lake ve yaz sezonu öncesi gün garantili sözleşmeli teslimat sunar.',
+    publishedAt: '2026-10-31T00:00:00+03:00',
+    modifiedAt: '2026-10-31T00:00:00+03:00',
+    breadcrumbs: [
+      { name: 'Ana Sayfa', item: '/' },
+      { name: 'Hizmet Bölgeleri', item: '/hizmet-bolgeleri/buca/' },
+      { name: 'Çeşme', item: '/hizmet-bolgeleri/cesme/' }
+    ],
+    mobile: defaultMobile,
+    mobileCwvBudget: defaultCwv
   }
 };

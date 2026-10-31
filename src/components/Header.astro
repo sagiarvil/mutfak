@@ -130,6 +130,35 @@ import { siteConfig } from "../data/siteConfig";
         </div>
       </div>
 
+      <!-- BÖLGELER DROPDOWN -->
+      <div class="relative group py-2">
+        <button type="button" class="flex items-center gap-1 text-white hover:text-[#C5A880] transition duration-300 focus:outline-none after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#C5A880] group-hover:after:w-full after:transition-all after:duration-300">
+          <span>BÖLGELER</span>
+          <svg class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180 text-[#C5A880]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="absolute left-0 top-full pt-2 min-w-[260px] w-max hidden group-hover:block transition duration-200 z-50">
+          <div class="bg-[#052317]/95 backdrop-blur-xl rounded-lg shadow-2xl border border-[#C5A880]/30 py-2 divide-y divide-[#0B3B28]">
+            <a href="/hizmet-bolgeleri/buca/" class="block px-4 py-2.5 text-xs text-[#EAE6DF] hover:bg-[#083523] hover:text-[#C5A880] transition font-medium whitespace-nowrap tracking-normal">
+              Buca Mutfak & Tadilat
+            </a>
+            <a href="/hizmet-bolgeleri/narlidere/" class="block px-4 py-2.5 text-xs text-[#EAE6DF] hover:bg-[#083523] hover:text-[#C5A880] transition font-medium whitespace-nowrap tracking-normal">
+              Narlıdere & Sahilevleri
+            </a>
+            <a href="/hizmet-bolgeleri/guzelbahce/" class="block px-4 py-2.5 text-xs text-[#EAE6DF] hover:bg-[#083523] hover:text-[#C5A880] transition font-medium whitespace-nowrap tracking-normal">
+              Güzelbahçe Villa
+            </a>
+            <a href="/hizmet-bolgeleri/urla/" class="block px-4 py-2.5 text-xs text-[#EAE6DF] hover:bg-[#083523] hover:text-[#C5A880] transition font-medium whitespace-nowrap tracking-normal">
+              Urla & Kekliktepe
+            </a>
+            <a href="/hizmet-bolgeleri/cesme/" class="block px-4 py-2.5 text-xs text-[#EAE6DF] hover:bg-[#083523] hover:text-[#C5A880] transition font-medium whitespace-nowrap tracking-normal">
+              Çeşme & Alaçatı
+            </a>
+          </div>
+        </div>
+      </div>
+
       <!-- Fiyatlar Linki -->
       <a href="/mutfak-dolabi-fiyatlari/" class="relative py-2 text-white hover:text-[#C5A880] transition duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#C5A880] hover:after:w-full after:transition-all after:duration-300">
         FİYATLAR
@@ -201,6 +230,17 @@ import { siteConfig } from "../data/siteConfig";
           <a href="/izmir-komple-mutfak-tadilati/" class="block py-1 hover:text-[#C5A880]">Komple Mutfak Renovasyonu</a>
           <a href="/izmir-banyo-yenileme-seramik/" class="block py-1 hover:text-[#C5A880]">Lüks Banyo & Seramik Yenileme</a>
           <a href="/izmir-anahtar-teslim-tadilat/" class="block py-1 hover:text-[#C5A880]">Anahtar Teslim Daire & Villa</a>
+        </div>
+      </div>
+
+      <div class="py-1 px-3">
+        <span class="text-[10px] text-[#C5A880] font-bold block mb-1">HİZMET BÖLGELERİMİZ</span>
+        <div class="pl-3 border-l border-[#0D3826] space-y-2 text-[11px] font-normal text-[#D8D2C7]">
+          <a href="/hizmet-bolgeleri/buca/" class="block py-1 hover:text-[#C5A880]">Buca Mutfak & Tadilat</a>
+          <a href="/hizmet-bolgeleri/narlidere/" class="block py-1 hover:text-[#C5A880]">Narlıdere & Sahilevleri</a>
+          <a href="/hizmet-bolgeleri/guzelbahce/" class="block py-1 hover:text-[#C5A880]">Güzelbahçe Villa</a>
+          <a href="/hizmet-bolgeleri/urla/" class="block py-1 hover:text-[#C5A880]">Urla & Kekliktepe</a>
+          <a href="/hizmet-bolgeleri/cesme/" class="block py-1 hover:text-[#C5A880]">Çeşme & Alaçatı</a>
         </div>
       </div>
 

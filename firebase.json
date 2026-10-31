@@ -155,6 +155,36 @@
       ],
       "redirects": [
         {
+          "source": "/narlidere-mutfak-tadilati",
+          "destination": "/hizmet-bolgeleri/narlidere/",
+          "type": 301
+        },
+        {
+          "source": "/buca-mutfak-tadilati",
+          "destination": "/hizmet-bolgeleri/buca/",
+          "type": 301
+        },
+        {
+          "source": "/guzelbahce-mutfak-tadilati",
+          "destination": "/hizmet-bolgeleri/guzelbahce/",
+          "type": 301
+        },
+        {
+          "source": "/urla-mutfak-tadilati",
+          "destination": "/hizmet-bolgeleri/urla/",
+          "type": 301
+        },
+        {
+          "source": "/cesme-mutfak-tadilati",
+          "destination": "/hizmet-bolgeleri/cesme/",
+          "type": 301
+        },
+        {
+          "source": "/projeler",
+          "destination": "/yapilan-isler/",
+          "type": 301
+        },
+        {
           "source": "/mutfak-dolabi",
           "destination": "/izmir-mutfak-dolabi-imalati/",
           "type": 301
@@ -341,6 +371,36 @@
         }
       ],
       "redirects": [
+        {
+          "source": "/narlidere-mutfak-tadilati",
+          "destination": "/hizmet-bolgeleri/narlidere/",
+          "type": 301
+        },
+        {
+          "source": "/buca-mutfak-tadilati",
+          "destination": "/hizmet-bolgeleri/buca/",
+          "type": 301
+        },
+        {
+          "source": "/guzelbahce-mutfak-tadilati",
+          "destination": "/hizmet-bolgeleri/guzelbahce/",
+          "type": 301
+        },
+        {
+          "source": "/urla-mutfak-tadilati",
+          "destination": "/hizmet-bolgeleri/urla/",
+          "type": 301
+        },
+        {
+          "source": "/cesme-mutfak-tadilati",
+          "destination": "/hizmet-bolgeleri/cesme/",
+          "type": 301
+        },
+        {
+          "source": "/projeler",
+          "destination": "/yapilan-isler/",
+          "type": 301
+        },
         {
           "source": "/mutfak-dolabi",
           "destination": "/izmir-mutfak-dolabi-imalati/",
