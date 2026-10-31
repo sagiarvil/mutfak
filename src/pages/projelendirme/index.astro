@@ -1,616 +1,492 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { siteConfig } from "../../data/siteConfig";
+
+// 20 Ticari Proje / Mağaza Konsept Görsel Verisi
+const commercialProjects = [
+  { no: 1, marka: "VELUNOR", kategori: "MİMARİ YAŞAM", baslik: "Velunor Mimari Yaşam Mağazası", konum: "Alsancak, İzmir", dosya: "/images/ticari-projeler/01_velunor_magaza.jpg" },
+  { no: 2, marka: "CASTERA", kategori: "TASARIM ATÖLYESİ", baslik: "Castera Tasarım Atölyesi & Showroom", konum: "Bayraklı, İzmir", dosya: "/images/ticari-projeler/02_castera_magaza.jpg" },
+  { no: 3, marka: "KORVEX", kategori: "TEKNİK MARKET", baslik: "Korvex Profesyonel Teknik Market", konum: "Bornova, İzmir", dosya: "/images/ticari-projeler/03_korvex_magaza.jpg" },
+  { no: 4, marka: "PİKORA", kategori: "KONSEPT MAĞAZA", baslik: "Pikora Renkli Dünya Konsept Mağazası", konum: "Mavişehir, İzmir", dosya: "/images/ticari-projeler/04_pikora_magaza.jpg" },
+  { no: 5, marka: "LUMORİ", kategori: "LIFESTYLE STORE", baslik: "Lumori Yaşam & Aydınlatma Mağazası", konum: "Urla, İzmir", dosya: "/images/ticari-projeler/05_lumori_magaza.jpg" },
+  { no: 6, marka: "BEBYORA", kategori: "ANNE & BEBEK", baslik: "Bebyora Premium Bebek & Yaşam Alanı", konum: "Karşıyaka, İzmir", dosya: "/images/ticari-projeler/06_bebyora_magaza.jpg" },
+  { no: 7, marka: "NİVERA", kategori: "ÇOCUK & YAŞAM", baslik: "Nivera Çocuk Deneyim Mağazası", konum: "Konak, İzmir", dosya: "/images/ticari-projeler/07_nivera_magaza.jpg" },
+  { no: 8, marka: "KİDAVO", kategori: "MODA MAĞAZASI", baslik: "Kidavo Konsept Moda & Giyim", konum: "Bostanlı, İzmir", dosya: "/images/ticari-projeler/08_kidavo_magaza.jpg" },
+  { no: 9, marka: "MİNORA", kategori: "OYUN & TASARIM", baslik: "Minora Deneyimsel Oyun & Tasarım Alanı", konum: "Güzelbahçe, İzmir", dosya: "/images/ticari-projeler/09_minora_magaza.jpg" },
+  { no: 10, marka: "AVENORA", kategori: "MODA ATÖLYESİ", baslik: "Avenora Lüks Giyim & Terzilik Stüdyosu", konum: "Alsancak, İzmir", dosya: "/images/ticari-projeler/10_avenora_magaza.jpg" },
+  { no: 11, marka: "MİRAVİ", kategori: "YAŞAM & TASARIM", baslik: "Miravi Ev Dekorasyonu & Aksesuar", konum: "Çeşme, İzmir", dosya: "/images/ticari-projeler/11_miravi_magaza.jpg" },
+  { no: 12, marka: "MONELİ", kategori: "KOZMETİK & BAKIM", baslik: "Moneli Doğal Kozmetik & Bakım Mağazası", konum: "Buca, İzmir", dosya: "/images/ticari-projeler/12_moneli_magaza.jpg" },
+  { no: 13, marka: "ARVİSA", kategori: "İŞ VE OFİS", baslik: "Arvisa Kurumsal Çözümler Showroomu", konum: "Gaziemir, İzmir", dosya: "/images/ticari-projeler/13_arvisa_magaza.jpg" },
+  { no: 14, marka: "LORİNA", kategori: "KIDS CONCEPT", baslik: "Lorina Çocuk Mobilya & Dekorasyon", konum: "Balçova, İzmir", dosya: "/images/ticari-projeler/14_lorina_magaza.jpg" },
+  { no: 15, marka: "EVONARA", kategori: "EV & YAŞAM", baslik: "Evonara Mobilya & İç Mekan Mağazası", konum: "Bayraklı, İzmir", dosya: "/images/ticari-projeler/15_evonara_magaza.jpg" },
+  { no: 16, marka: "KİVORA", kategori: "CONCEPT STORE", baslik: "Kivora Butik Aksesuar & Tasarım Mağazası", konum: "Alaçatı, İzmir", dosya: "/images/ticari-projeler/16_kivora_magaza.jpg" },
+  { no: 17, marka: "OYUNİVA", kategori: "OYUNCAK DÜNYASI", baslik: "Oyuniva Eğitici Oyuncak & Hobi Mağazası", konum: "Karşıyaka, İzmir", dosya: "/images/ticari-projeler/17_oyuniva_magaza.jpg" },
+  { no: 18, marka: "FİORİSA", kategori: "KONSEPT MAĞAZA", baslik: "Fiorisa Çiçek Tasarım & Botanik Mağazası", konum: "Urla, İzmir", dosya: "/images/ticari-projeler/18_fiorisa_magaza.jpg" },
+  { no: 19, marka: "VALERON", kategori: "MODA & SHOWROOM", baslik: "Valeron Tekstil & İç Mekan Showroomu", konum: "Torbalı, İzmir", dosya: "/images/ticari-projeler/19_valeron_magaza.jpg" },
+  { no: 20, marka: "MOVENİA", kategori: "HAREKET STÜDYOSU", baslik: "Movenia Sağlıklı Yaşam & Pilates Stüdyosu", konum: "Narlıdere, İzmir", dosya: "/images/ticari-projeler/20_movenia_magaza.jpg" }
+];
+
+// OSO Mimarlık Formatında Hero Slider (4 Öne Çıkan Proje)
+const heroSlides = [
+  {
+    baslik: "Velunor Mimari Yaşam",
+    kategori: "MAĞAZA İÇ MİMARİ & FIT-OUT",
+    resim: "/images/ticari-projeler/01_velunor_magaza.jpg",
+    aciklama: "Ticari mağaza zincirleri için kurumsal kimliği mekana yansıtan mimari konsept ve anahtar teslim fit-out uygulaması."
+  },
+  {
+    baslik: "Castera Tasarım Atölyesi",
+    kategori: "OFİS & SHOWROOM DİZAYNI",
+    resim: "/images/ticari-projeler/02_castera_magaza.jpg",
+    aciklama: "Yüksek hacimli ticari mekanlarda ergonomik, estetik ve işlevsel modern çalışma atmosferleri."
+  },
+  {
+    baslik: "Lumori Yaşam & Perakende",
+    kategori: "KONSEPT MAĞAZA TASARIMI",
+    resim: "/images/ticari-projeler/05_lumori_magaza.jpg",
+    aciklama: "Satış hacmini ve müşteri deneyimini maksimize eden bütüncül perakende iç mimarisi."
+  },
+  {
+    baslik: "Evonara Ev & Mobilya",
+    kategori: "BÜYÜK ÖLÇEKLİ RETAIL PROJESİ",
+    resim: "/images/ticari-projeler/15_evonara_magaza.jpg",
+    aciklama: "Projelendirmeden şantiye yönetimine kadar kusursuz fit-out ve özel mobilya imalat koordinasyonu."
+  }
+];
 
 const seo = {
-  title: "İç Mimarlık Ofisi, Ticari Projelendirme & Fit-Out Uygulama | Yeşilay Mimarlık",
-  description: "Ofis, mağaza, cafe-restoran ve lüks konutlar için mimari iç mekân tasarımı, 3D modelleme ve anahtar teslim fit-out uygulama hizmetleri. 3D tasarım ile şantiye teslimi arasında birebir uyum.",
-  canonical: "https://yesilaymutfak.com/projelendirme/",
-  serviceName: "Ticari Projelendirme ve Fit-Out İç Mimarlık",
-  breadcrumbs: [
-    { name: "Ana Sayfa", url: "/" },
-    { name: "Projelendirme & Fit-Out", url: "/projelendirme/" }
-  ],
-  faqList: [
-    {
-      question: "Ticari projelendirme ve fit-out uygulama süreci neleri kapsar?",
-      answer: "Rölöve alımı, ihtiyaç programı analizi, konsept tasarım, fotogerçekçi 3D çizimler, elektrik-mekanik uygulama projeleri, kendi atölyemizde özel mobilya imalatı ve şantiyede anahtar teslim montajı kapsar."
-    },
-    {
-      question: "AVM, plaza ve iş merkezlerinin gece çalışma kurallarına uyuluyor mu?",
-      answer: "Evet. AVM ve kurumsal plazaların yangın yönetmelikleri, İSG mevzuatı ve mesai dışı gece çalışma kurallarına tam uyumlu sertifikalı ekiplerimizle kesintisiz şantiye yönetimi gerçekleştiriyoruz."
-    },
-    {
-      question: "3D render çizimleri ile sahada tamamlanan gerçek mekân arasında fark olur mu?",
-      answer: "Hayır. '3D Render vs Fit-Out' portföyümüzde kanıtlandığı üzere; kendi CNC ve boyahane atölyemizin üretim gücü sayesinde onaylanan 3D mimari model sahada birebir sadakatle hayata geçirilir."
-    },
-    {
-      question: "Ticari projelerde sabit bütçe ve kesin teslim tarihi garantisi veriyor musunuz?",
-      answer: "Evet. Noter onaylı resmi sözleşmemizde malzeme şartnamesi, sabit fiyat ve teslimatın geciktiği her gün için cezai nakit tazminat maddesi yer almaktadır."
-    }
-  ]
+  title: "Projelendirme | Mimarlık Ofisi ve Ticari Mekan FIT-Out Uygulama Hizmetleri | Yeşilay Mimarlık",
+  description: "İzmir mimarlık ve iç mimarlık ofisi. Ofis, mağaza, cafe-restoran ve kurumsal ticari projelerde mimari tasarım, 3D görselleştirme ve anahtar teslim (fit-out) uygulama hizmetleri.",
+  canonical: "https://yesilaymutfak.com/projelendirme/"
 };
-
-// 3D Render vs Fit-Out Karşılaştırma Projeleri (Türkiye Kurumsal Yapısına Uygun Türkçe İsimlendirme)
-const renderVsFitoutProjects = [
-  {
-    id: 1,
-    title: "Kuzey Holding Yönetim Merkezi",
-    category: "Genel Müdürlük & İdari Bina",
-    location: "Bayraklı / İzmir",
-    scope: "3.200 m² Yönetim Ofisleri, İcra Kurulu Salonu & Akustik Konsept",
-    img: "/media/projelendirme/render-vs-fitout-01.jpg",
-    specs: "3D Mimari Modelleme • CNC Akustik Ahşap Kaplama • Anahtar Teslim Fit-Out"
-  },
-  {
-    id: 2,
-    title: "Ege Global Lojistik Operasyon Merkezi",
-    category: "Lojistik & Teknoloji Kampüsü",
-    location: "Gaziemir Serbest Bölge",
-    scope: "1.850 m² Açık Ofis, Çekirdek Toplantı Odaları & Dinlenme Alanları",
-    img: "/media/projelendirme/render-vs-fitout-02.jpg",
-    specs: "Modüler Cam Bölme Duvarlar • Özel İmalat Masa Sistemleri • Akıllı Aydınlatma"
-  },
-  {
-    id: 3,
-    title: "Evium Konsept Mobilya & Dekorasyon Mağazaları",
-    category: "Perakende Zincir Mağaza",
-    location: "Bornova / İzmir",
-    scope: "950 m² Deneyimsel Alışveriş Alanı & Modüler Teşhir Üniteleri",
-    img: "/media/projelendirme/render-vs-fitout-03.jpg",
-    specs: "Özel Tasarım Askı & Raf Sistemleri • Lineer Ray Spot • Mikro Beton Zemin"
-  },
-  {
-    id: 4,
-    title: "Çınar Plaza Genel Müdürlük Katı",
-    category: "Finans & Şirket Merkezi",
-    location: "Alsancak / İzmir",
-    scope: "2.400 m² Yönetici Süitleri, Konferans Katı & VIP Karşılama Salonu",
-    img: "/media/projelendirme/render-vs-fitout-04.jpg",
-    specs: "Doğal Ahşap Duvar Giydirme • Gizli Havalandırma Menfezleri • Lake Mobilya"
-  },
-  {
-    id: 5,
-    title: "Göksu İnşaat Merkez Ofisi",
-    category: "Mühendislik & Yatırım Ofisi",
-    location: "Karşıyaka / İzmir",
-    scope: "1.200 m² Prestijli Yönetici Ofisleri & Resepsiyon Alanı",
-    img: "/media/projelendirme/render-vs-fitout-05.jpg",
-    specs: "Monolitik Mermer Karşılama Bankosu • Özel İmalat Akustik Tavan Baffle"
-  },
-  {
-    id: 6,
-    title: "Mega Ofis Perakende & Tedarik Mağazası",
-    category: "Zincir Mağaza Projesi",
-    location: "Çiğli / İzmir",
-    scope: "1.500 m² Amiral Mağaza & Müşteri Dolaşım Kurgusu",
-    img: "/media/projelendirme/render-vs-fitout-06.jpg",
-    specs: "Hafif Çelik & Ahşap Teşhir Standları • Yüksek Renk Geri Verimli Aydınlatma"
-  },
-  {
-    id: 7,
-    title: "Atlas Tasarım & Teknoloji Merkezi",
-    category: "Ar-Ge & İnovasyon Kampüsü",
-    location: "Urla Teknopark",
-    scope: "2.800 m² Ergonomik Çalışma İstasyonları & Tasarım Atölyeleri",
-    img: "/media/projelendirme/render-vs-fitout-07.jpg",
-    specs: "Yükseklik Ayarlı Masalar • Akustik Telefon Odaları • Dinamik Renk Paleti"
-  },
-  {
-    id: 8,
-    title: "İzmir Bilişim Vadisi Çalışma Alanları",
-    category: "Yazılım & Girişimcilik Merkezi",
-    location: "Balçova / İzmir",
-    scope: "3.600 m² Esnek Çalışma Alanları, Kafe & Sosyal Etkinlik Salonu",
-    img: "/media/projelendirme/render-vs-fitout-08.jpg",
-    specs: "Komple Fit-Out Taahhüdü • Epoksi Zemin • Endüstriyel Tavan & Mekanik Entegrasyon"
-  }
-];
-
-// Seçilmiş Referans Projeler (Türkçe İsimlendirme)
-const selectedCommercialProjects = [
-  {
-    title: "Anadolu Yatırım Holding Yönetim Binası",
-    type: "Genel Müdürlük & İdari Katlar",
-    location: "Bayraklı / İzmir",
-    area: "2.200 m²",
-    img: "/media/projelendirme/project-office-01.jpg",
-    desc: "Açık plan çalışma alanları, akustik tavan panelleri, yönetici süitleri ve firmanın kurumsal kimliğine özel tasarlanan karşılama bankosu."
-  },
-  {
-    title: "Ege Lojistik İhracat Operasyon Merkezi",
-    type: "Operasyon Merkezi & Lojistik Ofisi",
-    location: "Gaziemir Serbest Bölge",
-    area: "1.650 m²",
-    img: "/media/projelendirme/project-office-02.jpg",
-    desc: "Yüksek tavanlı endüstriyel mimari, ses yalıtımlı toplantı kapsülleri, ergonomik çalışma istasyonları ve 24/7 operasyon altyapısı."
-  },
-  {
-    title: "Venedik Konsept Giyim & Aksesuar Mağazası",
-    type: "Perakende & Deneyim Mağazası",
-    location: "Alsancak / Konak",
-    area: "850 m²",
-    img: "/media/projelendirme/project-retail-01.jpg",
-    desc: "Müşteri dolaşım rotasını optimize eden modüler teşhir üniteleri, yönlendirici ray spot aydınlatmalar ve akrilik lake kasa bankoları."
-  },
-  {
-    title: "Modern Yaşam Ev & Dekorasyon Galerisi",
-    type: "Özel Konsept Showroom",
-    location: "Mavişehir / Karşıyaka",
-    area: "1.100 m²",
-    img: "/media/projelendirme/project-retail-02.jpg",
-    desc: "Ürünlerin doğal ışık ve mimari spotlarla sergilendiği, ziyaretçilere premium alışveriş deneyimi sunan özel tasarım mekan kurgusu."
-  }
-];
 ---
 
-<Layout seo={seo} activeService="Projelendirme & Mimarlık">
+<Layout seo={seo} activeService="projelendirme">
+  <main class="w-full text-slate-800 font-sans antialiased selection:bg-amber-600 selection:text-white">
 
-  <!-- ===================================================================== -->
-  <!-- 1. SAF BEYAZ (LIGHT) KURUMSAL MİMARLIK HERO BÖLÜMÜ (OSOMİMARLIK ESİNTİLİ) -->
-  <!-- ===================================================================== -->
-  <section class="relative bg-white text-[#1D1D1F] py-16 sm:py-24 border-b border-[#E5E5E5]">
-    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-      
-      <!-- Breadcrumb -->
-      <nav class="flex items-center gap-2 text-[11px] font-semibold text-[#888888] uppercase tracking-widest" aria-label="Breadcrumb">
-        <a href="/" class="hover:text-[#006039] transition">Ana Sayfa</a>
-        <span>/</span>
-        <span class="text-[#1D1D1F]">Ticari Projelendirme & Fit-Out</span>
-      </nav>
+    <!-- BÖLÜM 1: OSO MİMARLIK FORMATINDA TAM EKRAN MİMARİ HERO SLIDER -->
+    <section class="relative w-full bg-slate-900 text-white overflow-hidden" x-data="{
+      activeSlide: 0,
+      totalSlides: 4,
+      timer: null,
+      startAuto() {
+        this.timer = setInterval(() => {
+          this.activeSlide = (this.activeSlide + 1) % this.totalSlides;
+        }, 5000);
+      },
+      stopAuto() {
+        if (this.timer) clearInterval(this.timer);
+      }
+    }" x-init="startAuto()" @mouseenter="stopAuto()" @mouseleave="startAuto()">
 
-      <!-- Rozet -->
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#F5F5F7] border border-[#E5E5E5] rounded-xs">
-        <span class="w-2 h-2 rounded-full bg-[#006039]"></span>
-        <span class="text-[#1D1D1F] text-[11px] font-bold tracking-[0.15em] uppercase font-sans">
-          İÇ MİMARLIK OFİSİ • TİCARİ PROJELENDİRME VE FIT-OUT UYGULAMA
-        </span>
-      </div>
-
-      <!-- Ana Başlık (Clean Modern Architectural Typography) -->
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-light text-[#111111] tracking-tight leading-[1.15] max-w-5xl" style="font-family: 'Playfair Display', Georgia, serif;">
-        Mimarlık ve İç Mimarlık Alanında <br />
-        <span class="font-normal italic text-[#006039]">Fit-Out ve Anahtar Teslim</span> Uygulama Hizmetleri
-      </h1>
-
-      <p class="text-sm sm:text-base text-[#555555] font-light leading-relaxed max-w-3xl">
-        Ofis, mağaza, cafe-restoran ve konut projelerinde; marka kimliğini mekânsal değere dönüştüren iç mimari tasarım, 3D görselleştirme ve doğrudan kendi atölyemizin imalat gücüyle anahtar teslim fit-out taahhüdü sunuyoruz.
-      </p>
-
-      <!-- Rakamlar / Güven Göstergeleri (Saf Beyaz Arka Plan Üzerinde) -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 py-6 border-y border-[#EEEEEE] max-w-4xl">
-        <div>
-          <div class="text-2xl sm:text-3xl font-light text-[#111111]" style="font-family: 'Playfair Display', Georgia, serif;">28 Yıl</div>
-          <div class="text-[11px] uppercase tracking-wider text-[#777777] font-semibold mt-0.5">Atölye İmalat Geçmişi</div>
-        </div>
-        <div>
-          <div class="text-2xl sm:text-3xl font-light text-[#006039]" style="font-family: 'Playfair Display', Georgia, serif;">%100</div>
-          <div class="text-[11px] uppercase tracking-wider text-[#777777] font-semibold mt-0.5">3D Render Sadakati</div>
-        </div>
-        <div>
-          <div class="text-2xl sm:text-3xl font-light text-[#111111]" style="font-family: 'Playfair Display', Georgia, serif;">Fit-Out</div>
-          <div class="text-[11px] uppercase tracking-wider text-[#777777] font-semibold mt-0.5">Anahtar Teslim Şantiye</div>
-        </div>
-        <div>
-          <div class="text-2xl sm:text-3xl font-light text-[#111111]" style="font-family: 'Playfair Display', Georgia, serif;">Sözleşmeli</div>
-          <div class="text-[11px] uppercase tracking-wider text-[#777777] font-semibold mt-0.5">Gecikme Cezalı Garanti</div>
-        </div>
-      </div>
-
-      <!-- CTA Butonları (Aydınlık & Kurumsal) -->
-      <div class="flex flex-wrap items-center gap-4 pt-2">
-        <a 
-          href="https://wa.me/905324261788?text=Merhaba,%20ticari%20projemiz%20(ofis/mağaza/restoran)%20için%20mimari%20projelendirme%20ve%20fit-out%20teklifi%20almak%20istiyoruz." 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="px-8 py-3.5 bg-[#111111] hover:bg-[#006039] text-white text-xs font-bold uppercase tracking-widest transition shadow-md inline-flex items-center gap-2"
-        >
-          <span>💼</span> <span>Kurumsal Proje Teklifi Al</span>
-        </a>
-        <a 
-          href="#render-vs-fitout" 
-          class="px-8 py-3.5 bg-white border border-[#D2D2D7] hover:border-[#111111] text-[#111111] text-xs font-bold uppercase tracking-widest transition inline-flex items-center gap-2"
-        >
-          <span>3D Render vs Fit-Out İncele</span> <span>↓</span>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ===================================================================== -->
-  <!-- 2. KULLANICI GÖRSELİ %100 BİREBİR: 4 TEMEL MİMARİ ALAN (BEYAZ TEMA) -->
-  <!-- ===================================================================== -->
-  <section class="py-20 sm:py-24 bg-white border-b border-[#E5E5E5]">
-    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-      
-      <!-- Bölüm Başlığı (osomimarlik.com h2 stili) -->
-      <div class="text-center max-w-3xl mx-auto space-y-2">
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-light text-[#111111] tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
-          Modern ve Yenilikçi <span class="font-normal italic">Mimari Çözümler</span>
-        </h2>
-        <p class="text-xs sm:text-sm text-[#666666] font-light">
-          İşlevsellik, estetik, akustik konfor ve kurumsal marka kimliğini harmanlayan 4 ana tasarım alanımız.
-        </p>
-      </div>
-
-      <!-- 4 Kolonlu Grid (Kullanıcının Yüklediği Görselin %100 Birebir Kod Karşılığı) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">
-        
-        <!-- KOLON 1: OFİS TASARIMLARI -->
-        <div class="flex flex-col items-center text-center p-6 bg-white border border-[#EBEBEB] hover:border-[#006039] shadow-xs hover:shadow-lg transition-all duration-300 rounded-xs">
-          <!-- Orijinal Dairesel Çizim İkonu -->
-          <div class="w-28 h-28 rounded-full border border-[#E0E0E0] bg-[#FAFAFA] flex items-center justify-center p-5 mb-6">
-            <img src="/media/projelendirme/icon-ofis.webp" alt="Ofis Tasarımları İkonu" class="w-full h-full object-contain filter contrast-125" width="80" height="80" loading="lazy" />
-          </div>
-
-          <h3 class="text-xs sm:text-sm font-extrabold uppercase tracking-[0.18em] text-[#111111] mb-2 font-sans">
-            OFİS TASARIMLARI
-          </h3>
-          <h4 class="text-sm sm:text-base font-semibold text-[#222222] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">
-            Yenilikçi Çalışma Alanları
-          </h4>
-
-          <div class="space-y-3 text-[12px] sm:text-[12.5px] text-[#555555] font-light leading-relaxed text-justify">
-            <p>
-              Günümüz ofislerinde, mekânın şirket kurumsal kimliği ile uyumu ve çalışanların yüksek motivasyonu, verimlilik açısından büyük önem taşır. Bu doğrultuda modern çalışma kültürüne; estetik, işlevsellik ve kullanıcı memnuniyeti kazandırarak, yenilikçi ofis mekânları tasarlıyoruz.
-            </p>
-            <p>
-              Aydınlatma, akustik konfor, malzeme seçimi ve yeni nesil ofis ihtiyaçlarını titizlikle ele alarak üretkenliği destekleyen bütüncül çözümler sunuyoruz. Fonksiyon odaklı yaklaşımımızla ergonomi, sürdürülebilir malzemeler ve teknolojik entegrasyonu, projelerimizin merkezine yerleştirerek kurum kimliğini mekâna yansıtan özgün tasarımlar üretiyoruz.
-            </p>
-          </div>
-        </div>
-
-        <!-- KOLON 2: MAĞAZA TASARIMLARI -->
-        <div class="flex flex-col items-center text-center p-6 bg-white border border-[#EBEBEB] hover:border-[#006039] shadow-xs hover:shadow-lg transition-all duration-300 rounded-xs">
-          <div class="w-28 h-28 rounded-full border border-[#E0E0E0] bg-[#FAFAFA] flex items-center justify-center p-5 mb-6">
-            <img src="/media/projelendirme/icon-magaza.webp" alt="Mağaza Tasarımları İkonu" class="w-full h-full object-contain filter contrast-125" width="80" height="80" loading="lazy" />
-          </div>
-
-          <h3 class="text-xs sm:text-sm font-extrabold uppercase tracking-[0.18em] text-[#111111] mb-2 font-sans">
-            MAĞAZA TASARIMLARI
-          </h3>
-          <h4 class="text-sm sm:text-base font-semibold text-[#222222] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">
-            Marka Kimliğini Güçlendiren Çözümler
-          </h4>
-
-          <div class="space-y-3 text-[12px] sm:text-[12.5px] text-[#555555] font-light leading-relaxed text-justify">
-            <p>
-              Mağaza tasarımlarını, markaların müşterileriyle kurduğu bağın mekânsal karşılığı olarak ele alıyoruz. Her projenin marka hikâyesini, hedef kitlesini ve satış dinamiklerini analiz ederek etkileyici ve akıcı bir alışveriş deneyimi kurguluyoruz.
-            </p>
-            <p>
-              Ürün sergileme stratejileri, dolaşım düzeni ve aydınlatma gibi unsurları dengeli bir şekilde bir araya getirerek mekânın hem işlevsel, hem de yönlendirici olmasını sağlıyoruz. Mağazaları sadece satış odaklı değil, aynı zamanda marka kimliğini güçlendiren ve müşterilere eşsiz bir alışveriş deneyimi kazandıran alanlar olarak ele almaktayız.
-            </p>
-          </div>
-        </div>
-
-        <!-- KOLON 3: KONUT TASARIMLARI -->
-        <div class="flex flex-col items-center text-center p-6 bg-white border border-[#EBEBEB] hover:border-[#006039] shadow-xs hover:shadow-lg transition-all duration-300 rounded-xs">
-          <div class="w-28 h-28 rounded-full border border-[#E0E0E0] bg-[#FAFAFA] flex items-center justify-center p-5 mb-6">
-            <img src="/media/projelendirme/icon-konut.webp" alt="Konut Tasarımları İkonu" class="w-full h-full object-contain filter contrast-125" width="80" height="80" loading="lazy" />
-          </div>
-
-          <h3 class="text-xs sm:text-sm font-extrabold uppercase tracking-[0.18em] text-[#111111] mb-2 font-sans">
-            KONUT TASARIMLARI
-          </h3>
-          <h4 class="text-sm sm:text-base font-semibold text-[#222222] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">
-            Yaşam Tarzını Yansıtan Zamansız İç Mekânlar
-          </h4>
-
-          <div class="space-y-3 text-[12px] sm:text-[12.5px] text-[#555555] font-light leading-relaxed text-justify">
-            <p>
-              Konut projelerini, kullanıcıların yaşam alışkanlıklarını ve kişisel yaşam tarzlarını yansıtan özgün alanlar oluşturma süreci olarak görüyoruz. Mekânlara değer kazandıran; sıcak, dengeli ve huzurlu bir yaşam atmosferi yaratmayı hedefliyoruz.
-            </p>
-            <p>
-              Her evin kendine ait bir ruhu olduğuna inanarak mekânı estetik, konfor, ışık ve malzeme açısından bütüncül bir şekilde ele alıyor; zamansız, kişiye özel ve aidiyet duygusunu güçlendiren yaşam alanları tasarlıyoruz.
-            </p>
-          </div>
-        </div>
-
-        <!-- KOLON 4: CAFE-RESTORAN TASARIMLARI -->
-        <div class="flex flex-col items-center text-center p-6 bg-white border border-[#EBEBEB] hover:border-[#006039] shadow-xs hover:shadow-lg transition-all duration-300 rounded-xs">
-          <div class="w-28 h-28 rounded-full border border-[#E0E0E0] bg-[#FAFAFA] flex items-center justify-center p-5 mb-6">
-            <img src="/media/projelendirme/icon-cafe.webp" alt="Cafe-Restoran Tasarımları İkonu" class="w-full h-full object-contain filter contrast-125" width="80" height="80" loading="lazy" />
-          </div>
-
-          <h3 class="text-xs sm:text-sm font-extrabold uppercase tracking-[0.18em] text-[#111111] mb-2 font-sans">
-            CAFE-RESTORAN TASARIMLARI
-          </h3>
-          <h4 class="text-sm sm:text-base font-semibold text-[#222222] mb-4" style="font-family: 'Playfair Display', Georgia, serif;">
-            Estetik ve Konforu Buluşturan Özel Yaşam Alanları
-          </h4>
-
-          <div class="space-y-3 text-[12px] sm:text-[12.5px] text-[#555555] font-light leading-relaxed text-justify">
-            <p>
-              Cafe ve restoran projelerinde, kullanıcıların mekânda geçirdiği zamanı özel kılan özgün atmosferler oluşturmayı hedefliyoruz. Her projede markanın kimliğine ve hedef kitlesine uygun bir mekânsal deneyim tasarlarken; tasarımlarımızı işlevsel, estetik, konfor, akustik ve doğru aydınlatma gibi unsurlar ile özenle kurguluyoruz.
-            </p>
-            <p>
-              Uzun ömürlü malzeme seçimleri, renk ve malzeme uyumu, mekânsal odak noktalarıyla markanın karakterini belirginleştiriyor; marka kimliğini destekleyen ve müşterilere eşsiz bir deneyim sunan tasarımlar üretiyoruz.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ===================================================================== -->
-  <!-- 3. "3D RENDER vs FIT-OUT" BÖLÜMÜ (SAF BEYAZ & AYDINLIK MİMARİ TEMA) -->
-  <!-- ===================================================================== -->
-  <section id="render-vs-fitout" class="py-20 sm:py-24 bg-[#FAFAFA] border-b border-[#E5E5E5]">
-    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-      
-      <!-- Başlık ve Filtre Açıklaması -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-[#E0E0E0] pb-6">
-        <div class="space-y-1.5">
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-light text-[#111111] tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
-            3D RENDER <span class="font-normal italic text-[#006039]">vs</span> FIT-OUT UYGULAMA
-          </h2>
-          <p class="text-xs sm:text-sm text-[#666666] font-light max-w-xl leading-relaxed">
-            3 boyutlu mimari projelendirme ile şantiyede anahtar teslim edilen gerçek mekân arasındaki birebir sadakat.
-          </p>
-        </div>
-
-        <div class="flex items-center gap-4 text-xs font-medium text-[#444444]">
-          <span class="inline-flex items-center gap-1.5">
-            <span class="w-3 h-3 bg-[#555555] rounded-2xs inline-block"></span> <span>Sol: 3D Render</span>
-          </span>
-          <span class="inline-flex items-center gap-1.5">
-            <span class="w-3 h-3 bg-[#006039] rounded-2xs inline-block"></span> <span>Sağ: Gerçekleşen Fit-Out</span>
-          </span>
-        </div>
-      </div>
-
-      <!-- 8 Render vs Reality Split Panoları (Beyaz Kartlar Üzerinde) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {renderVsFitoutProjects.map((p) => (
-          <div class="bg-white border border-[#E5E5E5] hover:border-[#006039] transition-all duration-300 rounded-xs overflow-hidden shadow-xs hover:shadow-md flex flex-col justify-between group">
-            
-            <!-- Resim Panosu (1024x427 Split Görsel) -->
-            <div class="relative overflow-hidden aspect-[16/7] bg-[#F0F0F0]">
-              <img 
-                src={p.img} 
-                alt={`${p.title} 3D Render vs Fit-Out Karşılaştırması`} 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                loading="lazy"
-                width="1024"
-                height="427"
-              />
-              <!-- Rozetler -->
-              <div class="absolute top-3 left-3 px-2 py-0.5 bg-black/75 text-white text-[9.5px] font-bold uppercase tracking-wider backdrop-blur-xs">
-                3D RENDER
-              </div>
-              <div class="absolute top-3 right-3 px-2 py-0.5 bg-[#006039]/90 text-white text-[9.5px] font-bold uppercase tracking-wider backdrop-blur-xs">
-                FIT-OUT UYGULAMA
-              </div>
-            </div>
-
-            <!-- Bilgi Satırları -->
-            <div class="p-5 space-y-2">
-              <div class="flex items-center justify-between text-[11px] font-semibold text-[#006039] uppercase tracking-wider">
-                <span>{p.category}</span>
-                <span class="text-[#888888] font-normal">{p.location}</span>
-              </div>
-              
-              <h3 class="text-lg font-medium text-[#111111] group-hover:text-[#006039] transition" style="font-family: 'Playfair Display', Georgia, serif;">
-                {p.title}
-              </h3>
-              
-              <p class="text-xs text-[#555555] font-light leading-relaxed">
-                {p.scope}
-              </p>
-
-              <div class="pt-2 text-[11px] text-[#777777] border-t border-[#F0F0F0] flex items-center justify-between">
-                <span>{p.specs}</span>
-                <span class="text-[#006039] font-bold">✓ Birebir Uygunluk</span>
-              </div>
-            </div>
-
-          </div>
-        ))}
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ===================================================================== -->
-  <!-- 4. SEÇİLMİŞ REFERANS UYGULAMALAR (BEYAZ TEMA & TÜRKÇE MARKALAMA) -->
-  <!-- ===================================================================== -->
-  <section class="py-20 sm:py-24 bg-white border-b border-[#E5E5E5]">
-    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-      
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-[#E5E5E5] pb-6">
-        <div class="space-y-1.5">
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-light text-[#111111] tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
-            Seçilmiş <span class="font-normal italic">Ticari Uygulamalar</span>
-          </h2>
-          <p class="text-xs sm:text-sm text-[#666666] font-light max-w-xl leading-relaxed">
-            Kurumsal kimliğe özel üretilen yönetim ofisleri, açık çalışma alanları ve perakende mağazaları.
-          </p>
-        </div>
-
-        <a 
-          href="https://wa.me/905324261788?text=Merhaba,%20kurumsal%20ticari%20projelerinizin%20sunum%20dosyasını%20almak%20istiyorum." 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="text-xs font-bold uppercase tracking-widest text-[#006039] hover:underline inline-flex items-center gap-1.5"
-        >
-          <span>Ticari Proje Sunumunu WhatsApp'tan İste</span> <span>→</span>
-        </a>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {selectedCommercialProjects.map((proj) => (
-          <div class="space-y-3 group bg-[#FAFAFA] border border-[#E5E5E5] p-4 rounded-xs">
-            <div class="relative overflow-hidden aspect-[16/10] bg-[#EBEBEB]">
-              <img 
-                src={proj.img} 
-                alt={proj.title} 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                loading="lazy"
-                width="800"
-                height="500"
-              />
-              <div class="absolute bottom-3 left-3 px-2.5 py-1 bg-black/75 text-white text-[10px] font-bold tracking-wider uppercase backdrop-blur-xs">
-                {proj.area} • {proj.location}
-              </div>
-            </div>
-
-            <div class="space-y-1 pt-1">
-              <div class="text-[10.5px] uppercase tracking-wider text-[#006039] font-bold">
-                {proj.type}
-              </div>
-              <h3 class="text-lg font-medium text-[#111111] group-hover:text-[#006039] transition" style="font-family: 'Playfair Display', Georgia, serif;">
-                {proj.title}
-              </h3>
-              <p class="text-xs text-[#555555] leading-relaxed font-light">
-                {proj.desc}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ===================================================================== -->
-  <!-- 5. 4 AŞAMALI B2B MİMARİ SÜREÇ (SAF BEYAZ ZEMİN) -->
-  <!-- ===================================================================== -->
-  <section class="py-20 sm:py-24 bg-[#FAFAFA] border-b border-[#E5E5E5]">
-    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-      
-      <div class="text-center max-w-3xl mx-auto space-y-2">
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-light text-[#111111]" style="font-family: 'Playfair Display', Georgia, serif;">
-          Konseptten Anahtar Teslime <span class="font-normal italic">4 Aşamalı B2B Süreç</span>
-        </h2>
-        <p class="text-xs sm:text-sm text-[#666666]">
-          Bütçe aşımına izin vermeyen, iş takvimini aksatmayan disiplinli proje yönetimi.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-        
-        <div class="p-6 bg-white border border-[#E5E5E5] space-y-3">
-          <div class="text-2xl font-light text-[#006039]" style="font-family: 'Playfair Display', Georgia, serif;">01</div>
-          <h3 class="text-xs font-bold uppercase tracking-wider text-[#111111]">Rölöve & Brifing</h3>
-          <p class="text-xs text-[#555555] leading-relaxed font-light">
-            Mekânın 3D lazer rölövesi alınır; çalışan sayısı, sirkülasyon şeması, marka kimliği ve akustik hedefler belirlenir.
-          </p>
-        </div>
-
-        <div class="p-6 bg-white border border-[#E5E5E5] space-y-3">
-          <div class="text-2xl font-light text-[#006039]" style="font-family: 'Playfair Display', Georgia, serif;">02</div>
-          <h3 class="text-xs font-bold uppercase tracking-wider text-[#111111]">3D Tasarım & Modelleme</h3>
-          <p class="text-xs text-[#555555] leading-relaxed font-light">
-            Aydınlatma, tavan, zemin, renk ve mobilya detaylarını içeren fotogerçekçi 3D mimari çizimler hazırlanır.
-          </p>
-        </div>
-
-        <div class="p-6 bg-white border border-[#E5E5E5] space-y-3">
-          <div class="text-2xl font-light text-[#006039]" style="font-family: 'Playfair Display', Georgia, serif;">03</div>
-          <h3 class="text-xs font-bold uppercase tracking-wider text-[#111111]">Uygulama Projeleri</h3>
-          <p class="text-xs text-[#555555] leading-relaxed font-light">
-            Elektrik kablolama, veri hatları, havalandırma ve yangın altyapı projeleri çizilir; net malzeme bütçe cetveli sözleşmeye bağlanır.
-          </p>
-        </div>
-
-        <div class="p-6 bg-white border border-[#E5E5E5] space-y-3">
-          <div class="text-2xl font-light text-[#006039]" style="font-family: 'Playfair Display', Georgia, serif;">04</div>
-          <h3 class="text-xs font-bold uppercase tracking-wider text-[#111111]">Atölye & Şantiye Teslimi</h3>
-          <p class="text-xs text-[#555555] leading-relaxed font-light">
-            Mobilyalar doğrudan kendi Adatepe CNC atölyemizde imal edilir; şantiyede vardiyalı ekiplerle taahhüt gününde teslim edilir.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ===================================================================== -->
-  <!-- 6. KURUMSAL B2B TEKLİF & İLETİŞİM ALANI (SAF BEYAZ & AYDINLIK KART) -->
-  <!-- ===================================================================== -->
-  <section class="py-20 sm:py-24 bg-white border-b border-[#E5E5E5]">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-10">
-      
-      <div class="text-center space-y-2">
-        <h2 class="text-2xl sm:text-4xl font-light text-[#111111]" style="font-family: 'Playfair Display', Georgia, serif;">
-          Yeni Ofis, Mağaza veya Ticari Projenizi <br /><span class="font-normal italic text-[#006039]">Birlikte Hayata Geçirelim</span>
-        </h2>
-        <p class="text-xs sm:text-sm text-[#666666] font-light max-w-lg mx-auto leading-relaxed">
-          İç mimarlarımız projenizi yerinde incelesin; 3D konsept çizim, detaylı metraj cetveli ve anahtar teslim fit-out teklifinizi hazırlayalım.
-        </p>
-      </div>
-
-      <div class="p-8 sm:p-10 bg-[#FAFAFA] border border-[#E0E0E0] rounded-xs space-y-8">
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-[#E5E5E5]">
-          <div class="space-y-1.5 pt-3 md:pt-0">
-            <div class="text-xl">📞</div>
-            <div class="text-[11px] uppercase tracking-wider text-[#777777] font-bold">Kurumsal Sabit Hat</div>
-            <a href="tel:02324411060" class="text-base font-bold text-[#111111] hover:text-[#006039] transition block">0232 441 10 60</a>
-          </div>
-
-          <div class="space-y-1.5 pt-3 md:pt-0">
-            <div class="text-xl">💬</div>
-            <div class="text-[11px] uppercase tracking-wider text-[#006039] font-bold">VIP WhatsApp Proje Hattı</div>
-            <a href="https://wa.me/905324261788?text=Merhaba,%20ticari%20projelendirme%20ve%20fit-out%20hakkında%20görüşmek%20istiyorum." target="_blank" rel="noopener noreferrer" class="text-base font-bold text-[#006039] hover:underline block">0532 426 17 88</a>
-          </div>
-
-          <div class="space-y-1.5 pt-3 md:pt-0">
-            <div class="text-xl">📍</div>
-            <div class="text-[11px] uppercase tracking-wider text-[#777777] font-bold">Showroom & İmalat</div>
-            <div class="text-xs text-[#555555] leading-snug">Gaziler Showroom & Adatepe Atölyesi Buca / İzmir</div>
-          </div>
-        </div>
-
-        <div class="text-center pt-2 border-t border-[#E5E5E5]">
-          <a 
-            href="https://wa.me/905324261788?text=Merhaba,%20ofis/mağaza/restoran%20projemiz%20için%20ücretsiz%20yerinde%20mimari%20keşif%20ve%203D%20sunum%20istiyoruz." 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="w-full sm:w-auto px-8 py-3.5 bg-[#006039] hover:bg-[#00482B] text-white font-bold text-xs uppercase tracking-widest inline-flex items-center justify-center gap-2 shadow-sm transition"
+      <!-- Slide Görselleri -->
+      <div class="relative w-full h-[580px] md:h-[680px] lg:h-[760px]">
+        {heroSlides.map((slide, index) => (
+          <div
+            class="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+            x-show={`activeSlide === ${index}`}
+            x-transition:enter="opacity-0"
+            x-transition:enter-end="opacity-100"
+            x-transition:leave="opacity-100"
+            x-transition:leave-end="opacity-0"
           >
-            <span>💬</span> <span>WhatsApp ile Ücretsiz Ticari Keşif Randevusu Al</span>
+            <img
+              src={slide.resim}
+              alt={slide.baslik}
+              class="w-full h-full object-cover object-center transform scale-100 transition-transform duration-7000 ease-out"
+              loading={index === 0 ? "eager" : "lazy"}
+            />
+            <!-- Gradient Overlay: OSO Mimarlık Saf Minimalist Gradyan -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/40"></div>
+
+            <!-- Mimari Başlık & Tipografi Grubu (Alt Sol / Merkez) -->
+            <div class="absolute inset-0 flex items-end">
+              <div class="max-w-7xl mx-auto px-6 lg:px-12 pb-16 md:pb-24 w-full">
+                <div class="max-w-3xl space-y-4">
+                  <div class="inline-flex items-center gap-3">
+                    <span class="w-8 h-[2px] bg-amber-500"></span>
+                    <span class="text-xs md:text-sm font-semibold tracking-[0.25em] uppercase text-amber-400">
+                      {slide.kategori}
+                    </span>
+                  </div>
+                  <h2 class="text-3xl md:text-5xl lg:text-6xl font-light text-white tracking-tight leading-tight">
+                    {slide.baslik}
+                  </h2>
+                  <p class="text-sm md:text-base text-slate-300 font-normal leading-relaxed max-w-2xl">
+                    {slide.aciklama}
+                  </p>
+                  <div class="pt-4 flex flex-wrap items-center gap-4">
+                    <a
+                      href="#ticari-projeler"
+                      class="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 text-xs md:text-sm font-semibold tracking-wider uppercase hover:bg-amber-500 hover:text-white transition-colors duration-200"
+                    >
+                      <span>Projeyi İncele</span>
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                    <a
+                      href="#kurumsal-teklif"
+                      class="inline-flex items-center gap-2 px-6 py-3 border border-white/40 text-white text-xs md:text-sm font-semibold tracking-wider uppercase hover:bg-white/10 hover:border-white transition-colors duration-200"
+                    >
+                      <span>Projenizi Başlatın</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Slider Kontrolleri (Oklar & Göstergeler) -->
+      <div class="absolute bottom-8 right-6 md:right-12 z-20 flex items-center gap-3">
+        <button
+          type="button"
+          @click="activeSlide = (activeSlide - 1 + totalSlides) % totalSlides"
+          class="w-10 h-10 rounded-full border border-white/30 bg-black/40 hover:bg-white hover:text-slate-900 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
+          aria-label="Önceki Proje"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+        <span class="text-xs font-mono tracking-widest text-white/80">
+          <span x-text="String(activeSlide + 1).padStart(2, 0)"></span> / 04
+        </span>
+        <button
+          type="button"
+          @click="activeSlide = (activeSlide + 1) % totalSlides"
+          class="w-10 h-10 rounded-full border border-white/30 bg-black/40 hover:bg-white hover:text-slate-900 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
+          aria-label="Sonraki Proje"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+      </div>
+
+      <!-- Çizgisel Slide İlerleme Çubukları -->
+      <div class="absolute bottom-0 left-0 right-0 h-1 bg-white/10 flex">
+        {heroSlides.map((_, i) => (
+          <div class="flex-1 h-full bg-white/20 relative overflow-hidden">
+            <div
+              class="h-full bg-amber-500 transition-all duration-300"
+              :class={`activeSlide === ${i} ? w-full : w-0`}
+            ></div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- BÖLÜM 2: OSO MİMARLIK BİREBİR MANİFESTO VE ANA BAŞLIK -->
+    <section class="py-20 md:py-24 border-b border-slate-200/80">
+      <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+        <span class="inline-block text-xs font-semibold tracking-[0.3em] uppercase text-amber-700 bg-amber-50 border border-amber-200/60 px-4 py-1.5 rounded-full">
+          MİMARİ TASARIM & FIT-OUT YÖNETİMİ
+        </span>
+        <h1 class="text-3xl md:text-5xl font-light text-slate-900 tracking-tight leading-snug">
+          Mimarlık Ofisi ve İç Mimarlık Alanında <strong class="font-semibold text-slate-950">FIT-OUT Uygulama</strong> Hizmetleri
+        </h1>
+        <div class="w-16 h-1 bg-amber-500 mx-auto"></div>
+        <p class="text-base md:text-lg text-slate-600 font-normal leading-relaxed text-justify md:text-center">
+          Yeşilay Mimarlık; modern ve çağdaş mimarlık anlayışını estetik, işlevsel ve yaratıcı çözümlerle birleştirerek her ölçekte yenilikçi mekânlar tasarlar. Firmamız mimari – iç mimari tasarım ve projelendirme ile anahtar teslim (fit-out) uygulama hizmetleri sunar. Tasarımdan uygulamaya uzanan tüm süreçlerde detay odaklı yaklaşımı ve teknik uzmanlığıyla; ofis, mağaza, konut ve cafe-restoran gibi tüm ticari ve yaşam alanlarını konforlu, prestijli ve yüksek verimli hâle getiriyoruz.
+        </p>
+      </div>
+    </section>
+
+    <!-- BÖLÜM 3: 4 TEMEL DİREK (KULLANICI GÖRSELİNDEKİ ORİJİNAL İKONLAR & BİREBİR METİNLER) -->
+    <section class="py-20 bg-slate-50/70 border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <!-- 1. OFİS TASARIMLARI -->
+          <div class="bg-white rounded-lg p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+            <h3 class="text-lg font-bold text-slate-900 tracking-wider uppercase mb-6 pb-2 border-b-2 border-amber-500 inline-block">
+              OFİS TASARIMLARI
+            </h3>
+            <div class="w-28 h-28 mb-6 rounded-full overflow-hidden border-2 border-slate-200 shadow-inner p-1 bg-slate-50 flex items-center justify-center">
+              <img src="/images/projelendirme/icon-ofis.webp" alt="Ofis Tasarımları" class="w-full h-full object-cover rounded-full" />
+            </div>
+            <h4 class="text-sm font-semibold text-slate-900 tracking-[0.2em] uppercase mb-4">
+              Yenilikçi Çalışma Alanları
+            </h4>
+            <div class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify space-y-3">
+              <p>Günümüz ofislerinde, mekânın şirket kurumsal kimliği ile uyumu ve çalışanların yüksek motivasyonu, verimlilik açısından büyük önem taşır. Bu doğrultuda modern çalışma kültürüne; estetik, işlevsellik ve kullanıcı memnuniyeti kazandırarak yenilikçi ofis mekânları tasarlıyoruz.</p>
+              <p>Aydınlatma, akustik konfor, malzeme seçimi ve yeni nesil ofis ihtiyaçlarını titizlikle ele alarak üretkenliği destekleyen bütüncül çözümler sunuyoruz.</p>
+            </div>
+          </div>
+
+          <!-- 2. MAĞAZA TASARIMLARI -->
+          <div class="bg-white rounded-lg p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+            <h3 class="text-lg font-bold text-slate-900 tracking-wider uppercase mb-6 pb-2 border-b-2 border-amber-500 inline-block">
+              MAĞAZA TASARIMLARI
+            </h3>
+            <div class="w-28 h-28 mb-6 rounded-full overflow-hidden border-2 border-slate-200 shadow-inner p-1 bg-slate-50 flex items-center justify-center">
+              <img src="/images/projelendirme/icon-magaza.webp" alt="Mağaza Tasarımları" class="w-full h-full object-cover rounded-full" />
+            </div>
+            <h4 class="text-sm font-semibold text-slate-900 tracking-[0.2em] uppercase mb-4">
+              Marka Kimliğini Güçlendiren Çözümler
+            </h4>
+            <div class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify space-y-3">
+              <p>Perakende ve mağazacılık sektöründe tasarım; sadece estetik bir değer değil, doğrudan satış başarısını ve müşteri bağlılığını artıran stratejik bir araçtır.</p>
+              <p>Müşteri dolaşım rotalarından ürün sergileme ünitelerine, doğru aydınlatma kurgusundan vitrin cazibesine kadar her detayı ticari başarı odaklı olarak projelendiriyoruz.</p>
+            </div>
+          </div>
+
+          <!-- 3. KONUT TASARIMLARI -->
+          <div class="bg-white rounded-lg p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+            <h3 class="text-lg font-bold text-slate-900 tracking-wider uppercase mb-6 pb-2 border-b-2 border-amber-500 inline-block">
+              KONUT TASARIMLARI
+            </h3>
+            <div class="w-28 h-28 mb-6 rounded-full overflow-hidden border-2 border-slate-200 shadow-inner p-1 bg-slate-50 flex items-center justify-center">
+              <img src="/images/projelendirme/icon-konut.webp" alt="Konut Tasarımları" class="w-full h-full object-cover rounded-full" />
+            </div>
+            <h4 class="text-sm font-semibold text-slate-900 tracking-[0.2em] uppercase mb-4">
+              Yaşam Tarzını Yansıtan Zamansız İç Mekânlar
+            </h4>
+            <div class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify space-y-3">
+              <p>Konut projelerinde, kullanıcıların kişisel zevklerini, yaşam alışkanlıklarını ve konfor beklentilerini tasarımın odağına yerleştiriyoruz.</p>
+              <p>Doğal ışık kullanımı, birinci sınıf malzeme dengesi ve fonksiyonel yerleşim planlarıyla yaşam alanlarınızı zamansız bir huzur ve prestij alanına dönüştürüyoruz.</p>
+            </div>
+          </div>
+
+          <!-- 4. CAFE-RESTORAN TASARIMLARI -->
+          <div class="bg-white rounded-lg p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center">
+            <h3 class="text-lg font-bold text-slate-900 tracking-wider uppercase mb-6 pb-2 border-b-2 border-amber-500 inline-block">
+              CAFE-RESTORAN TASARIMLARI
+            </h3>
+            <div class="w-28 h-28 mb-6 rounded-full overflow-hidden border-2 border-slate-200 shadow-inner p-1 bg-slate-50 flex items-center justify-center">
+              <img src="/images/projelendirme/icon-cafe.webp" alt="Cafe ve Restoran Tasarımları" class="w-full h-full object-cover rounded-full" />
+            </div>
+            <h4 class="text-sm font-semibold text-slate-900 tracking-[0.2em] uppercase mb-4">
+              Estetik ve Konforu Buluşturan Yaşam Alanları
+            </h4>
+            <div class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify space-y-3">
+              <p>Yeme-içme mekanlarında ambiyans, müşterinin mekanda geçirdiği vaktin kalitesini belirleyen en kritik etkendir.</p>
+              <p>Akustik dengeden operasyonel mutfak-servis akışına kadar tüm bileşenleri harmanlayarak, misafirleri içine çeken unutulmaz gastro-mekanlar inşa ediyoruz.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BÖLÜM 4: 20 TİCARİ PROJE & MAĞAZA PORTFÖYÜ (YENİ YÜKLENEN GÖRSELLERLE MİMARİ VİTRİN) -->
+    <section id="ticari-projeler" class="py-24 border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <!-- Bölüm Başlığı -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div class="space-y-3">
+            <span class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-700">
+              GÜNCEL PORTFÖY & UYGULAMALAR
+            </span>
+            <h2 class="text-3xl md:text-4xl font-light text-slate-900 tracking-tight">
+              Ticari Projeler & <strong class="font-semibold text-slate-950">Mağaza Tasarımları</strong>
+            </h2>
+            <p class="text-sm md:text-base text-slate-600 max-w-2xl font-normal">
+              Perakende mağazaları, kurumsal merkezler ve ticari yaşam alanlarında projelendirmeden anahtar teslim şantiyeye kadar imza attığımız seçkin çalışmalar.
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-slate-100 text-slate-700 text-xs font-mono">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              20 Seçkin Proje
+            </span>
+          </div>
+        </div>
+
+        <!-- 20 Proje Grid (3 Sütunlu OSO Mimarlık Portföy Düzeni) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {commercialProjects.map((proj) => (
+            <article class="group bg-white rounded-lg overflow-hidden border border-slate-200 hover:border-slate-400 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+              <!-- Resim Alanı -->
+              <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                <img
+                  src={proj.dosya}
+                  alt={proj.baslik}
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                  loading="lazy"
+                />
+                <!-- Kategori Rozeti -->
+                <div class="absolute top-4 left-4">
+                  <span class="px-3 py-1 bg-white/95 backdrop-blur-sm text-slate-900 text-[11px] font-bold tracking-wider uppercase rounded shadow-sm border border-slate-200/60">
+                    {proj.marka}
+                  </span>
+                </div>
+                <!-- Konum Rozeti -->
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded">
+                  <span>{proj.konum}</span>
+                  <span class="font-mono text-amber-400">#{String(proj.no).padStart(2, 0)}</span>
+                </div>
+              </div>
+
+              <!-- Metin Alanı -->
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div class="space-y-2">
+                  <span class="text-[11px] font-semibold tracking-wider text-amber-700 uppercase">
+                    {proj.kategori}
+                  </span>
+                  <h3 class="text-base font-semibold text-slate-900 group-hover:text-amber-700 transition-colors duration-200 leading-snug">
+                    {proj.baslik}
+                  </h3>
+                </div>
+                <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                  <span class="font-medium text-slate-700">Fit-Out & İmalat</span>
+                  <span class="inline-flex items-center gap-1 text-slate-900 font-semibold group-hover:translate-x-1 transition-transform duration-200">
+                    İncele
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                  </span>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BÖLÜM 5: 3D RENDER vs UYGULAMA (FIT-OUT GÜCÜ VE KALİTE KANITI) -->
+    <section class="py-24 bg-slate-50/60 border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-700">
+            MİMARİ DOĞRULAMA & PROJE DİSİPLİNİ
+          </span>
+          <h2 class="text-3xl md:text-4xl font-light text-slate-900 tracking-tight">
+            3D Görselleştirme ile <strong class="font-semibold text-slate-950">Birebir Uygulama</strong> Uyumu
+          </h2>
+          <div class="w-12 h-1 bg-amber-500 mx-auto"></div>
+          <p class="text-sm md:text-base text-slate-600 font-normal">
+            İşverenlerimize sunduğumuz 3D mimari projeler ile anahtar teslim tamamlanan şantiyelerimiz arasında %99 görsel ve boyutsal sadakat taahhüt ediyoruz.
+          </p>
+        </div>
+
+        <!-- Karşılaştırma Split Kartları -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-lg p-6 border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-900">Kuzey Plaza Yönetim Katı</span>
+              <span class="text-xs text-amber-700 font-semibold">Bayraklı / İzmir</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <div class="space-y-1.5">
+                <div class="aspect-video bg-slate-100 rounded overflow-hidden border border-slate-200">
+                  <img src="/images/projelendirme/render-01.webp" alt="3D Render" class="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <p class="text-[11px] font-mono text-slate-500 text-center uppercase tracking-wider">3D Onaylanan Tasarım</p>
+              </div>
+              <div class="space-y-1.5">
+                <div class="aspect-video bg-slate-100 rounded overflow-hidden border border-slate-200">
+                  <img src="/images/projelendirme/fitout-01.webp" alt="Fit-Out Uygulama" class="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <p class="text-[11px] font-mono text-emerald-600 text-center uppercase tracking-wider font-semibold">Tamamlanan Uygulama</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed pt-2">
+              Özel akustik ahşap çıtalama, gizli aydınlatmalı lineer tavan sistemleri ve kurumsal toplantı mobilyaları sıfır sapma ile teslim edilmiştir.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-900">Ege Global Lojistik Merkezi</span>
+              <span class="text-xs text-amber-700 font-semibold">Bornova / İzmir</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <div class="space-y-1.5">
+                <div class="aspect-video bg-slate-100 rounded overflow-hidden border border-slate-200">
+                  <img src="/images/projelendirme/render-02.webp" alt="3D Render" class="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <p class="text-[11px] font-mono text-slate-500 text-center uppercase tracking-wider">3D Onaylanan Tasarım</p>
+              </div>
+              <div class="space-y-1.5">
+                <div class="aspect-video bg-slate-100 rounded overflow-hidden border border-slate-200">
+                  <img src="/images/projelendirme/fitout-02.webp" alt="Fit-Out Uygulama" class="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <p class="text-[11px] font-mono text-emerald-600 text-center uppercase tracking-wider font-semibold">Tamamlanan Uygulama</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed pt-2">
+              Açık ofis ergonomisi, cam bölme duvar sistemleri ve entegre elektrik-zayıf akım altyapısı iş programına tam uyumlu olarak devreye alınmıştır.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BÖLÜM 6: B2B TİCARİ İŞ SÜRECİ (4 ADIMDA ŞEFFAF YÖNETİM) -->
+    <section class="py-24 border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-700">
+            PROJE PROTOKOLÜ
+          </span>
+          <h2 class="text-3xl md:text-4xl font-light text-slate-900 tracking-tight">
+            Tasarımdan Teslime <strong class="font-semibold text-slate-950">4 Adımlı Süreç</strong>
+          </h2>
+          <div class="w-12 h-1 bg-amber-500 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-8 rounded-lg border border-slate-200 space-y-4">
+            <span class="text-3xl font-light text-amber-500 font-mono">01</span>
+            <h3 class="text-base font-bold text-slate-900 uppercase tracking-wider">Keşif & İhtiyaç Analizi</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+              Mekanın rölövesi alınır, kurumsal kimlik hedefleri, operasyonel iş akışları ve bütçe sınırları netleştirilir.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-lg border border-slate-200 space-y-4">
+            <span class="text-3xl font-light text-amber-500 font-mono">02</span>
+            <h3 class="text-base font-bold text-slate-900 uppercase tracking-wider">3D Konsept & Proje</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+              Fotogerçekçi 3D modellemeler, malzeme numuneleri ve mekan yerleşim planları hazırlanarak işverene sunulur.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-lg border border-slate-200 space-y-4">
+            <span class="text-3xl font-light text-amber-500 font-mono">03</span>
+            <h3 class="text-base font-bold text-slate-900 uppercase tracking-wider">Bütçe & Şantiye Takvimi</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+              Tüm imalat ve fit-out kalemleri detaylı metraj ve sabit fiyat garantisiyle sözleşmeye bağlanır, şantiye takvimi çıkarılır.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-lg border border-slate-200 space-y-4">
+            <span class="text-3xl font-light text-amber-500 font-mono">04</span>
+            <h3 class="text-base font-bold text-slate-900 uppercase tracking-wider">Fit-Out İcra & Teslim</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+              Kendi atölyemizde üretilen özel mobilyalar ve şantiye ekiplerimizle anahtar teslim eksiksiz montaj ve teslimat gerçekleştirilir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BÖLÜM 7: KURUMSAL TEKLİF & İLETİŞİM ALANI -->
+    <section id="kurumsal-teklif" class="py-24 bg-slate-900 text-white">
+      <div class="max-w-5xl mx-auto px-6 text-center space-y-8">
+        <span class="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-amber-400 bg-white/10 px-4 py-1.5 rounded-full">
+          B2B KURUMSAL İŞBİRLİĞİ
+        </span>
+        <h2 class="text-3xl md:text-5xl font-light tracking-tight text-white">
+          Ticari Mekanınız İçin <strong class="font-semibold text-amber-400">Mimari Teklif</strong> Alın
+        </h2>
+        <p class="text-sm md:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          Mağaza zinciriniz, ofis merkeziniz veya ticari mekanınız için rölöve, konsept tasarım, 3D görselleştirme ve anahtar teslim fit-out bütçelendirmesini birlikte planlayalım.
+        </p>
+
+        <div class="pt-4 flex flex-wrap justify-center items-center gap-4">
+          <a
+            href="https://wa.me/905446348344?text=Merhaba,%20ticari%20proje%20ve%20ma%C4%9Faza%20projelendirme%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-3 px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold tracking-wider uppercase rounded shadow-lg transition-colors duration-200"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span>WhatsApp ile İletişime Geçin</span>
+          </a>
+          <a
+            href="tel:+905446348344"
+            class="inline-flex items-center gap-3 px-8 py-4 border border-white/30 hover:border-white hover:bg-white/10 text-white text-sm font-semibold tracking-wider uppercase rounded transition-colors duration-200"
+          >
+            <span>0544 634 83 44</span>
           </a>
         </div>
-
       </div>
+    </section>
 
-    </div>
-  </section>
-
-
-  <!-- ===================================================================== -->
-  <!-- 7. SIKÇA SORULAN SORULAR (SAF BEYAZ ZEMİN) -->
-  <!-- ===================================================================== -->
-  <section class="py-20 sm:py-24 bg-[#FAFAFA]">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-8">
-      
-      <div class="text-center space-y-1.5">
-        <h2 class="text-2xl sm:text-3xl font-light text-[#111111]" style="font-family: 'Playfair Display', Georgia, serif;">
-          Ticari Projelendirme & Fit-Out <span class="font-bold">Sıkça Sorulan Sorular</span>
-        </h2>
-        <p class="text-xs text-[#666666]">Kurumsal müşterilerimizin şantiye ve projelendirme süreçleri hakkında en çok merak ettikleri.</p>
-      </div>
-
-      <div class="space-y-3">
-        {seo.faqList.map((faq) => (
-          <div class="p-5 bg-white border border-[#E5E5E5] space-y-1.5 rounded-xs">
-            <h3 class="text-sm font-bold text-[#111111]">{faq.question}</h3>
-            <p class="text-xs text-[#555555] leading-relaxed font-light">{faq.answer}</p>
-          </div>
-        ))}
-      </div>
-
-    </div>
-  </section>
-
+  </main>
 </Layout>

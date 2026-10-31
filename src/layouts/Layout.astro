@@ -118,7 +118,7 @@ const { seo, activeService } = Astro.props;
     <link rel="service-doc" type="application/json" href="/.well-known/agent.json" title="Autonomous Agent Protocol" />
 
   </head>
-  <body class="min-h-screen flex flex-col font-sans bg-[#FAF9F6] text-[#1D1D1F] overflow-x-hidden antialiased selection:bg-[#006039] selection:text-white">
+  <body class="min-h-screen flex flex-col font-sans architect-grid-bg text-[#1D1D1F] overflow-x-hidden antialiased selection:bg-[#006039] selection:text-white">
     <Header />
     <main id="main-content" class="flex-1 w-full overflow-hidden">
       <slot />
@@ -244,4 +244,17 @@ const { seo, activeService } = Astro.props;
     transform: translateY(-5px);
     box-shadow: 0 20px 40px -10px rgba(0, 96, 57, 0.12);
   }
+
+  /* Mimari Teknik Cizim Milimetrik Grid Deseni (Tum Site Genelinde) */
+  .architect-grid-bg {
+    background-color: #FAF9F6;
+    background-image: 
+      linear-gradient(to right, rgba(29, 29, 31, 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(29, 29, 31, 0.035) 1px, transparent 1px),
+      linear-gradient(to right, rgba(29, 29, 31, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(29, 29, 31, 0.06) 1px, transparent 1px);
+    background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
+    background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+
 </style>
