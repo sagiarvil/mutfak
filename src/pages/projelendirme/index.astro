@@ -114,8 +114,8 @@ const seo = {
       }
     }" x-init="startAuto()" @mouseenter="stopAuto()" @mouseleave="startAuto()">
 
-      <!-- Slide Görselleri -->
-      <div class="relative w-full h-[580px] md:h-[680px] lg:h-[760px]">
+      <!-- Slide Görselleri (Her Ekranda %100 Görünür, Taşmayan Dinamik Viewport) -->
+      <div class="relative w-full h-[calc(100svh-72px)] sm:h-[calc(100svh-80px)] lg:h-[calc(100svh-88px)] min-h-[500px] max-h-[900px] overflow-hidden">
         {heroSlides.map((slide, index) => (
           <div
             class="absolute inset-0 transition-opacity duration-1000 ease-in-out"
@@ -136,7 +136,7 @@ const seo = {
 
             <!-- Mimari Başlık & Tipografi Grubu (Alt Sol / Merkez) -->
             <div class="absolute inset-0 flex items-end">
-              <div class="max-w-7xl mx-auto px-6 lg:px-12 pb-16 md:pb-24 w-full">
+              <div class="max-w-7xl mx-auto px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-20 w-full">
                 <div class="max-w-3xl space-y-4">
                   <div class="inline-flex items-center gap-3">
                     <span class="w-8 h-[2px] bg-amber-500"></span>
@@ -173,7 +173,7 @@ const seo = {
       </div>
 
       <!-- Slider Kontrolleri (Oklar & Göstergeler) -->
-      <div class="absolute bottom-8 right-6 md:right-12 z-20 flex items-center gap-3">
+      <div class="absolute bottom-5 sm:bottom-8 right-4 sm:right-8 lg:right-12 z-20 flex items-center gap-3">
         <button
           type="button"
           @click="activeSlide = (activeSlide - 1 + totalSlides) % totalSlides"
