@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#15231C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Modern Mimari Yönetim Masası & Ofis Kurgusu -->
+  <line x1="8" y1="38" x2="56" y2="38" stroke="#C5A880" stroke-width="2.2"/>
+  <line x1="14" y1="38" x2="14" y2="54"/>
+  <line x1="50" y1="38" x2="50" y2="54"/>
+  <!-- Keson / Çekmece Bloğu -->
+  <rect x="38" y="41" width="12" height="13" rx="1.5" stroke="#15231C" stroke-width="1.5"/>
+  <line x1="42" y1="45" x2="46" y2="45" stroke="#C5A880"/>
+  <line x1="42" y1="49" x2="46" y2="49" stroke="#C5A880"/>
+  <!-- İnce Çerçeveli Monitör / Ekran -->
+  <rect x="22" y="16" width="20" height="14" rx="2" stroke="#15231C" stroke-width="1.8" fill="#F4F1EA"/>
+  <line x1="32" y1="30" x2="32" y2="38"/>
+  <line x1="27" y1="38" x2="37" y2="38"/>
+  <!-- Ergonomik Mimari Çalışma Koltuğu -->
+  <path d="M26 31 C26 26 38 26 38 31" stroke="#C5A880" stroke-width="2"/>
+  <path d="M28 34 L36 34"/>
+  <!-- Mimari Çizim / Plan Rulosu -->
+  <path d="M11 34 Q15 32 18 34" stroke="#C5A880"/>
+</svg>

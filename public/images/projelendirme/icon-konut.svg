@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#15231C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Modern Çizgili Geometrik Villa & Lüks Konut Çatısı -->
+  <path d="M8 32 L32 14 L56 32" stroke="#C5A880" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Konut Ana Gövde -->
+  <rect x="14" y="32" width="36" height="22" rx="1" stroke="#15231C" stroke-width="1.8"/>
+  <line x1="10" y1="54" x2="54" y2="54" stroke="#C5A880" stroke-width="2"/>
+  <!-- Büyük Boy Akıllı Cephe Penceresi (Mimari Çift Kanat) -->
+  <rect x="19" y="36" width="12" height="12" rx="1" stroke="#15231C" stroke-width="1.5" fill="#F4F1EA"/>
+  <line x1="25" y1="36" x2="25" y2="48" stroke="#C5A880"/>
+  <!-- Yüksek Mimari Kapı & Düşey Kulp -->
+  <rect x="35" y="36" width="10" height="18" rx="1" stroke="#15231C" stroke-width="1.5" fill="#FFFFFF"/>
+  <line x1="38" y1="43" x2="38" y2="47" stroke="#C5A880" stroke-width="1.8"/>
+  <!-- Modern Çatı Bacası / Teras Hattı -->
+  <path d="M44 23 L44 17 L49 17 L49 27" stroke="#15231C" stroke-width="1.6"/>
+</svg>

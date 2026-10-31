@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#15231C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Lüks Perakende Vitrin & Butik Askılık Mimarisi -->
+  <!-- Mağaza Portal / Çerçeve -->
+  <path d="M10 54 L10 18 L54 18 L54 54" stroke="#15231C" stroke-width="1.8"/>
+  <line x1="6" y1="54" x2="58" y2="54" stroke="#C5A880" stroke-width="2.2"/>
+  <!-- Portal Üst Saçak / Alınlık Çizgisi -->
+  <line x1="8" y1="18" x2="56" y2="18" stroke="#C5A880" stroke-width="2"/>
+  <rect x="24" y="11" width="16" height="7" rx="1" stroke="#C5A880" stroke-width="1.5" fill="#F4F1EA"/>
+  <!-- Butik Askılık Sistemi (Pirinç Boru Hat) -->
+  <line x1="18" y1="26" x2="46" y2="26" stroke="#C5A880" stroke-width="2"/>
+  <line x1="18" y1="26" x2="18" y2="32"/>
+  <line x1="46" y1="26" x2="46" y2="32"/>
+  <!-- Askıdaki Özel Koleksiyon Tasarımı -->
+  <path d="M32 26 L26 32 L38 32 Z" stroke="#15231C" stroke-width="1.5" fill="none"/>
+  <path d="M26 32 L22 46 L42 46 L38 32 Z" stroke="#15231C" stroke-width="1.6" fill="#F4F1EA"/>
+  <!-- Premium Sergileme Podyumu -->
+  <rect x="16" y="49" width="32" height="5" rx="1" stroke="#15231C" stroke-width="1.5" fill="#FFFFFF"/>
+</svg>

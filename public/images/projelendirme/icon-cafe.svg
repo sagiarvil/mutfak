@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#15231C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Butik Cafe & Gastronomi Mimari Mekan Kurgusu -->
+  <!-- Premium Fincan / Barista Masası -->
+  <path d="M14 30 C14 42 34 42 34 30 Z" stroke="#15231C" stroke-width="2" fill="#F4F1EA"/>
+  <path d="M34 32 C38 32 40 34 40 36 C40 38 38 40 34 40" stroke="#C5A880" stroke-width="2"/>
+  <line x1="11" y1="44" x2="37" y2="44" stroke="#C5A880" stroke-width="2.2"/>
+  <!-- Aromatik Sıcak Buhar / Akustik Atmosfer Çizgileri -->
+  <path d="M20 25 C19 22 22 19 21 16" stroke="#C5A880" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M27 25 C26 22 29 19 28 16" stroke="#C5A880" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Mimari Şarap Kadehi / Restoran Ambiyansı -->
+  <path d="M44 22 L54 22 L49 32 Z" stroke="#15231C" stroke-width="1.6" fill="none"/>
+  <line x1="49" y1="32" x2="49" y2="44" stroke="#15231C" stroke-width="1.6"/>
+  <line x1="45" y1="44" x2="53" y2="44" stroke="#C5A880" stroke-width="1.8"/>
+  <!-- Zemin Taban Çizgisi -->
+  <line x1="8" y1="52" x2="56" y2="52" stroke="#15231C" stroke-width="1.5"/>
+</svg>
