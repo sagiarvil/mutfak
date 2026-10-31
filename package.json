@@ -7,7 +7,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "node --test gravity_package/tests/lead.test.mjs gravity_package/tests/worker-api.test.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",
