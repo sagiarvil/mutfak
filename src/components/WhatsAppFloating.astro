@@ -6,14 +6,28 @@ export interface Props {
 }
 
 const { service } = Astro.props;
-const defaultMsg = encodeURIComponent("Merhaba, Adatepe atölyenizden mimari keşif ve 3D mutfak/banyo projelendirmesi için görüşmek istiyorum.");
-const waUrl = `${siteConfig.whatsappUrl}?text=${defaultMsg}`;
+
+let dynamicWaText = "Merhaba, Yeşilay Mutfak'tan keşif ve teklif almak istiyorum.";
+if (service) {
+  const norm = service.toLowerCase();
+  if (norm.includes("hazır mutfak") || norm.includes("modüler")) {
+    dynamicWaText = "Merhaba, hazır mutfak modelleriniz ve teslim seçenekleriniz hakkında bilgi almak istiyorum.";
+  } else if (norm.includes("mutfak dolabı") || norm.includes("komple mutfak") || norm.includes("mutfak")) {
+    dynamicWaText = "Merhaba, mutfak dolabı veya komple mutfak tadilatı için teklif almak istiyorum.";
+  } else if (norm.includes("banyo")) {
+    dynamicWaText = "Merhaba, banyo yenileme için keşif ve teklif almak istiyorum.";
+  } else if (norm.includes("ev tadilatı") || norm.includes("anahtar teslim") || norm.includes("daire")) {
+    dynamicWaText = "Merhaba, komple ev tadilatı için keşif görüşmesi istiyorum.";
+  } else if (norm.includes("ticari") || norm.includes("projelendirme") || norm.includes("ofis") || norm.includes("fit-out")) {
+    dynamicWaText = "Merhaba, iş yerim için mimari proje ve uygulama teklifi almak istiyorum.";
+  }
+}
+
+const waUrl = `${siteConfig.whatsappUrl}?text=${encodeURIComponent(dynamicWaText)}`;
 ---
 
 <div class="fixed bottom-6 right-5 sm:right-7 z-50 flex flex-col items-end gap-2.5 font-sans" aria-label="Hızlı Mimari İletişim">
   
-
-
   <!-- WhatsApp Premium Butonu (Atelier Rolex Green & Altın Vurgu) -->
   <a 
     href={waUrl} 
@@ -21,6 +35,10 @@ const waUrl = `${siteConfig.whatsappUrl}?text=${defaultMsg}`;
     rel="noopener noreferrer" 
     class="relative group flex items-center gap-3 py-3 px-5 bg-gradient-to-r from-[#006039] to-[#083020] hover:from-[#083020] hover:to-[#006039] text-white rounded-full shadow-[0_8px_24px_rgba(0,96,57,0.35)] border border-[#C5A880]/50 backdrop-blur-xl transition-all duration-300 hover:scale-105 active:scale-95" 
     aria-label="WhatsApp Mimari Danışma"
+    data-track="contact_start"
+    data-category="whatsapp_floating"
+    data-type="whatsapp_floating_bubble"
+    data-label="WhatsApp Keşif"
   >
     <!-- Canlı Nabız Halkası -->
     <span class="absolute -inset-1 rounded-full bg-[#006039]/25 animate-ping pointer-events-none"></span>

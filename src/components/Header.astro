@@ -11,14 +11,14 @@ const { activeService } = Astro.props;
 let dynamicWaText = "Merhaba, Yeşilay Mutfak'tan keşif ve teklif almak istiyorum.";
 if (activeService) {
   const norm = activeService.toLowerCase();
-  if (norm.includes("mutfak dolabı") || norm.includes("komple mutfak") || norm.includes("mutfak")) {
+  if (norm.includes("hazır mutfak") || norm.includes("modüler") || norm.includes("hazir")) {
+    dynamicWaText = "Merhaba, hazır mutfak modelleriniz ve teslim seçenekleriniz hakkında bilgi almak istiyorum.";
+  } else if (norm.includes("mutfak dolabı") || norm.includes("komple mutfak") || norm.includes("mutfak")) {
     dynamicWaText = "Merhaba, mutfak dolabı veya komple mutfak tadilatı için teklif almak istiyorum.";
   } else if (norm.includes("banyo")) {
     dynamicWaText = "Merhaba, banyo yenileme için keşif ve teklif almak istiyorum.";
   } else if (norm.includes("ev tadilatı") || norm.includes("anahtar teslim") || norm.includes("daire")) {
     dynamicWaText = "Merhaba, komple ev tadilatı için keşif görüşmesi istiyorum.";
-  } else if (norm.includes("hazır mutfak") || norm.includes("modüler")) {
-    dynamicWaText = "Merhaba, hazır mutfak modelleriniz ve teslim seçenekleriniz hakkında bilgi almak istiyorum.";
   } else if (norm.includes("ticari") || norm.includes("projelendirme") || norm.includes("ofis") || norm.includes("fit-out")) {
     dynamicWaText = "Merhaba, iş yerim için mimari proje ve uygulama teklifi almak istiyorum.";
   }
