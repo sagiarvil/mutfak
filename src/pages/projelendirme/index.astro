@@ -25,31 +25,67 @@ const commercialProjects = [
   { no: 20, marka: "MOVENİA", kategori: "HAREKET STÜDYOSU", baslik: "Movenia Sağlıklı Yaşam & Pilates Stüdyosu", konum: "Narlıdere, İzmir", dosya: "/images/ticari-projeler/20_movenia_magaza.jpg" }
 ];
 
-// OSO Mimarlık Formatında Hero Slider (4 Öne Çıkan Proje)
+// OSO Mimarlık Formatında Yeni Nesil 10 Mimari Hero Slider
 const heroSlides = [
   {
-    baslik: "Velunor Mimari Yaşam",
-    kategori: "MAĞAZA İÇ MİMARİ & FIT-OUT",
-    resim: "/images/ticari-projeler/01_velunor_magaza.jpg",
-    aciklama: "Ticari mağaza zincirleri için kurumsal kimliği mekana yansıtan mimari konsept ve anahtar teslim fit-out uygulaması."
+    baslik: "Vadi Vista Yönetim Merkezi",
+    kategori: "KURUMSAL OFİS & FIT-OUT",
+    resim: "/images/projelendirme/hero/hero_01.webp",
+    aciklama: "Büyük ölçekli genel merkez ve yönetim binalarında çağdaş mimari, akustik konfor ve anahtar teslim şantiye yönetimi."
   },
   {
-    baslik: "Castera Tasarım Atölyesi",
-    kategori: "OFİS & SHOWROOM DİZAYNI",
-    resim: "/images/ticari-projeler/02_castera_magaza.jpg",
-    aciklama: "Yüksek hacimli ticari mekanlarda ergonomik, estetik ve işlevsel modern çalışma atmosferleri."
-  },
-  {
-    baslik: "Lumori Yaşam & Perakende",
+    baslik: "Natura Modern Yaşam Showroomu",
     kategori: "KONSEPT MAĞAZA TASARIMI",
-    resim: "/images/ticari-projeler/05_lumori_magaza.jpg",
-    aciklama: "Satış hacmini ve müşteri deneyimini maksimize eden bütüncül perakende iç mimarisi."
+    resim: "/images/projelendirme/hero/hero_02.webp",
+    aciklama: "Perakende sektöründe müşteri deneyimini ve marka prestijini zirveye taşıyan fonksiyonel mağaza mimarisi."
   },
   {
-    baslik: "Evonara Ev & Mobilya",
-    kategori: "BÜYÜK ÖLÇEKLİ RETAIL PROJESİ",
-    resim: "/images/ticari-projeler/15_evonara_magaza.jpg",
-    aciklama: "Projelendirmeden şantiye yönetimine kadar kusursuz fit-out ve özel mobilya imalat koordinasyonu."
+    baslik: "Kuzey Plaza Yönetim Katı",
+    kategori: "İÇ MİMARİ & UYGULAMA",
+    resim: "/images/projelendirme/hero/hero_03.webp",
+    aciklama: "Açık ofis ergonomisi, entegre altyapı ve mimari detay mühendisliği ile üretkenliği artıran çalışma alanları."
+  },
+  {
+    baslik: "Aura Concept Store",
+    kategori: "LÜKS MAĞAZACILIK & SHOWROOM",
+    resim: "/images/projelendirme/hero/hero_04.webp",
+    aciklama: "Doğru aydınlatma, akıcı dolaşım rotaları ve özel imalat sergileme üniteleri ile ticari başarı odaklı tasarımlar."
+  },
+  {
+    baslik: "Ege Global Lojistik Merkezi",
+    kategori: "TİCARİ KOMPLEKS & OFİS",
+    resim: "/images/projelendirme/hero/hero_05.webp",
+    aciklama: "Yüksek hacimli ticari merkezlerde operasyonel verimlilik ve kurumsal kimliği bütünleştiren mimari yaklaşım."
+  },
+  {
+    baslik: "Armada Lounge & Bistro",
+    kategori: "CAFE-RESTORAN TASARIMI",
+    resim: "/images/projelendirme/hero/hero_06.webp",
+    aciklama: "Gastronomi mekanlarında ambiyansı, akustik dengeyi ve operasyonel mutfak-servis akışını kusursuzlaştıran mimari."
+  },
+  {
+    baslik: "Monolit İş Kulesi Ofisleri",
+    kategori: "YENİLİKÇİ ÇALIŞMA ALANLARI",
+    resim: "/images/projelendirme/hero/hero_07.webp",
+    aciklama: "Yeni nesil hibrit çalışma kültürüne uygun, teknolojik entegrasyonu yüksek prestijli ofis mekanları."
+  },
+  {
+    baslik: "Boutique Privee Mücevherat",
+    kategori: "ÖZEL PERAKENDE MİMARİSİ",
+    resim: "/images/projelendirme/hero/hero_08.webp",
+    aciklama: "Seçkin markalar için özel güvenlikli, yüksek katma değerli ve zamansız vitrin & mağaza uygulamaları."
+  },
+  {
+    baslik: "Kolektif İnovasyon Kampüsü",
+    kategori: "MİMARİ PROJELENDİRME",
+    resim: "/images/projelendirme/hero/hero_09.webp",
+    aciklama: "3D rölöve ve fotogerçekçi görselleştirmeden fit-out teslime kadar sıfır toleranslı mimari süreç."
+  },
+  {
+    baslik: "Terrace Cafe & Brasserie",
+    kategori: "YEME-İÇME & YAŞAM ALANI",
+    resim: "/images/projelendirme/hero/hero_10.webp",
+    aciklama: "Açık ve kapalı alan entegrasyonu, doğal malzeme uyumu ve unutulmaz müşteri deneyimi sunan gastro mekanlar."
   }
 ];
 
@@ -66,7 +102,7 @@ const seo = {
     <!-- BÖLÜM 1: OSO MİMARLIK FORMATINDA TAM EKRAN MİMARİ HERO SLIDER -->
     <section class="relative w-full bg-slate-900 text-white overflow-hidden" x-data="{
       activeSlide: 0,
-      totalSlides: 4,
+      totalSlides: 10,
       timer: null,
       startAuto() {
         this.timer = setInterval(() => {
@@ -147,7 +183,7 @@ const seo = {
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
         </button>
         <span class="text-xs font-mono tracking-widest text-white/80">
-          <span x-text="String(activeSlide + 1).padStart(2, 0)"></span> / 04
+          <span x-text="String(activeSlide + 1).padStart(2, 0)"></span> / 10
         </span>
         <button
           type="button"
@@ -188,124 +224,132 @@ const seo = {
       </div>
     </section>
 
-    <!-- BÖLÜM 3: 4 TEMEL DİREK (OSO MİMARLIK BİREBİR PREMİUM STANDART) -->
-    <section class="py-20 md:py-28 bg-[#FAF9F6]/80 border-b border-slate-200/80">
-      <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+    <!-- BÖLÜM 3: 4 TEMEL DİREK (SIFIR KIRILMA, TAM HİZALI MİMARİ STANDART) -->
+    <section class="py-20 md:py-28 bg-[#FAF9F6] border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
 
           <!-- 1. OFİS TASARIMLARI -->
-          <div class="flex flex-col items-center text-center">
-            <h3 class="text-base md:text-lg font-bold text-slate-900 tracking-[0.15em] uppercase mb-6 min-h-[28px] flex items-center justify-center">
-              OFİS TASARIMLARI
-            </h3>
+          <div class="flex flex-col items-center text-center group">
+            <div class="h-8 flex items-center justify-center mb-4">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 tracking-[0.1em] uppercase whitespace-nowrap">
+                OFİS TASARIMLARI
+              </h3>
+            </div>
             
-            <div class="w-36 h-36 md:w-40 md:h-40 rounded-full p-1.5 bg-white border border-slate-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-all duration-300 flex items-center justify-center mb-8 shrink-0 group">
-              <div class="w-full h-full rounded-full overflow-hidden flex items-center justify-center bg-white">
-                <img 
-                  src="/images/projelendirme/icon-ofis.webp" 
-                  alt="Ofis Tasarımları" 
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  width="160"
-                  height="160"
-                  loading="lazy"
-                />
-              </div>
+            <div class="w-32 h-32 sm:w-36 sm:h-36 rounded-full p-1 bg-white border border-slate-200 shadow-sm group-hover:shadow-md transition-all duration-300 flex items-center justify-center mb-6 shrink-0">
+              <img 
+                src="/images/projelendirme/icon-ofis.webp" 
+                alt="Ofis Tasarımları" 
+                class="w-full h-full object-contain rounded-full p-1"
+                width="144"
+                height="144"
+                loading="lazy"
+              />
             </div>
 
-            <h4 class="text-xs md:text-sm font-semibold text-slate-900 tracking-[0.2em] uppercase mb-4 min-h-[40px] flex items-center justify-center">
-              Yenilikçi Çalışma Alanları
-            </h4>
+            <div class="h-12 flex items-center justify-center mb-4 px-2">
+              <h4 class="text-[11px] font-bold text-slate-800 tracking-[0.12em] uppercase leading-tight">
+                YENİLİKÇİ ÇALIŞMA ALANLARI
+              </h4>
+            </div>
 
-            <div class="text-xs text-slate-600 leading-relaxed text-left space-y-3 font-normal">
+            <div class="text-xs text-slate-600 leading-relaxed text-justify space-y-3 font-normal px-1">
               <p>Günümüz ofislerinde, mekânın şirket kurumsal kimliği ile uyumu ve çalışanların yüksek motivasyonu, verimlilik açısından büyük önem taşır. Bu doğrultuda modern çalışma kültürüne; estetik, işlevsellik ve kullanıcı memnuniyeti kazandırarak, yenilikçi ofis mekânları tasarlıyoruz.</p>
-              <p>Aydınlatma, akustik konfor, malzeme seçimi ve yeni nesil ofis ihtiyaçlarını titizlikle ele alarak üretkenliği destekleyen bütüncül çözümler sunuyoruz. Fonksiyon odaklı yaklaşımımızla ergonomi, sürdürülebilir malzemeler ve teknolojik entegrasyonu, projelerimizin merkezine yerleştirerek kurum kimliğini mekâna yansıtan özgün tasarımlar üretiyoruz.</p>
+              <p>Aydınlatma, akustik konfor, malzeme seçimi ve yeni nesil ofis ihtiyaçlarını titizlikle ele alarak üretkenliği destekleyen bütüncül çözümler sunuyoruz.</p>
             </div>
           </div>
 
           <!-- 2. MAĞAZA TASARIMLARI -->
-          <div class="flex flex-col items-center text-center">
-            <h3 class="text-base md:text-lg font-bold text-slate-900 tracking-[0.15em] uppercase mb-6 min-h-[28px] flex items-center justify-center">
-              MAĞAZA TASARIMLARI
-            </h3>
+          <div class="flex flex-col items-center text-center group">
+            <div class="h-8 flex items-center justify-center mb-4">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 tracking-[0.1em] uppercase whitespace-nowrap">
+                MAĞAZA TASARIMLARI
+              </h3>
+            </div>
             
-            <div class="w-36 h-36 md:w-40 md:h-40 rounded-full p-1.5 bg-white border border-slate-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-all duration-300 flex items-center justify-center mb-8 shrink-0 group">
-              <div class="w-full h-full rounded-full overflow-hidden flex items-center justify-center bg-white">
-                <img 
-                  src="/images/projelendirme/icon-magaza.webp" 
-                  alt="Mağaza Tasarımları" 
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  width="160"
-                  height="160"
-                  loading="lazy"
-                />
-              </div>
+            <div class="w-32 h-32 sm:w-36 sm:h-36 rounded-full p-1 bg-white border border-slate-200 shadow-sm group-hover:shadow-md transition-all duration-300 flex items-center justify-center mb-6 shrink-0">
+              <img 
+                src="/images/projelendirme/icon-magaza.webp" 
+                alt="Mağaza Tasarımları" 
+                class="w-full h-full object-contain rounded-full p-1"
+                width="144"
+                height="144"
+                loading="lazy"
+              />
             </div>
 
-            <h4 class="text-xs md:text-sm font-semibold text-slate-900 tracking-[0.2em] uppercase mb-4 min-h-[40px] flex items-center justify-center">
-              Marka Kimliğini Güçlendiren Çözümler
-            </h4>
+            <div class="h-12 flex items-center justify-center mb-4 px-2">
+              <h4 class="text-[11px] font-bold text-slate-800 tracking-[0.12em] uppercase leading-tight">
+                MARKA KİMLİĞİNİ GÜÇLENDİREN ÇÖZÜMLER
+              </h4>
+            </div>
 
-            <div class="text-xs text-slate-600 leading-relaxed text-left space-y-3 font-normal">
-              <p>Perakende ve mağaza projelerinde tasarım; yalnızca ürün sergileme alanı oluşturmak değil, markanın hikâyesini ve değerlerini müşteriye hissettiren bir mekânsal deneyim kurgulamaktır. Doğru aydınlatma stratejileri, akıcı müşteri dolaşım hatları ve stratejik vitrin kurgusuyla satış potansiyelini artıran özgün perakende konseptleri geliştiriyoruz.</p>
-              <p>Malzeme dokularının uyumu, marka kimliğini yansıtan özel sergileme üniteleri ve işlevsel depolama çözümleriyle hem işletme verimliliğini hem de ziyaretçi sadakatini en üst noktaya taşıyoruz.</p>
+            <div class="text-xs text-slate-600 leading-relaxed text-justify space-y-3 font-normal px-1">
+              <p>Perakende ve mağaza projelerinde tasarım; yalnızca ürün sergileme alanı oluşturmak değil, markanın hikâyesini ve değerlerini müşteriye hissettiren bir mekânsal deneyim kurgulamaktır. Doğru aydınlatma ve akıcı müşteri dolaşım hatlarıyla satış potansiyelini artıran çözümler üretiyoruz.</p>
+              <p>Özel sergileme üniteleri ve işlevsel depolama kurgularıyla hem işletme verimliliğini hem de ziyaretçi bağlılığını en üst noktaya taşıyoruz.</p>
             </div>
           </div>
 
           <!-- 3. KONUT TASARIMLARI -->
-          <div class="flex flex-col items-center text-center">
-            <h3 class="text-base md:text-lg font-bold text-slate-900 tracking-[0.15em] uppercase mb-6 min-h-[28px] flex items-center justify-center">
-              KONUT TASARIMLARI
-            </h3>
+          <div class="flex flex-col items-center text-center group">
+            <div class="h-8 flex items-center justify-center mb-4">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 tracking-[0.1em] uppercase whitespace-nowrap">
+                KONUT TASARIMLARI
+              </h3>
+            </div>
             
-            <div class="w-36 h-36 md:w-40 md:h-40 rounded-full p-1.5 bg-white border border-slate-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-all duration-300 flex items-center justify-center mb-8 shrink-0 group">
-              <div class="w-full h-full rounded-full overflow-hidden flex items-center justify-center bg-white">
-                <img 
-                  src="/images/projelendirme/icon-konut.webp" 
-                  alt="Konut Tasarımları" 
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  width="160"
-                  height="160"
-                  loading="lazy"
-                />
-              </div>
+            <div class="w-32 h-32 sm:w-36 sm:h-36 rounded-full p-1 bg-white border border-slate-200 shadow-sm group-hover:shadow-md transition-all duration-300 flex items-center justify-center mb-6 shrink-0">
+              <img 
+                src="/images/projelendirme/icon-konut.webp" 
+                alt="Konut Tasarımları" 
+                class="w-full h-full object-contain rounded-full p-1"
+                width="144"
+                height="144"
+                loading="lazy"
+              />
             </div>
 
-            <h4 class="text-xs md:text-sm font-semibold text-slate-900 tracking-[0.2em] uppercase mb-4 min-h-[40px] flex items-center justify-center">
-              Yaşam Tarzını Yansıtan Zamansız İç Mekânlar
-            </h4>
+            <div class="h-12 flex items-center justify-center mb-4 px-2">
+              <h4 class="text-[11px] font-bold text-slate-800 tracking-[0.12em] uppercase leading-tight">
+                YAŞAM TARZINI YANSITAN ZAMANSIZ İÇ MEKÂNLAR
+              </h4>
+            </div>
 
-            <div class="text-xs text-slate-600 leading-relaxed text-left space-y-3 font-normal">
-              <p>Konut ve villa projelerinde, kullanıcıların kişisel zevklerini, yaşam alışkanlıklarını ve konfor beklentilerini tasarımın odağına yerleştiriyoruz. Her mekânın kendine özgü potansiyelini ortaya çıkarırken, estetik ile fonksiyonelliği kusursuz bir dengeyle buluşturuyoruz.</p>
-              <p>Doğal ışık kullanımı, birinci sınıf malzeme dengesi, özel üretim sabit mobilyalar ve zamansız renk paletleriyle yaşam alanlarını sadece şık değil, aynı zamanda huzurlu, samimi ve uzun yıllar değerini koruyan yuvalara dönüştürüyoruz.</p>
+            <div class="text-xs text-slate-600 leading-relaxed text-justify space-y-3 font-normal px-1">
+              <p>Konut ve villa projelerinde, kullanıcıların kişisel zevklerini, yaşam alışkanlıklarını ve konfor beklentilerini tasarımın odağına yerleştiriyoruz. Her mekânın kendine özgü potansiyelini estetik ve fonksiyonellikle dengeliyoruz.</p>
+              <p>Doğal ışık kullanımı, birinci sınıf malzeme dengesi ve özel imalat sabit mobilyalarla yaşam alanlarını uzun yıllar değerini koruyan yuvalara dönüştürüyoruz.</p>
             </div>
           </div>
 
           <!-- 4. CAFE-RESTORAN TASARIMLARI -->
-          <div class="flex flex-col items-center text-center">
-            <h3 class="text-base md:text-lg font-bold text-slate-900 tracking-[0.15em] uppercase mb-6 min-h-[28px] flex items-center justify-center">
-              CAFE-RESTORAN TASARIMLARI
-            </h3>
+          <div class="flex flex-col items-center text-center group">
+            <div class="h-8 flex items-center justify-center mb-4">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 tracking-[0.1em] uppercase whitespace-nowrap">
+                CAFE-RESTORAN TASARIMLARI
+              </h3>
+            </div>
             
-            <div class="w-36 h-36 md:w-40 md:h-40 rounded-full p-1.5 bg-white border border-slate-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-all duration-300 flex items-center justify-center mb-8 shrink-0 group">
-              <div class="w-full h-full rounded-full overflow-hidden flex items-center justify-center bg-white">
-                <img 
-                  src="/images/projelendirme/icon-cafe.webp" 
-                  alt="Cafe-Restoran Tasarımları" 
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  width="160"
-                  height="160"
-                  loading="lazy"
-                />
-              </div>
+            <div class="w-32 h-32 sm:w-36 sm:h-36 rounded-full p-1 bg-white border border-slate-200 shadow-sm group-hover:shadow-md transition-all duration-300 flex items-center justify-center mb-6 shrink-0">
+              <img 
+                src="/images/projelendirme/icon-cafe.webp" 
+                alt="Cafe-Restoran Tasarımları" 
+                class="w-full h-full object-contain rounded-full p-1"
+                width="144"
+                height="144"
+                loading="lazy"
+              />
             </div>
 
-            <h4 class="text-xs md:text-sm font-semibold text-slate-900 tracking-[0.2em] uppercase mb-4 min-h-[40px] flex items-center justify-center">
-              Estetik ve Konforu Buluşturan Yaşam Alanları
-            </h4>
+            <div class="h-12 flex items-center justify-center mb-4 px-2">
+              <h4 class="text-[11px] font-bold text-slate-800 tracking-[0.12em] uppercase leading-tight">
+                ESTETİK VE KONFORU BULUŞTURAN YAŞAM ALANLARI
+              </h4>
+            </div>
 
-            <div class="text-xs text-slate-600 leading-relaxed text-left space-y-3 font-normal">
-              <p>Cafe ve restoran projelerinde, kullanıcıların mekânda geçirdiği zamanı özel kılan özgün atmosferler oluşturmayı hedefliyoruz. Her projede markanın kimliğine ve hedef kitlesine uygun bir mekânsal deneyim tasarlarken; tasarımlarımızı işlevsel, estetik, konfor, akustik ve doğru aydınlatma gibi unsurlar ile özenle kurguluyoruz.</p>
-              <p>Uzun ömürlü malzeme seçimleri, renk ve malzeme uyumu, mekânsal odak noktalarıyla markanın karakterini belirginleştiriyor; marka kimliğini destekleyen ve müşterilere eşsiz bir deneyim sunan tasarımlar üretiyoruz.</p>
+            <div class="text-xs text-slate-600 leading-relaxed text-justify space-y-3 font-normal px-1">
+              <p>Cafe ve restoran projelerinde, kullanıcıların mekânda geçirdiği zamanı özel kılan özgün atmosferler oluşturmayı hedefliyoruz. Her projede marka kimliğine uygun, işlevsel, akustik ve doğru aydınlatmalı mekanlar kurguluyoruz.</p>
+              <p>Uzun ömürlü malzeme seçimleri ve mekan odak noktalarıyla müşterilere eşsiz bir ağırlama deneyimi sunan gastronomi alanları inşa ediyoruz.</p>
             </div>
           </div>
 
