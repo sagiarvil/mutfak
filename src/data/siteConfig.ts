@@ -23,6 +23,9 @@ export const siteConfig = {
   phoneFormatted: "0232 441 10 60",
   whatsappUrl: "https://wa.me/905324261788",
   googleMapsUrl: "https://share.google/C0WRDJ4gisVAQIAzr",
+  googleKgmid: "/g/11jfdn7h1h",
+  googleKgmidUrl: "https://www.google.com/search?kgmid=%2Fg%2F11jfdn7h1h",
+  isWomenOwned: true,
   address: {
     streetAddress: "Gaziler Mahallesi 1084/2 Sokak No: 1/A (Gazi Osman Paşa Cd. Köşesi)",
     addressLocality: "Buca",

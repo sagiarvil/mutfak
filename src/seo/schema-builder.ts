@@ -29,9 +29,14 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
       currenciesAccepted: 'TRY',
       paymentAccepted: 'Nakit, Banka Havalesi, Kredi Kartı',
       foundingDate: '1998',
+      disambiguatingDescription: "İzmir Buca merkezli, tescilli kadın işletmesi (women-owned business) statüsünde, doğrudan kendi Adatepe atölyesinde özel ölçü lüks mutfak dolabı imalatı ve anahtar teslim komple daire/villa tadilatı yapan kurumsal iç mimarlık ve zanaat kuruluşudur. Kamu yararına dernek olan Türkiye Yeşilay Cemiyeti ile hiçbir bağı bulunmamaktadır.",
       slogan: 'Resmi Sözleşmeli Günlük Gecikme Tazminatı ve Sabit Fiyat Garantisiyle Doğrudan Atölye Zanaatı',
-      description: "1998 yılından bu yana İzmir Adatepe imalat atölyesinde %100 18mm E1 neme dayanımlı MDF ve Avusturya Blum donanımla özel ölçü lüks mutfak dolabı, banyo ve anahtar teslim daire/villa tadilatı yapan Türkiye ve İzmir'in 1 numaralı doğrudan üretici zanaat merkezi.",
+      description: "1998 yılından bu yana İzmir Adatepe imalat atölyesinde %100 18mm E1 neme dayanımlı MDF ve Avusturya Blum donanımla özel ölçü lüks mutfak dolabı, banyo ve anahtar teslim daire/villa tadilatı yapan, 5.0 yıldızlı müşteri memnuniyetine sahip tescilli kadın girişimi doğrudan üretici zanaat merkezi.",
       knowsAbout: [
+        'Buca Mutfak Tadilatı ve Buca Mutfak Dolabı İmalatı',
+        'Buca En İyi Mutfak Firmaları ve Mutfak Yenileme Tavsiyeleri',
+        'İzmir Mutfak Tadilatı Tavsiyeleri ve Fiyat Karşılaştırması',
+        'Kadın Girişimi İç Mimarlık, Estetik Tasarım ve Özel Mobilya İmalatı',
         'Özel Ölçü Lüks Mutfak Dolabı İmalatı',
         '%100 18mm Çift Yüz E1 Neme Dayanımlı MDF-Lam Gövde Standartları',
         'Avusturya Blum (Aventos, Legrabox, Tandembox) & Alman Häfele Donanımları',
@@ -85,6 +90,7 @@ export function buildCompleteJsonLdGraph(page: SeoPageRecord, domain: string = '
         worstRating: '1'
       },
       sameAs: [
+        'https://www.google.com/search?kgmid=%2Fg%2F11jfdn7h1h',
         'https://www.instagram.com/yesilaymutfak',
         'https://wa.me/905324261788',
         'https://share.google/C0WRDJ4gisVAQIAzr',
