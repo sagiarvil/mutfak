@@ -35,7 +35,7 @@ const normalizedRoute = currentPath === "" ? "/" : `${currentPath}/`;
 const canonicalUrl = canonical || `${siteUrl}${normalizedRoute}`;
 const imageUrl = image.startsWith("http") ? image : `${siteUrl}${image.startsWith("/") ? image : "/" + image}`;
 
-const fullTitle = title.includes("|") ? title : `${title} | Yeşilay Mutfak`;
+const fullTitle = title.includes("|") ? title : `${title} | İzmir Mutfak Banyo`;
 
 // SSOT Registry kontrolü
 const registeredPage = SEO_REGISTRY[normalizedRoute];
@@ -59,10 +59,10 @@ if (registeredPage) {
       id: `${siteUrl}/#organization`,
       name: siteConfig.name,
       type: "HomeAndConstructionBusiness" as const,
-      sameAs: [siteConfig.whatsappUrl, "https://www.instagram.com/yesilaymutfak"]
+      sameAs: [siteConfig.whatsappUrl, "https://www.instagram.com/izmirmutfakbanyo"]
     },
     semanticTriples: [
-      { subject: "Yeşilay Mutfak", predicate: "providesService", object: title }
+      { subject: "İzmir Mutfak Banyo", predicate: "providesService", object: title }
     ],
     heroAnswerEngine: description,
     publishedAt: publishedTime,
@@ -129,7 +129,7 @@ if (faqList.length > 0) {
 <meta property="og:description" content={description} />
 <meta property="og:image" content={imageUrl} />
 <meta property="og:locale" content="tr_TR" />
-<meta property="og:site_name" content="Yeşilay Mutfak" />
+<meta property="og:site_name" content="İzmir Mutfak Banyo" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -141,15 +141,8 @@ if (faqList.length > 0) {
 <!-- Geo Etiketleri -->
 <meta name="geo.region" content="TR-35" />
 <meta name="geo.placename" content="İzmir" />
-<meta name="geo.position" content={`${siteConfig.geo.latitude};${siteConfig.geo.longitude}`} />
-<meta name="ICBM" content={`${siteConfig.geo.latitude}, ${siteConfig.geo.longitude}`} />
-
-<!-- LLMs & Autonomous AI Agent Discovery -->
-<link rel="alternate" type="text/markdown" href="/llms.txt" title="LLMs.txt Manifest" />
-<link rel="alternate" type="text/markdown" href="/llm.txt" title="LLM.txt Manifest" />
-<link rel="alternate" type="text/markdown" href="/llms-full.txt" title="LLMs Full Knowledge Base" />
-<link rel="agent" type="application/json" href="/.well-known/agent.json" />
-<link rel="alternate" type="application/json" href="/.well-known/agent.json" title="Autonomous Agent Manifest" />
+<meta name="geo.position" content="38.3885;27.1822" />
+<meta name="ICBM" content="38.3885, 27.1822" />
 
 <!-- Schema.org 14KB First-Packet JSON-LD -->
 <script type="application/ld+json" set:html={jsonLd} />
